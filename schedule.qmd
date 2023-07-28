@@ -1,0 +1,387 @@
+---
+title: "schedule"
+---
+
+## August 21-25 {- #week-01}
+
+### Monday, August 21 {-}
+
+- **Introduction to the course**
+- Read
+    - [@Feynman1974-ld].
+    - [@Harris2017-oz], Chapter 1, Begley's Bombshell. [PDF on Canvas]().
+    - Optional [@Begley2012-cr].
+- [Class notes](notes/wk01-2023-08-21.qmd)
+
+### Wednesday, August 23 {- #wk1-2023-08-23}
+
+- **How science works (or should)**
+- Read
+    - [@Ritchie2020-fm], Chapter 1. [Alternate link to PDF on Canvas]().
+    - [@Nosek2012-al]. [Alternate link to PDF on Canvas]().
+    - Optional [@sagan-1996-baloney], Chapter 12, The Fine Art of Baloney Detection. [PDF on Canvas]()
+- [Class notes](notes/wk01-2023-08-23.qmd)
+
+### Friday, August 25 {-}
+
+- **How to read a scientific paper**
+- Read
+    - [@Ruben2016-om].
+    - [@Carey2020-ut].
+- [Class notes](notes/wk01-2023-08-25.qmd)
+
+---
+
+## August 28-31 {- #week-02}
+
+### Monday, August 28 {-}
+
+- Scientific norms and counter-norms
+- Read
+    - [@Merton1973-vf]. [PDF on Canvas](https://psu.instructure.com/files/144517091/download?download_frd=1).
+    - [@Mitroff1974-pp]. [PDF on Canvas]().
+- [Assignment]{.green_assigned}
+    - Complete (anonymous) [survey]() on scientific norms and counter-norms. **No write-up**.
+- [Class notes]()
+
+### Wednesday, August 30 {-}
+
+- Adherence to norms and counter-norms
+- Read
+    - [@Kardash2012-kq](https://doi.org/10.1007/s11251-011-9195-0).
+    - [@Macfarlane2008-tc](https://doi.org/10.1007/s10805-008-9055-y).
+- Skim
+    - [@Anderson2010-rl](http://dx.doi.org/10.1353/jhe.0.0095).
+    - [@Kim2018-tr](https://doi.org/10.1177/0971721817744438).
+- [Class notes]()
+
+### Friday, August 31 {-}
+
+- [Assignment]{.green_assigned}
+    - [Exercise 01: Norms and counter-norms write-up](ex01-norms-counternorms.qmd)
+
+---
+
+## September 4-8 {- #week-03}
+
+### Monday, September 4 **Labor Day** NO CLASS
+
+### Wednesday, September 6 {-}
+
+- A replication crisis (or not)
+- Read
+    - [@Ritchie2020-fm], Chapter 2. [PDF on Canvas]().
+    - [@Begley2012-cr].
+    - (Optional) [@Oreskes2017], Chapter 7, pp. 228-244.
+- [Class notes]()
+
+### Friday, September 8 {-}
+
+- Replication failure: The "Lady Macbeth Effect"
+- Read
+    - [@Zhong2006-nf].
+    - [@Earp2014-ek].
+- [Due]{.orange_due}
+    - [Exercise 01: Norms and counter-norms write-up](ex01-norms-counternorms.qmd)
+- [Class notes]()
+
+---
+
+## September 11-15 {- #week-04}
+
+### Monday, September 11 {-}
+
+- Replication failure: Priming effect
+- Read
+    - [@Bargh1996-yv](); [PDF on Canvas]()
+    - [@Doyen2012-ib]()
+- [Class notes]()
+
+### Wednesday, September 13 {-}
+
+- Replication in cancer biology
+- Read
+    - [@Errington2021-sy]()
+    - [@Errington2021-dp]()
+- [Class notes]()
+
+### Friday, September 15 {-}
+
+---
+
+## September 18-22 {- #week-05}
+
+### Monday, September 18 {-}
+
+- The 4 (5?) Rs
+- Read
+    - [@Nosek2022-hv]()
+    - [@goodman_what_2016]()
+- Skim
+    - [@Fidler2021-xn]()
+- [Class notes]()
+
+### Wednesday, September 20 {-}
+
+- Fraud & misconduct
+- Read
+    - [@Ritchie2020-fm], Chapter 3
+    - [@Bhattacharjee2013-rw](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html)
+    - (Skim) [@Levelt2012-ap](https://pure.mpg.de/rest/items/item_1569964/component/file_1569966/content)
+    - (Skim) [@Carpenter2012-ot](https://www.science.org/content/article/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/fraud-misconduct.html)
+
+### Friday, September 21 {-}
+
+---
+
+## September 25-29 {- #week-06}
+
+### Monday, September 25 NO CLASS
+
+### Wednesday, September 27 {-}
+
+- Retraction and scientific integrity
+- Read
+    - [@Brainerd2018-iy](https://doi.org/10.1126/science.aav8384)
+- Explore
+    - <https://retractionwatch.com/>
+    - <https://ori.hhs.gov/>
+- [Assignment]{.green_assigned}
+    - [Exercise 02: P-hack your way to scientific glory](#ex_p_hacking)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/retraction-and-scientific-integrity.html)
+
+### Friday, September 29 {-}
+
+- Questionable research practices
+- Read
+    - [@simmons_false-positive_2011](http://dx.doi.org/10.1177/0956797611417632)
+    - (Skim) [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)
+- Watch
+    - [@Ngiam2020-ln](https://www.youtube.com/watch?v=bf3GqyBRgzY)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/questionable-research-practices.html)
+
+---
+
+## October 2-6 {- #week-07}
+
+### Monday, October 2 {-}
+
+- Bias
+- Read
+    - [@Ritchie2020-fm], Chapter 4
+- [Due]{.orange_due}
+    - [Exercise 02: P-hack your way to scientific glory](#ex_p_hacking) write-up.
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/bias.html)
+   
+### Wednesday, October 4 {-}
+
+- File drawer effect
+- Read
+    - [@Rosenthal1979-zi](https://doi.org/10.1037/0033-2909.86.3.638)
+    - [@Franco2014-yu](http://dx.doi.org/10.1126/science.1255484)
+- Work session on final project [proposals](final_project.html), [due Thursday, March 2]{.orange_due}.
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/file-drawer-effect.html)
+
+### Friday, October 6 {-}
+    
+---
+    
+## October 9-13 {- #week-08}
+
+### Monday, October 9 {-}
+
+- Negligence
+- Read
+    - [@Ritchie2020-fm], Chapter 5
+    - [@Nuijten2015-ul](https://doi.org/10.3758/s13428-015-0664-2)
+    - [@Szucs2017-fc](http://dx.doi.org/10.1371/journal.pbio.2000797)
+- Work session
+    - [proposals](final_project.html), [due Thursday, March 2]{.orange_due}.
+- [Assignment]{.green_assigned}
+    - [Exercise 03: Alpha, Power, Effect Sizes, & Sample Size](#ex_apes)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/negligence.html)
+
+### Wednesday, October 11 {-}
+
+- Hype
+- Read
+    - [@Ritchie2020-fm], Chapter 6
+    - [@Carney2010-gq](http://dx.doi.org/10.1177/0956797610383437)
+    - (Optional) [@Ranehill2015-dj](http://dx.doi.org/10.1177/0956797614553946)
+- Watch
+    - [@Cuddy2012-zx](https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are)
+- [Due]{.orange_due}
+    - [Final project](#final_project) proposal
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/hype.html)
+
+### Friday, October 13 {-}
+
+---
+
+## October 16-20 {- #week-09}
+
+### Monday, October 16 {-}
+
+- Solutions
+- Read
+    - [@munafo_manifesto_2017](https://doi.org/10.1038/s41562-016-0021)
+    - [@Begley2013-vm](http://dx.doi.org/10.1038/497433a)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/solutions-1.html)
+
+### Wednesday, October 18 {-}
+
+- Changing journal policies
+- Read
+    - [@nosek_promoting_2015](https://doi.org/10.1126/science.aab2374)
+    - [@Gilmore2020-sl](https://doi.org/10.1111/cdep.12360)
+    - [@Srcd2019-hg](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/changing-journal-policies.html)
+- [Due]{.orange_due}
+    - [Exercise 03: Alpha, Power, Effect Sizes, & Sample Size](#ex_apes) write-up
+    
+### Friday, October 20 {-}
+
+---
+
+## October 23-27 {- #week-10}
+
+### Monday, October 23 {-}
+
+- Large-scale replication studies
+- Read
+    - [@collaboration_estimating_2015](https://doi.org/10.1126/science.aac4716)
+    - (Optional) [@Camerer2018-tr](https://doi.org/10.1038/s41562-018-0399-z)
+      - For 5 extra credit points, write a paragraph that summarizes the main findings of this paper. [Due Tuesday, March 28]{.due_orange}.
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/large-scale-replications.html)
+- [Assignment]{.green_assigned}
+    - [Exercise 04: Replication](#ex_replication)
+
+### Wednesday, October 25 {-}
+
+- Meta-analysis & many analysts
+- Read
+    - [@Wilson2014-ol](https://www.psychologicalscience.org/observer/introduction-to-meta-analysis-a-guide-for-the-novice)
+    - [@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/meta-analysis-and-many-analysts.html)
+
+### Friday, October 27 {-}
+
+---
+
+## October 30 - November 3 {- #week-11}
+
+### Monday, October 30 {-}
+
+- Project work day
+   
+### Wednesday, November 1 {-}
+
+- Preregistration
+- Read
+    - [@Nosek2018-jk](http://dx.doi.org/10.1073/pnas.1708274114)
+    - [@Ledgerwood2018-sn](http://dx.doi.org/10.1073/pnas.1812592115) or [@Goldin-Meadow2016-mc](https://www.psychologicalscience.org/observer/why-preregistration-makes-me-nervous)
+    - (Optional) [@Claesen2021-ae](http://dx.doi.org/10.1098/rsos.211037)
+- Explore
+    - [clinicaltrials.gov](https://clinicaltrials.gov/)
+- [Due]{.orange_due}
+    - [Exercise 04: Replication](#ex_replication)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/preregistration.html)
+
+### Friday, November 3 {-}
+
+---
+
+## November 6-10 {- #week-12}
+
+### Monday, November 6 {-}
+
+- Project work day
+
+### Wednesday, November 8 {-}
+
+- Data sharing
+- Read
+    - [@Houtkoop2018-tl](https://doi.org/10.1177/2515245917751886)
+    - [@Tenopir2020-mq](http://dx.doi.org/10.1371/journal.pone.0229003)
+    - (Optional) [@GilmoreAdolph2017](https://doi.org/10.1038/s41562-017-0128)
+    - (Optional) [@Meyer2018-vk](https://doi.org/10.1177/2515245917747656)
+    - (Optional) [@National_Institutes_of_Health_undated-it](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/data-sharing.html)
+- [Assignment distributed]{.green_assigned}
+    - [Exercise 05: Data and materials sharing](#ex_data_sharing)
+- [Final project survey]{.green_assigned}
+    - Please complete the [final project survey](https://forms.gle/XWFYHcnb3MAV1u4H8).
+
+### Friday, November 10 {-}
+
+---
+
+## November 13-17 {- #week-13}
+
+### Monday, November 13 {-}
+
+- Materials, code, & protocol sharing
+- Read
+    - [@Soska2021-mh](http://dx.doi.org/10.7191/jeslib.2021.1208)
+    - [@Gilroy2019-bf](http://dx.doi.org/10.1007/s40614-019-00202-5)
+- Explore
+    - [protocols.io](https://www.protocols.io/)
+    - [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/sharing-materials-code-protocols.html)
+
+### Wednesday, November 15 {-}
+
+- Open science tools
+- Read
+    - [@Kathawalla2021-tk](https://doi.org/10.1525/collabra.18684)
+    - [@Cruwell2019-nz](https://doi.org/10.1027/2151-2604/a000387)
+- [Assignment Due]{.orange_due}
+    - [Exercise 05: Data and materials sharing](#ex_data_sharing)
+- [Class notes](https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/open-scienc-tools.html)
+
+### Friday, November 17 {-}
+
+---
+
+## November 20-24 **Thanksgiving Break**
+
+---
+
+## November 27 - December 1 {- #week-14}
+
+### Monday, November 27 {-}
+
+- In-class final project work day
+
+### Wednesday, November 29 {-}
+
+- Project work day
+
+### Friday, December 1 {-}
+
+- Project presentations
+- [Schedule]()
+
+---
+
+## December 4-8 {- #week-15}
+
+### Tuesday, April 25 {-}
+
+- Project presentations
+- [Schedule]()
+
+### Thursday, April 27 {-}
+
+- Project presentations
+- [Schedule]()
+
+---
+    
+## December 11-15 {- #finals-week}
+
+### Wednesday, December 13 {-}
+
+- [Due]{.orange_due}
+  - [Final project](#final_project) write-ups due 5:00 PM.

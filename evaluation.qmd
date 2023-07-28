@@ -1,0 +1,30 @@
+---
+title: "evaluation"
+---
+
+## Elements {- #eval-components}
+
+| Component | Description                                  | Points |
+|-----------|----------------------------------------------|--------:|
+| Attendance | You will receive one (1) point for each class you attend. | 30 |
+| Exercises | There will be five (5) [exercises](#exercises) that you must complete and write up. Each exercise is worth 10 points. The top four (4) count toward your final grade. If you complete all five, half of your lowest assignment score will count as extra credit. | 40 |
+| Final project | You will complete a [final project](#final_project), either on your own, or with a small group of 3 or less. Your final project is worth 30 points. | 30 |
+| | **TOTAL POINTS POSSIBLE** | 100 |
+| Extra Credit | There may be extra credit opportunities provided at random and unannounced times during the semester. You must come to class in order to benefit from them.| |
+
+<!-- [Score histograms](grades.html) for this term. -->
+
+## Grading Scheme {- #grading-scheme}
+
+| Points  | Grade |
+|:--------|:------:|
+| 94+     | A     |
+| 90-93   | A-    |
+| 87-89   | B+    |
+| 84-86   | B     |
+| 80-83   | B-    |
+| 77-79   | C+    |
+| 70-76   | C     |
+| 60-69   | D     |
+| <59     | F     |
+

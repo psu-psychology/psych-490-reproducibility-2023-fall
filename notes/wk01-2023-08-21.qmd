@@ -1,0 +1,22 @@
+---
+title: "2023-08-21 Mon"
+subtitle: "Course intro"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+---
+
+# Overview
+
+# Next time
+
+- **[How science works (or should)](../schedule.html#wk1-2023-08-23)**
+- Read:
+  - [@Ritchie2020-fm], Chapter 1. [Alternate link to PDF on Canvas]().
+  - [@Nosek2012-al]
+  
+# Resources
+
+## References
+

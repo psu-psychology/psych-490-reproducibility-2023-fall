@@ -1,0 +1,29 @@
+---
+title: "about"
+format: html
+---
+
+## Instructor {-}
+
+Rick O. Gilmore, Ph.D.</br>
+Professor of Psychology</br>
+rog1 AT-SIGN psu PERIOD edu</br>
+
+Schedule an appointment: <https://psu.zoom.us/my/rogilmore></br>
+Lab web site: <https://gilmore-lab.github.io>
+
+## Teaching Assistant {-}
+
+TBD
+
+## Meeting time & location {-}
+
+Monday, Wednesday, & Friday, 4:40 PM - 5:30 PM</br>
+[Willard Building](https://map.psu.edu/?id=1134#!ct/59509,33177,25403,26748,26749,26750,27255?m/286027?s/) 171
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'include/bib/packages.bib')
+```
