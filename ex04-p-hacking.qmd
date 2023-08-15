@@ -1,6 +1,6 @@
 ---
-title: "Exercise 02"
-subtitle: The road to scientific glory
+title: "Exercise 04"
+subtitle: "*P*-hacking: The road to scientific glory"
 ---
 
 ## Dates {-}

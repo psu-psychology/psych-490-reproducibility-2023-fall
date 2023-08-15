@@ -1,5 +1,5 @@
 ---
-title: "Expercise 03"
+title: "Exercise 03"
 subtitle: "Alpha, Power, Effect Sizes, & Sample Size"
 ---
 

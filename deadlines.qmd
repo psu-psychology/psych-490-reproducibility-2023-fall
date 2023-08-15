@@ -2,13 +2,9 @@
 title: "deadlines"
 ---
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(cache = TRUE)
-```
-
 | Date      | What's due/happening |
 |-----------|----------------------|
-| 2023-01-17   | Exercise |
+| 2023-01-17   | Exercise 00 |
 | 2023-01-25 | Exercise 01 |
 | 2023-02-21  | Exercise 02 |
 | 2023-03-02 | Final project proposal |

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PSYCH 490 • Fall 2023 - Exercise 04</title>
+<title>PSYCH 490 • Fall 2023 - Exercise 03</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -136,15 +117,46 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-notes">    
         <li>
     <a class="dropdown-item" href="./notes/wk01-2023-08-21.html" rel="" target="">
- <span class="dropdown-text">Mon 2023-08-21</span></a>
+ <span class="dropdown-text">2023-08-21 Mon</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./notes/wk01-2023-08-23.html" rel="" target="">
- <span class="dropdown-text">Wed 2023-08-23</span></a>
+ <span class="dropdown-text">2023-08-23 Wed</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./notes/wk01-2023-08-25.html" rel="" target="">
- <span class="dropdown-text">Fri 2023-08-25</span></a>
+ <span class="dropdown-text">2023-08-25 Fri</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">exercises</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
+        <li>
+    <a class="dropdown-item" href="./ex01-read-a-scientific-paper.html" rel="" target="">
+ <span class="dropdown-text">Exercise 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ex02-norms-counternorms.html" rel="" target="">
+ <span class="dropdown-text">Exercise 02</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ex03-apes.html" rel="" target="">
+ <span class="dropdown-text">Exercise 03</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ex04-p-hacking.html" rel="" target="">
+ <span class="dropdown-text">Exercise 04</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ex05-replication.html" rel="" target="">
+ <span class="dropdown-text">Exercise 05</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ex06-sharing.html" rel="" target="">
+ <span class="dropdown-text">Exercise 06</span></a>
   </li>  
     </ul>
   </li>
@@ -176,8 +188,8 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 04</h1>
-<p class="subtitle lead">Replication</p>
+<h1 class="title">Exercise 03</h1>
+<p class="subtitle lead">Violations of scientific integrity</p>
 </div>
 
 
@@ -198,41 +210,28 @@ div.csl-indent {
 </section>
 <section id="goals" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="goals">Goals</h2>
-<p>Replication is one standard among many that can be used to evaluate scientific findings. In this exercise, you will evaluate a published scientific finding on the basis of whether it 1) replicates prior work and 2) could be replicated by someone else.</p>
+<p>The integrity of individual scientists and teams of scientists can lend credence to or undermine scientific methods and findings. In this exercise, we will explore some of the mechanisms by which violations of scientific integrity come to light.</p>
 </section>
 <section id="assignment" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="assignment">Assignment</h2>
-<p>Choose a published scientific paper on a topic you find interesting and important.</p>
-<p>Does the paper:</p>
-<ul>
-<li>Report on whether data reported replicate a prior finding?</li>
-<li>Does the paper embrace any of the recommendations by <a href="http://dx.doi.org/10.1038/497433a"><span class="citation" data-cites="Begley2013-vm">Begley (<span>2013</span>)</span></a> (e.g., blinding, replication or repetition of key effects, etc.).</li>
-<li>Does the paper implement any of the recommendations from the <a href="https://doi.org/10.1038/s41562-016-0021"><span class="citation" data-cites="munafo_manifesto_2017">Munafò et al. (<span>2017</span>)</span></a> paper?</li>
-<li>Does the paper report effect sizes, sample sizes, and statistical power?</li>
-<li>Was the paper pre-registered?</li>
-<li>What is the <a href="https://topfactor.org/journals">TOP Factor</a> for the journal? If none, report 0.</li>
-<li>Does the paper share data? If so, where? Could you get access to the data?</li>
-<li>Does the paper share any statistical or computer code used to analyze the data or make figures? If so, where? Could you access the code?</li>
-<li>Does the paper share sufficient information about the measures used (e.g., a protocol, computer code to generate computer tasks, specific survey questions, or other information needed to replicate the tasks or measures) so that an independent third party like yourself could replicate the study?</li>
-</ul>
-<p>If you had to give the author(s) of your paper a grade for <em>replicability</em> (A, B, C, D, F), what grade would you give it and why?</p>
+<p>Choose a case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity (<a href="https://ori.hhs.gov/">ORI</a>).</p>
+<p>Choose a second report about a violation of scientific integrity from <a href="https://retractionwatch.com/">Retraction Watch</a>.</p>
+<p>Compare and contrast the two cases you have chosen, focusing on answering the following questions:</p>
+<ol type="1">
+<li>What specific violation was alleged?</li>
+<li>Why are the alleged behavior(s) considered a violation of scientific integrity?</li>
+<li>What are/were the consequences to the people involved?</li>
+<li>What could be done to reduce the likelihood that similar alleged violations of scientific integrity occur in the future?</li>
+</ol>
 </section>
 <section id="submit" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="submit">Submit</h2>
-<p>In a short (2-3 pp double-spaced report) discuss the paper’s finding and why you think it is interesting and important. Then, evaluate the paper from the perspective of “replicability” by answering the questions in the previous section.</p>
-
+<p>In a short (2-3 pp double-spaced report) discuss your answers to these questions and how the two cases are similar or differ.</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
-<div id="ref-Begley2013-vm" class="csl-entry" role="listitem">
-Begley, C. G. (2013). Six red flags for suspect work. <em>Nature</em>, <em>497</em>(7450), 433–434. <a href="https://doi.org/10.1038/497433a">https://doi.org/10.1038/497433a</a>
-</div>
-<div id="ref-munafo_manifesto_2017" class="csl-entry" role="listitem">
-Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, <em>1</em>, 0021. <a href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

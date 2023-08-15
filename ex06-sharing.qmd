@@ -1,5 +1,5 @@
 ---
-title: "Exercise 05"
+title: "Exercise 06"
 subtitle: "Data & materials sharing"
 ---
 

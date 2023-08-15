@@ -29,7 +29,15 @@ website:
           - href: "notes/wk01-2023-08-21.qmd"
           - href: "notes/wk01-2023-08-23.qmd"
           - href: "notes/wk01-2023-08-25.qmd"
-          
+      - text: exercises
+        menu: 
+          - href: "ex01-read-a-scientific-paper.qmd"
+          - href: "ex02-norms-counternorms.qmd"
+          - href: "ex03-apes.qmd"
+          - href: "ex04-p-hacking.qmd"
+          - href: "ex05-replication.qmd"
+          - href: "ex06-sharing.qmd"
+        
 format:
   html:
     theme: cosmo

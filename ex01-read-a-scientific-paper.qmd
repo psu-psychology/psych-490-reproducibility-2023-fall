@@ -1,0 +1,35 @@
+---
+title: "Exercise 01"
+subtitle: Reading a scientific paper
+---
+
+## Dates {-}
+
+Due: [Thursday, January 26, 2023]{.orange_due}.
+
+## Goals {-}
+
+This exercise gives you an opportunity to apply some of the ideas we discussed in class about how to read a scientific paper.
+
+## Assignment {-}
+
+You may work with one other person if you wish. Choose a paper you find interesting.
+
+Use the rubric described in [@Carey2020-ut] to read the paper.
+
+Answer the following specific questions in "Rule 3" of [@Carey2020-ut]:
+
+>1) What do the author(s) want to know (motivation)? (2) What did they do (approach/methods)? (3) Why was it done that way (context within the field)? (4) What do the results show (figures and data tables)? (5) How did the author(s) interpret the results (interpretation/discussion)? (6) What should be done next? (Regarding this last question, the author(s) may provide some suggestions in the discussion, but the key is to ask yourself what you think should come next.)
+>
+>[@Carey2020-ut]
+
+If it's an empirical paper, pay particular attention to what *evidence*, usually a pattern of data, the author(s) use to argue for a particular *finding* or *conclusion*.
+Is there a figure that demonstrates this well?
+
+## Submit {-}
+
+A 2-3 page (double-spaced) paper in Microsoft Word format using the following file-naming convention:
+
+`<lastname>-<firstname>-PSYCH490.009-ex00.docx`, where you substitute your last name for <lastname> and your first name for <firstname>.
+If there are two authors, use both of your last names.
+If Dr. Gilmore was submitting a paper, it would look like this: `gilmore-rick-PSYCH490.009-ex00.docx`. 
