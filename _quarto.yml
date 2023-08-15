@@ -33,10 +33,12 @@ website:
         menu: 
           - href: "ex01-read-a-scientific-paper.qmd"
           - href: "ex02-norms-counternorms.qmd"
-          - href: "ex03-apes.qmd"
+          - href: "ex03-scientific-integrity.qmd"
           - href: "ex04-p-hacking.qmd"
-          - href: "ex05-replication.qmd"
-          - href: "ex06-sharing.qmd"
+          - href: "ex05-apes.qmd"
+          - href: "ex06-replication.qmd"
+          - href: "ex07-sharing.qmd"
+          - href: "final-project.qmd"
         
 format:
   html:

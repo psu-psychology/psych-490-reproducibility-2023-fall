@@ -5,7 +5,7 @@ subtitle: Reading a scientific paper
 
 ## Dates {-}
 
-Due: [Thursday, January 26, 2023]{.orange_due}.
+Due: [Friday, August 31]{.orange_due}.
 
 ## Goals {-}
 

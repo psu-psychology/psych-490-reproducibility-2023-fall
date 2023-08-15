@@ -1,11 +1,11 @@
 ---
-title: "Exercise 05"
+title: "Exercise 06"
 subtitle: "Replication"
 ---
 
 ## Dates {-}
 
-Due: [Thursday, March 30, 2023]{.orange_due}.
+Due: [Friday, October 27]{.orange_due}.
 
 ## Goals {-}
 

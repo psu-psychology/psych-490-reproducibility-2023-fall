@@ -75,7 +75,9 @@ title: "schedule"
 
 ## September 4-8 {- #week-03}
 
-### Monday, September 4 **Labor Day** NO CLASS
+### Monday, September 4
+
+**Labor Day: NO CLASS**
 
 ### Wednesday, September 6 {-}
 
@@ -122,7 +124,7 @@ title: "schedule"
 
 ### Friday, September 15 {-}
 
-- In-class work project on replication
+**Work session: Replication**
 
 ---
 
@@ -149,7 +151,7 @@ title: "schedule"
     - (Skim) [@Carpenter2012-ot]
 - [Class notes]()
 
-### Friday, September 21 {-}
+### Friday, September 22 {-}
 
 **Scientific integrity**
 
@@ -160,7 +162,9 @@ title: "schedule"
 
 ## September 25-29 {- #week-06}
 
-### Monday, September 25 NO CLASS
+### Monday, September 25
+
+**NO CLASS**
 
 ### Wednesday, September 27 {-}
 
@@ -179,7 +183,7 @@ title: "schedule"
 - [Assignment]{.green_assigned}
     - [Exercise 04: P-hack your way to scientific glory]() write-up.
 - Work session
-    - [Final project proposals](final_project.html), [due Friday, October 13]{.orange_due}.
+    - [Final project proposals](final-project.qmd), [due Friday, October 13]{.orange_due}.
 
 ---
 
@@ -187,9 +191,12 @@ title: "schedule"
 
 ### Monday, October 2 {-}
 
+**Catch-up day**
+
 ### Wednesday, October 4 {-}
 
-- Questionable research practices
+**Questionable research practices**
+
 - Read
     - [@simmons_false-positive_2011]()
     - (Skim) [@John2012-tk]()
@@ -202,7 +209,7 @@ title: "schedule"
 - [Due]{.orange_due}
     - [Exercise 04: P-hack your way to scientific glory]() write-up.
 - Work session
-    - [Final project proposals](final_project.html), [due Friday, October 13]{.orange_due}.
+    - [Final project proposals](final-project.qmd), [due Friday, October 13]{.orange_due}.
 
 ---
     
@@ -210,14 +217,16 @@ title: "schedule"
 
 ### Monday, October 9 {-}
 
-- Bias
+**Bias**
+
 - Read
     - [@Ritchie2020-fm], Chapter 4
 - [Class notes]()
 
 ### Wednesday, October 11 {-}
 
-- File drawer effect
+**File drawer effect**
+
 - Read
     - [@Rosenthal1979-zi]
     - [@Franco2014-yu]
@@ -225,10 +234,12 @@ title: "schedule"
 
 ### Friday, October 13 {-}
 
+**Lies, damned lies, and statistics**
+
 - [Assignment]{.green_assigned}
-    - [Exercise 03: Alpha, Power, Effect Sizes, & Sample Size]()
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]()
 - [Due]{.orange_due}
-    - [Final project](#final_project) proposal
+    - [Final project](final-project.qmd) proposal
 
 ---
 
@@ -236,7 +247,8 @@ title: "schedule"
 
 ### Monday, October 16 {-}
 
-- Negligence
+**Negligence**
+
 - Read
     - [@Ritchie2020-fm], Chapter 5
     - [@Nuijten2015-ul]
@@ -245,7 +257,8 @@ title: "schedule"
 
 ### Wednesday, October 18 {-}
 
-- Hype
+**Hype**
+
 - Read
     - [@Ritchie2020-fm], Chapter 6
     - [@Carney2010-gq]
@@ -256,10 +269,12 @@ title: "schedule"
  
 ### Friday, October 20 {-}
 
+**Work session on replication**
+
 - [Due]{.orange_due}
-    - [Exercise 03: Alpha, Power, Effect Sizes, & Sample Size]() write-up
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
 - [Assignment]{.green_assigned}
-    - [Exercise 05: Replication]()
+    - [Exercise 06: Replication]()
 
 ---
 
@@ -267,7 +282,8 @@ title: "schedule"
 
 ### Monday, October 23 {-}
 
-- Solutions
+**Solutions**
+
 - Read
     - [@munafo_manifesto_2017]
     - [@Begley2013-vm]
@@ -275,7 +291,8 @@ title: "schedule"
 
 ### Wednesday, October 25 {-}
 
-- Changing journal policies
+**Changing journal policies**
+
 - Read
     - [@nosek_promoting_2015]
     - [@Gilmore2020-sl]
@@ -284,9 +301,10 @@ title: "schedule"
 
 ### Friday, October 27 {-}
 
-- Final project work day
+**Final project work day**
+
 - [Due]{.orange_due}
-    - [Exercise 05: Replication]()
+    - [Exercise 06: Replication]()
 - [Optional Extra Credit Assignment]{.green_assigned}
       - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr]. [Due Friday, November 3]{.due_orange}.
 
@@ -296,14 +314,16 @@ title: "schedule"
 
 ### Monday, October 30 {-}
 
-- Large-scale replication studies
+**Large-scale replication studies**
+
 - Read
     - [@collaboration_estimating_2015]
 - [Class notes]()
 
 ### Wednesday, November 1 {-}
 
-- Meta-analysis & many analysts
+**Meta-analysis & many analysts**
+
 - Read
     - [@Wilson2014-ol]
     - [@Silberzahn2018-st]
@@ -311,9 +331,10 @@ title: "schedule"
 
 ### Friday, November 3 {-}
 
-- Final project work day
+**Final project work day**
+
 - [Optional Extra Credit Assignment]{.orange_due}
-      - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr].
+    - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr].
       
 ---
 
@@ -321,7 +342,8 @@ title: "schedule"
 
 ### Monday, November 6 {-}
 
-- Preregistration
+**Preregistration**
+
 - Read
     - [@Nosek2018-jk]
     - [@Ledgerwood2018-sn] or [@Goldin-Meadow2016-mc]
@@ -332,7 +354,8 @@ title: "schedule"
 
 ### Wednesday, November 8 {-}
 
-- Data sharing
+**Data sharing**
+
 - Read
     - [@Houtkoop2018-tl]
     - [@Tenopir2020-mq]
@@ -343,8 +366,10 @@ title: "schedule"
 
 ### Friday, November 10 {-}
 
+**Work session: Data sharing**
+
 - [Assignment distributed]{.green_assigned}
-    - [Exercise 06: Data and materials sharing](ex06-sharing.qmd)
+    - [Exercise 07: Data and materials sharing](ex07-sharing.qmd)
 - [Final project survey]{.green_assigned}
     - Please complete the [final project survey]().
 
@@ -354,7 +379,8 @@ title: "schedule"
 
 ### Monday, November 13 {-}
 
-- Materials, code, & protocol sharing
+**Materials, code, & protocol sharing**
+
 - Read
     - [@Soska2021-mh]
     - [@Gilroy2019-bf]
@@ -365,7 +391,8 @@ title: "schedule"
 
 ### Wednesday, November 15 {-}
 
-- Open science tools
+**Open science tools**
+
 - Read
     - [@Kathawalla2021-tk]
     - [@Cruwell2019-nz]
@@ -373,9 +400,10 @@ title: "schedule"
 
 ### Friday, November 17 {-}
 
-- Final project work day
+**Final project work day**
+
 - [Assignment Due]{.orange_due}
-    - [Exercise 06: Data and materials sharing](ex06-sharing.qmd)
+    - [Exercise 07: Data and materials sharing](ex07-sharing.qmd)
 
 ---
 
@@ -387,15 +415,16 @@ title: "schedule"
 
 ### Monday, November 27 {-}
 
-- In-class final project work day
+**In-class final project work day**
 
 ### Wednesday, November 29 {-}
 
-- In-class final project work day
+**In-class final project work day**
 
 ### Friday, December 1 {-}
 
-- Project presentations
+**Project presentations**
+
 - [Schedule]()
 
 ---
@@ -404,12 +433,14 @@ title: "schedule"
 
 ### Monday, December 4 {-}
 
-- Project presentations
+**Project presentations**
+
 - [Schedule]()
 
 ### Wednesday, December 6 {-}
 
-- Project presentations
+**Project presentations**
+
 - [Schedule]()
 
 ### Friday, December 8 {-}
@@ -423,4 +454,5 @@ title: "schedule"
 ### Wednesday, December 13 {-}
 
 - [Due]{.orange_due}
-  - [Final project](#final_project) write-ups due 5:00 PM.
+  - [Final project](final-project.qmd) write-ups due 5:00 PM.
+  

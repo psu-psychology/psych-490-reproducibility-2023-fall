@@ -28,25 +28,32 @@
     "text": "Meeting time & location\nMonday, Wednesday, & Friday, 4:40 PM - 5:30 PM Willard Building 171"
   },
   {
+    "objectID": "about.html#course-structure",
+    "href": "about.html#course-structure",
+    "title": "about",
+    "section": "Course structure",
+    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On most Fridays, we will work together or individually on the assigned exercises, the final project, or another assignment."
+  },
+  {
     "objectID": "deadlines.html",
     "href": "deadlines.html",
     "title": "deadlines",
     "section": "",
-    "text": "Date\nWhat’s due/happening\n\n\n\n\n2023-01-17\nExercise 00\n\n\n2023-01-25\nExercise 01\n\n\n2023-02-21\nExercise 02\n\n\n2023-03-02\nFinal project proposal\n\n\n2023-03-16\nExercise 03\n\n\n2023-03-30\nExercise 04\n\n\n2023-04-13\nExercise 05\n\n\n2023-05-03\nFinal project writeup"
+    "text": "Date\nWhat’s due/happening\n\n\n\n\n2023-08-31\nExercise 01\n\n\n2023-09-08\nExercise 02\n\n\n2023-09-29\nExercise 03\n\n\n2023-10-06\nExercise 04\n\n\n2023-10-13\nFinal project proposal\n\n\n2023-10-20\nExercise 05\n\n\n2023-10-27\nExercise 06\n\n\n2023-11-07\nExercise 07\n\n\n2023-12-13\nFinal project writeup"
   },
   {
     "objectID": "evaluation.html",
     "href": "evaluation.html",
     "title": "evaluation",
     "section": "",
-    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive one (1) point for each class you attend.\n30\n\n\nExercises\nThere will be six (6) exercises that you must complete and write up. Each exercise is worth 10 points. The top four (4) count toward your final grade. If you complete all six, half of your lowest assignment score will count as extra credit.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 30 points.\n30\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nThere may be extra credit opportunities provided at random and unannounced times during the semester. You must come to class in order to benefit from them."
+    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive one (1) point for each class you attend.\n30\n\n\nExercises\nThere will be seven (7) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 30 points.\n30\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points."
   },
   {
     "objectID": "evaluation.html#eval-components",
     "href": "evaluation.html#eval-components",
     "title": "evaluation",
     "section": "",
-    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive one (1) point for each class you attend.\n30\n\n\nExercises\nThere will be six (6) exercises that you must complete and write up. Each exercise is worth 10 points. The top four (4) count toward your final grade. If you complete all six, half of your lowest assignment score will count as extra credit.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 30 points.\n30\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nThere may be extra credit opportunities provided at random and unannounced times during the semester. You must come to class in order to benefit from them."
+    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive one (1) point for each class you attend.\n30\n\n\nExercises\nThere will be seven (7) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 30 points.\n30\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points."
   },
   {
     "objectID": "evaluation.html#grading-scheme",
@@ -60,14 +67,14 @@
     "href": "ex01-read-a-scientific-paper.html",
     "title": "Exercise 01",
     "section": "",
-    "text": "Due: Thursday, January 26, 2023."
+    "text": "Due: Friday, August 31."
   },
   {
     "objectID": "ex01-read-a-scientific-paper.html#dates",
     "href": "ex01-read-a-scientific-paper.html#dates",
     "title": "Exercise 01",
     "section": "",
-    "text": "Due: Thursday, January 26, 2023."
+    "text": "Due: Friday, August 31."
   },
   {
     "objectID": "ex01-read-a-scientific-paper.html#goals",
@@ -95,14 +102,14 @@
     "href": "ex02-norms-counternorms.html",
     "title": "Exercise 02",
     "section": "",
-    "text": "Due: Thursday, January 26, 2023."
+    "text": "Due: Friday, September 8."
   },
   {
     "objectID": "ex02-norms-counternorms.html#dates",
     "href": "ex02-norms-counternorms.html#dates",
     "title": "Exercise 02",
     "section": "",
-    "text": "Due: Thursday, January 26, 2023."
+    "text": "Due: Friday, September 8."
   },
   {
     "objectID": "ex02-norms-counternorms.html#goals",
@@ -126,81 +133,18 @@
     "text": "Submit\nA 2-3 page paper in Microsoft Word format using the following file-naming convention:\n&lt;lastname&gt;-&lt;firstname&gt;-PSYCH490.009-ex01.docx, where you substitute your last name for  and your first name for . If Dr. Gilmore was submitting a paper, it would look like this: gilmore-rick-PSYCH490.009-ex01.docx."
   },
   {
-    "objectID": "ex03-apes.html",
-    "href": "ex03-apes.html",
-    "title": "Exercise 03",
-    "section": "",
-    "text": "Due: Thursday, March 16, 2023."
-  },
-  {
-    "objectID": "ex03-apes.html#dates",
-    "href": "ex03-apes.html#dates",
-    "title": "Exercise 03",
-    "section": "",
-    "text": "Due: Thursday, March 16, 2023."
-  },
-  {
-    "objectID": "ex03-apes.html#goals",
-    "href": "ex03-apes.html#goals",
-    "title": "Exercise 03",
-    "section": "Goals",
-    "text": "Goals\nThis exercise aims to to build your understanding about the relationship between alpha \\(\\alpha\\) and its close cousin statistical significance, statistical power (1-\\(\\beta\\)), effect size (\\(d\\)), and sample sizes (\\(n\\))."
-  },
-  {
-    "objectID": "ex03-apes.html#materials",
-    "href": "ex03-apes.html#materials",
-    "title": "Exercise 03",
-    "section": "Materials",
-    "text": "Materials\n\na computer, tablet, or smartphone with access to the internet.\na means of keeping brief notes (notebook or text/word processing document)."
-  },
-  {
-    "objectID": "ex03-apes.html#shiny-app",
-    "href": "ex03-apes.html#shiny-app",
-    "title": "Exercise 03",
-    "section": "Shiny app",
-    "text": "Shiny app\nVisit the app at https://rogilmore.shinyapps.io/PSYCH490-2023-APES/."
-  },
-  {
-    "objectID": "ex03-apes.html#background",
-    "href": "ex03-apes.html#background",
-    "title": "Exercise 03",
-    "section": "Background",
-    "text": "Background\nIn the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are not due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.\nOne way to think about those trade-offs is to think about our situation this way:\nSome “fact” about the world can either be true or false, and our data analysis should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually is true and deciding when something’s false when it actually is false. Both are important ways for our analysis to be correct.\nWe also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a false positive. We also don’t want to decide something’s false when actually it’s true. That’s called a false negative. We want to minimize both.\nTo avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (\\(\\alpha\\)) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, \\(\\alpha\\) is also usually small; \\(\\alpha = 0.05\\) is conventional, but it is not in any way sacred.\nTo avoid false negatives, we set another probability value, called beta (\\(\\beta\\)). Beta is the proportion of times we’re willing to conclude a true fact is actually false; \\(\\beta = 0.20\\) or 1 time out of five is conventional. But what data folks usually focus on is \\(1-\\beta\\)1 or statistical power. This number tells us the proportion of times we expect to detect a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why it’s called power.\nAnalysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called \\(n\\). How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the effect size because it might represent the effect of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean (\\(\\mu\\)) 0 and standard deviation (\\(\\sigma\\)) 1, we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called \\(d\\). There are other ways to talk about effect sizes, but we won’t go further here.\nYour goals in this assignment are to see how choices about sample size (\\(n\\)), effect size (\\(d\\)), alpha (\\(/alpha\\)) and power (\\(1-\\beta\\)) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers."
-  },
-  {
-    "objectID": "ex03-apes.html#your-analysis",
-    "href": "ex03-apes.html#your-analysis",
-    "title": "Exercise 03",
-    "section": "Your analysis",
-    "text": "Your analysis\n\nWhen you first open the app, note that it simulates an analysis of groups A (red) and B, and that we get to control a number of parameters, including \\(n\\), \\(d\\), and \\(\\alpha\\). Note the statistics in the first gray box. It reports on the results of a \\(t\\) test, comparing the difference between the means of the two groups.\n\nInterpret the results of the t-test. What does it mean? What is the number in the brackets? What does it mean?\n“CI” means confidence interval. The CI has a minimum (leftmost) and maximum (rightmost) value. The actual difference in the observed means of A and B should fall inside the interval. In your own words, explain what the confidence interval means.\n\n\n\n\nLet’s see what happens when we generate different samples of A and B with the same underlying statistics–the same \\(n\\), same mean (\\(\\mu\\)), same standard deviation (\\(\\sigma\\)), same effect size (\\(d\\)), and same criterion (\\(\\alpha\\)) or false positive rate.\n\nPress the Regenerate button. What happens to the histogram? Look in the grey t-test box. What happens to the t-test, and the mean values for A, B, the difference between A and B (B-A), and the CI?\nPress the Regenerate button a couple of times until Sig? changes from FALSE to TRUE or TRUE to FALSE? This is a form of p-hacking? Explain how. Remember the specific data we’re analyzing are being regenerated each time we press the button; what’s not changing is the sample size, standard deviation, and the effect size (difference between B and A).\n\nHaving \\(n=75\\) is a pretty large sample for many types of research in psychology, so let’s see what having smaller samples does to our t-test and to our power.\n\nBut before we do that, write down your prediction about what will happen to the t-test when we reduce the \\(n\\) for both groups A and B to 50.\nChange the \\(n\\) for A to 50 and the \\(n\\) for B to 50. Interpret the t-test and CI.\nWhat happened to power (see the box on the right side)? Does this mean we are more likely or less likely to detect a difference between A and B than before? Why?\n\nWe’re simulating what happens if there is an effect size of \\(d=0.5\\), or half a standard deviation between the means of A and B.\n\nChange \\(d\\) to 1.5 or larger. What happens to the histogram? What happens to our t-test and power?\nChange \\(d\\) to 0.25. What happens to the histogram? What happens to our t-test and power?\n\nLet’s see if we can find out what size of samples we’d need to have power \\(1-\\beta = 0.80\\) to detect an effect of (\\(d=0.25\\)). Increase the sample sizes of A and B until you exceed the desired level for power. What sample size did you need? Explain your finding.\n(Optional) Bonus Points (up to 5)\n\nExplore the effect of changing some other parameter on the results, for example, criterion/alpha (\\(\\alpha\\)), the standard deviation for A or B (\\(\\sigma\\)), or even the ‘baseline’ mean for B (\\(\\mu\\)).\nReport on what you changed, what you observed, and what you conclude."
-  },
-  {
-    "objectID": "ex03-apes.html#submit",
-    "href": "ex03-apes.html#submit",
-    "title": "Exercise 03",
-    "section": "Submit",
-    "text": "Submit\nBring your draft report to class with you on Tuesday, March 14, 2023. We’ll discuss the assignment. The final submission is due Tuesday, March 14, 2023 at midnight."
-  },
-  {
-    "objectID": "ex03-apes.html#footnotes",
-    "href": "ex03-apes.html#footnotes",
-    "title": "Exercise 03",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nRemember that probabilities are always between 0 and 1 and always sum to 1.↩︎"
-  },
-  {
     "objectID": "ex03-scientific-integrity.html",
     "href": "ex03-scientific-integrity.html",
     "title": "Exercise 03",
     "section": "",
-    "text": "Due: Thursday, March 30, 2023."
+    "text": "Due: Friday, September 29."
   },
   {
     "objectID": "ex03-scientific-integrity.html#dates",
     "href": "ex03-scientific-integrity.html#dates",
     "title": "Exercise 03",
     "section": "",
-    "text": "Due: Thursday, March 30, 2023."
+    "text": "Due: Friday, September 29."
   },
   {
     "objectID": "ex03-scientific-integrity.html#goals",
@@ -228,14 +172,14 @@
     "href": "ex04-p-hacking.html",
     "title": "Exercise 04",
     "section": "",
-    "text": "Due: Tuesday, February 21, 2023."
+    "text": "Due: Friday, October 6."
   },
   {
     "objectID": "ex04-p-hacking.html#dates",
     "href": "ex04-p-hacking.html#dates",
     "title": "Exercise 04",
     "section": "",
-    "text": "Due: Tuesday, February 21, 2023."
+    "text": "Due: Friday, October 6."
   },
   {
     "objectID": "ex04-p-hacking.html#acknowledgment",
@@ -287,67 +231,172 @@
     "text": "Footnotes\n\n\nThink about why we want you to write down your prediction before you look at the dataset.↩︎\nHint: The question tested has to do with the slope of the plot in 3.↩︎"
   },
   {
-    "objectID": "ex05-replication.html",
-    "href": "ex05-replication.html",
+    "objectID": "ex05-apes.html",
+    "href": "ex05-apes.html",
     "title": "Exercise 05",
     "section": "",
-    "text": "Due: Thursday, March 30, 2023."
+    "text": "Due: Friday, October 20."
   },
   {
-    "objectID": "ex05-replication.html#dates",
-    "href": "ex05-replication.html#dates",
+    "objectID": "ex05-apes.html#dates",
+    "href": "ex05-apes.html#dates",
     "title": "Exercise 05",
     "section": "",
-    "text": "Due: Thursday, March 30, 2023."
+    "text": "Due: Friday, October 20."
   },
   {
-    "objectID": "ex05-replication.html#goals",
-    "href": "ex05-replication.html#goals",
+    "objectID": "ex05-apes.html#goals",
+    "href": "ex05-apes.html#goals",
     "title": "Exercise 05",
+    "section": "Goals",
+    "text": "Goals\nThis exercise aims to to build your understanding about the relationship between alpha \\(\\alpha\\) and its close cousin statistical significance, statistical power (1-\\(\\beta\\)), effect size (\\(d\\)), and sample sizes (\\(n\\))."
+  },
+  {
+    "objectID": "ex05-apes.html#materials",
+    "href": "ex05-apes.html#materials",
+    "title": "Exercise 05",
+    "section": "Materials",
+    "text": "Materials\n\na computer, tablet, or smartphone with access to the internet.\na means of keeping brief notes (notebook or text/word processing document)."
+  },
+  {
+    "objectID": "ex05-apes.html#shiny-app",
+    "href": "ex05-apes.html#shiny-app",
+    "title": "Exercise 05",
+    "section": "Shiny app",
+    "text": "Shiny app\nVisit the app at https://rogilmore.shinyapps.io/PSYCH490-2023-APES/."
+  },
+  {
+    "objectID": "ex05-apes.html#background",
+    "href": "ex05-apes.html#background",
+    "title": "Exercise 05",
+    "section": "Background",
+    "text": "Background\nIn the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are not due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.\nOne way to think about those trade-offs is to think about our situation this way:\nSome “fact” about the world can either be true or false, and our data analysis should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually is true and deciding when something’s false when it actually is false. Both are important ways for our analysis to be correct.\nWe also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a false positive. We also don’t want to decide something’s false when actually it’s true. That’s called a false negative. We want to minimize both.\nTo avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (\\(\\alpha\\)) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, \\(\\alpha\\) is also usually small; \\(\\alpha = 0.05\\) is conventional, but it is not in any way sacred.\nTo avoid false negatives, we set another probability value, called beta (\\(\\beta\\)). Beta is the proportion of times we’re willing to conclude a true fact is actually false; \\(\\beta = 0.20\\) or 1 time out of five is conventional. But what data folks usually focus on is \\(1-\\beta\\)1 or statistical power. This number tells us the proportion of times we expect to detect a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why it’s called power.\nAnalysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called \\(n\\). How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the effect size because it might represent the effect of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean (\\(\\mu\\)) 0 and standard deviation (\\(\\sigma\\)) 1, we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called \\(d\\). There are other ways to talk about effect sizes, but we won’t go further here.\nYour goals in this assignment are to see how choices about sample size (\\(n\\)), effect size (\\(d\\)), alpha (\\(/alpha\\)) and power (\\(1-\\beta\\)) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers."
+  },
+  {
+    "objectID": "ex05-apes.html#your-analysis",
+    "href": "ex05-apes.html#your-analysis",
+    "title": "Exercise 05",
+    "section": "Your analysis",
+    "text": "Your analysis\n\nWhen you first open the app, note that it simulates an analysis of groups A (red) and B, and that we get to control a number of parameters, including \\(n\\), \\(d\\), and \\(\\alpha\\). Note the statistics in the first gray box. It reports on the results of a \\(t\\) test, comparing the difference between the means of the two groups.\n\nInterpret the results of the t-test. What does it mean? What is the number in the brackets? What does it mean?\n“CI” means confidence interval. The CI has a minimum (leftmost) and maximum (rightmost) value. The actual difference in the observed means of A and B should fall inside the interval. In your own words, explain what the confidence interval means.\n\n\n\n\nLet’s see what happens when we generate different samples of A and B with the same underlying statistics–the same \\(n\\), same mean (\\(\\mu\\)), same standard deviation (\\(\\sigma\\)), same effect size (\\(d\\)), and same criterion (\\(\\alpha\\)) or false positive rate.\n\nPress the Regenerate button. What happens to the histogram? Look in the grey t-test box. What happens to the t-test, and the mean values for A, B, the difference between A and B (B-A), and the CI?\nPress the Regenerate button a couple of times until Sig? changes from FALSE to TRUE or TRUE to FALSE? This is a form of p-hacking? Explain how. Remember the specific data we’re analyzing are being regenerated each time we press the button; what’s not changing is the sample size, standard deviation, and the effect size (difference between B and A).\n\nHaving \\(n=75\\) is a pretty large sample for many types of research in psychology, so let’s see what having smaller samples does to our t-test and to our power.\n\nBut before we do that, write down your prediction about what will happen to the t-test when we reduce the \\(n\\) for both groups A and B to 50.\nChange the \\(n\\) for A to 50 and the \\(n\\) for B to 50. Interpret the t-test and CI.\nWhat happened to power (see the box on the right side)? Does this mean we are more likely or less likely to detect a difference between A and B than before? Why?\n\nWe’re simulating what happens if there is an effect size of \\(d=0.5\\), or half a standard deviation between the means of A and B.\n\nChange \\(d\\) to 1.5 or larger. What happens to the histogram? What happens to our t-test and power?\nChange \\(d\\) to 0.25. What happens to the histogram? What happens to our t-test and power?\n\nLet’s see if we can find out what size of samples we’d need to have power \\(1-\\beta = 0.80\\) to detect an effect of (\\(d=0.25\\)). Increase the sample sizes of A and B until you exceed the desired level for power. What sample size did you need? Explain your finding.\n(Optional) Bonus Points (up to 5)\n\nExplore the effect of changing some other parameter on the results, for example, criterion/alpha (\\(\\alpha\\)), the standard deviation for A or B (\\(\\sigma\\)), or even the ‘baseline’ mean for B (\\(\\mu\\)).\nReport on what you changed, what you observed, and what you conclude."
+  },
+  {
+    "objectID": "ex05-apes.html#submit",
+    "href": "ex05-apes.html#submit",
+    "title": "Exercise 05",
+    "section": "Submit",
+    "text": "Submit\nBring your draft report to class with you on Tuesday, March 14, 2023. We’ll discuss the assignment. The final submission is due Tuesday, March 14, 2023 at midnight."
+  },
+  {
+    "objectID": "ex05-apes.html#footnotes",
+    "href": "ex05-apes.html#footnotes",
+    "title": "Exercise 05",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nRemember that probabilities are always between 0 and 1 and always sum to 1.↩︎"
+  },
+  {
+    "objectID": "ex06-replication.html",
+    "href": "ex06-replication.html",
+    "title": "Exercise 06",
+    "section": "",
+    "text": "Due: Friday, October 27."
+  },
+  {
+    "objectID": "ex06-replication.html#dates",
+    "href": "ex06-replication.html#dates",
+    "title": "Exercise 06",
+    "section": "",
+    "text": "Due: Friday, October 27."
+  },
+  {
+    "objectID": "ex06-replication.html#goals",
+    "href": "ex06-replication.html#goals",
+    "title": "Exercise 06",
     "section": "Goals",
     "text": "Goals\nReplication is one standard among many that can be used to evaluate scientific findings. In this exercise, you will evaluate a published scientific finding on the basis of whether it 1) replicates prior work and 2) could be replicated by someone else."
   },
   {
-    "objectID": "ex05-replication.html#assignment",
-    "href": "ex05-replication.html#assignment",
-    "title": "Exercise 05",
+    "objectID": "ex06-replication.html#assignment",
+    "href": "ex06-replication.html#assignment",
+    "title": "Exercise 06",
     "section": "Assignment",
     "text": "Assignment\nChoose a published scientific paper on a topic you find interesting and important.\nDoes the paper:\n\nReport on whether data reported replicate a prior finding?\nDoes the paper embrace any of the recommendations by Begley (2013) (e.g., blinding, replication or repetition of key effects, etc.).\nDoes the paper implement any of the recommendations from the Munafò et al. (2017) paper?\nDoes the paper report effect sizes, sample sizes, and statistical power?\nWas the paper pre-registered?\nWhat is the TOP Factor for the journal? If none, report 0.\nDoes the paper share data? If so, where? Could you get access to the data?\nDoes the paper share any statistical or computer code used to analyze the data or make figures? If so, where? Could you access the code?\nDoes the paper share sufficient information about the measures used (e.g., a protocol, computer code to generate computer tasks, specific survey questions, or other information needed to replicate the tasks or measures) so that an independent third party like yourself could replicate the study?\n\nIf you had to give the author(s) of your paper a grade for replicability (A, B, C, D, F), what grade would you give it and why?"
   },
   {
-    "objectID": "ex05-replication.html#submit",
-    "href": "ex05-replication.html#submit",
-    "title": "Exercise 05",
+    "objectID": "ex06-replication.html#submit",
+    "href": "ex06-replication.html#submit",
+    "title": "Exercise 06",
     "section": "Submit",
     "text": "Submit\nIn a short (2-3 pp double-spaced report) discuss the paper’s finding and why you think it is interesting and important. Then, evaluate the paper from the perspective of “replicability” by answering the questions in the previous section."
   },
   {
-    "objectID": "ex06-sharing.html",
-    "href": "ex06-sharing.html",
-    "title": "Exercise 06",
+    "objectID": "ex07-sharing.html",
+    "href": "ex07-sharing.html",
+    "title": "Exercise 07",
     "section": "",
     "text": "Due: Thursday, April 13, 2023"
   },
   {
-    "objectID": "ex06-sharing.html#dates",
-    "href": "ex06-sharing.html#dates",
-    "title": "Exercise 06",
+    "objectID": "ex07-sharing.html#dates",
+    "href": "ex07-sharing.html#dates",
+    "title": "Exercise 07",
     "section": "",
     "text": "Due: Thursday, April 13, 2023"
   },
   {
-    "objectID": "ex06-sharing.html#assignment",
-    "href": "ex06-sharing.html#assignment",
-    "title": "Exercise 06",
+    "objectID": "ex07-sharing.html#assignment",
+    "href": "ex07-sharing.html#assignment",
+    "title": "Exercise 07",
     "section": "Assignment",
     "text": "Assignment\nChoose a data or code repository from among the following:\n\nDryad\nDatabrary\nPenn State Data Commons\nDataverse\nfigshare\nGitHub\nGitLab\nInter-university Consortium for Political and Social Research (ICPSR)\nNIMH Data Archive\nOpenNeuro\nOpen Science Framework (OSF)\nQualitatitive Data Repository (QDR)\nPenn State ScholarSphere\nZenodo\n\nProvide some basic summary information about the repository:\n\nWho sponsors the data or code repository?\nWhat sort of data or code are stored and shared there?\nWho is the target audience for the repository?\n\nFind a dataset or code base within the repository and report on the following:\n\nWhat kind of data or code are stored and shared?\nHow hard or easy would it be for you to use the data or code yourself?"
   },
   {
-    "objectID": "ex06-sharing.html#submit",
-    "href": "ex06-sharing.html#submit",
-    "title": "Exercise 06",
+    "objectID": "ex07-sharing.html#submit",
+    "href": "ex07-sharing.html#submit",
+    "title": "Exercise 07",
     "section": "Submit",
     "text": "Submit\nA 2-3 pp double-spaced report on your findings. Make sure to include your name and a title for your report in the header of your document."
+  },
+  {
+    "objectID": "final-project.html",
+    "href": "final-project.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+  },
+  {
+    "objectID": "final-project.html#background",
+    "href": "final-project.html#background",
+    "title": "Final Project",
+    "section": "",
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+  },
+  {
+    "objectID": "final-project.html#topics",
+    "href": "final-project.html#topics",
+    "title": "Final Project",
+    "section": "Topics",
+    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tool or resource you find especially useful.\nA paper or papers that do or do not replicate.\nIndependent research on some topic related to open science."
+  },
+  {
+    "objectID": "final-project.html#formats",
+    "href": "final-project.html#formats",
+    "title": "Final Project",
+    "section": "Formats",
+    "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+  },
+  {
+    "objectID": "final-project.html#components",
+    "href": "final-project.html#components",
+    "title": "Final Project",
+    "section": "Components",
+    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page project proposal. If the proposal is submitted on-time (by Friday, October 13), the student or team gets 5 extra credit points. If the proposal is submitted late, there is no penalty, but also no extra points. If a student or team does not submit a proposal, there will be a five point penalty.\n\nProject presentation (optional, but strongly recommended)\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey below.\nThe presentations will occur during class on December 1, 4, and 6.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\nProject write-up\n\nEvery student or team must submit a write-up, due on Wednesday, December 13, 2023.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit your talk text or your slides with presenter notes.\nFor a poster, submit a PowerPoint or PDF of your poster."
+  },
+  {
+    "objectID": "final-project.html#survey",
+    "href": "final-project.html#survey",
+    "title": "Final Project",
+    "section": "Survey",
+    "text": "Survey\n\nPlease provide us information about your project via this Google Form:"
   },
   {
     "objectID": "index.html",
@@ -466,77 +515,77 @@
     "href": "schedule.html#week-03",
     "title": "schedule",
     "section": "September 4-8",
-    "text": "September 4-8\n\nMonday, September 4 Labor Day NO CLASS\n\n\nWednesday, September 6\nA replication crisis (or not)\n\nRead\n\n(Ritchie, 2020), Chapter 2. PDF on Canvas.\n(Begley & Ellis, 2012). \n\nClass notes\n\n\n\nFriday, September 8\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nDue\n\nExercise 02: Norms and counter-norms write-up\n\nClass notes"
+    "text": "September 4-8\n\nMonday, September 4\nLabor Day: NO CLASS\n\n\nWednesday, September 6\nA replication crisis (or not)\n\nRead\n\n(Ritchie, 2020), Chapter 2. PDF on Canvas.\n(Begley & Ellis, 2012). \n\nClass notes\n\n\n\nFriday, September 8\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nDue\n\nExercise 02: Norms and counter-norms write-up\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-04",
     "href": "schedule.html#week-04",
     "title": "schedule",
     "section": "September 11-15",
-    "text": "September 11-15\n\nMonday, September 11\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nWednesday, September 13\nReplication in cancer biology\n\nRead\n\n(Errington, Mathur, et al., 2021)\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n\nClass notes\n\n\n\nFriday, September 15\n\nIn-class work project on replication"
+    "text": "September 11-15\n\nMonday, September 11\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nWednesday, September 13\nReplication in cancer biology\n\nRead\n\n(Errington, Mathur, et al., 2021)\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication"
   },
   {
     "objectID": "schedule.html#week-05",
     "href": "schedule.html#week-05",
     "title": "schedule",
     "section": "September 18-22",
-    "text": "September 18-22\n\nMonday, September 18\nThe 4 (5?) Rs\n\nRead\n\n(Brian A. Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021) \n\nClass notes\n\n\n\nWednesday, September 20\nFraud & misconduct\n\nRead\n\n(Ritchie, 2020), Chapter 3\n(Bhattacharjee, 2013)\n(Skim) (Levelt, Drenth, & Noort, 2012)\n(Skim) (Carpenter, 2012)\n\nClass notes\n\n\n\nFriday, September 21\nScientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
+    "text": "September 18-22\n\nMonday, September 18\nThe 4 (5?) Rs\n\nRead\n\n(Brian A. Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021) \n\nClass notes\n\n\n\nWednesday, September 20\nFraud & misconduct\n\nRead\n\n(Ritchie, 2020), Chapter 3\n(Bhattacharjee, 2013)\n(Skim) (Levelt, Drenth, & Noort, 2012)\n(Skim) (Carpenter, 2012)\n\nClass notes\n\n\n\nFriday, September 22\nScientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
   },
   {
     "objectID": "schedule.html#week-06",
     "href": "schedule.html#week-06",
     "title": "schedule",
     "section": "September 25-29",
-    "text": "September 25-29\n\nMonday, September 25 NO CLASS\n\n\nWednesday, September 27\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nFriday, September 29\nP-hacking\n\nDue\n\nExercise 03: Violations of scientific integrity\n\nAssignment\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
+    "text": "September 25-29\n\nMonday, September 25\nNO CLASS\n\n\nWednesday, September 27\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nFriday, September 29\nP-hacking\n\nDue\n\nExercise 03: Violations of scientific integrity\n\nAssignment\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "schedule.html#week-07",
     "href": "schedule.html#week-07",
     "title": "schedule",
     "section": "October 2-6",
-    "text": "October 2-6\n\nMonday, October 2\n\n\nWednesday, October 4\n\nQuestionable research practices\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
+    "text": "October 2-6\n\nMonday, October 2\nCatch-up day\n\n\nWednesday, October 4\nQuestionable research practices\n\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "schedule.html#week-08",
     "href": "schedule.html#week-08",
     "title": "schedule",
     "section": "October 9-13",
-    "text": "October 9-13\n\nMonday, October 9\n\nBias\nRead\n\n(Ritchie, 2020), Chapter 4\n\nClass notes\n\n\n\nWednesday, October 11\n\nFile drawer effect\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\n\nAssignment\n\nExercise 03: Alpha, Power, Effect Sizes, & Sample Size\n\nDue\n\nFinal project proposal"
+    "text": "October 9-13\n\nMonday, October 9\nBias\n\nRead\n\n(Ritchie, 2020), Chapter 4\n\nClass notes\n\n\n\nWednesday, October 11\nFile drawer effect\n\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\nLies, damned lies, and statistics\n\nAssignment\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size\n\nDue\n\nFinal project proposal"
   },
   {
     "objectID": "schedule.html#week-09",
     "href": "schedule.html#week-09",
     "title": "schedule",
     "section": "October 16-20",
-    "text": "October 16-20\n\nMonday, October 16\n\nNegligence\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\n\nHype\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) Ranehill et al. (2015)\n\nWatch\n\nCuddy (2012)\n\nClass notes\n\n\n\nFriday, October 20\n\nDue\n\nExercise 03: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 05: Replication"
+    "text": "October 16-20\n\nMonday, October 16\nNegligence\n\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\nHype\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) Ranehill et al. (2015)\n\nWatch\n\nCuddy (2012)\n\nClass notes\n\n\n\nFriday, October 20\nWork session on replication\n\nDue\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
   },
   {
     "objectID": "schedule.html#week-10",
     "href": "schedule.html#week-10",
     "title": "schedule",
     "section": "October 23-27",
-    "text": "October 23-27\n\nMonday, October 23\n\nSolutions\nRead\n\n(Munafò et al., 2017)\n(Begley, 2013)\n\nClass notes\n\n\n\nWednesday, October 25\n\nChanging journal policies\nRead\n\n(B. A. Nosek et al., 2015)\n(Gilmore, Cole, Verma, Aken, & Worthman, 2020)\n(SRCD, 2019)\n\nClass notes\n\n\n\nFriday, October 27\n\nFinal project work day\nDue\n\nExercise 05: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
+    "text": "October 23-27\n\nMonday, October 23\nSolutions\n\nRead\n\n(Munafò et al., 2017)\n(Begley, 2013)\n\nClass notes\n\n\n\nWednesday, October 25\nChanging journal policies\n\nRead\n\n(B. A. Nosek et al., 2015)\n(Gilmore, Cole, Verma, Aken, & Worthman, 2020)\n(SRCD, 2019)\n\nClass notes\n\n\n\nFriday, October 27\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
   },
   {
     "objectID": "schedule.html#week-11",
     "href": "schedule.html#week-11",
     "title": "schedule",
     "section": "October 30 - November 3",
-    "text": "October 30 - November 3\n\nMonday, October 30\n\nLarge-scale replication studies\nRead\n\n(Collaboration, 2015)\n\nClass notes\n\n\n\nWednesday, November 1\n\nMeta-analysis & many analysts\nRead\n\n(Wilson, 2014)\n(Silberzahn et al., 2018)\n\nClass notes\n\n\n\nFriday, November 3\n\nFinal project work day\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018)."
+    "text": "October 30 - November 3\n\nMonday, October 30\nLarge-scale replication studies\n\nRead\n\n(Collaboration, 2015)\n\nClass notes\n\n\n\nWednesday, November 1\nMeta-analysis & many analysts\n\nRead\n\n(Wilson, 2014)\n(Silberzahn et al., 2018)\n\nClass notes\n\n\n\nFriday, November 3\nFinal project work day\n\nOptional Extra Credit Assignment\n\nFor 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018)."
   },
   {
     "objectID": "schedule.html#week-12",
     "href": "schedule.html#week-12",
     "title": "schedule",
     "section": "November 6-10",
-    "text": "November 6-10\n\nMonday, November 6\n\nPreregistration\nRead\n\n(Brian A. Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov\n\nClass notes\n\n\n\nWednesday, November 8\n\nData sharing\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)\n(Optional) National Institutes of Health (n.d.)\n\nClass notes\n\n\n\nFriday, November 10\n\nAssignment distributed\n\nExercise 06: Data and materials sharing\n\nFinal project survey\n\nPlease complete the final project survey."
+    "text": "November 6-10\n\nMonday, November 6\nPreregistration\n\nRead\n\n(Brian A. Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov\n\nClass notes\n\n\n\nWednesday, November 8\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)\n(Optional) National Institutes of Health (n.d.)\n\nClass notes\n\n\n\nFriday, November 10\nWork session: Data sharing\n\nAssignment distributed\n\nExercise 07: Data and materials sharing\n\nFinal project survey\n\nPlease complete the final project survey."
   },
   {
     "objectID": "schedule.html#week-13",
     "href": "schedule.html#week-13",
     "title": "schedule",
     "section": "November 13-17",
-    "text": "November 13-17\n\nMonday, November 13\n\nMaterials, code, & protocol sharing\nRead\n\n(Soska et al., 2021)\n(Gilroy & Kaplan, 2019)\n\nExplore\n\nprotocols.io\nJournal of Visualized Experiments (JOVE)\n\nClass notes\n\n\n\nWednesday, November 15\n\nOpen science tools\nRead\n\n(Kathawalla, Silverstein, & Syed, 2021)\n(Crüwell et al., 2019)\n\nClass notes\n\n\n\nFriday, November 17\n\nFinal project work day\nAssignment Due\n\nExercise 06: Data and materials sharing"
+    "text": "November 13-17\n\nMonday, November 13\nMaterials, code, & protocol sharing\n\nRead\n\n(Soska et al., 2021)\n(Gilroy & Kaplan, 2019)\n\nExplore\n\nprotocols.io\nJournal of Visualized Experiments (JOVE)\n\nClass notes\n\n\n\nWednesday, November 15\nOpen science tools\n\nRead\n\n(Kathawalla, Silverstein, & Syed, 2021)\n(Crüwell et al., 2019)\n\nClass notes\n\n\n\nFriday, November 17\nFinal project work day\n\nAssignment Due\n\nExercise 07: Data and materials sharing"
   },
   {
     "objectID": "schedule.html#november-20-24-thanksgiving-break",
@@ -550,14 +599,14 @@
     "href": "schedule.html#week-14",
     "title": "schedule",
     "section": "November 27 - December 1",
-    "text": "November 27 - December 1\n\nMonday, November 27\n\nIn-class final project work day\n\n\n\nWednesday, November 29\n\nIn-class final project work day\n\n\n\nFriday, December 1\n\nProject presentations\nSchedule"
+    "text": "November 27 - December 1\n\nMonday, November 27\nIn-class final project work day\n\n\nWednesday, November 29\nIn-class final project work day\n\n\nFriday, December 1\nProject presentations\n\nSchedule"
   },
   {
     "objectID": "schedule.html#week-15",
     "href": "schedule.html#week-15",
     "title": "schedule",
     "section": "December 4-8",
-    "text": "December 4-8\n\nMonday, December 4\n\nProject presentations\nSchedule\n\n\n\nWednesday, December 6\n\nProject presentations\nSchedule\n\n\n\nFriday, December 8\n\nClass wrap-up"
+    "text": "December 4-8\n\nMonday, December 4\nProject presentations\n\nSchedule\n\n\n\nWednesday, December 6\nProject presentations\n\nSchedule\n\n\n\nFriday, December 8\n\nClass wrap-up"
   },
   {
     "objectID": "schedule.html#finals-week",

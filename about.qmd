@@ -27,3 +27,9 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'include/bib/packages.bib')
 ```
+
+## Course structure
+
+This is a discussion-focused course.
+On most days we will discuss readings assigned prior to class.
+On most Fridays, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.

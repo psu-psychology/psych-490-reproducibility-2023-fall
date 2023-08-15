@@ -4,11 +4,12 @@ title: "deadlines"
 
 | Date      | What's due/happening |
 |-----------|----------------------|
-| 2023-01-17   | Exercise 00 |
-| 2023-01-25 | Exercise 01 |
-| 2023-02-21  | Exercise 02 |
-| 2023-03-02 | Final project proposal |
-| 2023-03-16  | Exercise 03 |
-| 2023-03-30  | Exercise 04 |
-| 2023-04-13 | Exercise 05 |
-| 2023-05-03  | Final project writeup |
+| 2023-08-31   | Exercise 01 |
+| 2023-09-08 | Exercise 02 |
+| 2023-09-29  | Exercise 03 |
+| 2023-10-06  | Exercise 04 |
+| 2023-10-13 | Final project proposal |
+| 2023-10-20 | Exercise 05 |
+| 2023-10-27 | Exercise 06 |
+| 2023-11-07 | Exercise 07 |
+| 2023-12-13  | Final project writeup |

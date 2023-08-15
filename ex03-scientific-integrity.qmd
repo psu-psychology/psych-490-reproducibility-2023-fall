@@ -5,7 +5,7 @@ subtitle: "Violations of scientific integrity"
 
 ## Dates {-}
 
-Due: [Thursday, March 30, 2023]{.orange_due}.
+Due: [Friday, September 29]{.orange_due}.
 
 ## Goals {-}
 
