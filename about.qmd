@@ -1,6 +1,5 @@
 ---
 title: "about"
-format: html
 ---
 
 ## Instructor {-}
@@ -9,17 +8,25 @@ Rick O. Gilmore, Ph.D.</br>
 Professor of Psychology</br>
 rog1 AT-SIGN psu PERIOD edu</br>
 
-Schedule an appointment: <https://psu.zoom.us/my/rogilmore></br>
+Schedule an appointment: <https://doodle.com/mm/rickgilmore/book-a-time></br>
 Lab web site: <https://gilmore-lab.github.io>
 
 ## Teaching Assistant {-}
 
-TBD
+Jie Yan</br>
+TBD</br>
+jzy5486 AT-SIGN psu PERIOD edu</br>
 
 ## Meeting time & location {-}
 
 Monday, Wednesday, & Friday, 4:40 PM - 5:30 PM</br>
 [Willard Building](https://map.psu.edu/?id=1134#!ct/59509,33177,25403,26748,26749,26750,27255?m/286027?s/) 171
+
+## Course structure
+
+This is a discussion-focused course.
+On most days we will discuss readings assigned prior to class.
+On most Fridays, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -27,9 +34,3 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'include/bib/packages.bib')
 ```
-
-## Course structure
-
-This is a discussion-focused course.
-On most days we will discuss readings assigned prior to class.
-On most Fridays, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.

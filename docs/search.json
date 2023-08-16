@@ -4,21 +4,21 @@
     "href": "about.html",
     "title": "about",
     "section": "",
-    "text": "Rick O. Gilmore, Ph.D. Professor of Psychology rog1 AT-SIGN psu PERIOD edu\nSchedule an appointment: https://psu.zoom.us/my/rogilmore Lab web site: https://gilmore-lab.github.io"
+    "text": "Rick O. Gilmore, Ph.D. Professor of Psychology rog1 AT-SIGN psu PERIOD edu\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time Lab web site: https://gilmore-lab.github.io"
   },
   {
     "objectID": "about.html#instructor",
     "href": "about.html#instructor",
     "title": "about",
     "section": "",
-    "text": "Rick O. Gilmore, Ph.D. Professor of Psychology rog1 AT-SIGN psu PERIOD edu\nSchedule an appointment: https://psu.zoom.us/my/rogilmore Lab web site: https://gilmore-lab.github.io"
+    "text": "Rick O. Gilmore, Ph.D. Professor of Psychology rog1 AT-SIGN psu PERIOD edu\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time Lab web site: https://gilmore-lab.github.io"
   },
   {
     "objectID": "about.html#teaching-assistant",
     "href": "about.html#teaching-assistant",
     "title": "about",
     "section": "Teaching Assistant",
-    "text": "Teaching Assistant\nTBD"
+    "text": "Teaching Assistant\nJie Yan TBD jzy5486 AT-SIGN psu PERIOD edu"
   },
   {
     "objectID": "about.html#meeting-time-location",
@@ -39,7 +39,7 @@
     "href": "deadlines.html",
     "title": "deadlines",
     "section": "",
-    "text": "Date\nWhat’s due/happening\n\n\n\n\n2023-08-31\nExercise 01\n\n\n2023-09-08\nExercise 02\n\n\n2023-09-29\nExercise 03\n\n\n2023-10-06\nExercise 04\n\n\n2023-10-13\nFinal project proposal\n\n\n2023-10-20\nExercise 05\n\n\n2023-10-27\nExercise 06\n\n\n2023-11-07\nExercise 07\n\n\n2023-12-13\nFinal project writeup"
+    "text": "Date\nWhat’s due/happening\n\n\n\n\n2023-08-31\nExercise 01\n\n\n2023-09-08\nExercise 02\n\n\n2023-09-29\nExercise 03\n\n\n2023-10-06\nExercise 04\n\n\n2023-10-13\nFinal project proposal due\n\n\n2023-10-20\nExercise 05\n\n\n2023-10-27\nExercise 06\n\n\n2023-11-10\nExercise 07\n\n\n2023-12-01 - 2023-12-06\nFinal project presentations\n\n\n2023-12-13\nFinal project writeup due"
   },
   {
     "objectID": "evaluation.html",
@@ -413,11 +413,60 @@
     "text": "(a)\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n(e)\n\n\n\n\nFigure 1: Recent books on reproducibility in science.\n\n\nMuch attention has focused on the reproducibility of research in psychology, but the challenges of producing robust and reliable knowledge extend to all scientific disciplines. In this seminar, we will discuss whether there is or is not a reproducibility crisis in psychology and in science more broadly. We will discuss how initiatives to make scientific research more open and transparent can also make it more reproducible and robust."
   },
   {
+    "objectID": "notes/wk01-2023-08-21.html#purpose-goals",
+    "href": "notes/wk01-2023-08-21.html#purpose-goals",
+    "title": "2023-08-21 Mon",
+    "section": "Purpose & goals",
+    "text": "Purpose & goals"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#schedule",
+    "href": "notes/wk01-2023-08-21.html#schedule",
+    "title": "2023-08-21 Mon",
+    "section": "Schedule",
+    "text": "Schedule"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#exercises-evaluation",
+    "href": "notes/wk01-2023-08-21.html#exercises-evaluation",
+    "title": "2023-08-21 Mon",
+    "section": "Exercises & evaluation",
+    "text": "Exercises & evaluation"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#resources",
+    "href": "notes/wk01-2023-08-21.html#resources",
+    "title": "2023-08-21 Mon",
+    "section": "Resources",
+    "text": "Resources"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#what-is-science",
+    "href": "notes/wk01-2023-08-21.html#what-is-science",
+    "title": "2023-08-21 Mon",
+    "section": "What is science?",
+    "text": "What is science?"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#when-why-should-science-be-trusted",
+    "href": "notes/wk01-2023-08-21.html#when-why-should-science-be-trusted",
+    "title": "2023-08-21 Mon",
+    "section": "When & why should science be trusted?",
+    "text": "When & why should science be trusted?"
+  },
+  {
+    "objectID": "notes/wk01-2023-08-21.html#who-trusts-science",
+    "href": "notes/wk01-2023-08-21.html#who-trusts-science",
+    "title": "2023-08-21 Mon",
+    "section": "Who trusts science?",
+    "text": "Who trusts science?"
+  },
+  {
     "objectID": "notes/wk01-2023-08-21.html#references",
     "href": "notes/wk01-2023-08-21.html#references",
     "title": "2023-08-21 Mon",
     "section": "References",
-    "text": "References\n\n\n\n\n\n\nNosek, B. A., & Bar-Anan, Y. (2012). Scientific utopia i: Opening scientific communication. Psychological Inquiry, 23(3), 217–243. https://doi.org/10.1080/1047840X.2012.692215\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669"
+    "text": "References\n\n\n\n\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nOreskes, N. (2019). Why trust science. Princeton University Press.\n\n\nSagan, C. (1996). The demon-haunted world: Science as a candle in the dark (pp. 200–218). Ballantine Books."
   },
   {
     "objectID": "notes/wk01-2023-08-23.html#references",
@@ -494,56 +543,56 @@
     "href": "schedule.html",
     "title": "schedule",
     "section": "",
-    "text": "Introduction to the course\n\nRead\n\n(Feynman, 1974).  \n\nClass notes\n\n\n\n\nHow science works (or should)\n\nRead\n\n(Ritchie, 2020), Chapter 1. Alternate link to PDF on Canvas.\n(Brian A. Nosek & Bar-Anan, 2012). Alternate link to PDF on Canvas. \n\nClass notes\n\n\n\n\nHow to read a scientific paper\n\nRead\n\n(Ruben, 2016).\n(Carey, Steiner, & Petri, 2020) (for fun).\n\nAssignment\n\nExercise 01: Reading a scientific paper\n\nClass notes"
+    "text": "Introduction to the course: Why trust science?\n\nRead\n\n(Optional) (Oreskes, 2019)\n\nClass notes\n\n\n\n\nDon’t Fool Yourself\n\nRead\n\n(Feynman, 1974).\n(Sagan, 1996), Chapter 12, The Fine Art of Baloney Detection. PDF on Canvas\n\nClass notes\n\n\n\n\nHow to read a scientific paper\n\nRead\n\n(Ruben, 2016).\n(Carey, Steiner, & Petri, 2020) (for fun).\n\nAssignment\n\nExercise 01: Reading a scientific paper\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-01",
     "href": "schedule.html#week-01",
     "title": "schedule",
     "section": "",
-    "text": "Introduction to the course\n\nRead\n\n(Feynman, 1974).  \n\nClass notes\n\n\n\n\nHow science works (or should)\n\nRead\n\n(Ritchie, 2020), Chapter 1. Alternate link to PDF on Canvas.\n(Brian A. Nosek & Bar-Anan, 2012). Alternate link to PDF on Canvas. \n\nClass notes\n\n\n\n\nHow to read a scientific paper\n\nRead\n\n(Ruben, 2016).\n(Carey, Steiner, & Petri, 2020) (for fun).\n\nAssignment\n\nExercise 01: Reading a scientific paper\n\nClass notes"
+    "text": "Introduction to the course: Why trust science?\n\nRead\n\n(Optional) (Oreskes, 2019)\n\nClass notes\n\n\n\n\nDon’t Fool Yourself\n\nRead\n\n(Feynman, 1974).\n(Sagan, 1996), Chapter 12, The Fine Art of Baloney Detection. PDF on Canvas\n\nClass notes\n\n\n\n\nHow to read a scientific paper\n\nRead\n\n(Ruben, 2016).\n(Carey, Steiner, & Petri, 2020) (for fun).\n\nAssignment\n\nExercise 01: Reading a scientific paper\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-02",
     "href": "schedule.html#week-02",
     "title": "schedule",
     "section": "August 28-31",
-    "text": "August 28-31\n\nMonday, August 28\nScientific norms and counter-norms\n\nRead\n\n(Merton, 1973). PDF on Canvas.\n(Mitroff, 1974). PDF on Canvas.\n\nAssignment\n\nComplete (anonymous) survey on scientific norms and counter-norms. No write-up.\n\nClass notes\n\n\n\nWednesday, August 30\nAdherence to norms and counter-norms\n\nRead\n\nKardash & Edwards (2012).\nMacfarlane & Cheng (2008).   \n\nClass notes\n\n\n\nFriday, August 31\nNorms and counter-norms\n\nDue\n\nExercise 01: Reading a scientific paper\n\nAssignment\n\nExercise 02: Norms and counter-norms write-up"
+    "text": "August 28-31\n\nMonday, August 28\nHow science works (or should)\n\nRead\n\n(Ritchie, 2020), Chapter 1. Alternate link to PDF on Canvas.\n(Brian A. Nosek & Bar-Anan, 2012). Alternate link to PDF on Canvas. \n\nClass notes\n\n\n\nWednesday, August 30\nScientific norms and counter-norms\n\nRead\n\n(Merton, 1973). PDF on Canvas.\n(Mitroff, 1974). PDF on Canvas.\n\nAssignment\n\nComplete (anonymous) survey on scientific norms and counter-norms. No write-up.\n\nClass notes\n\n\n\nFriday, August 31\nWork session: Norms and counter-norms\n\nDue\n\nExercise 01: Reading a scientific paper\n\nAssignment\n\nExercise 02: Norms and counter-norms write-up"
   },
   {
     "objectID": "schedule.html#week-03",
     "href": "schedule.html#week-03",
     "title": "schedule",
     "section": "September 4-8",
-    "text": "September 4-8\n\nMonday, September 4\nLabor Day: NO CLASS\n\n\nWednesday, September 6\nA replication crisis (or not)\n\nRead\n\n(Ritchie, 2020), Chapter 2. PDF on Canvas.\n(Begley & Ellis, 2012). \n\nClass notes\n\n\n\nFriday, September 8\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nDue\n\nExercise 02: Norms and counter-norms write-up\n\nClass notes"
+    "text": "September 4-8\n\nMonday, September 4\nLabor Day: NO CLASS\n\n\nWednesday, September 6\nAdherence to norms and counter-norms\n\nRead\n\nKardash & Edwards (2012).\nMacfarlane & Cheng (2008).   \n\nClass notes\n\n\n\nFriday, September 8\nA replication crisis (or not)\n\nRead\n\n(Ritchie, 2020), Chapter 2. PDF on Canvas.\n(Begley & Ellis, 2012).\n\nDue\n\nExercise 02: Norms and counter-norms write-up\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-04",
     "href": "schedule.html#week-04",
     "title": "schedule",
     "section": "September 11-15",
-    "text": "September 11-15\n\nMonday, September 11\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nWednesday, September 13\nReplication in cancer biology\n\nRead\n\n(Errington, Mathur, et al., 2021)\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication"
+    "text": "September 11-15\n\nMonday, September 11\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\n\n\n\nWednesday, September 13\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication"
   },
   {
     "objectID": "schedule.html#week-05",
     "href": "schedule.html#week-05",
     "title": "schedule",
     "section": "September 18-22",
-    "text": "September 18-22\n\nMonday, September 18\nThe 4 (5?) Rs\n\nRead\n\n(Brian A. Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021) \n\nClass notes\n\n\n\nWednesday, September 20\nFraud & misconduct\n\nRead\n\n(Ritchie, 2020), Chapter 3\n(Bhattacharjee, 2013)\n(Skim) (Levelt, Drenth, & Noort, 2012)\n(Skim) (Carpenter, 2012)\n\nClass notes\n\n\n\nFriday, September 22\nScientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
+    "text": "September 18-22\n\nMonday, September 18\nReplication in cancer biology\n\nRead\n\n(Errington, Mathur, et al., 2021)\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n\nClass notes\n\n\n\nWednesday, September 20\nThe 4 (5?) Rs\n\nRead\n\n(Brian A. Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021) \n\nClass notes\n\n\n\nFriday, September 22\nWork session: Scientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
   },
   {
     "objectID": "schedule.html#week-06",
     "href": "schedule.html#week-06",
     "title": "schedule",
     "section": "September 25-29",
-    "text": "September 25-29\n\nMonday, September 25\nNO CLASS\n\n\nWednesday, September 27\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nFriday, September 29\nP-hacking\n\nDue\n\nExercise 03: Violations of scientific integrity\n\nAssignment\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
+    "text": "September 25-29\n\nMonday, September 25\nNO CLASS\n\n\nWednesday, September 27\nFraud & misconduct\n\nRead\n\n(Ritchie, 2020), Chapter 3\n(Bhattacharjee, 2013)\n(Skim) (Levelt, Drenth, & Noort, 2012)\n(Skim) (Carpenter, 2012)\n\nClass notes\n\n\n\nFriday, September 29\nP-hacking\n\nDue\n\nExercise 03: Violations of scientific integrity\n\nAssignment\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "schedule.html#week-07",
     "href": "schedule.html#week-07",
     "title": "schedule",
     "section": "October 2-6",
-    "text": "October 2-6\n\nMonday, October 2\nCatch-up day\n\n\nWednesday, October 4\nQuestionable research practices\n\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
+    "text": "October 2-6\n\nMonday, October 2\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nWednesday, October 4\nQuestionable research practices\n\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "schedule.html#week-08",
