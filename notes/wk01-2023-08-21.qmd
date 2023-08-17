@@ -15,21 +15,138 @@ csl: ../include/bib/apa.csl
 
 # Introduction to the course
 
+## People
+
+- Rick Gilmore, Professor of Psychology
+- Jie Yan, Graduate Student
+
 ## Purpose & goals
+
+::: {.incremental}
+- Evaluate the methods and values of scientific research
+- Determine how well these methods and values yield reliable, robust findings
+- Evaluate the reproducibility of findings in psychological science
+- Understand what specific changes in practices are associated with open science
+:::
 
 ## Schedule
 
 ## Exercises & evaluation
 
+- Exercises
+  - 7 @ 10 points/each
+  - Top 4 count
+  - Others count toward partial extra credit
+- Attendance
+- Final project
+
 ## Resources
+
+- This site
+- Canvas
+- University Library
 
 # Why trust science?
 
 ## What is science?
 
-## When & why should science be trusted?
+---
 
+:::: {.columns}
+
+::: {.column width="40%"}
+Robert Merton
+
+![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
+:::
+
+::: {.column width="60%"}
+*What is science, really?*
+
+::: {.incremental}
+- a **stock of accumulated knowledge** (facts & findings)
+- a set of **characteristic methods** 
+- a **set of cultural values** [@Merton1973-vf, p. 268]
+:::
+
+:::
+
+::::
+
+## Why trust science?
+
+## [@Oreskes2017]
+
+::: {.incremental}
+- "Sustained engagement with the world"
+- "Social character"
+:::
+
+## Trust in science
+
+>"We trust too much in science and not enough in religious faith."
+
+https://gssdataexplorer.norc.org/variables/4687/vshow
+
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+if (!dir.exists('csv')) {
+  message("Creating missing `csv/`.")
+  dir.create("csv")
+}
+
+options(gargle_oauth_email = "rick.o.gilmore@gmail.com")
+googledrive::drive_auth()
+
+googledrive::drive_download("NORC-trust-science", path = "csv/norc-trust-science.csv", type = "csv", overwrite = TRUE)
+
+trust <- readr::read_csv("csv/norc-trust-science.csv", show_col_types = FALSE)
+```
+
+```{r fig-norc-trust-sci-survey, fig.cap="NORC survey results: 'We trust too much in science and not enough in religious faith.'"}
+trust |>
+  dplyr::mutate(trust, rating_fact = factor(
+    rating,
+    levels = c(
+      "No answer",
+      "Don't know",
+      "Strongly agree",
+      "Agree",
+      "Neither agree or disagree",
+      "Disagree",
+      "Strongly disagree"
+    ),
+    ordered = TRUE
+  )) |>
+  dplyr::mutate(year = factor(year)) |>
+  ggplot() +
+  aes(rating_fact, proportion, group = year, color = year) +
+  geom_point() +
+  geom_line() +
+  # facet_wrap(~ year) +
+  theme(axis.title.y = element_blank()) +
+  theme(legend.title = element_blank()) +
+  coord_flip()
+```
 ## Who trusts science?
+
+>The results showed that political conservatism, religiousness, conspiracy ideation, and openness to experience significantly contributed to trust in science, while education did not. Furthermore, after controlling for these factors, an aspect of intellectual humility, openness to revising one's viewpoint, emerged as one of the key predictors of trust in science.
+
+<p style="text-align:center;">
+[@Plohl2023-yf]
+</p>
+
+---
+
+```{r fig-trust-in-sci-survey, fig.cap="Optional anonymous survey: https://forms.gle/DEvDGc3boXQuMkg7A"}
+plot(qrcode::qr_code("https://forms.gle/DEvDGc3boXQuMkg7A"))
+```
+
+## Why should we care who trusts science & why they do or don't?
 
 # Next time
 
@@ -41,5 +158,10 @@ csl: ../include/bib/apa.csl
   
 # Resources
 
-## References
+This talk was produced using [Quarto](https://quarto.org), using the [RStudio](https://posit.co/products/open-source/rstudio/)
+Integrated Development Environment (IDE), version 2023.6.1.524.
 
+The source files are in R and R Markdown, then rendered to HTML using the
+[revealJS](https://revealjs.com) framework. 
+
+## References
