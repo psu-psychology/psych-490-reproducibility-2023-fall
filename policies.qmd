@@ -12,9 +12,13 @@ Students with questions about academic integrity should visit <http://www.la.psu
 
 Penn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.
 
-Students are responsible for maintaining academic integrity.  Violations include cheating on exams, talking to others during exams, looking at another student's test materials or answers during an exam, removing exams from the classroom without consent from the instructor, plagiarizing (do not copy from someone else!), and dishonesty in any aspect of course participation.
+Unless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.
 
 When you complete assignments, remember the **ABC**s to avoid plagiarism: **A**lways place copied information within quotation marks, include information about the quoted or paraphrased source in a **B**ibliography, and **C**ite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.
+
+**Students with questions about academic integrity should ask me or the TA before submitting work.**   
+
+Students facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.
 
 ## Absences or late assignments {- #late-missed-assignments}
 
@@ -74,13 +78,13 @@ For more information regarding the University's policies and procedures for resp
  
 Additionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.
 
-## COVID safety information (last updated 2021-08-12) {- #covid}
+<!-- ## COVID safety information (last updated 2021-08-12) {- #covid} -->
 
-Please consult the Penn State Covid-19 Dashboard for updates on masking policies, instructional-mode changes, etc. <https://virusinfo.psu.edu/covid-19-dashboard/>.
+<!-- Please consult the Penn State Covid-19 Dashboard for updates on masking policies, instructional-mode changes, etc. <https://virusinfo.psu.edu/covid-19-dashboard/>. -->
 
-This class will meet in-person unless there is a change in University policy.
+<!-- This class will meet in-person unless there is a change in University policy. -->
 
-Penn State University requires everyone to wear a face mask in all university buildings, including classrooms, regardless of vaccination status. **ALL STUDENTS MUST** wear a mask appropriately (i.e., covering both your mouth and nose) while you are indoors on campus.  This is to protect your health and safety as well as the health and safety of your classmates, instructor, and the university community. Anyone attending class without a mask will be asked to put one on or leave. Instructors may end class if anyone present refuses to appropriately wear a mask for the duration of class. Students who refuse to wear masks appropriately may face disciplinary action for Code of Conduct violations.  If you feel you cannot wear a mask during class, please speak with your adviser immediately about your options for altering your schedule.
+<!-- Penn State University requires everyone to wear a face mask in all university buildings, including classrooms, regardless of vaccination status. **ALL STUDENTS MUST** wear a mask appropriately (i.e., covering both your mouth and nose) while you are indoors on campus.  This is to protect your health and safety as well as the health and safety of your classmates, instructor, and the university community. Anyone attending class without a mask will be asked to put one on or leave. Instructors may end class if anyone present refuses to appropriately wear a mask for the duration of class. Students who refuse to wear masks appropriately may face disciplinary action for Code of Conduct violations.  If you feel you cannot wear a mask during class, please speak with your adviser immediately about your options for altering your schedule. -->
 
 ## Zoom {- #zoom}
 	
