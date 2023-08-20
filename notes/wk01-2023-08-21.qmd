@@ -148,6 +148,17 @@ plot(qrcode::qr_code("https://forms.gle/DEvDGc3boXQuMkg7A"))
 
 ## Why should we care who trusts science & why they do or don't?
 
+---
+
+![https://en.wikipedia.org/wiki/Trust,_but_verify](https://upload.wikimedia.org/wikipedia/commons/b/bf/President_Ronald_Reagan_and_Mikhail_Gorbachev_during_the_second_plenary_session.jpg){fig-align="center" height=50% width=50%}
+
+>Trust, but verify
+
+<p style="text-align:center;">
+Russian Proverb, [Wikipedia](https://en.wikipedia.org/wiki/Trust,_but_verify)
+</p>
+
+
 # Next time
 
 **Don't Fool Yourself**

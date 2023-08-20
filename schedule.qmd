@@ -9,7 +9,7 @@ title: "schedule"
 **Introduction to the course: Why trust science?**
 
 - Read
-  - (Optional) [@Oreskes2017]
+  - (Recommended) [@Oreskes2017, Chapter 1, pp. 55-68] | [PDF on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=152167033).
 - [Class notes](notes/wk01-2023-08-21.qmd)
 
 ### Wednesday, August 23 {-}
