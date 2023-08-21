@@ -17,6 +17,10 @@ You may choose any of a wide range of topics for your final project:
 - A paper or papers that do or do not replicate.
 - Independent research on some topic related to open science.
 
+Here are some topics students chose in Spring 2023:
+
+<https://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/presentations.html#presentations-day-1>
+
 ## Formats {-}
 
 There are multiple formats for your final project.
