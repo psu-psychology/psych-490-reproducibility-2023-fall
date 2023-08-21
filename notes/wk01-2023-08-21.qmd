@@ -54,6 +54,15 @@ csl: ../include/bib/apa.csl
 - Understand what specific changes in practices are associated with open science
 :::
 
+## Themes & topics
+
+- What is science trying to do?
+- What practices and norms constitute better science? 
+- What practices and norms constitute poorer science?
+- Is there a crisis of reproducibility or replicability in psychological science?
+- Is there a crisis in other areas of science?
+- What are scientists doing to address these criticisms?
+
 ## Schedule
 
 <https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/schedule.html>
@@ -72,6 +81,22 @@ csl: ../include/bib/apa.csl
 - This site: <https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/>
 - [Canvas](https://psu.instructure.com/courses/2280122)
 - University Library
+
+---
+
+![](../include/img/ritchie-science-fictions.jpg){fig-align="center"}
+---
+
+- Articles
+    - Retrieve them yourself via the URL (uniform resource locator) and the [DOI](https://www.doi.org) (digital object identifier).
+    - Why do I do this?
+    
+## Structure
+
+- Meet 3x weekly
+- Monday & Wednesday: lecture + discussion
+- Friday: Work sessions
+- Do your homework; I will call on you.
 
 ## Culture & climate
 

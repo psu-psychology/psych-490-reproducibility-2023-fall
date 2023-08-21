@@ -6,3 +6,4 @@ psych-490-reproducibility-2023-fall.Rproj
 csv
 /.quarto/
 .DS_Store
+*.csv
