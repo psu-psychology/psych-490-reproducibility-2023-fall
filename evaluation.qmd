@@ -6,9 +6,9 @@ title: "evaluation"
 
 | Component | Description                                  | Points |
 |-----------|----------------------------------------------|--------:|
-| Attendance | You will receive one (1) point for each class you attend. | 30 |
+| Attendance | You will receive 0.75 points for each class you attend. | 35 |
 | Exercises | There will be seven (7) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade. | 40 |
-| Final project | You will complete a [final project](final-project.qmd), either on your own, or with a small group of 3 or less. Your final project is worth 30 points. | 30 |
+| Final project | You will complete a [final project](final-project.qmd), either on your own, or with a small group of 3 or less. Your final project is worth 30 points. | 25 |
 | | **TOTAL POINTS POSSIBLE** | 100 |
 | Extra Credit | If you submit more than four exercise write-ups, you may earn up to 10 extra credit points. | |
 

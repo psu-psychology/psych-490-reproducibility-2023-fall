@@ -2,7 +2,9 @@
 title: "2023-08-21 Mon"
 subtitle: "Course intro"
 author: "Rick Gilmore"
-format: revealjs
+format: 
+  revealjs:
+    footer: PSYCH 490.009
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
 csl: ../include/bib/apa.csl
 ---
@@ -20,6 +22,29 @@ csl: ../include/bib/apa.csl
 - Rick Gilmore, Professor of Psychology
 - Jie Yan, Graduate Student
 
+---
+
+<!-- Gilmore photo biography -->
+
+:::: {.columns}
+
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG){height=150px}
+![](http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png){height=150px}
+![](https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"){height=150px}
+![](https://ai.cs.cmu.edu/sites/default/files/CMU.png){height=150px}
+:::
+
+::: {.column width=50%}
+![](../include/img/sleic.png){height=150px}
+![](https://nyu.databrary.org/web/images/logo/databrary-nav.svg){height=150px}
+![](https://www.play-project.org/img/PLAY-logo.png){height=150px}
+
+:::
+
+::::
+
+
 ## Purpose & goals
 
 ::: {.incremental}
@@ -31,20 +56,27 @@ csl: ../include/bib/apa.csl
 
 ## Schedule
 
+<https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/schedule.html>
+
 ## Exercises & evaluation
 
 - Exercises
   - 7 @ 10 points/each
   - Top 4 count
   - Others count toward partial extra credit
-- Attendance
-- Final project
+- Attendance (up to 35 points)
+- Final project 
 
 ## Resources
 
-- This site
-- Canvas
+- This site: <https://psu-psychology.github.io/psych-490-reproducibility-2023-fall/>
+- [Canvas](https://psu.instructure.com/courses/2280122)
 - University Library
+
+## Culture & climate
+
+- Creating a community of inquiry
+- Criticism of *work/ideas* vs. *people*
 
 # Why trust science?
 
