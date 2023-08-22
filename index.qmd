@@ -3,6 +3,7 @@ title: "PSYCH 490.009"
 subtitle: "Fall 2023"
 author: "Rick Gilmore"
 format: html
+css: include/css/styles.css
 #bibliography: [include/bib/packages.bib, include/bib/psu-repro.bib]
 #csl: include/bib/apa.csl
 ---

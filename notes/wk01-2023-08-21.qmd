@@ -7,6 +7,7 @@ format:
     footer: PSYCH 490.009
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
 csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
 ---
 
 # Overview
@@ -56,12 +57,14 @@ csl: ../include/bib/apa.csl
 
 ## Themes & topics
 
+::: {.incremental}
 - What is science trying to do?
 - What practices and norms constitute better science? 
 - What practices and norms constitute poorer science?
 - Is there a crisis of reproducibility or replicability in psychological science?
 - Is there a crisis in other areas of science?
 - What are scientists doing to address these criticisms?
+:::
 
 ## Schedule
 

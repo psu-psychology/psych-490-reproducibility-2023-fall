@@ -29,8 +29,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="../include/css/styles.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -343,16 +363,76 @@ Rick Gilmore
 </div>
 
 </section>
+<section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 
 </section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+</section>
+<section id="today" class="slide level2">
+<h2>Today</h2>
+<ul>
+<li>Brief show &amp; tell about Survey 01</li>
+</ul>
+<p><strong>How to read a scientific paper</strong></p>
+<ul>
+<li>Read
+<ul>
+<li><span class="citation" data-cites="Ruben2016-om">(<a href="#/references" role="doc-biblioref" onclick="">Ruben, 2016</a>)</span>.</li>
+<li><span class="citation" data-cites="Carey2020-ut">(<a href="#/references" role="doc-biblioref" onclick="">Carey, Steiner, &amp; Petri, 2020</a>)</span> (for fun).</li>
+</ul></li>
+<li><span class="green_assigned">Assignment</span>
+<ul>
+<li><a href="../ex01-read-a-scientific-paper.html">Exercise 01: Reading a scientific paper</a></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="survey-01" class="title-slide slide level1 center">
+<h1>Survey 01</h1>
 
+</section>
+<section id="aims" class="slide level2">
+<h2>Aims</h2>
+<ul>
+<li>Replicate data from <span class="citation" data-cites="Krumrei-Mancuso2016-qm Nadelson2014-ym Plohl2023-yf">(<a href="#/references" role="doc-biblioref" onclick="">Krumrei-Mancuso &amp; Rouse, 2016</a>; <a href="#/references" role="doc-biblioref" onclick="">Nadelson et al., 2014</a>; <a href="#/references" role="doc-biblioref" onclick="">Plohl &amp; Musil, 2023</a>)</span></li>
+<li>Create open, transparent, reproducible work flow for cleaning and visualizing these data</li>
+<li>Provoke thought about the relationship between the questions and the constructs</li>
+<li>Learn more about your views on these topics</li>
+<li><a href="https://forms.gle/WW7aDAMb99zy9tzv5">Survey 01 link</a></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><a href="../survey-01.html">Survey 01 results</a></p>
+</section></section>
+<section>
+<section id="how-to-read-a-scientific-paper" class="title-slide slide level1 center">
+<h1>How to read a scientific paper</h1>
+
+</section>
+<section id="gilmores-inside-out-suggestions" class="slide level2">
+<h2>Gilmore’s “inside-out” suggestions</h2>
+<ul>
+<li>Abstract</li>
+<li>Then methods</li>
+<li>Then results, especially figures</li>
+<li>Highlight/look up jargon</li>
+<li>Conclusion, then introduction</li>
+</ul>
+</section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
+<p><strong>How science works (or should)</strong></p>
 <ul>
-<li><a href="../schedule.html#wk1-2023-08-25"><strong>TITLE</strong></a>**</li>
-<li>Read:</li>
+<li>Read
+<ul>
+<li><span class="citation" data-cites="Ritchie2020-fm">(<a href="#/references" role="doc-biblioref" onclick="">Ritchie, 2020</a>)</span>, Chapter 1. <a href="https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654645">Alternate link to PDF on Canvas</a>.</li>
+<li><span class="citation" data-cites="Nosek2012-al">(<a href="#/references" role="doc-biblioref" onclick="">Nosek &amp; Bar-Anan, 2012</a>)</span>. <a href="https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654434">Alternate link to PDF on Canvas</a>.</li>
+</ul></li>
+<li><a href="notes/wk01-2023-08-23.qmd">Class notes</a></li>
 </ul>
 </section>
 
@@ -361,11 +441,34 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="footer footer-default">
 
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-Carey2020-ut" class="csl-entry" role="listitem">
+Carey, M. A., Steiner, K. L., &amp; Petri, W. A., Jr. (2020). Ten simple rules for reading a scientific paper. <em>PLoS <span>C</span>omputational <span>B</span>iology</em>, <em>16</em>(7), e1008032. <a href="https://doi.org/10.1371/journal.pcbi.1008032">https://doi.org/10.1371/journal.pcbi.1008032</a>
+</div>
+<div id="ref-Krumrei-Mancuso2016-qm" class="csl-entry" role="listitem">
+Krumrei-Mancuso, E. J., &amp; Rouse, S. V. (2016). The development and validation of the comprehensive intellectual humility scale. <em>Journal of Personality Assessment</em>, <em>98</em>(2), 209–221. <a href="https://doi.org/10.1080/00223891.2015.1068174">https://doi.org/10.1080/00223891.2015.1068174</a>
+</div>
+<div id="ref-Nadelson2014-ym" class="csl-entry" role="listitem">
+Nadelson, L., Jorcyk, C., Yang, D., Jarratt Smith, M., Matson, S., Cornell, K., &amp; Husting, V. (2014). <span>I</span> just don’t trust them: The development and validation of an assessment instrument to measure trust in science and scientists. <em>School Science and Mathematics</em>, <em>114</em>(2), 76–86. <a href="https://doi.org/10.1111/ssm.12051">https://doi.org/10.1111/ssm.12051</a>
+</div>
+<div id="ref-Nosek2012-al" class="csl-entry" role="listitem">
+Nosek, B. A., &amp; Bar-Anan, Y. (2012). Scientific utopia i: Opening scientific communication. <em>Psychological Inquiry</em>, <em>23</em>(3), 217–243. <a href="https://doi.org/10.1080/1047840X.2012.692215">https://doi.org/10.1080/1047840X.2012.692215</a>
+</div>
+<div id="ref-Plohl2023-yf" class="csl-entry" role="listitem">
+Plohl, N., &amp; Musil, B. (2023). Assessing the incremental value of intellectual humility and cognitive reflection in predicting trust in science. <em>Personality and Individual Differences</em>, <em>214</em>, 112340. <a href="https://doi.org/10.1016/j.paid.2023.112340">https://doi.org/10.1016/j.paid.2023.112340</a>
+</div>
+<div id="ref-Ritchie2020-fm" class="csl-entry" role="listitem">
+Ritchie, S. (2020). <em>Science fictions: Exposing fraud, bias, negligence and hype in science</em> (1st ed.). Penguin Random House. Retrieved from <a href="https://www.amazon.com/Science-Fictions/dp/1847925669">https://www.amazon.com/Science-Fictions/dp/1847925669</a>
+</div>
+<div id="ref-Ruben2016-om" class="csl-entry" role="listitem">
+Ruben, A. (2016). How to read a scientific paper. <em>Science| AAAS [Internet]</em>, <em>20</em>. Retrieved from <a href="https://www.science.org/content/article/how-read-scientific-paper-rev2">https://www.science.org/content/article/how-read-scientific-paper-rev2</a>
+</div>
 </div>
 </section></section>
     </div>

@@ -2,17 +2,17 @@
 title: "Survey 01"
 ---
 
-## Purpose
+## Purpose {-}
 
 This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.
 
 The survey questions were adapted from those discussed in [@Krumrei-Mancuso2016-qm; @Nadelson2014-ym; @Plohl2023-yf].
 
-## Survey
+## Survey {-}
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-## Preparation
+## Preparation {-}
 
 First, we load the external packages (groups of R commands) that we will be using.
 
@@ -23,9 +23,10 @@ library('dplyr')
 library('tidyr')
 library('stringr')
 library('lubridate')
+library('GGally')
 ```
 
-## Gathering
+## Gathering {-}
 
 Next, we download the data from the Google Sheet where it is collected.
 Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command `Sys.getenv("GMAIL_SURVEY")`.
@@ -50,7 +51,7 @@ Because these data *might* contain sensitive or identifiable information, we onl
 This is achieved by adding the name of the data directory to a special `.gitignore` file.
 :::
 
-## Cleaning
+## Cleaning {-}
 
 Next we load the data file and clean it.
 
@@ -73,11 +74,11 @@ We first rename the variables from the "Openness to Revising One’s Viewpoint" 
 survey_01_clean <- survey_01 |>
   dplyr::rename(
     timestamp = "Timestamp",
-    changed_when_shown_wrong = "I have at times changed opinions that were important to me, when someone showed me I was wrong.",
-    would_change_good_reason = "I am willing to change my position on an important issue in the face of good reasons." ,
-    would_changed_new_info = "I am open to revising my important beliefs in the face of new information.",
-    would_change_compelling_reason = "I am willing to change my opinions on the basis of compelling reason.",
-    would_change_mind_when_made_up = "I’m willing to change my mind once it’s made up about an important topic.",
+    when_shown_wrong = "I have at times changed opinions that were important to me, when someone showed me I was wrong.",
+    good_reason = "I am willing to change my position on an important issue in the face of good reasons." ,
+    new_info = "I am open to revising my important beliefs in the face of new information.",
+    compelling_reason = "I am willing to change my opinions on the basis of compelling reason.",
+    mind_made_up = "I’m willing to change my mind once it’s made up about an important topic.",
     comments = "Comments"
   )
 ```
@@ -117,18 +118,27 @@ Now, let's look at the names to confirm they all got changed.
 names(survey_01_clean)
 ```
 
-### Data dictionary
+### Data dictionary {-}
 
 We'll pause here to start building a [data dictionary](https://en.wikipedia.org/wiki/Data_dictionary), a file that explains the origin, format, and usage of our dataset.
 
 ```{r}
-survey_01_data_dictionary <- tibble::tibble(question = survey_01_qs, short_name = names(survey_01_clean),
-                                            reference = c(NA, rep("krumrei-mancuso-2016", 5), rep("nadelson-2014", 21), NA))
+survey_01_data_dictionary <-
+  tibble::tibble(
+    question = survey_01_qs,
+    short_name = names(survey_01_clean),
+    reference = c(
+      NA,
+      rep("krumrei-mancuso-2016", 5),
+      rep("nadelson-2014", 21),
+      NA
+    )
+  )
 ```
 
 We'll add other items to the data dictionary later.
 
-### Filtering out irrelevant responses
+### Filtering out irrelevant responses {-}
 
 We should omit the first response in the dataset.
 That was the one Dr. Gilmore used to generate a Google Sheet, and isn't real data.
@@ -137,9 +147,101 @@ That was the one Dr. Gilmore used to generate a Google Sheet, and isn't real dat
 n_responses <- dim(survey_01_clean)[1]
 
 if (n_responses > 1) {
-  survey_01_clean <- survey_01_clean[2:n_responses]  
+  survey_01_clean <- survey_01_clean[2:n_responses,]  
 } else {
   message("No 'non-test' responses yet. Leaving data file unchanged.")
 }
+```
+
+## Visualizations {-}
+
+```{r fig-survey-01-timeseries, fig.cap="Time series of responses to Survey 01"}
+survey_01_clean |>
+  dplyr::mutate(resp_index = 1:(n_responses-1)) |>
+  ggplot() +
+  aes(x = timestamp, resp_index) +
+  geom_point()
+```
+
+### Openness questions
+
+Remember:
+
+![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
+
+```{r fig-scatterpairs-openness-q2-6, message=FALSE, fig.cap="Reponses to Openness to Revising One’s Viewpoint subscale questions from [@Krumrei-Mancuso2016-qm]"}
+survey_01_clean[,2:6] |>
+  ggpairs()
+
+survey_01_data_dictionary[2:6,1:2] |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+
+### Trust in science questions
+
+:::{.callout-note}
+
+It would be even better to create a function that generates the plot and shows the long and short question names.
+Any time I repeat myself, I should remember this acronym:
+
+**D**on't **R**epeat **Y**ourself 
+
+**W**rite **I**t **D**own
+
+:::
+
+There are a number of these, so we break them into smaller groups for visualization.
+
+![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
+
+```{r fig-scatterpairs-trust-q7-11, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
+survey_01_clean[, 7:11] |>
+  ggpairs()
+
+survey_01_data_dictionary[7:11,1:2] |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+
+```{r fig-scatterpairs-trust-q12-16, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
+survey_01_clean[, 12:16] |>
+  ggpairs()
+
+survey_01_data_dictionary[12:16,1:2] |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+
+```{r fig-scatterpairs-trust-q17-21, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
+q_range <- c(17:21)
+
+survey_01_clean[, q_range] |>
+  ggpairs()
+
+survey_01_data_dictionary[q_range,1:2] |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+
+```{r fig-scatterpairs-trust-q22-27, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
+q_range <- c(22:27)
+
+survey_01_clean[, q_range] |>
+  ggpairs()
+
+survey_01_data_dictionary[q_range,1:2] |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+
+### Comments
+
+```{r}
+survey_01_clean |>
+  dplyr::select(comments) |>
+  dplyr::filter(!is.na(comments)) |>
+  knitr::kable(format="html") |>
+  kableExtra::kable_classic()
 ```
 

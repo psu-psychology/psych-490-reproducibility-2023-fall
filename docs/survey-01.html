@@ -118,6 +118,9 @@ div.csl-indent {
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="include/css/styles.css">
 </head>
@@ -246,6 +249,12 @@ div.csl-indent {
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   <li><a href="#filtering-out-irrelevant-responses" id="toc-filtering-out-irrelevant-responses" class="nav-link" data-scroll-target="#filtering-out-irrelevant-responses">Filtering out irrelevant responses</a></li>
   </ul></li>
+  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a>
+  <ul class="collapse">
+  <li><a href="#openness-questions" id="toc-openness-questions" class="nav-link" data-scroll-target="#openness-questions">Openness questions</a></li>
+  <li><a href="#trust-in-science-questions" id="toc-trust-in-science-questions" class="nav-link" data-scroll-target="#trust-in-science-questions">Trust in science questions</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -269,23 +278,23 @@ div.csl-indent {
 
 </header>
 
-<section id="purpose" class="level2">
-<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<section id="purpose" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="purpose">Purpose</h2>
 <p>This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.</p>
 <p>The survey questions were adapted from those discussed in <span class="citation" data-cites="Krumrei-Mancuso2016-qm Nadelson2014-ym Plohl2023-yf">(<a href="#ref-Krumrei-Mancuso2016-qm" role="doc-biblioref">Krumrei-Mancuso &amp; Rouse, 2016</a>; <a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>; <a href="#ref-Plohl2023-yf" role="doc-biblioref">Plohl &amp; Musil, 2023</a>)</span>.</p>
 </section>
-<section id="survey" class="level2">
-<h2 class="anchored" data-anchor-id="survey">Survey</h2>
+<section id="survey" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="survey">Survey</h2>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">
 Loading…
 </iframe>
 </section>
-<section id="preparation" class="level2">
-<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
+<section id="preparation" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="preparation">Preparation</h2>
 <p>First, we load the external packages (groups of R commands) that we will be using.</p>
 </section>
-<section id="gathering" class="level2">
-<h2 class="anchored" data-anchor-id="gathering">Gathering</h2>
+<section id="gathering" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="gathering">Gathering</h2>
 <p>Next, we download the data from the Google Sheet where it is collected. Dr.&nbsp;Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command <code>Sys.getenv("GMAIL_SURVEY")</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="st">'csv'</span>)) {</span>
@@ -314,8 +323,8 @@ Note
 </div>
 </div>
 </section>
-<section id="cleaning" class="level2">
-<h2 class="anchored" data-anchor-id="cleaning">Cleaning</h2>
+<section id="cleaning" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="cleaning">Cleaning</h2>
 <p>Next we load the data file and clean it.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>survey_01 <span class="ot">&lt;-</span></span>
@@ -362,11 +371,11 @@ Note
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean <span class="ot">&lt;-</span> survey_01 <span class="sc">|&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">timestamp =</span> <span class="st">"Timestamp"</span>,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">changed_when_shown_wrong =</span> <span class="st">"I have at times changed opinions that were important to me, when someone showed me I was wrong."</span>,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">would_change_good_reason =</span> <span class="st">"I am willing to change my position on an important issue in the face of good reasons."</span> ,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">would_changed_new_info =</span> <span class="st">"I am open to revising my important beliefs in the face of new information."</span>,</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">would_change_compelling_reason =</span> <span class="st">"I am willing to change my opinions on the basis of compelling reason."</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">would_change_mind_when_made_up =</span> <span class="st">"I’m willing to change my mind once it’s made up about an important topic."</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">when_shown_wrong =</span> <span class="st">"I have at times changed opinions that were important to me, when someone showed me I was wrong."</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">good_reason =</span> <span class="st">"I am willing to change my position on an important issue in the face of good reasons."</span> ,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">new_info =</span> <span class="st">"I am open to revising my important beliefs in the face of new information."</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">compelling_reason =</span> <span class="st">"I am willing to change my opinions on the basis of compelling reason."</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mind_made_up =</span> <span class="st">"I’m willing to change my mind once it’s made up about an important topic."</span>,</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">comments =</span> <span class="st">"Comments"</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -401,9 +410,9 @@ Note
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(survey_01_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "timestamp"                         "changed_when_shown_wrong"         
- [3] "would_change_good_reason"          "would_changed_new_info"           
- [5] "would_change_compelling_reason"    "would_change_mind_when_made_up"   
+<pre><code> [1] "timestamp"                         "when_shown_wrong"                 
+ [3] "good_reason"                       "new_info"                         
+ [5] "compelling_reason"                 "mind_made_up"                     
  [7] "ignore_contradictory_evidence"     "theories_are_weak"                
  [9] "keep_work_secret"                  "dont_value_others_ideas"          
 [11] "dont_care_laypeople_understand"    "should_trust_work"                
@@ -417,28 +426,518 @@ Note
 [27] "trust_find_tech_solutions"         "comments"                         </code></pre>
 </div>
 </div>
-<section id="data-dictionary" class="level3">
-<h3 class="anchored" data-anchor-id="data-dictionary">Data dictionary</h3>
+<section id="data-dictionary" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="data-dictionary">Data dictionary</h3>
 <p>We’ll pause here to start building a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a>, a file that explains the origin, format, and usage of our dataset.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">question =</span> survey_01_qs, <span class="at">short_name =</span> <span class="fu">names</span>(survey_01_clean),</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                                            <span class="at">reference =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="fu">rep</span>(<span class="st">"krumrei-mancuso-2016"</span>, <span class="dv">5</span>), <span class="fu">rep</span>(<span class="st">"nadelson-2014"</span>, <span class="dv">21</span>), <span class="cn">NA</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary <span class="ot">&lt;-</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">question =</span> survey_01_qs,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">short_name =</span> <span class="fu">names</span>(survey_01_clean),</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">reference =</span> <span class="fu">c</span>(</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      <span class="cn">NA</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">rep</span>(<span class="st">"krumrei-mancuso-2016"</span>, <span class="dv">5</span>),</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">rep</span>(<span class="st">"nadelson-2014"</span>, <span class="dv">21</span>),</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>      <span class="cn">NA</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll add other items to the data dictionary later.</p>
 </section>
-<section id="filtering-out-irrelevant-responses" class="level3">
-<h3 class="anchored" data-anchor-id="filtering-out-irrelevant-responses">Filtering out irrelevant responses</h3>
+<section id="filtering-out-irrelevant-responses" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="filtering-out-irrelevant-responses">Filtering out irrelevant responses</h3>
 <p>We should omit the first response in the dataset. That was the one Dr.&nbsp;Gilmore used to generate a Google Sheet, and isn’t real data.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>n_responses <span class="ot">&lt;-</span> <span class="fu">dim</span>(survey_01_clean)[<span class="dv">1</span>]</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (n_responses <span class="sc">&gt;</span> <span class="dv">1</span>) {</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  survey_01_clean <span class="ot">&lt;-</span> survey_01_clean[<span class="dv">2</span><span class="sc">:</span>n_responses]  </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  survey_01_clean <span class="ot">&lt;-</span> survey_01_clean[<span class="dv">2</span><span class="sc">:</span>n_responses,]  </span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"No 'non-test' responses yet. Leaving data file unchanged."</span>)</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="visualizations" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="visualizations">Visualizations</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">resp_index =</span> <span class="dv">1</span><span class="sc">:</span>(n_responses<span class="dv">-1</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> timestamp, resp_index) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-survey-01-timeseries" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-survey-01-timeseries-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Time series of responses to Survey 01</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="openness-questions" class="level3">
+<h3 class="anchored" data-anchor-id="openness-questions">Openness questions</h3>
+<p>Remember:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/survey-01-resp-options.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Survey 01 response options</figcaption>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean[,<span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>] <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggpairs</span>()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[<span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatterpairs-openness-q2-6-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+question
+</th>
+<th style="text-align:left;">
+short_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+I have at times changed opinions that were important to me, when someone showed me I was wrong.
+</td>
+<td style="text-align:left;">
+when_shown_wrong
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I am willing to change my position on an important issue in the face of good reasons.
+</td>
+<td style="text-align:left;">
+good_reason
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I am open to revising my important beliefs in the face of new information.
+</td>
+<td style="text-align:left;">
+new_info
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I am willing to change my opinions on the basis of compelling reason.
+</td>
+<td style="text-align:left;">
+compelling_reason
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I’m willing to change my mind once it’s made up about an important topic.
+</td>
+<td style="text-align:left;">
+mind_made_up
+</td>
+</tr>
+</tbody>
+
+</table>
+<figcaption class="figure-caption">Figure&nbsp;2: Reponses to Openness to Revising One’s Viewpoint subscale questions from <span class="citation" data-cites="Krumrei-Mancuso2016-qm">(<a href="#ref-Krumrei-Mancuso2016-qm" role="doc-biblioref">Krumrei-Mancuso &amp; Rouse, 2016</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatterpairs-openness-q2-6-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-scatterpairs-openness-q2-6-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Reponses to Openness to Revising One’s Viewpoint subscale questions from <span class="citation" data-cites="Krumrei-Mancuso2016-qm">(<a href="#ref-Krumrei-Mancuso2016-qm" role="doc-biblioref">Krumrei-Mancuso &amp; Rouse, 2016</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="trust-in-science-questions" class="level3">
+<h3 class="anchored" data-anchor-id="trust-in-science-questions">Trust in science questions</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It would be even better to create a function that generates the plot and shows the long and short question names. Any time I repeat myself, I should remember this acronym:</p>
+<p><strong>D</strong>on’t <strong>R</strong>epeat <strong>Y</strong>ourself</p>
+<p><strong>W</strong>rite <strong>I</strong>t <strong>D</strong>own</p>
+</div>
+</div>
+<p>There are a number of these, so we break them into smaller groups for visualization.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/survey-01-resp-options.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Survey 01 response options</figcaption>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean[, <span class="dv">7</span><span class="sc">:</span><span class="dv">11</span>] <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggpairs</span>()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[<span class="dv">7</span><span class="sc">:</span><span class="dv">11</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatterpairs-trust-q7-11-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+question
+</th>
+<th style="text-align:left;">
+short_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Scientists ignore evidence that contradicts their work.
+</td>
+<td style="text-align:left;">
+ignore_contradictory_evidence
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientific theories are weak explanations.
+</td>
+<td style="text-align:left;">
+theories_are_weak
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientists intentionally keep their work secret.
+</td>
+<td style="text-align:left;">
+keep_work_secret
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientists don’t value the ideas of others.
+</td>
+<td style="text-align:left;">
+dont_value_others_ideas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientists don’t care if laypersons understand their work.
+</td>
+<td style="text-align:left;">
+dont_care_laypeople_understand
+</td>
+</tr>
+</tbody>
+
+</table>
+<figcaption class="figure-caption">Figure&nbsp;4: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatterpairs-trust-q7-11-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-scatterpairs-trust-q7-11-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean[, <span class="dv">12</span><span class="sc">:</span><span class="dv">16</span>] <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggpairs</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>No 'non-test' responses yet. Leaving data file unchanged.</code></pre>
+<pre><code>Warning in cor(x, y): the standard deviation is zero
+
+Warning in cor(x, y): the standard deviation is zero
+
+Warning in cor(x, y): the standard deviation is zero
+
+Warning in cor(x, y): the standard deviation is zero</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[<span class="dv">12</span><span class="sc">:</span><span class="dv">16</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatterpairs-trust-q12-16-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+question
+</th>
+<th style="text-align:left;">
+short_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+We should trust the work of scientists.
+</td>
+<td style="text-align:left;">
+should_trust_work
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We should trust that scientists are being honest in their work.
+</td>
+<td style="text-align:left;">
+should_trust_honesty
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We should trust that scientists are being ethical in their work.
+</td>
+<td style="text-align:left;">
+should_trust_ethical
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+People who understand science more have more trust in science.
+</td>
+<td style="text-align:left;">
+more_understanding_more_trust
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We can trust science to find the answers that explain the natural world.
+</td>
+<td style="text-align:left;">
+trust_explain_natural_world
+</td>
+</tr>
+</tbody>
+
+</table>
+<figcaption class="figure-caption">Figure&nbsp;6: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatterpairs-trust-q12-16-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-scatterpairs-trust-q12-16-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;7: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>q_range <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">17</span><span class="sc">:</span><span class="dv">21</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>survey_01_clean[, q_range] <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggpairs</span>()</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[q_range,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatterpairs-trust-q17-21-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+question
+</th>
+<th style="text-align:left;">
+short_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+We cannot trust scientists because they are biased in their perspectives.
+</td>
+<td style="text-align:left;">
+cant_trust_biased
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientists will protect each other even when they are wrong.
+</td>
+<td style="text-align:left;">
+protect_each_other_when_wrong
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We cannot trust scientists to consider ideas that contradict their own.
+</td>
+<td style="text-align:left;">
+wont_consider_contradictory_ideas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Today’s scientists will sacrifice the well being of others to advance their research.
+</td>
+<td style="text-align:left;">
+sacrifice_others_to_advance
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We cannot trust science because it moves too slowly.
+</td>
+<td style="text-align:left;">
+cant_trust_moves_slowly
+</td>
+</tr>
+</tbody>
+
+</table>
+<figcaption class="figure-caption">Figure&nbsp;8: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatterpairs-trust-q17-21-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-scatterpairs-trust-q17-21-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;9: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>q_range <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">22</span><span class="sc">:</span><span class="dv">27</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>survey_01_clean[, q_range] <span class="sc">|&gt;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggpairs</span>()</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[q_range,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatterpairs-trust-q22-27-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+question
+</th>
+<th style="text-align:left;">
+short_name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+When scientists change their mind about a scientific idea it diminishes my trust in their work.
+</td>
+<td style="text-align:left;">
+change_minds_undermines_trust
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+We can trust scientists to share their discoveries even if they don’t like their findings.
+</td>
+<td style="text-align:left;">
+share_findings_dont_like
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I trust that the work of scientists is to make life better for people.
+</td>
+<td style="text-align:left;">
+make_life_better
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Scientific theories are trustworthy.
+</td>
+<td style="text-align:left;">
+theories_trustworthy
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+When scientists form a hypothesis they are just guessing.
+</td>
+<td style="text-align:left;">
+hypotheses_just_guesses
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I trust scientists can find solutions to our major technological problems.
+</td>
+<td style="text-align:left;">
+trust_find_tech_solutions
+</td>
+</tr>
+</tbody>
+
+</table>
+<figcaption class="figure-caption">Figure&nbsp;10: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+<div class="cell-output-display">
+<div id="fig-scatterpairs-trust-q22-27-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-01_files/figure-html/fig-scatterpairs-trust-q22-27-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;11: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comments" class="level3">
+<h3 class="anchored" data-anchor-id="comments">Comments</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>survey_01_clean <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(comments) <span class="sc">|&gt;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(comments)) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format=</span><span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">For some of them I put 3 because they are very contextual and it felt wrong to ascribe a quality to the group when I feel only a few outliers would fit the criteria for the question</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
 </div>
 
