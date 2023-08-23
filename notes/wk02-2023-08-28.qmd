@@ -28,7 +28,7 @@ css: ../include/css/styles.css
 
 - Read
     - [@Merton1973-vf]. [PDF on Canvas](https://psu.instructure.com/files/144517091/download?download_frd=1).
-    - [@Mitroff1974-pp]. [PDF on Canvas]().
+    - [@Mitroff1974-pp]. [PDF on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=151876801).
 - [Assignment]{.green_assigned}
     - Complete (anonymous) [survey]() on scientific norms and counter-norms. **No write-up**.
 - [Class notes](../notes/wk02-2023-08-30.qmd)
