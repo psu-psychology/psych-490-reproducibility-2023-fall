@@ -665,6 +665,48 @@
     "text": "References"
   },
   {
+    "objectID": "notes/wk03-2023-09-06.html#announcements",
+    "href": "notes/wk03-2023-09-06.html#announcements",
+    "title": "2023-09-06 Wed",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "notes/wk03-2023-09-06.html#today",
+    "href": "notes/wk03-2023-09-06.html#today",
+    "title": "2023-09-06 Wed",
+    "section": "Today",
+    "text": "Today\nAdherence to norms and counter-norms\n\nRead\n\nKardash & Edwards (2012).\nMacfarlane & Cheng (2008)."
+  },
+  {
+    "objectID": "notes/wk03-2023-09-06.html#references",
+    "href": "notes/wk03-2023-09-06.html#references",
+    "title": "2023-09-06 Wed",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nBegley, C. G., & Ellis, L. M. (2012). Drug development: Raise standards for preclinical cancer research. Nature, 483(7391), 531–533. https://doi.org/10.1038/483531a\n\n\nKardash, C. M., & Edwards, O. V. (2012). Thinking and behaving like scientists: Perceptions of undergraduate science interns and their faculty mentors. Instructional Science, 40(6), 875–899. https://doi.org/10.1007/s11251-011-9195-0\n\n\nMacfarlane, B., & Cheng, M. (2008). Communism, universalism and disinterestedness: Re-examining contemporary support among academics for merton’s scientific norms. Journal of Academic Ethics, 6(1), 67–78. https://doi.org/10.1007/s10805-008-9055-y\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669"
+  },
+  {
+    "objectID": "notes/wk03-2023-09-08.html#announcements",
+    "href": "notes/wk03-2023-09-08.html#announcements",
+    "title": "2023-09-08 Fri",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "notes/wk03-2023-09-08.html#today",
+    "href": "notes/wk03-2023-09-08.html#today",
+    "title": "2023-09-08 Fri",
+    "section": "Today",
+    "text": "Today\nA replication crisis (or not)\n\nRead\n\n(Ritchie, 2020), Chapter 2. PDF on Canvas.\n(Begley & Ellis, 2012).\n\nDue\n\nExercise 02: Norms and counter-norms write-up"
+  },
+  {
+    "objectID": "notes/wk03-2023-09-08.html#references",
+    "href": "notes/wk03-2023-09-08.html#references",
+    "title": "2023-09-08 Fri",
+    "section": "References",
+    "text": "References\n\n\n\n\n\n\nBegley, C. G., & Ellis, L. M. (2012). Drug development: Raise standards for preclinical cancer research. Nature, 483(7391), 531–533. https://doi.org/10.1038/483531a\n\n\nEarp, B. D., Everett, J. A. C., Madva, E. N., & Hamlin, J. K. (2014). Out, damned spot: Can the “macbeth effect” be replicated? Basic and Applied Social Psychology, 36(1), 91–98. https://doi.org/10.1080/01973533.2013.856792\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nZhong, C.-B., & Liljenquist, K. (2006). Washing away your sins: Threatened morality and physical cleansing. Science, 313(5792), 1451–1452. https://doi.org/10.1126/science.1130726"
+  },
+  {
     "objectID": "policies.html",
     "href": "policies.html",
     "title": "policies",
@@ -746,7 +788,7 @@
     "href": "schedule.html#week-04",
     "title": "schedule",
     "section": "September 11-15",
-    "text": "September 11-15\n\nMonday, September 11\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\n\n\n\nWednesday, September 13\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication"
+    "text": "September 11-15\n\nMonday, September 11\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nClass notes\n\n\n\nWednesday, September 13\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-05",
@@ -767,7 +809,7 @@
     "href": "schedule.html#week-07",
     "title": "schedule",
     "section": "October 2-6",
-    "text": "October 2-6\n\nMonday, October 2\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nWednesday, October 4\nQuestionable research practices\n\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
+    "text": "October 2-6\n\nMonday, October 2\nRetraction and scientific integrity\n\nRead\n\n(Brainerd & You, 2018)\n\nClass notes\n\n\n\nWednesday, October 4\nQuestionable research practices\n\nRead\n\nSimmons, Nelson, & Simonsohn (2011)\n(Skim) John, Loewenstein, & Prelec (2012)\n\nWatch\n\nNgiam (2020)\n\nClass notes\n\n\n\nFriday, October 6\nWork session: P-hacking\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "schedule.html#week-08",
