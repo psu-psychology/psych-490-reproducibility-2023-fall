@@ -1,0 +1,29 @@
+---
+title: "2023-09-01 Fri"
+subtitle: "Work session: Norms and counternorms"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+---
+
+# Overview
+
+## Announcements
+
+## Today
+
+**Work session: Norms and counter-norms**
+
+- [Due]{.orange_due}
+    - [Exercise 01: Reading a scientific paper](../ex01-read-a-scientific-paper.qmd)
+- [Assignment]{.green_assigned}
+    - [Exercise 02: Norms and counter-norms write-up](../ex02-norms-counternorms.qmd)
+
+# Next time
+
+# Resources
+
+## References
+

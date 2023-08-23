@@ -1,0 +1,39 @@
+---
+title: "2023-08-28 Mon"
+subtitle: "How science works (or should)"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+---
+
+# Overview
+
+## Announcements
+
+## Today
+
+**How science works (or should)**
+
+- Read
+    - [@Ritchie2020-fm], Chapter 1. [Alternate link to PDF on Canvas](https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654645).
+    - [@Nosek2012-al]. [Alternate link to PDF on Canvas](https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654434).
+    
+# How science works (or should)
+
+# Next time
+
+**Scientific norms and counter-norms**
+
+- Read
+    - [@Merton1973-vf]. [PDF on Canvas](https://psu.instructure.com/files/144517091/download?download_frd=1).
+    - [@Mitroff1974-pp]. [PDF on Canvas]().
+- [Assignment]{.green_assigned}
+    - Complete (anonymous) [survey]() on scientific norms and counter-norms. **No write-up**.
+- [Class notes](../notes/wk02-2023-08-30.qmd)
+
+# Resources
+
+## References
+

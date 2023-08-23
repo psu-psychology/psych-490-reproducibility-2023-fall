@@ -1,0 +1,40 @@
+---
+title: "2023-08-30 Wed"
+subtitle: "How to read a scientific paper"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+---
+
+# Overview
+
+## Announcements
+
+## Today
+
+**Scientific norms and counter-norms**
+
+- Read
+    - [@Merton1973-vf]. [PDF on Canvas](https://psu.instructure.com/files/144517091/download?download_frd=1).
+    - [@Mitroff1974-pp]. [PDF on Canvas]().
+- [Assignment]{.green_assigned}
+    - Complete (anonymous) [survey]() on scientific norms and counter-norms. **No write-up**.
+- [Class notes]()
+
+# Scientific norms and counter-norms
+
+# Next time
+
+**Work session: Norms and counter-norms**
+
+- [Due]{.orange_due}
+    - [Exercise 01: Reading a scientific paper](../ex01-read-a-scientific-paper.qmd)
+- [Assignment]{.green_assigned}
+    - [Exercise 02: Norms and counter-norms write-up](../ex02-norms-counternorms.qmd)
+
+# Resources
+
+## References
+
