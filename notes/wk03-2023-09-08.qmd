@@ -1,6 +1,6 @@
 ---
 title: "2023-09-08 Fri"
-subtitle: "How science works (or should)"
+subtitle: "A replication crisis (or not)"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -29,6 +29,7 @@ css: ../include/css/styles.css
 - Read
     - [@Zhong2006-nf].
     - [@Earp2014-ek].
+- [Class notes](../notes/wk04-2023-09-11.qmd)
 
 # Resources
 

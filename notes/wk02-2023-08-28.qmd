@@ -10,6 +10,11 @@ css: ../include/css/styles.css
 
 # Overview
 
+## Prelude {-}
+
+<!-- Thomas Dolby, She Blinded Me With Science 3:47 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V83JR2IoI8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Announcements
 
 ## Today
@@ -21,6 +26,84 @@ css: ../include/css/styles.css
     - [@Nosek2012-al]. [Alternate link to PDF on Canvas](https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654434).
     
 # How science works (or should)
+
+## Discuss [@Ritchie2020-fm], Chapter 1 {-}
+
+### Author {-}
+
+- [Stuart J. Ritchie](https://www.kcl.ac.uk/people/stuart-ritchie)
+    - Scottish psychologist, Lecturer at King's College London
+    
+```{r fig-stuart-ritchie, fig.cap="Stuart J. Ritchie"}
+knitr::include_graphics("https://jacobsfoundation.org/wp-content/uploads/2020/01/Ritchie_Stuart_300x300px.jpg")
+```
+
+### Chapter 1: How Science Works {-}
+
+- "Science is a social construct." cf. [@Oreskes2017]
+    - How so?
+    - What are the consequences?
+- What is the "process" of science?
+
+```{r fig-1-munafo, out.width = "75%", fig.cap="Figure 1 from [@munafo_manifesto_2017](https://doi.org/10.1038/s41562-016-0021)"}
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp")
+```
+
+- Publish results
+    - But submit for peer review prior to publication 
+- Governed by "norms"
+
+> Science's social nature does come with weaknesses, however. Because scientists focus so much on trying to persuade their peers, which is the way they get those studies through peer review and oward to publication, it's all too easy for them to disregard the real object of science: getting us closer to the truth.
+>
+> [@Ritchie2020-fm], Chapter 1, pp. 14-15.
+
+## Discuss [@Nosek2012-al](http://dx.doi.org/10.1080/1047840X.2012.692215) {-}
+
+- [Brian Nosek](https://psychology.as.virginia.edu/nosek)
+    - Social Psychologist, Professor at University of Virginia
+    - Co-Founder, [Center for Open Science (COS)](https://cos.io)
+    - Founder, [Project Implicit](https://implicit.harvard.edu/implicit/)
+    
+```{r, fig.cap="Brian Nosek"}
+knitr::include_graphics("https://cdn.theconversation.com/avatars/883473/width238/DxAiwSlp_400x400.jpg")
+```
+
+- [Yoav Bar-Anon](https://en-social-sciences.tau.ac.il/profile/baranan)
+    - Social Psychology, Professor at Tel Aviv University
+    
+## Scientific Utopia: I. Opening Scientific Communication {-}
+
+- What's [Utopia](https://en.wikipedia.org/wiki/Utopia?) {-}
+- Where's [Part II](https://doi.org/10.1177/1745691612459058)? {-}
+
+Nosek, B. A., Spies, J. R. & Motyl, M. (2012). Scientific utopia II: Restructuring incentives and practices to promote truth over publishability. *Perspectives on Psychological Science: A Journal of the Association for Psychological Science*, *7*(6), 615–631. https://doi.org/10.1177/1745691612459058
+
+## Aims & Claims {-}
+
+> Existing norms for scientific communication are rooted in anachronistic practices of bygone eras making them needlessly inefficient. We outline a path that moves away from the existing model of scientific communication to improve the efficiency in meeting the purpose of public science—knowledge accumulation. We call for six changes: (a) full embrace of digital communication; (b) open access to all published research; (c) disentangling publication from evaluation; (d) breaking the “one article, one journal” model with a grading system for evaluation and diversified dissemination outlets; (e) publishing peer review; and (f) allowing open, continuous peer review. We address conceptual and practical barriers to change and provide examples showing how the suggested practices are being used already. The critical barriers to change are not technical or financial; they are social. Although scientists guard the status quo, they also have the power to change it.
+
+## Common themes {-}
+
+- Goals and purposes of science
+- Utopian, idealistic aims
+- Efficiency in achieving those goals
+- High quality versus low quality science
+- Ethics, scientific integrity
+- Means of scientific communication
+- Who has access, who should
+- How are findings, articles, individuals evaluated
+
+## Learn more {-}
+
+### Talk by Brian Nosek, [@University_of_California_Television_UCTV2018-sf] {-}
+
+:::: {.infobox}
+
+Watching the talk by Nosek is not required. But he's a very good speaker and an inspiring person.
+
+::::
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YEwqohAjfZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Next time
 

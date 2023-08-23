@@ -1,6 +1,6 @@
 ---
 title: "2023-09-06 Wed"
-subtitle: "How science works (or should)"
+subtitle: "Adherence to norms and counter-norms"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

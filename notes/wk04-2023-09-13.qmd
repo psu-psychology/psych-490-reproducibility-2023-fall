@@ -1,0 +1,35 @@
+---
+title: "2023-09-13 Wed"
+subtitle: "Replication failure: Priming effect"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+---
+
+# Overview
+
+## Announcements
+
+## Today
+
+**Replication failure: Priming effect**
+
+- Read
+    - [@Bargh1996-yv]; [PDF on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=151876806)
+    - [@Doyen2012-ib]
+
+# Next time
+
+**Work session: Replication with R, R Markdown, & Quarto**
+
+- Review
+  - [Survey 01 report](survey-01.qmd)
+  - [Survey 02 report](survey-02.qmd)
+- [Class notes](../notes/wk04-2023-09-15.qmd)
+
+# Resources
+
+## References
+

@@ -138,9 +138,9 @@ title: "schedule"
 **Replication in cancer biology**
 
 - Read
-    - [@Errington2021-sy]
     - [@Errington2021-dp]
-- [Class notes]()
+    - (skim) [@Errington2021-sy]
+- [Class notes](notes/wk05-2023-09-18.qmd)
 
 ### Wednesday, September 20 {-}
 
@@ -150,7 +150,7 @@ title: "schedule"
     - [@Nosek2022-hv]
     - (Skim) [@Fidler2021-xn]
     <!-- - [@goodman_what_2016] -->
-- [Class notes]()
+- [Class notes](notes/wk05-2023-09-20.qmd)
 
 ### Friday, September 22 {-}
 
