@@ -177,40 +177,13 @@ Richard Feynmann
 
 ---
 
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
-
 > ...a specific, extra type of integrity that is not lying, but **bending over backwards to show how you’re maybe wrong**, that you ought to do when acting as a scientist. And this is our responsibility as scientists, certainly to other scientists, and I think to laymen. 
 
 <p style="text-align:center;">
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 > ...If you’ve made up your mind to test a theory, or you want to explain some idea, you should **always decide to publish it whichever way it comes out**. If we only publish results of a certain kind, we can make the argument look good. We must publish both kinds of result. 
 
@@ -218,22 +191,7 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 > ...if you’re doing an experiment, you should **report everything that you think might make it invalid--not only what you think is right about it**: other causes that could possibly explain your results; and things you thought of that you’ve eliminated by some other experiment...
 
@@ -241,22 +199,7 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 >Other kinds of errors are more characteristic of poor science. When I was at Cornell. I often talked to the people in the psychology department. One of the students told me she wanted to do an experiment that went something like this—I don’t remember it in detail, but it had been found by others that under certain circumstances, X, rats did something, A...
 
@@ -264,22 +207,7 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 >...She was curious as to whether, if she changed the circumstances to Y, they would still do, A. So her proposal was to do the experiment under circumstances Y and see if they still did A. I explained to her that it was necessary first to repeat in her laboratory the experiment of the other person—to do it under condition X to see if she could also get result A...
 
@@ -287,22 +215,7 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 >...and then change to Y and see if A changed. Then she would know that the real difference was the thing she thought she had under control. She was very delighted with this new idea, and went to her professor. And his reply was, no, you cannot do that, because the experiment has already been done and you would be wasting time...
 
@@ -310,22 +223,7 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
 
 >...This was in about 1935 or so, and it seems to have been the general policy then to not try to repeat psychological experiments, but only to change the conditions and see what happens.
 
@@ -333,60 +231,19 @@ Richard Feynmann
 [@Feynman1974-ld]
 </p>
 
-:::
-
-::::
-
-
 ## Do psychologists routinely repeat psychological experiments *today*?
 
 - Why or why not?
 
 ---
 
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
-
->…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization...
+>…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization...or financial support, or so on, to lose your integrity. May you have that freedom.
 
 <p style="text-align:center;">
 [@Feynman1974-ld]
 </p>
-
-:::
-
-::::
 
 ---
-
-:::: {.columns}
-
-::: {.column width="40%"}
-Richard Feynmann
-
-![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
-
-:::
-
-::: {.column width="60%"}
-
->...or financial support, or so on, to lose your integrity. May you have that freedom.
-
-<p style="text-align:center;">
-[@Feynman1974-ld]
-</p>
-
-:::
-
-::::
 
 ### Questions about Feynmann's speech
 

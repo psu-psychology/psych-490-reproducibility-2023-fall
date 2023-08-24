@@ -10,6 +10,8 @@ The survey questions were adapted from those discussed in [@Kardash2012-kq].
 
 ## Survey {-}
 
+Link: <https://forms.gle/nXmghuctPGUmV1AU7>
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJhA9Qla7qjDehr43q0HwlMhHiQ-DKGerOQ4b8Jywvev5faw/viewform?embedded=true" width="640" height="2193" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## Preparation {-}

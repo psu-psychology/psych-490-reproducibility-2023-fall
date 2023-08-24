@@ -79,7 +79,7 @@ survey_01_clean <- survey_01 |>
     new_info = "I am open to revising my important beliefs in the face of new information.",
     compelling_reason = "I am willing to change my opinions on the basis of compelling reason.",
     mind_made_up = "I’m willing to change my mind once it’s made up about an important topic.",
-    comments = "Comments"
+    comments = "If you wish to comment about the questions in this survey, you may do so here. You are not required to comment. Your comments might be seen by others."
   )
 ```
 
@@ -155,14 +155,6 @@ if (n_responses > 1) {
 
 ## Visualizations {-}
 
-```{r fig-survey-01-timeseries, fig.cap="Time series of responses to Survey 01"}
-survey_01_clean |>
-  dplyr::mutate(resp_index = 1:(n_responses-1)) |>
-  ggplot() +
-  aes(x = timestamp, resp_index) +
-  geom_point()
-```
-
 ### Openness questions
 
 Remember:
@@ -170,12 +162,23 @@ Remember:
 ![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
 
 ```{r fig-scatterpairs-openness-q2-6, message=FALSE, fig.cap="Reponses to Openness to Revising One’s Viewpoint subscale questions from [@Krumrei-Mancuso2016-qm]"}
-survey_01_clean[,2:6] |>
-  ggpairs()
-
+# survey_01_clean[,2:6] |>
+#   ggpairs()
+# 
 survey_01_data_dictionary[2:6,1:2] |>
   knitr::kable(format = "html") |>
   kableExtra::kable_classic()
+
+survey_01_clean[, 1:6] |>
+  tidyr::pivot_longer(cols=2:6, names_to = "question", values_to = "rating") |>
+  ggplot()+
+  aes(rating) +
+  geom_dotplot(dotsize = .4) +
+  xlim(1, 5) +
+  theme(axis.title.y = element_blank()) +
+  theme(axis.text.y = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  facet_wrap(facets = vars(question), ncol = 1) 
 ```
 
 ### Trust in science questions
@@ -196,44 +199,37 @@ There are a number of these, so we break them into smaller groups for visualizat
 ![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
 
 ```{r fig-scatterpairs-trust-q7-11, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
-survey_01_clean[, 7:11] |>
-  ggpairs()
-
-survey_01_data_dictionary[7:11,1:2] |>
+# survey_01_clean[, 7:11] |>
+#   ggpairs()
+# 
+survey_01_data_dictionary[7:27, 1:2] |>
   knitr::kable(format = "html") |>
   kableExtra::kable_classic()
+
+survey_01_clean |>
+  tidyr::pivot_longer(cols=7:27, names_to = "question", values_to = "rating") |>
+  ggplot()+
+  aes(rating) +
+  geom_dotplot(dotsize = .4) +
+  xlim(1, 5) +
+  theme(axis.title.y = element_blank()) +
+  theme(axis.text.y = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  facet_wrap(facets = vars(question), ncol = 3) 
 ```
 
-```{r fig-scatterpairs-trust-q12-16, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
-survey_01_clean[, 12:16] |>
-  ggpairs()
 
-survey_01_data_dictionary[12:16,1:2] |>
-  knitr::kable(format = "html") |>
-  kableExtra::kable_classic()
-```
+<!-- # ```{r fig-scatterpairs-trust-q22-27, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"} -->
+<!-- # q_range <- c(22:27) -->
+<!-- #  -->
+<!-- # survey_01_clean[, q_range] |> -->
+<!-- #   ggpairs() -->
+<!-- #  -->
+<!-- # survey_01_data_dictionary[q_range,1:2] |> -->
+<!-- #   knitr::kable(format = "html") |> -->
+<!-- #   kableExtra::kable_classic() -->
+<!-- # ``` -->
 
-```{r fig-scatterpairs-trust-q17-21, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
-q_range <- c(17:21)
-
-survey_01_clean[, q_range] |>
-  ggpairs()
-
-survey_01_data_dictionary[q_range,1:2] |>
-  knitr::kable(format = "html") |>
-  kableExtra::kable_classic()
-```
-
-```{r fig-scatterpairs-trust-q22-27, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
-q_range <- c(22:27)
-
-survey_01_clean[, q_range] |>
-  ggpairs()
-
-survey_01_data_dictionary[q_range,1:2] |>
-  knitr::kable(format = "html") |>
-  kableExtra::kable_classic()
-```
 
 ### Comments
 
@@ -314,5 +310,11 @@ survey_01_recoded <- survey_01_recoded |>
 ```{r fig-openness-trust-composite, fig.cap="Composite 'openness' and 'trust' scores"}
 survey_01_recoded |>
   dplyr::select(openness_comp, trust_comp) |>
-  ggpairs()
+  #ggpairs()
+  ggplot() +
+  aes(openness_comp, trust_comp) +
+  geom_point() +
+  xlim(1,5) +
+  ylim(1,5) +
+  coord_fixed()
 ```
