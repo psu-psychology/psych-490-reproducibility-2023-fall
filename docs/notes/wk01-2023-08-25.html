@@ -370,13 +370,17 @@ Rick Gilmore
 </section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
+
+<img data-src="wk01-2023-08-25_files/figure-revealjs/fig-trust-in-sci-survey-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Optional anonymous survey: <a href="https://forms.gle/DEvDGc3boXQuMkg7A" class="uri">https://forms.gle/DEvDGc3boXQuMkg7A</a></p><p style="text-align:center;">
+<a href="../survey-01.html">Results so far</a>
+</p>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
-<li>Brief show &amp; tell about Survey 01</li>
+<li>Brief discussion of Survey 01</li>
 </ul>
-<p><strong>How to read a scientific paper</strong></p>
+<p><em>How to read a scientific paper</em></p>
 <ul>
 <li>Read
 <ul>
@@ -401,6 +405,7 @@ Rick Gilmore
 <li>Create open, transparent, reproducible work flow for cleaning and visualizing these data</li>
 <li>Provoke thought about the relationship between the questions and the constructs</li>
 <li>Learn more about your views on these topics</li>
+<li>Demonstrate a possible <a href="final-project.qmd">final project</a> topic</li>
 <li><a href="https://forms.gle/WW7aDAMb99zy9tzv5">Survey 01 link</a></li>
 </ul>
 </section>
@@ -425,7 +430,7 @@ Rick Gilmore
 </section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-<p><strong>How science works (or should)</strong></p>
+<p><em>How science works (or should)</em></p>
 <ul>
 <li>Read
 <ul>
@@ -682,6 +687,44 @@ Ruben, A. (2016). How to read a scientific paper. <em>Science| AAAS [Internet]</
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
