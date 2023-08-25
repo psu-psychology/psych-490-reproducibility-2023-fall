@@ -19,7 +19,7 @@ css: ../include/css/styles.css
 
 ## Today
 
-**How science works (or should)**
+*How science works (or should)*
 
 - Read
     - [@Ritchie2020-fm], Chapter 1. [Alternate link to PDF on Canvas](https://psu.instructure.com/courses/2245007/files/folder/readings?preview=144654645).
@@ -63,15 +63,41 @@ css: ../include/css/styles.css
 
 ## Discuss [@Nosek2012-al]
 
+:::: {.columns}
+
+::: {.column width=50%}
+
+Brian Nosek
+
 ![Brian Nosek](https://www.cos.io/hubfs/Staff/staff-nosek-brian.png){fig-align="center"}
 
-- [Brian Nosek](https://psychology.as.virginia.edu/nosek)
-    - Social Psychologist, Professor at University of Virginia
-    - Co-Founder, [Center for Open Science (COS)](https://cos.io)
-    - Founder, [Project Implicit](https://implicit.harvard.edu/implicit/)
-    
-- [Yoav Bar-Anon](https://en-social-sciences.tau.ac.il/profile/baranan)
-    - Social Psychology, Professor at Tel Aviv University
+:::
+
+::: {.column width=50%}
+- Social Psychologist, Professor at University of Virginia
+- Co-Founder, [Center for Open Science (COS)](https://cos.io)
+- Founder, [Project Implicit](https://implicit.harvard.edu/implicit/)
+:::
+
+::::
+
+---
+
+:::: {.columns}
+
+::: {.column width=50%}
+[Yoav Bar-Anon](https://en-social-sciences.tau.ac.il/profile/baranan)
+
+![](https://en-social-sciences.tau.ac.il/sites/socsci-english.tau.ac.il/files/styles/research_teaser_image_180_x_180/public/Yoav%20Bar-anan.webp){fig-align="center"}
+:::
+
+::: {.column width=50%}
+- Social Psychology, Professor at Tel Aviv University
+:::
+
+::::
+
+---
     
 ## Scientific Utopia: I. Opening Scientific Communication
 
@@ -111,12 +137,14 @@ css: ../include/css/styles.css
     - What's wrong with enterprising people making a living by providing these services?
 :::
 
----
+## Questions about [@Nosek2012-al]
 
 :::{.incremental}    
 - What about the idea of separating publication from evaluation?
-    - How to discern good science from bad?
+    - How can scientists discern good science from bad?
+    - How can the general public? (see [Survey 01 questions on trust in science](file:///Users/rog1/rrr/psych-490-reproducibility-2023-fall/docs/survey-01.html#trust-in-science-questions))
 - What do you think reviewers would say about publishing peer review?
+    - Some journals do this already, e.g. *Frontiers*
 :::
 
 ---
@@ -149,7 +177,7 @@ Watching the talk by Nosek is not required. But he's a very good speaker and an 
 
 # Next time
 
-**Scientific norms and counter-norms**
+*Scientific norms and counter-norms*
 
 - Read
     - [@Merton1973-vf]. [PDF on Canvas](https://psu.instructure.com/files/144517091/download?download_frd=1).

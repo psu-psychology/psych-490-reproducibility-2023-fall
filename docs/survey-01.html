@@ -320,6 +320,7 @@ div.csl-indent {
 </section>
 <section id="survey" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="survey">Survey</h2>
+<p>Direct link: <a href="https://forms.gle/Szk1pLEu4ZLWtFjX7" class="uri">https://forms.gle/Szk1pLEu4ZLWtFjX7</a></p>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">
 Loading…
 </iframe>
@@ -340,7 +341,13 @@ Loading…
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">gargle_oauth_email =</span> <span class="fu">Sys.getenv</span>(<span class="st">"GMAIL_SURVEY"</span>))</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_auth</span>()</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_download</span>(<span class="st">"Openness and Trust in Science (Responses)"</span>, <span class="at">path =</span> <span class="st">"csv/survey-01-openness-trust.csv"</span>, <span class="at">type =</span> <span class="st">"csv"</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_download</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Openness and Trust in Science (Responses)"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> <span class="st">"csv/survey-01-openness-trust.csv"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"csv"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">overwrite =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The data file has been saved as a comma-separated value (CSV) format data file in a special directory called <code>csv/</code>.</p>
 <!-- Note that there are five types of callouts, including note, tip, warning, caution, and important. -->
@@ -511,7 +518,7 @@ Note
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[<span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="fig-scatterpairs-openness-q2-6-1" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-openness-dotplot-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
 <table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
@@ -583,9 +590,9 @@ mind_made_up
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.ticks =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="at">facets =</span> <span class="fu">vars</span>(question), <span class="at">ncol =</span> <span class="dv">1</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-scatterpairs-openness-q2-6-2" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-openness-dotplot-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="survey-01_files/figure-html/fig-scatterpairs-openness-q2-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="survey-01_files/figure-html/fig-openness-dotplot-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption class="figure-caption">Figure&nbsp;2: Reponses to Openness to Revising One’s Viewpoint subscale questions from <span class="citation" data-cites="Krumrei-Mancuso2016-qm">(<a href="#ref-Krumrei-Mancuso2016-qm" role="doc-biblioref">Krumrei-Mancuso &amp; Rouse, 2016</a>)</span></figcaption>
 </figure>
 </div>
@@ -623,7 +630,7 @@ Note
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[<span class="dv">7</span><span class="sc">:</span><span class="dv">27</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>] <span class="sc">|&gt;</span></span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="fig-scatterpairs-trust-q7-11-1" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-trust-dotplot-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
 <table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
@@ -823,9 +830,9 @@ trust_find_tech_solutions
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.ticks =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="at">facets =</span> <span class="fu">vars</span>(question), <span class="at">ncol =</span> <span class="dv">3</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-scatterpairs-trust-q7-11-2" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-trust-dotplot-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="survey-01_files/figure-html/fig-scatterpairs-trust-q7-11-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="survey-01_files/figure-html/fig-trust-dotplot-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: Responses to trust in science questions from <span class="citation" data-cites="Nadelson2014-ym">(<a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>)</span></figcaption>
 </figure>
 </div>

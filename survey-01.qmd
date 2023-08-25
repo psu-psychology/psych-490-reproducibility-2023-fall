@@ -10,6 +10,8 @@ The survey questions were adapted from those discussed in [@Krumrei-Mancuso2016-
 
 ## Survey {-}
 
+Direct link: <https://forms.gle/Szk1pLEu4ZLWtFjX7>
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## Preparation {-}
@@ -40,7 +42,13 @@ if (!dir.exists('csv')) {
 options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
 googledrive::drive_auth()
 
-googledrive::drive_download("Openness and Trust in Science (Responses)", path = "csv/survey-01-openness-trust.csv", type = "csv", overwrite = TRUE)
+googledrive::drive_download(
+  "Openness and Trust in Science (Responses)",
+  path = "csv/survey-01-openness-trust.csv",
+  type = "csv",
+  overwrite = TRUE
+  
+)
 ```
 
 The data file has been saved as a comma-separated value (CSV) format data file in a special directory called `csv/`.
@@ -161,7 +169,7 @@ Remember:
 
 ![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
 
-```{r fig-scatterpairs-openness-q2-6, message=FALSE, fig.cap="Reponses to Openness to Revising One’s Viewpoint subscale questions from [@Krumrei-Mancuso2016-qm]"}
+```{r fig-openness-dotplot, message=FALSE, fig.cap="Reponses to Openness to Revising One’s Viewpoint subscale questions from [@Krumrei-Mancuso2016-qm]"}
 # survey_01_clean[,2:6] |>
 #   ggpairs()
 # 
@@ -198,7 +206,7 @@ There are a number of these, so we break them into smaller groups for visualizat
 
 ![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
 
-```{r fig-scatterpairs-trust-q7-11, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
+```{r fig-trust-dotplot, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
 # survey_01_clean[, 7:11] |>
 #   ggpairs()
 # 
@@ -218,7 +226,6 @@ survey_01_clean |>
   facet_wrap(facets = vars(question), ncol = 3) 
 ```
 
-
 <!-- # ```{r fig-scatterpairs-trust-q22-27, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"} -->
 <!-- # q_range <- c(22:27) -->
 <!-- #  -->
@@ -229,7 +236,6 @@ survey_01_clean |>
 <!-- #   knitr::kable(format = "html") |> -->
 <!-- #   kableExtra::kable_classic() -->
 <!-- # ``` -->
-
 
 ### Comments
 
