@@ -26,8 +26,8 @@ title: "schedule"
 **How to read a scientific paper**
 
 - Read
-    - [@Ruben2016-om].
-    - [@Carey2020-ut] (for fun).
+    - [@Carey2020-ut]
+    - [@Ruben2016-om] (for fun)
 - [Assignment]{.green_assigned}
     - [Exercise 01: Reading a scientific paper](ex01-read-a-scientific-paper.qmd)
 - [Class notes](notes/wk01-2023-08-25.qmd)
