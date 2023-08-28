@@ -47,7 +47,10 @@ website:
           - href: "ex06-replication.qmd"
           - href: "ex07-sharing.qmd"
           - href: "final-project.qmd"
-        
+      - text: surveys
+        menu: 
+          - href: "survey-01.qmd"
+          - href: "survey-02.qmd"
 format:
   html:
     theme: cosmo

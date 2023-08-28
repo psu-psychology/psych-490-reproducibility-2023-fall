@@ -12,16 +12,19 @@ css: ../include/css/styles.css
 
 ## Prelude 
 
+<p style="text-align:center;">
 <!-- Thomas Dolby, She Blinded Me With Science 3:47 -->
 <iframe width="800" height="600" src="https://www.youtube.com/embed/V83JR2IoI8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
-## Announcements
+## [Survey 01](../survey-01.qmd)
+
+- Thanks to those of you who responded
 
 ## Today
 
 *How science works (or should)*
 
-- Read
 - Read
     - [@Ritchie2020-fm], Chapter 1. [Alternate link to PDF on Canvas](https://psu.instructure.com/files/144654645/download?download_frd=1).
     - [@Nosek2012-al]. [Alternate link to PDF on Canvas](https://psu.instructure.com/files/144654434/download?download_frd=1)
@@ -42,10 +45,41 @@ css: ../include/css/styles.css
 - "Science is a social construct." [@Oreskes2017]
     - How so?
     - What are the consequences?
-
+    
 ## What is the "process" of science?
 
 ![Figure 1 from [@munafo_manifesto_2017]](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp)
+
+## Telling (facts/findings) AND *showing*
+
+>...and it has to be shown why that other theory can cannot be the true one: And util this is shown, and until we know how it is shown, we do not understand the grounds of our opinion.
+
+<p style="text-align:center;">
+John Stuart Mill quoted in [@Ritchie2020-fm, p. 14]
+</p>
+
+
+## From replication to trust
+
+>...Only when certain events recur in accordance with rules or regularities, as is the case with repeatable experiments, can our observations be tested--in principle--by anyone. We do not take even our own observations quite seriously, or accept them as scientific observations, until we have repeated and test them...
+
+<p style="text-align:center;">
+Karl Popper quoted in [@Ritchie2020-fm, p. 23]
+</p>
+
+## From replication to trust
+
+>...Only by such repetitions can we convince ourselves that we are not dealing with a mere isolated 'coincidence'...
+
+<p style="text-align:center;">
+Karl Popper quoted in [@Ritchie2020-fm, p. 23]
+</p>
+
+---
+
+- In what *other* realm(s) do we *not* require someone stating an idea or finding to show us *how* they came to that idea or finding?
+- Are scientific experiments *really* repeatable by anyone?
+- In what *other* realm(s) do we not expect repetition or replication before trusting an idea?
 
 ---
 
@@ -70,7 +104,7 @@ css: ../include/css/styles.css
 
 Brian Nosek
 
-![Brian Nosek](https://www.cos.io/hubfs/Staff/staff-nosek-brian.png){fig-align="center"}
+![Brian Nosek](https://www.cos.io/hubfs/Staff/staff-nosek-brian.png){fig-align="center" width=30%}
 
 :::
 
@@ -89,7 +123,7 @@ Brian Nosek
 ::: {.column width=50%}
 [Yoav Bar-Anon](https://en-social-sciences.tau.ac.il/profile/baranan)
 
-![](https://en-social-sciences.tau.ac.il/sites/socsci-english.tau.ac.il/files/styles/research_teaser_image_180_x_180/public/Yoav%20Bar-anan.webp){fig-align="center"}
+![](https://en-social-sciences.tau.ac.il/sites/socsci-english.tau.ac.il/files/styles/research_teaser_image_180_x_180/public/Yoav%20Bar-anan.webp){fig-align="center" width=30%}
 :::
 
 ::: {.column width=50%}
@@ -130,6 +164,28 @@ Brian Nosek
 [@Nosek2012-al]
 </p>
 
+
+## Inefficiencies in scientific communication
+
+::: {.incremental}
+- No communication
+- Slow communication
+- Incomplete communication
+- Inaccurate communication
+- Unmodifiable communication
+:::
+
+<p style="text-align:center;"> 
+[@Nosek2012-al, , pp. 25-26]
+</p>
+
+## Questions about [@Nosek2012-al]
+
+:::{.incremental}
+- What are the impacts of these factors?
+- Do you agree that scientific communication should be made more efficient? Why or why not?
+:::
+
 ## Questions about [@Nosek2012-al]
 
 :::{.incremental}
@@ -143,7 +199,7 @@ Brian Nosek
 :::{.incremental}    
 - What about the idea of separating publication from evaluation?
     - How can scientists discern good science from bad?
-    - How can the general public? (see [Survey 01 questions on trust in science](file:///Users/rog1/rrr/psych-490-reproducibility-2023-fall/docs/survey-01.html#trust-in-science-questions))
+    - How can the general public?
 - What do you think reviewers would say about publishing peer review?
     - Some journals do this already, e.g. *Frontiers*
 :::
