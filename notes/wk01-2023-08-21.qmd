@@ -45,6 +45,7 @@ css: ../include/css/styles.css
 
 ::::
 
+---
 
 ## Purpose & goals
 
@@ -88,11 +89,12 @@ css: ../include/css/styles.css
 ---
 
 ![](../include/img/ritchie-science-fictions.jpg){fig-align="center"}
+
 ---
 
 - Articles
-    - Retrieve them yourself via the URL (uniform resource locator) and the [DOI](https://www.doi.org) (digital object identifier).
-    - Why do I do this?
+  - Retrieve them yourself via the URL (uniform resource locator) and the [DOI](https://www.doi.org) (digital object identifier).
+  - Why do I do this?
     
 ## Structure
 
@@ -221,7 +223,7 @@ Russian Proverb, [Wikipedia](https://en.wikipedia.org/wiki/Trust,_but_verify)
 
 # Next time
 
-**Don't Fool Yourself**
+*Don't Fool Yourself*
 
 - Read
     - [@Feynman1974-ld].

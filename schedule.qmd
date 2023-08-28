@@ -185,7 +185,7 @@ title: "schedule"
 - [Due]{.orange_due}
     - [Exercise 03: Violations of scientific integrity](ex03-scientific-integrity.qmd)
 - [Assignment]{.green_assigned}
-    - [Exercise 04: P-hack your way to scientific glory]() write-up.
+    - [Exercise 04: P-hack your way to scientific glory](ex04-p-hacking.qmd) write-up.
 - Work session
     - [Final project proposals](final-project.qmd), [due Friday, October 13]{.orange_due}.
 
@@ -217,7 +217,7 @@ title: "schedule"
 **Work session: P-hacking**
 
 - [Due]{.orange_due}
-    - [Exercise 04: P-hack your way to scientific glory]() write-up.
+    - [Exercise 04: P-hack your way to scientific glory](ex04-p-hacking.qmd) write-up.
 - Work session
     - [Final project proposals](final-project.qmd), [due Friday, October 13]{.orange_due}.
 
@@ -247,7 +247,7 @@ title: "schedule"
 **Lies, damned lies, and statistics**
 
 - [Assignment]{.green_assigned}
-    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]()
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](ex05-apes.qmd)
 - [Due]{.orange_due}
     - [Final project](final-project.qmd) proposal
 

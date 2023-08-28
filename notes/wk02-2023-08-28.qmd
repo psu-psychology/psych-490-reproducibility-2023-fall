@@ -220,18 +220,6 @@ Brian Nosek
 - Who has access, who should
 - How are findings, articles, individuals evaluated
 
-## Learn more 
-
-### Talk by Brian Nosek, [@University_of_California_Television_UCTV2018-sf] 
-
-:::{.callout-info}
-
-Watching the talk by Nosek is not required. But he's a very good speaker and an inspiring person.
-
-:::
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YEwqohAjfZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 # Next time
 
 *Scientific norms and counter-norms*
@@ -244,5 +232,17 @@ Watching the talk by Nosek is not required. But he's a very good speaker and an 
 - [Class notes](wk02-2023-08-30.qmd)
 
 # Resources
+
+### Talk by Brian Nosek, [@University_of_California_Television_UCTV2018-sf] 
+
+:::{.callout-info}
+
+Watching the talk by Nosek is not required. But he's a very good speaker and an inspiring person.
+
+:::
+
+<p style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YEwqohAjfZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
 
 ## References
