@@ -52,7 +52,7 @@ css: ../include/css/styles.css
 
 ## Telling (facts/findings) AND *showing*
 
->...and it has to be shown why that other theory can cannot be the true one: And util this is shown, and until we know how it is shown, we do not understand the grounds of our opinion.
+>...and it has to be shown why that other theory can cannot be the true one: And until this is shown, and until we know how it is shown, we do not understand the grounds of our opinion.
 
 <p style="text-align:center;">
 John Stuart Mill quoted in [@Ritchie2020-fm, p. 14]
