@@ -74,7 +74,7 @@ These were used by Dr. Gilmore used to generate a Google Sheet, and aren't real 
 
 ```{r eval=FALSE}
 survey_02_norms <- survey_02_norms |>
-  dplyr::filter(comments != "test")
+  dplyr::filter(survey_02_norms[,18] != "test")
 ```
 
 ### Clean/shorten names
@@ -179,9 +179,15 @@ We'll add other items to the data dictionary later.
 
 ```{r fig-survey-02-timeseries, fig.cap="Time series of responses to Survey 02"}
 n_responses <- dim(survey_02_norms)[1] # number of rows in original
-survey_02_norms |>
-  dplyr::mutate(resp_index = 1:(n_responses-1)) |>
-  ggplot() +
-  aes(x = timestamp, resp_index) +
-  geom_point()
+
+if (n_responses < 1) {
+  message("Insufficient responses to plot.")
+} else {
+  survey_02_norms |>
+    dplyr::mutate(resp_index = 1:n_responses) |>
+    ggplot() +
+    aes(x = timestamp, resp_index) +
+    geom_point() +
+    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())
+}
 ```

@@ -284,7 +284,7 @@ title: "schedule"
 - [Due]{.orange_due}
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
 - [Assignment]{.green_assigned}
-    - [Exercise 06: Replication]()
+    - [Exercise 06: Replication](ex06-replication.qmd)
 
 ---
 
@@ -314,7 +314,7 @@ title: "schedule"
 **Final project work day**
 
 - [Due]{.orange_due}
-    - [Exercise 06: Replication]()
+    - [Exercise 06: Replication](ex06-replication.qmd)
 - [Optional Extra Credit Assignment]{.green_assigned}
       - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr]. [Due Friday, November 3]{.due_orange}.
 
@@ -406,6 +406,8 @@ title: "schedule"
 - Read
     - [@Kathawalla2021-tk]
     - [@Cruwell2019-nz]
+- Explore
+    - [@FORRT_undated-pl]
 - [Class notes]()
 
 ### Friday, November 17 {-}

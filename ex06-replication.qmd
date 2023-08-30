@@ -16,6 +16,8 @@ In this exercise, you will evaluate a published scientific finding on the basis 
 
 Choose a published scientific paper on a topic you find interesting and important.
 
+You might find some of the topics suggested here [@FORRT_undated-pl] a good place to start: <https://forrt.org/reversals/>.
+
 Does the paper:
 
 - Report on whether data reported replicate a prior finding?
