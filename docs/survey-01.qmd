@@ -316,14 +316,17 @@ survey_01_recoded <- survey_01_recoded |>
 ```{r fig-openness-trust-composite, fig.cap="Composite 'openness' and 'trust' scores"}
 survey_01_recoded |>
   dplyr::select(openness_comp, trust_comp) |>
-  #ggpairs()
   ggplot() +
   aes(openness_comp, trust_comp) +
   geom_point() +
   geom_smooth(method = "lm",
-              formula = y ~ x,
-              geom = "smooth") +
+              formula = y ~ x) +
   xlim(1,5) +
   ylim(1,5) +
   coord_fixed()
 ```
+
+```{r}
+with(survey_01_recoded, stats::cor.test(openness_comp, trust_comp))
+```
+
