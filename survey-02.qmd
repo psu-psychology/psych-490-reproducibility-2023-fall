@@ -1,5 +1,7 @@
 ---
 title: "Survey 02"
+params:
+  update_data: TRUE
 ---
 
 ## Purpose {-}
@@ -39,10 +41,21 @@ if (!dir.exists('csv')) {
   dir.create("csv")
 }
 
-options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
-googledrive::drive_auth()
-
-googledrive::drive_download("Scientific Values Survey (Responses)", path = "csv/survey-02-sci-values.csv", type = "csv", overwrite = TRUE)
+if (params$update_data) {
+  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+  googledrive::drive_auth()
+  
+  googledrive::drive_download(
+    "Scientific Values Survey (Responses)",
+    path = "csv/survey-02-sci-values.csv",
+    type = "csv",
+    overwrite = TRUE
+  )
+  
+  message("Data updated.")
+} else {
+  message("Using stored data.")
+}
 ```
 
 The data file has been saved as a comma-separated value (CSV) format data file in a special directory called `csv/`.
@@ -191,3 +204,30 @@ if (n_responses < 1) {
     theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())
 }
 ```
+
+![Survey 02 response options](include/img/survey-02-resp-options.png)
+
+```{r fig-norms-counternorms}
+survey_02_norms_long |>
+  ggplot() +
+  aes(rating, color = type, fill = type) +
+  geom_dotplot(dotsize = .4) +
+  xlim(1, 5) +
+  theme(axis.title.y = element_blank()) +
+  theme(axis.text.y = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +
+  theme(legend.position = "bottom", legend.title = element_blank(),
+        strip.text.y = element_text(angle = 0))
+```
+```{r}
+survey_02_norms_data_dictionary |>
+  dplyr::filter(q_short != "timestamp", q_short != "comments") |>
+  dplyr::mutate(q_short = stringr::str_remove_all(q_short, "_should|_actually")) |>
+  dplyr::mutate(q_long = stringr::str_remove_all(q_long, "....[0-9]+")) |>
+  dplyr::select(q_short, q_long, norm_type) |>
+  dplyr::arrange(desc(norm_type)) |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
+

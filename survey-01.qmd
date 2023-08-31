@@ -1,5 +1,7 @@
 ---
 title: "Survey 01"
+params:
+  update_data: TRUE
 ---
 
 ## Purpose {-}
@@ -18,7 +20,7 @@ Direct link: <https://forms.gle/Szk1pLEu4ZLWtFjX7>
 
 First, we load the external packages (groups of R commands) that we will be using.
 
-```{r include=FALSE}
+```{r}
 library('tidyverse')
 library('ggplot2')
 library('dplyr')
@@ -39,16 +41,21 @@ if (!dir.exists('csv')) {
   dir.create("csv")
 }
 
-options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
-googledrive::drive_auth()
-
-googledrive::drive_download(
-  "Openness and Trust in Science (Responses)",
-  path = "csv/survey-01-openness-trust.csv",
-  type = "csv",
-  overwrite = TRUE
+if (params$update_data) {
+  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+  googledrive::drive_auth()
   
-)
+  googledrive::drive_download(
+    "Openness and Trust in Science (Responses)",
+    path = "csv/survey-01-openness-trust.csv",
+    type = "csv",
+    overwrite = TRUE
+    
+  )
+  messsage("Data updated.")
+} else {
+  message("Using stored data.")
+}
 ```
 
 The data file has been saved as a comma-separated value (CSV) format data file in a special directory called `csv/`.
@@ -329,4 +336,3 @@ survey_01_recoded |>
 ```{r}
 with(survey_01_recoded, stats::cor.test(openness_comp, trust_comp))
 ```
-

@@ -118,6 +118,9 @@ div.csl-indent {
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="include/css/styles.css">
 </head>
@@ -343,10 +346,21 @@ Loading…
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="st">"csv"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">gargle_oauth_email =</span> <span class="fu">Sys.getenv</span>(<span class="st">"GMAIL_SURVEY"</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_auth</span>()</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_download</span>(<span class="st">"Scientific Values Survey (Responses)"</span>, <span class="at">path =</span> <span class="st">"csv/survey-02-sci-values.csv"</span>, <span class="at">type =</span> <span class="st">"csv"</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (params<span class="sc">$</span>update_data) {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">options</span>(<span class="at">gargle_oauth_email =</span> <span class="fu">Sys.getenv</span>(<span class="st">"GMAIL_SURVEY"</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  googledrive<span class="sc">::</span><span class="fu">drive_auth</span>()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  googledrive<span class="sc">::</span><span class="fu">drive_download</span>(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Scientific Values Survey (Responses)"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">path =</span> <span class="st">"csv/survey-02-sci-values.csv"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"csv"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">overwrite =</span> <span class="cn">TRUE</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Data updated."</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Using stored data."</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The data file has been saved as a comma-separated value (CSV) format data file in a special directory called <code>csv/</code>.</p>
 <!-- Note that there are five types of callouts, including note, tip, warning, caution, and important. -->
@@ -523,6 +537,142 @@ Note
 <figcaption class="figure-caption">Figure&nbsp;1: Time series of responses to Survey 02</figcaption>
 </figure>
 </div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/survey-02-resp-options.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Survey 02 response options</figcaption>
+</figure>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>survey_02_norms_long <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(rating, <span class="at">color =</span> type, <span class="at">fill =</span> type) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">dotsize =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="dv">1</span>, <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.ticks =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="fu">vars</span>(norm_counternorm), <span class="at">cols =</span> <span class="fu">vars</span>(resp_frame)) <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>, <span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">strip.text.y =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Bin width defaults to 1/30 of the range of the data. Pick better value with
+`binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-norms-counternorms" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="survey-02_files/figure-html/fig-norms-counternorms-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: <strong>?(caption)</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>survey_02_norms_data_dictionary <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(q_short <span class="sc">!=</span> <span class="st">"timestamp"</span>, q_short <span class="sc">!=</span> <span class="st">"comments"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">q_short =</span> stringr<span class="sc">::</span><span class="fu">str_remove_all</span>(q_short, <span class="st">"_should|_actually"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">q_long =</span> stringr<span class="sc">::</span><span class="fu">str_remove_all</span>(q_long, <span class="st">"....[0-9]+"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(q_short, q_long, norm_type) <span class="sc">|&gt;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(norm_type)) <span class="sc">|&gt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">q_short</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">q_long</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">norm_type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Disinterestedness</td>
+<td style="text-align: left;">Scientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organized Skepticism</td>
+<td style="text-align: left;">Scientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Communality</td>
+<td style="text-align: left;">Scientists openly share new findings with all colleagues</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Universalism</td>
+<td style="text-align: left;">Scientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Disinterestedness</td>
+<td style="text-align: left;">Scientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organized Skepticism</td>
+<td style="text-align: left;">Scientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Communality</td>
+<td style="text-align: left;">Scientists openly share new findings with all colleagues</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Universalism</td>
+<td style="text-align: left;">Scientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)</td>
+<td style="text-align: left;">norm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Particularism</td>
+<td style="text-align: left;">Scientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organized Dogmatism</td>
+<td style="text-align: left;">Scientists generally invest their careers in promoting their own most important findings, theories, or innovations</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-interestedness</td>
+<td style="text-align: left;">Scientists compete with others in the same field for funding and recognition of their achievements</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Solitariness</td>
+<td style="text-align: left;">Scientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Particularism</td>
+<td style="text-align: left;">Scientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organized Dogmatism</td>
+<td style="text-align: left;">Scientists generally invest their careers in promoting their own most important findings, theories, or innovations</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-interestedness</td>
+<td style="text-align: left;">Scientists compete with others in the same field for funding and recognition of their achievements</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Solitariness</td>
+<td style="text-align: left;">Scientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications</td>
+<td style="text-align: left;">counternorm</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
 </div>
 
