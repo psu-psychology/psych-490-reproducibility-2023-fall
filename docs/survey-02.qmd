@@ -231,7 +231,7 @@ survey_02_norms_data_dictionary |>
   kableExtra::kable_classic()
 ```
 
-```{r fig-boxplot-norm-counternorm, fig.cap="Adherence to norms and counternorms by what scientists should do vs. actually do"}
+```{r fig-boxplot-norm-counternorm}
 survey_02_norms_long |>
   ggplot() +
   aes(norm_counternorm, rating, color = type) +
@@ -239,6 +239,6 @@ survey_02_norms_long |>
   geom_jitter(width = 0.2, height = 0.2) +
   facet_grid(cols = vars(resp_frame)) +
   theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),
-        legend.title = element_blank(), legend.position = "top")
+        legend.title = element_blank(), legend.position = "top", legen)
 ```
 
