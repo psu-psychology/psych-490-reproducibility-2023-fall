@@ -85,9 +85,9 @@ survey_02_norms_qs
 We should omit the first two response in the dataset.
 These were used by Dr. Gilmore used to generate a Google Sheet, and aren't real data.
 
-```{r eval=FALSE}
-survey_02_norms <- survey_02_norms |>
-  dplyr::filter(survey_02_norms[,18] != "test")
+```{r}
+n_responses <- dim(survey_02_norms)[1]
+survey_02_norms <- survey_02_norms[3:n_responses,]
 ```
 
 ### Clean/shorten names
