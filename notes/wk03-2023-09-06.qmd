@@ -10,6 +10,10 @@ css: ../include/css/styles.css
 
 # Overview
 
+## Prelude
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VXED2AVlbR0?si=lA0AcDhsFcMpyG72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Announcements
 
 - [Due this Friday]{.orange_due}
