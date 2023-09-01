@@ -14,10 +14,12 @@ css: ../include/css/styles.css
 
 - [Due today]{.orange_due}
     - [Exercise 01: Reading a scientific paper](../ex01-read-a-scientific-paper.qmd)
+- **No class on Monday, September 4**.
 
 ## Today
 
 - Wrap-up on norms and counter-norms
+- Survey 02: [From raw data to results](survey-02.qmd)
 
 *Work session: Norms and counter-norms*
 
