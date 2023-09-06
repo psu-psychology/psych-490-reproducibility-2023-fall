@@ -18,6 +18,11 @@ css: ../include/css/styles.css
 
 - [Due this Friday]{.orange_due}
     - [Exercise 02: Norms and counter-norms write-up](../ex02-norms-counternorms.qmd)
+    
+## Idea
+
+- Question for the author(s)
+- Question for your classmates
 
 ## Today
 
@@ -27,7 +32,11 @@ css: ../include/css/styles.css
     - [@Kardash2012-kq]
     - [@Macfarlane2008-tc]
     
-## [@Kardash2012-kq]
+# Adherence to norms and counter-norms
+
+## What are we trying to understand?
+   
+---
 
 Kardash, C. M. & Edwards, O. V. (2012). Thinking and behaving like scientists: Perceptions of undergraduate science interns and their faculty mentors. *Instructional Science*, 40(6), 875–899. https://doi.org/10.1007/s11251-011-9195-0
 
