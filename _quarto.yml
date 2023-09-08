@@ -37,6 +37,7 @@ website:
           - href: "notes/wk04-2023-09-11.qmd"
           - href: "notes/wk04-2023-09-13.qmd"
           - href: "notes/wk04-2023-09-15.qmd"
+          - href: "notes/wk05-2023-09-18.qmd"
       - text: exercises
         menu: 
           - href: "ex01-read-a-scientific-paper.qmd"

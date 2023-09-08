@@ -231,13 +231,15 @@ survey_02_norms_data_dictionary |>
   kableExtra::kable_classic()
 ```
 
-```{r fig-boxplot-norm-counternorm, fig.cap="Adherence to norms and counternorms by what scientists should do vs. actually do"}
+```{r fig-boxplot-norm-counternorm, fig.cap="Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"}
 survey_02_norms_long |>
   ggplot() +
-  aes(norm_counternorm, rating, color = type) +
-  geom_boxplot() +
-  geom_jitter(width = 0.2, height = 0.2) +
+  aes(norm_counternorm, rating) +
+  geom_violin() +
+  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +
+  #ylab(c("not at all", "2", "3", "4", "a great deal")) +
   facet_grid(cols = vars(resp_frame)) +
+  scale_y_continuous(labels=c("1" = "not at all", "2", "3", "4", "5" = "a great deal")) +
   theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),
         legend.title = element_blank(), legend.position = "top")
 ```

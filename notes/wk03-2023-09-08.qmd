@@ -72,7 +72,7 @@ These questions could form the basis of a final project where a student or stude
 
 ## What do the terms mean?
 
->*Replication* refers to testing the reliability of a prior finding with different data. *Robustness* refers to testing the reliability of a prior finding using the same data and a different analysis strategy....**Reproducibility** refers to testing the reliability of a prior finding using the same data and the same analysis strategy...
+>*Replication* refers to testing the reliability of a prior finding with different data. *Robustness* refers to testing the reliability of a prior finding using the same data and a different analysis strategy....*Reproducibility* refers to testing the reliability of a prior finding using the same data and the same analysis strategy...
 
 <p style="text-align:center;">
 [@Nosek2022-hv]
@@ -115,6 +115,14 @@ These questions could form the basis of a final project where a student or stude
 
 ![If you got hit by a bus, could your colleagues replicate and build on your work? What's your project's 'bus number'?](http://lh6.ggpht.com/_KVa1Tk_k1BU/TTjL-RSY_eI/AAAAAAAABtg/VQIfae1_wtQ/hit_thumb%5B3%5D.jpg?imgmax=800)
 
+---
+
+::: {.callout-important}
+
+Next [Friday](../schedule#friday-september-15) we will discuss whether the [Survey-01](../survey-01.html) and [Survey-02](../survey-02.html) documents demonstrate *methods* reproducibility.
+
+:::
+
 ## *Results* reproducibility
 
 - Same results from an independent study
@@ -143,7 +151,7 @@ These questions could form the basis of a final project where a student or stude
 
 ---
 
-> We investigated the reproducibility of the major statistical conclusions drawn in 46 articles published in 2012 in three APA journals. After having identified 232 key statistical claims, we tried to reproduce, for each claim, the test statistic, its degrees of freedom, and the corresponding p value, starting from the raw data that were provided by the authors and closely following the Method section in the article... 
+>We investigated the reproducibility of the major statistical conclusions drawn in 46 articles published in 2012 in three APA journals. After having identified 232 key statistical claims, we tried to reproduce, for each claim, the test statistic, its degrees of freedom, and the corresponding p value, starting from the raw data that were provided by the authors and closely following the Method section in the article... 
 
 <p style="text-align:center;">
 [@Artner2021-qg]
@@ -156,6 +164,16 @@ These questions could form the basis of a final project where a student or stude
 <p style="text-align:center;">
 [@Artner2021-qg]
 </p>
+
+---
+
+::: {.callout-note}
+
+If [@Artner2021-qg] had to "deviate from the article's analytical description for 18 claims, what does that mean?
+
+Should we reduce the "successfully reproduced" claims to $(163-18)/232 = 62.5%$%?
+
+:::
 
 ---
 
@@ -303,7 +321,7 @@ Could be a topic for a final project.
 
 # Next time
 
-**Replication failure: The "Lady Macbeth Effect"**
+*Replication failure: The "Lady Macbeth Effect"*
 
 - Read
     - [@Zhong2006-nf].
