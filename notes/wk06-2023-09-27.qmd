@@ -1,0 +1,41 @@
+---
+title: "2023-09-27 Wed"
+subtitle: "Scientific integrity"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+---
+
+# Overview
+
+## Announcements
+
+- [Due Friday]{.orange_due}
+    - [Exercise 03: Violations of scientific integrity](ex03-scientific-integrity.qmd)
+
+## Today
+
+*Fraud & misconduct*
+
+- Read
+    - [@Ritchie2020-fm], Chapter 3
+    - [@Bhattacharjee2013-rw]
+    - (Skim) [@Levelt2012-ap]
+    - (Skim) [@Carpenter2012-ot]
+
+# Next time
+
+*P-hacking*
+
+- [Due]{.orange_due}
+    - [Exercise 03: Violations of scientific integrity](../ex03-scientific-integrity.html)
+- [Assignment]{.green_assigned}
+    - [Exercise 04: P-hack your way to scientific glory](../ex04-p-hacking.html write-up.
+- Work session
+    - [Final project proposals](../final-project.html), [due Friday, October 13]{.orange_due}
+
+# Resources
+
+## References

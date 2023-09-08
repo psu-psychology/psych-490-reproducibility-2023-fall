@@ -258,6 +258,17 @@ A consistent finding emerging from replication studies across fields is that rep
 [@Errington2021-sy]
 </p>
 
+# Next time
+
+*The 4 (5?) Rs*
+
+- Read
+    - [@Nosek2022-hv]
+    - (Skim) [@Fidler2021-xn]
+    <!-- - [@goodman_what_2016] -->
+- [Class notes](wk05-2023-09-20.qmd)
+
+
 # Resources
 
 ## References

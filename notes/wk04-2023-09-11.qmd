@@ -24,9 +24,9 @@ css: ../include/css/styles.css
 
 Zhong, C.-B. & Liljenquist, K. (2006). Washing away your sins: Threatened morality and physical cleansing. *Science*, *313*(5792), 1451–1452. <https://doi.org/10.1126/science.1130726>
 
-## How to read a paper
+## Abstract
 
-> Physical cleansing has been a focal element in religious ceremonies for thousands of years. The prevalence of this practice suggests a psychological association between bodily purity and moral purity. In three studies, we explored what we call the “Macbeth effect”—that is, a threat to one's moral purity induces the need to cleanse oneself... 
+>Physical cleansing has been a focal element in religious ceremonies for thousands of years. The prevalence of this practice suggests a psychological association between bodily purity and moral purity. In three studies, we explored what we call the “Macbeth effect”—that is, a threat to one's moral purity induces the need to cleanse oneself... 
 
 <p style="text-align:center;">
 [@Zhong2006-nf]
@@ -51,23 +51,20 @@ Zhong, C.-B. & Liljenquist, K. (2006). Washing away your sins: Threatened morali
 ## From abstract [@Zhong2006-nf] 
 
 - Who is audience?
-
----
-
 - What question was explored?
+
 :::{.incremental}
 - Need to cleanse
     - Increased mental accessibility of cleansing-related products
     - Greater desire for cleansing products
     - Greater likelihood of taking antiseptic wipes
-- What measurements were taken? How often?
 :::
 
 ## From methods section [@Zhong2006-nf] 
 
 - Not in main text!
 - Look in [Supplemental material](https://www.science.org/doi/suppl/10.1126/science.1130726/suppl_file/zhong.som.pdf)
-- Why this structure?
+- Why would *Science* adopt this structure for papers?
 
 ## Study 1
 
@@ -262,13 +259,15 @@ Earp, B. D., Everett, J. A. C., Madva, E. N. & Hamlin, J. K. (2014). Out, Damned
 
 ::: {.callout-important}
 
-What does an *t*-test measure?
+What does a *t*-test measure?
 
 >A two-sample location test of the null hypothesis such that the means of two populations are equal.
 
 Source: Wikipedia <https://en.wikipedia.org/wiki/Student%27s_t-test>
 
-What does the *95% CI* mean? It stands for confidence interval. Does that help?
+What does the *95% CI* mean? The CI stands for [*confidence interval*](https://en.wikipedia.org/wiki/Confidence_interval). Does that help?
+
+"...There is only a 5% chance that the 95% CI excludes the mean of the population..." [@BMJ-oi].
 
 :::
 

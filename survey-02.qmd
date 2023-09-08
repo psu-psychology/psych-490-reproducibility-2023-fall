@@ -1,7 +1,7 @@
 ---
 title: "Survey 02"
 params:
-  update_data: FALSE
+  update_data: TRUE
 ---
 
 ## Purpose {-}

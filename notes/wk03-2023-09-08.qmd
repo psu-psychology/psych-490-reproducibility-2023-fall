@@ -169,7 +169,7 @@ Next [Friday](../schedule#friday-september-15) we will discuss whether the [Surv
 
 ::: {.callout-note}
 
-If [@Artner2021-qg] had to "deviate from the article's analytical description for 18 claims, what does that mean?
+If [@Artner2021-qg] had to "deviate from the article's analytical description" for 18 claims, what does that mean?
 
 Should we reduce the "successfully reproduced" claims to $(163-18)/232 = 62.5%$%?
 
@@ -185,19 +185,27 @@ Should we reduce the "successfully reproduced" claims to $(163-18)/232 = 62.5%$%
 
 ---
 
-Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science*, *349*(6251), aac4716–aac4716. https://doi.org/10.1126/science.aac4716
+::: {.callout-note}
+
+What aspects of APA style do you think undermine reproduction attempts?
+
+:::
+
+---
+
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science*, *349*(6251), aac4716–aac4716. <https://doi.org/10.1126/science.aac4716>
 
 - Read and discuss on [Monday, October 30, 2023](../schedule.html#monday-october-30)
 
 ---
 
-Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. *Nature Human Behaviour*, *1*. https://doi.org/10.1038/s41562-018-0399-z
+Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., … Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. *Nature Human Behaviour*, *1*. <https://doi.org/10.1038/s41562-018-0399-z>
 
 - Extra credit assignment for short summary [due Friday, November 3](../schedule.html#friday-november-3){.orange_due}
 
 ---
 
-Whitt, C. M., Miranda, J. F. & Tullett, A. M. (2022). History of replication failures in psychology. In W. O’Donohue, A. Masuda & S. Lilienfeld (Eds.), *Avoiding Questionable Research Practices in Applied Psychology* (pp. 73–97). Springer International Publishing. https://doi.org/10.1007/978-3-031-04968-2_4
+Whitt, C. M., Miranda, J. F. & Tullett, A. M. (2022). History of replication failures in psychology. In W. O’Donohue, A. Masuda & S. Lilienfeld (Eds.), *Avoiding Questionable Research Practices in Applied Psychology* (pp. 73–97). Springer International Publishing. <https://doi.org/10.1007/978-3-031-04968-2_4>
 
 ## Framework for Open and Reproducible Research Training (forrt.org)
 
@@ -280,6 +288,10 @@ Could be a topic for a final project.
 
 ---
 
+a | This figure illustrates the distribution of projects within the oncology, women's health and cardiovascular indications that were analysed in this study. b | Several approaches were used to reproduce the published data. Models were either exactly copied, adapted to internal needs (for example, using other cell lines than those published, other assays and so on) or the published data was transferred to models for another indication. 'Not applicable' refers to projects in which general hypotheses could not be verified. c | Relationship of published data to in-house data. The proportion of each of the following outcomes is shown: data were completely in line with published data; the main set was reproducible; some results (including the most relevant hypothesis) were reproducible; or the data showed inconsistencies that led to project termination. 'Not applicable' refers to projects that were almost exclusively based on in-house data, such as gene expression analysis. The number of projects and the percentage of projects within this study (a– c) are indicated. d | A comparison of model usage in the reproducible and irreproducible projects is shown. The respective numbers of projects and the percentages of the groups are indicated.
+
+---
+
 > We received input from 23 scientists (heads of laboratories) and collected data from 67 projects, most of them (47) from the field of oncology. This analysis revealed that only in ∼20–25% of the projects were the relevant published data completely in line with our in-house findings
 
 <p style="text-align:center;">
@@ -357,7 +369,7 @@ Watching the talk by Begley is not required. But you might get inspired and deci
 
 --- 
 
-Nosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., Fidler, F., Hilgard, J., Kline Struhl, M., Nuijten, M. B., Rohrer, J. M., Romero, F., Scheel, A. M., Scherer, L. D., Schönbrodt, F. D. & Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. *Annual Review of Psychology*, *73*(2022), 719–748. https://doi.org/10.1146/annurev-psych-020821-114157
+Nosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., Fidler, F., Hilgard, J., Kline Struhl, M., Nuijten, M. B., Rohrer, J. M., Romero, F., Scheel, A. M., Scherer, L. D., Schönbrodt, F. D. & Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. *Annual Review of Psychology*, *73*(2022), 719–748. <https://doi.org/10.1146/annurev-psych-020821-114157>
 
 ---
 
