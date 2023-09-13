@@ -4,19 +4,19 @@ params:
   update_data: FALSE
 ---
 
-## Purpose {-}
+## Purpose
 
-This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.
+This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.
 
 The survey questions were adapted from those discussed in [@Krumrei-Mancuso2016-qm; @Nadelson2014-ym; @Plohl2023-yf].
 
-## Survey {-}
+## Survey
 
 Direct link: <https://forms.gle/Szk1pLEu4ZLWtFjX7>
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-## Preparation {-}
+## Preparation
 
 First, we load the external packages (groups of R commands) that we will be using.
 
@@ -30,7 +30,7 @@ library('lubridate')
 library('GGally')
 ```
 
-## Gathering {-}
+## Gathering
 
 Next, we download the data from the Google Sheet where it is collected.
 Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command `Sys.getenv("GMAIL_SURVEY")`.
@@ -66,7 +66,7 @@ Because these data *might* contain sensitive or identifiable information, we onl
 This is achieved by adding the name of the data directory to a special `.gitignore` file.
 :::
 
-## Cleaning {-}
+## Cleaning
 
 Next we load the data file and clean it.
 
@@ -133,7 +133,7 @@ Now, let's look at the names to confirm they all got changed.
 names(survey_01_clean)
 ```
 
-### Data dictionary {-}
+### Data dictionary
 
 We'll pause here to start building a [data dictionary](https://en.wikipedia.org/wiki/Data_dictionary), a file that explains the origin, format, and usage of our dataset.
 
@@ -153,7 +153,7 @@ survey_01_data_dictionary <-
 
 We'll add other items to the data dictionary later.
 
-### Filtering out irrelevant responses {-}
+### Filtering out irrelevant responses
 
 We should omit the first response in the dataset.
 That was the one Dr. Gilmore used to generate a Google Sheet, and isn't real data.
@@ -168,7 +168,7 @@ if (n_responses > 1) {
 }
 ```
 
-## Visualizations {-}
+## Visualizations
 
 ### Openness questions
 

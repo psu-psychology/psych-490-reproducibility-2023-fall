@@ -265,6 +265,8 @@ What does a *t*-test measure?
 
 Source: Wikipedia <https://en.wikipedia.org/wiki/Student%27s_t-test>
 
+(Remember: The *null hypothesis* means we hypothesis that there is no difference between the groups.)
+
 What does the *95% CI* mean? The CI stands for [*confidence interval*](https://en.wikipedia.org/wiki/Confidence_interval). Does that help?
 
 "...There is only a 5% chance that the 95% CI excludes the mean of the population..." [@BMJ-oi].
@@ -282,6 +284,16 @@ What does the *95% CI* mean? The CI stands for [*confidence interval*](https://e
 ---
 
 >Participant samples recruited through this service have been shown to be more representative of the general population than are student samples, and are known to yield reliable data (Buhrmester, Kwang, & Gosling, 2011). Eight participants were excluded from analyses for failure to complete the questionnaires.
+
+---
+
+::: {.callout-note}
+
+This website tracks demographic characteristics of Mechanical Turk (MTurk) Workers:
+
+<https://demographics.mturk-tracker.com/>
+
+:::
 
 ---
 
@@ -402,4 +414,3 @@ See <https://forrt.org/reversals/>
 # Resources
 
 ## References
-

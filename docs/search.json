@@ -1372,25 +1372,95 @@
     "text": "References\n\n\n\n\n\n\nBargh, J. A., Chen, M., & Burrows, L. (1996). Automaticity of social behavior: Direct effects of trait construct and stereotype-activation on action. Journal of Personality and Social Psychology, 71(2), 230–244. https://doi.org/10.1037//0022-3514.71.2.230\n\n\nDoyen, S., Klein, O., Pichon, C.-L., & Cleeremans, A. (2012). Behavioral priming: It’s all in the mind, but whose mind? PloS One, 7(1), e29081. https://doi.org/10.1371/journal.pone.0029081"
   },
   {
-    "objectID": "notes/wk04-2023-09-15.html#announcements",
-    "href": "notes/wk04-2023-09-15.html#announcements",
-    "title": "2023-09-15 Fri",
-    "section": "Announcements",
-    "text": "Announcements"
-  },
-  {
     "objectID": "notes/wk04-2023-09-15.html#today",
     "href": "notes/wk04-2023-09-15.html#today",
     "title": "2023-09-15 Fri",
     "section": "Today",
-    "text": "Today\nWork session: Replication with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report"
+    "text": "Today\nWork session: Reproducible workflows with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#goals",
+    "href": "notes/wk04-2023-09-15.html#goals",
+    "title": "2023-09-15 Fri",
+    "section": "Goals",
+    "text": "Goals\n\n\nCapture details of the research workflow\n\nNot usually contained in journal articles\n\nMake research notebooks that actually do work\n\nNot just capture info passively\n\nDo so efficiently, flexibly"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#more-goals",
+    "href": "notes/wk04-2023-09-15.html#more-goals",
+    "title": "2023-09-15 Fri",
+    "section": "More goals",
+    "text": "More goals\n\n\nMake computer work harder\nReduce manual work\n\nMore error-prone\n\nSave history of changes (e.g., version control)\nMake use of HTML and the web\nKeep track of (& cite) resources"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#research-workflow",
+    "href": "notes/wk04-2023-09-15.html#research-workflow",
+    "title": "2023-09-15 Fri",
+    "section": "Research workflow",
+    "text": "Research workflow\n\nflowchart LR\n  A{Idea/Question} --&gt;|Develop|B{Plan}\n  B --&gt;|Create measures|C{Collect Info}\n  C --&gt;|Gather collected|D{Analyze Info}\n  D --&gt;|Visualize|E{Share findings}\n  E --&gt;|Evaluate|A\n\n\n\nflowchart LR\n  A{Idea/Question} --&gt;|Develop|B{Plan}\n  B --&gt;|Create measures|C{Collect Info}\n  C --&gt;|Gather collected|D{Analyze Info}\n  D --&gt;|Visualize|E{Share findings}\n  E --&gt;|Evaluate|A\n\n\n\n\n\nGraph made using Mermaid.js"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#survey-01",
+    "href": "notes/wk04-2023-09-15.html#survey-01",
+    "title": "2023-09-15 Fri",
+    "section": "Survey-01",
+    "text": "Survey-01\n\nReport\nGoals\n\nMeasure trust in science and scientists\nMeasure individual characteristics that predict that trust\nDo PSYCH 490.009 students follow patterns found by others (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)?"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#survey-questions",
+    "href": "notes/wk04-2023-09-15.html#survey-questions",
+    "title": "2023-09-15 Fri",
+    "section": "Survey questions",
+    "text": "Survey questions\n\nUse (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023) questions.\nShared Google Form"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#gather-clean-data",
+    "href": "notes/wk04-2023-09-15.html#gather-clean-data",
+    "title": "2023-09-15 Fri",
+    "section": "Gather & Clean Data",
+    "text": "Gather & Clean Data\n\nUse Quarto; (“Quarto,” n.d.).\nSuccessor to RStudio’s R Markdown"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#quarto-project",
+    "href": "notes/wk04-2023-09-15.html#quarto-project",
+    "title": "2023-09-15 Fri",
+    "section": "Quarto project",
+    "text": "Quarto project\n\nSet of text files that combine\n\nNotes\nCode (in the R programming language)\nWeb links\nFigures"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#anatomy-of-a-quarto-document",
+    "href": "notes/wk04-2023-09-15.html#anatomy-of-a-quarto-document",
+    "title": "2023-09-15 Fri",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n---\ntitle: \"Survey 01\"\nparams:\n  update_data: FALSE\n---\n\n\nDocument title\nA parameter that determines whether the document should update the data or not."
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#enough-anatomy",
+    "href": "notes/wk04-2023-09-15.html#enough-anatomy",
+    "title": "2023-09-15 Fri",
+    "section": "Enough anatomy",
+    "text": "Enough anatomy\n\nGathering (downloading data from Google)\nCleaning\nVisualizing\nMaking a data dictionary"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#comparing-this-to-other-approaches",
+    "href": "notes/wk04-2023-09-15.html#comparing-this-to-other-approaches",
+    "title": "2023-09-15 Fri",
+    "section": "Comparing this to other approaches…",
+    "text": "Comparing this to other approaches…"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#lets-look-at-survey-02",
+    "href": "notes/wk04-2023-09-15.html#lets-look-at-survey-02",
+    "title": "2023-09-15 Fri",
+    "section": "Let’s look at Survey-02",
+    "text": "Let’s look at Survey-02\n\nSummary figure from Survey-02"
   },
   {
     "objectID": "notes/wk04-2023-09-15.html#references",
     "href": "notes/wk04-2023-09-15.html#references",
     "title": "2023-09-15 Fri",
     "section": "References",
-    "text": "References\n\n\n\n\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601"
+    "text": "References\n\n\nPSYCH 490.009: 2023-09-15 Friday\n\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601\n\n\nKrumrei-Mancuso, E. J., & Rouse, S. V. (2016). The development and validation of the comprehensive intellectual humility scale. Journal of Personality Assessment, 98(2), 209–221. https://doi.org/10.1080/00223891.2015.1068174\n\n\nNadelson, L., Jorcyk, C., Yang, D., Jarratt Smith, M., Matson, S., Cornell, K., & Husting, V. (2014). I just don’t trust them: The development and validation of an assessment instrument to measure trust in science and scientists. School Science and Mathematics, 114(2), 76–86. https://doi.org/10.1111/ssm.12051\n\n\nPlohl, N., & Musil, B. (2023). Assessing the incremental value of intellectual humility and cognitive reflection in predicting trust in science. Personality and Individual Differences, 214, 112340. https://doi.org/10.1016/j.paid.2023.112340\n\n\nQuarto. (n.d.). https://quarto.org/. Retrieved from https://quarto.org/"
   },
   {
     "objectID": "notes/wk05-2023-09-18.html#announcements",
@@ -1719,14 +1789,14 @@
     "href": "survey-01.html",
     "title": "Survey 01",
     "section": "",
-    "text": "This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
+    "text": "This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
   },
   {
     "objectID": "survey-01.html#purpose",
     "href": "survey-01.html#purpose",
     "title": "Survey 01",
     "section": "",
-    "text": "This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
+    "text": "This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
   },
   {
     "objectID": "survey-01.html#survey",
@@ -1832,5 +1902,12 @@
     "title": "values",
     "section": "Penn State Values",
     "text": "Penn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
+    "href": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
+    "title": "2023-09-15 Fri",
+    "section": "What analyses would you like to try?",
+    "text": "What analyses would you like to try?"
   }
 ]

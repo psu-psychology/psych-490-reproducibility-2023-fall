@@ -353,20 +353,20 @@ div.csl-indent {
 
 </header>
 
-<section id="purpose" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This page documents the data processing steps involved with Survey 01 in PSYCH 490.009.</p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.</p>
 <p>The survey questions were adapted from those discussed in <span class="citation" data-cites="Krumrei-Mancuso2016-qm Nadelson2014-ym Plohl2023-yf">(<a href="#ref-Krumrei-Mancuso2016-qm" role="doc-biblioref">Krumrei-Mancuso &amp; Rouse, 2016</a>; <a href="#ref-Nadelson2014-ym" role="doc-biblioref">Nadelson et al., 2014</a>; <a href="#ref-Plohl2023-yf" role="doc-biblioref">Plohl &amp; Musil, 2023</a>)</span>.</p>
 </section>
-<section id="survey" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="survey">Survey</h2>
+<section id="survey" class="level2">
+<h2 class="anchored" data-anchor-id="survey">Survey</h2>
 <p>Direct link: <a href="https://forms.gle/Szk1pLEu4ZLWtFjX7" class="uri">https://forms.gle/Szk1pLEu4ZLWtFjX7</a></p>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp2GG_2TZ3_T6Yl1okn-sHJF93n9RZu_EmLWQtHP0rJcGM3w/viewform?embedded=true" width="640" height="6003" frameborder="0" marginheight="0" marginwidth="0">
 Loading…
 </iframe>
 </section>
-<section id="preparation" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="preparation">Preparation</h2>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <p>First, we load the external packages (groups of R commands) that we will be using.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -395,8 +395,8 @@ Loading…
 </div>
 </div>
 </section>
-<section id="gathering" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="gathering">Gathering</h2>
+<section id="gathering" class="level2">
+<h2 class="anchored" data-anchor-id="gathering">Gathering</h2>
 <p>Next, we download the data from the Google Sheet where it is collected. Dr.&nbsp;Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command <code>Sys.getenv("GMAIL_SURVEY")</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="st">'csv'</span>)) {</span>
@@ -436,8 +436,8 @@ Note
 </div>
 </div>
 </section>
-<section id="cleaning" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="cleaning">Cleaning</h2>
+<section id="cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning">Cleaning</h2>
 <p>Next we load the data file and clean it.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>survey_01 <span class="ot">&lt;-</span></span>
@@ -539,8 +539,8 @@ Note
 [27] "trust_find_tech_solutions"         "comments"                         </code></pre>
 </div>
 </div>
-<section id="data-dictionary" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="data-dictionary">Data dictionary</h3>
+<section id="data-dictionary" class="level3">
+<h3 class="anchored" data-anchor-id="data-dictionary">Data dictionary</h3>
 <p>We’ll pause here to start building a <a href="https://en.wikipedia.org/wiki/Data_dictionary">data dictionary</a>, a file that explains the origin, format, and usage of our dataset.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary <span class="ot">&lt;-</span></span>
@@ -557,8 +557,8 @@ Note
 </div>
 <p>We’ll add other items to the data dictionary later.</p>
 </section>
-<section id="filtering-out-irrelevant-responses" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="filtering-out-irrelevant-responses">Filtering out irrelevant responses</h3>
+<section id="filtering-out-irrelevant-responses" class="level3">
+<h3 class="anchored" data-anchor-id="filtering-out-irrelevant-responses">Filtering out irrelevant responses</h3>
 <p>We should omit the first response in the dataset. That was the one Dr.&nbsp;Gilmore used to generate a Google Sheet, and isn’t real data.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>n_responses <span class="ot">&lt;-</span> <span class="fu">dim</span>(survey_01_clean)[<span class="dv">1</span>]</span>
@@ -571,8 +571,8 @@ Note
 </div>
 </section>
 </section>
-<section id="visualizations" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="visualizations">Visualizations</h2>
+<section id="visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
 <section id="openness-questions" class="level3">
 <h3 class="anchored" data-anchor-id="openness-questions">Openness questions</h3>
 <p>Remember:</p>
