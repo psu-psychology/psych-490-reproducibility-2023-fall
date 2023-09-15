@@ -153,7 +153,7 @@ Next [Friday](../schedule#friday-september-15) we will discuss whether the [Surv
 
 - Read and discuss on [Wednesday, September 13, 2023](../schedule.html#wednesday-september-13) 
 
-## Artner et al. 2021
+## Artner et al. 2021 {.scrollable}
 
 >We investigated the reproducibility of the major statistical conclusions drawn in 46 articles published in 2012 in three APA journals. After having identified 232 key statistical claims, we tried to reproduce, for each claim, the test statistic, its degrees of freedom, and the corresponding p value, starting from the raw data that were provided by the authors and closely following the Method section in the article... 
 
@@ -278,7 +278,8 @@ Could be a topic for a final project.
 | >20 | 21 | 248 [3, 800] | 231 [82-519] |
 | 5-19 | 32 | 168 [6, 1,909] | 13 [3, 24] |
 
-[@Begley2012-cr, Table 1]
+: [@Begley2012-cr] {#tbl-begley}
+
 
 ## Findings
 
@@ -328,7 +329,7 @@ a | This figure illustrates the distribution of projects within the oncology, wo
 
 ![Cover from @Harris2017-oz](../include/img/harris-rigor-mortis.jpg){fig-align="center"}
 
-## Questions to ponder
+## Questions to ponder {#sec-questions}
 
 - Why do Begley & Ellis focus on a journal's impact factor?
 - Why do Begley & Ellis focus on citations to reproduced vs. non-reproduced articles?
@@ -386,4 +387,3 @@ Reading and writing a commentary on either of these articles might be a good fin
 :::
 
 ## References
-

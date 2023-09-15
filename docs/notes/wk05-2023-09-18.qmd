@@ -205,6 +205,8 @@ Errington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E
     
 ---
 
+![Fig. 6 from [@Errington2021-dp]](https://iiif.elifesciences.org/lax/71601%2Felife-71601-fig6-v3.tif/full/1500,/0/default.jpg)
+
 ```{r, fig.cap="Fig. 6 from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)"}
 knitr::include_graphics("https://iiif.elifesciences.org/lax/71601%2Felife-71601-fig6-v3.tif/full/1500,/0/default.jpg")
 ```
@@ -274,4 +276,3 @@ A consistent finding emerging from replication studies across fields is that rep
 # Resources
 
 ## References
-

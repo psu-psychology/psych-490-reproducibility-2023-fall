@@ -24,7 +24,7 @@ footer: "PSYCH 490.009: 2023-09-15 Friday"
 
 ## Today
 
-- Wrap-up discussion of [@Bargh1996-yv] and [@Doyen2012-ib], [wk04-2023-09-13 slides](wk04-2023-09-13.qmd)
+- Wrap-up discussion of [@Bargh1996-yv] and [@Doyen2012-ib]; [Slides from Wed 9/13](wk04-2023-09-13 slides](wk04-2023-09-13.html)
 
 ---
 
