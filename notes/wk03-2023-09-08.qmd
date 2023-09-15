@@ -153,7 +153,7 @@ Next [Friday](../schedule#friday-september-15) we will discuss whether the [Surv
 
 - Read and discuss on [Wednesday, September 13, 2023](../schedule.html#wednesday-september-13) 
 
----
+## Artner et al. 2021
 
 >We investigated the reproducibility of the major statistical conclusions drawn in 46 articles published in 2012 in three APA journals. After having identified 232 key statistical claims, we tried to reproduce, for each claim, the test statistic, its degrees of freedom, and the corresponding p value, starting from the raw data that were provided by the authors and closely following the Method section in the article... 
 

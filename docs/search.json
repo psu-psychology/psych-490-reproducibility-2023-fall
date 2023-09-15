@@ -158,14 +158,14 @@
     "href": "ex03-scientific-integrity.html#assignment",
     "title": "Exercise 03",
     "section": "Assignment",
-    "text": "Assignment\nChoose a case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity (ORI).\nChoose a second report about a violation of scientific integrity from Retraction Watch.\nCompare and contrast the two cases you have chosen, focusing on answering the following questions:\n\nWhat specific violation was alleged?\nWhy are the alleged behavior(s) considered a violation of scientific integrity?\nWhat are/were the consequences to the people involved?\nWhat could be done to reduce the likelihood that similar alleged violations of scientific integrity occur in the future?"
+    "text": "Assignment\nChoose two cases where violations of scientific integrity have been alleged. Your cases must come from two different sources from among the following:\n\nA case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity (ORI.\nA report about a violation of scientific integrity from the Retraction Watch database.\nA post or posts on the Data Colada site.\nA report in a newspaper or scientific journal.\n\nCompare and contrast the two cases you have chosen, focusing on answering the following questions:\n\nWhat specific violation or violations were alleged?\nWhy are the alleged behavior(s) considered a violation of scientific integrity?\nWhat are/were the consequences to the people involved?\nWhat could be done to reduce the likelihood that similar alleged violations of scientific integrity occur in the future?"
   },
   {
     "objectID": "ex03-scientific-integrity.html#submit",
     "href": "ex03-scientific-integrity.html#submit",
     "title": "Exercise 03",
     "section": "Submit",
-    "text": "Submit\nIn a short (2-3 pp double-spaced report) discuss your answers to these questions and how the two cases are similar or differ."
+    "text": "Submit\nIn a short (2-3 pp double-spaced report) discuss your answers to these questions and how the two cases are similar or differ from one another.\nPlease use the APA format for your paper. Remember the following template document is a good place to start:\nhttps://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy"
   },
   {
     "objectID": "ex04-p-hacking.html",
@@ -1029,6 +1029,13 @@
     "text": "Replication failure: Priming effect\n\nRead and discuss on Wednesday, September 13, 2023"
   },
   {
+    "objectID": "notes/wk03-2023-09-08.html#artner-et-al.-2021",
+    "href": "notes/wk03-2023-09-08.html#artner-et-al.-2021",
+    "title": "2023-09-08 Fri",
+    "section": "Artner et al. 2021",
+    "text": "Artner et al. 2021\n\nWe investigated the reproducibility of the major statistical conclusions drawn in 46 articles published in 2012 in three APA journals. After having identified 232 key statistical claims, we tried to reproduce, for each claim, the test statistic, its degrees of freedom, and the corresponding p value, starting from the raw data that were provided by the authors and closely following the Method section in the article…\n\n\n(Artner et al., 2021)"
+  },
+  {
     "objectID": "notes/wk03-2023-09-08.html#framework-for-open-and-reproducible-research-training-forrt.org",
     "href": "notes/wk03-2023-09-08.html#framework-for-open-and-reproducible-research-training-forrt.org",
     "title": "2023-09-08 Fri",
@@ -1372,18 +1379,32 @@
     "text": "References\n\n\n\n\n\n\nBargh, J. A., Chen, M., & Burrows, L. (1996). Automaticity of social behavior: Direct effects of trait construct and stereotype-activation on action. Journal of Personality and Social Psychology, 71(2), 230–244. https://doi.org/10.1037//0022-3514.71.2.230\n\n\nDoyen, S., Klein, O., Pichon, C.-L., & Cleeremans, A. (2012). Behavioral priming: It’s all in the mind, but whose mind? PloS One, 7(1), e29081. https://doi.org/10.1371/journal.pone.0029081"
   },
   {
+    "objectID": "notes/wk04-2023-09-15.html#announcement",
+    "href": "notes/wk04-2023-09-15.html#announcement",
+    "title": "2023-09-15 Fri",
+    "section": "Announcement",
+    "text": "Announcement\n\nRetraction Watch database now available to anyone via CrossRef"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#last-time",
+    "href": "notes/wk04-2023-09-15.html#last-time",
+    "title": "2023-09-15 Fri",
+    "section": "Last time…",
+    "text": "Last time…\n\nWrap-up on replication attempt of (Zhong & Liljenquist, 2006) by (Earp, Everett, Madva, & Hamlin, 2014)\nDiscuss replication attempt of (Bargh, Chen, & Burrows, 1996) by (Doyen, Klein, Pichon, & Cleeremans, 2012)"
+  },
+  {
     "objectID": "notes/wk04-2023-09-15.html#today",
     "href": "notes/wk04-2023-09-15.html#today",
     "title": "2023-09-15 Fri",
     "section": "Today",
-    "text": "Today\nWork session: Reproducible workflows with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report"
+    "text": "Today\n\nWrap-up discussion of (Bargh et al., 1996) and (Doyen et al., 2012), wk04-2023-09-13 slides"
   },
   {
     "objectID": "notes/wk04-2023-09-15.html#goals",
     "href": "notes/wk04-2023-09-15.html#goals",
     "title": "2023-09-15 Fri",
     "section": "Goals",
-    "text": "Goals\n\n\nCapture details of the research workflow\n\nNot usually contained in journal articles\n\nMake research notebooks that actually do work\n\nNot just capture info passively\n\nDo so efficiently, flexibly"
+    "text": "Goals\n\n\nCapture details of the research workflow\n\nNot usually contained in journal articles, remember (Artner et al., 2021) comment from last week?\n\nMake research notebooks that actually do work\n\nNot just capture info passively\n\nDo so efficiently, flexibly"
   },
   {
     "objectID": "notes/wk04-2023-09-15.html#more-goals",
@@ -1456,11 +1477,25 @@
     "text": "Let’s look at Survey-02\n\nSummary figure from Survey-02"
   },
   {
+    "objectID": "notes/wk04-2023-09-15.html#what-data-pictures-would-you-like-to-make",
+    "href": "notes/wk04-2023-09-15.html#what-data-pictures-would-you-like-to-make",
+    "title": "2023-09-15 Fri",
+    "section": "What data picture(s) would you like to make?",
+    "text": "What data picture(s) would you like to make?"
+  },
+  {
+    "objectID": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
+    "href": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
+    "title": "2023-09-15 Fri",
+    "section": "What analyses would you like to try?",
+    "text": "What analyses would you like to try?"
+  },
+  {
     "objectID": "notes/wk04-2023-09-15.html#references",
     "href": "notes/wk04-2023-09-15.html#references",
     "title": "2023-09-15 Fri",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-09-15 Friday\n\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601\n\n\nKrumrei-Mancuso, E. J., & Rouse, S. V. (2016). The development and validation of the comprehensive intellectual humility scale. Journal of Personality Assessment, 98(2), 209–221. https://doi.org/10.1080/00223891.2015.1068174\n\n\nNadelson, L., Jorcyk, C., Yang, D., Jarratt Smith, M., Matson, S., Cornell, K., & Husting, V. (2014). I just don’t trust them: The development and validation of an assessment instrument to measure trust in science and scientists. School Science and Mathematics, 114(2), 76–86. https://doi.org/10.1111/ssm.12051\n\n\nPlohl, N., & Musil, B. (2023). Assessing the incremental value of intellectual humility and cognitive reflection in predicting trust in science. Personality and Individual Differences, 214, 112340. https://doi.org/10.1016/j.paid.2023.112340\n\n\nQuarto. (n.d.). https://quarto.org/. Retrieved from https://quarto.org/"
+    "text": "References\n\n\nPSYCH 490.009: 2023-09-15 Friday\n\n\n\nArtner, R., Verliefde, T., Steegen, S., Gomes, S., Traets, F., Tuerlinckx, F., & Vanpaemel, W. (2021). The reproducibility of statistical results in psychological research: An investigation using unpublished raw data. Psychological Methods, 26(5), 527–546. https://doi.org/10.1037/met0000365\n\n\nBargh, J. A., Chen, M., & Burrows, L. (1996). Automaticity of social behavior: Direct effects of trait construct and stereotype-activation on action. Journal of Personality and Social Psychology, 71(2), 230–244. https://doi.org/10.1037//0022-3514.71.2.230\n\n\nDoyen, S., Klein, O., Pichon, C.-L., & Cleeremans, A. (2012). Behavioral priming: It’s all in the mind, but whose mind? PloS One, 7(1), e29081. https://doi.org/10.1371/journal.pone.0029081\n\n\nEarp, B. D., Everett, J. A. C., Madva, E. N., & Hamlin, J. K. (2014). Out, damned spot: Can the “macbeth effect” be replicated? Basic and Applied Social Psychology, 36(1), 91–98. https://doi.org/10.1080/01973533.2013.856792\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601\n\n\nKrumrei-Mancuso, E. J., & Rouse, S. V. (2016). The development and validation of the comprehensive intellectual humility scale. Journal of Personality Assessment, 98(2), 209–221. https://doi.org/10.1080/00223891.2015.1068174\n\n\nNadelson, L., Jorcyk, C., Yang, D., Jarratt Smith, M., Matson, S., Cornell, K., & Husting, V. (2014). I just don’t trust them: The development and validation of an assessment instrument to measure trust in science and scientists. School Science and Mathematics, 114(2), 76–86. https://doi.org/10.1111/ssm.12051\n\n\nPlohl, N., & Musil, B. (2023). Assessing the incremental value of intellectual humility and cognitive reflection in predicting trust in science. Personality and Individual Differences, 214, 112340. https://doi.org/10.1016/j.paid.2023.112340\n\n\nQuarto. (n.d.). https://quarto.org/. Retrieved from https://quarto.org/\n\n\nZhong, C.-B., & Liljenquist, K. (2006). Washing away your sins: Threatened morality and physical cleansing. Science, 313(5792), 1451–1452. https://doi.org/10.1126/science.1130726"
   },
   {
     "objectID": "notes/wk05-2023-09-18.html#announcements",
@@ -1523,7 +1558,7 @@
     "href": "notes/wk05-2023-09-18.html#references",
     "title": "2023-09-18 Mon",
     "section": "References",
-    "text": "References\n\n\n\n\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601\n\n\nFidler, F., & Wilcox, J. (2021). Reproducibility of scientific results. In E. N. Zalta (Ed.), The stanford encyclopedia of philosophy (Summer 2021). Metaphysics Research Lab, Stanford University. Retrieved from https://plato.stanford.edu/archives/sum2021/entries/scientific-reproducibility/\n\n\nGoodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027\n\n\nNosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., … Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. Annual Review of Psychology, 73(2022), 719–748. https://doi.org/10.1146/annurev-psych-020821-114157"
+    "text": "References\n\n\nPSYCH 490.009: 2023-09-18 Monday\n\n\n\nErrington, T. M., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Challenges for assessing replicability in preclinical cancer biology. eLife, 10, e67995. https://doi.org/10.7554/eLife.67995\n\n\nErrington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E., & Nosek, B. A. (2021). Investigating the replicability of preclinical cancer biology. eLife, 10, e71601. https://doi.org/10.7554/eLife.71601\n\n\nFidler, F., & Wilcox, J. (2021). Reproducibility of scientific results. In E. N. Zalta (Ed.), The stanford encyclopedia of philosophy (Summer 2021). Metaphysics Research Lab, Stanford University. Retrieved from https://plato.stanford.edu/archives/sum2021/entries/scientific-reproducibility/\n\n\nGoodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027\n\n\nNosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., … Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. Annual Review of Psychology, 73(2022), 719–748. https://doi.org/10.1146/annurev-psych-020821-114157"
   },
   {
     "objectID": "notes/wk05-2023-09-20.html#announcements",
@@ -1533,18 +1568,144 @@
     "text": "Announcements"
   },
   {
+    "objectID": "notes/wk05-2023-09-20.html#last-time",
+    "href": "notes/wk05-2023-09-20.html#last-time",
+    "title": "2023-09-20 Wed",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
     "objectID": "notes/wk05-2023-09-20.html#today",
     "href": "notes/wk05-2023-09-20.html#today",
     "title": "2023-09-20 Wed",
     "section": "Today",
-    "text": "Today\nThe 4 (5?) Rs\n\nRead & Discuss\n\n(Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021)"
+    "text": "Today\nThe 4 (5?) Rs\n\nRead & Discuss\n\n(Fidler & Wilcox, 2021)\n(Skim) (Nosek et al., 2022) and (Goodman, Fanelli, & Ioannidis, 2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1",
+    "href": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1",
+    "title": "2023-09-20 Wed",
+    "section": "(Goodman et al., 2016, fig. 1)",
+    "text": "(Goodman et al., 2016, fig. 1)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-1",
+    "href": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-1",
+    "title": "2023-09-20 Wed",
+    "section": "(Goodman et al., 2016, fig. 1)",
+    "text": "(Goodman et al., 2016, fig. 1)\n\nNumber of publications recorded in Scopus that have, in the title or abstract, at least one of the following expressions: research reproducibility, reproducibility of research, reproducibility of results, results reproducibility, reproducibility of study, study reproducibility, reproducible research, reproducible finding, or reproducible result. Papers are classified by discipline on the basis of the journal, following an adaptation and expansion of Thomson Reuters’ Essential Science Indicators classification system. Journals not included in the latter database were hand-classified on the basis of their name. The subplot reports the percentage over the total number of records for each discipline, in the last 2 years of the series. Disciplines legend: MA, mathematics; CS, computer sciences; EN, engineering; SP, space science; PH, physics; CH, chemistry; BB, biology and biochemistry; MB, molecular biology; MI, microbiology; PT, pharmacology and toxicology; CM, clinical medicine; NB, neurobiology and behavior; PA, plant and animal sciences; EE, environment and ecology; AG, agricultural sciences; EB, economics and business; PP, psychology and psychiatry; SO, social sciences, general; AH, arts and humanities; MU, multidisciplinary. The time series was truncated at 2014."
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#what-do-you-think",
+    "href": "notes/wk05-2023-09-20.html#what-do-you-think",
+    "title": "2023-09-20 Wed",
+    "section": "What do you think?",
+    "text": "What do you think?\nDoes “repetition” == “reproduction” == “replication”"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#how-domains-differ",
+    "href": "notes/wk05-2023-09-20.html#how-domains-differ",
+    "title": "2023-09-20 Wed",
+    "section": "How domains differ…",
+    "text": "How domains differ…\n\nTable 1 from Goodman et al. (2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#reproducibility",
+    "href": "notes/wk05-2023-09-20.html#reproducibility",
+    "title": "2023-09-20 Wed",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\n“Although the importance of multiple studies corroborating a given result is acknowledged in virtually all of the sciences (Fig. 1), the modern use of “reproducible research” was originally applied not to corroboration, but to transparency, with application in the computational sciences. Computer scientist Jon Claerbout coined the term and associated it with a software platform and set of procedures that permit the reader of a paper to see the entire processing trail from the raw data and code to figures and tables (4).”\n\n\n(Goodman et al., 2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#goodman_what_2016",
+    "href": "notes/wk05-2023-09-20.html#goodman_what_2016",
+    "title": "2023-09-20 Wed",
+    "section": "(Goodman et al., 2016)",
+    "text": "(Goodman et al., 2016)\n\n“According to a U.S. National Science Foundation (NSF) subcommittee on replicability in science (9), ‘reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator. That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results…Reproducibility is a minimum necessary condition for a finding to be believable and informative.’”\n\n\n(Goodman et al., 2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-2",
+    "href": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-2",
+    "title": "2023-09-20 Wed",
+    "section": "(Goodman et al., 2016, fig. 1)",
+    "text": "(Goodman et al., 2016, fig. 1)\n\n“…Reproducibility refers to testing the reliability of a prior finding using the same data and the same analysis strategy (Natl. Acad. Sci. Eng. Med. 2019)…In principle, all reported evidence should be reproducible. If someone applies the same analysis to the same data, the same result should occur…”\n\n\n(Goodman et al., 2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#methods-reproducibility",
+    "href": "notes/wk05-2023-09-20.html#methods-reproducibility",
+    "title": "2023-09-20 Wed",
+    "section": "Methods reproducibility",
+    "text": "Methods reproducibility\n\nGoodman et al. (2016)\nEnough details about materials & methods recorded (& reported), so…\nSame results with same materials & methods\n\nArtner et al. (2021)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-3",
+    "href": "notes/wk05-2023-09-20.html#goodman_what_2016-figure-1-3",
+    "title": "2023-09-20 Wed",
+    "section": "(Goodman et al., 2016, fig. 1)",
+    "text": "(Goodman et al., 2016, fig. 1)\n\n“In the biomedical sciences, this means, at minimum, a detailed study protocol, a description of measurement procedures, the data gathered, the data used for analysis with descriptive metadata, the analysis software and code, and the final analytical results. In laboratory science, how key reagents and biological materials were created or obtained can be critical. In theory, these requirements are clear, but in practice, the level of procedural detail needed to describe a study as “methodologically reproducible” does not have consensus.”\n\n\n(Goodman et al., 2016)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#replicability",
+    "href": "notes/wk05-2023-09-20.html#replicability",
+    "title": "2023-09-20 Wed",
+    "section": "Replicability",
+    "text": "Replicability\n\n“When describing a study as “replicable”, people could have in mind either of at least two different things. The first is that the study is replicable in principle the sense that it can be carried out again, particularly when its methods, procedures and analysis are described in a sufficiently detailed and transparent way. The second is that the study is replicable in that sense that it can be carried out again and, when this happens, the replication study will successfully produce the same or sufficiently similar results as the original. A study may be replicable in the former sense but not in the second sense: one might be able to replicate the methods, procedures and analysis of a study, but fail to successfully replicate the results of the original study. Similarly, when people talk of a “replication”, they could also have in mind two different things: the replication of the methods, procedures and analysis of a study (irrespective of the results) or, alternatively, the replication of such methods, procedures and analysis as well as the results.”\n\n\n(Fidler & Wilcox, 2021)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#results-reproducibility",
+    "href": "notes/wk05-2023-09-20.html#results-reproducibility",
+    "title": "2023-09-20 Wed",
+    "section": "Results reproducibility",
+    "text": "Results reproducibility\n\nGoodman et al. (2016)\nSame results from “independent study whose procedures are as closely matched to the original experiment as possible.”"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#inferential-reproducibility",
+    "href": "notes/wk05-2023-09-20.html#inferential-reproducibility",
+    "title": "2023-09-20 Wed",
+    "section": "Inferential reproducibility",
+    "text": "Inferential reproducibility\n\nGoodman et al. (2016)\nSame inferences from one or more studies or reanalyses\n“Inferential reproducibility is not identical to results reproducibility or to methods reproducibility, because scientists might draw the same conclusions from different sets of studies and data or could draw different conclusions from the same original data, sometimes even if they agree on the analytical results.”"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#replication-in-different-disciplines",
+    "href": "notes/wk05-2023-09-20.html#replication-in-different-disciplines",
+    "title": "2023-09-20 Wed",
+    "section": "Replication in different disciplines",
+    "text": "Replication in different disciplines\n\n(Gómez, Juristo, & Vegas, 2010) identify 79 types across 18 disciplines, see (Fidler & Wilcox, 2021)\nThings that vary:\n\nsite or spatial location\nexperimenters\napparatus\noperationalisations or measurement of variables\npopulation properties"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#functions-of-replication",
+    "href": "notes/wk05-2023-09-20.html#functions-of-replication",
+    "title": "2023-09-20 Wed",
+    "section": "Functions of replication",
+    "text": "Functions of replication\n\n(Fidler & Wilcox, 2021) discussing (Schmidt, 2009)\n\n\n\nFunction 1. Controlling for sampling error—that is, to verify that previous results in a sample were not obtained purely by chance outcomes which paint a distorted picture of reality\nFunction 2. Controlling for artifacts (internal validity)—that is, ensuring that experimental results are a proper test of the hypothesis (i.e., have internal validity) and do not reflect unintended flaws in the study design (such as when a measurement result is, say, an artifact of a faulty thermometer rather than an actual change in a substance’s temperature)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#what-to-manipulate-to-achieve-these",
+    "href": "notes/wk05-2023-09-20.html#what-to-manipulate-to-achieve-these",
+    "title": "2023-09-20 Wed",
+    "section": "What to manipulate to achieve these…",
+    "text": "What to manipulate to achieve these…\n\n(Fidler & Wilcox, 2021) discussing (Schmidt, 2009)\n\n\nClass 1. Information conveyed to participants (for example, their task instructions). Class 2. Context and background. This is a large class of variables, and it includes: participant characteristics (e.g., age, gender, specific history); the physical setting of the research; characteristics of the experimenter; incidental characteristics of materials (e.g., type of font, colour of the room), Class 3. Participant recruitment, including selection of participants and allocation to conditions (such as experimental or control conditions), Class 4. Dependent variable measures (or in Schmidt’s terms “procedures for the constitution of the dependent variable”, 2009: 93)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#robustness",
+    "href": "notes/wk05-2023-09-20.html#robustness",
+    "title": "2023-09-20 Wed",
+    "section": "Robustness",
+    "text": "Robustness\n\n“…Robustness refers to testing the reliability of a prior finding using the same data and a different analysis strategy…”\n\n\n(Nosek et al., 2022)\n\n\n“Many analysts”: (Botvinik-Nezer et al., 2020; Silberzahn et al., 2018)"
+  },
+  {
+    "objectID": "notes/wk05-2023-09-20.html#two-additional-rs",
+    "href": "notes/wk05-2023-09-20.html#two-additional-rs",
+    "title": "2023-09-20 Wed",
+    "section": "Two additional “R’s”",
+    "text": "Two additional “R’s”\n\n(Table 1 from Gennetian, Frank, & Tamis-LeMonda, 2022)"
   },
   {
     "objectID": "notes/wk05-2023-09-20.html#references",
     "href": "notes/wk05-2023-09-20.html#references",
     "title": "2023-09-20 Wed",
     "section": "References",
-    "text": "References\n\n\n\n\n\n\nFidler, F., & Wilcox, J. (2021). Reproducibility of scientific results. In E. N. Zalta (Ed.), The stanford encyclopedia of philosophy (Summer 2021). Metaphysics Research Lab, Stanford University. Retrieved from https://plato.stanford.edu/archives/sum2021/entries/scientific-reproducibility/\n\n\nNosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., … Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. Annual Review of Psychology, 73(2022), 719–748. https://doi.org/10.1146/annurev-psych-020821-114157"
+    "text": "References\n\n\nPSYCH 490.009: 2023-09-20 Wednesday\n\n\n\nArtner, R., Verliefde, T., Steegen, S., Gomes, S., Traets, F., Tuerlinckx, F., & Vanpaemel, W. (2021). The reproducibility of statistical results in psychological research: An investigation using unpublished raw data. Psychological Methods, 26(5), 527–546. https://doi.org/10.1037/met0000365\n\n\nBotvinik-Nezer, R., Holzmeister, F., Camerer, C. F., Dreber, A., Huber, J., Johannesson, M., … Schonberg, T. (2020). Variability in the analysis of a single neuroimaging dataset by many teams. Nature, 582(7810), 84–88. https://doi.org/10.1038/s41586-020-2314-9\n\n\nFidler, F., & Wilcox, J. (2021). Reproducibility of scientific results. In E. N. Zalta (Ed.), The stanford encyclopedia of philosophy (Summer 2021). Metaphysics Research Lab, Stanford University. Retrieved from https://plato.stanford.edu/archives/sum2021/entries/scientific-reproducibility/\n\n\nGennetian, L. A., Frank, M. C., & Tamis-LeMonda, C. S. (2022). Open science in developmental science. Annual Review of Developmental Psychology, 4(1), 377–397. https://doi.org/10.1146/annurev-devpsych-120920-042335\n\n\nGómez, O. S., Juristo, N., & Vegas, S. (2010). Replications types in experimental disciplines. In Proceedings of the 2010 ACM-IEEE international symposium on empirical software engineering and measurement (pp. 1–10). New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/1852786.1852790\n\n\nGoodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027\n\n\nNosek, B. A., Hardwicke, T. E., Moshontz, H., Allard, A., Corker, K. S., Dreber, A., … Vazire, S. (2022). Replicability, robustness, and reproducibility in psychological science. Annual Review of Psychology, 73(2022), 719–748. https://doi.org/10.1146/annurev-psych-020821-114157\n\n\nSchmidt, S. (2009). Shall we really do it again? The powerful concept of replication is neglected in the social sciences. Review of General Psychology: Journal of Division 1, of the American Psychological Association, 13(2), 90–100. https://doi.org/10.1037/a0015108\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1(3), 337–356. https://doi.org/10.1177/2515245917747646"
   },
   {
     "objectID": "notes/wk05-2023-09-22.html#announcements",
@@ -1691,14 +1852,14 @@
     "href": "schedule.html#week-04",
     "title": "schedule",
     "section": "September 11-15",
-    "text": "September 11-15\n\nMonday, September 11\nReplication failure: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nClass notes\n\n\n\nWednesday, September 13\nReplication failure: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report\n\nClass notes"
+    "text": "September 11-15\n\nMonday, September 11\nReplication attempt: The “Lady Macbeth Effect”\n\nRead\n\n(Zhong & Liljenquist, 2006).\n(Earp, Everett, Madva, & Hamlin, 2014).\n\nClass notes\n\n\n\nWednesday, September 13\nReplication attempt: Priming effect\n\nRead\n\n(Bargh, Chen, & Burrows, 1996); PDF on Canvas\n(Doyen, Klein, Pichon, & Cleeremans, 2012)\n\nClass notes\n\n\n\nFriday, September 15\nWork session: Replication with R, R Markdown, & Quarto\n\nReview\n\nSurvey 01 report\nSurvey 02 report\n\nClass notes"
   },
   {
     "objectID": "schedule.html#week-05",
     "href": "schedule.html#week-05",
     "title": "schedule",
     "section": "September 18-22",
-    "text": "September 18-22\n\nMonday, September 18\nReplication in cancer biology\n\nRead\n\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n(skim) (Errington, Mathur, et al., 2021)\n\nClass notes\n\n\n\nWednesday, September 20\nThe 4 (5?) Rs\n\nRead\n\n(Brian A. Nosek et al., 2022)\n(Skim) (Fidler & Wilcox, 2021) \n\nClass notes\n\n\n\nFriday, September 22\nWork session: Scientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
+    "text": "September 18-22\n\nMonday, September 18\nReplication in cancer biology\n\nRead\n\n(Errington, Denis, Perfito, Iorns, & Nosek, 2021)\n(skim) (Errington, Mathur, et al., 2021)\n\nClass notes\n\n\n\nWednesday, September 20\nThe 4 (5?) Rs\n\nRead\n\n(Fidler & Wilcox, 2021), especially sections 1, 2, and 3.1-3.2.\n(Skim) (Brian A. Nosek et al., 2022) or (Goodman, Fanelli, & Ioannidis, 2016)\n\nClass notes\n\n\n\nFriday, September 22\n\nCatch-up\n\nWork session: Scientific integrity\n\nAssignment\n\nExercise 03: Violations of scientific integrity"
   },
   {
     "objectID": "schedule.html#week-06",
@@ -1902,12 +2063,5 @@
     "title": "values",
     "section": "Penn State Values",
     "text": "Penn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
-  },
-  {
-    "objectID": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
-    "href": "notes/wk04-2023-09-15.html#what-analyses-would-you-like-to-try",
-    "title": "2023-09-15 Fri",
-    "section": "What analyses would you like to try?",
-    "text": "What analyses would you like to try?"
   }
 ]
