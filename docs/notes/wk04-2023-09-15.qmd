@@ -31,8 +31,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-09-15 Friday"
 *Work session: Reproducible workflows with R, R Markdown, & Quarto*
 
 - Review
-  - [Survey 01 report](survey-01.qmd)
-  - [Survey 02 report](survey-02.qmd)
+  - [Survey 01 report](../survey-01.html)
+  - [Survey 02 report](../survey-02.html)
   
 # Reproducible workflows with R, R Markdown, & Quarto
 

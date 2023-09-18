@@ -16,6 +16,15 @@ footer: "[PSYCH 490.009](../index.html): 2023-09-18 Monday"
 ## Announcements
 
 - No assignments due this Friday
+- Next week is a short week
+  - No class on Monday, September 25.
+  
+## Last time...
+
+- Did the Macbeth effect [@Zhong2006-nf] replicate?
+- Did the priming effect  [@Bargh1996-yv] replicate?
+- Is this yes/no question the right one to ask?
+- If not, what's a better question to ask?
 
 ## Today
 
@@ -64,9 +73,9 @@ Errington, T. M., Denis, A., Perfito, N., Iorns, E. & Nosek, B. A. (2021). Chall
 
 ::: {.callout-note}
 
-*Effect sizes* are measures of how much an intervention changed some outcome. 
+*Effect sizes* are measures of how much an intervention changed some outcome or how big a difference exists between groups. 
 
-A *power analysis* is a tool for determining how large a sample should be in order to detect a specific effect with a specified probability. For example, let's say want to detect some effect say 80%^[And, yes fail to detect it, or have a false 'negative' 20% of the time.] of the time, how large a sample do we need?
+A *power analysis* is a tool for determining how large a sample should be in order to detect a specific effect with a specified probability. For example, let's say want to detect some effect say 80%^[And, yes fail to detect it, or have a false 'negative' (Type II error) 20% of the time.] of the time, how large a sample do we need?
 
 We will explore these ideas in more detail later in the course, specifically in  [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](.../ex05-apes.html).
 
@@ -84,6 +93,8 @@ How often do journal articles alone demonstrate *methods* reproducibility [@good
 
 Why do you suppose Dr. Gilmore likes to read the methods section first?
 
+Should authors have to publish detailed protocols in alongside their papers?
+
 :::
 
 ---
@@ -96,7 +107,7 @@ Why do you suppose Dr. Gilmore likes to read the methods section first?
 
 So, $32+9=41$% were minimally or not at all helpful.
 
-Do you think that researchers whose studies are funded by taxpayers, e.g., the U.S. National Institutes of Health (NIH) should be required to share data or help replication projects like this?
+Do you think that researchers whose studies are funded by taxpayers, e.g., the U.S. National Institutes of Health (NIH), should be required to share data or help replication projects like this?
 
 :::
 
@@ -126,31 +137,19 @@ Do you think that researchers whose studies are funded by taxpayers, e.g., the U
 
 ---
 
->"**Reproducibility** refers to whether the reported findings are repeatable using the same analysis on the same data as the original study. **Robustness** refers to whether the reported findings are repeatable using reasonable alternative analysis strategies on the same data as the original study. **Replicability** refers to whether the reported findings are repeatable using new data (NAS, 2019)."
+![Fig 1 from [@Errington2021-dp]](https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig1-v1.tif/full/,1500/0/default.jpg)
 
 ---
 
-```{r, fig.cap="Fig 1 from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)", out.width="80%"}
-knitr::include_graphics("https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig1-v1.tif/full/,1500/0/default.jpg")
-```
+![Fig 1 (suppl) from [@Errington2021-dp]](https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig1-figsupp1-v1.tif/full/,1500/0/default.jpg)
 
 ---
 
-```{r, fig.cap="Fig 1 (suppl) from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)", out.width="80%"}
-knitr::include_graphics("https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig1-figsupp1-v1.tif/full/,1500/0/default.jpg")
-```
+![Fig 2 from [@Errington2021-dp]](https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig2-v1.tif/full/1500,/0/default.jpg)
 
 ---
 
-```{r, fig.cap="Fig 2 from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)", out.width="80%"}
-knitr::include_graphics("https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig2-v1.tif/full/1500,/0/default.jpg")
-```
-
----
-
-```{r, fig.cap="Fig 2 (suppl 2) from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)", out.width="80%"}
-knitr::include_graphics("https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig2-figsupp2-v1.tif/full/1500,/0/default.jpg")
-```
+![Fig 2 (suppl 2) from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)](https://iiif.elifesciences.org/lax/67995%2Felife-67995-fig2-figsupp2-v1.tif/full/1500,/0/default.jpg)
 
 ## Replication/Transparency notes {-}
 
@@ -207,10 +206,6 @@ Errington, T. M., Mathur, M., Soderberg, C. K., Denis, A., Perfito, N., Iorns, E
 
 ![Fig. 6 from [@Errington2021-dp]](https://iiif.elifesciences.org/lax/71601%2Felife-71601-fig6-v3.tif/full/1500,/0/default.jpg)
 
-```{r, fig.cap="Fig. 6 from [@Errington2021-dp](https://doi.org/10.7554/eLife.67995)"}
-knitr::include_graphics("https://iiif.elifesciences.org/lax/71601%2Felife-71601-fig6-v3.tif/full/1500,/0/default.jpg")
-```
-
 ---
 
 >"*We used seven criteria to assess the replicability of 158 effects in a selection of 23 papers reporting the results of preclinical research in cancer biology. Across multiple criteria, the replications provided weaker evidence for the findings than the original papers. For original positive effects that were reported as numerical values, the median effect size for the replications was 0.43, which was 85% smaller than the median of the original effect sizes (2.96)...*"
@@ -227,7 +222,11 @@ knitr::include_graphics("https://iiif.elifesciences.org/lax/71601%2Felife-71601-
 
 ::: {.callout-note}
 
-A consistent finding emerging from replication studies across fields is that replication effect sizes are often *smaller* than the original. What does this mean for 'consumers' of science?
+A consistent finding emerging from replication studies across fields is that replication effect sizes are often *smaller* than the original. 
+
+Why do you suppose this is so?
+
+What does this mean for 'consumers' of science?
 
 :::
 
@@ -249,7 +248,7 @@ A consistent finding emerging from replication studies across fields is that rep
 
 ---
 
->"*Successfully replicating a finding also does not render a verdict on its credibility. Successful replication increases confidence that the finding is repeatable, but it is mute to its meaning and validity. For example, if the finding is a result of unrecognized confounding influences or invalid measures, then the interpretation may be wrong even if it is easily replicated. Also, the interpretation of a finding may be much more general than is justified by the evidence. The particular experimental paradigm may elicit highly replicable findings, but also apply only to very specific circumstances that are much more circumscribed than the interpretation.*"
+>"*Successfully replicating a finding also does not render a verdict on its credibility. Successful replication increases confidence that the finding is repeatable, but it is mute to its meaning and validity. For example, if the finding is a result of unrecognized confounding influences or invalid measures, then the interpretation may be wrong even if it is easily replicated.*" 
 
 <p style="text-align:center;">
 [@Errington2021-sy]
@@ -257,7 +256,32 @@ A consistent finding emerging from replication studies across fields is that rep
 
 ---
 
->"*After conducting dozens of replications, we can declare definitive understanding of precisely zero of the original findings. That may seem a dispiriting conclusion from such an intense effort, but it is the reality of doing research. Original findings provided initial evidence, replications provide additional evidence. Sometimes the replications increased confidence in the original findings, sometimes they decreased confidence. In all cases, we now have more information than we had. In no cases, do we have all the information that we need. Science makes progress by progressively identifying error and reducing uncertainty. Replication actively confronts current understanding, sometimes with affirmation, other times signaling caution and a call to investigate further. In science, that’s progress.*"
+
+>"*...Also, the interpretation of a finding may be much more general than is justified by the evidence. The particular experimental paradigm may elicit highly replicable findings, but also apply only to very specific circumstances that are much more circumscribed than the interpretation.*"
+
+<p style="text-align:center;">
+[@Errington2021-sy]
+</p>
+
+---
+
+>"*After conducting dozens of replications, we can declare definitive understanding of precisely zero of the original findings. That may seem a dispiriting conclusion from such an intense effort, but it is the reality of doing research. Original findings provided initial evidence, replications provide additional evidence.*"
+
+<p style="text-align:center;">
+[@Errington2021-sy]
+</p>
+
+---
+
+>"*Sometimes the replications increased confidence in the original findings, sometimes they decreased confidence. In all cases, we now have more information than we had. In no cases, do we have all the information that we need. Science makes progress by progressively identifying error and reducing uncertainty.*"
+
+<p style="text-align:center;">
+[@Errington2021-sy]
+</p>
+
+---
+
+>"*Replication actively confronts current understanding, sometimes with affirmation, other times signaling caution and a call to investigate further. In science, that’s progress.*"
 
 <p style="text-align:center;">
 [@Errington2021-sy]
@@ -268,9 +292,8 @@ A consistent finding emerging from replication studies across fields is that rep
 *The 4 (5?) Rs*
 
 - Read
-    - [@Nosek2022-hv]
-    - (Skim) [@Fidler2021-xn]
-    <!-- - [@goodman_what_2016] -->
+    - [@Fidler2021-xn]
+    - (Skim) [@Nosek2022-hv] and [@goodman_what_2016]
 - [Class notes](wk05-2023-09-20.qmd)
 
 # Resources
