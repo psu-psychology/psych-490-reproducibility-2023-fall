@@ -174,7 +174,7 @@ if (n_responses > 1) {
 
 Remember:
 
-![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
+![Survey 01 response options](../include/img/survey-01-resp-options.png){fig-align="center"}
 
 ```{r fig-openness-dotplot, message=FALSE, fig.cap="Reponses to Openness to Revising One’s Viewpoint subscale questions from [@Krumrei-Mancuso2016-qm]"}
 # survey_01_clean[,2:6] |>
@@ -211,7 +211,7 @@ Any time I repeat myself, I should remember this acronym:
 
 There are a number of these, so we break them into smaller groups for visualization.
 
-![Survey 01 response options](include/img/survey-01-resp-options.png){fig-align="center"}
+![Survey 01 response options](../include/img/survey-01-resp-options.png){fig-align="center"}
 
 ```{r fig-trust-dotplot, message=FALSE, fig.cap="Responses to trust in science questions from [@Nadelson2014-ym]"}
 # survey_01_clean[, 7:11] |>

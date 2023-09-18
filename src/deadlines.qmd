@@ -1,0 +1,16 @@
+---
+title: "deadlines"
+---
+
+| Date      | What's [due]{.orange_due}/happening |
+|-----------|----------------------|
+| [2023-08-31](schedule.qmd#friday-august-31)   | [Exercise 01](exercises/ex01-read-a-scientific-paper.qmd) |
+| [2023-09-08](schedule.qmd#friday-september-8) | [Exercise 02](exercises/ex02-norms-counternorms.qmd) |
+| [2023-09-29](schedule.qmd#friday-september-29)  | [Exercise 03](exercises/ex03-scientific-integrity.qmd) |
+| [2023-10-06](schedule.qmd#friday-october-6)  | [Exercise 04](exercises/ex04-p-hacking.qmd") |
+| [2023-10-13](schedule.qmd#friday-october-13) | [Final project](exercises/final-project.qmd) proposal due |
+| [2023-10-20](schedule.qmd#friday-october-20) | [Exercise 05](exercises/ex05-apes.qmd) |
+| [2023-10-27](schedule.qmd#friday-october-27) | [Exercise 06](exercises/ex06-replication.qmd) |
+| [2023-11-10](schedule.qmd#friday-november-10) | [Exercise 07](exercises/ex07-sharing.qmd) |
+| [2023-12-01](schedule.qmd#friday-december-1) - [2023-12-06](schedule.qmd#wednesday-december-6) | Final project presentations |
+| [2023-12-13](schedule.qmd#wednesday-december-13)  | [Final project](exercises/final-project.qmd) writeup due |

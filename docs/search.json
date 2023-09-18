@@ -21,50 +21,50 @@
     "text": "Penn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
   },
   {
-    "objectID": "survey-01.html",
-    "href": "survey-01.html",
+    "objectID": "surveys/survey-01.html",
+    "href": "surveys/survey-01.html",
     "title": "Survey 01",
     "section": "",
     "text": "This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
   },
   {
-    "objectID": "survey-01.html#purpose",
-    "href": "survey-01.html#purpose",
+    "objectID": "surveys/survey-01.html#purpose",
+    "href": "surveys/survey-01.html#purpose",
     "title": "Survey 01",
     "section": "",
     "text": "This page documents the data processing steps involved with Survey-01 in PSYCH 490.009 Fall 2023.\nThe survey questions were adapted from those discussed in (Krumrei-Mancuso & Rouse, 2016; Nadelson et al., 2014; Plohl & Musil, 2023)."
   },
   {
-    "objectID": "survey-01.html#survey",
-    "href": "survey-01.html#survey",
+    "objectID": "surveys/survey-01.html#survey",
+    "href": "surveys/survey-01.html#survey",
     "title": "Survey 01",
     "section": "Survey",
     "text": "Survey\nDirect link: https://forms.gle/Szk1pLEu4ZLWtFjX7\n\nLoading…"
   },
   {
-    "objectID": "survey-01.html#preparation",
-    "href": "survey-01.html#preparation",
+    "objectID": "surveys/survey-01.html#preparation",
+    "href": "surveys/survey-01.html#preparation",
     "title": "Survey 01",
     "section": "Preparation",
     "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\nlibrary('tidyverse')\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary('ggplot2')\nlibrary('dplyr')\nlibrary('tidyr')\nlibrary('stringr')\nlibrary('lubridate')\nlibrary('GGally')\n\nRegistered S3 method overwritten by 'GGally':\n  method from   \n  +.gg   ggplot2"
   },
   {
-    "objectID": "survey-01.html#gathering",
-    "href": "survey-01.html#gathering",
+    "objectID": "surveys/survey-01.html#gathering",
+    "href": "surveys/survey-01.html#gathering",
     "title": "Survey 01",
     "section": "Gathering",
     "text": "Gathering\nNext, we download the data from the Google Sheet where it is collected. Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command Sys.getenv(\"GMAIL_SURVEY\").\n\nif (!dir.exists('csv')) {\n  message(\"Creating missing `csv/`.\")\n  dir.create(\"csv\")\n}\n\nif (params$update_data) {\n  options(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\n  googledrive::drive_auth()\n  \n  googledrive::drive_download(\n    \"Openness and Trust in Science (Responses)\",\n    path = \"csv/survey-01-openness-trust.csv\",\n    type = \"csv\",\n    overwrite = TRUE\n    \n  )\n  messsage(\"Data updated.\")\n} else {\n  message(\"Using stored data.\")\n}\n\nThe data file has been saved as a comma-separated value (CSV) format data file in a special directory called csv/.\n\n\n\n\n\n\n\nNote\n\n\n\nBecause these data might contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub. This is achieved by adding the name of the data directory to a special .gitignore file."
   },
   {
-    "objectID": "survey-01.html#cleaning",
-    "href": "survey-01.html#cleaning",
+    "objectID": "surveys/survey-01.html#cleaning",
+    "href": "surveys/survey-01.html#cleaning",
     "title": "Survey 01",
     "section": "Cleaning",
     "text": "Cleaning\nNext we load the data file and clean it.\n\nsurvey_01 &lt;-\n  readr::read_csv(\"csv/survey-01-openness-trust.csv\", show_col_types = FALSE)\n\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nsurvey_01_qs &lt;- names(survey_01)\nsurvey_01_qs\n\n [1] \"Timestamp\"                                                                                                                                             \n [2] \"I have at times changed opinions that were important to me, when someone showed me I was wrong.\"                                                       \n [3] \"I am willing to change my position on an important issue in the face of good reasons.\"                                                                 \n [4] \"I am open to revising my important beliefs in the face of new information.\"                                                                            \n [5] \"I am willing to change my opinions on the basis of compelling reason.\"                                                                                 \n [6] \"I’m willing to change my mind once it’s made up about an important topic.\"                                                                             \n [7] \"Scientists ignore evidence that contradicts their work.\"                                                                                               \n [8] \"Scientific theories are weak explanations.\"                                                                                                            \n [9] \"Scientists intentionally keep their work secret.\"                                                                                                      \n[10] \"Scientists don't value the ideas of others.\"                                                                                                           \n[11] \"Scientists don't care if laypersons understand their work.\"                                                                                            \n[12] \"We should trust the work of scientists.\"                                                                                                               \n[13] \"We should trust that scientists are being honest in their work.\"                                                                                       \n[14] \"We should trust that scientists are being ethical in their work.\"                                                                                      \n[15] \"People who understand science more have more trust in science.\"                                                                                        \n[16] \"We can trust science to find the answers that explain the natural world.\"                                                                              \n[17] \"We cannot trust scientists because they are biased in their perspectives.\"                                                                             \n[18] \"Scientists will protect each other even when they are wrong.\"                                                                                          \n[19] \"We cannot trust scientists to consider ideas that contradict their own.\"                                                                               \n[20] \"Today's scientists will sacrifice the well being of others to advance their research.\"                                                                 \n[21] \"We cannot trust science because it moves too slowly.\"                                                                                                  \n[22] \"When scientists change their mind about a scientific idea it diminishes my trust in their work.\"                                                       \n[23] \"We can trust scientists to share their discoveries even if they don't like their findings.\"                                                            \n[24] \"I trust that the work of scientists is to make life better for people.\"                                                                                \n[25] \"Scientific theories are trustworthy.\"                                                                                                                  \n[26] \"When scientists form a hypothesis they are just guessing.\"                                                                                             \n[27] \"I trust scientists can find solutions to our major technological problems.\"                                                                            \n[28] \"If you wish to comment about the questions in this survey, you may do so here. You are not required to comment. Your comments might be seen by others.\"\n\n\nFor plotting and analyses, it’s usually easier to shorten the questions by creating a short name that reflects the underlying idea or construct. We’ll use the rename() function from the dplyr package for this.\nWe first rename the variables from the “Openness to Revising One’s Viewpoint” subscale from the Comprehensive Intellectual Humility Scale (Krumrei-Mancuso & Rouse, 2016).\n\nsurvey_01_clean &lt;- survey_01 |&gt;\n  dplyr::rename(\n    timestamp = \"Timestamp\",\n    when_shown_wrong = \"I have at times changed opinions that were important to me, when someone showed me I was wrong.\",\n    good_reason = \"I am willing to change my position on an important issue in the face of good reasons.\" ,\n    new_info = \"I am open to revising my important beliefs in the face of new information.\",\n    compelling_reason = \"I am willing to change my opinions on the basis of compelling reason.\",\n    mind_made_up = \"I’m willing to change my mind once it’s made up about an important topic.\",\n    comments = \"If you wish to comment about the questions in this survey, you may do so here. You are not required to comment. Your comments might be seen by others.\"\n  )\n\nNow, we rename the variables from the (Nadelson et al., 2014) trust in science and scientists survey.\n\nsurvey_01_clean &lt;- survey_01_clean |&gt;\n  dplyr::rename(\n    ignore_contradictory_evidence = \"Scientists ignore evidence that contradicts their work.\",\n    theories_are_weak = \"Scientific theories are weak explanations.\",\n    keep_work_secret = \"Scientists intentionally keep their work secret.\",\n    dont_value_others_ideas = \"Scientists don't value the ideas of others.\",\n    dont_care_laypeople_understand = \"Scientists don't care if laypersons understand their work.\",\n    should_trust_work = \"We should trust the work of scientists.\",\n    should_trust_honesty = \"We should trust that scientists are being honest in their work.\",\n    should_trust_ethical = \"We should trust that scientists are being ethical in their work.\",\n    more_understanding_more_trust = \"People who understand science more have more trust in science.\",\n    trust_explain_natural_world = \"We can trust science to find the answers that explain the natural world.\",\n    cant_trust_biased = \"We cannot trust scientists because they are biased in their perspectives.\",\n    protect_each_other_when_wrong = \"Scientists will protect each other even when they are wrong.\",\n    wont_consider_contradictory_ideas = \"We cannot trust scientists to consider ideas that contradict their own.\",\n    sacrifice_others_to_advance = \"Today's scientists will sacrifice the well being of others to advance their research.\",\n    cant_trust_moves_slowly = \"We cannot trust science because it moves too slowly.\",\n    change_minds_undermines_trust = \"When scientists change their mind about a scientific idea it diminishes my trust in their work.\",\n    share_findings_dont_like = \"We can trust scientists to share their discoveries even if they don't like their findings.\",\n    make_life_better = \"I trust that the work of scientists is to make life better for people.\",\n    theories_trustworthy = \"Scientific theories are trustworthy.\",\n    hypotheses_just_guesses = \"When scientists form a hypothesis they are just guessing.\",\n    trust_find_tech_solutions = \"I trust scientists can find solutions to our major technological problems.\"\n  )\n\nNow, let’s look at the names to confirm they all got changed.\n\nnames(survey_01_clean)\n\n [1] \"timestamp\"                         \"when_shown_wrong\"                 \n [3] \"good_reason\"                       \"new_info\"                         \n [5] \"compelling_reason\"                 \"mind_made_up\"                     \n [7] \"ignore_contradictory_evidence\"     \"theories_are_weak\"                \n [9] \"keep_work_secret\"                  \"dont_value_others_ideas\"          \n[11] \"dont_care_laypeople_understand\"    \"should_trust_work\"                \n[13] \"should_trust_honesty\"              \"should_trust_ethical\"             \n[15] \"more_understanding_more_trust\"     \"trust_explain_natural_world\"      \n[17] \"cant_trust_biased\"                 \"protect_each_other_when_wrong\"    \n[19] \"wont_consider_contradictory_ideas\" \"sacrifice_others_to_advance\"      \n[21] \"cant_trust_moves_slowly\"           \"change_minds_undermines_trust\"    \n[23] \"share_findings_dont_like\"          \"make_life_better\"                 \n[25] \"theories_trustworthy\"              \"hypotheses_just_guesses\"          \n[27] \"trust_find_tech_solutions\"         \"comments\"                         \n\n\n\nData dictionary\nWe’ll pause here to start building a data dictionary, a file that explains the origin, format, and usage of our dataset.\n\nsurvey_01_data_dictionary &lt;-\n  tibble::tibble(\n    question = survey_01_qs,\n    short_name = names(survey_01_clean),\n    reference = c(\n      NA,\n      rep(\"krumrei-mancuso-2016\", 5),\n      rep(\"nadelson-2014\", 21),\n      NA\n    )\n  )\n\nWe’ll add other items to the data dictionary later.\n\n\nFiltering out irrelevant responses\nWe should omit the first response in the dataset. That was the one Dr. Gilmore used to generate a Google Sheet, and isn’t real data.\n\nn_responses &lt;- dim(survey_01_clean)[1]\n\nif (n_responses &gt; 1) {\n  survey_01_clean &lt;- survey_01_clean[2:n_responses,]  \n} else {\n  message(\"No 'non-test' responses yet. Leaving data file unchanged.\")\n}"
   },
   {
-    "objectID": "survey-01.html#visualizations",
-    "href": "survey-01.html#visualizations",
+    "objectID": "surveys/survey-01.html#visualizations",
+    "href": "surveys/survey-01.html#visualizations",
     "title": "Survey 01",
     "section": "Visualizations",
     "text": "Visualizations\n\nOpenness questions\nRemember:\n\n\n\nSurvey 01 response options\n\n\n\n# survey_01_clean[,2:6] |&gt;\n#   ggpairs()\n# \nsurvey_01_data_dictionary[2:6,1:2] |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\n\n\nquestion\n\n\nshort_name\n\n\n\n\n\n\nI have at times changed opinions that were important to me, when someone showed me I was wrong.\n\n\nwhen_shown_wrong\n\n\n\n\nI am willing to change my position on an important issue in the face of good reasons.\n\n\ngood_reason\n\n\n\n\nI am open to revising my important beliefs in the face of new information.\n\n\nnew_info\n\n\n\n\nI am willing to change my opinions on the basis of compelling reason.\n\n\ncompelling_reason\n\n\n\n\nI’m willing to change my mind once it’s made up about an important topic.\n\n\nmind_made_up\n\n\n\n\n\nFigure 1: Reponses to Openness to Revising One’s Viewpoint subscale questions from (Krumrei-Mancuso & Rouse, 2016)\n\n\nsurvey_01_clean[, 1:6] |&gt;\n  tidyr::pivot_longer(cols=2:6, names_to = \"question\", values_to = \"rating\") |&gt;\n  ggplot()+\n  aes(rating) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_wrap(facets = vars(question), ncol = 1) \n\n\n\n\nFigure 2: Reponses to Openness to Revising One’s Viewpoint subscale questions from (Krumrei-Mancuso & Rouse, 2016)\n\n\n\n\n\n\nTrust in science questions\n\n\n\n\n\n\nNote\n\n\n\nIt would be even better to create a function that generates the plot and shows the long and short question names. Any time I repeat myself, I should remember this acronym:\nDon’t Repeat Yourself\nWrite It Down\n\n\nThere are a number of these, so we break them into smaller groups for visualization.\n\n\n\nSurvey 01 response options\n\n\n\n# survey_01_clean[, 7:11] |&gt;\n#   ggpairs()\n# \nsurvey_01_data_dictionary[7:27, 1:2] |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\n\n\nquestion\n\n\nshort_name\n\n\n\n\n\n\nScientists ignore evidence that contradicts their work.\n\n\nignore_contradictory_evidence\n\n\n\n\nScientific theories are weak explanations.\n\n\ntheories_are_weak\n\n\n\n\nScientists intentionally keep their work secret.\n\n\nkeep_work_secret\n\n\n\n\nScientists don’t value the ideas of others.\n\n\ndont_value_others_ideas\n\n\n\n\nScientists don’t care if laypersons understand their work.\n\n\ndont_care_laypeople_understand\n\n\n\n\nWe should trust the work of scientists.\n\n\nshould_trust_work\n\n\n\n\nWe should trust that scientists are being honest in their work.\n\n\nshould_trust_honesty\n\n\n\n\nWe should trust that scientists are being ethical in their work.\n\n\nshould_trust_ethical\n\n\n\n\nPeople who understand science more have more trust in science.\n\n\nmore_understanding_more_trust\n\n\n\n\nWe can trust science to find the answers that explain the natural world.\n\n\ntrust_explain_natural_world\n\n\n\n\nWe cannot trust scientists because they are biased in their perspectives.\n\n\ncant_trust_biased\n\n\n\n\nScientists will protect each other even when they are wrong.\n\n\nprotect_each_other_when_wrong\n\n\n\n\nWe cannot trust scientists to consider ideas that contradict their own.\n\n\nwont_consider_contradictory_ideas\n\n\n\n\nToday’s scientists will sacrifice the well being of others to advance their research.\n\n\nsacrifice_others_to_advance\n\n\n\n\nWe cannot trust science because it moves too slowly.\n\n\ncant_trust_moves_slowly\n\n\n\n\nWhen scientists change their mind about a scientific idea it diminishes my trust in their work.\n\n\nchange_minds_undermines_trust\n\n\n\n\nWe can trust scientists to share their discoveries even if they don’t like their findings.\n\n\nshare_findings_dont_like\n\n\n\n\nI trust that the work of scientists is to make life better for people.\n\n\nmake_life_better\n\n\n\n\nScientific theories are trustworthy.\n\n\ntheories_trustworthy\n\n\n\n\nWhen scientists form a hypothesis they are just guessing.\n\n\nhypotheses_just_guesses\n\n\n\n\nI trust scientists can find solutions to our major technological problems.\n\n\ntrust_find_tech_solutions\n\n\n\n\n\nFigure 3: Responses to trust in science questions from (Nadelson et al., 2014)\n\n\nsurvey_01_clean |&gt;\n  tidyr::pivot_longer(cols=7:27, names_to = \"question\", values_to = \"rating\") |&gt;\n  ggplot()+\n  aes(rating) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_wrap(facets = vars(question), ncol = 3) \n\n\n\n\nFigure 4: Responses to trust in science questions from (Nadelson et al., 2014)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComments\n\nsurvey_01_clean |&gt;\n  dplyr::select(comments) |&gt;\n  dplyr::filter(!is.na(comments)) |&gt;\n  knitr::kable(format=\"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\ncomments\n\n\n\n\nFor some of them I put 3 because they are very contextual and it felt wrong to ascribe a quality to the group when I feel only a few outliers would fit the criteria for the question\n\n\nThe more that people are not in agreement over a topic the more testing that both sides will perform. Which could ultimately give the real solution\n\n\n\n\n\n\n\n\n\nAggregate openness and trust questions\nNext, we calculate aggregate “openness” and “trust” scores to look at the relationship between these variables.\n\nsurvey_01_clean &lt;- survey_01_clean |&gt;\n  dplyr::mutate(openness_comp = sum(survey_01_clean[, 2:6]))\n\nSome of the “trust” variables are reverse-coded, so we have to address that. We’ll start by adding a variable to our data dictionary that indicates the “sign” of the weight we should apply to that variable. If the sign is negative then \\(1\\rightarrow5\\), \\(2\\rightarrow4\\), \\(3\\rightarrow3\\), \\(4\\rightarrow5\\), and \\(5\\rightarrow1\\).\n\nsurvey_01_data_dictionary &lt;- survey_01_data_dictionary |&gt;\n  dplyr::mutate(sign_wt = c(0, rep(1, 5),\n                            rep(-1, 5), rep(1, 5), rep(-1, 6), rep(1, 3), -1, 1, 0))\n\nsurvey_01_data_dictionary[,c(1,4)] |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nquestion\nsign_wt\n\n\n\n\nTimestamp\n0\n\n\nI have at times changed opinions that were important to me, when someone showed me I was wrong.\n1\n\n\nI am willing to change my position on an important issue in the face of good reasons.\n1\n\n\nI am open to revising my important beliefs in the face of new information.\n1\n\n\nI am willing to change my opinions on the basis of compelling reason.\n1\n\n\nI’m willing to change my mind once it’s made up about an important topic.\n1\n\n\nScientists ignore evidence that contradicts their work.\n-1\n\n\nScientific theories are weak explanations.\n-1\n\n\nScientists intentionally keep their work secret.\n-1\n\n\nScientists don't value the ideas of others.\n-1\n\n\nScientists don't care if laypersons understand their work.\n-1\n\n\nWe should trust the work of scientists.\n1\n\n\nWe should trust that scientists are being honest in their work.\n1\n\n\nWe should trust that scientists are being ethical in their work.\n1\n\n\nPeople who understand science more have more trust in science.\n1\n\n\nWe can trust science to find the answers that explain the natural world.\n1\n\n\nWe cannot trust scientists because they are biased in their perspectives.\n-1\n\n\nScientists will protect each other even when they are wrong.\n-1\n\n\nWe cannot trust scientists to consider ideas that contradict their own.\n-1\n\n\nToday's scientists will sacrifice the well being of others to advance their research.\n-1\n\n\nWe cannot trust science because it moves too slowly.\n-1\n\n\nWhen scientists change their mind about a scientific idea it diminishes my trust in their work.\n-1\n\n\nWe can trust scientists to share their discoveries even if they don't like their findings.\n1\n\n\nI trust that the work of scientists is to make life better for people.\n1\n\n\nScientific theories are trustworthy.\n1\n\n\nWhen scientists form a hypothesis they are just guessing.\n-1\n\n\nI trust scientists can find solutions to our major technological problems.\n1\n\n\nIf you wish to comment about the questions in this survey, you may do so here. You are not required to comment. Your comments might be seen by others.\n0\n\n\n\n\n\n\n\n\n# Recode variables with \"reverse\" indicator (sign_x == -1)\nrecode_reverse_vars &lt;- function(x, sign_x) {\n  if (sign_x == -1) {\n    switch(x,\n           5,\n           4,\n           3,\n           2,\n           1)\n  } else {\n    x\n  }\n}\n\n# Recode a specific variable based on its column index\nrecode_var &lt;- function(var_i, df_vars = survey_01_clean, df_dict = survey_01_data_dictionary) {\n  vals &lt;- unname(unlist(df_vars[, var_i]))\n  wts &lt;- unname(unlist(rep(df_dict[var_i, 4], length(vals))))\n  \n  purrr::map2(vals, wts, recode_reverse_vars) |&gt;\n    unlist()\n}\n\n# Recode the entire dataset and create a new data frame/tibble\nrecode_survey_01 &lt;- function() {\n  x &lt;- purrr::map(1:28, recode_var)\n  var_names &lt;- survey_01_data_dictionary[,2] |&gt; \n    unlist() |&gt; \n    unname()\n  names(x) &lt;- var_names\n  as_tibble(x)\n}\n\n# Run the recode_survey_01() function\nsurvey_01_recoded &lt;- recode_survey_01()\n\n# Calculate the composite scores as mean values across rows (within participants)\nsurvey_01_recoded &lt;- survey_01_recoded |&gt;\n  dplyr::mutate(openness_comp = rowMeans(survey_01_recoded[, 2:6]),\n                trust_comp = rowMeans(survey_01_recoded[, 7:27]))\n\n\nsurvey_01_recoded |&gt;\n  dplyr::select(openness_comp, trust_comp) |&gt;\n  ggplot() +\n  aes(openness_comp, trust_comp) +\n  geom_point() +\n  geom_smooth(method = \"lm\",\n              formula = y ~ x) +\n  xlim(1,5) +\n  ylim(1,5) +\n  coord_fixed()\n\n\n\n\nFigure 5: Composite ‘openness’ and ‘trust’ scores\n\n\n\n\n\nwith(survey_01_recoded, stats::cor.test(openness_comp, trust_comp))\n\n\n    Pearson's product-moment correlation\n\ndata:  openness_comp and trust_comp\nt = 0.35104, df = 9, p-value = 0.7336\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n -0.5199005  0.6694250\nsample estimates:\n     cor \n0.116221"
@@ -875,176 +875,176 @@
     "text": "References\n\n\nPSYCH 490.009\n\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nMerton, R. W. (1973). The normative structure of science. In R. K. Merton & N. W. Storer (Eds.), The sociology of science: Theoretical and empirical investigations (pp. 267–278). The University of Chicago Press.\n\n\nOreskes, N. (2019). Why trust science. Princeton University Press.\n\n\nPlohl, N., & Musil, B. (2023). Assessing the incremental value of intellectual humility and cognitive reflection in predicting trust in science. Personality and Individual Differences, 214, 112340. https://doi.org/10.1016/j.paid.2023.112340\n\n\nSagan, C. (1996). The demon-haunted world: Science as a candle in the dark (pp. 200–218). Ballantine Books."
   },
   {
-    "objectID": "final-project.html",
-    "href": "final-project.html",
+    "objectID": "exercises/final-project.html",
+    "href": "exercises/final-project.html",
     "title": "Final Project",
     "section": "",
     "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
-    "objectID": "final-project.html#background",
-    "href": "final-project.html#background",
+    "objectID": "exercises/final-project.html#background",
+    "href": "exercises/final-project.html#background",
     "title": "Final Project",
     "section": "",
     "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
-    "objectID": "final-project.html#topics",
-    "href": "final-project.html#topics",
+    "objectID": "exercises/final-project.html#topics",
+    "href": "exercises/final-project.html#topics",
     "title": "Final Project",
     "section": "Topics",
     "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tool or resource you find especially useful.\nA paper or papers that do or do not replicate.\nIndependent research on some topic related to open science.\n\nHere are some topics students chose in Spring 2023:\nhttps://psu-psychology.github.io/psych-490-reproducibility-2023-spring-notes/presentations.html#presentations-day-1"
   },
   {
-    "objectID": "final-project.html#formats",
-    "href": "final-project.html#formats",
+    "objectID": "exercises/final-project.html#formats",
+    "href": "exercises/final-project.html#formats",
     "title": "Final Project",
     "section": "Formats",
     "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
   },
   {
-    "objectID": "final-project.html#components",
-    "href": "final-project.html#components",
+    "objectID": "exercises/final-project.html#components",
+    "href": "exercises/final-project.html#components",
     "title": "Final Project",
     "section": "Components",
     "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page project proposal. If the proposal is submitted on-time (by Friday, October 13), the student or team gets 5 extra credit points. If the proposal is submitted late, there is no penalty, but also no extra points. If a student or team does not submit a proposal, there will be a five point penalty.\n\nProject presentation (optional, but strongly recommended)\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey below.\nThe presentations will occur during class on December 1, 4, and 6.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\nProject write-up\n\nEvery student or team must submit a write-up, due on Wednesday, December 13, 2023.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit your talk text or your slides with presenter notes.\nFor a poster, submit a PowerPoint or PDF of your poster."
   },
   {
-    "objectID": "final-project.html#survey",
-    "href": "final-project.html#survey",
+    "objectID": "exercises/final-project.html#survey",
+    "href": "exercises/final-project.html#survey",
     "title": "Final Project",
     "section": "Survey",
     "text": "Survey\n\nPlease provide us information about your project via this Google Form:"
   },
   {
-    "objectID": "ex06-replication.html",
-    "href": "ex06-replication.html",
+    "objectID": "exercises/ex06-replication.html",
+    "href": "exercises/ex06-replication.html",
     "title": "Exercise 06",
     "section": "",
     "text": "Due: Friday, October 27."
   },
   {
-    "objectID": "ex06-replication.html#dates",
-    "href": "ex06-replication.html#dates",
+    "objectID": "exercises/ex06-replication.html#dates",
+    "href": "exercises/ex06-replication.html#dates",
     "title": "Exercise 06",
     "section": "",
     "text": "Due: Friday, October 27."
   },
   {
-    "objectID": "ex06-replication.html#goals",
-    "href": "ex06-replication.html#goals",
+    "objectID": "exercises/ex06-replication.html#goals",
+    "href": "exercises/ex06-replication.html#goals",
     "title": "Exercise 06",
     "section": "Goals",
     "text": "Goals\nReplication is one standard among many that can be used to evaluate scientific findings. In this exercise, you will evaluate a published scientific finding on the basis of whether it 1) replicates prior work and 2) could be replicated by someone else."
   },
   {
-    "objectID": "ex06-replication.html#assignment",
-    "href": "ex06-replication.html#assignment",
+    "objectID": "exercises/ex06-replication.html#assignment",
+    "href": "exercises/ex06-replication.html#assignment",
     "title": "Exercise 06",
     "section": "Assignment",
     "text": "Assignment\nChoose a published scientific paper on a topic you find interesting and important.\nYou might find some of the topics suggested here (“FORRT - framework for open and reproducible research training,” n.d.) a good place to start: https://forrt.org/reversals/.\nDoes the paper:\n\nReport on whether data reported replicate a prior finding?\nDoes the paper embrace any of the recommendations by Begley (2013) (e.g., blinding, replication or repetition of key effects, etc.).\nDoes the paper implement any of the recommendations from the Munafò et al. (2017) paper?\nDoes the paper report effect sizes, sample sizes, and statistical power?\nWas the paper pre-registered?\nWhat is the TOP Factor for the journal? If none, report 0.\nDoes the paper share data? If so, where? Could you get access to the data?\nDoes the paper share any statistical or computer code used to analyze the data or make figures? If so, where? Could you access the code?\nDoes the paper share sufficient information about the measures used (e.g., a protocol, computer code to generate computer tasks, specific survey questions, or other information needed to replicate the tasks or measures) so that an independent third party like yourself could replicate the study?\n\nIf you had to give the author(s) of your paper a grade for replicability (A, B, C, D, F), what grade would you give it and why?"
   },
   {
-    "objectID": "ex06-replication.html#submit",
-    "href": "ex06-replication.html#submit",
+    "objectID": "exercises/ex06-replication.html#submit",
+    "href": "exercises/ex06-replication.html#submit",
     "title": "Exercise 06",
     "section": "Submit",
     "text": "Submit\nIn a short (2-3 pp double-spaced report) discuss the paper’s finding and why you think it is interesting and important. Then, evaluate the paper from the perspective of “replicability” by answering the questions in the previous section."
   },
   {
-    "objectID": "ex04-p-hacking.html",
-    "href": "ex04-p-hacking.html",
+    "objectID": "exercises/ex04-p-hacking.html",
+    "href": "exercises/ex04-p-hacking.html",
     "title": "Exercise 04",
     "section": "",
     "text": "Due: Friday, October 6."
   },
   {
-    "objectID": "ex04-p-hacking.html#dates",
-    "href": "ex04-p-hacking.html#dates",
+    "objectID": "exercises/ex04-p-hacking.html#dates",
+    "href": "exercises/ex04-p-hacking.html#dates",
     "title": "Exercise 04",
     "section": "",
     "text": "Due: Friday, October 6."
   },
   {
-    "objectID": "ex04-p-hacking.html#acknowledgment",
-    "href": "ex04-p-hacking.html#acknowledgment",
+    "objectID": "exercises/ex04-p-hacking.html#acknowledgment",
+    "href": "exercises/ex04-p-hacking.html#acknowledgment",
     "title": "Exercise 04",
     "section": "Acknowledgment",
     "text": "Acknowledgment\nThis exercise builds heavily on (Pownall et al., 2021)."
   },
   {
-    "objectID": "ex04-p-hacking.html#goals",
-    "href": "ex04-p-hacking.html#goals",
+    "objectID": "exercises/ex04-p-hacking.html#goals",
+    "href": "exercises/ex04-p-hacking.html#goals",
     "title": "Exercise 04",
     "section": "Goals",
     "text": "Goals\nThis exercise aims to build your understanding about p-hacking, what it is, how it can occur, and its impact on research."
   },
   {
-    "objectID": "ex04-p-hacking.html#materials",
-    "href": "ex04-p-hacking.html#materials",
+    "objectID": "exercises/ex04-p-hacking.html#materials",
+    "href": "exercises/ex04-p-hacking.html#materials",
     "title": "Exercise 04",
     "section": "Materials",
     "text": "Materials\n\na computer, tablet, or smartphone with access to the internet.\na means of keeping brief notes (notebook or text/word processing document)."
   },
   {
-    "objectID": "ex04-p-hacking.html#background",
-    "href": "ex04-p-hacking.html#background",
+    "objectID": "exercises/ex04-p-hacking.html#background",
+    "href": "exercises/ex04-p-hacking.html#background",
     "title": "Exercise 04",
     "section": "Background",
     "text": "Background\nYou are a policy analyst with a not-for-profit, or as our resource says, “You’re a social scientist with a hunch: The U.S. economy is affected by whether Republicans or Democrats are in office.” Your task is to publish a short report about whether the U.S. economy does better under Republican control or Democratic control. You probably have prior ideas about this question, but your goal is to provide data that answer it.\nYou will make use of a dataset with information about how well the U.S. economy performs and about the degree of Republican or Democratic political power. The dataset goes back to 1948."
   },
   {
-    "objectID": "ex04-p-hacking.html#your-analysis",
-    "href": "ex04-p-hacking.html#your-analysis",
+    "objectID": "exercises/ex04-p-hacking.html#your-analysis",
+    "href": "exercises/ex04-p-hacking.html#your-analysis",
     "title": "Exercise 04",
     "section": "Your analysis",
     "text": "Your analysis\n\nChoose a party as the focus of your report (Republican or Democratic).\nWrite down your prior hypothesis about whether the economy does better or worse under Republican or Democratic control. Do this before you visit the web site1.\n\n[ ] Republican [ ] Democratic\n[ ] Economy does better [ ] Economy does worse\n\nVisit the dataset site.\nSelect the party you have chosen to focus on by pressing the button in panel 1. of the site.\nWrite down the variables that are selected in “2. Define Terms” on the site.\n\nPoliticians included\n\nPresidents\nGovernors\nSenators\nRepresentatives\n\nMeasure(s) of economic performance\n\nEmployment\nInflation\nGDP\nStock prices\n\nOther options\n\nFactor in power\nExclude recessions\n\n\nIf you know how, take a screenshot of the plot in “3. Is there a relationship” Include the screenshot in your report. In a sentence or two, describe what the plot shows.\nReport the result indicated in “4. Is your result significant?”. What is the p-value? What does that p-value mean in practical terms–what question was tested2? Is your result “publishable”?\nYou may stop here and report your findings, or you may choose to explore the question further by selecting other variables (politicians included, measures of economic performance, or other options).\nIf you explore further, for each set of variables you select, write down the variables you selected and the p-value you found:\n\n\n\n\n\n\n\n\n\n\nPoliticians Included\nEconomic Measures\nOther factors\np-value\n\n\n\n\n\n\n\n\n\n\n\n\nCreate a report that captures the information you collected during the exercise and summarize your finding(s) in a sentence or two. You may use the simple report template as a guide."
   },
   {
-    "objectID": "ex04-p-hacking.html#submit",
-    "href": "ex04-p-hacking.html#submit",
+    "objectID": "exercises/ex04-p-hacking.html#submit",
+    "href": "exercises/ex04-p-hacking.html#submit",
     "title": "Exercise 04",
     "section": "Submit",
     "text": "Submit\nPlease save a copy of your report as a docx using the preferred file naming convention for this class: &lt;lastname&gt;-&lt;firstname&gt;-PSYCH490.002-ex02.docx, where you substitute your last name for  and your first name for .\nSubmit your report on Canvas in the dropbox for this assignment.\nPlease also bring a copy to class with you on February 21, 2023."
   },
   {
-    "objectID": "ex04-p-hacking.html#footnotes",
-    "href": "ex04-p-hacking.html#footnotes",
+    "objectID": "exercises/ex04-p-hacking.html#footnotes",
+    "href": "exercises/ex04-p-hacking.html#footnotes",
     "title": "Exercise 04",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThink about why we want you to write down your prediction before you look at the dataset.↩︎\nHint: The question tested has to do with the slope of the plot in 3.↩︎"
   },
   {
-    "objectID": "ex02-norms-counternorms.html",
-    "href": "ex02-norms-counternorms.html",
+    "objectID": "exercises/ex02-norms-counternorms.html",
+    "href": "exercises/ex02-norms-counternorms.html",
     "title": "Exercise 02",
     "section": "",
     "text": "Due: Friday, September 8."
   },
   {
-    "objectID": "ex02-norms-counternorms.html#dates",
-    "href": "ex02-norms-counternorms.html#dates",
+    "objectID": "exercises/ex02-norms-counternorms.html#dates",
+    "href": "exercises/ex02-norms-counternorms.html#dates",
     "title": "Exercise 02",
     "section": "",
     "text": "Due: Friday, September 8."
   },
   {
-    "objectID": "ex02-norms-counternorms.html#goals",
-    "href": "ex02-norms-counternorms.html#goals",
+    "objectID": "exercises/ex02-norms-counternorms.html#goals",
+    "href": "exercises/ex02-norms-counternorms.html#goals",
     "title": "Exercise 02",
     "section": "Goals",
     "text": "Goals\nThis exercise gives you an opportunity to consider how the norms (and counter-norms) that appear common in scientific research compare with other human activities."
   },
   {
-    "objectID": "ex02-norms-counternorms.html#assignment",
-    "href": "ex02-norms-counternorms.html#assignment",
+    "objectID": "exercises/ex02-norms-counternorms.html#assignment",
+    "href": "exercises/ex02-norms-counternorms.html#assignment",
     "title": "Exercise 02",
     "section": "Assignment",
     "text": "Assignment\nChoose a realm of human activity that you are familiar with and preferably engage in yourself that is not scientific research–e.g., a sport or game, religious activity, club or social activity, political activity, or something else. Choose two norms or counter-norms in your chosen activity and in a short essay (2-3 double-spaced pages in length) describe the norms or counter-norms in your chosen activity and discuss how they compare with the norms and counter-norms common in scientific research.\nYou may work with one other person if you so choose."
   },
   {
-    "objectID": "ex02-norms-counternorms.html#submit",
-    "href": "ex02-norms-counternorms.html#submit",
+    "objectID": "exercises/ex02-norms-counternorms.html#submit",
+    "href": "exercises/ex02-norms-counternorms.html#submit",
     "title": "Exercise 02",
     "section": "Submit",
     "text": "Submit\nA 2-3 page paper in Microsoft Word format using the following file-naming convention:\n&lt;lastname&gt;-&lt;firstname&gt;-PSYCH490.009-ex02.docx, where you substitute your last name for  and your first name for . If there are two authors, use both of your last names. If Dr. Gilmore was submitting a paper, it would look like this: gilmore-rick-PSYCH490.009-ex02.docx. Jie will create a dropbox on Canvas for submissions. When that is ready, we will let you know via email.\nPlease use the APA format for your paper. I found the following template document that would be a very good start:\nhttps://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy"
@@ -1113,162 +1113,162 @@
     "text": "Date\nWhat’s due/happening\n\n\n\n\n2023-08-31\nExercise 01\n\n\n2023-09-08\nExercise 02\n\n\n2023-09-29\nExercise 03\n\n\n2023-10-06\nExercise 04\n\n\n2023-10-13\nFinal project proposal due\n\n\n2023-10-20\nExercise 05\n\n\n2023-10-27\nExercise 06\n\n\n2023-11-10\nExercise 07\n\n\n2023-12-01 - 2023-12-06\nFinal project presentations\n\n\n2023-12-13\nFinal project writeup due"
   },
   {
-    "objectID": "ex01-read-a-scientific-paper.html",
-    "href": "ex01-read-a-scientific-paper.html",
+    "objectID": "exercises/ex01-read-a-scientific-paper.html",
+    "href": "exercises/ex01-read-a-scientific-paper.html",
     "title": "Exercise 01",
     "section": "",
     "text": "Due: Friday, August 31."
   },
   {
-    "objectID": "ex01-read-a-scientific-paper.html#dates",
-    "href": "ex01-read-a-scientific-paper.html#dates",
+    "objectID": "exercises/ex01-read-a-scientific-paper.html#dates",
+    "href": "exercises/ex01-read-a-scientific-paper.html#dates",
     "title": "Exercise 01",
     "section": "",
     "text": "Due: Friday, August 31."
   },
   {
-    "objectID": "ex01-read-a-scientific-paper.html#goals",
-    "href": "ex01-read-a-scientific-paper.html#goals",
+    "objectID": "exercises/ex01-read-a-scientific-paper.html#goals",
+    "href": "exercises/ex01-read-a-scientific-paper.html#goals",
     "title": "Exercise 01",
     "section": "Goals",
     "text": "Goals\nThis exercise gives you an opportunity to apply some of the ideas we discussed in class about how to read a scientific paper."
   },
   {
-    "objectID": "ex01-read-a-scientific-paper.html#assignment",
-    "href": "ex01-read-a-scientific-paper.html#assignment",
+    "objectID": "exercises/ex01-read-a-scientific-paper.html#assignment",
+    "href": "exercises/ex01-read-a-scientific-paper.html#assignment",
     "title": "Exercise 01",
     "section": "Assignment",
     "text": "Assignment\nYou may work with one other person if you wish. Choose a paper you find interesting.\nUse the rubric described in (Carey, Steiner, & Petri, 2020) to read the paper.\nAnswer the following specific questions in “Rule 3” of (Carey et al., 2020):\n\n\nWhat do the author(s) want to know (motivation)?\nWhat did they do (approach/methods)?\nWhy was it done that way (context within the field)?\nWhat do the results show (figures and data tables)?\nHow did the author(s) interpret the results (interpretation/discussion)?\nWhat should be done next? (Regarding this last question, the author(s) may provide some suggestions in the discussion, but the key is to ask yourself what you think should come next.)\n\n\n\n(Carey et al., 2020)\n\nIf it’s an empirical paper, pay particular attention to what evidence, usually a pattern of data, the author(s) use to argue for a particular finding or conclusion. Is there a figure that demonstrates this well? If so, how? If not, why not?\n\n\n\n\n\n\nTip\n\n\n\nIf you’re struggling to decide how to start your paper, that is how to write the introduction, imagine that you are giving your paper to a friend or colleague. What would they want to know about what your write-up is about and why they should read it?\nWhen I was in high school, my English teacher, Ms. Sinard advised us to start every essay with “When”, “If”, or “Although”. It’s not bad advice, especially if you’re stuck."
   },
   {
-    "objectID": "ex01-read-a-scientific-paper.html#submit",
-    "href": "ex01-read-a-scientific-paper.html#submit",
+    "objectID": "exercises/ex01-read-a-scientific-paper.html#submit",
+    "href": "exercises/ex01-read-a-scientific-paper.html#submit",
     "title": "Exercise 01",
     "section": "Submit",
     "text": "Submit\nA 2-3 page (double-spaced) paper describing your findings in Microsoft Word format using the following file-naming convention:\n&lt;lastname&gt;-&lt;firstname&gt;-PSYCH490.009-ex01.docx, where you substitute your last name for  and your first name for . If there are two authors, use both of your last names. If Dr. Gilmore was submitting a paper, it would look like this: gilmore-rick-PSYCH490.009-ex01.docx.\nHere is the Canvas dropbox for the assignment:\nhttps://psu.instructure.com/courses/2280122/assignments/15452006\nPlease use the APA format for your paper. I found the following template document that would be a very good start:\nhttps://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy"
   },
   {
-    "objectID": "ex03-scientific-integrity.html",
-    "href": "ex03-scientific-integrity.html",
+    "objectID": "exercises/ex03-scientific-integrity.html",
+    "href": "exercises/ex03-scientific-integrity.html",
     "title": "Exercise 03",
     "section": "",
     "text": "Due: Friday, September 29."
   },
   {
-    "objectID": "ex03-scientific-integrity.html#dates",
-    "href": "ex03-scientific-integrity.html#dates",
+    "objectID": "exercises/ex03-scientific-integrity.html#dates",
+    "href": "exercises/ex03-scientific-integrity.html#dates",
     "title": "Exercise 03",
     "section": "",
     "text": "Due: Friday, September 29."
   },
   {
-    "objectID": "ex03-scientific-integrity.html#goals",
-    "href": "ex03-scientific-integrity.html#goals",
+    "objectID": "exercises/ex03-scientific-integrity.html#goals",
+    "href": "exercises/ex03-scientific-integrity.html#goals",
     "title": "Exercise 03",
     "section": "Goals",
     "text": "Goals\nThe integrity of individual scientists and teams of scientists can lend credence to or undermine scientific methods and findings. In this exercise, we will explore some of the mechanisms by which violations of scientific integrity come to light."
   },
   {
-    "objectID": "ex03-scientific-integrity.html#assignment",
-    "href": "ex03-scientific-integrity.html#assignment",
+    "objectID": "exercises/ex03-scientific-integrity.html#assignment",
+    "href": "exercises/ex03-scientific-integrity.html#assignment",
     "title": "Exercise 03",
     "section": "Assignment",
     "text": "Assignment\nChoose two cases where violations of scientific integrity have been alleged. Your cases must come from two different sources from among the following:\n\nA case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity (ORI.\nA report about a violation of scientific integrity from the Retraction Watch database.\nA post or posts on the Data Colada site.\nA report in a newspaper or scientific journal.\n\nCompare and contrast the two cases you have chosen, focusing on answering the following questions:\n\nWhat specific violation or violations were alleged?\nWhy are the alleged behavior(s) considered a violation of scientific integrity?\nWhat are/were the consequences to the people involved?\nWhat could be done to reduce the likelihood that similar alleged violations of scientific integrity occur in the future?"
   },
   {
-    "objectID": "ex03-scientific-integrity.html#submit",
-    "href": "ex03-scientific-integrity.html#submit",
+    "objectID": "exercises/ex03-scientific-integrity.html#submit",
+    "href": "exercises/ex03-scientific-integrity.html#submit",
     "title": "Exercise 03",
     "section": "Submit",
     "text": "Submit\nIn a short (2-3 pp double-spaced report) discuss your answers to these questions and how the two cases are similar or differ from one another.\nPlease use the APA format for your paper. Remember the following template document is a good place to start:\nhttps://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy"
   },
   {
-    "objectID": "ex05-apes.html",
-    "href": "ex05-apes.html",
+    "objectID": "exercises/ex05-apes.html",
+    "href": "exercises/ex05-apes.html",
     "title": "Exercise 05",
     "section": "",
     "text": "Due: Friday, October 20."
   },
   {
-    "objectID": "ex05-apes.html#dates",
-    "href": "ex05-apes.html#dates",
+    "objectID": "exercises/ex05-apes.html#dates",
+    "href": "exercises/ex05-apes.html#dates",
     "title": "Exercise 05",
     "section": "",
     "text": "Due: Friday, October 20."
   },
   {
-    "objectID": "ex05-apes.html#goals",
-    "href": "ex05-apes.html#goals",
+    "objectID": "exercises/ex05-apes.html#goals",
+    "href": "exercises/ex05-apes.html#goals",
     "title": "Exercise 05",
     "section": "Goals",
     "text": "Goals\nThis exercise aims to to build your understanding about the relationship between alpha \\(\\alpha\\) and its close cousin statistical significance, statistical power (1-\\(\\beta\\)), effect size (\\(d\\)), and sample sizes (\\(n\\))."
   },
   {
-    "objectID": "ex05-apes.html#materials",
-    "href": "ex05-apes.html#materials",
+    "objectID": "exercises/ex05-apes.html#materials",
+    "href": "exercises/ex05-apes.html#materials",
     "title": "Exercise 05",
     "section": "Materials",
     "text": "Materials\n\na computer, tablet, or smartphone with access to the internet.\na means of keeping brief notes (notebook or text/word processing document)."
   },
   {
-    "objectID": "ex05-apes.html#shiny-app",
-    "href": "ex05-apes.html#shiny-app",
+    "objectID": "exercises/ex05-apes.html#shiny-app",
+    "href": "exercises/ex05-apes.html#shiny-app",
     "title": "Exercise 05",
     "section": "Shiny app",
     "text": "Shiny app\nVisit the app at https://rogilmore.shinyapps.io/PSYCH490-2023-APES/."
   },
   {
-    "objectID": "ex05-apes.html#background",
-    "href": "ex05-apes.html#background",
+    "objectID": "exercises/ex05-apes.html#background",
+    "href": "exercises/ex05-apes.html#background",
     "title": "Exercise 05",
     "section": "Background",
     "text": "Background\nIn the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are not due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.\nOne way to think about those trade-offs is to think about our situation this way:\nSome “fact” about the world can either be true or false, and our data analysis should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually is true and deciding when something’s false when it actually is false. Both are important ways for our analysis to be correct.\nWe also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a false positive. We also don’t want to decide something’s false when actually it’s true. That’s called a false negative. We want to minimize both.\nTo avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (\\(\\alpha\\)) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, \\(\\alpha\\) is also usually small; \\(\\alpha = 0.05\\) is conventional, but it is not in any way sacred.\nTo avoid false negatives, we set another probability value, called beta (\\(\\beta\\)). Beta is the proportion of times we’re willing to conclude a true fact is actually false; \\(\\beta = 0.20\\) or 1 time out of five is conventional. But what data folks usually focus on is \\(1-\\beta\\)1 or statistical power. This number tells us the proportion of times we expect to detect a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why it’s called power.\nAnalysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called \\(n\\). How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the effect size because it might represent the effect of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean (\\(\\mu\\)) 0 and standard deviation (\\(\\sigma\\)) 1, we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called \\(d\\). There are other ways to talk about effect sizes, but we won’t go further here.\nYour goals in this assignment are to see how choices about sample size (\\(n\\)), effect size (\\(d\\)), alpha (\\(/alpha\\)) and power (\\(1-\\beta\\)) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers."
   },
   {
-    "objectID": "ex05-apes.html#your-analysis",
-    "href": "ex05-apes.html#your-analysis",
+    "objectID": "exercises/ex05-apes.html#your-analysis",
+    "href": "exercises/ex05-apes.html#your-analysis",
     "title": "Exercise 05",
     "section": "Your analysis",
     "text": "Your analysis\n\nWhen you first open the app, note that it simulates an analysis of groups A (red) and B, and that we get to control a number of parameters, including \\(n\\), \\(d\\), and \\(\\alpha\\). Note the statistics in the first gray box. It reports on the results of a \\(t\\) test, comparing the difference between the means of the two groups.\n\nInterpret the results of the t-test. What does it mean? What is the number in the brackets? What does it mean?\n“CI” means confidence interval. The CI has a minimum (leftmost) and maximum (rightmost) value. The actual difference in the observed means of A and B should fall inside the interval. In your own words, explain what the confidence interval means.\n\n\n\n\nLet’s see what happens when we generate different samples of A and B with the same underlying statistics–the same \\(n\\), same mean (\\(\\mu\\)), same standard deviation (\\(\\sigma\\)), same effect size (\\(d\\)), and same criterion (\\(\\alpha\\)) or false positive rate.\n\nPress the Regenerate button. What happens to the histogram? Look in the grey t-test box. What happens to the t-test, and the mean values for A, B, the difference between A and B (B-A), and the CI?\nPress the Regenerate button a couple of times until Sig? changes from FALSE to TRUE or TRUE to FALSE? This is a form of p-hacking? Explain how. Remember the specific data we’re analyzing are being regenerated each time we press the button; what’s not changing is the sample size, standard deviation, and the effect size (difference between B and A).\n\nHaving \\(n=75\\) is a pretty large sample for many types of research in psychology, so let’s see what having smaller samples does to our t-test and to our power.\n\nBut before we do that, write down your prediction about what will happen to the t-test when we reduce the \\(n\\) for both groups A and B to 50.\nChange the \\(n\\) for A to 50 and the \\(n\\) for B to 50. Interpret the t-test and CI.\nWhat happened to power (see the box on the right side)? Does this mean we are more likely or less likely to detect a difference between A and B than before? Why?\n\nWe’re simulating what happens if there is an effect size of \\(d=0.5\\), or half a standard deviation between the means of A and B.\n\nChange \\(d\\) to 1.5 or larger. What happens to the histogram? What happens to our t-test and power?\nChange \\(d\\) to 0.25. What happens to the histogram? What happens to our t-test and power?\n\nLet’s see if we can find out what size of samples we’d need to have power \\(1-\\beta = 0.80\\) to detect an effect of (\\(d=0.25\\)). Increase the sample sizes of A and B until you exceed the desired level for power. What sample size did you need? Explain your finding.\n(Optional) Bonus Points (up to 5)\n\nExplore the effect of changing some other parameter on the results, for example, criterion/alpha (\\(\\alpha\\)), the standard deviation for A or B (\\(\\sigma\\)), or even the ‘baseline’ mean for B (\\(\\mu\\)).\nReport on what you changed, what you observed, and what you conclude."
   },
   {
-    "objectID": "ex05-apes.html#submit",
-    "href": "ex05-apes.html#submit",
+    "objectID": "exercises/ex05-apes.html#submit",
+    "href": "exercises/ex05-apes.html#submit",
     "title": "Exercise 05",
     "section": "Submit",
     "text": "Submit\nBring your draft report to class with you on Tuesday, March 14, 2023. We’ll discuss the assignment. The final submission is due Tuesday, March 14, 2023 at midnight."
   },
   {
-    "objectID": "ex05-apes.html#footnotes",
-    "href": "ex05-apes.html#footnotes",
+    "objectID": "exercises/ex05-apes.html#footnotes",
+    "href": "exercises/ex05-apes.html#footnotes",
     "title": "Exercise 05",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nRemember that probabilities are always between 0 and 1 and always sum to 1.↩︎"
   },
   {
-    "objectID": "ex07-sharing.html",
-    "href": "ex07-sharing.html",
+    "objectID": "exercises/ex07-sharing.html",
+    "href": "exercises/ex07-sharing.html",
     "title": "Exercise 07",
     "section": "",
     "text": "Due: Friday, November 17, 2023"
   },
   {
-    "objectID": "ex07-sharing.html#dates",
-    "href": "ex07-sharing.html#dates",
+    "objectID": "exercises/ex07-sharing.html#dates",
+    "href": "exercises/ex07-sharing.html#dates",
     "title": "Exercise 07",
     "section": "",
     "text": "Due: Friday, November 17, 2023"
   },
   {
-    "objectID": "ex07-sharing.html#assignment",
-    "href": "ex07-sharing.html#assignment",
+    "objectID": "exercises/ex07-sharing.html#assignment",
+    "href": "exercises/ex07-sharing.html#assignment",
     "title": "Exercise 07",
     "section": "Assignment",
     "text": "Assignment\nChoose a data or code repository from among the following:\n\nDryad\nDatabrary\nPenn State Data Commons\nDataverse\nfigshare\nGitHub\nGitLab\nInter-university Consortium for Political and Social Research (ICPSR)\nNIMH Data Archive\nOpenNeuro\nOpen Science Framework (OSF)\nQualitatitive Data Repository (QDR)\nPenn State ScholarSphere\nZenodo\n\nProvide some basic summary information about the repository:\n\nWho sponsors the data or code repository?\nWhat sort of data or code are stored and shared there?\nWho is the target audience for the repository?\n\nFind a dataset or code base within the repository and report on the following:\n\nWhat kind of data or code are stored and shared?\nHow hard or easy would it be for you to use the data or code yourself?"
   },
   {
-    "objectID": "ex07-sharing.html#submit",
-    "href": "ex07-sharing.html#submit",
+    "objectID": "exercises/ex07-sharing.html#submit",
+    "href": "exercises/ex07-sharing.html#submit",
     "title": "Exercise 07",
     "section": "Submit",
     "text": "Submit\nA 2-3 pp double-spaced report on your findings. Make sure to include your name and a title for your report in the header of your document."
@@ -2023,50 +2023,50 @@
     "text": "December 11-15\n\nWednesday, December 13\n\nDue\n\nFinal project write-ups due 5:00 PM."
   },
   {
-    "objectID": "survey-02.html",
-    "href": "survey-02.html",
+    "objectID": "surveys/survey-02.html",
+    "href": "surveys/survey-02.html",
     "title": "Survey 02",
     "section": "",
     "text": "This page documents the data processing steps involved with Survey 02 in PSYCH 490.009.\nThe survey questions were adapted from those discussed in (Kardash & Edwards, 2012)."
   },
   {
-    "objectID": "survey-02.html#purpose",
-    "href": "survey-02.html#purpose",
+    "objectID": "surveys/survey-02.html#purpose",
+    "href": "surveys/survey-02.html#purpose",
     "title": "Survey 02",
     "section": "",
     "text": "This page documents the data processing steps involved with Survey 02 in PSYCH 490.009.\nThe survey questions were adapted from those discussed in (Kardash & Edwards, 2012)."
   },
   {
-    "objectID": "survey-02.html#survey",
-    "href": "survey-02.html#survey",
+    "objectID": "surveys/survey-02.html#survey",
+    "href": "surveys/survey-02.html#survey",
     "title": "Survey 02",
     "section": "Survey",
     "text": "Survey\nLink: https://forms.gle/nXmghuctPGUmV1AU7\n\nLoading…"
   },
   {
-    "objectID": "survey-02.html#preparation",
-    "href": "survey-02.html#preparation",
+    "objectID": "surveys/survey-02.html#preparation",
+    "href": "surveys/survey-02.html#preparation",
     "title": "Survey 02",
     "section": "Preparation",
     "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using."
   },
   {
-    "objectID": "survey-02.html#gathering",
-    "href": "survey-02.html#gathering",
+    "objectID": "surveys/survey-02.html#gathering",
+    "href": "surveys/survey-02.html#gathering",
     "title": "Survey 02",
     "section": "Gathering",
     "text": "Gathering\nNext, we download the data from the Google Sheet where it is collected. Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command Sys.getenv(\"GMAIL_SURVEY\").\n\nif (!dir.exists('csv')) {\n  message(\"Creating missing `csv/`.\")\n  dir.create(\"csv\")\n}\n\nif (params$update_data) {\n  options(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\n  googledrive::drive_auth()\n  \n  googledrive::drive_download(\n    \"Scientific Values Survey (Responses)\",\n    path = \"csv/survey-02-sci-values.csv\",\n    type = \"csv\",\n    overwrite = TRUE\n  )\n  \n  message(\"Data updated.\")\n} else {\n  message(\"Using stored data.\")\n}\n\nThe data file has been saved as a comma-separated value (CSV) format data file in a special directory called csv/.\n\n\n\n\n\n\n\nNote\n\n\n\nBecause these data might contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub. This is achieved by adding the name of the data directory to a special .gitignore file."
   },
   {
-    "objectID": "survey-02.html#cleaning",
-    "href": "survey-02.html#cleaning",
+    "objectID": "surveys/survey-02.html#cleaning",
+    "href": "surveys/survey-02.html#cleaning",
     "title": "Survey 02",
     "section": "Cleaning",
     "text": "Cleaning\nNext we load the data file and clean it.\n\nsurvey_02_norms &lt;-\n  readr::read_csv(\"csv/survey-02-sci-values.csv\", show_col_types = FALSE)\n\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nsurvey_02_norms_qs &lt;- names(survey_02_norms)\nsurvey_02_norms_qs\n\n [1] \"Timestamp\"                                                                                                                                                                                                                             \n [2] \"Scientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain....2\"                                                                                                        \n [3] \"Scientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work....3\"                                                                           \n [4] \"Scientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group....4\"                                                                                 \n [5] \"Scientists openly share new findings with all colleagues....5\"                                                                                                                                                                         \n [6] \"Scientists generally invest their careers in promoting their own most important findings, theories, or innovations....6\"                                                                                                               \n [7] \"Scientists compete with others in the same field for funding and recognition of their achievements....7\"                                                                                                                               \n [8] \"Scientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)....8\"                                                                                                                    \n [9] \"Scientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications....9\"                                                                                                        \n[10] \"Scientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain....10\"                                                                                                       \n[11] \"Scientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work....11\"                                                                          \n[12] \"Scientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group....12\"                                                                                \n[13] \"Scientists openly share new findings with all colleagues....13\"                                                                                                                                                                        \n[14] \"Scientists generally invest their careers in promoting their own most important findings, theories, or innovations....14\"                                                                                                              \n[15] \"Scientists compete with others in the same field for funding and recognition of their achievements....15\"                                                                                                                              \n[16] \"Scientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)....16\"                                                                                                                   \n[17] \"Scientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications....17\"                                                                                                       \n[18] \"If you wish to comment about the questions in this survey, you may do so here. You are not required to comment. However, if you want extra credit points for completing the survey, put a code phrase here and tell the TA what it is.\"\n\n\n\nFiltering out irrelevant responses\nWe should omit the first two response in the dataset. These were used by Dr. Gilmore used to generate a Google Sheet, and aren’t real data.\n\nn_responses &lt;- dim(survey_02_norms)[1]\nsurvey_02_norms &lt;- survey_02_norms[3:n_responses,]\n\n\n\nClean/shorten names\nFor plotting and analyses, it’s usually easier to shorten the questions by creating a short name that reflects the underlying idea or construct. We’ll use the rename() function from the dplyr package for this.\n\nnew_names &lt;-\n  c(\n    \"timestamp\",\n    \"Disinterestedness_should\",\n    \"Organized Skepticism_should\",\n    \"Particularism_should\",\n    \"Communality_should\",\n    \"Organized Dogmatism_should\",\n    \"Self-interestedness_should\",\n    \"Universalism_should\",\n    \"Solitariness_should\",\n    \"Disinterestedness_actually\",\n    \"Organized Skepticism_actually\",\n    \"Particularism_actually\",\n    \"Communality_actually\",\n    \"Organized Dogmatism_actually\",\n    \"Self-interestedness_actually\",\n    \"Universalism_actually\",\n    \"Solitariness_actually\",\n    \"comments\"\n  )\n\n# These data are ‘wide’, meaning that there are multiple variables for each respondent. The data will be easier to visualize and analyze if we make the data ‘longer’.\n\n# Swap out old (long) names for new (short) names\nlong_names &lt;- names(survey_02_norms)\nnames(survey_02_norms) &lt;- new_names\n\nsurvey_02_norms_long &lt;- survey_02_norms |&gt;\n  tidyr::pivot_longer(!c('timestamp', 'comments'),\n                      names_to = \"norm_counternorm\",\n                      values_to = \"rating\")\n\n# We move the '_should' and '_actually' to a separate variable called 'resp_frame'\nsurvey_02_norms_long &lt;- survey_02_norms_long |&gt;\n  dplyr::mutate(resp_frame = stringr::str_extract(norm_counternorm, \"should|actually\")) |&gt;\n  dplyr::mutate(norm_counternorm = stringr::str_remove_all(norm_counternorm, \"_[a-z]+\"))\n\n# We should indicate whether these are norms or counternorms.\nsurvey_02_norms_long &lt;- survey_02_norms_long |&gt;\n  dplyr::mutate(type = if_else(\n    norm_counternorm %in% c(\n      \"Disinterestedness\",\n      \"Organized Skepticism\",\n      \"Communality\",\n      \"Universalism\"\n    ),\n    \"norm\",\n    \"counternorm\"\n  )) \n\nNow, let’s look at the names to confirm that they all got changed.\n\nnames(survey_02_norms_long)\n\n[1] \"timestamp\"        \"comments\"         \"norm_counternorm\" \"rating\"          \n[5] \"resp_frame\"       \"type\"            \n\n\n\n\nData dictionary\nWe’ll pause here to start building a data dictionary, a file that explains the origin, format, and usage of our dataset.\n\n# Make new data frame with long and short names for reference\nsurvey_02_norms_data_dictionary &lt;-\n  tibble::tibble(q_long = long_names, q_short = new_names)\n\nsurvey_02_norms_data_dictionary &lt;- survey_02_norms_data_dictionary |&gt;\n  dplyr::mutate(norm_type = if_else(\n    stringr::str_detect(\n      q_short,\n      \"Disinterestedness|Skepticism|Communality|Universalism\"),\n      \"norm\",\n      \"counternorm\"\n  )) |&gt;\n  dplyr::mutate(resp_frame = if_else(\n    stringr::str_detect(\n      q_short,\n      \"should\"),\n      \"should_do\",\n      \"actually_do\"\n  ))\n\n# The `norm_type` and `resp_frame` variables have no meaning for the timestamp or comments.\nsurvey_02_norms_data_dictionary$norm_type[1] &lt;- NA\nsurvey_02_norms_data_dictionary$norm_type[18] &lt;- NA\nsurvey_02_norms_data_dictionary$resp_frame [1] &lt;- NA\nsurvey_02_norms_data_dictionary$resp_frame [18] &lt;- NA\n\nWe’ll add other items to the data dictionary later."
   },
   {
-    "objectID": "survey-02.html#visualizations",
-    "href": "survey-02.html#visualizations",
+    "objectID": "surveys/survey-02.html#visualizations",
+    "href": "surveys/survey-02.html#visualizations",
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"

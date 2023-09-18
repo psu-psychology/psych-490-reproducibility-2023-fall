@@ -205,7 +205,7 @@ if (n_responses < 1) {
 }
 ```
 
-![Survey 02 response options](include/img/survey-02-resp-options.png)
+![Survey 02 response options](../include/img/survey-02-resp-options.png)
 
 ```{r fig-norms-counternorms}
 survey_02_norms_long |>

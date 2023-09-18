@@ -3,7 +3,9 @@ project:
   render:
     - "*.qmd"
     - "notes/*.qmd"
-  output-dir: docs
+    - "exercises/*.qmd"
+    - "surveys/*.qmd"
+  output-dir: "../docs"
 
 website:
   title: "PSYCH 490 • Fall 2023"
@@ -49,18 +51,18 @@ website:
           - href: "notes/wk06-2023-09-29.qmd"
       - text: exercises
         menu: 
-          - href: "ex01-read-a-scientific-paper.qmd"
-          - href: "ex02-norms-counternorms.qmd"
-          - href: "ex03-scientific-integrity.qmd"
-          - href: "ex04-p-hacking.qmd"
-          - href: "ex05-apes.qmd"
-          - href: "ex06-replication.qmd"
-          - href: "ex07-sharing.qmd"
-          - href: "final-project.qmd"
+          - href: "exercises/ex01-read-a-scientific-paper.qmd"
+          - href: "exercises/ex02-norms-counternorms.qmd"
+          - href: "exercises/ex03-scientific-integrity.qmd"
+          - href: "exercises/ex04-p-hacking.qmd"
+          - href: "exercises/ex05-apes.qmd"
+          - href: "exercises/ex06-replication.qmd"
+          - href: "exercises/ex07-sharing.qmd"
+          - href: "exercises/final-project.qmd"
       - text: surveys
         menu: 
-          - href: "survey-01.qmd"
-          - href: "survey-02.qmd"
+          - href: "surveys/survey-01.qmd"
+          - href: "surveys/survey-02.qmd"
 format:
   html:
     theme: cosmo
