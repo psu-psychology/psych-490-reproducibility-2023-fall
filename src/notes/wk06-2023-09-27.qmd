@@ -6,6 +6,7 @@ format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
 csl: ../include/bib/apa.csl
 css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-09-27 Wednesday"
 ---
 
 # Overview
@@ -13,7 +14,7 @@ css: ../include/css/styles.css
 ## Announcements
 
 - [Due Friday]{.orange_due}
-    - [Exercise 03: Violations of scientific integrity](ex03-scientific-integrity.qmd)
+    - [Exercise 03: Violations of scientific integrity](../exercises/ex03-scientific-integrity.qmd)
 
 ## Today
 
@@ -30,11 +31,11 @@ css: ../include/css/styles.css
 *P-hacking*
 
 - [Due]{.orange_due}
-    - [Exercise 03: Violations of scientific integrity](../ex03-scientific-integrity.html)
+    - [Exercise 03: Violations of scientific integrity](../exercises/ex03-scientific-integrity.html)
 - [Assignment]{.green_assigned}
-    - [Exercise 04: P-hack your way to scientific glory](../ex04-p-hacking.html write-up.
+    - [Exercise 04: P-hack your way to scientific glory](../exercises/ex04-p-hacking.html write-up.
 - Work session
-    - [Final project proposals](../final-project.html), [due Friday, October 13]{.orange_due}
+    - [Final project proposals](../exercises/final-project.html), [due Friday, October 13]{.orange_due}
 
 # Resources
 

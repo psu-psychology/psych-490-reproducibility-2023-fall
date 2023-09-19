@@ -13,12 +13,15 @@ footer: "[PSYCH 490.009](../index.html): 2023-09-22 Friday"
 
 ## Announcements
 
+- **NO CLASS** on Monday, September 25, 2023
+- Next class is Wednesday, September 27, 2023
+
 ## Today
 
 *Work session: Scientific integrity*
 
 - [Assignment]{.green_assigned}
-    - [Exercise 03: Violations of scientific integrity](ex03-scientific-integrity.qmd)
+    - [Exercise 03: Violations of scientific integrity](../exercises/ex03-scientific-integrity.qmd)
 
 # Next time
 

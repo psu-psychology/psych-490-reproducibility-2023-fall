@@ -16,15 +16,18 @@ footer: "[PSYCH 490.009](../index.html): 2023-09-18 Monday"
 ## Announcements
 
 - No assignments due this Friday
+  - Distribute and discuss [Exercise 03](../exercises/ex03-scientific-integrity.qmd)
 - Next week is a short week
   - No class on Monday, September 25.
   
 ## Last time...
 
+::: {.incremental}
 - Did the Macbeth effect [@Zhong2006-nf] replicate?
 - Did the priming effect  [@Bargh1996-yv] replicate?
 - Is this yes/no question the right one to ask?
 - If not, what's a better question to ask?
+:::
 
 ## Today
 
