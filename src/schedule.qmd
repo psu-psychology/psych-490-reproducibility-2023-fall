@@ -183,6 +183,8 @@ title: "schedule"
 
 **P-hacking**
 
+*On Zoom*: <https://psu.zoom.us/my/rogilmore>. Check-in for attendance. Join from anywhere convenient to you.
+
 - [Due]{.orange_due}
     - [Exercise 03: Violations of scientific integrity](exercises/ex03-scientific-integrity.qmd)
 - [Assignment]{.green_assigned}
