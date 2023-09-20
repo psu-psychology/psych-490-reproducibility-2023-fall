@@ -1,6 +1,6 @@
 ---
 title: "2023-09-20 Wed"
-subtitle: "The 4 (5?) Rs"
+subtitle: "What R we talking about?"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -23,7 +23,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-09-20 Wednesday"
 
 ## Today
 
-*The 4 (5?) Rs*
+*What R we talking about?*
 
 - Read & Discuss
     - [@Fidler2021-xn]
