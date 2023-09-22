@@ -40,6 +40,7 @@ Remember the following template document is a good place to start:
 
 ## Tips {-}
 
+- I recommend using the five-paragraph essay format for all of your writing assignments in this class. Here is one description of it: <https://www.grammarly.com/blog/five-paragraph-essay/>. You can vary from this format as you gain experience, but if you're struggling, this is a winning structure.
 - Give your essay a title.
 - Write an introductory paragraph with a clear thesis statement. Here's an example: "In this essay, I describe an allegation of scientific misconduct by Dr. Dietrich Stapel that led to a paper retraction from the journal X. In doing so, I describe the consequences for Dr. Stapel's career in science and responses the scientific community has made to make similar situations less likely in the future."
 - Write two or more paragraphs in the body of your essay. Each paragraph should describe a separate topic.
