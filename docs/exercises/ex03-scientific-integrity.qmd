@@ -17,7 +17,7 @@ In this exercise, we will explore some of the mechanisms by which violations of 
 Choose a case where violations of scientific integrity have been alleged.
 Use at least two of the following sources.
 
-- A case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity ([ORI](https://ori.hhs.gov/).
+- A case study relating to a violation of scientific integrity as reported to the U.S. National Institutes of Health (NIH) Office of Research Integrity ([ORI](https://ori.hhs.gov/)).
 - A report about a violation of scientific integrity from the [Retraction Watch](https://retractionwatch.com/) database.
 - A post or posts on the [Data Colada site](http://datacolada.org).
 - A report in a newspaper or scientific journal.
