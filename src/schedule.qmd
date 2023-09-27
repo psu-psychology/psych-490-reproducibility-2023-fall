@@ -176,7 +176,7 @@ title: "schedule"
     - [@Ritchie2020-fm], Chapter 3
     - [@Bhattacharjee2013-rw], [PDF on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=154161167)
     - (Skim) [@Levelt2012-ap]
-    - (Skim) [@Carpenter2012-ot]
+    - (Skim) [@Carpenter2012-qy]
 - [Class notes](notes/wk06-2023-09-27.qmd)
 
 ### Friday, September 29 {-}
