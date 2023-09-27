@@ -215,7 +215,7 @@ knitr::include_graphics("https://static01.nyt.com/images/2013/04/28/magazine/28s
 
 - Do you sympathize with Stapel? Why or why not?
 - Have you been in situations like Stapel describes where you have been asked to make a messy and complicated problem simpler?
-- Do you think that academic science becoming a business? Why or why not?
+- Do you think that academic science is becoming a business? Why or why not?
 - Why is "massaging of data" or selective reporting of experiments a problem?
 - Were the punishments in these cases fair and just or unfair and unjust? Why or why not?
 
