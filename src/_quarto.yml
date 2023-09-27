@@ -31,24 +31,28 @@ website:
           - href: "notes/wk01-2023-08-21.qmd"
           - href: "notes/wk01-2023-08-23.qmd"
           - href: "notes/wk01-2023-08-25.qmd"
-          - text: "---"
+          - text: "--Week 02--"
           - href: "notes/wk02-2023-08-28.qmd"
           - href: "notes/wk02-2023-08-30.qmd"
           - href: "notes/wk02-2023-09-01.qmd"
-          - text: "---"
+          - text: "--Week 03--"
           - href: "notes/wk03-2023-09-06.qmd"
           - href: "notes/wk03-2023-09-08.qmd"
-          - text: "---"
+          - text: "--Week 04--"
           - href: "notes/wk04-2023-09-11.qmd"
           - href: "notes/wk04-2023-09-13.qmd"
           - href: "notes/wk04-2023-09-15.qmd"
-          - text: "---"
+          - text: "--Week 05--"
           - href: "notes/wk05-2023-09-18.qmd"
           - href: "notes/wk05-2023-09-20.qmd"
           - href: "notes/wk05-2023-09-22.qmd"
-          - text: "---"
+          - text: "--Week 06--"
           - href: "notes/wk06-2023-09-27.qmd"
           - href: "notes/wk06-2023-09-29.qmd"
+          - text: "--Week 07--"
+          - href: "notes/wk07-2023-10-02.qmd"
+          - href: "notes/wk07-2023-10-04.qmd"
+          - href: "notes/wk07-2023-10-06.qmd"
       - text: exercises
         menu: 
           - href: "exercises/ex01-read-a-scientific-paper.qmd"
@@ -63,6 +67,7 @@ website:
         menu: 
           - href: "surveys/survey-01.qmd"
           - href: "surveys/survey-02.qmd"
+          - href: "surveys/retraction-watch.qmd"
 format:
   html:
     theme: cosmo

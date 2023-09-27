@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PSYCH 490 • Fall 2023 – wk08-2023-10-09</title>
+<title>PSYCH 490 • Fall 2023 - Retraction Watch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -270,15 +304,112 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#gather" id="toc-gather" class="nav-link" data-scroll-target="#gather">Gather</a></li>
+  <li><a href="#clean" id="toc-clean" class="nav-link" data-scroll-target="#clean">Clean</a></li>
+  <li><a href="#visualize" id="toc-visualize" class="nav-link" data-scroll-target="#visualize">Visualize</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Retraction Watch</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This document downloads and summarizes some of the data from the newly public Retraction Watch database.</p>
+</section>
+<section id="gather" class="level2">
+<h2 class="anchored" data-anchor-id="gather">Gather</h2>
+<p>This site: <a href="https://www.crossref.org/blog/news-crossref-and-retraction-watch/" class="uri">https://www.crossref.org/blog/news-crossref-and-retraction-watch/</a> describes some information about how to access the Retraction Watch database.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (params<span class="sc">$</span>use_cached <span class="sc">==</span> <span class="cn">FALSE</span>) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  url <span class="ot">&lt;-</span> <span class="st">"https://api.labs.crossref.org/data/retractionwatch?rog1@psu.edu"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  rw <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(url)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (params<span class="sc">$</span>cache_rw) readr<span class="sc">::</span><span class="fu">write_csv</span>(rw, <span class="st">"csv/retraction-watch.csv"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  rw <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">"csv/retraction-watch.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(rw)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [47,305 × 20] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ Record ID            : num [1:47305] 47657 47653 47650 47649 47648 ...
+ $ Title                : chr [1:47305] "Common risk factors in the cross-section of corporate bond returns" "A new perspective on structural and morphological properties of carbon nanotubes synthesized by Plasma Enhanced"| __truncated__ "The Effects of Percent and Position of Nitrogen Atoms on Electronic and Thermoelectric Properties of Graphene Nanoribbons" "Synthesis of Carbon Nanotube and Zinc Oxide (CNTâ\u0080\u0093ZnO) Nanocomposite" ...
+ $ Subject              : chr [1:47305] "(B/T) Business - Economics;" "(PHY) Engineering - Chemical;(PHY) Materials Science;(PHY) Nanotechnology;" "(PHY) Engineering - Chemical;(PHY) Materials Science;(PHY) Nanotechnology;" "(PHY) Engineering - Chemical;(PHY) Materials Science;(PHY) Nanotechnology;" ...
+ $ Institution          : chr [1:47305] "McDonough School of Business, Georgetown University, 3700 O St., Washington, DC, 20057, USA;" "Plasma Physics Research Center, Science and Research Branch, Islamic Azad University, Tehran, Iran; Department "| __truncated__ "Plasma Physics Research Center, Science and Research Branch, Islamic Azad University, Tehran, Iran; Department "| __truncated__ "Department of Physics, Imam Khomeini University, Qazvin, Iran; Department of Physics, Shahed University, Tehran"| __truncated__ ...
+ $ Journal              : chr [1:47305] "Journal of Financial Economics" "Results in Physics" "Journal of Inorganic and Organometallic Polymers and Materials" "Journal of Inorganic and Organometallic Polymers and Materials" ...
+ $ Publisher            : chr [1:47305] "Elsevier" "Elsevier" "Springer" "Springer" ...
+ $ Country              : chr [1:47305] "United States" "Iran" "Iran" "Iran" ...
+ $ Author               : chr [1:47305] "Jennie Bai;Turan G Bali;Quan Wen" "A Salar Elahi;K Mikaili Agah;M Ghoranneviss" "A Jafari;M Ghoranneviss;M Gholami;A Salar Elahi;A Kavosi Ghafi" "P Farazmand;M Khanlary;S Fehli;A Salar Elahi;M Ghoranneviss" ...
+ $ URLS                 : chr [1:47305] NA "https://retractionwatch.com/?s=A+Salar+Elahi;https://retractionwatch.com/?s=M+Ghoranneviss" "https://retractionwatch.com/?s=A+Salar+Elahi;https://retractionwatch.com/?s=M+Ghoranneviss" "https://retractionwatch.com/?s=A+Salar+Elahi;https://retractionwatch.com/?s=M+Ghoranneviss" ...
+ $ ArticleType          : chr [1:47305] "Research Article;" "Research Article;" "Research Article;" "Research Article;" ...
+ $ RetractionDate       : chr [1:47305] "2/13/2019 0:00" "11/13/2020 0:00" "6/16/2023 0:00" "4/7/2023 0:00" ...
+ $ RetractionDOI        : chr [1:47305] "10.1016/j.jfineco.2018.08.002" "10.1016/j.rinp.2020.103557" "10.1007/s10904-023-02760-3" "10.1007/s10904-023-02641-9" ...
+ $ RetractionPubMedID   : num [1:47305] 0 0 0 0 0 ...
+ $ OriginalPaperDate    : chr [1:47305] "8/16/2018 0:00" "4/5/2017 0:00" "8/2/2016 0:00" "2/20/2015 0:00" ...
+ $ OriginalPaperDOI     : chr [1:47305] "10.1016/j.jfineco.2018.08.002" "10.1016/j.rinp.2017.01.043" "10.1007/s10904-016-0430-7" "10.1007/s10904-015-0196-3" ...
+ $ OriginalPaperPubMedID: num [1:47305] 0 0 0 0 0 ...
+ $ RetractionNature     : chr [1:47305] "Retraction" "Retraction" "Retraction" "Retraction" ...
+ $ Reason               : chr [1:47305] "+Error in Data;+Error in Results and/or Conclusions;" "+Duplication of Article;" "+Concerns/Issues About Authorship;+Concerns/Issues with Peer Review;+Fake Peer Review;+False/Forged Authorship;" "+Concerns/Issues About Authorship;+Concerns/Issues with Peer Review;+Fake Peer Review;" ...
+ $ Paywalled            : chr [1:47305] "No" "No" "No" "No" ...
+ $ Notes                : chr [1:47305] "date of retraction unknown, html page overwrite; see also: https://www.sciencedirect.com/science/article/pii/S0304405X23001393" NA NA NA ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   `Record ID` = col_double(),
+  ..   Title = col_character(),
+  ..   Subject = col_character(),
+  ..   Institution = col_character(),
+  ..   Journal = col_character(),
+  ..   Publisher = col_character(),
+  ..   Country = col_character(),
+  ..   Author = col_character(),
+  ..   URLS = col_character(),
+  ..   ArticleType = col_character(),
+  ..   RetractionDate = col_character(),
+  ..   RetractionDOI = col_character(),
+  ..   RetractionPubMedID = col_double(),
+  ..   OriginalPaperDate = col_character(),
+  ..   OriginalPaperDOI = col_character(),
+  ..   OriginalPaperPubMedID = col_double(),
+  ..   RetractionNature = col_character(),
+  ..   Reason = col_character(),
+  ..   Paywalled = col_character(),
+  ..   Notes = col_character()
+  .. )
+ - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+</section>
+<section id="clean" class="level2">
+<h2 class="anchored" data-anchor-id="clean">Clean</h2>
+</section>
+<section id="visualize" class="level2">
+<h2 class="anchored" data-anchor-id="visualize">Visualize</h2>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

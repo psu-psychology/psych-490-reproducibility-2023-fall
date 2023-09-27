@@ -1,0 +1,34 @@
+---
+title: "Retraction Watch"
+params: 
+  cache_rw: FALSE
+  use_cached: TRUE
+---
+
+## Purpose
+
+This document downloads and summarizes some of the data from the newly public Retraction Watch database.
+
+## Gather
+
+This site: <https://www.crossref.org/blog/news-crossref-and-retraction-watch/> describes some information about how to access the Retraction Watch database.
+
+```{r}
+
+if (params$use_cached == FALSE) {
+  url <- "https://api.labs.crossref.org/data/retractionwatch?rog1@psu.edu"
+  rw <- readr::read_csv(url)
+  
+  if (params$cache_rw) readr::write_csv(rw, "csv/retraction-watch.csv")
+} else {
+  rw <- readr::read_csv("csv/retraction-watch.csv", show_col_types = FALSE)
+}
+
+str(rw)
+```
+
+## Clean
+
+## Visualize
+
+

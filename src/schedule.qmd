@@ -177,7 +177,7 @@ title: "schedule"
     - [@Bhattacharjee2013-rw]
     - (Skim) [@Levelt2012-ap]
     - (Skim) [@Carpenter2012-ot]
-- [Class notes]()
+- [Class notes](notes/wk06-2023-09-27.qmd)
 
 ### Friday, September 29 {-}
 
@@ -202,18 +202,18 @@ title: "schedule"
 
 - Read
     - [@Brainerd2018-iy]
-- [Class notes]()
+- [Class notes](notes/wk07-2023-10-02.qmd)
 
 ### Wednesday, October 4 {-}
 
 **Questionable research practices**
 
 - Read
-    - [@simmons_false-positive_2011]()
-    - (Skim) [@John2012-tk]()
+    - [@simmons_false-positive_2011]
+    - (Skim) [@John2012-tk]
 - Watch
     - [@Ngiam2020-ln]()
-- [Class notes]()
+- [Class notes](notes/wk07-2023-10-04.qmd)
 
 ### Friday, October 6 {-}
 
@@ -221,6 +221,7 @@ title: "schedule"
 
 - [Due]{.orange_due}
     - [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd) write-up.
+- Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
 - Work session
     - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
 
