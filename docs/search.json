@@ -196,6 +196,132 @@
     "text": "December 11-15\n\nWednesday, December 13\n\nDue\n\nFinal project write-ups due 5:00 PM."
   },
   {
+    "objectID": "notes/wk07-2023-10-04.html#announcements",
+    "href": "notes/wk07-2023-10-04.html#announcements",
+    "title": "2023-10-04 Wed",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue Friday\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nDiscuss Friday Exercise 04: P-hack your way to scientific glory."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#today",
+    "href": "notes/wk07-2023-10-04.html#today",
+    "title": "2023-10-04 Wed",
+    "section": "Today",
+    "text": "Today\n\nRead & Discuss\n\n(Simmons, Nelson, & Simonsohn, 2011)\n(Skim) (John, Loewenstein, & Prelec, 2012)"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#central-questions",
+    "href": "notes/wk07-2023-10-04.html#central-questions",
+    "title": "2023-10-04 Wed",
+    "section": "Central questions",
+    "text": "Central questions\n\nWhat are researcher ‘degrees of freedom’?\nWhy should we care about them?\nWhat are questionable research practices?\nWhy should we care about them?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#false-positives-vs.-false-negatives",
+    "href": "notes/wk07-2023-10-04.html#false-positives-vs.-false-negatives",
+    "title": "2023-10-04 Wed",
+    "section": "False positives vs. false negatives",
+    "text": "False positives vs. false negatives\n\nNull hypothesis: There is no effect.\nPositive: What’s actually true, a true fact\nNegative: What’s actually untrue, a false fact\nWhat does our evidence say?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#researcher-degrees-of-freedom",
+    "href": "notes/wk07-2023-10-04.html#researcher-degrees-of-freedom",
+    "title": "2023-10-04 Wed",
+    "section": "Researcher ‘degrees of freedom’",
+    "text": "Researcher ‘degrees of freedom’\n\nThe culprit is a construct we refer to as researcher degrees of freedom. In the course of collecting and analyzing data, researchers have many decisions to make: Should more data be collected? Should some observations be excluded? Which conditions should be combined and which ones compared? Which control variables should be considered? Should specific measures be combined or transformed or both?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#your-turn",
+    "href": "notes/wk07-2023-10-04.html#your-turn",
+    "title": "2023-10-04 Wed",
+    "section": "Your turn",
+    "text": "Your turn\n\nWhy is it rare for researchers to make these decisions beforehand?\nWhy is it impractical?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#your-turn-1",
+    "href": "notes/wk07-2023-10-04.html#your-turn-1",
+    "title": "2023-10-04 Wed",
+    "section": "Your turn",
+    "text": "Your turn\n\nWhat did (Feynman, 1974) say when scientists should bend over backwards and why?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#whats-too-fast-for-reaction-time",
+    "href": "notes/wk07-2023-10-04.html#whats-too-fast-for-reaction-time",
+    "title": "2023-10-04 Wed",
+    "section": "What’s “too fast” for reaction time?",
+    "text": "What’s “too fast” for reaction time?\n\nIn a perusal of roughly 30 Psychological Science articles, we discovered considerable inconsistency in, and hence considerable ambiguity about, this decision. Most (but not all) researchers excluded some responses for being too fast, but what constituted “too fast” varied enormously: the fastest 2.5%, or faster than 2 standard deviations from the mean, or faster than 100 or 150 or 200 or 300 ms."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#study-1",
+    "href": "notes/wk07-2023-10-04.html#study-1",
+    "title": "2023-10-04 Wed",
+    "section": "Study 1",
+    "text": "Study 1\n\nwe investigated whether listening to a children’s song induces an age contrast, making people feel older.\n\n\nKalimba: https://youtu.be/tCO4i2t-Aso?si=OgGGCSc775qVNGbi\nHot Potato: https://youtu.be/0v4-eAefurY?si=BZYzd42ti5sOKqca"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#study-2",
+    "href": "notes/wk07-2023-10-04.html#study-2",
+    "title": "2023-10-04 Wed",
+    "section": "Study 2",
+    "text": "Study 2\n\nwe sought to conceptually replicate and extend Study 1. Having demonstrated that listening to a children’s song makes people feel older, Study 2 investigated whether listening to a song about older age makes people actually younger.\n\n\nKalimba: https://youtu.be/tCO4i2t-Aso?si=OgGGCSc775qVNGbi\nWhen I’m 64: https://youtu.be/HCTunqv1Xt4?si=urAP87RrwUCfjJNC"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#illustration",
+    "href": "notes/wk07-2023-10-04.html#illustration",
+    "title": "2023-10-04 Wed",
+    "section": "Illustration",
+    "text": "Illustration\n\nTable 3 from Simmons et al. (2011)\nFirst, notice that in our original report, we redacted the many measures other than father’s age that we collected (including the dependent variable from Study 1: feelings of oldness). A reviewer would hence have been unable to assess the flexibility involved in selecting father’s age as a control. Second, by reporting only results that included the covariate, we made it impossible for readers to discover its critical role in achieving a significant result. Seeing the full list of variables now disclosed, reviewers would have an easy time asking for robustness checks, such as “Are the results from Study 1 replicated in Study 2?” They are not: People felt older rather than younger after listening to “When I’m Sixty-Four,” though not significantly so, F(1, 17) = 2.07, p = .168. Finally, notice that we did not determine the study’s termination rule in advance; instead, we monitored statistical significance approximately every 10 observations. Moreover, our sample size did not reach the 20-observation threshold set by our requirements.\nThe redacted version of the study we reported in this article fully adheres to currently acceptable reporting standards and is, not coincidentally, deceptively persuasive. The requirement-compliant version reported in Table 3 would be—appropriately—all but impossible to publish.\n\n\n(Simmons et al., 2011)"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#simulations",
+    "href": "notes/wk07-2023-10-04.html#simulations",
+    "title": "2023-10-04 Wed",
+    "section": "Simulations",
+    "text": "Simulations\n\nThese simulations assessed the impact of four common degrees of freedom: flexibility in (a) choosing among dependent variables, (b) choosing sample size, (c) using covariates, and (d) reporting subsets of experimental conditions. We also investigated various combinations of these degrees of freedom."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#findings",
+    "href": "notes/wk07-2023-10-04.html#findings",
+    "title": "2023-10-04 Wed",
+    "section": "Findings",
+    "text": "Findings\n\nTable 1 from Simmons et al. (2011)\nResearcher choices inflate false positive rate above 5% (\\(p&lt;.05\\))."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#recommendations-for-authors",
+    "href": "notes/wk07-2023-10-04.html#recommendations-for-authors",
+    "title": "2023-10-04 Wed",
+    "section": "Recommendations for authors",
+    "text": "Recommendations for authors\n\nAuthors must decide the rule for terminating data collection before data collection begins and report this rule in the article. Following this requirement may mean reporting the outcome of power calculations or disclosing arbitrary rules, such as “we decided to collect 100 observations” or “we decided to collect as many observations as we could before the end of the semester.” The rule itself is secondary, but it must be determined ex ante and be reported."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#results",
+    "href": "notes/wk07-2023-10-04.html#results",
+    "title": "2023-10-04 Wed",
+    "section": "Results",
+    "text": "Results\n\nTable 1 from John et al. (2012)\nThe two versions of the survey differed in the incentives they offered to respondents. In the Bayesian-truth-serum (BTS) condition, a scoring algorithm developed by one of the authors (Prelec, 2004) was used to provide incentives for truth telling. This algorithm uses respondents’ answers about their own behavior and their estimates of the sample distribution of answers as inputs in a truth-rewarding scoring formula. Because the survey was anonymous, compensation could not be directly linked to individual scores. Instead, respondents were told that we would make a donation to a charity of their choice, selected from five options, and that the size of this donation would depend on the truthfulness of their responses, as determined by the BTS scoring system. By inducing a (correct) belief that dishonesty would reduce donations, we hoped to amplify the moral stakes riding on each answer (for details on the donations, see Supplementary Results in the Supplemental Material). Respondents were not given the details of the scoring system but were told that it was based on an algorithm published in Science and were given a link to the article. There was no deception: Respondents’ BTS scores determined our contributions to the five charities. Respondents in the control condition were simply told that a charitable donation would be made on behalf of each respondent. (For details on the effect of the size of the incentive on response rates, see Participation Incentive Survey in the Supplemental Material.)\n\n\n(John et al., 2012)"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#reproducibility-notes-for-simmons_false-positive_2011",
+    "href": "notes/wk07-2023-10-04.html#reproducibility-notes-for-simmons_false-positive_2011",
+    "title": "2023-10-04 Wed",
+    "section": "Reproducibility notes for (Simmons et al., 2011)",
+    "text": "Reproducibility notes for (Simmons et al., 2011)\n\ndoes not appear to have shared data or any supplementary materials along with the article."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#reproducibility-notes-for-john2012-tk",
+    "href": "notes/wk07-2023-10-04.html#reproducibility-notes-for-john2012-tk",
+    "title": "2023-10-04 Wed",
+    "section": "Reproducibility notes for (John et al., 2012)",
+    "text": "Reproducibility notes for (John et al., 2012)\n\nSupplemental Material Additional supporting information may be found at http://pss.sagepub.com/content/by/supplemental-data\n\n\n(John et al., 2012)"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-04.html#references",
+    "href": "notes/wk07-2023-10-04.html#references",
+    "title": "2023-10-04 Wed",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-04 Wed\n\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nSimmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632"
+  },
+  {
     "objectID": "notes/wk06-2023-09-29.html#announcements",
     "href": "notes/wk06-2023-09-29.html#announcements",
     "title": "2023-09-29 Fri",
@@ -2058,11 +2184,18 @@
     "text": "Today\nRetraction and scientific integrity\n\nRead & Discuss\n\n(Brainerd & You, 2018)"
   },
   {
-    "objectID": "notes/wk07-2023-10-02.html#brainerd2018-iy-1",
-    "href": "notes/wk07-2023-10-02.html#brainerd2018-iy-1",
+    "objectID": "notes/wk07-2023-10-02.html#brainerd2018-iy",
+    "href": "notes/wk07-2023-10-02.html#brainerd2018-iy",
     "title": "2023-10-02 Mon",
     "section": "Brainerd & You (2018)",
     "text": "Brainerd & You (2018)\n\nStudy methodology.\n\n\nBrainerd & You (2018)"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-02.html#retraction-watch",
+    "href": "notes/wk07-2023-10-02.html#retraction-watch",
+    "title": "2023-10-02 Mon",
+    "section": "Retraction Watch",
+    "text": "Retraction Watch\n\nDatabase of paper retractions\nPublic data restricted until recently\n\nSee https://www.crossref.org/blog/news-crossref-and-retraction-watch/"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#journal-hijacking",
@@ -2083,7 +2216,7 @@
     "href": "notes/wk07-2023-10-02.html#exploring-the-database",
     "title": "2023-10-02 Mon",
     "section": "Exploring the database",
-    "text": "Exploring the database\nhttp://retractiondatabase.org/RetractionSearch.aspx?\n\n\n\n\n\n\nNote\n\n\nStudents could consider updating the story of a retracted paper as a final project. What happened to the author(s)?\nThis would involve extending and elaborating on Exercise 03"
+    "text": "Exploring the database\n\nHere are the beginnings of an attempt to visualize the dataset"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#discussion-of-office-of-research-integrity-ori-httpsori.hhs.gov",
@@ -2098,6 +2231,34 @@
     "title": "2023-10-02 Mon",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-02 Mon\n\n\n\nBrainerd, J., & You, J. (2018). What a massive database of retracted papers reveals about science publishing’s “death penalty.” Science. https://doi.org/10.1126/science.aav8384\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nNgiam, W. (2020, April). ReproducibiliTea | simmons, nelson and simonsohn (2011). False-Positive psychology. Youtube. Retrieved from https://www.youtube.com/watch?v=bf3GqyBRgzY\n\n\nSimmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-06.html#announcements",
+    "href": "notes/wk07-2023-10-06.html#announcements",
+    "title": "2023-10-06 Fri",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-06.html#today",
+    "href": "notes/wk07-2023-10-06.html#today",
+    "title": "2023-10-06 Fri",
+    "section": "Today",
+    "text": "Today\nWork session: P-hacking\n\nDiscuss Exercise 04: P-hack your way to scientific glory.\nWork session\n\nFinal project proposals, due Friday, October 13."
+  },
+  {
+    "objectID": "notes/wk07-2023-10-06.html#so-whatd-you-find",
+    "href": "notes/wk07-2023-10-06.html#so-whatd-you-find",
+    "title": "2023-10-06 Fri",
+    "section": "So what’d you find?",
+    "text": "So what’d you find?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-06.html#references",
+    "href": "notes/wk07-2023-10-06.html#references",
+    "title": "2023-10-06 Fri",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-06 Friday\n\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669"
   },
   {
     "objectID": "policies.html",

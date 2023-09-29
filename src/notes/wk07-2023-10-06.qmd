@@ -1,0 +1,39 @@
+---
+title: "2023-10-06 Fri"
+subtitle: "Work session: P-hacking"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
+---
+
+# Overview
+
+## Announcements
+
+- [Due]{.orange_due}
+    - [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd) write-up.
+
+## Today
+
+*Work session: P-hacking*
+
+- Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
+- Work session
+    - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
+
+## So what'd you find?
+
+# Next time
+
+*Bias*
+
+- Read
+    - [@Ritchie2020-fm], Chapter 4
+- [Class notes](wk08-2023-10-09.qmd)
+
+# Resources
+
+## References
