@@ -2314,14 +2314,14 @@
     "href": "surveys/retraction-watch.html",
     "title": "Retraction Watch",
     "section": "",
-    "text": "This document downloads and summarizes some of the data from the newly public Retraction Watch database."
+    "text": "This document downloads and summarizes some of the data from the newly public Retraction Watch database.\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "surveys/retraction-watch.html#purpose",
     "href": "surveys/retraction-watch.html#purpose",
     "title": "Retraction Watch",
     "section": "",
-    "text": "This document downloads and summarizes some of the data from the newly public Retraction Watch database."
+    "text": "This document downloads and summarizes some of the data from the newly public Retraction Watch database.\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(tidyr)\nlibrary(ggplot2)"
   },
   {
     "objectID": "surveys/retraction-watch.html#gather",
@@ -2335,14 +2335,14 @@
     "href": "surveys/retraction-watch.html#clean",
     "title": "Retraction Watch",
     "section": "Clean",
-    "text": "Clean"
+    "text": "Clean\n\nrw_l &lt;- rw |&gt;\n  separate_longer_delim(Subject, delim=\";\") |&gt;\n  mutate(field_type = stringr::str_extract(Subject, \"\\\\([A-Z/]+\\\\)\")) |&gt;\n  mutate(field_type = stringr::str_remove(field_type, \"\\\\(\")) |&gt;\n  mutate(field_type = stringr::str_remove(field_type, \"\\\\)\")) |&gt;\n  mutate(retraction_year = stringr::str_extract(RetractionDate, \"[0-9]{4}\")) |&gt;\n  mutate(field = stringr::str_remove(Subject, \"^\\\\([A-Z/]+\\\\) \"))"
   },
   {
     "objectID": "surveys/retraction-watch.html#visualize",
     "href": "surveys/retraction-watch.html#visualize",
     "title": "Retraction Watch",
     "section": "Visualize",
-    "text": "Visualize"
+    "text": "Visualize\n\nxtabs(~ field_type, rw_l)\n\nfield_type\n  B/T   BLS   ENV   HSC   HUM   PHY   SOC \n22774 38958  3980 27844  1625 16464  8778 \n\n\n\nrw_l_2000 &lt;- rw_l |&gt;\n  filter(as.numeric(retraction_year) &gt; 2000)\nxtabs(~ field_type + retraction_year, rw_l_2000)\n\n          retraction_year\nfield_type 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013\n       B/T    3   10    5   16   26   18  121  162  999 4930 4057  193  329\n       BLS   37  212  136  144  165  256  326  435  593  921 1936  987 1185\n       ENV    5    4    1    7    3   20   16   23   75  640  984   70   71\n       HSC   28   65   65  146  113  190  214  348  547  685 1238 1160 1306\n       HUM    1    4    0    9    1    4   10   13   27  149  176   23   23\n       PHY   11   44   65   51   55   96  125  135  438 4100 1975  470  581\n       SOC    6    3    3    8   10   14   25   51  180 1226 1106  130  185\n          retraction_year\nfield_type 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\n       B/T  203  289  339  364 1098 1348  881 1608 4216 1518\n       BLS 1078 1838 2095 1868 2281 2194 3952 6027 5583 3870\n       ENV   86  118  146  133  161  222  125  674  243  132\n       HSC 1040 1495 1853 1608 1543 1985 3018 2167 3281 3243\n       HUM   23   62   34   61  121  230  205  158  141   90\n       PHY  427  606  592  698 1062  815  970 1273 1214  597\n       SOC  121  155  184  447  655 1098  691  755 1032  671\n\n\n\nrw_l_2000 |&gt;\n  group_by(retraction_year, field_type) |&gt;\n  mutate(n_retractions = n()) |&gt;\n  ggplot() +\n  aes(retraction_year, n_retractions) +\n  facet_wrap(facets = vars(field_type), ncol = 3) +\n  geom_point() +\n  theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())  \n\n\n\n\n\nrw_l_2000 |&gt;\n  filter(field_type == \"B/T\") |&gt;\n  group_by(retraction_year, field) |&gt;\n  mutate(n_retractions = n()) |&gt;\n  ggplot() +\n  aes(retraction_year, n_retractions) +\n  facet_wrap(facets = vars(field), ncol = 3) +\n  geom_point() +\n  theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())  \n\n\n\n\n\nplot_by_subfield &lt;- function(ft = \"B/T\", df = rw_l) {\n  df |&gt;\n  filter(!is.na(field_type)) |&gt;\n  filter(field_type == {{ft}}) |&gt;\n  group_by(retraction_year, field) |&gt;\n  mutate(n_retractions = n()) |&gt;\n  ggplot() +\n  aes(retraction_year, n_retractions) +\n  facet_wrap(facets = vars(field), ncol = 3) +\n  geom_point() +\n  theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank()) +\n  ggtitle(\"Retractions 2000-present\")\n} \n\n\nplot_by_subfield(\"B/T\")\n\n\n\nplot_by_subfield(\"SOC\")\n\n\n\nplot_by_subfield(\"BLS\")\n\n\n\nplot_by_subfield(\"PHY\")\n\n\n\nplot_by_subfield(\"HSC\")\n\n\n\nplot_by_subfield(\"HUM\")\n\n\n\nplot_by_subfield(\"ENV\")"
   },
   {
     "objectID": "surveys/survey-02.html",
