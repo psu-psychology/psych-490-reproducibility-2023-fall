@@ -112,4 +112,32 @@ plot_by_subfield("HUM")
 plot_by_subfield("ENV")
 ```
 
+### Reasons
+
+```{r}
+rw_r <- rw |>
+  separate_longer_delim(Reason, delim=";") |>
+  mutate(reason = stringr::str_remove(Reason, "\\+")) |>
+  separate_longer_delim(Subject, delim=";") |>
+  mutate(field_type = stringr::str_extract(Subject, "\\([A-Z/]+\\)")) |>
+  mutate(field_type = stringr::str_remove(field_type, "\\(")) |>
+  mutate(field_type = stringr::str_remove(field_type, "\\)"))
+
+reasons_sum <- rw_r |>
+  filter(!is.na(field_type)) |>
+  group_by(field_type, reason) |>
+  summarize(n = n()) |>
+  arrange(desc(n))
+```
+
+Top retraction reasons by `field_type`. 
+
+```{r}
+#| label: tbl-top-retraction-reasons
+#| tbl-cap: "Top retraction reasons by `field_type`."
+
+reasons_sum |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
 
