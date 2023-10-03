@@ -130,7 +130,7 @@
     "href": "schedule.html#week-08",
     "title": "schedule",
     "section": "October 9-13",
-    "text": "October 9-13\n\nMonday, October 9\nBias\n\nRead\n\n(Ritchie, 2020), Chapter 4\n\nClass notes\n\n\n\nWednesday, October 11\nFile drawer effect\n\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\nLies, damned lies, and statistics\n\nAssignment\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size\n\nDue\n\nFinal project proposal"
+    "text": "October 9-13\n\nMonday, October 9\nBias\n\nRead\n\n(Ritchie, 2020), Chapter 4\n\nClass notes\n\n\n\nWednesday, October 11\nFile drawer effect\n\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\nWork session: Lies, damned lies, and statistics\n\nAssignment\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size\n\nDue\n\nFinal project proposal"
   },
   {
     "objectID": "schedule.html#week-09",
@@ -194,6 +194,118 @@
     "title": "schedule",
     "section": "December 11-15",
     "text": "December 11-15\n\nWednesday, December 13\n\nDue\n\nFinal project write-ups due 5:00 PM."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#announcements",
+    "href": "notes/wk09-2023-10-18.html#announcements",
+    "title": "2023-10-18 Mon",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#today",
+    "href": "notes/wk09-2023-10-18.html#today",
+    "title": "2023-10-18 Mon",
+    "section": "Today",
+    "text": "Today\nBias\n\nRead\n\n(Ritchie, 2020), Chapter 4"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#references",
+    "href": "notes/wk09-2023-10-18.html#references",
+    "title": "2023-10-18 Mon",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-18 Wed\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#announcements",
+    "href": "notes/wk08-2023-10-09.html#announcements",
+    "title": "2023-10-09 Mon",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#today",
+    "href": "notes/wk08-2023-10-09.html#today",
+    "title": "2023-10-09 Mon",
+    "section": "Today",
+    "text": "Today\nBias\n\nRead & Discuss\n\n(Ritchie, 2020), Chapter 4\n\nDiscuss results from\n\nExercise 02: P-hack your way to scientific glory."
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#roadmap",
+    "href": "notes/wk08-2023-10-09.html#roadmap",
+    "title": "2023-10-09 Mon",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nDiscuss\n\n(Ritchie, 2020), Chapter 4"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#kinds-of-bias",
+    "href": "notes/wk08-2023-10-09.html#kinds-of-bias",
+    "title": "2023-10-09 Mon",
+    "section": "Kinds of bias",
+    "text": "Kinds of bias\n\nAnalysts’ prior assumptions\nResearcher, reviewer, and publication bias toward positive (vs. negative/null) results\n\nFile-drawer effect\n\nPreference for simple results (c.f., Stapel)\nOverfitting\nConflicts of interest\np-hacking"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#evaluating-p-hacking",
+    "href": "notes/wk08-2023-10-09.html#evaluating-p-hacking",
+    "title": "2023-10-09 Mon",
+    "section": "Evaluating p-hacking",
+    "text": "Evaluating p-hacking\nIt often saves typing to load a set of commands into memory. In R, groups of useful commands are called ‘packages’. We can load a set of useful packages into memory by issuing the following command:\n\nlibrary(tidyverse)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#data-entry",
+    "href": "notes/wk08-2023-10-09.html#data-entry",
+    "title": "2023-10-09 Mon",
+    "section": "Data entry",
+    "text": "Data entry\nVia a Google Sheet: https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing\n\n\n\n\n\n\nNote\n\n\nGilmore added data validation (Format/Data Validation) to the columns. Why?"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#data-gathering",
+    "href": "notes/wk08-2023-10-09.html#data-gathering",
+    "title": "2023-10-09 Mon",
+    "section": "Data gathering",
+    "text": "Data gathering\n\nFirst, I authenticate (sign-in) to Google using my Gmail account. If I haven’t logged in using this script recently, it will ask me to log-in again.\n\n\ngoogledrive::drive_auth(\"rick.o.gilmore@gmail.com\")"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#questions-to-explore",
+    "href": "notes/wk08-2023-10-09.html#questions-to-explore",
+    "title": "2023-10-09 Mon",
+    "section": "Questions to explore",
+    "text": "Questions to explore\n\nMost data analysts find that the process of exploring data is iterative.\nWe start with a question. That leads to another question. That leads to yet another question.\nIt is also sometimes cyclical. To answer a question requires that we modify the form of our data file.\nI like to start with thinking about “data pictures.” If X was true, what would the data look like?"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#visualize",
+    "href": "notes/wk08-2023-10-09.html#visualize",
+    "title": "2023-10-09 Mon",
+    "section": "Visualize",
+    "text": "Visualize\n\np_hacking |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#how-many-diff-combos",
+    "href": "notes/wk08-2023-10-09.html#how-many-diff-combos",
+    "title": "2023-10-09 Mon",
+    "section": "How many diff combos?",
+    "text": "How many diff combos?\n\nHow many different combinations of variable choices are there?\nThere are \\(n=4\\) measures of political control; \\(n=4\\) measures of economic performance; \\(n=2\\) ‘other’ factors; \\(n=2\\) prediction choices; and \\(n=2\\) political parties to focus on."
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#combine-with-spring-2023-data",
+    "href": "notes/wk08-2023-10-09.html#combine-with-spring-2023-data",
+    "title": "2023-10-09 Mon",
+    "section": "Combine with Spring 2023 data?",
+    "text": "Combine with Spring 2023 data?\n\ngoogledrive::drive_download(file = \"PSYCH 490.002 2023 P-hacking\", path = \"csv/p-hacking-2023-spring.csv\", type = 'csv', overwrite = TRUE)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#combined-data",
+    "href": "notes/wk08-2023-10-09.html#combined-data",
+    "title": "2023-10-09 Mon",
+    "section": "Combined data",
+    "text": "Combined data\n\np_hacking_23 |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-09.html#references",
+    "href": "notes/wk08-2023-10-09.html#references",
+    "title": "2023-10-09 Mon",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-09 Mon\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#announcements",
@@ -2254,11 +2366,18 @@
     "text": "Today\nWork session: P-hacking\n\nDiscuss Exercise 04: P-hack your way to scientific glory.\nWork session\n\nFinal project proposals, due Friday, October 13."
   },
   {
-    "objectID": "notes/wk07-2023-10-06.html#so-whatd-you-find",
-    "href": "notes/wk07-2023-10-06.html#so-whatd-you-find",
+    "objectID": "notes/wk07-2023-10-06.html#discuss-p-hacking-exercise",
+    "href": "notes/wk07-2023-10-06.html#discuss-p-hacking-exercise",
     "title": "2023-10-06 Fri",
-    "section": "So what’d you find?",
-    "text": "So what’d you find?"
+    "section": "Discuss p-hacking exercise",
+    "text": "Discuss p-hacking exercise\n\nWho got a “significant” result?\nHow many different analyses did you try?\nWho changed their analysis after finding a significant result?\nDid anyone try another analysis–after you got a significant result–and keep the non-significant result?"
+  },
+  {
+    "objectID": "notes/wk07-2023-10-06.html#enter-anonymized-data-into-spreadsheet",
+    "href": "notes/wk07-2023-10-06.html#enter-anonymized-data-into-spreadsheet",
+    "title": "2023-10-06 Fri",
+    "section": "Enter (anonymized) data into spreadsheet",
+    "text": "Enter (anonymized) data into spreadsheet\n\nUse in an exercise on Monday\nSheet: https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing\nChoose a student_id (integer) for yourself"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#references",
@@ -2266,6 +2385,48 @@
     "title": "2023-10-06 Fri",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-06 Friday\n\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#announcements",
+    "href": "notes/wk08-2023-10-11.html#announcements",
+    "title": "2023-10-11 Wed",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#today",
+    "href": "notes/wk08-2023-10-11.html#today",
+    "title": "2023-10-11 Wed",
+    "section": "Today",
+    "text": "Today\nFile drawer effect\n\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#references",
+    "href": "notes/wk08-2023-10-11.html#references",
+    "title": "2023-10-11 Wed",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-11 Wed\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-16.html#announcements",
+    "href": "notes/wk09-2023-10-16.html#announcements",
+    "title": "2023-10-16 Mon",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-16.html#today",
+    "href": "notes/wk09-2023-10-16.html#today",
+    "title": "2023-10-16 Mon",
+    "section": "Today",
+    "text": "Today\nBias\n\nRead\n\n(Ritchie, 2020), Chapter 4"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-16.html#references",
+    "href": "notes/wk09-2023-10-16.html#references",
+    "title": "2023-10-16 Mon",
+    "section": "References",
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-16 Mon\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
   },
   {
     "objectID": "policies.html",

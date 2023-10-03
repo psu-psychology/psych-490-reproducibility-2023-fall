@@ -24,7 +24,19 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
 - Work session
     - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
 
-## So what'd you find?
+## Discuss p-hacking exercise {-}
+
+1. Who got a "significant" result?
+1. How many different analyses did you try?
+1. Who changed their analysis after finding a significant result?
+1. Did anyone try another analysis--after you got a significant result--and *keep* the non-significant result?
+
+## Enter (anonymized) data into spreadsheet
+
+- Use in an exercise on Monday
+- Sheet: <https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing>
+
+- Choose a student_id (integer) for yourself
 
 # Next time
 

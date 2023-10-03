@@ -1,0 +1,39 @@
+---
+title: "2023-10-16 Mon"
+subtitle: "Bias"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-10-16 Mon"
+---
+
+# Overview
+
+## Announcements
+
+- [Due Friday]{.orange_due}
+    - [Final project](exercises/final-project.qmd) proposal
+
+## Today
+
+*Bias*
+
+- Read
+    - [@Ritchie2020-fm], Chapter 4
+
+# Topic
+
+# Next time
+
+*File drawer effect*
+
+- Read
+    - [@Rosenthal1979-zi]
+    - [@Franco2014-yu]
+- [Class notes](wk09-2023-10-09.qmd)
+
+# Resources
+
+## References

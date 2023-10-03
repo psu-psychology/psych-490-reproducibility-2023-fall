@@ -235,7 +235,7 @@ title: "schedule"
 
 - Read
     - [@Ritchie2020-fm], Chapter 4
-- [Class notes]()
+- [Class notes](notes/wk08-2023-10-09.qmd)
 
 ### Wednesday, October 11 {-}
 
@@ -244,11 +244,11 @@ title: "schedule"
 - Read
     - [@Rosenthal1979-zi]
     - [@Franco2014-yu]
-- [Class notes]()
+- [Class notes](notes/wk08-2023-10-11.qmd)
 
 ### Friday, October 13 {-}
 
-**Lies, damned lies, and statistics**
+**Work session: Lies, damned lies, and statistics**
 
 - [Assignment]{.green_assigned}
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd)
@@ -267,7 +267,7 @@ title: "schedule"
     - [@Ritchie2020-fm], Chapter 5
     - [@Nuijten2015-ul]
     - [@Szucs2017-fc]
-- [Class notes]()
+- [Class notes](notes/wk09-2023-10-16.qmd)
 
 ### Wednesday, October 18 {-}
 
@@ -279,7 +279,7 @@ title: "schedule"
     - (Optional) [@Ranehill2015-dj]()
 - Watch
     - [@Cuddy2012-zx](https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are)
-- [Class notes]()
+- [Class notes](notes/wk09-2023-10-18.qmd)
  
 ### Friday, October 20 {-}
 
@@ -301,7 +301,7 @@ title: "schedule"
 - Read
     - [@munafo_manifesto_2017]
     - [@Begley2013-vm]
-- [Class notes]()
+- [Class notes](notes/wk10-2023-10-23.qmd)
 
 ### Wednesday, October 25 {-}
 
@@ -311,7 +311,7 @@ title: "schedule"
     - [@nosek_promoting_2015]
     - [@Gilmore2020-sl]
     - [@Srcd2019-hg]
-- [Class notes]()
+- [Class notes](notes/wk10-2023-10-25.qmd)
 
 ### Friday, October 27 {-}
 
@@ -332,7 +332,7 @@ title: "schedule"
 
 - Read
     - [@collaboration_estimating_2015]
-- [Class notes]()
+- [Class notes](notes/wk11-2023-10-30.qmd)
 
 ### Wednesday, November 1 {-}
 
@@ -341,7 +341,7 @@ title: "schedule"
 - Read
     - [@Wilson2014-ol]
     - [@Silberzahn2018-st]
-- [Class notes]()
+- [Class notes](notes/wk11-2023-11-01.qmd)
 
 ### Friday, November 3 {-}
 
@@ -364,7 +364,7 @@ title: "schedule"
     - (Optional) [@Claesen2021-ae]
 - Explore
     - [clinicaltrials.gov](https://clinicaltrials.gov/)
-- [Class notes]()
+- [Class notes](notes/wk12-2023-11-06.qmd)
 
 ### Wednesday, November 8 {-}
 
@@ -376,7 +376,7 @@ title: "schedule"
     - (Optional) [@GilmoreAdolph2017]
     - (Optional) [@Meyer2018-vk]
     - (Optional) [@National_Institutes_of_Health_undated-it](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html)
-- [Class notes]()
+- [Class notes](notes/wk12-2023-11-08.qmd)
 
 ### Friday, November 10 {-}
 

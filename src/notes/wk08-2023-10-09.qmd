@@ -1,0 +1,298 @@
+---
+title: "2023-10-09 Mon"
+subtitle: "Bias"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-10-09 Mon"
+params:
+  update_data: true
+execute:
+  echo: true
+---
+
+# Overview
+
+## Announcements
+
+- [Due Friday]{.orange_due}
+    - [Final project](exercises/final-project.qmd) proposal
+
+## Today
+
+*Bias*
+
+- Read & Discuss
+    - [@Ritchie2020-fm], Chapter 4
+- Discuss results from
+    - [Exercise 02: P-hack your way to scientific glory](../exercises/ex04-p-hacking.qmd).
+    
+---
+
+Ritchie, S. (2020). Science Fictions: Exposing Fraud, Bias, Negligence and Hype in Science (1st ed.). Penguin Random House. <https://www.amazon.com/Science-Fictions/dp/1847925669>
+
+## Roadmap {-}
+
+- Discuss
+    - [@Ritchie2020-fm], Chapter 4
+
+## Kinds of bias {-}
+
+- Analysts' prior assumptions
+- Researcher, reviewer, and publication bias toward positive (vs. negative/null) results
+    - File-drawer effect
+- Preference for simple results (c.f., Stapel)
+- Overfitting
+- Conflicts of interest
+- *p*-hacking
+
+## Evaluating p-hacking {-}
+
+It often saves typing to load a set of commands into memory. In R, groups of useful commands are called 'packages'. We can load a set of useful packages into memory by issuing the following command:
+
+```{r}
+library(tidyverse)
+```
+
+---
+
+::: {.callout-note}
+
+If you are interested in a career related to data science, [`tidyverse`](https://www.tidyverse.org) is a very powerful set of tools you will want to know more about.
+
+:::
+
+## Data entry {-}
+
+Via a Google Sheet: <https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing>
+
+::: {.callout-note}
+
+Gilmore added data validation (Format/Data Validation) to the columns. Why?
+
+:::
+
+---
+
+::: {.callout-note}
+
+These data are "long".
+Each row is a unique observation.
+Long data are often easier to work with.
+But not always.
+
+:::
+
+## Data gathering {-}
+
+- First, I authenticate (sign-in) to Google using my Gmail account. If I haven't logged in using this script recently, it will ask me to log-in again.
+
+```{r, eval=params$update_data}
+googledrive::drive_auth("rick.o.gilmore@gmail.com")
+```
+
+---
+
+- Then I download the Google Sheet to a directory/folder called `csv/` using the file name `p-hacking-fa23.csv`.
+
+```{r, eval=params$update_data}
+googledrive::drive_download(file = "PSYCH 490.009 2023 Fall P-hacking", path = "csv/p-hacking-fa23.csv", type = 'csv', overwrite = TRUE)
+```
+
+::: {.callout-note}
+
+What does CSV mean?
+
+Why are CSV files often used in data analysis?
+
+:::
+
+---
+
+- Next, I read the CSV file using the `read_csv()` function.
+
+```{r}
+p_hacking <- read_csv(file = "csv/p-hacking-fa23.csv", show_col_types = FALSE)
+```
+
+::: {.callout-note}
+
+Functions in R take inputs and deliver outputs. The inputs are `file` and `show_col_types`.
+
+:::
+
+The output is an object called `p_hacking`. It is a table of data that I can refer to with that name.
+
+---
+
+
+- I like to use the 'structure' function or `str()` to see what the data look like.
+
+::: {.callout-note}
+
+Data is a plural noun. So, (when we don't forget this) we say 'The data are...' not 'The data is...'.
+
+:::
+
+```{r}
+str(p_hacking)
+```
+
+## Questions to explore {-}
+
+- Most data analysts find that the process of exploring data is iterative.
+- We start with a question. That leads to another question. That leads to yet another question.
+- It is also sometimes cyclical. To answer a question requires that we modify the form of our data file.
+- I like to start with thinking about "data pictures." If X was true, what would the data look like?
+
+---
+
+The following code we may or may not use. I put it here so it's easier for all of us if we need to make use of it.
+
+```{r make-power-long, eval=FALSE}
+power_df <- p_hacking |>
+  pivot_longer(cols = contains('power_'), 
+                      names_to = "political_positions", 
+                      values_to = "pol_pos_selected") |>
+  distinct() |>
+  mutate(political_positions = stringr::str_remove(string = political_positions,
+                                                             pattern = "power_"))
+  
+```
+
+```{r make-econ-long, eval=FALSE}
+econ_df <- p_hacking |>
+  pivot_longer(cols = contains('econ_'), 
+                      names_to = "econ_measures", 
+                      values_to = "econ_meas_selected") |>
+  distinct() |>
+  mutate(econ_measures = stringr::str_remove(string = econ_measures,
+                                                             pattern = "econ_"))
+  
+```
+
+## Visualize {-}
+
+```{r hist-p-vals, out.width="80%"}
+p_hacking |>
+  ggplot() +
+  aes(x = p_value, fill = party) +
+  geom_histogram(bins = 10) +
+  facet_grid(~ prediction)
+```
+
+---
+
+```{r p-vals-by-analysis, out.width="80%"}
+p_hacking |>
+  ggplot() +
+  aes(x = analysis, y = p_value, color = as.factor(student), shape = party) +
+  geom_jitter() +
+  geom_line()
+```
+
+## How many diff combos?
+
+- How many different combinations of variable choices are there? 
+- There are $n=4$ measures of political control; $n=4$ measures of economic performance; $n=2$ 'other' factors; $n=2$ prediction choices; and $n=2$ political parties to focus on.
+
+---
+
+- We can use the `combinat` package to help us figure this out.
+
+```{r}
+combinat::combn(c('pres', 'gov', 'senate', 'house'), 1)
+```
+
+- This shows us the number of ways we can pick a single political measure from among the 4 choices. 
+- We see that there are 4 ways.
+
+---
+
+- The next function shows us the number of ways to pick two measures.
+
+```{r}
+combinat::combn(c('pres', 'gov', 'senate', 'house'), 2)
+```
+
+- There are 6 columns of two, so there must be 6 different ways to pick two measures.
+
+---
+
+```{r}
+combinat::combn(c('pres', 'gov', 'senate', 'house'), 3)
+```
+- There are 4 different ways to pick 3 measures.
+
+- And there is only one way to pick 4 among 4. Make sense?
+
+---
+
+If we add these up '4 + 6 + 4 + 1' = `r 4 + 6 + 4 + 1` we get the number of different choices we can make (15) about how many combinations of political power measures are possible.
+
+---
+
+- Since there are also 4 different choices of economic performance measures, we know that there are 15 ways to pick these. Now we can calculate how many different possible combinations of variables there are.
+
+```{r}
+n_combos <- 15*15*2*2*2
+```
+
+- We multiply because each of the choices (political power, economic performance, party, better or worse is independent).
+
+---
+
+- So, there are $n=$ `r n_combos` of variables we could have chosen.
+- How does this impact the conclusions we can and should draw?
+
+## Combine with Spring 2023 data?
+
+```{r download-p-hacking-sp23}
+googledrive::drive_download(file = "PSYCH 490.002 2023 P-hacking", path = "csv/p-hacking-2023-spring.csv", type = 'csv', overwrite = TRUE)
+```
+
+---
+
+```{r combine-p-hacking-sp-fall}
+p_hacking_sp23 <- read_csv(file = "csv/p-hacking.csv", show_col_types = FALSE)
+
+p_hacking_sp23$semester = "sp23"
+p_hacking$semester = "fa23"
+
+p_hacking_23 <- rbind(p_hacking, p_hacking_sp23)
+```
+
+## Combined data
+
+```{r hist-p-vals-sp-fa, out.width="80%"}
+p_hacking_23 |>
+  ggplot() +
+  aes(x = p_value, fill = party) +
+  geom_histogram(bins = 10) +
+  facet_grid(~ prediction)
+```
+
+---
+
+```{r p-vals-by-analysis-sp-fa, out.width="80%"}
+p_hacking_23 |>
+  ggplot() +
+  aes(x = analysis, y = p_value, color = semester, shape = party) +
+  geom_jitter() +
+  geom_line()
+```
+
+# Next time
+
+*File drawer effect*
+
+- Read
+    - [@Rosenthal1979-zi]
+    - [@Franco2014-yu]
+- [Class notes](wk09-2023-10-09.qmd)
+
+# Resources
+
+## References

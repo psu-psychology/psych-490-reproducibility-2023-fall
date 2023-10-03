@@ -1,0 +1,40 @@
+---
+title: "2023-10-11 Wed"
+subtitle: "Bias"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-10-11 Wed"
+---
+
+# Overview
+
+## Announcements
+
+- [Due Friday]{.orange_due}
+    - [Final project](exercises/final-project.qmd) proposal
+
+## Today
+
+*File drawer effect*
+
+- Read
+    - [@Rosenthal1979-zi]
+    - [@Franco2014-yu]
+    
+# Topic
+
+# Next time
+
+*Work session: Lies, damned lies, and statistics*
+
+- [Due]{.orange_due}
+    - [Final project](exercises/final-project.qmd) proposal
+- [Assignment]{.green_assigned}
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd)
+
+# Resources
+
+## References
