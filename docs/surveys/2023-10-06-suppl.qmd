@@ -1,0 +1,83 @@
+---
+title: "2023-10-06 Supplement"
+author: "Rick Gilmore"
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+---
+
+## Purpose
+
+This document simulates some data to illustrate Study 1 from [@simmons_false-positive_2011].
+
+## Generate data
+
+There are two song groups:
+
+```{r}
+song <- c("kid", "ctrl")
+song <- rep(song, each = 15)
+song
+```
+
+One covariate, father's age.
+Let's say that these are uniformly distributed between 40 and 55.
+
+```{r}
+father_age <- runif(30, 40, 55)
+hist(father_age)
+```
+
+And one focus measure, “How old do you feel right now?”, with five options: very young, young, neither young nor old, old, and very old.
+Let's give these numbers between 1 and 5, and let's say that the average rating for the "kid" group was 3.75 and the average rating for the "ctrl" group was 3.
+We'll assume that these are normally distributed.
+
+```{r}
+old_feeling <- c(rnorm(15, 3.75), rnorm(15, 3))
+hist(old_feeling)
+```
+
+## Visualize data
+
+We'll make a data frame.
+
+```{r}
+false_pos_study_1 <- data.frame(sub_id = 1:30, song, father_age, old_feeling)
+str(false_pos_study_1)
+```
+Now, let's plot this to show how analysis of covariance (ANCOVA) might work.
+
+```{r fig-ancova, fig.cap="Illustration of a simulated ANCOVA based on [@simmons_false-positive_2011]"}
+
+library(tidyverse)
+
+false_pos_study_1 |>
+  ggplot() +
+  aes(x = father_age, y = old_feeling, color = song) +
+  geom_point() +
+  geom_smooth(method = lm) # linear fit
+```
+
+```{r}
+glm_ancova <- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1)
+summary(glm_ancova)
+```
+Now, let's imagine that `father_age` wasn't entirely random for some reason.
+
+```{r}
+father_age <- (69:40) + rnorm(30, 0, 1)
+hist(father_age)
+```
+
+```{r}
+false_pos_study_1a <- data.frame(sub_id = 1:30, song, father_age, old_feeling)
+
+false_pos_study_1a |>
+  ggplot() +
+  aes(x = father_age, y = old_feeling, color = song) +
+  geom_point() +
+  geom_smooth(method = lm) # linear fit
+
+glm_ancova <- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1a)
+summary(glm_ancova)
+```
+

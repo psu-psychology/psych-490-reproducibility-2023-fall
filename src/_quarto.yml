@@ -63,6 +63,22 @@ website:
           - href: "notes/wk09-2023-10-16.qmd"
           - href: "notes/wk09-2023-10-18.qmd"
           - href: "notes/wk09-2023-10-20.qmd"
+          - text: "--Week 10--"
+          - href: "notes/wk10-2023-10-23.qmd"
+          - href: "notes/wk10-2023-10-25.qmd"
+          - href: "notes/wk10-2023-10-27.qmd"
+          - text: "--Week 11--"
+          - href: "notes/wk11-2023-10-30.qmd"
+          - href: "notes/wk11-2023-11-01.qmd"
+          - href: "notes/wk11-2023-11-03.qmd"
+          - text: "--Week 12--"
+          - href: "notes/wk12-2023-11-06.qmd"
+          - href: "notes/wk12-2023-11-08.qmd"
+          - href: "notes/wk12-2023-11-10.qmd"
+          - text: "--Week 13--"
+          - href: "notes/wk13-2023-11-13.qmd"
+          - href: "notes/wk13-2023-11-15.qmd"
+          - href: "notes/wk13-2023-11-17.qmd"
       - text: exercises
         menu: 
           - href: "exercises/ex01-read-a-scientific-paper.qmd"
@@ -73,7 +89,7 @@ website:
           - href: "exercises/ex06-replication.qmd"
           - href: "exercises/ex07-sharing.qmd"
           - href: "exercises/final-project.qmd"
-      - text: surveys
+      - text: supplemental
         menu: 
           - href: "surveys/survey-01.qmd"
           - href: "surveys/survey-02.qmd"

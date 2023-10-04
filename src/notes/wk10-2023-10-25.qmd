@@ -1,0 +1,24 @@
+---
+title: "2023-10-25 Wed"
+subtitle: "Changing journal policies"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-10-25 Wed"
+---
+
+# Overview
+
+## Announcements
+
+## Today
+
+# Topic
+
+# Next time
+
+# Resources
+
+## References

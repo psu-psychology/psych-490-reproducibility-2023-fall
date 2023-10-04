@@ -21,6 +21,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
 - Wrap-up on questionable research practices (QRPs)
 
 *Work session: P-hacking*
+
 - Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
 - Work session
     - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
@@ -53,6 +54,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
 An analysis of covariance (ANCOVA) is a tool for asking whether there is some difference between groups (here the song listened to) when we account for a third variable, like their father's age.
 
 :::
+
+Link to supplemental [illustration of ANCOVA](../surveys/2023-10-06-suppl.html) 
 
 ## Study 2
 

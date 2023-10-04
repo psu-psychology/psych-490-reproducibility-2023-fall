@@ -403,7 +403,7 @@ title: "schedule"
 - Explore
     - [protocols.io](https://www.protocols.io/)
     - [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
-- [Class notes]()
+- [Class notes](notes/wk13-2023-11-13.qmd)
 
 ### Wednesday, November 15 {-}
 
@@ -414,7 +414,7 @@ title: "schedule"
     - [@Cruwell2019-nz]
 - Explore
     - [@FORRT_undated-pl]
-- [Class notes]()
+- [Class notes](notes/wk13-2023-11-15.qmd)
 
 ### Friday, November 17 {-}
 
