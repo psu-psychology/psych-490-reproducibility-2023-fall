@@ -137,14 +137,14 @@
     "href": "schedule.html#week-09",
     "title": "schedule",
     "section": "October 16-20",
-    "text": "October 16-20\n\nMonday, October 16\nNegligence\n\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\nHype\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) Ranehill et al. (2015)\n\nWatch\n\nCuddy (2012)\n\nClass notes\n\n\n\nFriday, October 20\nWork session on replication\n\nDue\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
+    "text": "October 16-20\n\nMonday, October 16\nNegligence\n\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\nHype\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) Ranehill et al. (2015)\n\nWatch\n\nCuddy (2012)\n\nClass notes\n\n\n\nFriday, October 20\nWork session on replication\n\nDiscuss draft\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
   },
   {
     "objectID": "schedule.html#week-10",
     "href": "schedule.html#week-10",
     "title": "schedule",
     "section": "October 23-27",
-    "text": "October 23-27\n\nMonday, October 23\nSolutions\n\nRead\n\n(Munafò et al., 2017)\n(Begley, 2013)\n\nClass notes\n\n\n\nWednesday, October 25\nChanging journal policies\n\nRead\n\n(B. A. Nosek et al., 2015)\n(Gilmore, Cole, Verma, Aken, & Worthman, 2020)\n(SRCD, 2019)\n\nClass notes\n\n\n\nFriday, October 27\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
+    "text": "October 23-27\n\nMonday, October 23\nSolutions\n\nFinal due\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nRead\n\n(Munafò et al., 2017)\n(Begley, 2013)\n\nClass notes\n\n\n\nWednesday, October 25\nChanging journal policies\n\nRead\n\n(B. A. Nosek et al., 2015)\n(Gilmore, Cole, Verma, Aken, & Worthman, 2020)\n(SRCD, 2019)\n\nClass notes\n\n\n\nFriday, October 27\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
   },
   {
     "objectID": "schedule.html#week-11",
@@ -1439,7 +1439,7 @@
     "href": "exercises/ex05-apes.html#background",
     "title": "Exercise 05",
     "section": "Background",
-    "text": "Background\nIn the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are not due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.\nOne way to think about those trade-offs is to think about our situation this way:\nSome “fact” about the world can either be true or false, and our data analysis should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually is true and deciding when something’s false when it actually is false. Both are important ways for our analysis to be correct.\nWe also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a false positive. We also don’t want to decide something’s false when actually it’s true. That’s called a false negative. We want to minimize both.\nTo avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (\\(\\alpha\\)) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, \\(\\alpha\\) is also usually small; \\(\\alpha = 0.05\\) is conventional, but it is not in any way sacred.\nTo avoid false negatives, we set another probability value, called beta (\\(\\beta\\)). Beta is the proportion of times we’re willing to conclude a true fact is actually false; \\(\\beta = 0.20\\) or 1 time out of five is conventional. But what data folks usually focus on is \\(1-\\beta\\)1 or statistical power. This number tells us the proportion of times we expect to detect a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why it’s called power.\nAnalysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called \\(n\\). How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the effect size because it might represent the effect of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean (\\(\\mu\\)) 0 and standard deviation (\\(\\sigma\\)) 1, we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called \\(d\\). There are other ways to talk about effect sizes, but we won’t go further here.\nYour goals in this assignment are to see how choices about sample size (\\(n\\)), effect size (\\(d\\)), alpha (\\(/alpha\\)) and power (\\(1-\\beta\\)) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers."
+    "text": "Background\nIn the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are not due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.\nOne way to think about those trade-offs is to think about our situation this way:\nSome “fact” about the world can either be true or false, and our data analysis should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually is true and deciding when something’s false when it actually is false. Both are important ways for our analysis to be correct.\nWe also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a false positive. We also don’t want to decide something’s false when actually it’s true. That’s called a false negative. We want to minimize both.\nTo avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (\\(\\alpha\\)) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, \\(\\alpha\\) is also usually small; \\(\\alpha = 0.05\\) is conventional, but it is not in any way sacred.\nTo avoid false negatives, we set another probability value, called beta (\\(\\beta\\)). Beta is the proportion of times we’re willing to conclude a true fact is actually false; \\(\\beta = 0.20\\), or 1 time out of five is conventional. But what data folks usually focus on is \\(1-\\beta\\)1 or statistical power. This number tells us the proportion of times we expect to detect a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why \\(1-\\beta\\) is called power.\nAnalysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called \\(n\\). How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the effect size because it might represent the effect of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean mu (\\(\\mu=0\\)) and standard deviation sigma (\\(\\sigma=1\\)), we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called \\(d\\). There are other ways to talk about effect sizes, but we won’t go further here.\nYour goals in this assignment are to see how choices about sample size (\\(n\\)), effect size (\\(d\\)), alpha (\\(\\alpha\\)) and power (\\(1-\\beta\\)) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers."
   },
   {
     "objectID": "exercises/ex05-apes.html#your-analysis",
@@ -1453,7 +1453,7 @@
     "href": "exercises/ex05-apes.html#submit",
     "title": "Exercise 05",
     "section": "Submit",
-    "text": "Submit\nBring your draft report to class with you on Tuesday, March 14, 2023. We’ll discuss the assignment. The final submission is due Tuesday, March 14, 2023 at midnight."
+    "text": "Submit\nBring your draft report to class with you on Friday, October 20, 2023. We’ll discuss the assignment. The final submission is due Monday, October 23, 2023 at midnight."
   },
   {
     "objectID": "exercises/ex05-apes.html#footnotes",
@@ -2552,7 +2552,14 @@
     "href": "notes/wk08-2023-10-11.html#your-turn",
     "title": "2023-10-11 Wed",
     "section": "Your turn",
-    "text": "Your turn"
+    "text": "Your turn\n\n\n\nPick samples of \\(n=30\\) for n_A and n_B (green boxes).\nPick small effect size \\(d=0.30\\) (magenta box).\nNote (and keep track of) whether your significance test (Sig?) is TRUE (aqua box)."
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#discussing-your-results",
+    "href": "notes/wk08-2023-10-11.html#discussing-your-results",
+    "title": "2023-10-11 Wed",
+    "section": "Discussing your results",
+    "text": "Discussing your results\n\nIs this a replication study? Why or why not?\nIs there a true effect to find?\nDid we find it reliably? Why or why not?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#discuss",
@@ -2566,7 +2573,14 @@
     "href": "notes/wk08-2023-10-11.html#abstract",
     "title": "2023-10-11 Wed",
     "section": "Abstract",
-    "text": "Abstract\n\nFor any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the “file drawer problem” is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results. Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are discussed.\n\n\n(Rosenthal, 1979)"
+    "text": "Abstract\n\nFor any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the “file drawer problem” is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results.\n\n\n(Rosenthal, 1979)"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#unpacking-rosenthal1979-zi",
+    "href": "notes/wk08-2023-10-11.html#unpacking-rosenthal1979-zi",
+    "title": "2023-10-11 Wed",
+    "section": "Unpacking (Rosenthal, 1979)",
+    "text": "Unpacking (Rosenthal, 1979)\n\nWhy might journals be filled with studies that have Type I (false positive) errors?\n\nIf there are no effects at all, what would the false positive rate be?\n\nWhy might file drawers be filled with studies that have Type II (false negative) errors?\n\nIf there really is an effect to be found for every study, what would the false negative rate be?\n\nIf every study conducted on question X were published or findable somehow, what impact would that have?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#discuss-1",

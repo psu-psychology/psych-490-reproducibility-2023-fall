@@ -340,38 +340,38 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="dates" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="dates">Dates</h2>
+<section id="dates" class="level2">
+<h2 class="anchored" data-anchor-id="dates">Dates</h2>
 <p>Due: <span class="orange_due">Friday, October 20</span>.</p>
 </section>
-<section id="goals" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="goals">Goals</h2>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
 <p>This exercise aims to to build your understanding about the relationship between alpha <span class="math inline">\(\alpha\)</span> and its close cousin <a href="https://forrt.org/glossary/statistical-significance/">statistical significance</a>, <a href="https://forrt.org/glossary/statistical-power/">statistical power</a> (1-<span class="math inline">\(\beta\)</span>), effect size (<span class="math inline">\(d\)</span>), and sample sizes (<span class="math inline">\(n\)</span>).</p>
 </section>
-<section id="materials" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="materials">Materials</h2>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
 <ul>
 <li>a computer, tablet, or smartphone with access to the internet.</li>
 <li>a means of keeping brief notes (notebook or text/word processing document).</li>
 </ul>
 </section>
-<section id="shiny-app" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="shiny-app">Shiny app</h2>
+<section id="shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-app">Shiny app</h2>
 <p>Visit the app at <a href="https://rogilmore.shinyapps.io/PSYCH490-2023-APES/" class="uri">https://rogilmore.shinyapps.io/PSYCH490-2023-APES/</a>.</p>
 </section>
-<section id="background" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="background">Background</h2>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>In the ideal world, we want large samples so that we can be confident that when we find differences between groups A and B (Americans and Europeans; males and females; soccer players and badminton players, etc.) that the differences we find are <em>not</em> due to chance. In the real world, there are always trade-offs between the size of the samples we can collect and our ability to avoid making mistakes about what’s true and what’s not.</p>
 <p>One way to think about those trade-offs is to think about our situation this way:</p>
 <p>Some “fact” about the world can either be true or false, and our <em>data analysis</em> should inform us about whether the fact is either true or false. We want to be right as often as possible. That means having a way of deciding something’s true when it actually <em>is</em> true and deciding when something’s false when it actually <em>is</em> false. Both are important ways for our analysis to be correct.</p>
 <p>We also want to avoid being wrong. We don’t want to decide something’s true when it’s not. That’s a <em>false positive</em>. We also don’t want to decide something’s false when actually it’s true. That’s called a <em>false negative</em>. We want to minimize both.</p>
 <p>To avoid false positives, we decide how often we are willing to be wrong in that way and set a criterion accordingly. The alpha (<span class="math inline">\(\alpha\)</span>) value or criterion reflects that choice. It’s a probability, so it’s between 0 and 1. Since we want the fraction of the time we make false negative decisions to be small, <span class="math inline">\(\alpha\)</span> is also usually small; <span class="math inline">\(\alpha = 0.05\)</span> is conventional, but it is not in any way sacred.</p>
-<p>To avoid false negatives, we set another probability value, called beta (<span class="math inline">\(\beta\)</span>). Beta is the proportion of times we’re willing to conclude a true fact is actually false; <span class="math inline">\(\beta = 0.20\)</span> or 1 time out of five is conventional. But what data folks usually focus on is <span class="math inline">\(1-\beta\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> or <em>statistical power</em>. This number tells us the proportion of times we expect to <em>detect</em> a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why it’s called <em>power</em>.</p>
-<p>Analysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called <span class="math inline">\(n\)</span>. How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the <em>effect size</em> because it might represent the <em>effect</em> of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean (<span class="math inline">\(\mu\)</span>) 0 and standard deviation (<span class="math inline">\(\sigma\)</span>) 1, we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called <span class="math inline">\(d\)</span>. There are other ways to talk about effect sizes, but we won’t go further here.</p>
-<p>Your goals in this assignment are to see how choices about sample size (<span class="math inline">\(n\)</span>), effect size (<span class="math inline">\(d\)</span>), alpha (<span class="math inline">\(/alpha\)</span>) and power (<span class="math inline">\(1-\beta\)</span>) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers.</p>
+<p>To avoid false negatives, we set another probability value, called beta (<span class="math inline">\(\beta\)</span>). Beta is the proportion of times we’re willing to conclude a true fact is actually false; <span class="math inline">\(\beta = 0.20\)</span>, or 1 time out of five is conventional. But what data folks usually focus on is <span class="math inline">\(1-\beta\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> or <em>statistical power</em>. This number tells us the proportion of times we expect to <em>detect</em> a true effect when it’s actually there. Detecting the truth is sort of a scientific superpower, don’t you think? At least when things go right. Maybe that’s why <span class="math inline">\(1-\beta\)</span> is called <em>power</em>.</p>
+<p>Analysts who are planning a study have two other decisions to make: How big a sample should they collect, and how sensitive should their test be? The answer to how big a sample should always be large, but how large? The answer is, of course, called <span class="math inline">\(n\)</span>. How sensitive is the test can be asked this way: What’s the smallest difference I want to be able to detect–assuming I’m interested in the difference between condition A and condition B? That difference between conditions is called the <em>effect size</em> because it might represent the <em>effect</em> of some intervention. If we think effect sizes with respect to the standard normal (bell-curve-shaped) distribution with mean mu (<span class="math inline">\(\mu=0\)</span>) and standard deviation sigma (<span class="math inline">\(\sigma=1\)</span>), we can specify it in terms of the number of standard deviations. Specified this way, the effect size is usually called <span class="math inline">\(d\)</span>. There are other ways to talk about effect sizes, but we won’t go further here.</p>
+<p>Your goals in this assignment are to see how choices about sample size (<span class="math inline">\(n\)</span>), effect size (<span class="math inline">\(d\)</span>), alpha (<span class="math inline">\(\alpha\)</span>) and power (<span class="math inline">\(1-\beta\)</span>) relate to one another. You’ll explore the effects of different values for these parameters, report on the parameters you chose, and what the results turned out to be. There are no right or wrong answers.</p>
 </section>
-<section id="your-analysis" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="your-analysis">Your analysis</h2>
+<section id="your-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="your-analysis">Your analysis</h2>
 <ol type="1">
 <li>When you first open the app, note that it simulates an analysis of groups A (red) and B, and that we get to control a number of parameters, including <span class="math inline">\(n\)</span>, <span class="math inline">\(d\)</span>, and <span class="math inline">\(\alpha\)</span>. Note the statistics in the first gray box. It reports on the results of a <span class="math inline">\(t\)</span> test, comparing the difference between the means of the two groups.
 <ul>
@@ -405,9 +405,9 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 </section>
-<section id="submit" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="submit">Submit</h2>
-<p>Bring your <em>draft</em> report to class with you on Tuesday, March 14, 2023. We’ll discuss the assignment. The final submission is due Tuesday, March 14, 2023 at midnight.</p>
+<section id="submit" class="level2">
+<h2 class="anchored" data-anchor-id="submit">Submit</h2>
+<p>Bring your <em>draft</em> report to class with you on Friday, October 20, 2023. We’ll discuss the assignment. The final submission is due Monday, October 23, 2023 at midnight.</p>
 
 
 </section>

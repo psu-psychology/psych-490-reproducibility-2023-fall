@@ -57,11 +57,52 @@ Simulation app: <https://rogilmore.shinyapps.io/PSYCH490-2023-APES/>
 
 ---
 
-- Pick small effect size $d=0.30$
-  - Specify that there is a **true** effect, $B > A$
-- Pick samples of $n=30$
+![<https://rogilmore.shinyapps.io/PSYCH490-2023-APES/>](../include/img/apes-app-screen.png){fig-align="center"}
 
 ## Your turn
+
+::: {.columns}
+
+::: {.column width=50%}
+
+- Pick samples of $n=30$ for `n_A` and `n_B` (green boxes).
+- Pick small effect size $d=0.30$ (magenta box).
+- Note (and keep track of) whether your significance test (Sig?) is TRUE (aqua box).
+
+:::
+
+::: {.column width=50%}
+
+![](../include/img/apes-app-screen-annotated.png){fig-align="center"}
+
+:::
+
+:::
+
+---
+
+::: {.columns}
+
+::: {.column width=50%}
+
+- Replicate the study multiple times by pressing the `Regenerate` button (dark blue box).
+- Record the number of successes and failures.
+
+:::
+
+::: {.column width=50%}
+
+![](../include/img/apes-app-screen-annotated.png){fig-align="center"}
+
+:::
+
+:::
+
+## Discussing your results
+
+- Is this a replication study? Why or why not?
+- Is there a true effect to find?
+- Did we find it reliably? Why or why not?
 
 ## Discuss
 
@@ -69,8 +110,7 @@ Rosenthal, R. (1979). The file drawer problem and tolerance for null results. *P
 
 ## Abstract
 
->For any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the "file drawer problem" is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results. Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are
-discussed.
+>For any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the "file drawer problem" is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results. 
 
 <p style="text-align:center;">
 [@Rosenthal1979-zi]
@@ -78,11 +118,19 @@ discussed.
 
 ---
 
->The extreme view of this problem, the "file drawer problem," is that the journals are filled with the 5% of the studies that show Type I errors, while the file drawers back at the lab are filled with the 95% of the studies that show nonsignificant (e.g., p > .05) results.
+>Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are discussed.
 
 <p style="text-align:center;">
 [@Rosenthal1979-zi]
 </p>
+
+## Unpacking [@Rosenthal1979-zi]
+
+- Why might *journals* be filled with studies that have Type I (false positive) errors?
+  - If there are no effects at all, what would the false positive rate be?
+- Why might *file drawers* be filled with studies that have Type II (false negative) errors?
+  - If there really is an effect to be found for every study, what would the false negative rate be?
+- If *every* study conducted on question X were published or findable somehow, what impact would that have?
 
 ---
 

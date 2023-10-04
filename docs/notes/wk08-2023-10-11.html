@@ -490,16 +490,50 @@ Rick Gilmore
 </section>
 <section class="slide level2">
 
-<ul>
-<li>Pick small effect size <span class="math inline">\(d=0.30\)</span>
-<ul>
-<li>Specify that there is a <strong>true</strong> effect, <span class="math inline">\(B &gt; A\)</span></li>
-</ul></li>
-<li>Pick samples of <span class="math inline">\(n=30\)</span></li>
-</ul>
-</section>
+
+<img data-src="../include/img/apes-app-screen.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://rogilmore.shinyapps.io/PSYCH490-2023-APES/" class="uri">https://rogilmore.shinyapps.io/PSYCH490-2023-APES/</a></p></section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Pick samples of <span class="math inline">\(n=30\)</span> for <code>n_A</code> and <code>n_B</code> (green boxes).</li>
+<li>Pick small effect size <span class="math inline">\(d=0.30\)</span> (magenta box).</li>
+<li>Note (and keep track of) whether your significance test (Sig?) is TRUE (aqua box).</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/apes-app-screen-annotated.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Replicate the study multiple times by pressing the <code>Regenerate</code> button (dark blue box).</li>
+<li>Record the number of successes and failures.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/img/apes-app-screen-annotated.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="discussing-your-results" class="slide level2">
+<h2>Discussing your results</h2>
+<ul>
+<li>Is this a replication study? Why or why not?</li>
+<li>Is there a true effect to find?</li>
+<li>Did we find it reliably? Why or why not?</li>
+</ul>
 </section>
 <section id="discuss" class="slide level2">
 <h2>Discuss</h2>
@@ -508,7 +542,7 @@ Rick Gilmore
 <section id="abstract" class="slide level2">
 <h2>Abstract</h2>
 <blockquote>
-<p>For any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the “file drawer problem” is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results. Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are discussed.</p>
+<p>For any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the “file drawer problem” is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results.</p>
 </blockquote>
 <p style="text-align:center;">
 <span class="citation" data-cites="Rosenthal1979-zi">(<a href="#/references" role="doc-biblioref" onclick="">Rosenthal, 1979</a>)</span>
@@ -517,11 +551,25 @@ Rick Gilmore
 <section class="slide level2">
 
 <blockquote>
-<p>The extreme view of this problem, the “file drawer problem,” is that the journals are filled with the 5% of the studies that show Type I errors, while the file drawers back at the lab are filled with the 95% of the studies that show nonsignificant (e.g., p &gt; .05) results.</p>
+<p>Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are discussed.</p>
 </blockquote>
 <p style="text-align:center;">
 <span class="citation" data-cites="Rosenthal1979-zi">(<a href="#/references" role="doc-biblioref" onclick="">Rosenthal, 1979</a>)</span>
 </p>
+</section>
+<section id="unpacking-rosenthal1979-zi" class="slide level2">
+<h2>Unpacking <span class="citation" data-cites="Rosenthal1979-zi">(<a href="#/references" role="doc-biblioref" onclick="">Rosenthal, 1979</a>)</span></h2>
+<ul>
+<li>Why might <em>journals</em> be filled with studies that have Type I (false positive) errors?
+<ul>
+<li>If there are no effects at all, what would the false positive rate be?</li>
+</ul></li>
+<li>Why might <em>file drawers</em> be filled with studies that have Type II (false negative) errors?
+<ul>
+<li>If there really is an effect to be found for every study, what would the false negative rate be?</li>
+</ul></li>
+<li>If <em>every</em> study conducted on question X were published or findable somehow, what impact would that have?</li>
+</ul>
 </section>
 <section class="slide level2">
 

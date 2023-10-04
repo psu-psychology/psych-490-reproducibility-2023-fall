@@ -285,7 +285,7 @@ title: "schedule"
 
 **Work session on replication**
 
-- [Due]{.orange_due}
+- [Discuss draft]{.orange_due}
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
 - [Assignment]{.green_assigned}
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
@@ -298,6 +298,8 @@ title: "schedule"
 
 **Solutions**
 
+- [Final due]{.orange_due}
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
 - Read
     - [@munafo_manifesto_2017]
     - [@Begley2013-vm]
