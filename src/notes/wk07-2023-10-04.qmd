@@ -219,6 +219,13 @@ Richard Feynmann
 
 ![Figure 2 from @John2012-tk](../include/img/john-2012-fig-02.png){fig-align="center"}
 
+---
+
+![Self-reported prevalence; Figure 2 from @Xie2021-us](../include/img/xie-etal-2021-fig-2.png){fig-align="center"}
+---
+
+![Observed prevalence; Figure 3 from @Xie2021-us](../include/img/xie-etal-2021-fig-3.png){fig-align="center"}
+
 ## Your turn
 
 - Which of the practices @John2012-tk focused on do *you* think are most questionable? Which the least questionable?
