@@ -3,24 +3,24 @@ title: "Exercise 04"
 subtitle: "*P*-hacking: The road to scientific glory"
 ---
 
-## Dates {-}
+## Dates
 
 Due: [Friday, October 6]{.orange_due}.
 
-## Acknowledgment {-}
+## Acknowledgment
 
 This exercise builds heavily on [@Pownall2021-aa](https://doi.org/10.17605/OSF.IO/TH254).
 
-## Goals {-}
+## Goals
 
 This exercise aims to build your understanding about [*p-hacking*](https://forrt.org/glossary/p-hacking/), what it is, how it can occur, and its impact on research.
 
-## Materials {-}
+## Materials
 
 - a computer, tablet, or smartphone with access to the internet.
 - a means of keeping brief notes (notebook or text/word processing document).
 
-## Background {-}
+## Background
 
 You are a policy analyst with a not-for-profit, or as our resource says, "You’re a social scientist with a hunch: The U.S. economy is affected by whether Republicans or Democrats are in office."
 Your task is to publish a short report about whether the U.S. economy does better under Republican control or Democratic control.
@@ -29,7 +29,7 @@ You probably have prior ideas about this question, but your goal is to provide *
 You will make use of a [dataset](https://projects.fivethirtyeight.com/p-hacking/) with information about how well the U.S. economy performs and about the degree of Republican or Democratic political power.
 The dataset goes back to 1948.
 
-## Your analysis {-}
+## Your analysis
 
 1. Choose a party as the focus of your report (Republican or Democratic).
 2. Write down your prior hypothesis about whether the economy does better or worse under Republican or Democratic control. Do this before you visit the web site[^1].
@@ -68,7 +68,7 @@ The dataset goes back to 1948.
 
 10. Create a report that captures the information you collected during the exercise. 
 
-## Submit {-}
+## Submit
 
 Please use the APA manuscript format for your document. 
 Include a very short Introduction section; a slightly longer Methods section, and then a combined Results and Discussion section with your answers to Questions 6-9.
