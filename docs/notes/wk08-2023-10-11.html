@@ -594,7 +594,14 @@ Rick Gilmore
 <span id="cb1-8"><a href="#cb1-8"></a>  <span class="fu">aes</span>(x) <span class="sc">+</span></span>
 <span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
 <span id="cb1-10"><a href="#cb1-10"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> qt_05) <span class="sc">+</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">ggtitle</span>(<span class="fu">paste0</span>(<span class="st">"Z="</span>, <span class="fu">format</span>(qt_05, <span class="at">digits =</span> <span class="dv">3</span>, <span class="at">nsmall =</span> <span class="dv">2</span>), <span class="st">" for p="</span>, <span class="fu">format</span>(p_val, <span class="at">digits =</span> <span class="dv">3</span>, <span class="at">nsmall =</span> <span class="dv">2</span>), <span class="st">" and n="</span>, n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11"></a>  <span class="fu">ggtitle</span>(<span class="fu">paste0</span>(</span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="st">"Z="</span>,</span>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="fu">format</span>(qt_05, <span class="at">digits =</span> <span class="dv">3</span>, <span class="at">nsmall =</span> <span class="dv">2</span>),</span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="st">" for p="</span>,</span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="fu">format</span>(p_val, <span class="at">digits =</span> <span class="dv">3</span>, <span class="at">nsmall =</span> <span class="dv">2</span>),</span>
+<span id="cb1-16"><a href="#cb1-16"></a>    <span class="st">" and n="</span>,</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    n</span>
+<span id="cb1-18"><a href="#cb1-18"></a>  ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>

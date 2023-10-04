@@ -149,7 +149,14 @@ ggplot(df) +
   aes(x) +
   geom_histogram(bins = 20) +
   geom_vline(xintercept = qt_05) +
-  ggtitle(paste0("Z=", format(qt_05, digits = 3, nsmall = 2), " for p=", format(p_val, digits = 3, nsmall = 2), " and n=", n))
+  ggtitle(paste0(
+    "Z=",
+    format(qt_05, digits = 3, nsmall = 2),
+    " for p=",
+    format(p_val, digits = 3, nsmall = 2),
+    " and n=",
+    n
+  ))
 ```
 
 :::
