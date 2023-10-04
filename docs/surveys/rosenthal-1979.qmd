@@ -1,0 +1,25 @@
+---
+title: "Rosenthal 1979"
+---
+
+```{r, fig.cap="Illustration of $Z$ discussed in [@Rosenthal1979-zi](https://doi.org/10.1037/0033-2909.86.3.638)", out.width="100%", echo=TRUE}
+library(tidyverse)
+
+n <- 1000
+p_val <- 0.05
+df <- tibble::tibble(x = rnorm(n, mean = 0, sd = 1))
+qt_05 <- qt(p_val, n, lower.tail = FALSE)
+ggplot(df) +
+  aes(x) +
+  geom_histogram(bins = 20) +
+  geom_vline(xintercept = qt_05) +
+  ggtitle(paste0(
+    "Z=",
+    format(qt_05, digits = 3,
+           nsmall = 2),
+    " for p=",
+    format(p_val, digits = 3, nsmall = 2),
+    " and n=",
+    n
+  ))
+```

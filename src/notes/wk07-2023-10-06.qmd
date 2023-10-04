@@ -34,9 +34,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
 ## Enter (anonymized) data into spreadsheet
 
 - Use in an exercise on Monday
-- Sheet: <https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing>
-
 - Choose a student_id (integer) for yourself
+- Sheet: <https://docs.google.com/spreadsheets/d/1fnSwFrUcKvgqq_agDLe4t2DHXHtHoOlmLdtLVRSemrI/edit?usp=sharing>
 
 # Next time
 
