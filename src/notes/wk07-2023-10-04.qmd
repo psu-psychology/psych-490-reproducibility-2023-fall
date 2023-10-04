@@ -41,7 +41,7 @@ Simmons, J. P., Nelson, L. D. & Simonsohn, U. (2011). False-positive psychology:
 - Negative: What's actually untrue, a false fact
 - What does our evidence say?
 
----
+## Decision matrix    
 
 | Evidence says | True fact | False fact |
 |---------------|-----------|------------|
@@ -51,21 +51,27 @@ Simmons, J. P., Nelson, L. D. & Simonsohn, U. (2011). False-positive psychology:
 ---
 
 - Goals:
-  - Minimize false positives (Type I errors)
-  - Minimize false negatives (Type II errors)
+  - Minimize false positives (Type I errors) or maximize *specificity*
+  - Minimize false negatives (Type II errors) or maximize *sensitivity*
 - What we control
   - How to decide based on evidence
 - What we don't control
   - What's true or false ($p(True fact)$)
   
----
+## Biostatistics version
 
-- Practices
-  - Control alpha $\alpha$ (a probability or *p* value)
-      - to make false positive choices very rarely
-  - Control beta $\beta$
-      - to make false negative choices very rarely
-      - statistical 'power' is $1-\beta$.
+![https://www.scalestatistics.com/diagnostic-accuracy.html](https://www.scalestatistics.com/uploads/3/0/4/1/30413390/6343470_orig.jpg){fig-align="center" height="75%"}
+
+## Practices
+  
+- Control alpha
+  - $\alpha$
+  - a probability or *p* value
+  - to make false positive choices very rarely
+- Control beta 
+  - $\beta$
+  - to make false negative choices very rarely
+  - statistical 'power' is $1-\beta$.
 
 ---
 
@@ -85,8 +91,36 @@ are letters from the Greek alphabet.
 | False         | $\beta$   | $1-\alpha$  |
 
 ::: {.incremental}
-- If fact is *true*, then our evidence should say so $1-\beta$ of the time
-- If a fact is *false*, our evidence should say so $1-\alpha$ of the time.
+
+- If fact is truly *true*, then our evidence should say so $1-\beta$ of the time
+- If a fact is truly *false*, our evidence should say so $1-\alpha$ of the time.
+
+:::
+
+## What's a defensible choice? What's a questionable practice?
+
+- In a paper, failing to report all of a study’s dependent measures
+- Deciding whether to collect more data after looking to see whether the results were significant
+- In a paper, failing to report all of a study’s conditions
+- Stopping collecting data earlier than planned because one found the result that one had been looking for
+
+---
+
+- In a paper, “rounding off” a *p* value (e.g., reporting that a p value of .054 is less than .05)
+- In a paper, selectively reporting studies that “worked”
+- Deciding whether to exclude data after looking at the impact of doing so on the results
+- In a paper, reporting an unexpected finding as having been predicted from the start
+- In a paper, claiming that results are unaffected by demographic variables (e.g., gender) when one is actually unsure (or knows that they do)
+- Falsifying data
+
+---
+
+::: {.callout-note}
+
+Why might a researcher do these things?
+
+Why might such choices be questionable?
+
 :::
 
 ## Researcher 'degrees of freedom'
@@ -113,7 +147,7 @@ What does it mean in this context?
 
 - Why is it rare for researchers to make these decisions beforehand?
 - Why is it impractical?
-- What (relatively new) practice involves making many of these decisions in advance? [Hint](../schedule.qmd#monday-november-6)
+- What (relatively new) practice involves making many of these decisions in advance? [Hint](../schedule.html#monday-november-6).
 
 :::
 
@@ -202,8 +236,6 @@ Richard Feynmann
 [@simmons_false-positive_2011]
 </p>
 
-## What's a defensible choice? What's a questionable practice?
-
 ---
 
 ![Table 1 from @Martinson2005-fk](../include/img/martinson-etal-2005-table-1.png){fig-align="center"}
@@ -231,7 +263,8 @@ Richard Feynmann
 - Which of the practices @John2012-tk focused on do *you* think are most questionable? Which the least questionable?
 - Without discussing specifics, do you have first or second hand knowledge of any of these practices?
 - Which of these practices are discouraged in research training (e.g. methods or stats courses, lab courses)? Which are overlooked? 
-- Do the recommendations by [@simmons_false-positive_2011] address some of the issues?
+- Do the recommendations for authors and reviewers by [@simmons_false-positive_2011] address some of the issues?
+- What other changes in researcher behavior would address the issues?
 
 <!-- ## Study 1 -->
 

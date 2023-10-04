@@ -410,8 +410,8 @@ Rick Gilmore
 <li>What does our evidence say?</li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="decision-matrix" class="slide level2">
+<h2>Decision matrix</h2>
 <table>
 <colgroup>
 <col style="width: 39%">
@@ -444,8 +444,8 @@ Rick Gilmore
 <ul>
 <li>Goals:
 <ul>
-<li>Minimize false positives (Type I errors)</li>
-<li>Minimize false negatives (Type II errors)</li>
+<li>Minimize false positives (Type I errors) or maximize <em>specificity</em></li>
+<li>Minimize false negatives (Type II errors) or maximize <em>sensitivity</em></li>
 </ul></li>
 <li>What we control
 <ul>
@@ -457,20 +457,29 @@ Rick Gilmore
 </ul></li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="biostatistics-version" class="slide level2">
+<h2>Biostatistics version</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://www.scalestatistics.com/uploads/3/0/4/1/30413390/6343470_orig.jpg" style="height:75.0%"></p>
+<figcaption>https://www.scalestatistics.com/diagnostic-accuracy.html</figcaption>
+</figure>
+</div>
+</section>
+<section id="practices" class="slide level2">
+<h2>Practices</h2>
 <ul>
-<li>Practices
+<li>Control alpha
 <ul>
-<li>Control alpha <span class="math inline">\(\alpha\)</span> (a probability or <em>p</em> value)
-<ul>
+<li><span class="math inline">\(\alpha\)</span></li>
+<li>a probability or <em>p</em> value</li>
 <li>to make false positive choices very rarely</li>
 </ul></li>
-<li>Control beta <span class="math inline">\(\beta\)</span>
+<li>Control beta
 <ul>
+<li><span class="math inline">\(\beta\)</span></li>
 <li>to make false negative choices very rarely</li>
 <li>statistical ‘power’ is <span class="math inline">\(1-\beta\)</span>.</li>
-</ul></li>
 </ul></li>
 </ul>
 </section>
@@ -516,9 +525,46 @@ Rick Gilmore
 </table>
 <div>
 <ul>
-<li class="fragment">If fact is <em>true</em>, then our evidence should say so <span class="math inline">\(1-\beta\)</span> of the time</li>
-<li class="fragment">If a fact is <em>false</em>, our evidence should say so <span class="math inline">\(1-\alpha\)</span> of the time.</li>
+<li class="fragment">If fact is truly <em>true</em>, then our evidence should say so <span class="math inline">\(1-\beta\)</span> of the time</li>
+<li class="fragment">If a fact is truly <em>false</em>, our evidence should say so <span class="math inline">\(1-\alpha\)</span> of the time.</li>
 </ul>
+</div>
+</section>
+<section id="whats-a-defensible-choice-whats-a-questionable-practice" class="slide level2">
+<h2>What’s a defensible choice? What’s a questionable practice?</h2>
+<ul>
+<li>In a paper, failing to report all of a study’s dependent measures</li>
+<li>Deciding whether to collect more data after looking to see whether the results were significant</li>
+<li>In a paper, failing to report all of a study’s conditions</li>
+<li>Stopping collecting data earlier than planned because one found the result that one had been looking for</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>In a paper, “rounding off” a <em>p</em> value (e.g., reporting that a p value of .054 is less than .05)</li>
+<li>In a paper, selectively reporting studies that “worked”</li>
+<li>Deciding whether to exclude data after looking at the impact of doing so on the results</li>
+<li>In a paper, reporting an unexpected finding as having been predicted from the start</li>
+<li>In a paper, claiming that results are unaffected by demographic variables (e.g., gender) when one is actually unsure (or knows that they do)</li>
+<li>Falsifying data</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Why might a researcher do these things?</p>
+<p>Why might such choices be questionable?</p>
+</div>
+</div>
 </div>
 </section>
 <section id="researcher-degrees-of-freedom" class="slide level2">
@@ -564,7 +610,7 @@ Rick Gilmore
 <ul>
 <li>Why is it rare for researchers to make these decisions beforehand?</li>
 <li>Why is it impractical?</li>
-<li>What (relatively new) practice involves making many of these decisions in advance? <a href="../schedule.qmd#monday-november-6">Hint</a></li>
+<li>What (relatively new) practice involves making many of these decisions in advance? <a href="../schedule.html#monday-november-6">Hint</a>.</li>
 </ul>
 </div>
 </div>
@@ -663,9 +709,6 @@ Rick Gilmore
 <span class="citation" data-cites="simmons_false-positive_2011">(<a href="#/references" role="doc-biblioref" onclick="">Simmons et al., 2011</a>)</span>
 </p>
 </section>
-<section id="whats-a-defensible-choice-whats-a-questionable-practice" class="slide level2">
-<h2>What’s a defensible choice? What’s a questionable practice?</h2>
-</section>
 <section class="slide level2">
 
 
@@ -696,7 +739,8 @@ Rick Gilmore
 <li>Which of the practices <span class="citation" data-cites="John2012-tk">John et al. (<a href="#/references" role="doc-biblioref" onclick="">2012</a>)</span> focused on do <em>you</em> think are most questionable? Which the least questionable?</li>
 <li>Without discussing specifics, do you have first or second hand knowledge of any of these practices?</li>
 <li>Which of these practices are discouraged in research training (e.g.&nbsp;methods or stats courses, lab courses)? Which are overlooked?</li>
-<li>Do the recommendations by <span class="citation" data-cites="simmons_false-positive_2011">(<a href="#/references" role="doc-biblioref" onclick="">Simmons et al., 2011</a>)</span> address some of the issues?</li>
+<li>Do the recommendations for authors and reviewers by <span class="citation" data-cites="simmons_false-positive_2011">(<a href="#/references" role="doc-biblioref" onclick="">Simmons et al., 2011</a>)</span> address some of the issues?</li>
+<li>What other changes in researcher behavior would address the issues?</li>
 </ul>
 <!-- ## Study 1 -->
 <!-- >we investigated whether listening to a children’s song induces an age contrast, making people feel older. -->

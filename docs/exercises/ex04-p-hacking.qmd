@@ -66,11 +66,12 @@ The dataset goes back to 1948.
 |----------------------|-------------------|---------------|---------|
 | <your data>          | <your data>       |   <your data> |   <your data>  |
 
-10. Create a report that captures the information you collected during the exercise and summarize your finding(s) in a sentence or two. You may use the simple [report template](report_template.html) as a guide.
+10. Create a report that captures the information you collected during the exercise. 
 
 ## Submit {-}
 
-Please use the APA format for your document. Include a very short Introduction section; a slightly longer Methods section, and then a combined Results and Conclusions section with your answers to Questions 6-9.
+Please use the APA manuscript format for your document. 
+Include a very short Introduction section; a slightly longer Methods section, and then a combined Results and Discussion section with your answers to Questions 6-9.
 
 Please save a copy of your report as a docx using the preferred file naming convention for this class: `<lastname>-<firstname>-PSYCH490.009-ex04.docx`, where you substitute your last name for <lastname> and your first name for <firstname>.
 
