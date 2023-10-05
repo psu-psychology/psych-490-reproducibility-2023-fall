@@ -210,18 +210,16 @@ title: "schedule"
 
 - Read
     - [@simmons_false-positive_2011]
-    - (Skim) [@John2012-tk]
 - Watch
     - [@Ngiam2020-ln]()
 - [Class notes](notes/wk07-2023-10-04.qmd)
 
 ### Friday, October 6 {-}
 
-**Work session: P-hacking**
+**More on questionable research practices**
 
 - [Due]{.orange_due}
     - [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd) write-up.
-- Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
 - Work session
     - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
 
@@ -231,16 +229,19 @@ title: "schedule"
 
 ### Monday, October 9 {-}
 
-**Bias**
+**Prevalence of QRPs**
 
 - Read
-    - [@Ritchie2020-fm], Chapter 4
+    - [@John2012-tk]
+- Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
 - [Class notes](notes/wk08-2023-10-09.qmd)
 
 ### Wednesday, October 11 {-}
 
 **File drawer effect**
 
+- [Assignment]{.green_assigned}
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd)
 - Read
     - [@Rosenthal1979-zi]
     - [@Franco2014-yu]
@@ -248,10 +249,8 @@ title: "schedule"
 
 ### Friday, October 13 {-}
 
-**Work session: Lies, damned lies, and statistics**
+**NO CLASS MEETING**
 
-- [Assignment]{.green_assigned}
-    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd)
 - [Due]{.orange_due}
     - [Final project](exercises/final-project.qmd) proposal
 

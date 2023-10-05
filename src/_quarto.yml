@@ -94,6 +94,8 @@ website:
           - href: "surveys/survey-01.qmd"
           - href: "surveys/survey-02.qmd"
           - href: "surveys/retraction-watch.qmd"
+          - href: "surveys/simmons-etal-2011-suppl.qmd"
+          - href: "surveys/p-hacking-suppl.qmd"
 format:
   html:
     theme: cosmo
