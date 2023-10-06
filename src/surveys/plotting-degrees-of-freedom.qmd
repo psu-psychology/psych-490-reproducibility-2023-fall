@@ -10,8 +10,9 @@ This document discusses why it is a good idea to plot your data before you run d
 It also discusses degrees of freedom, and why the idea is important.
 
 ```{r setup}
-library("ggplot2")
-library("datasauRus")
+library(ggplot2)
+library(datasauRus)
+library(dplyr)
 library(stats)
 library(graphics)
 ```
@@ -20,7 +21,7 @@ library(graphics)
 
 Here are a bunch of scatter plots.
 
-```{r, fig.cap="DatasauRus figures"}
+```{r fig-datasaurus-dozen, fig.cap="DatasauRus figures from [@datasauRus-2022]"}
 ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
   geom_point() +
   theme_void() +
@@ -28,29 +29,28 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
   facet_wrap(~dataset, ncol = 3)
 ```
 
-These all have roughly the same summary statistics.
+They look pretty different, don't they?
+
+Except that these all have roughly the same summary statistics.
 
 ```{r}
-if(requireNamespace("dplyr")) {
-  suppressPackageStartupMessages(library(dplyr))
-  datasaurus_dozen %>%
-    group_by(dataset) %>%
-    summarize(
-      mean_x    = mean(x),
-      mean_y    = mean(y),
-      std_dev_x = sd(x),
-      std_dev_y = sd(y),
-      corr_x_y  = cor(x, y),
-      nxy       = length(x)
-    )
-}
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarize(
+    mean_x    = mean(x),
+    mean_y    = mean(y),
+    std_dev_x = sd(x),
+    std_dev_y = sd(y),
+    corr_x_y  = cor(x, y),
+    nxy       = length(x)
+  )
 ```
 
 Think about that a minute.
-If we *didn't* plot the data and only had the means, standard deviations, and correlation values available, we'd think these sets of variables were essentially the same, wouldn't we?
+If we *didn't* plot the data and only had the means, standard deviations, and correlation values available from some table in a paper, we'd think these sets of variables were essentially the same, wouldn't we?
 
-These plots come from the `datasauRus` [@datasauRus-2022] package inspired by a paper by [@Matejka2017-kp]
-These data are based on Anscombe's quartet [@Anscombe1973-ag], which is also available as the [`anscombe`](https://cran.r-project.org/package=anscombe) package. 
+These plots come from the `datasauRus` [@datasauRus-2022] package inspired by a paper by [@Matejka2017-kp].
+The [@Matejka2017-kp] is based on Anscombe's quartet [@Anscombe1973-ag], which is also available as the [`anscombe`](https://cran.r-project.org/package=anscombe) package. 
 Here are the originals from [@Anscombe1973-ag].
 
 ::: {.callout-note}
@@ -67,7 +67,7 @@ for(i in 1:4) {
   ## or   ff[[2]] <- as.name(paste0("y", i))
   ##      ff[[3]] <- as.name(paste0("x", i))
   mods[[i]] <- lmi <- lm(ff, data = anscombe)
-  print(anova(lmi))
+  #print(anova(lmi))
 }
 ```
 
@@ -83,7 +83,7 @@ for(i in 1:4) {
 }
 ```
 
-```{r fig-anscombe-quartet}
+```{r fig-anscombe-quartet, fig.cap="Data sets from [@Anscombe1973-ag]"}
 op <- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))
 for(i in 1:4) {
   ff[2:3] <- lapply(paste0(c("y","x"), i), as.name)
@@ -94,11 +94,20 @@ for(i in 1:4) {
 mtext("Anscombe's 4 Regression data sets", outer = TRUE, cex = 1.5)
 ```
 
-Here are the summary statistics for these pairs.
+Here are some summary statistics for these pairs.
 
 ```{r}
 summary(anscombe)
 ```
+
+::: {.callout-note}
+
+I don't remember my stats professor showing us Anscombe's datasets.
+The `datasauRus` came along much later.
+But I'm pretty sure this was what he had in mind when he exhorted the class to "plot your data!"
+It's excellent advice, and I try to follow it as an author and as a reviewer.
+
+:::
 
 ## Degrees of freedom
 
@@ -135,3 +144,4 @@ Ideally, as few as possible, and certainly far less than the number of data poin
 So, how many researcher degrees of freedom are too many?
 That's a judgment call.
 But whatever you determine, justify your argument.
+And maybe see whether the authors plotted their data in a way that helps make a case one way or the other.
