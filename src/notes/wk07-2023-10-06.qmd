@@ -11,6 +11,10 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-06 Friday"
 
 # Overview
 
+## Datasaurus
+
+![The Datasaurus dataset from @Matejka2017-kp](https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/gifs/same-stats-different-graphs/DinoSequentialSmaller.gif)
+
 ## Announcements
 
 - [Due]{.orange_due}

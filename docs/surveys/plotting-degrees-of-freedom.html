@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PSYCH 490 • Fall 2023 - Exercise 01</title>
+<title>PSYCH 490 • Fall 2023 - On plots &amp; degrees of freedom</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -85,6 +119,8 @@ div.csl-indent {
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../include/css/styles.css">
 </head>
@@ -390,10 +426,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dates" id="toc-dates" class="nav-link active" data-scroll-target="#dates">Dates</a></li>
-  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
-  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#plot-your-data" id="toc-plot-your-data" class="nav-link" data-scroll-target="#plot-your-data">Plot your data</a></li>
+  <li><a href="#degrees-of-freedom" id="toc-degrees-of-freedom" class="nav-link" data-scroll-target="#degrees-of-freedom">Degrees of freedom</a></li>
+  <li><a href="#researcher-degrees-of-freedom" id="toc-researcher-degrees-of-freedom" class="nav-link" data-scroll-target="#researcher-degrees-of-freedom">Researcher degrees of freedom</a></li>
   </ul>
 </nav>
     </div>
@@ -402,8 +438,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 01</h1>
-<p class="subtitle lead">Reading a scientific paper</p>
+<h1 class="title">On plots &amp; degrees of freedom</h1>
 </div>
 
 
@@ -418,64 +453,206 @@ div.csl-indent {
 
 </header>
 
-<section id="dates" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="dates">Dates</h2>
-<p>Due: <span class="orange_due">Friday, August 31</span>.</p>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This document discusses why it is a good idea to plot your data before you run descriptive or predictive statistical models. It also discusses degrees of freedom, and why the idea is important.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"datasauRus"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stats)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(graphics)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="goals" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="goals">Goals</h2>
-<p>This exercise gives you an opportunity to apply some of the ideas we discussed in class about how to read a scientific paper.</p>
-</section>
-<section id="assignment" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="assignment">Assignment</h2>
-<p>You may work with one other person if you wish. Choose a paper you find interesting.</p>
-<p>Use the rubric described in <span class="citation" data-cites="Carey2020-ut">(<a href="#ref-Carey2020-ut" role="doc-biblioref">Carey, Steiner, &amp; Petri, 2020</a>)</span> to read the paper.</p>
-<p>Answer the following specific questions in “Rule 3” of <span class="citation" data-cites="Carey2020-ut">(<a href="#ref-Carey2020-ut" role="doc-biblioref">Carey et al., 2020</a>)</span>:</p>
-<blockquote class="blockquote">
-<ol type="1">
-<li>What do the author(s) want to know (motivation)?</li>
-<li>What did they do (approach/methods)?</li>
-<li>Why was it done that way (context within the field)?</li>
-<li>What do the results show (figures and data tables)?</li>
-<li>How did the author(s) interpret the results (interpretation/discussion)?</li>
-<li>What should be done next? (Regarding this last question, the author(s) may provide some suggestions in the discussion, but the key is to ask yourself what you think should come next.)</li>
-</ol>
-</blockquote>
-<p style="text-align:center;">
-<span class="citation" data-cites="Carey2020-ut">(<a href="#ref-Carey2020-ut" role="doc-biblioref">Carey et al., 2020</a>)</span>
-</p>
-<p>If it’s an empirical paper, pay particular attention to what <em>evidence</em>, usually a pattern of data, the author(s) use to argue for a particular <em>finding</em> or <em>conclusion</em>. Is there a figure that demonstrates this well? If so, how? If not, why not?</p>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="plot-your-data" class="level2">
+<h2 class="anchored" data-anchor-id="plot-your-data">Plot your data</h2>
+<p>Here are a bunch of scatter plots.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datasaurus_dozen, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">colour =</span> dataset))<span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>() <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)<span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>dataset, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plotting-degrees-of-freedom_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">DatasauRus figures</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>These all have roughly the same summary statistics.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">requireNamespace</span>(<span class="st">"dplyr"</span>)) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">suppressPackageStartupMessages</span>(<span class="fu">library</span>(dplyr))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  datasaurus_dozen <span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(dataset) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">mean_x    =</span> <span class="fu">mean</span>(x),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">mean_y    =</span> <span class="fu">mean</span>(y),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">std_dev_x =</span> <span class="fu">sd</span>(x),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">std_dev_y =</span> <span class="fu">sd</span>(y),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">corr_x_y  =</span> <span class="fu">cor</span>(x, y),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">nxy       =</span> <span class="fu">length</span>(x)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 13 × 7
+   dataset    mean_x mean_y std_dev_x std_dev_y corr_x_y   nxy
+   &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;int&gt;
+ 1 away         54.3   47.8      16.8      26.9  -0.0641   142
+ 2 bullseye     54.3   47.8      16.8      26.9  -0.0686   142
+ 3 circle       54.3   47.8      16.8      26.9  -0.0683   142
+ 4 dino         54.3   47.8      16.8      26.9  -0.0645   142
+ 5 dots         54.3   47.8      16.8      26.9  -0.0603   142
+ 6 h_lines      54.3   47.8      16.8      26.9  -0.0617   142
+ 7 high_lines   54.3   47.8      16.8      26.9  -0.0685   142
+ 8 slant_down   54.3   47.8      16.8      26.9  -0.0690   142
+ 9 slant_up     54.3   47.8      16.8      26.9  -0.0686   142
+10 star         54.3   47.8      16.8      26.9  -0.0630   142
+11 v_lines      54.3   47.8      16.8      26.9  -0.0694   142
+12 wide_lines   54.3   47.8      16.8      26.9  -0.0666   142
+13 x_shape      54.3   47.8      16.8      26.9  -0.0656   142</code></pre>
+</div>
+</div>
+<p>Think about that a minute. If we <em>didn’t</em> plot the data and only had the means, standard deviations, and correlation values available, we’d think these sets of variables were essentially the same, wouldn’t we?</p>
+<p>These plots come from the <code>datasauRus</code> <span class="citation" data-cites="datasauRus-2022">(<a href="#ref-datasauRus-2022" role="doc-biblioref">Davies, Locke, &amp; D’Agostino McGowan, 2022</a>)</span> package inspired by a paper by <span class="citation" data-cites="Matejka2017-kp">(<a href="#ref-Matejka2017-kp" role="doc-biblioref">Matejka &amp; Fitzmaurice, 2017</a>)</span> These data are based on Anscombe’s quartet <span class="citation" data-cites="Anscombe1973-ag">(<a href="#ref-Anscombe1973-ag" role="doc-biblioref">Anscombe, 1973</a>)</span>, which is also available as the <a href="https://cran.r-project.org/package=anscombe"><code>anscombe</code></a> package. Here are the originals from <span class="citation" data-cites="Anscombe1973-ag">(<a href="#ref-Anscombe1973-ag" role="doc-biblioref">Anscombe, 1973</a>)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you’re struggling to decide how to start your paper, that is how to write the introduction, imagine that you are giving your paper to a friend or colleague. What would they want to know about what your write-up is about and why they should read it?</p>
-<p>When I was in high school, my English teacher, Ms.&nbsp;Sinard advised us to start every essay with “When”, “If”, or “Although”. It’s not bad advice, especially if you’re stuck.</p>
+<p>Below, I use the code that accompanies the <code>anscombe</code> package verbatim, slightly reordered to plot first.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ff <span class="ot">&lt;-</span> y <span class="sc">~</span> x</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>mods <span class="ot">&lt;-</span> <span class="fu">setNames</span>(<span class="fu">as.list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">paste0</span>(<span class="st">"lm"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  ff[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">paste0</span>(<span class="fu">c</span>(<span class="st">"y"</span>,<span class="st">"x"</span>), i), as.name)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="do">## or   ff[[2]] &lt;- as.name(paste0("y", i))</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">##      ff[[3]] &lt;- as.name(paste0("x", i))</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  mods[[i]] <span class="ot">&lt;-</span> lmi <span class="ot">&lt;-</span> <span class="fu">lm</span>(ff, <span class="at">data =</span> anscombe)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">anova</span>(lmi))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: y1
+          Df Sum Sq Mean Sq F value  Pr(&gt;F)   
+x1         1 27.510 27.5100   17.99 0.00217 **
+Residuals  9 13.763  1.5292                   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Analysis of Variance Table
+
+Response: y2
+          Df Sum Sq Mean Sq F value   Pr(&gt;F)   
+x2         1 27.500 27.5000  17.966 0.002179 **
+Residuals  9 13.776  1.5307                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Analysis of Variance Table
+
+Response: y3
+          Df Sum Sq Mean Sq F value   Pr(&gt;F)   
+x3         1 27.470 27.4700  17.972 0.002176 **
+Residuals  9 13.756  1.5285                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Analysis of Variance Table
+
+Response: y4
+          Df Sum Sq Mean Sq F value   Pr(&gt;F)   
+x4         1 27.490 27.4900  18.003 0.002165 **
+Residuals  9 13.742  1.5269                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ff <span class="ot">&lt;-</span> y <span class="sc">~</span> x</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>mods <span class="ot">&lt;-</span> <span class="fu">setNames</span>(<span class="fu">as.list</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">paste0</span>(<span class="st">"lm"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  ff[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">paste0</span>(<span class="fu">c</span>(<span class="st">"y"</span>,<span class="st">"x"</span>), i), as.name)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="do">## or   ff[[2]] &lt;- as.name(paste0("y", i))</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">##      ff[[3]] &lt;- as.name(paste0("x", i))</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  mods[[i]] <span class="ot">&lt;-</span> lmi <span class="ot">&lt;-</span> <span class="fu">lm</span>(ff, <span class="at">data =</span> anscombe)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print(anova(lmi))</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>op <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fl">0.1</span><span class="sc">+</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">1</span>), <span class="at">oma =</span>  <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  ff[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">paste0</span>(<span class="fu">c</span>(<span class="st">"y"</span>,<span class="st">"x"</span>), i), as.name)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(ff, <span class="at">data =</span> anscombe, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">bg =</span> <span class="st">"orange"</span>, <span class="at">cex =</span> <span class="fl">1.2</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">19</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">13</span>))</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">abline</span>(mods[[i]], <span class="at">col =</span> <span class="st">"blue"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="st">"Anscombe's 4 Regression data sets"</span>, <span class="at">outer =</span> <span class="cn">TRUE</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-anscombe-quartet" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="plotting-degrees-of-freedom_files/figure-html/fig-anscombe-quartet-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: <strong>?(caption)</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Here are the summary statistics for these pairs.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anscombe)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       x1             x2             x3             x4           y1        
+ Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  
+ 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  
+ Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  
+ Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  
+ 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  
+ Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  
+       y2              y3              y4        
+ Min.   :3.100   Min.   : 5.39   Min.   : 5.250  
+ 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  
+ Median :8.140   Median : 7.11   Median : 7.040  
+ Mean   :7.501   Mean   : 7.50   Mean   : 7.501  
+ 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  
+ Max.   :9.260   Max.   :12.74   Max.   :12.500  </code></pre>
 </div>
 </div>
 </section>
-<section id="submit" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="submit">Submit</h2>
-<p>A 2-3 page (double-spaced) paper describing your findings in Microsoft Word format using the following file-naming convention:</p>
-<p><code>&lt;lastname&gt;-&lt;firstname&gt;-PSYCH490.009-ex01.docx</code>, where you substitute your last name for <lastname> and your first name for <firstname>. If there are two authors, use both of your last names. If Dr.&nbsp;Gilmore was submitting a paper, it would look like this: <code>gilmore-rick-PSYCH490.009-ex01.docx</code>.</firstname></lastname></p>
-<p>Here is the Canvas dropbox for the assignment:</p>
-<p><a href="https://psu.instructure.com/courses/2280122/assignments/15452006" class="uri">https://psu.instructure.com/courses/2280122/assignments/15452006</a></p>
-<p>Please use the APA format for your paper. I found the following template document that would be a very good start:</p>
-<p><a href="https://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy" class="uri">https://docs.google.com/document/d/1IIKwtH7eVXIkQMz4FwMuKol6hMDT3ra9/copy</a></p>
+<section id="degrees-of-freedom" class="level2">
+<h2 class="anchored" data-anchor-id="degrees-of-freedom">Degrees of freedom</h2>
+<p>One way to think about what’s going on here is that we analysts want an efficient way to summarize complex sets of data. Statistics like the mean or median, standard deviation, and correlation often do that. If a big set of data is well described by one of these statistics, then we’ve saved ourselves a lot of time and headache. If we think about a summary of some dataset as having <span class="math inline">\(m\)</span> degrees of freedom, what we mean is that we only need <span class="math inline">\(m\)</span> numbers for the summary. So, if we summarize a big dataset with the mean, then our summary (or model) has only one degree of freedom. If we include the standard deviation, then our summary has two degrees of freedom. If we use a linear regression to predict <code>y ~ x</code> then we usually have a slope estimate and an intercept estimate, or two degrees of freedom.</p>
+<p>If we’re summarizing a raw dataset with <span class="math inline">\(n=142\)</span> points in <code>X</code> and <span class="math inline">\(n=142\)</span> datapoints in <code>Y</code> like the <code>datasauRus</code> sets above, being able to summarize with just a few numbers (degrees of freedom) is powerful and efficient. And in general, we analysts favor more parsimonious models of data–those with fewer degrees of freedom.</p>
+<p>The problem arises when our simple models with few degrees of freedom don’t really capture important information about datasets, or when they persuade us to think (wrongly) that datasets with the same summary statistics are necessarily comparable. They might be, but they might not be. We have to look at the data–plot it–and confirm that we haven’t lost information in simplifying a dataset with a small number of statistics. The <code>datasauRus</code> and <code>anscombe</code> plots show us perverse situations when the small degree of freedom summaries are deeply misleading.</p>
+<p>The converse is also true. We can describe a dataset increasingly precisely with a large number of degrees of freedom. For example, imagine that our model of one of the <code>datasauRus</code> sets has <span class="math inline">\(2*n\)</span> degrees of freedom, where <span class="math inline">\(n=142\)</span>. If those 284 numbers are equal to the data points themselves, our summary has captured the data exactly. But we haven’t really gained anything, have we? We’ve just redescribed the data without reducing it to a summary with fewer degrees of freedom than existed in the first place. So, the best summaries (models) of data are small (in the number of degrees of freedom), but not too small.</p>
+</section>
+<section id="researcher-degrees-of-freedom" class="level2">
+<h2 class="anchored" data-anchor-id="researcher-degrees-of-freedom">Researcher degrees of freedom</h2>
+<p>When <span class="citation" data-cites="simmons_false-positive_2011">(<a href="#ref-simmons_false-positive_2011" role="doc-biblioref">Simmons, Nelson, &amp; Simonsohn, 2011</a>)</span> discuss ‘researcher degrees of freedom’, they extend these ideas in a new direction. How many steps (degrees of freedom) did the analysts take to reach their conclusions? Ideally, as few as possible, and certainly far less than the number of data points.</p>
+<p>So, how many researcher degrees of freedom are too many? That’s a judgment call. But whatever you determine, justify your argument.</p>
 
 
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
-<div id="ref-Carey2020-ut" class="csl-entry" role="listitem">
-Carey, M. A., Steiner, K. L., &amp; Petri, W. A., Jr. (2020). Ten simple rules for reading a scientific paper. <em>PLoS <span>C</span>omputational <span>B</span>iology</em>, <em>16</em>(7), e1008032. <a href="https://doi.org/10.1371/journal.pcbi.1008032">https://doi.org/10.1371/journal.pcbi.1008032</a>
+<div id="ref-Anscombe1973-ag" class="csl-entry" role="listitem">
+Anscombe, F. J. (1973). Graphs in statistical analysis. <em>The American Statistician</em>, <em>27</em>(1), 17–21. Retrieved from <a href="https://www.sjsu.edu/faculty/gerstman/StatPrimer/anscombe1973.pdf">https://www.sjsu.edu/faculty/gerstman/StatPrimer/anscombe1973.pdf</a>
+</div>
+<div id="ref-datasauRus-2022" class="csl-entry" role="listitem">
+Davies, R., Locke, S., &amp; D’Agostino McGowan, L. (2022). <em>datasauRus: Datasets from the datasaurus dozen</em>. Retrieved from <a href="https://CRAN.R-project.org/package=datasauRus">https://CRAN.R-project.org/package=datasauRus</a>
+</div>
+<div id="ref-Matejka2017-kp" class="csl-entry" role="listitem">
+Matejka, J., &amp; Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In <em>Proceedings of the 2017 <span>CHI</span> conference on human factors in computing systems</em> (pp. 1290–1294). New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3025453.3025912">https://doi.org/10.1145/3025453.3025912</a>
+</div>
+<div id="ref-simmons_false-positive_2011" class="csl-entry" role="listitem">
+Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-<span>Positive</span> <span>Psychology</span>: <span>Undisclosed</span> <span>Flexibility</span> in <span>Data</span> <span>Collection</span> and <span>Analysis</span> <span>Allows</span> <span>Presenting</span> <span>Anything</span> as <span>Significant</span>. <em>Psychological Science</em>, <em>22</em>(11), 1359–1366. <a href="https://doi.org/10.1177/0956797611417632">https://doi.org/10.1177/0956797611417632</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
