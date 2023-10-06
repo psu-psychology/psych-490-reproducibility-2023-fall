@@ -220,6 +220,7 @@ title: "schedule"
 
 - [Due]{.orange_due}
     - [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd) write-up.
+- [Class notes](notes/wk07-2023-10-06.qmd)
 - Work session
     - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
 
