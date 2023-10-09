@@ -54,13 +54,17 @@ John, L. K., Loewenstein, G. & Prelec, D. (2012). Measuring the prevalence of qu
 - Paper *not* openly accessible.
 - Paper was accessible via authenticated access to PSU library.
 
-## [Results from @John2012-tk]
+---
 
-```{r, fig.cap="Table 1 from [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)", out.width="80%"}
-knitr::include_graphics("../include/img/john-2012-table-01.png")
-```
+![Table 1 from [@John2012-tk]](../include/img/john-2012-table-01.png)
 
->The two versions of the survey differed in the incentives they offered to respondents. In the Bayesian-truth-serum (BTS) condition, a scoring algorithm developed by one of the authors (Prelec, 2004) was used to provide incentives for truth telling. This algorithm uses respondents’ answers about their own behavior and their estimates of the sample distribution of answers as inputs in a truth-rewarding scoring formula. Because the survey was anonymous, compensation could not be directly linked to individual scores. 
+---
+
+>The two versions of the survey differed in the incentives they offered to respondents. In the Bayesian-truth-serum (BTS) condition, a scoring algorithm developed by one of the authors (Prelec, 2004) was used to provide incentives for truth telling. This algorithm uses respondents’ answers about their own...
+
+---
+
+>...behavior and their estimates of the sample distribution of answers as inputs in a truth-rewarding scoring formula. Because the survey was anonymous, compensation could not be directly linked to individual scores. 
 
 ---
 
@@ -68,7 +72,11 @@ knitr::include_graphics("../include/img/john-2012-table-01.png")
 
 ---
 
->Respondents were not given the details of the scoring system but were told that it was based on an algorithm published in Science and were given a link to the article. There was no deception: Respondents’ BTS scores determined our contributions to the five charities. Respondents in the control condition were simply told that a charitable donation would be made on behalf of each respondent. (For details on the effect of the size of the incentive on response rates, see Participation Incentive Survey in the Supplemental Material.)
+>Respondents were not given the details of the scoring system but were told that it was based on an algorithm published in Science and were given a link to the article. There was no deception: Respondents’ BTS scores determined our contributions to the five charities. 
+
+---
+
+>Respondents in the control condition were simply told that a charitable donation would be made on behalf of each respondent. (For details on the effect of the size of the incentive on response rates, see Participation Incentive Survey in the Supplemental Material.)
 
 <p style="text-align:center;">
 [@John2012-tk]
@@ -76,13 +84,13 @@ knitr::include_graphics("../include/img/john-2012-table-01.png")
 
 ---
 
-```{r, fig.cap="Figure 1 from [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)", out.width="80%"}
+```{r, echo=FALSE, fig.cap="Figure 1 from [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)", out.width="80%"}
 knitr::include_graphics("../include/img/john-2012-fig-01.png")
 ```
 
 ---
 
-```{r, fig.cap="Figure 2 from [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)", out.width="80%"}
+```{r, echo=FALSE, fig.cap="Figure 2 from [@John2012-tk](http://dx.doi.org/10.1177/0956797611430953)", out.width="80%"}
 knitr::include_graphics("../include/img/john-2012-fig-02.png")
 ```
 

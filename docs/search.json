@@ -452,7 +452,7 @@
     "href": "notes/wk08-2023-10-09.html#results-from-john2012-tk",
     "title": "2023-10-09 Mon",
     "section": "(Results from John et al., 2012)",
-    "text": "(Results from John et al., 2012)\n\nknitr::include_graphics(\"../include/img/john-2012-table-01.png\")\n\n\nTable 1 from John et al. (2012)\nThe two versions of the survey differed in the incentives they offered to respondents. In the Bayesian-truth-serum (BTS) condition, a scoring algorithm developed by one of the authors (Prelec, 2004) was used to provide incentives for truth telling. This algorithm uses respondents’ answers about their own behavior and their estimates of the sample distribution of answers as inputs in a truth-rewarding scoring formula. Because the survey was anonymous, compensation could not be directly linked to individual scores."
+    "text": "(Results from John et al., 2012)\n\nTable 1 from (John et al., 2012)"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#reproducibility-notes-for-john2012-tk",
