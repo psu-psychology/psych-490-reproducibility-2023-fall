@@ -234,6 +234,7 @@ title: "schedule"
 
 - Read
     - [@John2012-tk]
+- (Optional) Enter your [Exercise 04](exercises/ex04-p-hacking.qmd) data into [this](https://docs.google.com/spreadsheets/d/1JI_Qih4wCzUrYTQYE3dpvVx2C7GdzfUZq0a3QhqQyeE/edit?usp=sharing) anonymous spreadsheet.
 - Discuss [Exercise 04: P-hack your way to scientific glory](exercises/ex04-p-hacking.qmd).
 - [Class notes](notes/wk08-2023-10-09.qmd)
 

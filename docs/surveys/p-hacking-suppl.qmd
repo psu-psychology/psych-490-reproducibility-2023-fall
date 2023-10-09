@@ -111,7 +111,20 @@ What view of the data would help us answer them?
 
 ## Visualize
 
-```{r hist-p-vals, out.width="80%"}
+### Party by prediction
+
+```{r fig-party-prediction-fall23, fig.cap="Party chosen by prediction: PSYCH 490 Fall 2023"}
+xtabs(formula = ~ party + prediction, data = p_hacking_fa23)
+
+p_hacking_fa23 |>
+  ggplot() +
+  aes(x = party, fill = prediction) +
+  geom_bar() +
+  theme_classic() +
+  ylab("n respondents")
+```
+
+```{r fig-hist-p-vals-fall23, fig.cap="Histogram of realized *p* values by party chosen: PSYCH 490 Fall 2023"}
 p_hacking_fa23 |>
   ggplot() +
   aes(x = p_value, fill = party) +
@@ -119,12 +132,19 @@ p_hacking_fa23 |>
   facet_grid(~ prediction)
 ```
 
-```{r p-vals-by-analysis, out.width="80%"}
+```{r fig-p-vals-by-analysis-fall23, fig.cap="*p*-values by number of analyses: PSYCH 490 Fall 2023"}
 p_hacking_fa23 |>
   ggplot() +
-  aes(x = analysis, y = p_value, color = as.factor(student), shape = party) +
-  geom_jitter() +
-  geom_line()
+  aes(
+    x = as.factor(analysis),
+    y = p_value,
+    color = as.factor(student),
+    shape = party,
+    group = as.factor(student)
+  ) +
+  geom_point() +
+  geom_line() +
+  xlab("Analysis number")
 ```
 
 ## How many different combinations of variables?
@@ -202,23 +222,19 @@ p_hacking_23 |>
 ```{r p-vals-by-analysis-sp-fa, out.width="80%"}
 p_hacking_23 |>
   ggplot() +
-  aes(x = analysis, y = p_value, color = semester, shape = party) +
-  geom_jitter() +
-  geom_line()
+  aes(
+    x = as.factor(analysis),
+    y = p_value,
+    color = as.factor(student),
+    shape = party,
+    group = as.factor(student)
+  ) +
+  geom_point() +
+  geom_line() +
+  xlab("Analysis number")
 ```
 
-## Other code
-
-```{r fig-party-prediction}
-xtabs(formula = ~ party + prediction, data = p_hacking_23)
-
-p_hacking_23 |>
-  ggplot() +
-  aes(x = party, fill = prediction) +
-  geom_bar() +
-  theme_classic() +
-  ylab("n respondents")
-```
+### Choices for 'political power'
 
 ```{r make-power-long}
 power_df <- p_hacking_23 |>
@@ -238,6 +254,8 @@ power_df |>
   knitr::kable(format="html") |>
   kableExtra::kable_classic()
 ```
+
+### Choices for 'economy'
 
 ```{r make-econ-long}
 econ_df <- p_hacking_23 |>

@@ -434,11 +434,17 @@ div.csl-indent {
   <li><a href="#data-entry" id="toc-data-entry" class="nav-link" data-scroll-target="#data-entry">Data entry</a></li>
   <li><a href="#data-gathering" id="toc-data-gathering" class="nav-link" data-scroll-target="#data-gathering">Data gathering</a></li>
   <li><a href="#questions-to-explore" id="toc-questions-to-explore" class="nav-link" data-scroll-target="#questions-to-explore">Questions to explore</a></li>
-  <li><a href="#visualize" id="toc-visualize" class="nav-link" data-scroll-target="#visualize">Visualize</a></li>
+  <li><a href="#visualize" id="toc-visualize" class="nav-link" data-scroll-target="#visualize">Visualize</a>
+  <ul class="collapse">
+  <li><a href="#party-by-prediction" id="toc-party-by-prediction" class="nav-link" data-scroll-target="#party-by-prediction">Party by prediction</a></li>
+  </ul></li>
   <li><a href="#how-many-different-combinations-of-variables" id="toc-how-many-different-combinations-of-variables" class="nav-link" data-scroll-target="#how-many-different-combinations-of-variables">How many different combinations of variables?</a></li>
   <li><a href="#combine-with-spring-2023-data" id="toc-combine-with-spring-2023-data" class="nav-link" data-scroll-target="#combine-with-spring-2023-data">Combine with Spring 2023 data?</a></li>
-  <li><a href="#combined-data" id="toc-combined-data" class="nav-link" data-scroll-target="#combined-data">Combined data</a></li>
-  <li><a href="#other-code" id="toc-other-code" class="nav-link" data-scroll-target="#other-code">Other code</a></li>
+  <li><a href="#combined-data" id="toc-combined-data" class="nav-link" data-scroll-target="#combined-data">Combined data</a>
+  <ul class="collapse">
+  <li><a href="#choices-for-political-power" id="toc-choices-for-political-power" class="nav-link" data-scroll-target="#choices-for-political-power">Choices for ‘political power’</a></li>
+  <li><a href="#choices-for-economy" id="toc-choices-for-economy" class="nav-link" data-scroll-target="#choices-for-economy">Choices for ‘economy’</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -602,23 +608,23 @@ Note
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(p_hacking_fa23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [1 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ student           : num 0
- $ analysis          : num 1
- $ party             : chr "democrats"
- $ prediction        : chr "worse"
- $ power_president   : logi FALSE
- $ power_governors   : logi FALSE
- $ power_senators    : logi TRUE
- $ power_reps        : logi TRUE
- $ econ_employment   : logi TRUE
- $ econ_inflation    : logi FALSE
- $ econ_gdp          : logi FALSE
- $ econ_stocks       : logi TRUE
- $ factor_in_power   : logi FALSE
- $ exclude_recessions: logi FALSE
- $ p_value           : num 0.06
- $ publishable       : chr "no"
+<pre><code>spc_tbl_ [13 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ student           : num [1:13] 0 12 37 37 37 12 66 66 66 94 ...
+ $ analysis          : num [1:13] 1 1 1 2 3 2 3 2 1 1 ...
+ $ party             : chr [1:13] "democrats" "republicans" "republicans" "democrats" ...
+ $ prediction        : chr [1:13] "worse" "better" "better" "better" ...
+ $ power_president   : logi [1:13] FALSE TRUE FALSE FALSE TRUE TRUE ...
+ $ power_governors   : logi [1:13] FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ power_senators    : logi [1:13] TRUE TRUE TRUE FALSE FALSE TRUE ...
+ $ power_reps        : logi [1:13] TRUE TRUE TRUE TRUE FALSE TRUE ...
+ $ econ_employment   : logi [1:13] TRUE FALSE TRUE TRUE TRUE FALSE ...
+ $ econ_inflation    : logi [1:13] FALSE TRUE FALSE TRUE TRUE TRUE ...
+ $ econ_gdp          : logi [1:13] FALSE FALSE FALSE TRUE FALSE TRUE ...
+ $ econ_stocks       : logi [1:13] TRUE TRUE TRUE FALSE FALSE TRUE ...
+ $ factor_in_power   : logi [1:13] FALSE FALSE FALSE TRUE FALSE FALSE ...
+ $ exclude_recessions: logi [1:13] FALSE TRUE FALSE TRUE FALSE TRUE ...
+ $ p_value           : num [1:13] 0.06 0.01 0.01 0.07 0.01 0.27 0.01 0.36 0.01 0.03 ...
+ $ publishable       : chr [1:13] "no" "yes" "yes" "no" ...
  - attr(*, "spec")=
   .. cols(
   ..   student = col_double(),
@@ -667,30 +673,69 @@ Note
 </section>
 <section id="visualize" class="level2">
 <h2 class="anchored" data-anchor-id="visualize">Visualize</h2>
+<section id="party-by-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="party-by-prediction">Party by prediction</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> p_value, <span class="at">fill =</span> party) <span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> prediction)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="at">formula =</span> <span class="sc">~</span> party <span class="sc">+</span> prediction, <span class="at">data =</span> p_hacking_fa23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             prediction
+party         better worse
+  democrats        5     1
+  republicans      4     3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> party, <span class="at">fill =</span> prediction) <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"n respondents"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="p-hacking-suppl_files/figure-html/hist-p-vals-1.png" class="img-fluid" style="width:80.0%"></p>
+<div id="fig-party-prediction-fall23" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p-hacking-suppl_files/figure-html/fig-party-prediction-fall23-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Party chosen by prediction: PSYCH 490 Fall 2023</figcaption>
+</figure>
+</div>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> analysis, <span class="at">y =</span> p_value, <span class="at">color =</span> <span class="fu">as.factor</span>(student), <span class="at">shape =</span> party) <span class="sc">+</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_line()`: Each group consists of only one observation.
-ℹ Do you need to adjust the group aesthetic?</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> p_value, <span class="at">fill =</span> party) <span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> prediction)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="p-hacking-suppl_files/figure-html/p-vals-by-analysis-1.png" class="img-fluid" style="width:80.0%"></p>
+<div id="fig-hist-p-vals-fall23" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p-hacking-suppl_files/figure-html/fig-hist-p-vals-fall23-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Histogram of realized <em>p</em> values by party chosen: PSYCH 490 Fall 2023</figcaption>
+</figure>
 </div>
 </div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">as.factor</span>(analysis),</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> p_value,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="fu">as.factor</span>(student),</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> party,</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">group =</span> <span class="fu">as.factor</span>(student)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Analysis number"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-p-vals-by-analysis-fall23" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p-hacking-suppl_files/figure-html/fig-p-vals-by-analysis-fall23-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: <em>p</em>-values by number of analyses: PSYCH 490 Fall 2023</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="how-many-different-combinations-of-variables" class="level2">
 <h2 class="anchored" data-anchor-id="how-many-different-combinations-of-variables">How many different combinations of variables?</h2>
@@ -698,7 +743,7 @@ Note
 <p>There are <span class="math inline">\(n=4\)</span> measures of political control; <span class="math inline">\(n=4\)</span> measures of economic performance; <span class="math inline">\(n=2\)</span> ‘other’ factors; <span class="math inline">\(n=2\)</span> prediction choices; and <span class="math inline">\(n=2\)</span> political parties to focus on.</p>
 <p>We can use the <code>combinat</code> package to help us figure this out.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1]   [,2]  [,3]     [,4]   
 [1,] "pres" "gov" "senate" "house"</code></pre>
@@ -707,7 +752,7 @@ Note
 <p>This shows us the number of ways we can pick a single political measure from among the 4 choices. We see that there are 4 ways.</p>
 <p>The next function shows us the number of ways to pick two measures.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1]   [,2]     [,3]    [,4]     [,5]    [,6]    
 [1,] "pres" "pres"   "pres"  "gov"    "gov"   "senate"
@@ -716,7 +761,7 @@ Note
 </div>
 <p>There are 6 columns of two, so there must be 6 different ways to pick two measures.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>combinat<span class="sc">::</span><span class="fu">combn</span>(<span class="fu">c</span>(<span class="st">'pres'</span>, <span class="st">'gov'</span>, <span class="st">'senate'</span>, <span class="st">'house'</span>), <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1]     [,2]    [,3]     [,4]    
 [1,] "pres"   "pres"  "pres"   "gov"   
@@ -729,7 +774,7 @@ Note
 <p>If we add these up ‘4 + 6 + 4 + 1’ = 15 we get the number of different choices we can make (15) about how many combinations of political power measures are possible.</p>
 <p>Since there are also 4 different choices of economic performance measures, we know that there are 15 ways to pick these. Now we can calculate how many different possible combinations of variables there are.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>n_combos <span class="ot">&lt;-</span> <span class="dv">15</span><span class="sc">*</span><span class="dv">15</span><span class="sc">*</span><span class="dv">2</span><span class="sc">*</span><span class="dv">2</span><span class="sc">*</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>n_combos <span class="ot">&lt;-</span> <span class="dv">15</span><span class="sc">*</span><span class="dv">15</span><span class="sc">*</span><span class="dv">2</span><span class="sc">*</span><span class="dv">2</span><span class="sc">*</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We multiply because each of the choices (political power, economic performance, party, better or worse is independent).</p>
 <p>So, there are <span class="math inline">\(n=\)</span> 1800 of variables we could have chosen. How does this impact the conclusions we can and should draw?</p>
@@ -738,7 +783,7 @@ Note
 <h2 class="anchored" data-anchor-id="combine-with-spring-2023-data">Combine with Spring 2023 data?</h2>
 <p>We did the same exercise in Spring 2023. Let’s combine our data with theirs.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_download</span>(<span class="at">file =</span> <span class="st">"PSYCH 490.002 2023 P-hacking"</span>, <span class="at">path =</span> <span class="st">"csv/p-hacking-sp23.csv"</span>, <span class="at">type =</span> <span class="st">'csv'</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_download</span>(<span class="at">file =</span> <span class="st">"PSYCH 490.002 2023 P-hacking"</span>, <span class="at">path =</span> <span class="st">"csv/p-hacking-sp23.csv"</span>, <span class="at">type =</span> <span class="st">'csv'</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>File downloaded:</code></pre>
 </div>
@@ -754,78 +799,61 @@ Note
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>p_hacking_sp23 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"csv/p-hacking-sp23.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>p_hacking_sp23<span class="sc">$</span>semester <span class="ot">=</span> <span class="st">"sp23"</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23<span class="sc">$</span>semester <span class="ot">=</span> <span class="st">"fa23"</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(p_hacking_fa23, p_hacking_sp23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>p_hacking_sp23 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"csv/p-hacking-sp23.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>p_hacking_sp23<span class="sc">$</span>semester <span class="ot">=</span> <span class="st">"sp23"</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23<span class="sc">$</span>semester <span class="ot">=</span> <span class="st">"fa23"</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(p_hacking_fa23, p_hacking_sp23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="combined-data" class="level2">
 <h2 class="anchored" data-anchor-id="combined-data">Combined data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="sc">|&gt;</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> p_value, <span class="at">fill =</span> party) <span class="sc">+</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> prediction)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="sc">|&gt;</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> p_value, <span class="at">fill =</span> party) <span class="sc">+</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span> prediction)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="p-hacking-suppl_files/figure-html/hist-p-vals-sp-fa-1.png" class="img-fluid" style="width:80.0%"></p>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="sc">|&gt;</span></span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> analysis, <span class="at">y =</span> p_value, <span class="at">color =</span> semester, <span class="at">shape =</span> party) <span class="sc">+</span></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="sc">|&gt;</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">as.factor</span>(analysis),</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> p_value,</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="fu">as.factor</span>(student),</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> party,</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">group =</span> <span class="fu">as.factor</span>(student)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Analysis number"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="p-hacking-suppl_files/figure-html/p-vals-by-analysis-sp-fa-1.png" class="img-fluid" style="width:80.0%"></p>
 </div>
 </div>
-</section>
-<section id="other-code" class="level2">
-<h2 class="anchored" data-anchor-id="other-code">Other code</h2>
+<section id="choices-for-political-power" class="level3">
+<h3 class="anchored" data-anchor-id="choices-for-political-power">Choices for ‘political power’</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="at">formula =</span> <span class="sc">~</span> party <span class="sc">+</span> prediction, <span class="at">data =</span> p_hacking_23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>             prediction
-party         better worse
-  democrats       14     4
-  republicans      2     4</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>p_hacking_23 <span class="sc">|&gt;</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> party, <span class="at">fill =</span> prediction) <span class="sc">+</span></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"n respondents"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="fig-party-prediction" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="p-hacking-suppl_files/figure-html/fig-party-prediction-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: <strong>?(caption)</strong></figcaption>
-</figure>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>power_df <span class="ot">&lt;-</span> p_hacking_23 <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">'power_'</span>), </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"political_positions"</span>, </span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"pol_pos_selected"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">political_positions =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="at">string =</span> political_positions,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">pattern =</span> <span class="st">"power_"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>power_df <span class="ot">&lt;-</span> p_hacking_23 <span class="sc">|&gt;</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">'power_'</span>), </span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"political_positions"</span>, </span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"pol_pos_selected"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">political_positions =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="at">string =</span> political_positions,</span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">pattern =</span> <span class="st">"power_"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>power_df <span class="sc">|&gt;</span> </span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(party, prediction, political_positions) <span class="sc">|&gt;</span></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">n_preds =</span> <span class="fu">sum</span>(<span class="fu">as.numeric</span>(pol_pos_selected))) <span class="sc">|&gt;</span></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(n_preds)) <span class="sc">|&gt;</span></span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format=</span><span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>power_df <span class="sc">|&gt;</span> </span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(party, prediction, political_positions) <span class="sc">|&gt;</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">n_preds =</span> <span class="fu">sum</span>(<span class="fu">as.numeric</span>(pol_pos_selected))) <span class="sc">|&gt;</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(n_preds)) <span class="sc">|&gt;</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format=</span><span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'party', 'prediction'. You can override
 using the `.groups` argument.</code></pre>
@@ -862,7 +890,7 @@ better
 president
 </td>
 <td style="text-align:right;">
-14
+18
 </td>
 </tr>
 <tr>
@@ -876,7 +904,7 @@ better
 governors
 </td>
 <td style="text-align:right;">
-9
+11
 </td>
 </tr>
 <tr>
@@ -890,7 +918,7 @@ better
 senators
 </td>
 <td style="text-align:right;">
-8
+10
 </td>
 </tr>
 <tr>
@@ -904,7 +932,35 @@ better
 reps
 </td>
 <td style="text-align:right;">
-7
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+better
+</td>
+<td style="text-align:left;">
+reps
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+better
+</td>
+<td style="text-align:left;">
+senators
+</td>
+<td style="text-align:right;">
+5
 </td>
 </tr>
 <tr>
@@ -940,6 +996,20 @@ senators
 republicans
 </td>
 <td style="text-align:left;">
+better
+</td>
+<td style="text-align:left;">
+president
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
 worse
 </td>
 <td style="text-align:left;">
@@ -947,6 +1017,34 @@ president
 </td>
 <td style="text-align:right;">
 4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+worse
+</td>
+<td style="text-align:left;">
+reps
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+better
+</td>
+<td style="text-align:left;">
+governors
+</td>
+<td style="text-align:right;">
+2
 </td>
 </tr>
 <tr>
@@ -968,62 +1066,6 @@ senators
 republicans
 </td>
 <td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-governors
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-president
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-reps
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-senators
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
 worse
 </td>
 <td style="text-align:left;">
@@ -1056,20 +1098,6 @@ worse
 </td>
 <td style="text-align:left;">
 president
-</td>
-<td style="text-align:right;">
-0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-worse
-</td>
-<td style="text-align:left;">
-reps
 </td>
 <td style="text-align:right;">
 0
@@ -1078,26 +1106,29 @@ reps
 </tbody>
 
 </table>
-<figcaption class="figure-caption">Figure&nbsp;2: Respondents’ choices of political offices in their analyses</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4: Respondents’ choices of political offices in their analyses</figcaption>
 </figure>
 </div>
 </div>
+</section>
+<section id="choices-for-economy" class="level3">
+<h3 class="anchored" data-anchor-id="choices-for-economy">Choices for ‘economy’</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>econ_df <span class="ot">&lt;-</span> p_hacking_23 <span class="sc">|&gt;</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">'econ_'</span>), </span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"econ_measures"</span>, </span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"econ_meas_selected"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">econ_measures =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="at">string =</span> econ_measures,</span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">pattern =</span> <span class="st">"econ_"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>econ_df <span class="ot">&lt;-</span> p_hacking_23 <span class="sc">|&gt;</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">'econ_'</span>), </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"econ_measures"</span>, </span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"econ_meas_selected"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">|&gt;</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">econ_measures =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="at">string =</span> econ_measures,</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">pattern =</span> <span class="st">"econ_"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>econ_df <span class="sc">|&gt;</span> </span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(party, prediction, econ_measures) <span class="sc">|&gt;</span></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">n_preds =</span> <span class="fu">sum</span>(<span class="fu">as.numeric</span>(econ_meas_selected))) <span class="sc">|&gt;</span></span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(n_preds)) <span class="sc">|&gt;</span></span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format=</span><span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>econ_df <span class="sc">|&gt;</span> </span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(party, prediction, econ_measures) <span class="sc">|&gt;</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">n_preds =</span> <span class="fu">sum</span>(<span class="fu">as.numeric</span>(econ_meas_selected))) <span class="sc">|&gt;</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(n_preds)) <span class="sc">|&gt;</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format=</span><span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'party', 'prediction'. You can override
 using the `.groups` argument.</code></pre>
@@ -1134,7 +1165,7 @@ better
 employment
 </td>
 <td style="text-align:right;">
-12
+17
 </td>
 </tr>
 <tr>
@@ -1148,7 +1179,7 @@ better
 gdp
 </td>
 <td style="text-align:right;">
-12
+15
 </td>
 </tr>
 <tr>
@@ -1162,7 +1193,7 @@ better
 inflation
 </td>
 <td style="text-align:right;">
-7
+10
 </td>
 </tr>
 <tr>
@@ -1176,7 +1207,49 @@ better
 stocks
 </td>
 <td style="text-align:right;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+worse
+</td>
+<td style="text-align:left;">
+employment
+</td>
+<td style="text-align:right;">
 7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+worse
+</td>
+<td style="text-align:left;">
+inflation
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+republicans
+</td>
+<td style="text-align:left;">
+worse
+</td>
+<td style="text-align:left;">
+gdp
+</td>
+<td style="text-align:right;">
+5
 </td>
 </tr>
 <tr>
@@ -1212,7 +1285,7 @@ stocks
 republicans
 </td>
 <td style="text-align:left;">
-worse
+better
 </td>
 <td style="text-align:left;">
 employment
@@ -1226,10 +1299,10 @@ employment
 republicans
 </td>
 <td style="text-align:left;">
-worse
+better
 </td>
 <td style="text-align:left;">
-inflation
+stocks
 </td>
 <td style="text-align:right;">
 4
@@ -1240,10 +1313,10 @@ inflation
 republicans
 </td>
 <td style="text-align:left;">
-worse
+better
 </td>
 <td style="text-align:left;">
-gdp
+inflation
 </td>
 <td style="text-align:right;">
 3
@@ -1257,7 +1330,7 @@ republicans
 better
 </td>
 <td style="text-align:left;">
-employment
+gdp
 </td>
 <td style="text-align:right;">
 2
@@ -1265,34 +1338,6 @@ employment
 </tr>
 <tr>
 <td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-inflation
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-stocks
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 democrats
 </td>
 <td style="text-align:left;">
@@ -1314,20 +1359,6 @@ worse
 </td>
 <td style="text-align:left;">
 inflation
-</td>
-<td style="text-align:right;">
-0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-republicans
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-gdp
 </td>
 <td style="text-align:right;">
 0
@@ -1350,13 +1381,14 @@ stocks
 </tbody>
 
 </table>
-<figcaption class="figure-caption">Figure&nbsp;3: Respondents’ choices of economic measures in their analyses</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;5: Respondents’ choices of economic measures in their analyses</figcaption>
 </figure>
 </div>
 </div>
 
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
