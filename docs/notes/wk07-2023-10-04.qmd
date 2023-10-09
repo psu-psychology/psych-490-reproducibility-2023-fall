@@ -260,6 +260,9 @@ When are those assumptions justified and when might they not be?
   - Discuss [@simmons_false-positive_2011]
 - (Brief) Work session
   - Set-up for discussion of [*p*-hacking exercise](exercises/ex04-p-hacking.qmd) on [Monday](wk08-2023-10-09.qmd).
+  
+---
+
 - (Optional) Work session
   - [Final project proposals](exercises/final-project.qmd), [due Friday, October 13]{.orange_due}.
 

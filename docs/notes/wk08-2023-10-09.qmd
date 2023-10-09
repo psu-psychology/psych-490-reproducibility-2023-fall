@@ -96,18 +96,6 @@ Do the data persuade you that it made respondents more honest?
 
 :::
 
-## Survey of $n=3,247$ NIH-funded scientists
-
-![Table 1 from @Martinson2005-fk](../include/img/martinson-etal-2005-table-1.png){fig-align="center" height="75%"}
-
-## Meta-analysis [@Xie2021-us]
-
-![Self-reported prevalence; Figure 2 from @Xie2021-us](../include/img/xie-etal-2021-fig-2.png){fig-align="center"}
-
----
-
-![Observed prevalence; Figure 3 from @Xie2021-us](../include/img/xie-etal-2021-fig-3.png){fig-align="center"}
-
 ## Reproducibility notes for [@John2012-tk]
 
 >Supplemental Material
@@ -135,6 +123,20 @@ knitr::include_url("http://pss.sagepub.com/content/by/supplemental-data", height
 ---
 
 ![Supplementary material for [@John2012-tk]](../include/img/john-etal-2012-items.png){fig-align="center"}
+
+# More evidence about prevalance of QRPs
+
+## Survey of $n=3,247$ NIH-funded scientists
+
+![Table 1 from @Martinson2005-fk](../include/img/martinson-etal-2005-table-1.png){fig-align="center" height="75%"}
+
+## Meta-analysis [@Xie2021-us]
+
+![Self-reported prevalence; Figure 2 from @Xie2021-us](../include/img/xie-etal-2021-fig-2.png){fig-align="center"}
+
+---
+
+![Observed prevalence; Figure 3 from @Xie2021-us](../include/img/xie-etal-2021-fig-3.png){fig-align="center"}
 
 # Evaluating *p*-hacking
 
