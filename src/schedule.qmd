@@ -231,8 +231,8 @@ title: "schedule"
 - [Assignment]{.green_assigned}
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd)
 - Read
-    - [@Rosenthal1979-zi]
-    - [@Franco2014-yu]
+    - (Skim) [@Rosenthal1979-zi]. [PDF on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=154851611)
+    - (Optional) [@Franco2014-yu]
 - [Class notes](notes/wk08-2023-10-11.qmd)
 
 ### Friday, October 13 {-}
