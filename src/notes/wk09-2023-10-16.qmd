@@ -1,6 +1,6 @@
 ---
 title: "2023-10-16 Mon"
-subtitle: "Bias"
+subtitle: "Negligence"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

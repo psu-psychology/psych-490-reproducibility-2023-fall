@@ -258,7 +258,7 @@ flowchart LR
 
 ---
 
-More typically, we think that feelings cause behaviors.
+A folk psychology view might hold that feelings cause behaviors.
 
 ```{mermaid}
 flowchart LR
@@ -266,11 +266,14 @@ flowchart LR
   C((Physiology))
 ```
 
+Here, the role of physiology in this process isn't clear.
+
 ---
 
 Or that feelings and physiological responses (e.g., hormones like cortisol and testosterone) together influence behaviors.
 
 ```{mermaid}
+%%| width: 80%
 flowchart LR
   B(Feelings) -->A[Behaviors]
   C((Physiology)) -->A
@@ -278,14 +281,27 @@ flowchart LR
 
 ---
 
-Neuroscientists might argue that feelings are the *outcome* of physiological processes like hormone levels and nervous system activity. Also, physiological processes influence one another.
+Neuroscientists might argue that feelings are the *outcome* of physiological processes like hormone levels and nervous system activity.
 
 ```{mermaid}
+%%| fig-height: 6.5
 flowchart LR
   B(Feelings) -->A[Behaviors]
   C((Physiology)) -->A
-  C -->C
   C -->B
+```
+
+---
+
+And that physiological processes influence one another.
+
+```{mermaid}
+%%| fig-height: 6.5
+flowchart LR
+  B(Feelings) -->A[Behaviors]
+  C((Physiology)) -->A
+  C -->B
+  C -->C
 ```
 
 ---
@@ -293,6 +309,7 @@ flowchart LR
 To understand the full system of influences, we might need to look at a more complicated causal model. Here, behaviors influence and are influenced by physiology. Behaviors influence, and are influenced by feelings through influences on physiology. 
 
 ```{mermaid}
+%%| fig-height: 6.5
 flowchart LR
   C((Physiology)) -->A[Behaviors]
   C -->C
@@ -306,9 +323,10 @@ flowchart LR
 However, the evidence presented in [@Carney2010-gq](http://dx.doi.org/10.1177/0956797610383437) and  [@Ranehill2015-dj](http://dx.doi.org/10.1177/0956797614553946) show that 'posing' behavior influences feelings, but not (hormonal) physiology. 
 
 ```{mermaid}
+%%| fig-height: 6.5
 flowchart LR
   A[Posing] -->|Increases|B(Feelings)
-  B -->|?|C((Physiology))
+  A -->|No influence on|C((Physiology))
 ```
 
 ---
@@ -334,6 +352,12 @@ flowchart LR
 ::: {.callout-note}
 
 It can be useful to sketch an author's implicit causal model if that model is not stated explicitly.
+
+:::
+
+::: {.callout-note}
+
+Gilmore thinks that this interconnected network of plausible causal pathways is another reason why the behavioral and biological sciences are so challenging.
 
 :::
 

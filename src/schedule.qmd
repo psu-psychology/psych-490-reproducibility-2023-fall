@@ -261,9 +261,7 @@ title: "schedule"
 - Read
     - [@Ritchie2020-fm], Chapter 6
     - [@Carney2010-gq]
-    - (Optional) [@Ranehill2015-dj]()
-- Watch
-    - [@Cuddy2012-zx](https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are)
+    - (Optional) [@Ranehill2015-dj]
 - [Class notes](notes/wk09-2023-10-18.qmd)
  
 ### Friday, October 20 {-}
@@ -271,7 +269,7 @@ title: "schedule"
 *Work session: Exercise 05, Replication, Final Projects*
 
 - [Discuss draft]{.orange_due}
-    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
 - [Assignment]{.green_assigned}
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
 
@@ -282,7 +280,7 @@ title: "schedule"
 *Solutions*
 
 - [Final due]{.orange_due}
-    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size]() write-up
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
 - Read
     - [@munafo_manifesto_2017]
     - [@Begley2013-vm]
