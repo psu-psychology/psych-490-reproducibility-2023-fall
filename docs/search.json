@@ -354,21 +354,21 @@
     "href": "notes/wk09-2023-10-18.html#announcements",
     "title": "2023-10-18 Wed",
     "section": "Announcements",
-    "text": "Announcements\n\nDiscuss draft\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up"
+    "text": "Announcements\n\nDiscuss draft on Friday\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#today",
     "href": "notes/wk09-2023-10-18.html#today",
     "title": "2023-10-18 Wed",
     "section": "Today",
-    "text": "Today\nHype\n\nWatch\n\nCuddy (2012)\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) (Ranehill et al., 2015)\n\n\n\nThe New York Times published an article (Dominus (2017)) on the controversy surrounding Dr. Cuddy’s work called “When the Revolution Came for Amy Cuddy.”\nI considered reading this and discussing it, but I was more interested in the substantive claims made in the papers and in the talk.\nReading the Times’ story would make a great final project topic, however."
+    "text": "Today\nHype\n\nWatch\n\nCuddy (2012)\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) (Ranehill et al., 2015)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#ritchie2020-fm-chapter-6",
     "href": "notes/wk09-2023-10-18.html#ritchie2020-fm-chapter-6",
     "title": "2023-10-18 Wed",
     "section": "(Ritchie, 2020), Chapter 6",
-    "text": "(Ritchie, 2020), Chapter 6\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation\n\n“Churnalism”\n\nJournalists do not do their own investigations but repeat press releases\n\nPopular books (by scientists, too) can gloss over complexities, nuances\nPositive rhetoric/spin\nCounter-example from OPERA study of faster-than-light particle"
+    "text": "(Ritchie, 2020), Chapter 6\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#carney2010-gq",
@@ -382,7 +382,7 @@
     "href": "notes/wk09-2023-10-18.html#cuddy2012-zx",
     "title": "2023-10-18 Wed",
     "section": "Cuddy (2012)",
-    "text": "Cuddy (2012)\n\nAmy Cuddy’s TED talk: https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_areCitation data\nTalk viewed ~67 million times according to TED web page on 2023-03-01."
+    "text": "Cuddy (2012)\n\nAmy Cuddy’s TED talk: https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#ranehill2015-dj",
@@ -396,7 +396,7 @@
     "href": "notes/wk09-2023-10-18.html#exploring-logicalcausal-diagrams",
     "title": "2023-10-18 Wed",
     "section": "Exploring logical/causal diagrams",
-    "text": "Exploring logical/causal diagrams\nCausal diagrams are one tool to reveal an authors’ claims and assumptions.\n\n\n\n\n\nImplicit causal model tested\n\n\n\n\nMore typically, we think that feelings cause behaviors.\n\n\n\n\n\nConventional causal model\n\n\n\n\nOr that feelings and physiological responses (e.g., hormones like cortisol and testosterone) together influence behaviors.\n\n\n\n\n\nConventional causal model II\n\n\n\n\nNeuroscientists might argue that feelings are the outcome of physiological processes like hormone levels and nervous system activity. Also, physiological processes influence one another.\n\n\n\n\n\nNeuroscience-oriented causal model\n\n\n\n\nTo understand the full system of influences, we might need to look at a more complicated causal model. Here, behaviors influence and are influenced by physiology. Behaviors influence, and are influenced by feelings through influences on physiology. However, the evidence presented in Carney et al. (2010) and Ranehill et al. (2015) show that ‘posing’ behavior influences feelings, but not (hormonal) physiology. If the neuroscientific view is correct, there must be another route for behaviors to influence feeling through physiology. That route is probably nervous system activity.\n\n\n\n\n\nPlausible fully interactive causal model"
+    "text": "Exploring logical/causal diagrams\nCausal diagrams are one tool to reveal an authors’ claims and assumptions.\n\n\n\n\nflowchart LR\n  A[Behaviors] --&gt;B(Feelings)\n  A --&gt;C((Physiology))"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#references",
@@ -3267,5 +3267,96 @@
     "title": "2023-10-16 Mon",
     "section": "Definitions of",
     "text": "Definitions of\n\nnegligent\n\n\nnegligence from Mac OS dictionary app"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#methods",
+    "href": "notes/wk09-2023-10-18.html#methods",
+    "title": "2023-10-18 Wed",
+    "section": "Methods",
+    "text": "Methods\n\n\\(n=42\\) participants (26 female; age or other demographic characteristics?)\nAssigned into two groups (high power vs. low power)\nExperimenter posed bodies\nTwo different poses held for 1 min"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#results",
+    "href": "notes/wk09-2023-10-18.html#results",
+    "title": "2023-10-18 Wed",
+    "section": "Results",
+    "text": "Results\n\nCarney et al. (2010)"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#citation-data",
+    "href": "notes/wk09-2023-10-18.html#citation-data",
+    "title": "2023-10-18 Wed",
+    "section": "Citation data",
+    "text": "Citation data\nPaper cited ~1,590 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Power+posing%3A+brief+nonverbal+displays+affect+neuroendocrine+levels+and+risk+tolerance&btnG=\naccording to Google Scholar on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes",
+    "href": "notes/wk09-2023-10-18.html#reproducibility-notes",
+    "title": "2023-10-18 Wed",
+    "section": "Reproducibility notes",
+    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nPDF was available via authenticated access to PSU Libraries.\nNo data are shared; no code used to make the figures or conduct the analyses were shared."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#presentation-comments",
+    "href": "notes/wk09-2023-10-18.html#presentation-comments",
+    "title": "2023-10-18 Wed",
+    "section": "Presentation comments",
+    "text": "Presentation comments\n\nGilmore prefers graphs that show individual participant data points (see below)"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#citation-data-1",
+    "href": "notes/wk09-2023-10-18.html#citation-data-1",
+    "title": "2023-10-18 Wed",
+    "section": "Citation data",
+    "text": "Citation data\nTalk viewed ~69.5 million times according to TED web page on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#a-replication-attempt",
+    "href": "notes/wk09-2023-10-18.html#a-replication-attempt",
+    "title": "2023-10-18 Wed",
+    "section": "A replication attempt",
+    "text": "A replication attempt\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (2015). Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women [Review of Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women]. Psychological Science, 26(5), 653–656. journals.sagepub.com. https://doi.org/10.1177/0956797614553946"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#methods-1",
+    "href": "notes/wk09-2023-10-18.html#methods-1",
+    "title": "2023-10-18 Wed",
+    "section": "Methods",
+    "text": "Methods\n\nSampled \\(n=100\\) after power analysis; then sampled another 100.\n3 min pose durations\nParticipants modeled poses following computer instructions.\nNo deception."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#results-1",
+    "href": "notes/wk09-2023-10-18.html#results-1",
+    "title": "2023-10-18 Wed",
+    "section": "Results",
+    "text": "Results\n\nResults excerpt from (Ranehill et al., 2015)"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#citation-data-2",
+    "href": "notes/wk09-2023-10-18.html#citation-data-2",
+    "title": "2023-10-18 Wed",
+    "section": "Citation data",
+    "text": "Citation data\nPaper cited ~340 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women+%5BReview+of+Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women%5D&btnG=\naccording to Google Scholar on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
+    "href": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
+    "title": "2023-10-18 Wed",
+    "section": "Reproducibility notes",
+    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nThe PDF was available via authenticated access to PSU Libraries.\nThe PDF did not easily permit cutting and pasting of text, so it was hard to excerpt those for this document.\nThe HTML version of the article was unavailable, so I had to make screenshots of figures."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#presentation-comments-1",
+    "href": "notes/wk09-2023-10-18.html#presentation-comments-1",
+    "title": "2023-10-18 Wed",
+    "section": "Presentation comments",
+    "text": "Presentation comments\n\nExample of ‘spaghetti’ plot."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
+    "href": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
+    "title": "2023-10-18 Wed",
+    "section": "(Chapter 6 in Ritchie, 2020)",
+    "text": "(Chapter 6 in Ritchie, 2020)\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
   }
 ]
