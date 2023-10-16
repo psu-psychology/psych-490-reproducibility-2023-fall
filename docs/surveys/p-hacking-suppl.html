@@ -434,23 +434,23 @@ Note
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(p_hacking_fa23)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [15 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ student           : num [1:15] 0 12 37 37 37 12 66 66 66 94 ...
- $ analysis          : num [1:15] 1 1 1 2 3 2 3 2 1 1 ...
- $ party             : chr [1:15] "democrats" "republicans" "republicans" "democrats" ...
- $ prediction        : chr [1:15] "worse" "better" "better" "better" ...
- $ power_president   : logi [1:15] FALSE TRUE FALSE FALSE TRUE TRUE ...
- $ power_governors   : logi [1:15] FALSE FALSE FALSE FALSE FALSE FALSE ...
- $ power_senators    : logi [1:15] TRUE TRUE TRUE FALSE FALSE TRUE ...
- $ power_reps        : logi [1:15] TRUE TRUE TRUE TRUE FALSE TRUE ...
- $ econ_employment   : logi [1:15] TRUE FALSE TRUE TRUE TRUE FALSE ...
- $ econ_inflation    : logi [1:15] FALSE TRUE FALSE TRUE TRUE TRUE ...
- $ econ_gdp          : logi [1:15] FALSE FALSE FALSE TRUE FALSE TRUE ...
- $ econ_stocks       : logi [1:15] TRUE TRUE TRUE FALSE FALSE TRUE ...
- $ factor_in_power   : logi [1:15] FALSE FALSE FALSE TRUE FALSE FALSE ...
- $ exclude_recessions: logi [1:15] FALSE TRUE FALSE TRUE FALSE TRUE ...
- $ p_value           : num [1:15] 0.06 0.01 0.01 0.07 0.01 0.27 0.01 0.36 0.01 0.03 ...
- $ publishable       : chr [1:15] "no" "yes" "yes" "no" ...
+<pre><code>spc_tbl_ [16 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ student           : num [1:16] 0 12 37 37 37 12 66 66 66 94 ...
+ $ analysis          : num [1:16] 1 1 1 2 3 2 1 2 3 1 ...
+ $ party             : chr [1:16] "democrats" "republicans" "republicans" "democrats" ...
+ $ prediction        : chr [1:16] "worse" "better" "better" "better" ...
+ $ power_president   : logi [1:16] FALSE TRUE FALSE FALSE TRUE TRUE ...
+ $ power_governors   : logi [1:16] FALSE FALSE FALSE FALSE FALSE FALSE ...
+ $ power_senators    : logi [1:16] TRUE TRUE TRUE FALSE FALSE TRUE ...
+ $ power_reps        : logi [1:16] TRUE TRUE TRUE TRUE FALSE TRUE ...
+ $ econ_employment   : logi [1:16] TRUE FALSE TRUE TRUE TRUE FALSE ...
+ $ econ_inflation    : logi [1:16] FALSE TRUE FALSE TRUE TRUE TRUE ...
+ $ econ_gdp          : logi [1:16] FALSE FALSE FALSE TRUE FALSE TRUE ...
+ $ econ_stocks       : logi [1:16] TRUE TRUE TRUE FALSE FALSE TRUE ...
+ $ factor_in_power   : logi [1:16] FALSE FALSE FALSE TRUE FALSE FALSE ...
+ $ exclude_recessions: logi [1:16] FALSE TRUE FALSE TRUE FALSE TRUE ...
+ $ p_value           : num [1:16] 0.06 0.01 0.01 0.07 0.01 0.27 0.01 0.36 0.01 0.03 ...
+ $ publishable       : chr [1:16] "no" "yes" "yes" "no" ...
  - attr(*, "spec")=
   .. cols(
   ..   student = col_double(),
@@ -506,7 +506,7 @@ Note
 <div class="cell-output cell-output-stdout">
 <pre><code>             prediction
 party         better worse
-  democrats        5     1
+  democrats        6     1
   republicans      5     4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>p_hacking_fa23 <span class="sc">|&gt;</span></span>
@@ -716,7 +716,7 @@ better
 president
 </td>
 <td style="text-align:right;">
-18
+19
 </td>
 </tr>
 <tr>
@@ -730,7 +730,21 @@ better
 governors
 </td>
 <td style="text-align:right;">
-11
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+democrats
+</td>
+<td style="text-align:left;">
+better
+</td>
+<td style="text-align:left;">
+reps
+</td>
+<td style="text-align:right;">
+10
 </td>
 </tr>
 <tr>
@@ -745,20 +759,6 @@ senators
 </td>
 <td style="text-align:right;">
 10
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-democrats
-</td>
-<td style="text-align:left;">
-better
-</td>
-<td style="text-align:left;">
-reps
-</td>
-<td style="text-align:right;">
-9
 </td>
 </tr>
 <tr>
@@ -991,7 +991,7 @@ better
 employment
 </td>
 <td style="text-align:right;">
-17
+18
 </td>
 </tr>
 <tr>
@@ -1005,7 +1005,7 @@ better
 gdp
 </td>
 <td style="text-align:right;">
-15
+16
 </td>
 </tr>
 <tr>
@@ -1033,7 +1033,7 @@ better
 stocks
 </td>
 <td style="text-align:right;">
-8
+9
 </td>
 </tr>
 <tr>

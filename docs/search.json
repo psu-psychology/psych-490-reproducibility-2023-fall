@@ -137,7 +137,7 @@
     "href": "surveys/p-hacking-suppl.html#data-gathering",
     "title": "On p-hacking",
     "section": "Data gathering",
-    "text": "Data gathering\nFirst, I authenticate (sign-in) to Google using my Gmail account. If I haven’t logged in using this script recently, it will ask me to log-in again.\n\ngoogledrive::drive_auth(\"rick.o.gilmore@gmail.com\")\n\nThen I download the Google Sheet to a directory/folder called csv/ using the file name p-hacking-fa23.csv.\n\ngoogledrive::drive_download(file = \"PSYCH 490.009 2023 Fall P-hacking\", path = \"csv/p-hacking-fa23.csv\", type = 'csv', overwrite = TRUE)\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 2023 Fall P-hacking'\n  &lt;id: 1JI_Qih4wCzUrYTQYE3dpvVx2C7GdzfUZq0a3QhqQyeE&gt;\n\n\nSaved locally as:\n\n\n• 'csv/p-hacking-fa23.csv'\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhat does CSV mean?\nWhy are CSV files often used in data analysis?\nOne answer is that CSV files are inter-operable and largely reusable, two of the characteristics recommended for sharing data under the FAIR principles (Wilkinson et al., 2016).\n\n\nNext, I read the CSV file using the read_csv() function.\n\np_hacking_fa23 &lt;- read_csv(file = \"csv/p-hacking-fa23.csv\", show_col_types = FALSE)\n\n\n\n\n\n\n\nNote\n\n\n\nFunctions in R take inputs and deliver outputs. The inputs are file and show_col_types.\n\n\nThe output is an object called p_hacking. It is a table of data that I can refer to with that name.\nI like to use the ‘structure’ function or str() to see what the data look like.\n\n\n\n\n\n\nNote\n\n\n\nData is a plural noun. So, (when we don’t forget this) we say ‘The data are…’ not ‘The data is…’.\n\n\n\nstr(p_hacking_fa23)\n\nspc_tbl_ [15 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ student           : num [1:15] 0 12 37 37 37 12 66 66 66 94 ...\n $ analysis          : num [1:15] 1 1 1 2 3 2 3 2 1 1 ...\n $ party             : chr [1:15] \"democrats\" \"republicans\" \"republicans\" \"democrats\" ...\n $ prediction        : chr [1:15] \"worse\" \"better\" \"better\" \"better\" ...\n $ power_president   : logi [1:15] FALSE TRUE FALSE FALSE TRUE TRUE ...\n $ power_governors   : logi [1:15] FALSE FALSE FALSE FALSE FALSE FALSE ...\n $ power_senators    : logi [1:15] TRUE TRUE TRUE FALSE FALSE TRUE ...\n $ power_reps        : logi [1:15] TRUE TRUE TRUE TRUE FALSE TRUE ...\n $ econ_employment   : logi [1:15] TRUE FALSE TRUE TRUE TRUE FALSE ...\n $ econ_inflation    : logi [1:15] FALSE TRUE FALSE TRUE TRUE TRUE ...\n $ econ_gdp          : logi [1:15] FALSE FALSE FALSE TRUE FALSE TRUE ...\n $ econ_stocks       : logi [1:15] TRUE TRUE TRUE FALSE FALSE TRUE ...\n $ factor_in_power   : logi [1:15] FALSE FALSE FALSE TRUE FALSE FALSE ...\n $ exclude_recessions: logi [1:15] FALSE TRUE FALSE TRUE FALSE TRUE ...\n $ p_value           : num [1:15] 0.06 0.01 0.01 0.07 0.01 0.27 0.01 0.36 0.01 0.03 ...\n $ publishable       : chr [1:15] \"no\" \"yes\" \"yes\" \"no\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   student = col_double(),\n  ..   analysis = col_double(),\n  ..   party = col_character(),\n  ..   prediction = col_character(),\n  ..   power_president = col_logical(),\n  ..   power_governors = col_logical(),\n  ..   power_senators = col_logical(),\n  ..   power_reps = col_logical(),\n  ..   econ_employment = col_logical(),\n  ..   econ_inflation = col_logical(),\n  ..   econ_gdp = col_logical(),\n  ..   econ_stocks = col_logical(),\n  ..   factor_in_power = col_logical(),\n  ..   exclude_recessions = col_logical(),\n  ..   p_value = col_double(),\n  ..   publishable = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt;"
+    "text": "Data gathering\nFirst, I authenticate (sign-in) to Google using my Gmail account. If I haven’t logged in using this script recently, it will ask me to log-in again.\n\ngoogledrive::drive_auth(\"rick.o.gilmore@gmail.com\")\n\nThen I download the Google Sheet to a directory/folder called csv/ using the file name p-hacking-fa23.csv.\n\ngoogledrive::drive_download(file = \"PSYCH 490.009 2023 Fall P-hacking\", path = \"csv/p-hacking-fa23.csv\", type = 'csv', overwrite = TRUE)\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 2023 Fall P-hacking'\n  &lt;id: 1JI_Qih4wCzUrYTQYE3dpvVx2C7GdzfUZq0a3QhqQyeE&gt;\n\n\nSaved locally as:\n\n\n• 'csv/p-hacking-fa23.csv'\n\n\n\n\n\n\n\n\nNote\n\n\n\nWhat does CSV mean?\nWhy are CSV files often used in data analysis?\nOne answer is that CSV files are inter-operable and largely reusable, two of the characteristics recommended for sharing data under the FAIR principles (Wilkinson et al., 2016).\n\n\nNext, I read the CSV file using the read_csv() function.\n\np_hacking_fa23 &lt;- read_csv(file = \"csv/p-hacking-fa23.csv\", show_col_types = FALSE)\n\n\n\n\n\n\n\nNote\n\n\n\nFunctions in R take inputs and deliver outputs. The inputs are file and show_col_types.\n\n\nThe output is an object called p_hacking. It is a table of data that I can refer to with that name.\nI like to use the ‘structure’ function or str() to see what the data look like.\n\n\n\n\n\n\nNote\n\n\n\nData is a plural noun. So, (when we don’t forget this) we say ‘The data are…’ not ‘The data is…’.\n\n\n\nstr(p_hacking_fa23)\n\nspc_tbl_ [16 × 16] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ student           : num [1:16] 0 12 37 37 37 12 66 66 66 94 ...\n $ analysis          : num [1:16] 1 1 1 2 3 2 1 2 3 1 ...\n $ party             : chr [1:16] \"democrats\" \"republicans\" \"republicans\" \"democrats\" ...\n $ prediction        : chr [1:16] \"worse\" \"better\" \"better\" \"better\" ...\n $ power_president   : logi [1:16] FALSE TRUE FALSE FALSE TRUE TRUE ...\n $ power_governors   : logi [1:16] FALSE FALSE FALSE FALSE FALSE FALSE ...\n $ power_senators    : logi [1:16] TRUE TRUE TRUE FALSE FALSE TRUE ...\n $ power_reps        : logi [1:16] TRUE TRUE TRUE TRUE FALSE TRUE ...\n $ econ_employment   : logi [1:16] TRUE FALSE TRUE TRUE TRUE FALSE ...\n $ econ_inflation    : logi [1:16] FALSE TRUE FALSE TRUE TRUE TRUE ...\n $ econ_gdp          : logi [1:16] FALSE FALSE FALSE TRUE FALSE TRUE ...\n $ econ_stocks       : logi [1:16] TRUE TRUE TRUE FALSE FALSE TRUE ...\n $ factor_in_power   : logi [1:16] FALSE FALSE FALSE TRUE FALSE FALSE ...\n $ exclude_recessions: logi [1:16] FALSE TRUE FALSE TRUE FALSE TRUE ...\n $ p_value           : num [1:16] 0.06 0.01 0.01 0.07 0.01 0.27 0.01 0.36 0.01 0.03 ...\n $ publishable       : chr [1:16] \"no\" \"yes\" \"yes\" \"no\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   student = col_double(),\n  ..   analysis = col_double(),\n  ..   party = col_character(),\n  ..   prediction = col_character(),\n  ..   power_president = col_logical(),\n  ..   power_governors = col_logical(),\n  ..   power_senators = col_logical(),\n  ..   power_reps = col_logical(),\n  ..   econ_employment = col_logical(),\n  ..   econ_inflation = col_logical(),\n  ..   econ_gdp = col_logical(),\n  ..   econ_stocks = col_logical(),\n  ..   factor_in_power = col_logical(),\n  ..   exclude_recessions = col_logical(),\n  ..   p_value = col_double(),\n  ..   publishable = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt;"
   },
   {
     "objectID": "surveys/p-hacking-suppl.html#questions-to-explore",
@@ -151,7 +151,7 @@
     "href": "surveys/p-hacking-suppl.html#visualize",
     "title": "On p-hacking",
     "section": "Visualize",
-    "text": "Visualize\n\nParty by prediction\n\nxtabs(formula = ~ party + prediction, data = p_hacking_fa23)\n\n             prediction\nparty         better worse\n  democrats        5     1\n  republicans      5     4\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(x = party, fill = prediction) +\n  geom_bar() +\n  theme_classic() +\n  ylab(\"n respondents\")\n\n\n\n\nFigure 1: Party chosen by prediction: PSYCH 490 Fall 2023\n\n\n\n\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)\n\n\n\n\nFigure 2: Histogram of realized p values by party chosen: PSYCH 490 Fall 2023\n\n\n\n\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(\n    x = as.factor(analysis),\n    y = p_value,\n    color = as.factor(student),\n    shape = party,\n    group = as.factor(student)\n  ) +\n  geom_point() +\n  geom_line() +\n  xlab(\"Analysis number\")\n\n\n\n\nFigure 3: p-values by number of analyses: PSYCH 490 Fall 2023"
+    "text": "Visualize\n\nParty by prediction\n\nxtabs(formula = ~ party + prediction, data = p_hacking_fa23)\n\n             prediction\nparty         better worse\n  democrats        6     1\n  republicans      5     4\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(x = party, fill = prediction) +\n  geom_bar() +\n  theme_classic() +\n  ylab(\"n respondents\")\n\n\n\n\nFigure 1: Party chosen by prediction: PSYCH 490 Fall 2023\n\n\n\n\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)\n\n\n\n\nFigure 2: Histogram of realized p values by party chosen: PSYCH 490 Fall 2023\n\n\n\n\n\np_hacking_fa23 |&gt;\n  ggplot() +\n  aes(\n    x = as.factor(analysis),\n    y = p_value,\n    color = as.factor(student),\n    shape = party,\n    group = as.factor(student)\n  ) +\n  geom_point() +\n  geom_line() +\n  xlab(\"Analysis number\")\n\n\n\n\nFigure 3: p-values by number of analyses: PSYCH 490 Fall 2023"
   },
   {
     "objectID": "surveys/p-hacking-suppl.html#how-many-different-combinations-of-variables",
@@ -172,7 +172,7 @@
     "href": "surveys/p-hacking-suppl.html#combined-data",
     "title": "On p-hacking",
     "section": "Combined data",
-    "text": "Combined data\n\np_hacking_23 |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)\n\n\n\n\n\np_hacking_23 |&gt;\n  ggplot() +\n  aes(\n    x = as.factor(analysis),\n    y = p_value,\n    color = as.factor(student),\n    shape = party,\n    group = as.factor(student)\n  ) +\n  geom_point() +\n  geom_line() +\n  xlab(\"Analysis number\")\n\n\n\n\n\nChoices for ‘political power’\n\npower_df &lt;- p_hacking_23 |&gt;\n  pivot_longer(cols = contains('power_'), \n                      names_to = \"political_positions\", \n                      values_to = \"pol_pos_selected\") |&gt;\n  distinct() |&gt;\n  mutate(political_positions = stringr::str_remove(string = political_positions,\n                                                             pattern = \"power_\"))\n\n\npower_df |&gt; \n  dplyr::group_by(party, prediction, political_positions) |&gt;\n  dplyr::summarize(n_preds = sum(as.numeric(pol_pos_selected))) |&gt;\n  dplyr::arrange(desc(n_preds)) |&gt;\n  knitr::kable(format=\"html\") |&gt;\n  kableExtra::kable_classic()\n\n`summarise()` has grouped output by 'party', 'prediction'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\nparty\n\n\nprediction\n\n\npolitical_positions\n\n\nn_preds\n\n\n\n\n\n\ndemocrats\n\n\nbetter\n\n\npresident\n\n\n18\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ngovernors\n\n\n11\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nsenators\n\n\n10\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nreps\n\n\n9\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nreps\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nsenators\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\npresident\n\n\n5\n\n\n\n\nrepublicans\n\n\nworse\n\n\npresident\n\n\n5\n\n\n\n\ndemocrats\n\n\nworse\n\n\nreps\n\n\n4\n\n\n\n\ndemocrats\n\n\nworse\n\n\nsenators\n\n\n4\n\n\n\n\nrepublicans\n\n\nworse\n\n\nreps\n\n\n4\n\n\n\n\nrepublicans\n\n\nworse\n\n\nsenators\n\n\n3\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ngovernors\n\n\n2\n\n\n\n\nrepublicans\n\n\nworse\n\n\ngovernors\n\n\n2\n\n\n\n\ndemocrats\n\n\nworse\n\n\ngovernors\n\n\n0\n\n\n\n\ndemocrats\n\n\nworse\n\n\npresident\n\n\n0\n\n\n\n\n\nFigure 4: Respondents’ choices of political offices in their analyses\n\n\n\n\n\nChoices for ‘economy’\n\necon_df &lt;- p_hacking_23 |&gt;\n  pivot_longer(cols = contains('econ_'), \n                      names_to = \"econ_measures\", \n                      values_to = \"econ_meas_selected\") |&gt;\n  distinct() |&gt;\n  mutate(econ_measures = stringr::str_remove(string = econ_measures,\n                                                             pattern = \"econ_\"))\n\n\necon_df |&gt; \n  dplyr::group_by(party, prediction, econ_measures) |&gt;\n  dplyr::summarize(n_preds = sum(as.numeric(econ_meas_selected))) |&gt;\n  dplyr::arrange(desc(n_preds)) |&gt;\n  knitr::kable(format=\"html\") |&gt;\n  kableExtra::kable_classic()\n\n`summarise()` has grouped output by 'party', 'prediction'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\nparty\n\n\nprediction\n\n\necon_measures\n\n\nn_preds\n\n\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nemployment\n\n\n17\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ngdp\n\n\n15\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ninflation\n\n\n10\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nstocks\n\n\n8\n\n\n\n\nrepublicans\n\n\nworse\n\n\nemployment\n\n\n7\n\n\n\n\nrepublicans\n\n\nworse\n\n\ngdp\n\n\n6\n\n\n\n\nrepublicans\n\n\nworse\n\n\ninflation\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nstocks\n\n\n5\n\n\n\n\ndemocrats\n\n\nworse\n\n\nemployment\n\n\n4\n\n\n\n\ndemocrats\n\n\nworse\n\n\nstocks\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nemployment\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ninflation\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ngdp\n\n\n2\n\n\n\n\ndemocrats\n\n\nworse\n\n\ngdp\n\n\n0\n\n\n\n\ndemocrats\n\n\nworse\n\n\ninflation\n\n\n0\n\n\n\n\nrepublicans\n\n\nworse\n\n\nstocks\n\n\n0\n\n\n\n\n\nFigure 5: Respondents’ choices of economic measures in their analyses"
+    "text": "Combined data\n\np_hacking_23 |&gt;\n  ggplot() +\n  aes(x = p_value, fill = party) +\n  geom_histogram(bins = 10) +\n  facet_grid(~ prediction)\n\n\n\n\n\np_hacking_23 |&gt;\n  ggplot() +\n  aes(\n    x = as.factor(analysis),\n    y = p_value,\n    color = as.factor(student),\n    shape = party,\n    group = as.factor(student)\n  ) +\n  geom_point() +\n  geom_line() +\n  xlab(\"Analysis number\")\n\n\n\n\n\nChoices for ‘political power’\n\npower_df &lt;- p_hacking_23 |&gt;\n  pivot_longer(cols = contains('power_'), \n                      names_to = \"political_positions\", \n                      values_to = \"pol_pos_selected\") |&gt;\n  distinct() |&gt;\n  mutate(political_positions = stringr::str_remove(string = political_positions,\n                                                             pattern = \"power_\"))\n\n\npower_df |&gt; \n  dplyr::group_by(party, prediction, political_positions) |&gt;\n  dplyr::summarize(n_preds = sum(as.numeric(pol_pos_selected))) |&gt;\n  dplyr::arrange(desc(n_preds)) |&gt;\n  knitr::kable(format=\"html\") |&gt;\n  kableExtra::kable_classic()\n\n`summarise()` has grouped output by 'party', 'prediction'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\nparty\n\n\nprediction\n\n\npolitical_positions\n\n\nn_preds\n\n\n\n\n\n\ndemocrats\n\n\nbetter\n\n\npresident\n\n\n19\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ngovernors\n\n\n12\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nreps\n\n\n10\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nsenators\n\n\n10\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nreps\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nsenators\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\npresident\n\n\n5\n\n\n\n\nrepublicans\n\n\nworse\n\n\npresident\n\n\n5\n\n\n\n\ndemocrats\n\n\nworse\n\n\nreps\n\n\n4\n\n\n\n\ndemocrats\n\n\nworse\n\n\nsenators\n\n\n4\n\n\n\n\nrepublicans\n\n\nworse\n\n\nreps\n\n\n4\n\n\n\n\nrepublicans\n\n\nworse\n\n\nsenators\n\n\n3\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ngovernors\n\n\n2\n\n\n\n\nrepublicans\n\n\nworse\n\n\ngovernors\n\n\n2\n\n\n\n\ndemocrats\n\n\nworse\n\n\ngovernors\n\n\n0\n\n\n\n\ndemocrats\n\n\nworse\n\n\npresident\n\n\n0\n\n\n\n\n\nFigure 4: Respondents’ choices of political offices in their analyses\n\n\n\n\n\nChoices for ‘economy’\n\necon_df &lt;- p_hacking_23 |&gt;\n  pivot_longer(cols = contains('econ_'), \n                      names_to = \"econ_measures\", \n                      values_to = \"econ_meas_selected\") |&gt;\n  distinct() |&gt;\n  mutate(econ_measures = stringr::str_remove(string = econ_measures,\n                                                             pattern = \"econ_\"))\n\n\necon_df |&gt; \n  dplyr::group_by(party, prediction, econ_measures) |&gt;\n  dplyr::summarize(n_preds = sum(as.numeric(econ_meas_selected))) |&gt;\n  dplyr::arrange(desc(n_preds)) |&gt;\n  knitr::kable(format=\"html\") |&gt;\n  kableExtra::kable_classic()\n\n`summarise()` has grouped output by 'party', 'prediction'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\nparty\n\n\nprediction\n\n\necon_measures\n\n\nn_preds\n\n\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nemployment\n\n\n18\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ngdp\n\n\n16\n\n\n\n\ndemocrats\n\n\nbetter\n\n\ninflation\n\n\n10\n\n\n\n\ndemocrats\n\n\nbetter\n\n\nstocks\n\n\n9\n\n\n\n\nrepublicans\n\n\nworse\n\n\nemployment\n\n\n7\n\n\n\n\nrepublicans\n\n\nworse\n\n\ngdp\n\n\n6\n\n\n\n\nrepublicans\n\n\nworse\n\n\ninflation\n\n\n6\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nstocks\n\n\n5\n\n\n\n\ndemocrats\n\n\nworse\n\n\nemployment\n\n\n4\n\n\n\n\ndemocrats\n\n\nworse\n\n\nstocks\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\nemployment\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ninflation\n\n\n4\n\n\n\n\nrepublicans\n\n\nbetter\n\n\ngdp\n\n\n2\n\n\n\n\ndemocrats\n\n\nworse\n\n\ngdp\n\n\n0\n\n\n\n\ndemocrats\n\n\nworse\n\n\ninflation\n\n\n0\n\n\n\n\nrepublicans\n\n\nworse\n\n\nstocks\n\n\n0\n\n\n\n\n\nFigure 5: Respondents’ choices of economic measures in their analyses"
   },
   {
     "objectID": "policies.html",
@@ -364,18 +364,46 @@
     "text": "Today\nHype\n\nWatch\n\nCuddy (2012)\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) (Ranehill et al., 2015)"
   },
   {
-    "objectID": "notes/wk09-2023-10-18.html#ritchie2020-fm-chapter-6",
-    "href": "notes/wk09-2023-10-18.html#ritchie2020-fm-chapter-6",
+    "objectID": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
+    "href": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
     "title": "2023-10-18 Wed",
-    "section": "(Ritchie, 2020), Chapter 6",
-    "text": "(Ritchie, 2020), Chapter 6\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
+    "section": "(Chapter 6 in Ritchie, 2020)",
+    "text": "(Chapter 6 in Ritchie, 2020)\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
   },
   {
-    "objectID": "notes/wk09-2023-10-18.html#carney2010-gq",
-    "href": "notes/wk09-2023-10-18.html#carney2010-gq",
+    "objectID": "notes/wk09-2023-10-18.html#methods",
+    "href": "notes/wk09-2023-10-18.html#methods",
     "title": "2023-10-18 Wed",
-    "section": "Carney et al. (2010)",
-    "text": "Carney et al. (2010)\nCarney, D. R., Cuddy, A. J. C. & Yap, A. J. (2010). Power posing: brief nonverbal displays affect neuroendocrine levels and risk tolerance. Psychological Science, 21(10), 1363–1368. https://doi.org/10.1177/0956797610383437\n\nHumans and other animals express power through open, expansive postures, and they express powerlessness through contractive postures. But can these postures actually cause power? The results of this study confirmed our prediction posing in high-power nonverbal displays (as opposed to low-power nonverbal displays) would cause neuroendocrine behavioral changes for both male and female participants: High-power posers experienced elevations in testosterone, decreases in cortisol, and increased feelings of power and tolerance for risk; low-power posers exhibited the opposite pattern. In posing in displays of power caused advantaged and adaptive psychological, physiological, and behavioral changes, and findings suggest that embodiment extends beyond mere thinking and feeling, to physiology and subsequent behavioral That a person can, by assuming two simple 1-min poses, embody power and instantly become more powerful has real-actionable implications.\n– Carney et al. (2010)\n\nMethods\n\n\\(n=42\\) participants (26 female; age or other demographic characteristics?)\nAssigned into two groups (high power vs. low power)\nExperimenter posed bodies\nTwo different poses held for 1 min\n\n\n\n\n\n\nHigh power poses. Figure 1 from Carney et al. (2010)\n\n\n\n\n\n\n\n\n\nLow power poses. Figure 2 from Carney et al. (2010)\n\n\n\n\n\nOther tasks/measures\n\nGambling task (risk-taking, powerful feelings)\nSelf-reported feelings of power\nSaliva samples (pretest and ~ 17 min after pose)\n\nTested for cortisol, testosterone\n\n\n\nResults\n\n\n\n\n\nCarney et al. (2010)\n\n\n\n\n\n\n\n\n\nFigure 3 from Carney et al. (2010)\n\n\n\n\nCitation data\nPaper cited ~1,500 times (https://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Power+posing%3A+brief+nonverbal+displays+affect+neuroendocrine+levels+and+risk+tolerance&btnG=) according to Google Scholar on 2023-03-01.\nReproducibility notes\n\nArticle was behind a paywall.\nPDF was available via authenticated access to PSU Libraries.\nNo data are shared; no code used to make the figures or conduct the analyses were shared.\n\nPresentation comments\n\nBetter to show individual participant data points (see below)"
+    "section": "Methods",
+    "text": "Methods\n\n\\(n=42\\) participants (26 female; age or other demographic characteristics?)\nAssigned into two groups (high power vs. low power)\nExperimenter posed bodies\nTwo different poses held for 1 min"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#results",
+    "href": "notes/wk09-2023-10-18.html#results",
+    "title": "2023-10-18 Wed",
+    "section": "Results",
+    "text": "Results\n\nCarney et al. (2010)"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#citation-data",
+    "href": "notes/wk09-2023-10-18.html#citation-data",
+    "title": "2023-10-18 Wed",
+    "section": "Citation data",
+    "text": "Citation data\nPaper cited ~1,590 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Power+posing%3A+brief+nonverbal+displays+affect+neuroendocrine+levels+and+risk+tolerance&btnG=\naccording to Google Scholar on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes",
+    "href": "notes/wk09-2023-10-18.html#reproducibility-notes",
+    "title": "2023-10-18 Wed",
+    "section": "Reproducibility notes",
+    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nPDF was available via authenticated access to PSU Libraries.\nNo data are shared; no code used to make the figures or conduct the analyses were shared."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#presentation-comments",
+    "href": "notes/wk09-2023-10-18.html#presentation-comments",
+    "title": "2023-10-18 Wed",
+    "section": "Presentation comments",
+    "text": "Presentation comments\n\nGilmore prefers graphs that show individual participant data points (see below)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#cuddy2012-zx",
@@ -385,11 +413,53 @@
     "text": "Cuddy (2012)\n\nAmy Cuddy’s TED talk: https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
   },
   {
-    "objectID": "notes/wk09-2023-10-18.html#ranehill2015-dj",
-    "href": "notes/wk09-2023-10-18.html#ranehill2015-dj",
+    "objectID": "notes/wk09-2023-10-18.html#citation-data-1",
+    "href": "notes/wk09-2023-10-18.html#citation-data-1",
     "title": "2023-10-18 Wed",
-    "section": "Ranehill et al. (2015)",
-    "text": "Ranehill et al. (2015)\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (2015). Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women [Review of Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women]. Psychological Science, 26(5), 653–656. journals.sagepub.com. https://doi.org/10.1177/0956797614553946"
+    "section": "Citation data",
+    "text": "Citation data\nTalk viewed ~69.5 million times according to TED web page on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#a-replication-attempt",
+    "href": "notes/wk09-2023-10-18.html#a-replication-attempt",
+    "title": "2023-10-18 Wed",
+    "section": "A replication attempt",
+    "text": "A replication attempt\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (2015). Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women [Review of Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women]. Psychological Science, 26(5), 653–656. journals.sagepub.com. https://doi.org/10.1177/0956797614553946"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#methods-1",
+    "href": "notes/wk09-2023-10-18.html#methods-1",
+    "title": "2023-10-18 Wed",
+    "section": "Methods",
+    "text": "Methods\n\nSampled \\(n=100\\) after power analysis; then sampled another 100.\n3 min pose durations\nParticipants modeled poses following computer instructions.\nNo deception."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#results-1",
+    "href": "notes/wk09-2023-10-18.html#results-1",
+    "title": "2023-10-18 Wed",
+    "section": "Results",
+    "text": "Results\n\nResults excerpt from (Ranehill et al., 2015)"
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#citation-data-2",
+    "href": "notes/wk09-2023-10-18.html#citation-data-2",
+    "title": "2023-10-18 Wed",
+    "section": "Citation data",
+    "text": "Citation data\nPaper cited ~340 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women+%5BReview+of+Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women%5D&btnG=\naccording to Google Scholar on 2023-10-16."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
+    "href": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
+    "title": "2023-10-18 Wed",
+    "section": "Reproducibility notes",
+    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nThe PDF was available via authenticated access to PSU Libraries.\nThe PDF did not easily permit cutting and pasting of text, so it was hard to excerpt those for this document.\nThe HTML version of the article was unavailable, so I had to make screenshots of figures."
+  },
+  {
+    "objectID": "notes/wk09-2023-10-18.html#presentation-comments-1",
+    "href": "notes/wk09-2023-10-18.html#presentation-comments-1",
+    "title": "2023-10-18 Wed",
+    "section": "Presentation comments",
+    "text": "Presentation comments\n\nExample of ‘spaghetti’ plot."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#exploring-logicalcausal-diagrams",
@@ -446,13 +516,6 @@
     "title": "2023-10-09 Mon",
     "section": "Accessibility/openness notes",
     "text": "Accessibility/openness notes\n\nPaper not openly accessible.\nPaper was accessible via authenticated access to PSU library."
-  },
-  {
-    "objectID": "notes/wk08-2023-10-09.html#results-from-john2012-tk",
-    "href": "notes/wk08-2023-10-09.html#results-from-john2012-tk",
-    "title": "2023-10-09 Mon",
-    "section": "(Results from John et al., 2012)",
-    "text": "(Results from John et al., 2012)\n\nTable 1 from (John et al., 2012)"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#reproducibility-notes-for-john2012-tk",
@@ -2667,18 +2730,18 @@
     "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
   },
   {
+    "objectID": "notes/wk08-2023-10-11.html#last-time",
+    "href": "notes/wk08-2023-10-11.html#last-time",
+    "title": "2023-10-11 Wed",
+    "section": "Last time…",
+    "text": "Last time…\n\nWhat is p-hacking?\nHow many different combinations of variables were there in Exercise 04?\nWhat would we need to do to determine which party and which measures of political power impact the economy one way or the other?"
+  },
+  {
     "objectID": "notes/wk08-2023-10-11.html#today",
     "href": "notes/wk08-2023-10-11.html#today",
     "title": "2023-10-11 Wed",
     "section": "Today",
     "text": "Today\nFile drawer effect\n\nDiscuss\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014a)"
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#on-p-hacking",
-    "href": "notes/wk08-2023-10-11.html#on-p-hacking",
-    "title": "2023-10-11 Wed",
-    "section": "On p-hacking",
-    "text": "On p-hacking\n\nWhat did we learn?\nDoes the economy do better or worse under Republican or Democratic control?\nDoes the answer depend on what measures (of political control, of economic performance) we pick?\nWhen does it matter if someone reporting on an issue engaged in p-hacking?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#file-drawer-effect",
@@ -2730,6 +2793,20 @@
     "text": "Unpacking (Rosenthal, 1979)\n\nWhy might journals be filled with studies that have Type I (false positive) errors?\n\nIf there are no effects at all, what would the false positive rate be?\n\nWhy might file drawers be filled with studies that have Type II (false negative) errors?\n\nIf there really is an effect to be found for every study, what would the false negative rate be?"
   },
   {
+    "objectID": "notes/wk08-2023-10-11.html#visualization",
+    "href": "notes/wk08-2023-10-11.html#visualization",
+    "title": "2023-10-11 Wed",
+    "section": "Visualization",
+    "text": "Visualization\nRosenthal’s illustration relies on the standard normal deviate or \\(Z\\), which is the value on a standard normal distribution (with mean \\(\\mu=0\\) and standard deviation \\(\\sigma=1\\)) that one would need to observe for a given p value."
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#findings",
+    "href": "notes/wk08-2023-10-11.html#findings",
+    "title": "2023-10-11 Wed",
+    "section": "Findings",
+    "text": "Findings\n\nIf the overall level of significance of the research review will be brought down to the level of just significant by the addition of just a few more null results, the finding is not resistant to the file drawer threat.\n\n\n(Rosenthal, 1979)\n\n\nIn other words, the finding is not robust."
+  },
+  {
     "objectID": "notes/wk08-2023-10-11.html#discuss-1",
     "href": "notes/wk08-2023-10-11.html#discuss-1",
     "title": "2023-10-11 Wed",
@@ -2758,6 +2835,20 @@
     "text": "Solutions\n\nHow can the social science community combat publication bias of this sort? On the basis of communications with the authors of many experiments that resulted in null findings, we found that some researchers anticipate the rejection of such papers but also that many of them simply lose interest in “unsuccessful” projects."
   },
   {
+    "objectID": "notes/wk08-2023-10-11.html#replication-notes",
+    "href": "notes/wk08-2023-10-11.html#replication-notes",
+    "title": "2023-10-11 Wed",
+    "section": "Replication notes",
+    "text": "Replication notes\n\nPaper was behind the standard Science paywall.\nData & code shared on Zenodo https://doi.org/10.5281/zenodo.11300\nLet’s try to run it…"
+  },
+  {
+    "objectID": "notes/wk08-2023-10-11.html#franco2014-jk",
+    "href": "notes/wk08-2023-10-11.html#franco2014-jk",
+    "title": "2023-10-11 Wed",
+    "section": "(Franco, Malhotra, & Simonovits, 2014b)",
+    "text": "(Franco, Malhotra, & Simonovits, 2014b)\n\n\n [1] \"id\"                   \"author1field\"         \"author2field\"        \n [4] \"author3field\"         \"discipline\"           \"discipline2\"         \n [7] \"POL\"                  \"PSY\"                  \"SOC\"                 \n[10] \"OTHER\"                \"year\"                 \"fieldingperiod1stday\"\n[13] \"age_months\"           \"age_day\"              \"age_year\"            \n[16] \"timetopublish\"        \"iv_coder1\"            \"iv_coder2\"           \n[19] \"disagreement\"         \"IV_all\"               \"IV\"                  \n[22] \"strong\"               \"mixed\"                \"null\"                \n[25] \"DV\"                   \"DV_all\"               \"DV_tri\"              \n[28] \"DV_book_separate\"     \"DV_book_unpub\"        \"DV_book_nontop\"      \n[31] \"DV_book_top\"          \"journal\"              \"journal_field\"       \n[34] \"insample\"             \"pubyear\"              \"pub\"                 \n[37] \"anyresults\"           \"written\"              \"max_h_current\"       \n[40] \"max_pub_attime\"       \"why_excluded\"        \n\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  bounds\nX-squared = 70.503, df = 1, p-value &lt; 2.2e-16\n\n\nquartz_off_screen \n                2"
+  },
+  {
     "objectID": "notes/wk08-2023-10-11.html#references",
     "href": "notes/wk08-2023-10-11.html#references",
     "title": "2023-10-11 Wed",
@@ -2779,11 +2870,11 @@
     "text": "Today\nNegligence\n\nDiscuss\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)"
   },
   {
-    "objectID": "notes/wk09-2023-10-16.html#types-of-negligence",
-    "href": "notes/wk09-2023-10-16.html#types-of-negligence",
+    "objectID": "notes/wk09-2023-10-16.html#definitions-of",
+    "href": "notes/wk09-2023-10-16.html#definitions-of",
     "title": "2023-10-16 Mon",
-    "section": "Types of negligence",
-    "text": "Types of negligence\nDefinitions of\n\nnegligent\n\n\nnegligence from Mac OS dictionary app"
+    "section": "Definitions of",
+    "text": "Definitions of\n\nnegligent\n\n\nnegligence from Mac OS dictionary app"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#data-mistakes",
@@ -3042,14 +3133,14 @@
     "href": "schedule.html#week-08",
     "title": "schedule",
     "section": "October 9-13",
-    "text": "October 9-13\n\nMonday, October 9\nPrevalence of QRPs\n\nRead\n\n(John, Loewenstein, & Prelec, 2012)\n\n(Optional) Enter your Exercise 04 data into this anonymous spreadsheet.\nDiscuss Exercise 04: P-hack your way to scientific glory.\nClass notes\n\n\n\nWednesday, October 11\nFile drawer effect\n\nAssignment\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size\n\nRead\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\nNO CLASS MEETING\n\nDue\n\nFinal project proposal"
+    "text": "October 9-13\n\nMonday, October 9\nPrevalence of QRPs\n\nRead\n\n(John, Loewenstein, & Prelec, 2012)\n\n(Optional) Enter your Exercise 04 data into this anonymous spreadsheet.\nDiscuss Exercise 04: P-hack your way to scientific glory.\nClass notes\n\n\n\nWednesday, October 11\nFile drawer effect\n\nAssignment\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size\n\nRead\n\n(Skim) (Rosenthal, 1979). PDF on Canvas\n(Optional) (Franco, Malhotra, & Simonovits, 2014)\n\nClass notes\n\n\n\nFriday, October 13\nNO CLASS MEETING\n\nDue\n\nFinal project proposal"
   },
   {
     "objectID": "schedule.html#week-09",
     "href": "schedule.html#week-09",
     "title": "schedule",
     "section": "October 16-20",
-    "text": "October 16-20\n\nMonday, October 16\nNegligence\n\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\nHype\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) Ranehill et al. (2015)\n\nWatch\n\nCuddy (2012)\n\nClass notes\n\n\n\nFriday, October 20\nWork session: Exercise 05, Replication, Final Projects\n\nDiscuss draft\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
+    "text": "October 16-20\n\nMonday, October 16\nNegligence\n\nRead\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)\n\nClass notes\n\n\n\nWednesday, October 18\nHype\n\nRead\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010)\n(Optional) (Ranehill et al., 2015)\n\nClass notes\n\n\n\nFriday, October 20\nWork session: Exercise 05, Replication, Final Projects\n\nDiscuss draft\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
   },
   {
     "objectID": "schedule.html#week-10",
@@ -3168,7 +3259,7 @@
     "href": "surveys/simmons-etal-2011-suppl.html#visualize-data",
     "title": "Simmons et al. 2011",
     "section": "Visualize data",
-    "text": "Visualize data\nTo visualize the data, we’ll make a data frame. This is a convenient ‘rectangular’ format for our data.\n\nfalse_pos_study_1 &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\nstr(false_pos_study_1)\n\n'data.frame':   30 obs. of  4 variables:\n $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...\n $ song       : chr  \"kid\" \"kid\" \"kid\" \"kid\" ...\n $ father_age : num  67.8 44.3 55.6 54.8 61.1 ...\n $ old_feeling: num  4 3 4 3 4 4 4 3 3 4 ...\n\n\nNow, let’s plot this to show how analysis of covariance (ANCOVA) might work.\n\n\n\n\n\n\nNote\n\n\n\nMy graduate statistics professor, Dr. Mike Meyer, always exhorted us to “plot our data!” That is, he thought we should always plot first, then run our statistics later. I’ve taken that advice to heart in my own work.\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nfalse_pos_study_1 |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nFigure 1: Illustration of a simulated ANCOVA based on (Simmons et al., 2011)\n\n\n\n\nThis plot adds two lines to the data, one for each song group. The ANCOVA will let us evaluate whether the old_feeling is predicted by a linear combination of father_age and song.\nIn the code below, notice that we set formula = old_feeling ~ song + father_age. This is how we tell the aov() command that the linear combination of song and father_age are the variables we want to use to predict old_feeling.\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  3.333   3.333  19.864 0.000131 ***\nfather_age   1  0.002   0.002   0.015 0.904773    \nResiduals   27  4.531   0.168                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nNow, let’s imagine that father_age wasn’t entirely random for some reason.\n\nfather_age &lt;- (69:40) + rnorm(30, 0, 1)\nplot(1:30, father_age)\n\n\n\nhist(father_age)\n\n\n\n\n\nfalse_pos_study_1a &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1a |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1a)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  3.333   3.333  19.969 0.000127 ***\nfather_age   1  0.026   0.026   0.158 0.693684    \nResiduals   27  4.507   0.167                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nOr, maybe worse, that how old participants’ felt related to their fathers’ age.\n\nold_feeling &lt;- (father_age-40)/(70-40) + rnorm(n=30, 0, 0.25)\nold_feeling &lt;- round(old_feeling/(max(old_feeling)-min(old_feeling))*4 + 1, 0)\n\nfalse_pos_study_1b &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1b |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1b)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  9.633   9.633   16.36 0.000393 ***\nfather_age   1  7.434   7.434   12.62 0.001424 ** \nResiduals   27 15.899   0.589                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+    "text": "Visualize data\nTo visualize the data, we’ll make a data frame. This is a convenient ‘rectangular’ format for our data.\n\nfalse_pos_study_1 &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\nstr(false_pos_study_1)\n\n'data.frame':   30 obs. of  4 variables:\n $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...\n $ song       : chr  \"kid\" \"kid\" \"kid\" \"kid\" ...\n $ father_age : num  62.7 67.8 52.8 44.7 52.9 ...\n $ old_feeling: num  4 3 4 4 3 4 4 3 3 3 ...\n\n\nNow, let’s plot this to show how analysis of covariance (ANCOVA) might work.\n\n\n\n\n\n\nNote\n\n\n\nMy graduate statistics professor, Dr. Mike Meyer, always exhorted us to “plot our data!” That is, he thought we should always plot first, then run our statistics later. I’ve taken that advice to heart in my own work.\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nfalse_pos_study_1 |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nFigure 1: Illustration of a simulated ANCOVA based on (Simmons et al., 2011)\n\n\n\n\nThis plot adds two lines to the data, one for each song group. The ANCOVA will let us evaluate whether the old_feeling is predicted by a linear combination of father_age and song.\nIn the code below, notice that we set formula = old_feeling ~ song + father_age. This is how we tell the aov() command that the linear combination of song and father_age are the variables we want to use to predict old_feeling.\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nsong         1  2.700  2.7000  11.655 0.00204 **\nfather_age   1  0.012  0.0117   0.051 0.82379   \nResiduals   27  6.255  0.2317                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nNow, let’s imagine that father_age wasn’t entirely random for some reason.\n\nfather_age &lt;- (69:40) + rnorm(30, 0, 1)\nplot(1:30, father_age)\n\n\n\nhist(father_age)\n\n\n\n\n\nfalse_pos_study_1a &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1a |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1a)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value Pr(&gt;F)   \nsong         1  2.700  2.7000  11.705  0.002 **\nfather_age   1  0.038  0.0384   0.166  0.687   \nResiduals   27  6.228  0.2307                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nOr, maybe worse, that how old participants’ felt related to their fathers’ age.\n\nold_feeling &lt;- (father_age-40)/(70-40) + rnorm(n=30, 0, 0.25)\nold_feeling &lt;- round(old_feeling/(max(old_feeling)-min(old_feeling))*4 + 1, 0)\n\nfalse_pos_study_1b &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1b |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1b)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  9.633   9.633  22.579 5.94e-05 ***\nfather_age   1  1.814   1.814   4.251    0.049 *  \nResiduals   27 11.520   0.427                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
   },
   {
     "objectID": "surveys/survey-02.html",
@@ -3218,145 +3309,5 @@
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#replication-notes",
-    "href": "notes/wk08-2023-10-11.html#replication-notes",
-    "title": "2023-10-11 Wed",
-    "section": "Replication notes",
-    "text": "Replication notes\n\nPaper was behind the standard Science paywall.\nData & code shared on Zenodo https://doi.org/10.5281/zenodo.11300\nLet’s try to run it…"
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#last-time",
-    "href": "notes/wk08-2023-10-11.html#last-time",
-    "title": "2023-10-11 Wed",
-    "section": "Last time…",
-    "text": "Last time…\n\nWhat is p-hacking?\nHow many different combinations of variables were there in Exercise 04?\nWhat would we need to do to determine which party and which measures of political power impact the economy one way or the other?"
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#visualization",
-    "href": "notes/wk08-2023-10-11.html#visualization",
-    "title": "2023-10-11 Wed",
-    "section": "Visualization",
-    "text": "Visualization\nRosenthal’s illustration relies on the standard normal deviate or \\(Z\\), which is the value on a standard normal distribution (with mean \\(\\mu=0\\) and standard deviation \\(\\sigma=1\\)) that one would need to observe for a given p value."
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#findings",
-    "href": "notes/wk08-2023-10-11.html#findings",
-    "title": "2023-10-11 Wed",
-    "section": "Findings",
-    "text": "Findings\n\nIf the overall level of significance of the research review will be brought down to the level of just significant by the addition of just a few more null results, the finding is not resistant to the file drawer threat.\n\n\n(Rosenthal, 1979)\n\n\nIn other words, the finding is not robust."
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#code-from-httpsdoi.org10.5281zenodo.11300",
-    "href": "notes/wk08-2023-10-11.html#code-from-httpsdoi.org10.5281zenodo.11300",
-    "title": "2023-10-11 Wed",
-    "section": "Code from https://doi.org/10.5281/zenodo.11300",
-    "text": "Code from https://doi.org/10.5281/zenodo.11300\n\n\n [1] \"id\"                   \"author1field\"         \"author2field\"        \n [4] \"author3field\"         \"discipline\"           \"discipline2\"         \n [7] \"POL\"                  \"PSY\"                  \"SOC\"                 \n[10] \"OTHER\"                \"year\"                 \"fieldingperiod1stday\"\n[13] \"age_months\"           \"age_day\"              \"age_year\"            \n[16] \"timetopublish\"        \"iv_coder1\"            \"iv_coder2\"           \n[19] \"disagreement\"         \"IV_all\"               \"IV\"                  \n[22] \"strong\"               \"mixed\"                \"null\"                \n[25] \"DV\"                   \"DV_all\"               \"DV_tri\"              \n[28] \"DV_book_separate\"     \"DV_book_unpub\"        \"DV_book_nontop\"      \n[31] \"DV_book_top\"          \"journal\"              \"journal_field\"       \n[34] \"insample\"             \"pubyear\"              \"pub\"                 \n[37] \"anyresults\"           \"written\"              \"max_h_current\"       \n[40] \"max_pub_attime\"       \"why_excluded\"        \n\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  bounds\nX-squared = 70.503, df = 1, p-value &lt; 2.2e-16\n\n\nquartz_off_screen \n                2"
-  },
-  {
-    "objectID": "notes/wk08-2023-10-11.html#franco2014-jk",
-    "href": "notes/wk08-2023-10-11.html#franco2014-jk",
-    "title": "2023-10-11 Wed",
-    "section": "(Franco, Malhotra, & Simonovits, 2014b)",
-    "text": "(Franco, Malhotra, & Simonovits, 2014b)\n\n\n [1] \"id\"                   \"author1field\"         \"author2field\"        \n [4] \"author3field\"         \"discipline\"           \"discipline2\"         \n [7] \"POL\"                  \"PSY\"                  \"SOC\"                 \n[10] \"OTHER\"                \"year\"                 \"fieldingperiod1stday\"\n[13] \"age_months\"           \"age_day\"              \"age_year\"            \n[16] \"timetopublish\"        \"iv_coder1\"            \"iv_coder2\"           \n[19] \"disagreement\"         \"IV_all\"               \"IV\"                  \n[22] \"strong\"               \"mixed\"                \"null\"                \n[25] \"DV\"                   \"DV_all\"               \"DV_tri\"              \n[28] \"DV_book_separate\"     \"DV_book_unpub\"        \"DV_book_nontop\"      \n[31] \"DV_book_top\"          \"journal\"              \"journal_field\"       \n[34] \"insample\"             \"pubyear\"              \"pub\"                 \n[37] \"anyresults\"           \"written\"              \"max_h_current\"       \n[40] \"max_pub_attime\"       \"why_excluded\"        \n\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  bounds\nX-squared = 70.503, df = 1, p-value &lt; 2.2e-16\n\n\nquartz_off_screen \n                2"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-16.html#definitions-of",
-    "href": "notes/wk09-2023-10-16.html#definitions-of",
-    "title": "2023-10-16 Mon",
-    "section": "Definitions of",
-    "text": "Definitions of\n\nnegligent\n\n\nnegligence from Mac OS dictionary app"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#methods",
-    "href": "notes/wk09-2023-10-18.html#methods",
-    "title": "2023-10-18 Wed",
-    "section": "Methods",
-    "text": "Methods\n\n\\(n=42\\) participants (26 female; age or other demographic characteristics?)\nAssigned into two groups (high power vs. low power)\nExperimenter posed bodies\nTwo different poses held for 1 min"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#results",
-    "href": "notes/wk09-2023-10-18.html#results",
-    "title": "2023-10-18 Wed",
-    "section": "Results",
-    "text": "Results\n\nCarney et al. (2010)"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#citation-data",
-    "href": "notes/wk09-2023-10-18.html#citation-data",
-    "title": "2023-10-18 Wed",
-    "section": "Citation data",
-    "text": "Citation data\nPaper cited ~1,590 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Power+posing%3A+brief+nonverbal+displays+affect+neuroendocrine+levels+and+risk+tolerance&btnG=\naccording to Google Scholar on 2023-10-16."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes",
-    "href": "notes/wk09-2023-10-18.html#reproducibility-notes",
-    "title": "2023-10-18 Wed",
-    "section": "Reproducibility notes",
-    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nPDF was available via authenticated access to PSU Libraries.\nNo data are shared; no code used to make the figures or conduct the analyses were shared."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#presentation-comments",
-    "href": "notes/wk09-2023-10-18.html#presentation-comments",
-    "title": "2023-10-18 Wed",
-    "section": "Presentation comments",
-    "text": "Presentation comments\n\nGilmore prefers graphs that show individual participant data points (see below)"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#citation-data-1",
-    "href": "notes/wk09-2023-10-18.html#citation-data-1",
-    "title": "2023-10-18 Wed",
-    "section": "Citation data",
-    "text": "Citation data\nTalk viewed ~69.5 million times according to TED web page on 2023-10-16."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#a-replication-attempt",
-    "href": "notes/wk09-2023-10-18.html#a-replication-attempt",
-    "title": "2023-10-18 Wed",
-    "section": "A replication attempt",
-    "text": "A replication attempt\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (2015). Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women [Review of Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women]. Psychological Science, 26(5), 653–656. journals.sagepub.com. https://doi.org/10.1177/0956797614553946"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#methods-1",
-    "href": "notes/wk09-2023-10-18.html#methods-1",
-    "title": "2023-10-18 Wed",
-    "section": "Methods",
-    "text": "Methods\n\nSampled \\(n=100\\) after power analysis; then sampled another 100.\n3 min pose durations\nParticipants modeled poses following computer instructions.\nNo deception."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#results-1",
-    "href": "notes/wk09-2023-10-18.html#results-1",
-    "title": "2023-10-18 Wed",
-    "section": "Results",
-    "text": "Results\n\nResults excerpt from (Ranehill et al., 2015)"
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#citation-data-2",
-    "href": "notes/wk09-2023-10-18.html#citation-data-2",
-    "title": "2023-10-18 Wed",
-    "section": "Citation data",
-    "text": "Citation data\nPaper cited ~340 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women+%5BReview+of+Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women%5D&btnG=\naccording to Google Scholar on 2023-10-16."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
-    "href": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
-    "title": "2023-10-18 Wed",
-    "section": "Reproducibility notes",
-    "text": "Reproducibility notes\n\nArticle was behind a paywall.\nThe PDF was available via authenticated access to PSU Libraries.\nThe PDF did not easily permit cutting and pasting of text, so it was hard to excerpt those for this document.\nThe HTML version of the article was unavailable, so I had to make screenshots of figures."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#presentation-comments-1",
-    "href": "notes/wk09-2023-10-18.html#presentation-comments-1",
-    "title": "2023-10-18 Wed",
-    "section": "Presentation comments",
-    "text": "Presentation comments\n\nExample of ‘spaghetti’ plot."
-  },
-  {
-    "objectID": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
-    "href": "notes/wk09-2023-10-18.html#chapter-6-in-ritchie2020-fm",
-    "title": "2023-10-18 Wed",
-    "section": "(Chapter 6 in Ritchie, 2020)",
-    "text": "(Chapter 6 in Ritchie, 2020)\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
   }
 ]
