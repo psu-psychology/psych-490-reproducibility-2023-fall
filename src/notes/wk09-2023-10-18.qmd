@@ -1,6 +1,6 @@
 ---
 title: "2023-10-18 Wed"
-subtitle: "Bias"
+subtitle: "Hype"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -10,6 +10,21 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-18 Wed"
 ---
 
 # Overview
+
+## In the news...
+
+- <https://scoop.upworthy.com/scientists-toss-350-757-coins-and-prove-that-coin-tosses-are-far-from-equal-odds>
+
+>We analyze the natural process of flipping a coin which is caught in the hand. We show that vigorously flipped coins tend to come up the same way they started...For natural flips, the chance of coming up as started is about .51.
+
+<p style="text-align:center;">
+[@Diaconis2007-pz]
+</p>
+
+---
+
+![@Oza2023-fo](../include/img/nature-2023-oct-repro-trial-bio.png){fig-align="center"}
+Original paper: [@Gould2023-vu]
 
 ## Announcements
 
