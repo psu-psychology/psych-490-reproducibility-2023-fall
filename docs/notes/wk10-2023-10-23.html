@@ -29,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="../include/css/styles.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -354,15 +373,192 @@ Rick Gilmore
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
+<ul>
+<li><span class="orange_due">Final due</span>
+<ul>
+<li><a href="exercises/ex05-apes.qmd">Exercise 05: Alpha, Power, Effect Sizes, &amp; Sample Size</a> write-up</li>
+</ul></li>
+<li>Discuss
+<ul>
+<li><span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span></li>
+<li><span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span></li>
+</ul></li>
+</ul>
 </section></section>
-<section id="topic" class="title-slide slide level1 center">
-<h1>Topic</h1>
+<section>
+<section id="munafo_manifesto_2017" class="title-slide slide level1 center">
+<h1><span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span></h1>
 
 </section>
+<section class="slide level2">
 
+<p>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, Simonsohn, U., Wagenmakers, E.-J., Ware, J. J. &amp; Ioannidis, J. P. A. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, 1, 0021. <a href="https://doi.org/10.1038/s41562-016-0021" class="uri">https://doi.org/10.1038/s41562-016-0021</a></p>
+</section>
+<section id="abstract" class="slide level2">
+<h2>Abstract</h2>
+<blockquote>
+<p>Improving the reliability and efficiency of scientific research will increase the credibility of the published scientific literature and accelerate discovery. Here we argue for the adoption of measures to optimize key elements of the scientific process: methods, reporting and dissemination, reproducibility, evaluation and incentives.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>There is some evidence from both simulations and empirical studies supporting the likely effectiveness of these measures, but their broad adoption by researchers, institutions, funders and journals will require iterative evaluation and improvement.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>We discuss the goals of these measures, and how they can be implemented, in the hope that this will facilitate action toward improving the transparency, reproducibility and efficiency of scientific research.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp" class="r-stretch quarto-figure-center"><p class="caption">Figure 1 from <span class="citation" data-cites="munafo_manifesto_2017">(<a href="#/references" role="doc-biblioref" onclick="">Munafò et al., 2017</a>)</span></p></section>
+<section id="table-1" class="slide level2">
+<h2>Table 1</h2>
+<p>Link: <a href="https://www.nature.com/articles/s41562-016-0021/tables/1" class="uri">https://www.nature.com/articles/s41562-016-0021/tables/1</a></p>
+</section>
+<section id="improving-methods" class="slide level2">
+<h2>Improving methods</h2>
+<blockquote>
+<p>Protecting against cognitive biases.</p>
+</blockquote>
+<blockquote>
+<p>Improving methodological training</p>
+</blockquote>
+<blockquote>
+<p>Implementing independent methodological support</p>
+</blockquote>
+<blockquote>
+<p>Encouraging collaboration and team science.</p>
+</blockquote>
+</section>
+<section id="improving-reporting-and-dissemination" class="slide level2">
+<h2>Improving reporting and dissemination</h2>
+<blockquote>
+<p>Promoting study pre-registration</p>
+</blockquote>
+<blockquote>
+<p>Improving the quality of reporting</p>
+</blockquote>
+</section>
+<section id="improving-reproducibility" class="slide level2">
+<h2>Improving reproducibility</h2>
+<blockquote>
+<p>Promoting transparency and open science</p>
+</blockquote>
+</section>
+<section id="improving-evaluation" class="slide level2">
+<h2>Improving evaluation</h2>
+<blockquote>
+<p>Diversifying peer review</p>
+</blockquote>
+</section>
+<section id="changing-incentives" class="slide level2">
+<h2>Changing incentives</h2>
+<blockquote>
+<p>Rewarding open and reproducible practices</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Which of these recommended practices would be at the <em>top</em> of your to-do list if you were a journal editor/publisher, funders, institutions (college or university), regulator (e.g., government entity)?</p>
+<p>Which would be at the <em>bottom</em> of your list?</p>
+<p>What’s missing from the list?</p>
+<p>What can students do?</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="begley2013-vm" class="title-slide slide level1 center">
+<h1><span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span></h1>
+
+</section>
+<section class="slide level2">
+
+<p>Begley, C. G. (2013). Six red flags for suspect work. <em>Nature</em>, <em>497</em>(7450), 433–434. <a href="https://doi.org/10.1038/497433a" class="uri">https://doi.org/10.1038/497433a</a></p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Were experiments performed blinded?</p>
+</blockquote>
+<blockquote>
+<p>Were basic experiments repeated?</p>
+</blockquote>
+<blockquote>
+<p>Were all the results presented?</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Were there positive and negative controls? Often in the non-reproducible, high-profile papers, the crucial control experiments were excluded or mentioned as ‘data not shown’.</p>
+</blockquote>
+<blockquote>
+<p>Were reagents validated?</p>
+</blockquote>
+<blockquote>
+<p>Were statistical tests appropriate?</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Why do we repeatedly see these poor-quality papers in basic science? In part, it is down to the fact that there is no real consequence for investigators or journals. It is also because many busy reviewers (and disappointingly, even co-authors) do not actually read the papers, and because journals are required to fill their pages with simple, complete ‘stories’.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>And because of the apparent failure to recognize authors’ competing interests — beyond direct financial interests — that may interfere with their judgement.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Begley2013-vm">(<a href="#/references" role="doc-biblioref" onclick="">Begley, 2013</a>)</span>
+</p>
+</section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-
+<p><em>Changing journal policies</em></p>
+<ul>
+<li>Read
+<ul>
+<li><span class="citation" data-cites="nosek_promoting_2015">(<a href="#/references" role="doc-biblioref" onclick="">Nosek et al., 2015</a>)</span></li>
+<li><span class="citation" data-cites="Gilmore2020-sl">(<a href="#/references" role="doc-biblioref" onclick="">Gilmore, Cole, Verma, Aken, &amp; Worthman, 2020</a>)</span></li>
+<li><span class="citation" data-cites="Srcd2019-hg">(<a href="#/references" role="doc-biblioref" onclick="">SRCD, 2019</a>)</span></li>
+</ul></li>
+<li><a href="wk10-2023-10-25.qmd">Class notes</a></li>
+</ul>
 </section>
 
 <section>
@@ -370,11 +566,28 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="footer footer-default">
 <p><a href="../index.html">PSYCH 490.009</a>: 2023-10-23 Mon</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-Begley2013-vm" class="csl-entry" role="listitem">
+Begley, C. G. (2013). Six red flags for suspect work. <em>Nature</em>, <em>497</em>(7450), 433–434. <a href="https://doi.org/10.1038/497433a">https://doi.org/10.1038/497433a</a>
+</div>
+<div id="ref-Gilmore2020-sl" class="csl-entry" role="listitem">
+Gilmore, R. O., Cole, P. M., Verma, S., Aken, M. A. G., &amp; Worthman, C. M. (2020). Advancing scientific integrity, transparency, and openness in child development research: Challenges and possible solutions. <em>Child Development Perspectives</em>, <em>14</em>(1), 9–14. <a href="https://doi.org/10.1111/cdep.12360">https://doi.org/10.1111/cdep.12360</a>
+</div>
+<div id="ref-munafo_manifesto_2017" class="csl-entry" role="listitem">
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, <em>1</em>, 0021. <a href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>
+</div>
+<div id="ref-nosek_promoting_2015" class="csl-entry" role="listitem">
+Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. <em>Science</em>, <em>348</em>(6242), 1422–1425. <a href="https://doi.org/10.1126/science.aab2374">https://doi.org/10.1126/science.aab2374</a>
+</div>
+<div id="ref-Srcd2019-hg" class="csl-entry" role="listitem">
+SRCD. (2019). Policy on scientific integrity, transparency, and openness | society for research in child development <span>SRCD</span>. <a href="https://www.srcd.org/policy-scientific-integrity-transparency-and-openness" class="uri">https://www.srcd.org/policy-scientific-integrity-transparency-and-openness</a>. Retrieved from <a href="https://www.srcd.org/policy-scientific-integrity-transparency-and-openness">https://www.srcd.org/policy-scientific-integrity-transparency-and-openness</a>
+</div>
 </div>
 </section></section>
     </div>

@@ -17,9 +17,23 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-20 Fri"
 
 ## Today
 
-# Topic
+*Work session*
+
+- [Discuss draft]{.orange_due}
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
+- [Assignment]{.green_assigned}
+    - [Exercise 06: Replication](exercises/ex06-replication.qmd)
 
 # Next time
+
+*Solutions*
+
+- [Final due]{.orange_due}
+    - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
+- Discuss
+    - [@munafo_manifesto_2017]
+    - [@Begley2013-vm]
+- [Class notes](wk10-2023-10-23.qmd)
 
 # Resources
 

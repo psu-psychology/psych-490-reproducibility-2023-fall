@@ -319,14 +319,14 @@
     "href": "notes/wk10-2023-10-27.html#today",
     "title": "2023-10-27 Fri",
     "section": "Today",
-    "text": "Today"
+    "text": "Today\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
   },
   {
     "objectID": "notes/wk10-2023-10-27.html#references",
     "href": "notes/wk10-2023-10-27.html#references",
     "title": "2023-10-27 Fri",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-10-27 Fri"
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-27 Fri\n\n\n\nCamerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., … Wu, H. (2018). Evaluating the replicability of social science experiments in nature and science between 2010 and 2015. Nature Human Behaviour, 1. https://doi.org/10.1038/s41562-018-0399-z\n\n\nCollaboration, O. S. (2015). Estimating the reproducibility of psychological. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#announcements",
@@ -340,14 +340,14 @@
     "href": "notes/wk10-2023-10-23.html#today",
     "title": "2023-10-23 Mon",
     "section": "Today",
-    "text": "Today"
+    "text": "Today\n\nFinal due\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nDiscuss\n\n(Munafò et al., 2017)\n(Begley, 2013)"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#references",
     "href": "notes/wk10-2023-10-23.html#references",
     "title": "2023-10-23 Mon",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-10-23 Mon"
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-23 Mon\n\n\n\nBegley, C. G. (2013). Six red flags for suspect work. Nature, 497(7450), 433–434. https://doi.org/10.1038/497433a\n\n\nGilmore, R. O., Cole, P. M., Verma, S., Aken, M. A. G., & Worthman, C. M. (2020). Advancing scientific integrity, transparency, and openness in child development research: Challenges and possible solutions. Child Development Perspectives, 14(1), 9–14. https://doi.org/10.1111/cdep.12360\n\n\nMunafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. https://doi.org/10.1038/s41562-016-0021\n\n\nNosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374\n\n\nSRCD. (2019). Policy on scientific integrity, transparency, and openness | society for research in child development SRCD. https://www.srcd.org/policy-scientific-integrity-transparency-and-openness. Retrieved from https://www.srcd.org/policy-scientific-integrity-transparency-and-openness"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#in-the-news",
@@ -2972,14 +2972,14 @@
     "href": "notes/wk10-2023-10-25.html#today",
     "title": "2023-10-25 Wed",
     "section": "Today",
-    "text": "Today"
+    "text": "Today\nChanging journal policies\n\nDiscuss\n\n(Nosek et al., 2015)\n(Gilmore, Cole, Verma, Aken, & Worthman, 2020) and (SRCD, 2019)"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#references",
     "href": "notes/wk10-2023-10-25.html#references",
     "title": "2023-10-25 Wed",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-10-25 Wed"
+    "text": "References\n\n\nPSYCH 490.009: 2023-10-25 Wed\n\n\n\nCamerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., … Wu, H. (2018). Evaluating the replicability of social science experiments in nature and science between 2010 and 2015. Nature Human Behaviour, 1. https://doi.org/10.1038/s41562-018-0399-z\n\n\nGilmore, R. O., Cole, P. M., Verma, S., Aken, M. A. G., & Worthman, C. M. (2020). Advancing scientific integrity, transparency, and openness in child development research: Challenges and possible solutions. Child Development Perspectives, 14(1), 9–14. https://doi.org/10.1111/cdep.12360\n\n\nNosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374\n\n\nSRCD. (2019). Policy on scientific integrity, transparency, and openness | society for research in child development SRCD. https://www.srcd.org/policy-scientific-integrity-transparency-and-openness. Retrieved from https://www.srcd.org/policy-scientific-integrity-transparency-and-openness"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#announcements",
@@ -3323,5 +3323,110 @@
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#abstract",
+    "href": "notes/wk10-2023-10-23.html#abstract",
+    "title": "2023-10-23 Mon",
+    "section": "Abstract",
+    "text": "Abstract\n\nImproving the reliability and efficiency of scientific research will increase the credibility of the published scientific literature and accelerate discovery. Here we argue for the adoption of measures to optimize key elements of the scientific process: methods, reporting and dissemination, reproducibility, evaluation and incentives.\n\n\n(Munafò et al., 2017)"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#table-1-background-iframehttpswww.nature.comarticless41562-016-0021tables1-scrollable",
+    "href": "notes/wk10-2023-10-23.html#table-1-background-iframehttpswww.nature.comarticless41562-016-0021tables1-scrollable",
+    "title": "2023-10-23 Mon",
+    "section": "Table 1 {background-iframe=“https://www.nature.com/articles/s41562-016-0021/tables/1” scrollable}",
+    "text": "Table 1 {background-iframe=“https://www.nature.com/articles/s41562-016-0021/tables/1” scrollable}"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#improving-methods",
+    "href": "notes/wk10-2023-10-23.html#improving-methods",
+    "title": "2023-10-23 Mon",
+    "section": "Improving methods",
+    "text": "Improving methods\n\nProtecting against cognitive biases.\n\n\nImproving methodological training\n\n\nImplementing independent methodological support\n\n\nEncouraging collaboration and team science."
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#improving-reporting-and-dissemination",
+    "href": "notes/wk10-2023-10-23.html#improving-reporting-and-dissemination",
+    "title": "2023-10-23 Mon",
+    "section": "Improving reporting and dissemination",
+    "text": "Improving reporting and dissemination\n\nPromoting study pre-registration\n\n\nImproving the quality of reporting"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#improving-reproducibility",
+    "href": "notes/wk10-2023-10-23.html#improving-reproducibility",
+    "title": "2023-10-23 Mon",
+    "section": "Improving reproducibility",
+    "text": "Improving reproducibility\n\nPromoting transparency and open science"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#improving-evaluation",
+    "href": "notes/wk10-2023-10-23.html#improving-evaluation",
+    "title": "2023-10-23 Mon",
+    "section": "Improving evaluation",
+    "text": "Improving evaluation\n\nDiversifying peer review"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#changing-incentives",
+    "href": "notes/wk10-2023-10-23.html#changing-incentives",
+    "title": "2023-10-23 Mon",
+    "section": "Changing incentives",
+    "text": "Changing incentives\n\nRewarding open and reproducible practices"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-23.html#table-1",
+    "href": "notes/wk10-2023-10-23.html#table-1",
+    "title": "2023-10-23 Mon",
+    "section": "Table 1",
+    "text": "Table 1\nLink: https://www.nature.com/articles/s41562-016-0021/tables/1"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#transparency-and-openness-promotion-top-guidelines",
+    "href": "notes/wk10-2023-10-25.html#transparency-and-openness-promotion-top-guidelines",
+    "title": "2023-10-25 Wed",
+    "section": "Transparency and Openness Promotion (TOP) guidelines",
+    "text": "Transparency and Openness Promotion (TOP) guidelines\n\nFigure from Nosek et al. (2015)"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#top-factor-database",
+    "href": "notes/wk10-2023-10-25.html#top-factor-database",
+    "title": "2023-10-25 Wed",
+    "section": "TOP Factor database",
+    "text": "TOP Factor database"
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#top-factor-for-journals-ive-published-in-recently",
+    "href": "notes/wk10-2023-10-25.html#top-factor-for-journals-ive-published-in-recently",
+    "title": "2023-10-25 Wed",
+    "section": "TOP factor for journals I’ve published in recently",
+    "text": "TOP factor for journals I’ve published in recently\n\nTOP Factors for Journals Rick Gilmore has published in recently\nThere are many factors that influence where an author publishes a paper."
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#notes",
+    "href": "notes/wk10-2023-10-25.html#notes",
+    "title": "2023-10-25 Wed",
+    "section": "Notes",
+    "text": "Notes\n\n(Nosek et al., 2015) was behind a paywall.\nI was able to access the article via authenticated access to libraries.psu.edu.\nThere were two files of supplementary materials\n\nhttps://www-science-org.ezaccess.libraries.psu.edu/doi/suppl/10.1126/science.aab2374/suppl_file/aab2374-nosek-sm.pdf\nhttps://www-science-org.ezaccess.libraries.psu.edu/doi/suppl/10.1126/science.aab2374/suppl_file/top_guidelines_summary-google_sheets_files.zip\n\nThere was an Open Access (OA) version of the article available on OSF."
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#changing-society-journal-policies",
+    "href": "notes/wk10-2023-10-25.html#changing-society-journal-policies",
+    "title": "2023-10-25 Wed",
+    "section": "Changing society & journal policies",
+    "text": "Changing society & journal policies\n\nGilmore et al. (2020)\nSRCD (2019)\n\n\n\n\n\n\n\nNote\n\n\nDo you think that explaining why data and materials sharing is important will help persuade researchers to do more?\nN.B. – SRCD’s Child Development has a TOP Factor score of 7."
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#notes-1",
+    "href": "notes/wk10-2023-10-25.html#notes-1",
+    "title": "2023-10-25 Wed",
+    "section": "Notes",
+    "text": "Notes\n\nThe article abstract was publicly available, but the full article was behind a paywall.\nI was able to access the article via authenticated access to libraries.psu.edu."
+  },
+  {
+    "objectID": "notes/wk10-2023-10-25.html#next-time",
+    "href": "notes/wk10-2023-10-25.html#next-time",
+    "title": "2023-10-25 Wed",
+    "section": "Next time…",
+    "text": "Next time…\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3. # Next time"
   }
 ]

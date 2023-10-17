@@ -29,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="../include/css/styles.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -354,15 +373,25 @@ Rick Gilmore
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
+<p><em>Final project work day</em></p>
+<ul>
+<li><span class="orange_due">Due</span>
+<ul>
+<li><a href="exercises/ex06-replication.qmd">Exercise 06: Replication</a></li>
+</ul></li>
+<li><span class="green_assigned">Optional Extra Credit Assignment</span> - For 5 extra credit points, write a paragraph that summarizes the main findings of <span class="citation" data-cites="Camerer2018-tr">(<a href="#/references" role="doc-biblioref" onclick="">Camerer et al., 2018</a>)</span>. <span class="due_orange">Due Friday, November 3</span>.</li>
+</ul>
 </section></section>
-<section id="topic" class="title-slide slide level1 center">
-<h1>Topic</h1>
-
-</section>
-
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-
+<p><em>Large-scale replication studies</em></p>
+<ul>
+<li>Read
+<ul>
+<li><span class="citation" data-cites="collaboration_estimating_2015">(<a href="#/references" role="doc-biblioref" onclick="">Collaboration, 2015</a>)</span></li>
+</ul></li>
+<li><a href="wk11-2023-10-30.qmd">Class notes</a></li>
+</ul>
 </section>
 
 <section>
@@ -370,11 +399,19 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="footer footer-default">
 <p><a href="../index.html">PSYCH 490.009</a>: 2023-10-27 Fri</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-Camerer2018-tr" class="csl-entry" role="listitem">
+Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., … Wu, H. (2018). Evaluating the replicability of social science experiments in nature and science between 2010 and 2015. <em>Nature Human Behaviour</em>, 1. <a href="https://doi.org/10.1038/s41562-018-0399-z">https://doi.org/10.1038/s41562-018-0399-z</a>
+</div>
+<div id="ref-collaboration_estimating_2015" class="csl-entry" role="listitem">
+Collaboration, O. S. (2015). Estimating the reproducibility of psychological. <em>Science</em>, <em>349</em>(6251), aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>
+</div>
 </div>
 </section></section>
     </div>
