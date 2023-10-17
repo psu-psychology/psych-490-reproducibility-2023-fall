@@ -13,6 +13,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-20 Fri"
 
 ## Announcements
 
+## In the news {background-iframe="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html?smid=nytcore-ios-share&referringSource=articleShare"}
+
 ## Today
 
 # Topic

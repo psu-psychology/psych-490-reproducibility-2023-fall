@@ -272,6 +272,7 @@ title: "schedule"
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
 - [Assignment]{.green_assigned}
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
+- [Class notes](notes/wk09-2023-10-20.qmd)
 
 ## October 23-27 {- #week-10}
 
