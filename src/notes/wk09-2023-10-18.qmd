@@ -15,7 +15,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-18 Wed"
 
 - <https://scoop.upworthy.com/scientists-toss-350-757-coins-and-prove-that-coin-tosses-are-far-from-equal-odds>
 
->We analyze the natural process of flipping a coin which is caught in the hand. We show that vigorously flipped coins tend to come up the same way they started...For natural flips, the chance of coming up as started is about .51.
+>We analyze the natural process of flipping a coin which is caught in the hand. We show that **vigorously flipped coins tend to come up the same way they started**...For natural flips, the chance of coming up as started is about .51.
 
 <p style="text-align:center;">
 [@Diaconis2007-pz]
@@ -24,7 +24,10 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-18 Wed"
 ---
 
 ![@Oza2023-fo](../include/img/nature-2023-oct-repro-trial-bio.png){fig-align="center"}
-Original paper: [@Gould2023-vu]
+---
+
+- Original paper: [@Gould2023-vu]
+- Multiverse/many analysts/meta-analysis discussion [coming up](../schedule.qmd#wednesday-november-1)
 
 ## Announcements
 
@@ -37,24 +40,24 @@ Original paper: [@Gould2023-vu]
 
 - Watch
     - [@Cuddy2012-zx](https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are)
-- Read
+- Discuss
     - [@Ritchie2020-fm], Chapter 6
-    - [@Carney2010-gq]
-    - (Optional) [@Ranehill2015-dj]
+    - [@Carney2010-gq], [file on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=155192209)
+    - (Optional) [@Ranehill2015-dj], [file on Canvas](https://psu.instructure.com/courses/2280122/files/folder/readings?preview=155192230)
 
 ---
 
 ::: {.callout-note}
 
-The *New York Times* published an article [@Dominus2017-th](https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html) on the controversy surrounding Dr. Cuddy's work called "When the Revolution Came for Amy Cuddy."
+The *New York Times* published an article by  [@Dominus2017-th](https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html) on the controversy surrounding Dr. Cuddy's work called "When the Revolution Came for Amy Cuddy."
 
 I considered reading this and discussing it, but I was more interested in the substantive claims made in the papers and in the talk.
 
-Reading the Times' story would make a great final project topic, however.
+Reading the Times' story and discussing the controversy would make a great final project topic, however.
 
 :::
 
-## [Chapter 6 in @Ritchie2020-fm] 
+## Chapter 6 from [@Ritchie2020-fm] 
 
 - Problems with scientific press releases
     - Not written by scientists
@@ -68,7 +71,7 @@ Reading the Times' story would make a great final project topic, however.
     - Journalists do not do their own investigations but repeat press releases
 - Popular books (by scientists, too) can gloss over complexities, nuances
 - Positive rhetoric/spin
-- Counter-example from OPERA study of faster-than-light particle
+- Counter-example from [OPERA study](https://en.wikipedia.org/wiki/Faster-than-light_neutrino_anomaly) of faster-than-light particle
 
 # Power-posing
 
@@ -102,7 +105,8 @@ Carney, D. R., Cuddy, A. J. C. & Yap, A. J. (2010). Power posing: Brief nonverba
 
 ## Methods
 
-- $n=42$ participants (26 female; age or other demographic characteristics?)
+- $n=42$ participants (26 female)
+  - age or other characteristics not reported
 - Assigned into two groups (high power vs. low power)
 - Experimenter posed bodies
 - Two different poses held for 1 min
@@ -173,7 +177,7 @@ Ranehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (
 
 ---
 
->We conducted a conceptual replication study task in both the gain dom with a similar methodology as that employed by Carney et al. but using a substantially larger sample (N= 200) and a design in which the experimenter was blind to condition. 
+>We conducted a conceptual replication study task with a similar methodology as that employed by Carney et al. but using a substantially larger sample (N=200) and a design in which the experimenter was blind to condition. 
 
 <p style="text-align:center;"> 
 [@Ranehill2015-dj]
@@ -247,12 +251,12 @@ df <- data.frame(sub_id = sub_id, measure = measure, time = time, test_group = g
 library(ggplot2)
 df |>
   ggplot() +
-  aes(x = time, y = measure, group = sub_id, color = test_group) +
+  aes(x = as.factor(time), y = measure, group = sub_id, color = test_group) +
   geom_point() +
   geom_line() +
   facet_grid(~ test_group) +
-  scale_x_continuous(time, breaks=c(1, 2)) +
-  xlab("Test occasion")
+  xlab("Test occasion") +
+  ylim(0, 1.5)
 ```
 
 ---
@@ -271,102 +275,107 @@ flowchart LR
   A -->C((Physiology))
 ```
 
+## Causal diagram for [-@Carney2010-gq]
+
+```{mermaid}
+flowchart TD
+  A[Posing] -->B(Testosterone)
+  A -->C(Cortisol)
+  A -->D{Powerful feelings}
+  A -->E[Risk tolerance]
+```
+
 ---
 
 A folk psychology view might hold that feelings cause behaviors.
 
 ```{mermaid}
-flowchart LR
-  B(Feelings) -->A[Behaviors]
-  C((Physiology))
+flowchart TD
+  D{Powerful feelings} -->A[Posing]
+  D -->E[Risk tolerance]
+  D -->|??|C(Cortisol)
+  D -->|??|B(Testosterone)
 ```
 
-Here, the role of physiology in this process isn't clear.
+Here, the role of feelings on endocrine measures might not be known or clear.
 
 ---
 
-Or that feelings and physiological responses (e.g., hormones like cortisol and testosterone) together influence behaviors.
+Neuroscientists would argue that feelings are the *outcome* of physiological processes like hormone levels and nervous system activity.
 
 ```{mermaid}
-%%| width: 80%
-flowchart LR
-  B(Feelings) -->A[Behaviors]
-  C((Physiology)) -->A
-```
-
----
-
-Neuroscientists might argue that feelings are the *outcome* of physiological processes like hormone levels and nervous system activity.
-
-```{mermaid}
-%%| fig-height: 6.5
-flowchart LR
-  B(Feelings) -->A[Behaviors]
-  C((Physiology)) -->A
-  C -->B
+flowchart TD
+  C(Cortisol) -->D{Powerful feelings}
+  B(Testosterone) -->D
+  F(Nervous system) -->D
+  F --> A[Posing]
+  F --> E[Risk tolerance]
 ```
 
 ---
 
-And that physiological processes influence one another.
+And that physiological processes (hormones & nervous system activity) influence one another.
 
 ```{mermaid}
-%%| fig-height: 6.5
-flowchart LR
-  B(Feelings) -->A[Behaviors]
-  C((Physiology)) -->A
-  C -->B
-  C -->C
+flowchart TD
+  C(Cortisol) -->D{Powerful feelings}
+  B(Testosterone) -->D
+  F(Nervous system) -->D
+  F --> A[Posing]
+  F --> E[Risk tolerance]
+  C <--> F
+  B <--> F
 ```
 
 ---
 
-To understand the full system of influences, we might need to look at a more complicated causal model. Here, behaviors influence and are influenced by physiology. Behaviors influence, and are influenced by feelings through influences on physiology. 
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[@Carney2010-gq]
 
 ```{mermaid}
-%%| fig-height: 6.5
-flowchart LR
-  C((Physiology)) -->A[Behaviors]
-  C -->C
-  C -->B(Feelings)
-  B -->C
-  A -->C
+flowchart TD
+  A[Posing] -->B(Testosterone)
+  A -->C(Cortisol)
+  A -->D{Powerful feelings}
+  A -->E[Risk tolerance]
 ```
+
+:::
+
+::: {.column width="50%"}
+
+[@Ranehill2015-dj]
+
+```{mermaid}
+flowchart TD
+  A[Posing] -.-> B(Testosterone)
+  A -.-> C(Cortisol)
+  A ==> D{Powerful feelings}
+  A -.-> E[Risk tolerance]
+```
+
+:::
+
+::::
 
 ---
 
-However, the evidence presented in [@Carney2010-gq](http://dx.doi.org/10.1177/0956797610383437) and  [@Ranehill2015-dj](http://dx.doi.org/10.1177/0956797614553946) show that 'posing' behavior influences feelings, but not (hormonal) physiology. 
+If the neuroscientific view is correct, there must be a route for behaviors (like posing) to influence feelings through physiology. 
 
 ```{mermaid}
-%%| fig-height: 6.5
-flowchart LR
-  A[Posing] -->|Increases|B(Feelings)
-  A -->|No influence on|C((Physiology))
-```
-
----
-
-If the neuroscientific view is correct, there must be another route for behaviors to influence feeling through physiology. That route is probably nervous system activity.
-
-```{mermaid}
-flowchart LR
-  C((Nervous System)) -->A[Behaviors]
-  A -->C
-  C -->C
-  C -->D
-  D((Hormones)) -->A
-  D -->C
-  D -->D
-  C -->B(Feelings)
-  B -->C
-  D -->B
+flowchart TD
+  A[Posing] --> B(Nervous system) --> D{Feelings}
+  B --> A
 ```
 
 ---
 
 ::: {.callout-note}
 
-It can be useful to sketch an author's implicit causal model if that model is not stated explicitly.
+Sometimes it can be illuminating to sketch an author's implicit causal model if that model is not stated explicitly.
 
 :::
 

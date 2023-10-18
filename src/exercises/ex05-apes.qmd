@@ -73,7 +73,6 @@ There are no right or wrong answers.
 The actual difference in the *observed* means of A and B should fall inside the interval.
 In your own words, explain what the confidence interval means.
 
-<!-- 2. The right hand box shows data about the statistical power ($1-\beta$ of this *t*-test). What is the 'power' reported. Remember, beta $\beta$ is the probability of finding a false negative. In your own words, what does this number mean? -->
 2. Let's see what happens when we generate different samples of A and B with the **same** underlying statistics--the same $n$, same mean ($\mu$), same standard deviation ($\sigma$), same effect size ($d$), and same criterion ($\alpha$) or false positive rate.
       - Press the *Regenerate* button. What happens to the histogram? Look in the grey `t-test` box. What happens to the *t*-test, and the mean values for A, B, the difference between A and B (B-A), and the CI?
       - Press the *Regenerate* button a couple of times until `Sig?` changes from FALSE to TRUE or TRUE to FALSE? This is a form of *p*-hacking? Explain how. Remember the specific data we're analyzing are being regenerated each time we press the button; what's not changing is the sample size, standard deviation, and the effect size (difference between B and A). 

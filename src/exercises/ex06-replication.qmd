@@ -3,20 +3,20 @@ title: "Exercise 06"
 subtitle: "Replication"
 ---
 
-## Dates {-}
+## Dates
 
 Due: [Friday, October 27]{.orange_due}.
 
-## Goals {-}
+## Goals
 
 Replication is one standard among many that can be used to evaluate scientific findings.
 In this exercise, you will evaluate a published scientific finding on the basis of whether it 1) replicates prior work and 2) could be replicated by someone else.
 
-## Assignment {-}
+## Assignment
 
 Choose a published scientific paper on a topic you find interesting and important.
 
-You might find some of the topics suggested here [@FORRT_undated-pl] a good place to start: <https://forrt.org/reversals/>.
+If you are stuck, you might find some of the topics suggested here [@FORRT_undated-pl] a good place to start: <https://forrt.org/reversals/>.
 
 Does the paper:
 
@@ -32,7 +32,9 @@ Does the paper:
 
 If you had to give the author(s) of your paper a grade for *replicability* (A, B, C, D, F), what grade would you give it and why?
 
-## Submit {-}
+## Submit
 
 In a short (2-3 pp double-spaced report) discuss the paper's finding and why you think it is interesting and important.
 Then, evaluate the paper from the perspective of "replicability" by answering the questions in the previous section.
+Conclude with your "grade" and an explanation for it.
+
