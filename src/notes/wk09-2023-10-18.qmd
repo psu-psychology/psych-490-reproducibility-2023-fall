@@ -36,6 +36,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-18 Wed"
     
 ## Last time
 
+- [@Qian2022-yp] [analysis](https://gilmore-lab.github.io/sex-differences-project/analysis/qian-berenbaum-gilmore.html).
 - When [@Nuijten2015-ul] examined 250,000+ statistics in psychology papers published from 1985-2013, what did they find?
 - [@Szucs2017-fc] found that "Median power to detect small, medium, and large effects was 0.12, 0.44, and 0.73..." Can you restate this in less formal or technical terms?
 
