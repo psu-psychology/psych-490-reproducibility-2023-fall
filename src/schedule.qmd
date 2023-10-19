@@ -268,6 +268,8 @@ title: "schedule"
 
 *Work session: Exercise 05, Replication, Final Projects*
 
+- Watch & discuss
+    - [@Cuddy2012-zx](https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are)
 - [Discuss draft]{.orange_due}
     - [Exercise 05: Alpha, Power, Effect Sizes, & Sample Size](exercises/ex05-apes.qmd) write-up
 - [Assignment]{.green_assigned}
