@@ -1,23 +1,174 @@
 ---
-title: "2023-11-01 Mon"
-subtitle: ""
+title: "2023-11-01 Wed"
+subtitle: "Meta-analysis & many analysts"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
 csl: ../include/bib/apa.csl
 css: ../include/css/styles.css
-footer: "[PSYCH 490.009](../index.html): 2023-11-01 Mon"
+footer: "[PSYCH 490.009](../index.html): 2023-11-01 Wed"
 ---
 
 # Overview
 
-## Announcements
+## In the news
+
+- [@Wu2023-od](https://www.theatlantic.com/science/archive/2023/03/covid-pandemic-origins-missing-evidence-debate/673460/)
+- Article in *The Atlantic* about a dispute over shared data--who can use it, when, and for what purposes--that could shed light on the origins of the pandemic.
+
+## Last time...
 
 ## Today
 
-# Topic
+*Meta-analysis & many analysts*
+
+- Discuss
+    - [@Wilson2014-ol]
+    - [@Silberzahn2018-st]
+    
+## Meta-analysis
+
+- Multiple studies, ideally published and unpublished (why?)
+- What is the distribution of effect sizes?
+- Related to [Cochrane Systematic Reviews](https://www.cochranelibrary.com/about/about-cochrane-reviews)
+
+## Example
+
+van Agteren, J., Iasiello, M., Lo, L., Bartholomaeus, J., Kopsaftis, Z., Carey, M. & Kyrios, M. (2021). A systematic review and meta-analysis of psychological interventions to improve mental wellbeing. *Nature Human Behaviour*. <https://doi.org/10.1038/s41562-021-01093-w>.
+
+---
+
+>Our current understanding of the efficacy of psychological interventions in improving mental states of wellbeing is incomplete. This study aimed to overcome limitations of previous reviews by examining the efficacy of distinct types of psychological interventions, irrespective of their theoretical underpinning, and the impact of various moderators, in a unified systematic review and meta-analysis. 
+
+<p style="text-align:center;">
+[@Van_Agteren2021-al]
+</p>
+
+---
+
+>Four-hundred-and-nineteen randomized controlled trials from clinical and non-clinical populations (*n* = 53,288) were identified for inclusion. Mindfulness-based and multi-component positive psychological interventions demonstrated the greatest efficacy in both clinical and non-clinical populations. 
+
+<p style="text-align:center;">
+[@Van_Agteren2021-al]
+</p>
+
+---
+
+>Meta-analyses also found that singular positive psychological interventions, cognitive and behavioural therapy-based, acceptance and commitment therapy-based, and reminiscence interventions were impactful. 
+
+<p style="text-align:center;">
+[@Van_Agteren2021-al]
+</p>
+
+---
+
+>Effect sizes were moderate at best, but differed according to target population and moderator, most notably intervention intensity. The evidence quality was generally low to moderate. While the evidence requires further advancement, the review provides insight into how psychological interventions can be designed to improve mental wellbeing.
+
+<p style="text-align:center;">
+[@Van_Agteren2021-al]
+</p>
+
+---
+
+```{r, out.width="100%", fig.cap="Figure 2 from [@Van_Agteren2021-al](http://dx.doi.org/10.1038/s41562-021-01093-w)"}
+knitr::include_graphics("../include/img/vanagteren-2021-fig-02.png")
+```
+
+---
+
+```{r, out.width="100%", fig.cap="Figure 3 from [@Van_Agteren2021-al](http://dx.doi.org/10.1038/s41562-021-01093-w)"}
+knitr::include_graphics("../include/img/vanagteren-2021-fig-03.png")
+```
+
+## Example: Many-analysts {.scrollable}
+
+Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, *1*(3), 337–356. <https://doi.org/10.1177/2515245917747646>
+
+## Abstract
+
+>Twenty-nine teams involving 61 analysts used the same data set to address the same research question: whether soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players. 
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>Analytic approaches varied widely across the teams, and the estimated effect sizes ranged from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, and 9 teams (31%) did not observe a significant relationship. 
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>Overall, the 29 different analyses used 21 unique combinations of covariates. Neither analysts’ prior beliefs about the effect of interest nor their level of expertise readily explained the variation in the outcomes of the analyses. Peer ratings of the quality of the analyses also did not account for the variability. 
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions. Crowdsourcing data analysis, a strategy in which numerous research teams are recruited to simultaneously investigate the same research question, makes transparent how defensible, yet subjective, analytic choices influence research results.
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+```{r, out.width="100%", fig.cap="Figure 2 from [@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
+knitr::include_graphics("../include/img/silberzahn-2018-fig-02.jpg")
+```
+
+---
+
+>Point estimates (in order of magnitude) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams. The teams are ordered so that the smallest reported effect size is at the top and the largest is at the bottom. The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot; the actual upper bounds of the confidence intervals were 11.47 for Team 21 and 78.66 for Team 27. OLS = ordinary least squares; WLS = weighted least squares.
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+```{r, out.width="100%", fig.cap="Figure 3 from [@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
+knitr::include_graphics("../include/img/silberzahn-2018-fig-03.jpg")
+```
+
+---
+
+>; Point estimates (clustered by analytic approach) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams. The teams are clustered according to the distribution used in their analyses; within each cluster, the teams are listed in order of the magnitude of the reported effect size, from smallest at the top to largest at the bottom. The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot (see Fig. 2). OLS = ordinary least squares; WLS = weighted least squares; Misc = miscellaneous.
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+::: {.callout-tip}
+
+Odds ratios (OR) [@Szumilas2010-uj]:
+
+- OR < 1: Outcome *less* likely than comparison
+- OR = 1: Outcome and comparison equally likely
+- OR > 1: Outcome *more* likely than comparison
+
+[Wikipedia](https://en.wikipedia.org/wiki/Odds_ratio) also has a thorough discussion.
+
+:::
+
+## Other examples of "many-analysts"
+
+- [@Gould2023-vu] in ecology
+- [@Botvinik-Nezer2020-wr] in cognitive neuroscience
 
 # Next time
+
+*Final project work day*
+
+- [Optional Extra Credit Assignment]{.orange_due}
+    - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr].
 
 # Resources
 

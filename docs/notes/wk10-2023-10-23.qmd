@@ -13,6 +13,13 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-23 Mon"
 
 ## Announcements
 
+- [Due Friday]{.orange_due}
+    - [Exercise 06: Replication](exercises/ex06-replication.qmd)
+
+## Last time...
+
+- What did we learn from watching the TED Talk about power posing?
+
 ## Today
 
 - [Final due]{.orange_due}
@@ -67,7 +74,7 @@ Link: <https://www.nature.com/articles/s41562-016-0021/tables/1>
 
 >Implementing independent methodological support
 
->Encouraging collaboration and team science.
+>Encouraging collaboration and team science
 
 ## Improving reporting and dissemination
 

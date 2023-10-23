@@ -13,6 +13,9 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-25 Wed"
 
 ## Announcements
 
+- [Due Friday]{.orange_due}
+    - [Exercise 06: Replication](exercises/ex06-replication.qmd)
+
 ## Today
 
 *Changing journal policies*
@@ -85,6 +88,7 @@ N.B. -- SRCD's *Child Development* has a TOP Factor score of 7.
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
 - [Optional Extra Credit Assignment]{.green_assigned}
       - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr]. [Due Friday, November 3]{.due_orange}.
+
 # Next time
 
 # Resources
