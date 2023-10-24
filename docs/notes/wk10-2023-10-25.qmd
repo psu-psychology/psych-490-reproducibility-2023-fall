@@ -18,11 +18,37 @@ footer: "[PSYCH 490.009](../index.html): 2023-10-25 Wed"
 
 ## Today
 
+*Solutions*
+
+- Finish discussion of [@munafo_manifesto_2017]
+
+---
+
 *Changing journal policies*
 
 - Discuss
     - [@nosek_promoting_2015]
     - [@Gilmore2020-sl] and [@Srcd2019-hg]
+    
+# [@munafo_manifesto_2017]
+
+## Table 1
+
+Link: <https://www.nature.com/articles/s41562-016-0021/tables/1>
+
+---
+
+::: {.callout-note}
+
+Which of these recommended practices would be at the *top* of your to-do list if you were a journal editor/publisher, funder, institution (college or university), or regulator (e.g., government entity)?
+
+Which would be at the *bottom* of your list?
+
+What's missing from the list?
+
+What can students do?
+
+:::
 
 # [@nosek_promoting_2015]
     
