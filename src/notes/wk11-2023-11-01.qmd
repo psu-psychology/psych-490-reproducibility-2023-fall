@@ -16,8 +16,6 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-01 Wed"
 - [@Wu2023-od](https://www.theatlantic.com/science/archive/2023/03/covid-pandemic-origins-missing-evidence-debate/673460/)
 - Article in *The Atlantic* about a dispute over shared data--who can use it, when, and for what purposes--that could shed light on the origins of the pandemic.
 
-## Last time...
-
 ## Today
 
 *Meta-analysis & many analysts*
@@ -26,7 +24,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-01 Wed"
     - [@Wilson2014-ol]
     - [@Silberzahn2018-st]
     
-## Meta-analysis
+# Meta-analysis
 
 - Multiple studies, ideally published and unpublished (why?)
 - What is the distribution of effect sizes?
@@ -80,7 +78,7 @@ knitr::include_graphics("../include/img/vanagteren-2021-fig-02.png")
 knitr::include_graphics("../include/img/vanagteren-2021-fig-03.png")
 ```
 
-## Example: Many-analysts {.scrollable}
+# Example: Many-analysts {.scrollable}
 
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, *1*(3), 337–356. <https://doi.org/10.1177/2515245917747646>
 

@@ -40,13 +40,13 @@ Link: <https://www.nature.com/articles/s41562-016-0021/tables/1>
 
 ::: {.callout-note}
 
-Which of these recommended practices would be at the *top* of your to-do list if you were a journal editor/publisher, funder, institution (college or university), or regulator (e.g., government entity)?
+Which of the practices recommended in [Table 1 from @munafo_manifesto_2017](https://www.nature.com/articles/s41562-016-0021/tables/1) recommended practices would be at the *top* of your to-do list if you were a journal editor/publisher, funder, institution (college or university), or regulator (e.g., government entity)? Why?
 
-Which would be at the *bottom* of your list?
+Which would be at the *bottom* of your list? Why?
 
 What's missing from the list?
 
-What can students do?
+What can students, who aren't yet editors, funders, institutions, or regulators do?
 
 :::
 
@@ -106,7 +106,7 @@ N.B. -- SRCD's *Child Development* has a TOP Factor score of 7.
 - The article abstract was publicly available, but the full article was behind a paywall.
 - I was able to access the article via authenticated access to libraries.psu.edu.
 
-## Next time...
+# Next time
 
 *Final project work day*
 
@@ -114,8 +114,6 @@ N.B. -- SRCD's *Child Development* has a TOP Factor score of 7.
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
 - [Optional Extra Credit Assignment]{.green_assigned}
       - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr]. [Due Friday, November 3]{.due_orange}.
-
-# Next time
 
 # Resources
 
