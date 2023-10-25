@@ -106,7 +106,7 @@ N.B. -- SRCD's *Child Development* has a TOP Factor score of 7.
 - The article abstract was publicly available, but the full article was behind a paywall.
 - I was able to access the article via authenticated access to libraries.psu.edu.
 
-## Next time...
+# Next time
 
 *Final project work day*
 
@@ -114,8 +114,6 @@ N.B. -- SRCD's *Child Development* has a TOP Factor score of 7.
     - [Exercise 06: Replication](exercises/ex06-replication.qmd)
 - [Optional Extra Credit Assignment]{.green_assigned}
       - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr]. [Due Friday, November 3]{.due_orange}.
-
-# Next time
 
 # Resources
 
