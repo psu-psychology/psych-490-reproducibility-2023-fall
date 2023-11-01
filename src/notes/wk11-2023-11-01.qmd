@@ -119,10 +119,17 @@ knitr::include_graphics("../include/img/vanagteren-2021-fig-03.png")
 </p>
 
 # Many-analysts
-
 ---
 
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, *1*(3), 337–356. <https://doi.org/10.1177/2515245917747646>
+
+---
+
+>What if scientific results are highly contingent on subjective decisions at the analysis stage? In that case, the process of certifying a particular result on the basis of an idiosyncratic analytic strategy might be fraught with unrecognized uncertainty (Gelman & Loken, 2014), and research findings might be less trustworthy than they at first appear to be (Cumming, 2014). Had the authors made different assumptions, an entirely different result might have been observed (Babtie, Kirk, & Stumpf, 2014).
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
 
 ## Abstract
 
@@ -139,6 +146,20 @@ Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E.
 <p style="text-align:center;">
 [@Silberzahn2018-st]
 </p>
+
+---
+
+::: {.callout-tip}
+
+Odds ratios (OR) [@Szumilas2010-uj]:
+
+- OR < 1: Outcome *less* likely than comparison
+- OR = 1: Outcome and comparison equally likely
+- OR > 1: Outcome *more* likely than comparison
+
+[Wikipedia](https://en.wikipedia.org/wiki/Odds_ratio) also has a thorough discussion.
+
+:::
 
 ---
 
@@ -182,6 +203,34 @@ Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E.
 
 ---
 
+![Figure 4 from [@Silberzahn2018-st]](https://journals.sagepub.com/cms/10.1177/2515245917747646/asset/images/large/10.1177_2515245917747646-fig4.jpeg)
+
+---
+
+>Fig. 4. The teams’ subjective beliefs about the primary research question across time. For each of the four subjective-beliefs surveys, the plot on the left shows each team leader’s response to the question asking whether players’ skin tone predicts how many red cards they receive. The heavy black line represents the mean response at each time point...
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>Each individual trajectory is jittered slightly to increase the interpretability of the plot. The plot on the right shows the number of team leaders who endorsed each response option at each time point.
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+![Table 5 from [@Silberzahn2018-st]. Analysts’ Mean Agreement With Potential Conclusions That Could Be Drawn From the Data](../include/img/silberzahn-2018-table-05.png)
+
+---
+
+>Note: The results shown are from the final survey. Each item concerned whether there is a relationship between players’ skin tone and the number of red-card decisions they receive. The response scale ranged from 1 (strongly disagree) to 7 (strongly agree). The items have been paraphrased for inclusion in the table.
+
+---
+
 >Neither analysts’ prior beliefs about the effect of interest nor their level of expertise readily explained the variation in the outcomes of the analyses. Peer ratings of the quality of the analyses also did not account for the variability. 
 
 <p style="text-align:center;">
@@ -196,25 +245,14 @@ Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E.
 [@Silberzahn2018-st]
 </p>
 
----
 
-::: {.callout-tip}
-
-Odds ratios (OR) [@Szumilas2010-uj]:
-
-- OR < 1: Outcome *less* likely than comparison
-- OR = 1: Outcome and comparison equally likely
-- OR > 1: Outcome *more* likely than comparison
-
-[Wikipedia](https://en.wikipedia.org/wiki/Odds_ratio) also has a thorough discussion.
-
-:::
 
 ## Your turn
 
 ::: {.callout-note}
 
 - So, are soccer referees more likely to give red cards to dark-skin-toned players?
+- How is this approach related to *p*-hacking?
 - How does the many analysts approach conflict with current practice?
 - When does this approach make sense and when doesn't it make sense?
 
