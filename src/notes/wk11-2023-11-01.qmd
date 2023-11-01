@@ -11,10 +11,11 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-01 Wed"
 
 # Overview
 
-## In the news
+## Prelude
 
-- [@Wu2023-od](https://www.theatlantic.com/science/archive/2023/03/covid-pandemic-origins-missing-evidence-debate/673460/)
-- Article in *The Atlantic* about a dispute over shared data--who can use it, when, and for what purposes--that could shed light on the origins of the pandemic.
+{{< video https://www.youtube.com/embed/cH6w7u9wMkk?si=n0D1H3okgnfYwnPo height="473" width="840" >}}
+
+[@Alex2023-qy]
 
 ## Today
 
@@ -78,7 +79,48 @@ knitr::include_graphics("../include/img/vanagteren-2021-fig-02.png")
 knitr::include_graphics("../include/img/vanagteren-2021-fig-03.png")
 ```
 
-# Example: Many-analysts {.scrollable}
+## Flaws with meta-analysis
+
+- Garbage-in, garbage-out?
+- What about publication bias?
+
+---
+
+>**Policy Points**:
+>
+>- Currently, there is massive production of unnecessary, misleading, and conflicted systematic reviews and meta-analyses. Instead of promoting evidence-based medicine and health care, these instruments often serve mostly as easily produced publishable units or marketing tools.
+>- Suboptimal systematic reviews and meta-analyses can be harmful given the major prestige and influence these types of studies have acquired.
+>
+
+<p style="text-align:center;">
+[@Ioannidis2016-mf]
+</p>
+
+---
+
+![Figure 1 from [@Ioannidis2016-mf]. Number of PubMed-Indexed Articles Published Each Year Between 1986 and 2014 That Carry the Tag “Systematic Review” or “Meta-analysis” for Type of Publication](../include/img/ioannidis-2016-milq12210-fig-0001-m.webp)
+
+---
+
+>**Conclusions**
+>
+>The production of systematic reviews and meta-analyses has reached epidemic proportions. Possibly, the large majority of produced systematic reviews and meta-analyses are unnecessary, misleading, and/or conflicted.
+
+<p style="text-align:center;">
+[@Ioannidis2016-mf]
+</p>
+
+---
+
+>Publication bias poses a challenge for accurately synthesizing research findings using meta-analysis. A number of statistical methods have been developed to combat this problem by adjusting the meta-analytic estimates...
+
+<p style="text-align:center;">
+[@Sladekova2023-ns]
+</p>
+
+# Many-analysts
+
+---
 
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, *1*(3), 337–356. <https://doi.org/10.1177/2515245917747646>
 
@@ -100,7 +142,47 @@ Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E.
 
 ---
 
->Overall, the 29 different analyses used 21 unique combinations of covariates. Neither analysts’ prior beliefs about the effect of interest nor their level of expertise readily explained the variation in the outcomes of the analyses. Peer ratings of the quality of the analyses also did not account for the variability. 
+>Overall, the 29 different analyses used 21 unique combinations of covariates. 
+
+---
+
+![Figure 2 from [@Silberzahn2018-st]](../include/img/silberzahn-2018-fig-02.jpg)
+
+---
+
+>Point estimates (in order of magnitude) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams. The teams are ordered so that the smallest reported effect size is at the top and the largest is at the bottom...
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>...The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot; the actual upper bounds of the confidence intervals were 11.47 for Team 21 and 78.66 for Team 27. OLS = ordinary least squares; WLS = weighted least squares.
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+![Figure 3 from [@Silberzahn2018-st]](../include/img/silberzahn-2018-fig-03.jpg)
+
+---
+
+>Point estimates (clustered by analytic approach) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams...
+
+<p style="text-align:center;">
+[@Silberzahn2018-st]
+</p>
+
+---
+
+>...The teams are clustered according to the distribution used in their analyses; within each cluster, the teams are listed in order of the magnitude of the reported effect size, from smallest at the top to largest at the bottom. The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot (see Fig. 2). OLS = ordinary least squares; WLS = weighted least squares; Misc = miscellaneous.
+
+---
+
+>Neither analysts’ prior beliefs about the effect of interest nor their level of expertise readily explained the variation in the outcomes of the analyses. Peer ratings of the quality of the analyses also did not account for the variability. 
 
 <p style="text-align:center;">
 [@Silberzahn2018-st]
@@ -109,34 +191,6 @@ Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E.
 ---
 
 >These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions. Crowdsourcing data analysis, a strategy in which numerous research teams are recruited to simultaneously investigate the same research question, makes transparent how defensible, yet subjective, analytic choices influence research results.
-
-<p style="text-align:center;">
-[@Silberzahn2018-st]
-</p>
-
----
-
-```{r, out.width="100%", fig.cap="Figure 2 from [@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
-knitr::include_graphics("../include/img/silberzahn-2018-fig-02.jpg")
-```
-
----
-
->Point estimates (in order of magnitude) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams. The teams are ordered so that the smallest reported effect size is at the top and the largest is at the bottom. The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot; the actual upper bounds of the confidence intervals were 11.47 for Team 21 and 78.66 for Team 27. OLS = ordinary least squares; WLS = weighted least squares.
-
-<p style="text-align:center;">
-[@Silberzahn2018-st]
-</p>
-
----
-
-```{r, out.width="100%", fig.cap="Figure 3 from [@Silberzahn2018-st](https://doi.org/10.1177/2515245917747646)"}
-knitr::include_graphics("../include/img/silberzahn-2018-fig-03.jpg")
-```
-
----
-
->; Point estimates (clustered by analytic approach) and 95% confidence intervals for the effect of soccer players’ skin tone on the number of red cards awarded by referees. Reported results, along with the analytic approach taken, are shown for each of the 29 analytic teams. The teams are clustered according to the distribution used in their analyses; within each cluster, the teams are listed in order of the magnitude of the reported effect size, from smallest at the top to largest at the bottom. The asterisks indicate upper bounds that have been truncated to increase the interpretability of the plot (see Fig. 2). OLS = ordinary least squares; WLS = weighted least squares; Misc = miscellaneous.
 
 <p style="text-align:center;">
 [@Silberzahn2018-st]
@@ -156,10 +210,48 @@ Odds ratios (OR) [@Szumilas2010-uj]:
 
 :::
 
-## Other examples of "many-analysts"
+## Your turn
+
+::: {.callout-note}
+
+- So, are soccer referees more likely to give red cards to dark-skin-toned players?
+- How does the many analysts approach conflict with current practice?
+- When does this approach make sense and when doesn't it make sense?
+
+:::
+
+## Other examples of "many-analysts" or "multiverse" approaches
 
 - [@Gould2023-vu] in ecology
 - [@Botvinik-Nezer2020-wr] in cognitive neuroscience
+
+---
+
+![Figure from [@Gould2023-vu]](https://egouldo.github.io/ManyAnalysts/#fig-forest-plots-Zr-1)
+
+---
+
+>...Here we assess the effect of this flexibility on the results of functional magnetic resonance imaging by asking 70 independent teams to analyse the same dataset, testing the same 9 ex-ante hypotheses. The flexibility of analytical approaches is exemplified by the fact that no two teams chose identical workflows to analyse the data. 
+
+<p style="text-align:center;">
+[@Botvinik-Nezer2020-wr]
+</p>
+
+---
+
+>This flexibility resulted in sizeable variation in the results of hypothesis tests, even for teams whose statistical maps were highly correlated at intermediate stages of the analysis pipeline.
+
+<p style="text-align:center;">
+[@Botvinik-Nezer2020-wr]
+</p>
+
+---
+
+>Our findings show that analytical flexibility can have substantial effects on scientific conclusions, and identify factors that may be related to variability in the analysis of functional magnetic resonance imaging. The results emphasize the importance of validating and sharing complex analysis workflows, and demonstrate the need for performing and reporting multiple analyses of the same data. 
+
+<p style="text-align:center;">
+[@Botvinik-Nezer2020-wr]
+</p>
 
 # Next time
 
