@@ -1,5 +1,7 @@
 ---
 title: "Visualizing data from [@Silberzahn2018-st]"
+params:
+  download_data: false
 ---
 
 ## Purpose {-}
@@ -17,24 +19,45 @@ An OSF project hosts the data at: <https://osf.io/fv8c3>.
 
 Gilmore likes to make these workflows automated using specialized packages, so he downloaded the [`osfr` package](https://cran.r-project.org/package=osfr) from CRAN, see also [@Wolen-OSFF].
 
-```{r, eval = FALSE}
-osf_tbl <- osfr::osf_retrieve_file("fv8c3")
-viz_file <- osfr::osf_download(osf_tbl, progress = TRUE)
-```
-
-The previous code wasn't working, so I went ahead and downloaded the file manually. :/
-
-::: {.callout-note}
-
-I should wrap my head around and master use of the `osfr` package.
-That would make this workflow more transparent and reproducible.
-
-:::
-
-It is saved as a CSV in `/src/surveys/csv/CrowdstormingDataJuly1st.csv`.
+Since the file does not change often and has not changed recently, we set `eval = params$download_data` in this document's YAML header so that we *could* update the file in the future by rendering the document with `params$download_data` set to TRUE.
 
 ```{r}
-red_cards <- readr::read_csv(paste0(here::here(), "/src/surveys/csv/CrowdstormingDataJuly1st.csv"), show_col_types = FALSE)
+if (params$download_data) {
+  message("Re-downloading data from 'https://osf.io/fv8c3'.")
+} else {
+  message("`params$upload_data` is FALSE. Data not downloaded again.")
+  message("The following chunk is shown for completeness, but is skipped here.")
+}
+```
+
+```{r download-silberzahn-data, eval = params$download_data}
+osf_silberzahn_node = "https://osf.io/fv8c3"
+
+# Save file to temp directory
+this_file <-
+  osfr::osf_retrieve_file(basename(osf_silberzahn_node)) |>
+  osfr::osf_download(path = tempdir(),
+                     progress = TRUE,
+                     conflicts = "overwrite")
+
+# Extract to target directory
+if (xfun::file_ext(this_file$name) == "zip") {
+  utils::unzip(this_file$local_path,
+               exdir = paste0(here::here(), "/src/surveys/csv"))
+}
+```
+
+The data is saved as a CSV in `/src/surveys/csv/CrowdstormingDataJuly1st.csv`.
+
+```{r}
+red_cards <-
+  readr::read_csv(
+    paste0(
+      here::here(),
+      "/src/surveys/csv/CrowdstormingDataJuly1st.csv"
+    ),
+    show_col_types = FALSE
+  )
 
 str(red_cards)
 ```
@@ -205,7 +228,6 @@ by_ref |>
   geom_histogram(fill = "red")  +
   ggtitle("Red cards per game given by referees")
 ```
-
 
 ```{r fig-p-red-p-yellow-by-ref}
 by_ref |>
