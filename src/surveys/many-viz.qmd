@@ -1,5 +1,5 @@
 ---
-title: "Visualizing data from Silberzahn et al."
+title: "Visualizing data from [@Silberzahn2018-st]"
 ---
 
 ## Purpose {-}
@@ -45,7 +45,7 @@ Let's see if we can understand more about the data.
 
 ### Cards per specific player*ref {-}
 
-```{r}
+```{r fig-n-yellow-cards-player-by-ref}
 red_cards |>
   ggplot() +
   aes(x = yellowCards) +
@@ -53,7 +53,7 @@ red_cards |>
   ggtitle("Distribution of yellow cards given specific player*ref interaction")
 ```
 
-```{r}
+```{r fig-n-red-cards-player-by-ref}
 red_cards |>
   ggplot() +
   aes(redCards) +
@@ -74,14 +74,14 @@ by_player <- red_cards |>
 
 Now, let's look at these distributions.
 
-```{r}
+```{r fig-p-yellow-cards-by-player-ref}
 by_player |>
   ggplot() +
   aes(x = p_yellow) +
   geom_histogram(fill = "yellow")
 ```
 
-```{r}
+```{r fig-p-red-cards-by-player-ref}
 by_player |>
   ggplot() +
   aes(x = p_red) +
@@ -98,7 +98,7 @@ Wait, a player can get more than one yellow card per game. Doh!
 
 Let's see if the yellow and red cards relate to one another.
 
-```{r}
+```{r fig-p-yellow-cards-by-p-red-cards}
 by_player |>
   ggplot() +
   aes(x = p_yellow, y = p_red) +
@@ -124,7 +124,7 @@ by_player_skin <- red_cards |>
   dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games, skin = (rater1 + rater2)/2)
 ```
 
-```{r}
+```{r fig-p-yellow-by-skin-tone}
 by_player_skin |>
   ggplot() +
   aes(x = skin, y = p_yellow, group = as.factor(skin)) +
@@ -133,7 +133,7 @@ by_player_skin |>
   ggtitle("Distribution of skin tone and yellow cards given")
 ```
 
-```{r}
+```{r fig-p-red-by-skin-tone}
 by_player_skin |>
   ggplot() +
   aes(x = skin, y = p_red, group = as.factor(skin)) +
@@ -142,7 +142,7 @@ by_player_skin |>
   ggtitle("Distribution of skin tone and red cards given")
 ```
 
-```{r}
+```{r fig-p-red-p-yellow-by-skin}
 by_player_skin |>
   ggplot() +
   aes(x = p_yellow, y = p_red, size = as.factor(skin), group = 1) +
@@ -155,7 +155,7 @@ by_player_skin |>
 
 That's hard to read, so let's focus on players with `skin` > .5.
 
-```{r}
+```{r fig-p-red-p-yellow-by-dark-skin}
 by_player_skin |>
   dplyr::filter(skin > .5) |>
   ggplot() +
@@ -168,7 +168,7 @@ by_player_skin |>
 
 And for completeness, let's look at the lighter-skinned players.
 
-```{r}
+```{r fig-p-red-p-yellow-by-light-skin}
 by_player_skin |>
   dplyr::filter(skin <= .5) |>
   ggplot() +
@@ -190,7 +190,7 @@ by_ref <- red_cards |>
   dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games)
 ```
 
-```{r}
+```{r fig-p-yellow-by-ref-player}
 by_ref |>
   ggplot() +
   aes(x = p_yellow) +
@@ -198,7 +198,7 @@ by_ref |>
   ggtitle("Yellow cards per game given by referees")
 ```
 
-```{r}
+```{r fig-p-red-by-ref-player}
 by_ref |>
   ggplot() +
   aes(x = p_red) +
@@ -207,7 +207,7 @@ by_ref |>
 ```
 
 
-```{r}
+```{r fig-p-red-p-yellow-by-ref}
 by_ref |>
   ggplot() +
   aes(x = p_yellow, y = p_red) +
