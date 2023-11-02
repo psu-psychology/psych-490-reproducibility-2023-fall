@@ -16,6 +16,7 @@ library(dplyr)
 ## Gathering {-}
 
 An OSF project hosts the data at: <https://osf.io/fv8c3>.
+The parent OSF project is [@Silberzahn_2023_OSF].
 
 Gilmore likes to make these workflows automated using specialized packages, so he downloaded the [`osfr` package](https://cran.r-project.org/package=osfr) from CRAN, see also [@Wolen-OSFF].
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PSYCH 490 • Fall 2023 - Visualizing data from (Silberzahn et al., 2018)</title>
+<title>PSYCH 490 • Fall 2023 - Visualizing data from (R. Silberzahn et al., 2018)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -234,7 +234,7 @@ div.csl-indent {
   </li>  
         <li>
     <a class="dropdown-item" href="../surveys/many-viz.html" rel="" target="">
- <span class="dropdown-text">Visualizing data from <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">Silberzahn et al., 2018</a>)</span></span></a>
+ <span class="dropdown-text">Visualizing data from <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">R. Silberzahn et al., 2018</a>)</span></span></a>
   </li>  
     </ul>
   </li>
@@ -271,7 +271,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Visualizing data from <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">Silberzahn et al., 2018</a>)</span></h1>
+<h1 class="title">Visualizing data from <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">R. Silberzahn et al., 2018</a>)</span></h1>
 </div>
 
 
@@ -288,7 +288,7 @@ div.csl-indent {
 
 <section id="purpose" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This document generates some visualizations of the data described in <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">Silberzahn et al., 2018</a>)</span>.</p>
+<p>This document generates some visualizations of the data described in <span class="citation" data-cites="Silberzahn2018-st">(<a href="#ref-Silberzahn2018-st" role="doc-biblioref">R. Silberzahn et al., 2018</a>)</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -310,7 +310,7 @@ Attaching package: 'dplyr'</code></pre>
 </section>
 <section id="gathering" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="gathering">Gathering</h2>
-<p>An OSF project hosts the data at: <a href="https://osf.io/fv8c3" class="uri">https://osf.io/fv8c3</a>.</p>
+<p>An OSF project hosts the data at: <a href="https://osf.io/fv8c3" class="uri">https://osf.io/fv8c3</a>. The parent OSF project is <span class="citation" data-cites="Silberzahn_2023_OSF">(<a href="#ref-Silberzahn_2023_OSF" role="doc-biblioref">R. Silberzahn et al., 2023</a>)</span>.</p>
 <p>Gilmore likes to make these workflows automated using specialized packages, so he downloaded the <a href="https://cran.r-project.org/package=osfr"><code>osfr</code> package</a> from CRAN, see also <span class="citation" data-cites="Wolen-OSFF">(<a href="#ref-Wolen-OSFF" role="doc-biblioref">Wolen et al., 2020</a>)</span>.</p>
 <p>Since the file does not change often and has not changed recently, we set <code>eval = params$download_data</code> in this document’s YAML header so that we <em>could</em> update the file in the future by rendering the document with <code>params$download_data</code> set to TRUE.</p>
 <div class="cell">
@@ -765,11 +765,14 @@ Attaching package: 'dplyr'</code></pre>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-Silberzahn_2023_OSF" class="csl-entry" role="listitem">
+Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E. C., … al., et. (2023, May). Many analysts, one dataset: Making transparent how variations in analytical choices affect results. OSF. Retrieved from <a href="https://osf.io/gvm2z">osf.io/gvm2z</a>
+</div>
 <div id="ref-Silberzahn2018-st" class="csl-entry" role="listitem">
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(3), 337–356. <a href="https://doi.org/10.1177/2515245917747646">https://doi.org/10.1177/2515245917747646</a>
 </div>
 <div id="ref-Wolen-OSFF" class="csl-entry" role="listitem">
-Wolen, A. R., Hartgerink, C. H. J., Hafen, R., Richards, B. G., Soderberg, C. K., &amp; York, T. P. (2020). <span class="nocase">osfr</span>: An <span>R</span> interface to the open science framework. <em>Journal of Open Source Software</em>, <em>5</em>(46), 2071. <a href="https://doi.org/10.21105/joss.02071">https://doi.org/10.21105/joss.02071</a>
+Wolen, A. R., Hartgerink, C. H. J., Hafen, R., Richards, B. G., Soderberg, C. K., &amp; York, T. P. (2020). <span class="nocase">osfr</span>: An <span>R</span> interface to the <span>O</span>pen <span>S</span>cience <span>F</span>ramework. <em>Journal of Open Source Software</em>, <em>5</em>(46), 2071. <a href="https://doi.org/10.21105/joss.02071">https://doi.org/10.21105/joss.02071</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
