@@ -233,6 +233,10 @@ div.csl-indent {
     <a class="dropdown-item" href="../surveys/plotting-degrees-of-freedom.html" rel="" target="">
  <span class="dropdown-text">On plots &amp; degrees of freedom</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../surveys/many-viz.html" rel="" target="">
+ <span class="dropdown-text">Visualizing data from Silberzahn et al.</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -335,8 +339,8 @@ div.csl-indent {
 <pre><code>'data.frame':   30 obs. of  4 variables:
  $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...
  $ song       : chr  "kid" "kid" "kid" "kid" ...
- $ father_age : num  54.8 50.2 40.2 58.4 41.4 ...
- $ old_feeling: num  3 5 3 2 4 3 3 4 4 4 ...</code></pre>
+ $ father_age : num  60.9 44.3 52.7 41.8 59.6 ...
+ $ old_feeling: num  3 3 4 3 4 4 4 4 4 4 ...</code></pre>
 </div>
 </div>
 <p>Now, let’s plot this to show how analysis of covariance (ANCOVA) might work.</p>
@@ -390,10 +394,10 @@ Note
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>glm_ancova <span class="ot">&lt;-</span> <span class="fu">aov</span>(<span class="at">formula =</span> old_feeling <span class="sc">~</span> song <span class="sc">+</span> father_age, <span class="at">data =</span> false_pos_study_1)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
-song         1  1.633  1.6333   3.218  0.084 .
-father_age   1  0.031  0.0312   0.062  0.806  
-Residuals   27 13.702  0.5075                 
+<pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)   
+song         1  2.700  2.7000   8.899 0.00599 **
+father_age   1  0.074  0.0743   0.245 0.62474   
+Residuals   27  8.192  0.3034                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -427,10 +431,10 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>glm_ancova <span class="ot">&lt;-</span> <span class="fu">aov</span>(<span class="at">formula =</span> old_feeling <span class="sc">~</span> song <span class="sc">+</span> father_age, <span class="at">data =</span> false_pos_study_1a)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
-song         1  1.633  1.6333   3.212 0.0843 .
-father_age   1  0.003  0.0027   0.005 0.9423  
-Residuals   27 13.731  0.5085                 
+<pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)   
+song         1  2.700  2.7000   8.820 0.00619 **
+father_age   1  0.001  0.0014   0.005 0.94686   
+Residuals   27  8.265  0.3061                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -457,9 +461,9 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1 14.700  14.700   47.35 2.15e-07 ***
-father_age   1  5.085   5.085   16.38  0.00039 ***
-Residuals   27  8.381   0.310                     
+song         1 13.333  13.333   33.03 4.13e-06 ***
+father_age   1  7.635   7.635   18.92 0.000175 ***
+Residuals   27 10.898   0.404                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>

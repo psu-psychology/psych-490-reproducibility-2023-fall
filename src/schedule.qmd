@@ -338,6 +338,7 @@ title: "schedule"
 
 - [Optional Extra Credit Assignment]{.orange_due}
     - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr].
+- [Class notes](notes/wk11-2023-11-03.qmd)
 
 ## November 6-10 {- #week-12}
 

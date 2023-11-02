@@ -249,7 +249,7 @@ Odds ratios (OR) [@Szumilas2010-uj]:
 
 ## Your turn
 
-::: {.callout-note}
+::: {.callout-note title = "Your thoughts?"}
 
 - So, are soccer referees more likely to give red cards to dark-skin-toned players?
 - How is this approach related to *p*-hacking?

@@ -1,0 +1,217 @@
+---
+title: "Visualizing data from Silberzahn et al."
+---
+
+## Purpose {-}
+
+This document generates some visualizations of the data described in [@Silberzahn2018-st].
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+## Gathering {-}
+
+An OSF project hosts the data at: <https://osf.io/fv8c3>.
+
+Gilmore likes to make these workflows automated using specialized packages, so he downloaded the [`osfr` package](https://cran.r-project.org/package=osfr) from CRAN, see also [@Wolen-OSFF].
+
+```{r, eval = FALSE}
+osf_tbl <- osfr::osf_retrieve_file("fv8c3")
+viz_file <- osfr::osf_download(osf_tbl, progress = TRUE)
+```
+
+The previous code wasn't working, so I went ahead and downloaded the file manually. :/
+
+::: {.callout-note}
+
+I should wrap my head around and master use of the `osfr` package.
+That would make this workflow more transparent and reproducible.
+
+:::
+
+It is saved as a CSV in `/src/surveys/csv/CrowdstormingDataJuly1st.csv`.
+
+```{r}
+red_cards <- readr::read_csv(paste0(here::here(), "/src/surveys/csv/CrowdstormingDataJuly1st.csv"), show_col_types = FALSE)
+
+str(red_cards)
+```
+
+## Exploration {-}
+
+Let's see if we can understand more about the data.
+
+### Cards per specific player*ref {-}
+
+```{r}
+red_cards |>
+  ggplot() +
+  aes(x = yellowCards) +
+  geom_histogram(fill = "yellow") +
+  ggtitle("Distribution of yellow cards given specific player*ref interaction")
+```
+
+```{r}
+red_cards |>
+  ggplot() +
+  aes(redCards) +
+  geom_histogram(fill = "red") +
+  ggtitle("Distribution of red cards given specific player*ref interaction")
+```
+
+### By player {-}
+
+Let's group by player and see how the number of yellow and red cards appear as a function of player.
+
+```{r}
+by_player <- red_cards |>
+  dplyr::group_by(playerShort) |>
+  dplyr::summarise(n_games = n(), n_yellow = sum(yellowCards), n_red = sum(redCards)) |>
+  dplyr::mutate(p_yellow = n_yellow/n_games, p_red = n_red/n_games)
+```
+
+Now, let's look at these distributions.
+
+```{r}
+by_player |>
+  ggplot() +
+  aes(x = p_yellow) +
+  geom_histogram(fill = "yellow")
+```
+
+```{r}
+by_player |>
+  ggplot() +
+  aes(x = p_red) +
+  geom_histogram(fill = "red")
+```
+
+So, there's something odd going on with `p_yellow`. This should be in [0,1]. 
+
+```{r}
+by_player |> dplyr::filter(p_yellow > 1)
+```
+
+Wait, a player can get more than one yellow card per game. Doh!
+
+Let's see if the yellow and red cards relate to one another.
+
+```{r}
+by_player |>
+  ggplot() +
+  aes(x = p_yellow, y = p_red) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("Yellow vs. red cards")
+```
+
+### By player adding skin tone {-}
+
+Let's try to visualize the ratings of skin tone along side this.
+
+```{r}
+by_player_skin <- red_cards |>
+  dplyr::group_by(playerShort) |>
+  dplyr::summarise(
+    n_games = n(),
+    n_yellow = sum(yellowCards),
+    n_red = sum(redCards),
+    rater1 = mean(rater1),
+    rater2 = mean(rater2)
+  ) |>
+  dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games, skin = (rater1 + rater2)/2)
+```
+
+```{r}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = p_yellow, group = as.factor(skin)) +
+  geom_violin() +
+  geom_point(color = "yellow") +
+  ggtitle("Distribution of skin tone and yellow cards given")
+```
+
+```{r}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = p_red, group = as.factor(skin)) +
+  geom_violin() +
+  geom_point(color = "red") +
+  ggtitle("Distribution of skin tone and red cards given")
+```
+
+```{r}
+by_player_skin |>
+  ggplot() +
+  aes(x = p_yellow, y = p_red, size = as.factor(skin), group = 1) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("Yellow vs. (per ref encounter/game) red cards")
+```
+
+#### Darker-skinned players
+
+That's hard to read, so let's focus on players with `skin` > .5.
+
+```{r}
+by_player_skin |>
+  dplyr::filter(skin > .5) |>
+  ggplot() +
+  aes(x = p_yellow, y = p_red) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("Yellow vs. (per ref encounter/game) red cards for darker-skinned players")
+```
+#### Lighter-skinned players
+
+And for completeness, let's look at the lighter-skinned players.
+
+```{r}
+by_player_skin |>
+  dplyr::filter(skin <= .5) |>
+  ggplot() +
+  aes(x = p_yellow, y = p_red) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("Yellow vs. red cards (per ref encounter/game) for lighter skinned players")
+```
+### Referees
+
+Now let's focus on the referees.
+
+```{r}
+by_ref <- red_cards |>
+  dplyr::group_by(refNum) |>
+  dplyr::summarise(n_games = n(),
+    n_yellow = sum(yellowCards),
+    n_red = sum(redCards)) |>
+  dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games)
+```
+
+```{r}
+by_ref |>
+  ggplot() +
+  aes(x = p_yellow) +
+  geom_histogram(fill = "yellow") +
+  ggtitle("Yellow cards per game given by referees")
+```
+
+```{r}
+by_ref |>
+  ggplot() +
+  aes(x = p_red) +
+  geom_histogram(fill = "red")  +
+  ggtitle("Red cards per game given by referees")
+```
+
+
+```{r}
+by_ref |>
+  ggplot() +
+  aes(x = p_yellow, y = p_red) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("Yellow vs. red cards by referee")
+```
