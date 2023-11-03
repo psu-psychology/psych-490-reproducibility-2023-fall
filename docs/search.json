@@ -375,7 +375,7 @@
     "href": "notes/wk11-2023-11-03.html#today",
     "title": "2023-11-03 Fri",
     "section": "Today",
-    "text": "Today\n\nPlot your data!\n\nFinal project work day"
+    "text": "Today\nFinal project work day"
   },
   {
     "objectID": "notes/wk11-2023-11-03.html#more-on-silberzahn2018-st",
@@ -3322,14 +3322,14 @@
     "href": "notes/wk12-2023-11-06.html#today",
     "title": "2023-11-06 Mon",
     "section": "Today",
-    "text": "Today"
+    "text": "Today\nPreregistration\n\nRead\n\n(Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#references",
     "href": "notes/wk12-2023-11-06.html#references",
     "title": "2023-11-06 Mon",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-11-06 Mon"
+    "text": "References\n\n\nPSYCH 490.009: 2023-11-06 Mon\n\n\n\nCenter for Open Science. (n.d.). Registered reports. https://www.cos.io/initiatives/registered-reports. Retrieved from https://www.cos.io/initiatives/registered-reports\n\n\nChambers, C. (n.d.). Registered reports: What are they and why are they important? https://royalsociety.org/blog/2016/11/registered-reports-what-are-they-and-why-are-they-important/. Retrieved from https://royalsociety.org/blog/2016/11/registered-reports-what-are-they-and-why-are-they-important/\n\n\nClaesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing dream to reality: An assessment of adherence of the first generation of preregistered studies. Royal Society Open Science, 8(211037). https://doi.org/10.1098/rsos.211037\n\n\nGilmore, R. O., & Adolph, K. E. (2017). Video can make behavioural research more reproducible. Nature Human Behavior, 1. https://doi.org/10.1038/s41562-017-0128\n\n\nGoldin-Meadow, S. (2016). Why preregistration makes me nervous. APS Observer, 29(7). Retrieved from https://www.psychologicalscience.org/observer/why-preregistration-makes-me-nervous\n\n\nHoutkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., & Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. Advances in Methods and Practices in Psychological Science, 2515245917751886. https://doi.org/10.1177/2515245917751886\n\n\nLedgerwood, A. (2018). The preregistration revolution needs to distinguish between predictions and analyses. Proceedings of the National Academy of Sciences of the United States of America, 115(45), E10516–E10517. https://doi.org/10.1073/pnas.1812592115\n\n\nMeyer, M. N. (2018). Practical tips for ethical data sharing. Advances in Methods and Practices in Psychological Science, 2515245917747656. https://doi.org/10.1177/2515245917747656\n\n\nNational Institutes of Health. (n.d.). NOT-OD-21-013: Final NIH policy for data management and sharing. https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html. Retrieved from https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html\n\n\nNosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences of the United States of America, 115(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2021, June 18). Individual difference in visual perception (a pregistration). https://aspredicted.org/5iv9a.pdf. Retrieved from https://aspredicted.org/5iv9a.pdf\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022a). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12(1), 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022b). Vision contributes to sex differences in spatial cognition and activity interests (analysis plan). Retrieved from https://gilmore-lab.github.io/sex-differences-project/analysis/qian-berenbaum-gilmore.html\n\n\nTenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. PloS One, 15(3), e0229003. https://doi.org/10.1371/journal.pone.0229003"
   },
   {
     "objectID": "notes/wk12-2023-11-10.html#announcements",
@@ -3561,5 +3561,54 @@
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"
+  },
+  {
+    "objectID": "notes/wk11-2023-11-03.html#last-time",
+    "href": "notes/wk11-2023-11-03.html#last-time",
+    "title": "2023-11-03 Fri",
+    "section": "Last time…",
+    "text": "Last time…\n\nMore on (Silberzahn et al., 2018)\nHow could we visualize an effect of player skin-tone on the number of red cards given?\nMy first attempt"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#types",
+    "href": "notes/wk12-2023-11-06.html#types",
+    "title": "2023-11-06 Mon",
+    "section": "Types",
+    "text": "Types\n\nPreregistration (of analysis plans)\nRegistered reports, Chambers (n.d.); Center for Open Science (n.d.)\n\n\nIllustration about registered reports from (Center for Open Science, n.d.)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#commentary-about",
+    "href": "notes/wk12-2023-11-06.html#commentary-about",
+    "title": "2023-11-06 Mon",
+    "section": "Commentary about",
+    "text": "Commentary about\n\n(Ledgerwood, 2018)\n\nPreregistering theoretical predictions \\(\\neq\\) preregistering analysis plans\n\n(Goldin-Meadow, 2016)\n\nCould stifle discovery\nNot applicable to all kinds of research"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#is-it-working-claesen2021-ae",
+    "href": "notes/wk12-2023-11-06.html#is-it-working-claesen2021-ae",
+    "title": "2023-11-06 Mon",
+    "section": "Is it working? (Claesen et al., 2021)",
+    "text": "Is it working? (Claesen et al., 2021)\n](https://royalsocietypublishing.org/cms/asset/59614a09-5481-49c2-bba0-5aad6fd85439/rsos211037f02.jpg)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#author-reported-reasons-for-deviations",
+    "href": "notes/wk12-2023-11-06.html#author-reported-reasons-for-deviations",
+    "title": "2023-11-06 Mon",
+    "section": "Author-reported reasons for deviations",
+    "text": "Author-reported reasons for deviations\n\nSuggestions from reviewers\nDid not preregister or report details because they were thought redundant or irrelevant\nLack of consensus about what should be disclosed\nSmall discrepancy with the preregistered sample size was small and not really a deviation."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#conclusions",
+    "href": "notes/wk12-2023-11-06.html#conclusions",
+    "title": "2023-11-06 Mon",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nOur work suggests that it is not obvious for preregistration to live up to its promise of making research results more transparent and more interpretable in the manuscript. This insight calls for better standards in preregistering and reporting preregistered research. It should, however, not be misinterpreted as a plea against the practice of preregistration. Neither does our work suggest that the results of the preregistered studies we assessed should not be trusted. We do not, and cannot, claim that the observed deviations have been deliberately unreported or constitute evidence of the exploitation of researcher degrees of freedom. The process of preregistering and reporting in accordance with the preregistration is tricky, and we realize that, given its relatively young status in psychology, the field collectively needs to go through a learning phase.\n\n\n(Claesen et al., 2021)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-06.html#my-experience",
+    "href": "notes/wk12-2023-11-06.html#my-experience",
+    "title": "2023-11-06 Mon",
+    "section": "My experience",
+    "text": "My experience\n\nPaper: (Qian, Berenbaum, & Gilmore, 2022a); preregistration (Qian, Berenbaum, & Gilmore, 2021).\nPublished R Markdown document (in HTML) with entire workflow (Qian, Berenbaum, & Gilmore, 2022b).\n\nSeparate sections for preregistered and exploratory ones."
   }
 ]

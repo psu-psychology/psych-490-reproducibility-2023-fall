@@ -1,6 +1,6 @@
 ---
 title: "2023-11-03 Fri"
-subtitle: ""
+subtitle: "Work Day"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -15,17 +15,10 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-03 Fri"
 
 - [Optional Extra Credit Assignment]{.orange_due}
     - For 5 extra credit points, write a paragraph that summarizes the main findings of [@Camerer2018-tr].
+    
+## Last time...
 
-## Today
-
-- Plot your data!
-
-*Final project work day*
-
-# Plot your data!
-
-## More on [@Silberzahn2018-st]
-
+- More on [@Silberzahn2018-st]
 - How could we visualize an effect of player skin-tone on the number of red cards given?
 - [My first attempt](../surveys/many-viz.html)
 
@@ -36,8 +29,13 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-03 Fri"
 - So, what do you think now?
 - What other visualizations would you like to see?
 - Is 'seeing' believing?
+- Where in the curriculum do we focus on interpreting data figures? Where should we?
 
 :::
+
+## Today
+
+*Final project work day*
 
 # Next time
 

@@ -15,6 +15,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-xx-xx Day"
 
 ## Today
 
+## Last time...
+
 # Topic
 
 # Next time

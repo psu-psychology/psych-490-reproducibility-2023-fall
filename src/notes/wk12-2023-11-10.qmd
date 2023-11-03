@@ -1,6 +1,6 @@
 ---
 title: "2023-11-10 Fri"
-subtitle: ""
+subtitle: "Work session"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -11,13 +11,26 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-10 Fri"
 
 # Overview
 
-## Announcements
-
 ## Today
 
-# Topic
+*Work session: Data sharing*
+
+- [Assignment distributed]{.green_assigned}
+    - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
+- [Final project survey]{.green_assigned}
+    - Please complete the [final project survey](https://forms.gle/L92wWFSpcdyLT4MR9).
 
 # Next time
+
+*Materials, code, & protocol sharing*
+
+- Read
+    - [@Soska2021-mh]
+    - [@Gilroy2019-bf]
+- Explore
+    - [protocols.io](https://www.protocols.io/)
+    - [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
+- [Class notes](wk13-2023-11-13.qmd)
 
 # Resources
 

@@ -29,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="../include/css/styles.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -333,6 +352,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">2023-11-08 Wed</h1>
+  <p class="subtitle">Data sharing</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -353,6 +373,17 @@ Rick Gilmore
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
+<p><em>Data sharing</em></p>
+<ul>
+<li>Read
+<ul>
+<li><span class="citation" data-cites="Houtkoop2018-tl">(<a href="#/references" role="doc-biblioref" onclick="">Houtkoop et al., 2018</a>)</span></li>
+<li><span class="citation" data-cites="Tenopir2020-mq">(<a href="#/references" role="doc-biblioref" onclick="">Tenopir et al., 2020</a>)</span></li>
+<li>(Optional) <span class="citation" data-cites="GilmoreAdolph2017">(<a href="#/references" role="doc-biblioref" onclick="">Gilmore &amp; Adolph, 2017</a>)</span></li>
+<li>(Optional) <span class="citation" data-cites="Meyer2018-vk">(<a href="#/references" role="doc-biblioref" onclick="">Meyer, 2018</a>)</span></li>
+<li>(Optional) <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html"><span class="citation" data-cites="National_Institutes_of_Health_undated-it">National Institutes of Health (<span>n.d.</span>)</span></a></li>
+</ul></li>
+</ul>
 </section></section>
 <section id="topic" class="title-slide slide level1 center">
 <h1>Topic</h1>
@@ -361,7 +392,17 @@ Rick Gilmore
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-
+<p><em>Work session: Data sharing</em></p>
+<ul>
+<li><span class="green_assigned">Assignment distributed</span>
+<ul>
+<li><a href="exercises/ex07-sharing.qmd">Exercise 07: Data and materials sharing</a></li>
+</ul></li>
+<li><span class="green_assigned">Final project survey</span>
+<ul>
+<li>Please complete the <a href="https://forms.gle/L92wWFSpcdyLT4MR9">final project survey</a>.</li>
+</ul></li>
+</ul>
 </section>
 
 <section>
@@ -369,11 +410,28 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="footer footer-default">
 <p><a href="../index.html">PSYCH 490.009</a>: 2023-11-08 Wed</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-GilmoreAdolph2017" class="csl-entry" role="listitem">
+Gilmore, R. O., &amp; Adolph, K. E. (2017). Video can make behavioural research more reproducible. <em>Nature Human Behavior</em>, <em>1</em>. <a href="https://doi.org/10.1038/s41562-017-0128">https://doi.org/10.1038/s41562-017-0128</a>
+</div>
+<div id="ref-Houtkoop2018-tl" class="csl-entry" role="listitem">
+Houtkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., &amp; Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. <em>Advances in Methods and Practices in Psychological Science</em>, 2515245917751886. <a href="https://doi.org/10.1177/2515245917751886">https://doi.org/10.1177/2515245917751886</a>
+</div>
+<div id="ref-Meyer2018-vk" class="csl-entry" role="listitem">
+Meyer, M. N. (2018). Practical tips for ethical data sharing. <em>Advances in Methods and Practices in Psychological Science</em>, 2515245917747656. <a href="https://doi.org/10.1177/2515245917747656">https://doi.org/10.1177/2515245917747656</a>
+</div>
+<div id="ref-National_Institutes_of_Health_undated-it" class="csl-entry" role="listitem">
+National Institutes of Health. (n.d.). <span>NOT-OD-21-013</span>: Final <span>NIH</span> policy for data management and sharing. <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html" class="uri">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html</a>. Retrieved from <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html</a>
+</div>
+<div id="ref-Tenopir2020-mq" class="csl-entry" role="listitem">
+Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. <em>PloS One</em>, <em>15</em>(3), e0229003. <a href="https://doi.org/10.1371/journal.pone.0229003">https://doi.org/10.1371/journal.pone.0229003</a>
+</div>
 </div>
 </section></section>
     </div>
