@@ -67,7 +67,7 @@ str(red_cards)
 
 Let's see if we can understand more about the data.
 
-### Cards per specific player*ref {-}
+### Cards per specific player/ref {-}
 
 ```{r fig-n-yellow-cards-player-by-ref}
 red_cards |>
@@ -92,8 +92,16 @@ Let's group by player and see how the number of yellow and red cards appear as a
 ```{r}
 by_player <- red_cards |>
   dplyr::group_by(playerShort) |>
-  dplyr::summarise(n_games = n(), n_yellow = sum(yellowCards), n_red = sum(redCards)) |>
-  dplyr::mutate(p_yellow = n_yellow/n_games, p_red = n_red/n_games)
+  dplyr::summarise(n_refs = n(), n_yellow = sum(yellowCards), n_red = sum(redCards)) |>
+  dplyr::mutate(p_yellow = n_yellow/n_refs, p_red = n_red/n_refs)
+```
+
+```{r}
+by_player |>
+  ggplot() +
+  aes(x = n_refs) +
+  geom_histogram() +
+  ggtitle("Distribution of referee interactions for each player")
 ```
 
 Now, let's look at these distributions.
@@ -102,14 +110,16 @@ Now, let's look at these distributions.
 by_player |>
   ggplot() +
   aes(x = p_yellow) +
-  geom_histogram(fill = "yellow")
+  geom_histogram(fill = "yellow") +
+  ggtitle("Proportion of referee interactions with yellow cards")
 ```
 
 ```{r fig-p-red-cards-by-player-ref}
 by_player |>
   ggplot() +
   aes(x = p_red) +
-  geom_histogram(fill = "red")
+  geom_histogram(fill = "red") +
+  ggtitle("Proportion of referee interactions with red cards")
 ```
 
 So, there's something odd going on with `p_yellow`. This should be in [0,1]. 
@@ -118,7 +128,7 @@ So, there's something odd going on with `p_yellow`. This should be in [0,1].
 by_player |> dplyr::filter(p_yellow > 1)
 ```
 
-Wait, a player can get more than one yellow card per game. Doh!
+Wait, a player can get more than one yellow card per referee interactdion. Doh!
 
 Let's see if the yellow and red cards relate to one another.
 
@@ -128,7 +138,7 @@ by_player |>
   aes(x = p_yellow, y = p_red) +
   geom_point() +
   geom_smooth() +
-  ggtitle("Yellow vs. red cards")
+  ggtitle("Proportion of yellow vs. red cards for each player*referee")
 ```
 
 ### By player adding skin tone {-}
@@ -139,13 +149,31 @@ Let's try to visualize the ratings of skin tone along side this.
 by_player_skin <- red_cards |>
   dplyr::group_by(playerShort) |>
   dplyr::summarise(
-    n_games = n(),
+    n_refs = n(),
     n_yellow = sum(yellowCards),
     n_red = sum(redCards),
     rater1 = mean(rater1),
     rater2 = mean(rater2)
   ) |>
-  dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games, skin = (rater1 + rater2)/2)
+  dplyr::mutate(p_yellow = n_yellow / n_refs, p_red = n_red / n_refs, skin = (rater1 + rater2)/2)
+```
+
+```{r fig-n-yellow-by-skin-tone}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = n_yellow, group = as.factor(skin)) +
+  geom_violin() +
+  geom_point(color = "yellow") +
+  ggtitle("Distribution of player skin tone and number of yellow cards given")
+```
+
+```{r fig-n-yellow-by-skin-tone-scatter}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = n_yellow) +
+  geom_point(color = "yellow") +
+  geom_smooth(method = "lm") +
+  ggtitle("Distribution of player skin tone and number of yellow cards given")
 ```
 
 ```{r fig-p-yellow-by-skin-tone}
@@ -154,8 +182,34 @@ by_player_skin |>
   aes(x = skin, y = p_yellow, group = as.factor(skin)) +
   geom_violin() +
   geom_point(color = "yellow") +
-  ggtitle("Distribution of skin tone and yellow cards given")
+  ggtitle("Distribution of player skin tone and proportion of yellow cards given")
 ```
+```{r fig-p-yellow-by-skin-tone-scatter}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = p_yellow) +
+  geom_point(color = "yellow") +
+  geom_smooth(method = "lm") +
+  ggtitle("Distribution of player skin tone and proportion of yellow cards given")
+```
+
+```{r fig-n-red-by-skin-tone}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = n_red, group = as.factor(skin)) +
+  geom_violin() +
+  geom_point(color = "red") +
+  ggtitle("Distribution of player skin tone and number of red cards given")
+```
+```{r fig-n-red-by-skin-tone-scatter}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = n_red) +
+  geom_point(color = "red") +
+  geom_smooth(method = "lm") +
+  ggtitle("Distribution of player skin tone and proportion of red cards given")
+```
+
 
 ```{r fig-p-red-by-skin-tone}
 by_player_skin |>
@@ -166,11 +220,29 @@ by_player_skin |>
   ggtitle("Distribution of skin tone and red cards given")
 ```
 
+```{r fig-p-red-by-skin-tone-scatter}
+by_player_skin |>
+  ggplot() +
+  aes(x = skin, y = p_red) +
+  geom_point(color = "red") +
+  geom_smooth(method = "lm") +
+  ggtitle("Distribution of player skin tone and proportion of red cards given")
+```
+
+```{r fig-n-red-n-yellow-by-skin}
+by_player_skin |>
+  ggplot() +
+  aes(x = n_yellow, y = n_red, group = 1) +
+  geom_point(aes(size = as.factor(skin))) +
+  geom_smooth() +
+  ggtitle("Number yellow vs. (per ref encounter/game) red cards")
+```
+
 ```{r fig-p-red-p-yellow-by-skin}
 by_player_skin |>
   ggplot() +
-  aes(x = p_yellow, y = p_red, size = as.factor(skin), group = 1) +
-  geom_point() +
+  aes(x = p_yellow, y = p_red, group = 1) +
+  geom_point(aes(size = as.factor(skin))) +
   geom_smooth() +
   ggtitle("Yellow vs. (per ref encounter/game) red cards")
 ```
@@ -179,18 +251,38 @@ by_player_skin |>
 
 That's hard to read, so let's focus on players with `skin` > .5.
 
+```{r fig-n-red-n-yellow-by-dark-skin}
+by_player_skin |>
+  dplyr::filter(skin > .5) |>
+  ggplot() +
+  aes(x = n_yellow, y = n_red) +
+  geom_point(aes(size = as.factor(skin))) +
+  geom_smooth() +
+  ggtitle("Yellow vs. (per ref encounter/game) red cards for darker-skinned players")
+```
+
 ```{r fig-p-red-p-yellow-by-dark-skin}
 by_player_skin |>
   dplyr::filter(skin > .5) |>
   ggplot() +
   aes(x = p_yellow, y = p_red) +
-  geom_point() +
+  geom_point(aes(size = as.factor(skin))) +
   geom_smooth() +
   ggtitle("Yellow vs. (per ref encounter/game) red cards for darker-skinned players")
 ```
 #### Lighter-skinned players
 
 And for completeness, let's look at the lighter-skinned players.
+
+```{r fig-n-red-n-yellow-by-light-skin}
+by_player_skin |>
+  dplyr::filter(skin <= .5) |>
+  ggplot() +
+  aes(x = n_yellow, y = n_red) +
+  geom_point(aes(size = as.factor(skin))) +
+  geom_smooth() +
+  ggtitle("Yellow vs. red cards (per ref encounter/game) for lighter skinned players")
+```
 
 ```{r fig-p-red-p-yellow-by-light-skin}
 by_player_skin |>
@@ -208,10 +300,26 @@ Now let's focus on the referees.
 ```{r}
 by_ref <- red_cards |>
   dplyr::group_by(refNum) |>
-  dplyr::summarise(n_games = n(),
+  dplyr::summarise(n_interactions = n(),
     n_yellow = sum(yellowCards),
     n_red = sum(redCards)) |>
-  dplyr::mutate(p_yellow = n_yellow / n_games, p_red = n_red / n_games)
+  dplyr::mutate(p_yellow = n_yellow / n_interactions, p_red = n_red / n_interactions)
+```
+
+```{r}
+by_ref |>
+  ggplot() +
+  aes(x = n_interactions) +
+  geom_histogram() +
+  ggtitle("Player interactions per referee")
+```
+
+```{r fig-n-yellow-by-ref-player}
+by_ref |>
+  ggplot() +
+  aes(x = n_yellow) +
+  geom_histogram(fill = "yellow") +
+  ggtitle("N yellow cards given by referees")
 ```
 
 ```{r fig-p-yellow-by-ref-player}
@@ -219,7 +327,15 @@ by_ref |>
   ggplot() +
   aes(x = p_yellow) +
   geom_histogram(fill = "yellow") +
-  ggtitle("Yellow cards per game given by referees")
+  ggtitle("Yellow cards per player interaction given by referees")
+```
+
+```{r fig-n-red-by-ref-player}
+by_ref |>
+  ggplot() +
+  aes(x = n_red) +
+  geom_histogram(fill = "red")  +
+  ggtitle("N red cards given by referees")
 ```
 
 ```{r fig-p-red-by-ref-player}
@@ -227,7 +343,15 @@ by_ref |>
   ggplot() +
   aes(x = p_red) +
   geom_histogram(fill = "red")  +
-  ggtitle("Red cards per game given by referees")
+  ggtitle("Red cards per player interaction given by referees")
+```
+```{r fig-n-red-n-yellow-by-ref}
+by_ref |>
+  ggplot() +
+  aes(x = n_yellow, y = n_red) +
+  geom_point() +
+  geom_smooth() +
+  ggtitle("N yellow vs. red cards by referee*player interaction")
 ```
 
 ```{r fig-p-red-p-yellow-by-ref}
@@ -236,5 +360,6 @@ by_ref |>
   aes(x = p_yellow, y = p_red) +
   geom_point() +
   geom_smooth() +
-  ggtitle("Yellow vs. red cards by referee")
+  ggtitle("Proportion yellow vs. red cards by referee*player interaction")
 ```
+
