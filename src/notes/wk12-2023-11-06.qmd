@@ -1,6 +1,6 @@
 ---
-title: "2023-11-06 Mon"
-subtitle: "Preregistration"
+title: "Preregistration"
+subtitle: "2023-11-06 Mon"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

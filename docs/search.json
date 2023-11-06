@@ -352,16 +352,16 @@
   {
     "objectID": "notes/wk12-2023-11-08.html#today",
     "href": "notes/wk12-2023-11-08.html#today",
-    "title": "2023-11-08 Wed",
+    "title": "Data sharing",
     "section": "Today",
-    "text": "Today\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)\n(Optional) National Institutes of Health (n.d.)"
+    "text": "Today\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)"
   },
   {
     "objectID": "notes/wk12-2023-11-08.html#references",
     "href": "notes/wk12-2023-11-08.html#references",
-    "title": "2023-11-08 Wed",
+    "title": "Data sharing",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-11-08 Wed\n\n\n\nGilmore, R. O., & Adolph, K. E. (2017). Video can make behavioural research more reproducible. Nature Human Behavior, 1. https://doi.org/10.1038/s41562-017-0128\n\n\nHoutkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., & Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. Advances in Methods and Practices in Psychological Science, 2515245917751886. https://doi.org/10.1177/2515245917751886\n\n\nMeyer, M. N. (2018). Practical tips for ethical data sharing. Advances in Methods and Practices in Psychological Science, 2515245917747656. https://doi.org/10.1177/2515245917747656\n\n\nNational Institutes of Health. (n.d.). NOT-OD-21-013: Final NIH policy for data management and sharing. https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html. Retrieved from https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html\n\n\nTenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. PloS One, 15(3), e0229003. https://doi.org/10.1371/journal.pone.0229003"
+    "text": "References\n\n\nPSYCH 490.009: 2023-11-08 Wed\n\n\n\nGilmore, R. O., & Adolph, K. E. (2017). Video can make behavioural research more reproducible. Nature Human Behavior, 1. https://doi.org/10.1038/s41562-017-0128\n\n\nGilmore, R. O., Hillary, F., Lazar, N., & Wham, B. (2023). Penn state open science survey. https://penn-state-open-science.github.io/survey-fall-2022/index.html. Retrieved from https://penn-state-open-science.github.io/survey-fall-2022/index.html\n\n\nHoutkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., & Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. Advances in Methods and Practices in Psychological Science, 2515245917751886. https://doi.org/10.1177/2515245917751886\n\n\nMeyer, M. N. (2018). Practical tips for ethical data sharing. Advances in Methods and Practices in Psychological Science, 2515245917747656. https://doi.org/10.1177/2515245917747656\n\n\nTenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. PloS One, 15(3), e0229003. https://doi.org/10.1371/journal.pone.0229003"
   },
   {
     "objectID": "notes/wk11-2023-11-03.html#announcements",
@@ -3596,5 +3596,215 @@
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#last-time",
+    "href": "notes/wk12-2023-11-08.html#last-time",
+    "title": "Data sharing",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
+    "href": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
+    "title": "Data sharing",
+    "section": "Transparency & reproducibility notes",
+    "text": "Transparency & reproducibility notes\n\nStudy preregistered\nData shared"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#psu-survey-2022",
+    "href": "notes/wk12-2023-11-08.html#psu-survey-2022",
+    "title": "Data sharing",
+    "section": "Penn State researchers",
+    "text": "Penn State researchers\n\nGitHub repo: https://github.com/penn-state-open-science/survey-fall-2022\nFaculty, staff, students and administrators (\\(n=100\\))\nProtocol (IRB & data analysis): https://penn-state-open-science.github.io/survey-fall-2022/"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#psu-share-collaborators",
+    "href": "notes/wk12-2023-11-08.html#psu-share-collaborators",
+    "title": "Data sharing",
+    "section": "Sharing with collaborators",
+    "text": "Sharing with collaborators\n\nFigure 22.10 from https://penn-state-open-science.github.io/survey-fall-2022/\nBarriers to sharing"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#psu-where-store",
+    "href": "notes/wk12-2023-11-08.html#psu-where-store",
+    "title": "Data sharing",
+    "section": "Where store data",
+    "text": "Where store data\n\n\n\n\n\nFigure 22.9 from https://penn-state-open-science.github.io/survey-fall-2022/\n\n\n\n\n\n\n\n\n\nFigure 22.15 from https://penn-state-open-science.github.io/survey-fall-2022/"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#psu-share-community",
+    "href": "notes/wk12-2023-11-08.html#psu-share-community",
+    "title": "Data sharing",
+    "section": "Sharing with research community",
+    "text": "Sharing with research community\n\nFigure 22.11 from https://penn-state-open-science.github.io/survey-fall-2022/"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#tenopir2020-mq",
+    "href": "notes/wk12-2023-11-08.html#tenopir2020-mq",
+    "title": "Data sharing",
+    "section": "(Tenopir et al., 2020)",
+    "text": "(Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#fields",
+    "href": "notes/wk12-2023-11-08.html#fields",
+    "title": "Data sharing",
+    "section": "Fields",
+    "text": "Fields\n\nTable 1 from (Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-data-are-stored",
+    "href": "notes/wk12-2023-11-08.html#where-data-are-stored",
+    "title": "Data sharing",
+    "section": "Where data are stored",
+    "text": "Where data are stored\n\nTable 2 from (Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
+    "href": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
+    "title": "Data sharing",
+    "section": "Practices, perceptions, & barriers",
+    "text": "Practices, perceptions, & barriers\n\nTable 7 from (Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-1-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-1-caption",
+    "title": "Data sharing",
+    "section": "Figure 1 caption",
+    "text": "Figure 1 caption\n\nResponses to the survey questions on the (a) desirability and (b) profitability of data sharing for the researchers’ own fields and their own current projects. For each statement in (a), the number to the left of the data bar indicates the percentage of researchers who responded with “very undesirable” or “undesirable,” the number in the center of the data bar indicates the percentage who responded with “neutral,” and the number to the right of the data bar indicates the percentage who responded with “desirable” or “very desirable.” For each statement in (b), the number to the left of the data bar indicates the percentage of researchers who responded with “none at all” or “a little,” the number in the center of the data bar indicates the percentage who responded with “a moderate amount,” and the number to the right of the data bar indicates the percentage who responded with “a lot” or “a great deal.” This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-3-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-3-caption",
+    "title": "Data sharing",
+    "section": "Figure 3 caption",
+    "text": "Figure 3 caption\n\nResponses to the survey questions asking researchers to indicate the extent to which the six fear-related barriers kept (a) themselves or (b) other researchers from sharing their data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” In each panel, the statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-4-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-4-caption",
+    "title": "Data sharing",
+    "section": "Figure 4 caption",
+    "text": "Figure 4 caption\n\nResponses to the survey questions asking researchers to indicate how likely they would be to share their data under several conditions. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “very unlikely,” “unlikely,” or “somewhat unlikely”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat likely,” “likely,” or “very likely.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#houtkoop2018-tl-figure-1-caption",
+    "href": "notes/wk12-2023-11-08.html#houtkoop2018-tl-figure-1-caption",
+    "title": "Data sharing",
+    "section": "(Houtkoop et al., 2018) Figure 1 caption",
+    "text": "(Houtkoop et al., 2018) Figure 1 caption\n\nResponses to the survey questions on the (a) desirability and (b) profitability of data sharing for the researchers’ own fields and their own current projects. For each statement in (a), the number to the left of the data bar indicates the percentage of researchers who responded with “very undesirable” or “undesirable,” the number in the center of the data bar indicates the percentage who responded with “neutral,” and the number to the right of the data bar indicates the percentage who responded with “desirable” or “very desirable.” For each statement in (b), the number to the left of the data bar indicates the percentage of researchers who responded with “none at all” or “a little,” the number in the center of the data bar indicates the percentage who responded with “a moderate amount,” and the number to the right of the data bar indicates the percentage who responded with “a lot” or “a great deal.” This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-2-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-2-caption",
+    "title": "Data sharing",
+    "section": "Figure 2 caption",
+    "text": "Figure 2 caption\n\nResponses to the survey questions asking respondents to indicate the extent to which the 15 non-fear-related barriers kept them from sharing their research data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage of researchers who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#conclusions",
+    "href": "notes/wk12-2023-11-08.html#conclusions",
+    "title": "Data sharing",
+    "section": "Conclusions",
+    "text": "Conclusions\n\n• Public data sharing is not a common practice among research psychologists.\n• Respondents considered data sharing to be both desirable and profitable for their particular research fields, but somewhat less desirable and profitable in the case of their own current research projects."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#penn-state-researchers",
+    "href": "notes/wk12-2023-11-08.html#penn-state-researchers",
+    "title": "Data sharing",
+    "section": "Penn State researchers",
+    "text": "Penn State researchers\n\nGitHub repo: https://github.com/penn-state-open-science/survey-fall-2022\nFaculty, staff, students and administrators (\\(n=100\\))\nHTML protocol (IRB & data analysis): (Gilmore, Hillary, Lazar, & Wham, 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
+    "href": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
+    "title": "Data sharing",
+    "section": "Sharing with collaborators",
+    "text": "Sharing with collaborators\n\nFigure 22.10 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-store-data",
+    "href": "notes/wk12-2023-11-08.html#where-store-data",
+    "title": "Data sharing",
+    "section": "Where store data",
+    "text": "Where store data\n\nFigure 22.9 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#sharing-with-research-community",
+    "href": "notes/wk12-2023-11-08.html#sharing-with-research-community",
+    "title": "Data sharing",
+    "section": "Sharing with research community",
+    "text": "Sharing with research community\n\nFigure 22.11 from https://penn-state-open-science.github.io/survey-fall-2022/"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#your-turn",
+    "href": "notes/wk12-2023-11-08.html#your-turn",
+    "title": "Data sharing",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing within the psychology community sampled by (Houtkoop et al., 2018)\nDo the “fear-related barriers” make sense to you?\nHow might these be addressed or overcome?\nAre mandates the best or only solution?"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#barriers-to-sharing",
+    "href": "notes/wk12-2023-11-08.html#barriers-to-sharing",
+    "title": "Data sharing",
+    "section": "Barriers to sharing",
+    "text": "Barriers to sharing"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-shared",
+    "href": "notes/wk12-2023-11-08.html#where-shared",
+    "title": "Data sharing",
+    "section": "Where shared",
+    "text": "Where shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#importance-of-sharing-with-research-community",
+    "href": "notes/wk12-2023-11-08.html#importance-of-sharing-with-research-community",
+    "title": "Data sharing",
+    "section": "Importance of sharing with research community",
+    "text": "Importance of sharing with research community\n\nFigure 22.11 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#your-turn-1",
+    "href": "notes/wk12-2023-11-08.html#your-turn-1",
+    "title": "Data sharing",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing at Penn State?\nWhat advice would you give faculty, staff, and students interested in fostering open science here?"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#obstacles-to-sharing-with-research-community",
+    "href": "notes/wk12-2023-11-08.html#obstacles-to-sharing-with-research-community",
+    "title": "Data sharing",
+    "section": "Obstacles to sharing with research community",
+    "text": "Obstacles to sharing with research community\n\nFigure 22.12 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-data-are-shared-with-research-community",
+    "href": "notes/wk12-2023-11-08.html#where-data-are-shared-with-research-community",
+    "title": "Data sharing",
+    "section": "Where data are shared with research community",
+    "text": "Where data are shared with research community\n\n\n\nFigure 22.15from (Gilmore et al., 2023)\n\n\n\n\n\n\n\nFigure 22.15 from https://penn-state-open-science.github.io/survey-fall-2022/"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-data-are-shared",
+    "href": "notes/wk12-2023-11-08.html#where-data-are-shared",
+    "title": "Data sharing",
+    "section": "Where data are shared",
+    "text": "Where data are shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#importance-of-sharing",
+    "href": "notes/wk12-2023-11-08.html#importance-of-sharing",
+    "title": "Data sharing",
+    "section": "Importance of sharing",
+    "text": "Importance of sharing\n\nFigure 22.11 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
+    "href": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
+    "title": "Data sharing",
+    "section": "Obstacles to sharing",
+    "text": "Obstacles to sharing\n\nFigure 22.12 from (Gilmore et al., 2023)"
   }
 ]
