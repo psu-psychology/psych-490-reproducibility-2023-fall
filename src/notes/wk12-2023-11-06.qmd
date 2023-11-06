@@ -11,9 +11,9 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-06 Mon"
 
 # Overview
 
-## Announcements
-
 ## Last time...
+
+- [Many visualizations](../surveys/many-viz.html)
 
 ## Today
 
