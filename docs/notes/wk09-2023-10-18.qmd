@@ -1,6 +1,6 @@
 ---
-title: "2023-10-18 Wed"
-subtitle: "Hype"
+title: "Hype"
+subtitle: "2023-10-18 Wed"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

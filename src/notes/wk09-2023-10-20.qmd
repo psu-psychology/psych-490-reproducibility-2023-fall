@@ -1,6 +1,6 @@
 ---
-title: "2023-10-20 Fri"
-subtitle: "Work session: Replication"
+title: "Work session"
+subtitle: "2023-10-20 Fri"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

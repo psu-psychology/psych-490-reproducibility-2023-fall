@@ -67,6 +67,8 @@ str(red_cards)
 
 Let's see if we can understand more about the data.
 
+Each row appears to include the number of yellow and red cards awarded to a given player by a given referee, presumably within the sample period of the study.
+
 ### Cards per specific player/ref {-}
 
 ```{r fig-n-yellow-cards-player-by-ref}
@@ -77,12 +79,55 @@ red_cards |>
   ggtitle("Distribution of yellow cards given specific player*ref interaction")
 ```
 
+Most player by referee interactions resulted in no yellow cards at all, as expected.
+
 ```{r fig-n-red-cards-player-by-ref}
 red_cards |>
   ggplot() +
   aes(redCards) +
   geom_histogram(fill = "red") +
-  ggtitle("Distribution of red cards given specific player*ref interaction")
+  ggtitle("Distribution of red cards given specific player*ref interaction") +
+  xlab("N red cards")
+```
+
+And there are relatively few red cards, too.
+
+```{r}
+n_red_cards <- red_cards |>
+  dplyr::filter(redCards > 0)
+
+xtabs(formula = ~ redCards, data = red_cards)
+```
+
+Specifically, there are $n=$ `r dim(n_red_cards)[1]` red cards, or $p=$ `r round(dim(n_red_cards)[1]/dim(red_cards)[1], 3)` of all player/referee interactions.
+So, these are rare events in the database.
+But there are some interactions with two red cards.
+
+```{r}
+n_red_cards |>
+  dplyr::filter(redCards == 2) |>
+  dplyr::select(playerShort, refNum) |>
+  dplyr::arrange(refNum, playerShort) |>
+  knitr::kable(format = 'html') |>
+  kableExtra::kable_classic()
+```
+
+It doesn't look like any of the dyads that yielded two red cards involve repeats.
+
+Just for fun, let's see how red and yellow cards relate to one another.
+We add some jitter and use `alpha=.1` to make it easier to see any pattern.
+
+```{r n-yellow-n-red-all-dyads}
+#| fig.cap="Number of yellow and red cards for each player/referee pair in data from  [@Silberzahn_2023_OSF]"
+
+red_cards |>
+  ggplot() +
+  aes(x = yellowCards, y = redCards) +
+  geom_jitter(alpha = .1, width = .2, height = .2) +
+  geom_smooth(method = "lm") +
+  ggtitle("N yellow vs. N red cards for each player by referee combination") +
+  xlab("N yellow cards") +
+  ylab("N red cards")
 ```
 
 ### By player {-}

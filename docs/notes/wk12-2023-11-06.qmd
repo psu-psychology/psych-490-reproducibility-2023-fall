@@ -1,6 +1,6 @@
 ---
-title: "2023-11-06 Mon"
-subtitle: "Preregistration"
+title: "Preregistration"
+subtitle: "2023-11-06 Mon"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
@@ -26,7 +26,11 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-06 Mon"
 - Explore
     - [clinicaltrials.gov](https://clinicaltrials.gov/)
 
-# [@Nosek2018-jk](http://dx.doi.org/10.1073/pnas.1708274114)
+# Preregistration
+
+---
+
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C. & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences of the United States of America, 115(11), 2600–2606. <https://doi.org/10.1073/pnas.1708274114>
 
 ---
 

@@ -27,6 +27,8 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-08 Wed"
 
 # Barriers to data sharing
 
+---
+
 Houtkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E. & Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. *Advances in Methods and Practices in Psychological Science*, *1*(1), 70–85. <https://doi.org/10.1177/2515245917751886>
 
 ---
@@ -114,10 +116,16 @@ knitr::include_graphics("../include/img/houtkoop-2018-fig-04.png")
 
 :::
 
+# Data sharing at Penn State
+
+---
+
+Gilmore, R. O., Hillary, F., Lazar, N. & Wham, B. (2023). Penn State Open Science Survey. Retrieved August 1, 2023, from <https://penn-state-open-science.github.io/survey-fall-2022/>
+
 ## Penn State researchers
 
+- Survey of faculty, staff, students and administrators ($n=100$) in late 2022, early 2023
 - GitHub repo: <https://github.com/penn-state-open-science/survey-fall-2022>
-- Faculty, staff, students and administrators ($n=100$)
 - HTML protocol (IRB & data analysis): [@Gilmore_undated-gj]
 
 ## Sharing with collaborators
@@ -158,6 +166,8 @@ knitr::include_graphics("../include/img/houtkoop-2018-fig-04.png")
 :::
 
 # A global perspective
+
+---
 
 Tenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., Grant, B., Olendorf, R. & Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. PloS One, 15(3), e0229003. <https://doi.org/10.1371/journal.pone.0229003>.
 

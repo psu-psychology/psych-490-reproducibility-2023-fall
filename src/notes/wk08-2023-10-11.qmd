@@ -1,6 +1,6 @@
 ---
-title: "2023-10-11 Wed"
-subtitle: "File Drawer Effect"
+title: "File Drawer Effect"
+subtitle: "2023-10-11 Wed"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

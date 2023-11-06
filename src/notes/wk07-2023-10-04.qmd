@@ -1,6 +1,6 @@
 ---
-title: "2023-10-04 Wed"
-subtitle: "Questionable research practices"
+title: "Questionable research practices"
+subtitle: "2023-10-04 Wed"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

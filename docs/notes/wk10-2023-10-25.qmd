@@ -1,6 +1,6 @@
 ---
-title: "2023-10-25 Wed"
-subtitle: "Changing journal policies"
+title: "Changing journal policies"
+subtitle: "2023-10-25 Wed"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]

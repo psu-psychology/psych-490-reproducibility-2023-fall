@@ -339,8 +339,8 @@ div.csl-indent {
 <pre><code>'data.frame':   30 obs. of  4 variables:
  $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...
  $ song       : chr  "kid" "kid" "kid" "kid" ...
- $ father_age : num  40.6 51.4 54.4 57.9 56 ...
- $ old_feeling: num  4 4 4 4 4 4 5 3 4 4 ...</code></pre>
+ $ father_age : num  58.5 66.7 56 50 66.6 ...
+ $ old_feeling: num  3 3 4 4 5 4 4 4 3 3 ...</code></pre>
 </div>
 </div>
 <p>Now, let’s plot this to show how analysis of covariance (ANCOVA) might work.</p>
@@ -394,10 +394,10 @@ Note
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>glm_ancova <span class="ot">&lt;-</span> <span class="fu">aov</span>(<span class="at">formula =</span> old_feeling <span class="sc">~</span> song <span class="sc">+</span> father_age, <span class="at">data =</span> false_pos_study_1)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  7.500   7.500  25.533 2.64e-05 ***
-father_age   1  0.069   0.069   0.235    0.632    
-Residuals   27  7.931   0.294                     
+<pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)   
+song         1  4.800   4.800   9.919 0.00397 **
+father_age   1  0.001   0.001   0.003 0.95694   
+Residuals   27 13.065   0.484                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -431,10 +431,10 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>glm_ancova <span class="ot">&lt;-</span> <span class="fu">aov</span>(<span class="at">formula =</span> old_feeling <span class="sc">~</span> song <span class="sc">+</span> father_age, <span class="at">data =</span> false_pos_study_1a)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  7.500   7.500  25.532 2.64e-05 ***
-father_age   1  0.069   0.069   0.234    0.633    
-Residuals   27  7.931   0.294                     
+<pre><code>            Df Sum Sq Mean Sq F value  Pr(&gt;F)   
+song         1  4.800   4.800  10.486 0.00318 **
+father_age   1  0.707   0.707   1.545 0.22454   
+Residuals   27 12.359   0.458                   
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -461,9 +461,9 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  13.33  13.333   26.19 2.22e-05 ***
-father_age   1   6.39   6.390   12.55  0.00146 ** 
-Residuals   27  13.74   0.509                     
+song         1 14.700  14.700   52.01 9.34e-08 ***
+father_age   1  4.636   4.636   16.40 0.000388 ***
+Residuals   27  7.631   0.283                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>

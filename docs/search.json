@@ -263,7 +263,7 @@
     "href": "schedule.html#week-12",
     "title": "schedule",
     "section": "November 6-10",
-    "text": "November 6-10\n\nMonday, November 6\nPreregistration\n\nRead\n\n(Brian A. Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov\n\nClass notes\n\n\n\nWednesday, November 8\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)\n(Optional) National Institutes of Health (n.d.)\n\nClass notes\n\n\n\nFriday, November 10\nWork session: Data sharing\n\nAssignment distributed\n\nExercise 07: Data and materials sharing\n\nFinal project survey\n\nPlease complete the final project survey."
+    "text": "November 6-10\n\nMonday, November 6\nPreregistration\n\nRead\n\n(Brian A. Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov\n\nClass notes\n\n\n\nWednesday, November 8\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)\n(Optional) National Institutes of Health (n.d.)\n\nClass notes\n\n\n\nFriday, November 10\nWork session: Data sharing\n\nAssignment distributed\n\nExercise 07: Data and materials sharing\n\nFinal project survey\n\nPlease complete the final project survey by Friday, November 19"
   },
   {
     "objectID": "schedule.html#week-13",
@@ -343,18 +343,144 @@
     "text": "References\n\n\nPSYCH 490.009: 2023-11-13 Mon"
   },
   {
-    "objectID": "notes/wk12-2023-11-08.html#announcements",
-    "href": "notes/wk12-2023-11-08.html#announcements",
-    "title": "2023-11-08 Wed",
-    "section": "Announcements",
-    "text": "Announcements"
-  },
-  {
     "objectID": "notes/wk12-2023-11-08.html#today",
     "href": "notes/wk12-2023-11-08.html#today",
     "title": "Data sharing",
     "section": "Today",
     "text": "Today\nData sharing\n\nRead\n\n(Houtkoop et al., 2018)\n(Tenopir et al., 2020)\n(Optional) (Gilmore & Adolph, 2017)\n(Optional) (Meyer, 2018)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-1-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-1-caption",
+    "title": "Data sharing",
+    "section": "Figure 1 caption",
+    "text": "Figure 1 caption\n\nResponses to the survey questions on the (a) desirability and (b) profitability of data sharing for the researchers’ own fields and their own current projects. For each statement in (a), the number to the left of the data bar indicates the percentage of researchers who responded with “very undesirable” or “undesirable,” the number in the center of the data bar indicates the percentage who responded with “neutral,” and the number to the right of the data bar indicates the percentage who responded with “desirable” or “very desirable.” For each statement in (b), the number to the left of the data bar indicates the percentage of researchers who responded with “none at all” or “a little,” the number in the center of the data bar indicates the percentage who responded with “a moderate amount,” and the number to the right of the data bar indicates the percentage who responded with “a lot” or “a great deal.” This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-2-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-2-caption",
+    "title": "Data sharing",
+    "section": "Figure 2 caption",
+    "text": "Figure 2 caption\n\nResponses to the survey questions asking respondents to indicate the extent to which the 15 non-fear-related barriers kept them from sharing their research data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage of researchers who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-3-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-3-caption",
+    "title": "Data sharing",
+    "section": "Figure 3 caption",
+    "text": "Figure 3 caption\n\nResponses to the survey questions asking researchers to indicate the extent to which the six fear-related barriers kept (a) themselves or (b) other researchers from sharing their data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” In each panel, the statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#figure-4-caption",
+    "href": "notes/wk12-2023-11-08.html#figure-4-caption",
+    "title": "Data sharing",
+    "section": "Figure 4 caption",
+    "text": "Figure 4 caption\n\nResponses to the survey questions asking researchers to indicate how likely they would be to share their data under several conditions. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “very unlikely,” “unlikely,” or “somewhat unlikely”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat likely,” “likely,” or “very likely.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#conclusions",
+    "href": "notes/wk12-2023-11-08.html#conclusions",
+    "title": "Data sharing",
+    "section": "Conclusions",
+    "text": "Conclusions\n\n• Public data sharing is not a common practice among research psychologists.\n• Respondents considered data sharing to be both desirable and profitable for their particular research fields, but somewhat less desirable and profitable in the case of their own current research projects."
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
+    "href": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
+    "title": "Data sharing",
+    "section": "Transparency & reproducibility notes",
+    "text": "Transparency & reproducibility notes\n\nStudy preregistered\nData shared"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#your-turn",
+    "href": "notes/wk12-2023-11-08.html#your-turn",
+    "title": "Data sharing",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing within the psychology community sampled by (Houtkoop et al., 2018)\nDo the “fear-related barriers” make sense to you?\nHow might these be addressed or overcome?\nAre mandates the best or only solution?"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#penn-state-researchers",
+    "href": "notes/wk12-2023-11-08.html#penn-state-researchers",
+    "title": "Data sharing",
+    "section": "Penn State researchers",
+    "text": "Penn State researchers\n\nSurvey of faculty, staff, students and administrators (\\(n=100\\)) in late 2022, early 2023\nGitHub repo: https://github.com/penn-state-open-science/survey-fall-2022\nHTML protocol (IRB & data analysis): (Gilmore, Hillary, Lazar, & Wham, 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
+    "href": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
+    "title": "Data sharing",
+    "section": "Sharing with collaborators",
+    "text": "Sharing with collaborators\n\nFigure 22.10 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#barriers-to-sharing",
+    "href": "notes/wk12-2023-11-08.html#barriers-to-sharing",
+    "title": "Data sharing",
+    "section": "Barriers to sharing",
+    "text": "Barriers to sharing"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-store-data",
+    "href": "notes/wk12-2023-11-08.html#where-store-data",
+    "title": "Data sharing",
+    "section": "Where store data",
+    "text": "Where store data\n\nFigure 22.9 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-shared",
+    "href": "notes/wk12-2023-11-08.html#where-shared",
+    "title": "Data sharing",
+    "section": "Where shared",
+    "text": "Where shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#importance-of-sharing",
+    "href": "notes/wk12-2023-11-08.html#importance-of-sharing",
+    "title": "Data sharing",
+    "section": "Importance of sharing",
+    "text": "Importance of sharing\n\nFigure 22.11 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
+    "href": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
+    "title": "Data sharing",
+    "section": "Obstacles to sharing",
+    "text": "Obstacles to sharing\n\nFigure 22.12 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-data-are-shared",
+    "href": "notes/wk12-2023-11-08.html#where-data-are-shared",
+    "title": "Data sharing",
+    "section": "Where data are shared",
+    "text": "Where data are shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#your-turn-1",
+    "href": "notes/wk12-2023-11-08.html#your-turn-1",
+    "title": "Data sharing",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing at Penn State?\nWhat advice would you give faculty, staff, and students interested in fostering open science here?"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#fields",
+    "href": "notes/wk12-2023-11-08.html#fields",
+    "title": "Data sharing",
+    "section": "Fields",
+    "text": "Fields\n\nTable 1 from (Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#where-data-are-stored",
+    "href": "notes/wk12-2023-11-08.html#where-data-are-stored",
+    "title": "Data sharing",
+    "section": "Where data are stored",
+    "text": "Where data are stored\n\nTable 2 from (Tenopir et al., 2020)"
+  },
+  {
+    "objectID": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
+    "href": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
+    "title": "Data sharing",
+    "section": "Practices, perceptions, & barriers",
+    "text": "Practices, perceptions, & barriers\n\nTable 7 from (Tenopir et al., 2020)"
   },
   {
     "objectID": "notes/wk12-2023-11-08.html#references",
@@ -394,546 +520,546 @@
   {
     "objectID": "notes/wk11-2023-10-30.html#announcements",
     "href": "notes/wk11-2023-10-30.html#announcements",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#today",
     "href": "notes/wk11-2023-10-30.html#today",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Today",
     "text": "Today\nLarge-scale replication studies\n\nDiscuss\n\n(Collaboration, 2015)"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#abstract",
     "href": "notes/wk11-2023-10-30.html#abstract",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Abstract",
     "text": "Abstract\n\nReproducibility is a defining feature of science, but the extent to which it characterizes current research is unknown. We conducted replications of 100 experimental and correlational studies published in three psychology journals using high-powered designs and original materials when available.\n\n\n(Collaboration, 2015)"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#results",
     "href": "notes/wk11-2023-10-30.html#results",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Results",
     "text": "Results\n\nWe conducted replications of 100 experimental and correlational studies published in three psychology journals using high-powered designs and original materials when available. There is no single standard for evaluating replication success. Here, we evaluated reproducibility using significance and P values, effect sizes, subjective assessments of replication teams, and meta-analysis of effect sizes. The mean effect size (r) of the replication effects (Mr = 0.197, SD = 0.257) was half the magnitude of the mean effect size of the original effects (Mr = 0.403, SD = 0.188), representing a substantial decline. Ninety-seven percent of original studies had significant results (P &lt; .05). Thirty-six percent of replications had significant results; 47% of original effect sizes were in the 95% confidence interval of the replication effect size; 39% of effects were subjectively rated to have replicated the original result; and if no bias in original results is assumed, combining original and replication results left 68% with statistically significant effects. Correlational tests suggest that replication success was better predicted by the strength of original evidence than by characteristics of the original and replication teams.\n\n\n(Collaboration, 2015)"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#conclusion",
     "href": "notes/wk11-2023-10-30.html#conclusion",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Conclusion",
     "text": "Conclusion\n\nNo single indicator sufficiently describes replication success, and the five indicators examined here are not the only ways to evaluate reproducibility. Nonetheless, collectively these results offer a clear conclusion: A large portion of replications produced weaker evidence for the original findings despite using materials provided by the original authors, review in advance for methodological fidelity, and high statistical power to detect the original effect sizes. Moreover, correlational evidence is consistent with the conclusion that variation in the strength of initial evidence (such as original P value) was more predictive of replication success than variation in the characteristics of the teams conducting the research (such as experience and expertise). The latter factors certainly can influence replication success, but they did not appear to do so here.\nReproducibility is not well understood because the incentives for individual scientists prioritize novelty over replication. Innovation is the engine of discovery and is vital for a productive, effective scientific enterprise. However, innovative ideas become old news fast. Journal reviewers and editors may dismiss a new test of a published idea as unoriginal. The claim that “we already know this” belies the uncertainty of scientific evidence. Innovation points out paths that are possible; replication points out paths that are likely; progress relies on both. Replication can increase certainty when findings are reproduced and promote innovation when they are not. This project provides accumulating evidence for many findings in psychological research and suggests that there is still more work to do to verify whether we know what we think we know.\n\n\n(Collaboration, 2015)"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#results-1",
     "href": "notes/wk11-2023-10-30.html#results-1",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Results",
     "text": "Results\n\nTable 1 from Collaboration (2015). Summary of reproducibility rates and effect sizes for original and replication studies overall and by journal/discipline."
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#deciding-whether-an-effect-replicates-or-not",
     "href": "notes/wk11-2023-10-30.html#deciding-whether-an-effect-replicates-or-not",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Deciding whether an effect replicates or not",
     "text": "Deciding whether an effect replicates or not\n\nStatistically significant effect in same direction as original (35/89 studies)\nEffect size of replication is within original confidence interval (30/73 studies)\nComparing original and replication effect sizes"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#what-influences-whether-a-study-replicates",
     "href": "notes/wk11-2023-10-30.html#what-influences-whether-a-study-replicates",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "What influences whether a study replicates",
     "text": "What influences whether a study replicates\n\nField of study/journal: “Considering significance testing, reproducibility was stronger in studies and journals representing cognitive psychology than social psychology topics. For example, combining across journals, 14 of 55 (25%) of social psychology effects replicated by the P &lt; 0.05 criterion, whereas 21 of 42 (50%) of cognitive psychology effects did so.”"
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#conclusions",
     "href": "notes/wk11-2023-10-30.html#conclusions",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Conclusions",
     "text": "Conclusions\n\nReplication effect sizes usually smaller than original.\nSuccessful replication ≠ original finding is correct.\nUN-successful replication ≠ original finding is wrong."
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#notes",
     "href": "notes/wk11-2023-10-30.html#notes",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "Notes",
     "text": "Notes\n\nExtended abstract available publicly, but full article is behind a paywall.\nFull HTML and PDF version available via Penn State Libraries.\nExtensive materials shared via OSF: Anderson et al. (2012).\nDetails about independent reviews of analysis plans and related issues shared via OSF: https://osf.io/xtine; https://osf.io/fkmwg; https://osf.io/a2eyg."
   },
   {
     "objectID": "notes/wk11-2023-10-30.html#references",
     "href": "notes/wk11-2023-10-30.html#references",
-    "title": "2023-10-30 Mon",
+    "title": "Large-scale replication",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-30 Mon\n\n\n\nAnderson, C. J., Anderson, J., Assen, M. A. L. M. van, Attridge, P. R., Attwood, A., Axt, J., … Barnett-Cowan, M. (2012, April). Reproducibility project: psychology. OSF. https://doi.org/10.17605/OSF.IO/EZCUJ\n\n\nCollaboration, O. S. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1(3), 337–356. https://doi.org/10.1177/2515245917747646\n\n\nWilson, L. C. (2014, September). Introduction to Meta-Analysis: A guide for the novice. https://www.psychologicalscience.org/observer/introduction-to-meta-analysis-a-guide-for-the-novice. Retrieved from https://www.psychologicalscience.org/observer/introduction-to-meta-analysis-a-guide-for-the-novice"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#announcements",
     "href": "notes/wk10-2023-10-25.html#announcements",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nExercise 06: Replication"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#today",
     "href": "notes/wk10-2023-10-25.html#today",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Today",
     "text": "Today\nSolutions\n\nFinish discussion of (Munafò et al., 2017)"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#table-1",
     "href": "notes/wk10-2023-10-25.html#table-1",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Table 1",
     "text": "Table 1\nLink: https://www.nature.com/articles/s41562-016-0021/tables/1"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#transparency-and-openness-promotion-top-guidelines",
     "href": "notes/wk10-2023-10-25.html#transparency-and-openness-promotion-top-guidelines",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Transparency and Openness Promotion (TOP) guidelines",
     "text": "Transparency and Openness Promotion (TOP) guidelines\n\nFigure from Nosek et al. (2015)"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#top-factor-database",
     "href": "notes/wk10-2023-10-25.html#top-factor-database",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "TOP Factor database",
     "text": "TOP Factor database"
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#notes",
     "href": "notes/wk10-2023-10-25.html#notes",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Notes",
     "text": "Notes\n\n(Nosek et al., 2015) was behind a paywall.\nI was able to access the article via authenticated access to libraries.psu.edu.\nThere were two files of supplementary materials\n\nhttps://www-science-org.ezaccess.libraries.psu.edu/doi/suppl/10.1126/science.aab2374/suppl_file/aab2374-nosek-sm.pdf\nhttps://www-science-org.ezaccess.libraries.psu.edu/doi/suppl/10.1126/science.aab2374/suppl_file/top_guidelines_summary-google_sheets_files.zip\n\nThere was an Open Access (OA) version of the article available on OSF."
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#changing-society-journal-policies",
     "href": "notes/wk10-2023-10-25.html#changing-society-journal-policies",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Changing society & journal policies",
     "text": "Changing society & journal policies\n\nGilmore et al. (2020)\nSRCD (2019)\n\n\n\n\n\n\n\nNote\n\n\nDo you think that explaining why data and materials sharing is important will help persuade researchers to do more?\nN.B. – SRCD’s Child Development has a TOP Factor score of 7."
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#notes-1",
     "href": "notes/wk10-2023-10-25.html#notes-1",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "Notes",
     "text": "Notes\n\nThe article abstract was publicly available, but the full article was behind a paywall.\nI was able to access the article via authenticated access to libraries.psu.edu."
   },
   {
     "objectID": "notes/wk10-2023-10-25.html#references",
     "href": "notes/wk10-2023-10-25.html#references",
-    "title": "2023-10-25 Wed",
+    "title": "Changing journal policies",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-25 Wed\n\n\n\nCamerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., … Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, 1. https://doi.org/10.1038/s41562-018-0399-z\n\n\nGilmore, R. O., Cole, P. M., Verma, S., Aken, M. A. G., & Worthman, C. M. (2020). Advancing scientific integrity, transparency, and openness in child development research: Challenges and possible solutions. Child Development Perspectives, 14(1), 9–14. https://doi.org/10.1111/cdep.12360\n\n\nMunafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. https://doi.org/10.1038/s41562-016-0021\n\n\nNosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374\n\n\nSRCD. (2019). Policy on scientific integrity, transparency, and openness | society for research in child development SRCD. https://www.srcd.org/policy-scientific-integrity-transparency-and-openness. Retrieved from https://www.srcd.org/policy-scientific-integrity-transparency-and-openness"
   },
   {
     "objectID": "notes/wk09-2023-10-20.html#announcements",
     "href": "notes/wk09-2023-10-20.html#announcements",
-    "title": "2023-10-20 Fri",
+    "title": "Work session",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "notes/wk09-2023-10-20.html#in-the-news",
     "href": "notes/wk09-2023-10-20.html#in-the-news",
-    "title": "2023-10-20 Fri",
+    "title": "Work session",
     "section": "In the news",
     "text": "In the news\n\nhttps://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html"
   },
   {
     "objectID": "notes/wk09-2023-10-20.html#today",
     "href": "notes/wk09-2023-10-20.html#today",
-    "title": "2023-10-20 Fri",
+    "title": "Work session",
     "section": "Today",
     "text": "Today\nWork session\n\nWatch & discuss\n\nCuddy (2012)\n\nDiscuss draft\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nAssignment\n\nExercise 06: Replication"
   },
   {
     "objectID": "notes/wk09-2023-10-20.html#references",
     "href": "notes/wk09-2023-10-20.html#references",
-    "title": "2023-10-20 Fri",
+    "title": "Work session",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-20 Fri\n\n\n\nBegley, C. G. (2013). Six red flags for suspect work. Nature, 497(7450), 433–434. https://doi.org/10.1038/497433a\n\n\nCuddy, A. (2012). Your body language may shape who you are. Retrieved from https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are\n\n\nMunafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. https://doi.org/10.1038/s41562-016-0021"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#announcements",
     "href": "notes/wk09-2023-10-16.html#announcements",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Announcements",
     "text": "Announcements\n\nApology\nDiscuss draft Friday\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#today",
     "href": "notes/wk09-2023-10-16.html#today",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Today",
     "text": "Today\nNegligence\n\nDiscuss\n\n(Ritchie, 2020), Chapter 5\n(Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015)\n(Szucs & Ioannidis, 2017)"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#definitions-of",
     "href": "notes/wk09-2023-10-16.html#definitions-of",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Definitions of",
     "text": "Definitions of\n\nnegligent\n\n\nnegligence from Mac OS dictionary app"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#data-mistakes",
     "href": "notes/wk09-2023-10-16.html#data-mistakes",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Data mistakes",
     "text": "Data mistakes\n\ne.g., Reinhart & Rogoff spreadsheet"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#statistical-reporting-errors",
     "href": "notes/wk09-2023-10-16.html#statistical-reporting-errors",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Statistical reporting errors",
     "text": "Statistical reporting errors\n\nThis study documents reporting errors in a sample of over 250,000 p-values reported in eight major psychology journals from 1985 until 2013, using the new R package “statcheck.” statcheck retrieved null-hypothesis significance testing (NHST) results from over half of the articles from this period.\n\n\n(Nuijten et al., 2015)"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#statcheck",
     "href": "notes/wk09-2023-10-16.html#statcheck",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "statcheck",
     "text": "statcheck\nhttps://michelenuijten.shinyapps.io/statcheck-web/"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#granularity-releated-inconsistency-of-means-grim",
     "href": "notes/wk09-2023-10-16.html#granularity-releated-inconsistency-of-means-grim",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Granularity-Releated Inconsistency of Means (GRIM)",
     "text": "Granularity-Releated Inconsistency of Means (GRIM)\n\nWe present a simple mathematical technique that we call granularity-related inconsistency of means (GRIM) for verifying the summary statistics of research reports in psychology. This technique evaluates whether the reported means of integer data such as Likert-type scales are consistent with the given sample size and number of items.\n\n\n(Brown & Heathers, 2017)"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#non-random-sampling-blinding-and-related-issues",
     "href": "notes/wk09-2023-10-16.html#non-random-sampling-blinding-and-related-issues",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Non-random sampling, blinding and related issues",
     "text": "Non-random sampling, blinding and related issues\n\ne.g., (Carlisle, 2017)\nbut see (Kharasch & Houle, 2018)\nand reply (Carlisle, 2018)"
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#inadequate-power",
     "href": "notes/wk09-2023-10-16.html#inadequate-power",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "Inadequate power",
     "text": "Inadequate power\n\nPower: If there is an effect, what’s the probability my test/decision procedure will detect it (avoid a false negative).\nIf \\(\\beta\\) is \\(p\\)(false negative), then power is \\(1-\\beta\\).\nSample size and alpha (\\(\\alpha\\)) or \\(p\\)(false positive) affect power, as does the actual (unknown in advance) effect size (\\(d\\)).\nConventions for categorizing effect sizes: small (\\(d\\) = 0.2), medium (\\(d\\) = 0.5), and large (\\(d\\) = 0.8)."
   },
   {
     "objectID": "notes/wk09-2023-10-16.html#references",
     "href": "notes/wk09-2023-10-16.html#references",
-    "title": "2023-10-16 Mon",
+    "title": "Negligence",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-16 Mon\n\n\n\nBrown, N. J. L., & Heathers, J. A. J. (2017). The GRIM test: A simple technique detects numerous anomalies in the reporting of results in psychology. Social Psychological and Personality Science, 8(4), 363–369. https://doi.org/10.1177/1948550616673876\n\n\nCarlisle, J. B. (2017). Data fabrication and other reasons for non-random sampling in 5087 randomised, controlled trials in anaesthetic and general medical journals. Anaesthesia, 72(8), 944–952. https://doi.org/10.1111/anae.13938\n\n\nCarlisle, J. B. (2018). Seeking and reporting apparent research misconduct: Errors and integrity - a reply. Anaesthesia, 73(1), 126–128. https://doi.org/10.1111/anae.14148\n\n\nCarney, D. R., Cuddy, A. J. C., & Yap, A. J. (2010). Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance. Psychological Science, 21(10), 1363–1368. https://doi.org/10.1177/0956797610383437\n\n\nCuddy, A. (2012). Your body language may shape who you are. Retrieved from https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are\n\n\nKharasch, E. D., & Houle, T. T. (2018). Seeking and reporting apparent research misconduct: Errors and integrity. Anaesthesia, 73(1), 125–126. https://doi.org/10.1111/anae.14147\n\n\nNuijten, M. B., Hartgerink, C. H. J., Assen, M. A. L. M. van, Epskamp, S., & Wicherts, J. M. (2015). The prevalence of statistical reporting errors in psychology (1985–2013). Behavior Research Methods, 1–22. https://doi.org/10.3758/s13428-015-0664-2\n\n\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S., & Weber, R. A. (2015). Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women. Psychological Science, 26(5), 653–656. https://doi.org/10.1177/0956797614553946\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nSzucs, D., & Ioannidis, J. P. A. (2017). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. PLoS Biology, 15(3), e2000797. https://doi.org/10.1371/journal.pbio.2000797"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#announcements",
     "href": "notes/wk08-2023-10-11.html#announcements",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#last-time",
     "href": "notes/wk08-2023-10-11.html#last-time",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Last time…",
     "text": "Last time…\n\nWhat is p-hacking?\nHow many different combinations of variables were there in Exercise 04?\nWhat would we need to do to determine which party and which measures of political power impact the economy one way or the other?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#today",
     "href": "notes/wk08-2023-10-11.html#today",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Today",
     "text": "Today\nFile drawer effect\n\nDiscuss\n\n(Rosenthal, 1979)\n(Franco, Malhotra, & Simonovits, 2014a)"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#file-drawer-effect",
     "href": "notes/wk08-2023-10-11.html#file-drawer-effect",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "File drawer effect",
     "text": "File drawer effect\n\nSource: https://www.craigmarker.com/wp-content/uploads/2006/12/filedrawer1-1002x675.jpg"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#simulating-the-file-drawer-effect",
     "href": "notes/wk08-2023-10-11.html#simulating-the-file-drawer-effect",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Simulating the file drawer effect",
     "text": "Simulating the file drawer effect\n\nHow many times out of \\(n\\) experiments do we get…\n\na significant result\na non-significant result\n\n\nSimulation app: https://rogilmore.shinyapps.io/PSYCH490-2023-APES/"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#your-turn",
     "href": "notes/wk08-2023-10-11.html#your-turn",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Your turn",
     "text": "Your turn\n\n\n\nPick samples of \\(n=30\\) for n_A and n_B (green boxes).\nPick small effect size \\(d=0.30\\) (magenta box).\nNote (and keep track of) whether your significance test (Sig?) is TRUE (aqua box)."
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#discussing-your-results",
     "href": "notes/wk08-2023-10-11.html#discussing-your-results",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Discussing your results",
     "text": "Discussing your results\n\nIs this a replication study? Why or why not?\nIs there a true effect to find?\nDid we find it reliably? Why or why not?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#discuss",
     "href": "notes/wk08-2023-10-11.html#discuss",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Discuss",
     "text": "Discuss\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#abstract",
     "href": "notes/wk08-2023-10-11.html#abstract",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Abstract",
     "text": "Abstract\n\nFor any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the “file drawer problem” is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results.\n\n\n(Rosenthal, 1979)"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#unpacking-rosenthal1979-zi",
     "href": "notes/wk08-2023-10-11.html#unpacking-rosenthal1979-zi",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Unpacking (Rosenthal, 1979)",
     "text": "Unpacking (Rosenthal, 1979)\n\nWhy might journals be filled with studies that have Type I (false positive) errors?\n\nIf there are no effects at all, what would the false positive rate be?\n\nWhy might file drawers be filled with studies that have Type II (false negative) errors?\n\nIf there really is an effect to be found for every study, what would the false negative rate be?"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#visualization",
     "href": "notes/wk08-2023-10-11.html#visualization",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Visualization",
     "text": "Visualization\nRosenthal’s illustration relies on the standard normal deviate or \\(Z\\), which is the value on a standard normal distribution (with mean \\(\\mu=0\\) and standard deviation \\(\\sigma=1\\)) that one would need to observe for a given p value."
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#findings",
     "href": "notes/wk08-2023-10-11.html#findings",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Findings",
     "text": "Findings\n\nIf the overall level of significance of the research review will be brought down to the level of just significant by the addition of just a few more null results, the finding is not resistant to the file drawer threat.\n\n\n(Rosenthal, 1979)\n\n\nIn other words, the finding is not robust."
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#discuss-1",
     "href": "notes/wk08-2023-10-11.html#discuss-1",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Discuss",
     "text": "Discuss\nFranco, A., Malhotra, N. & Simonovits, G. (2014). Social science. Publication bias in the social sciences: unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#abstract-1",
     "href": "notes/wk08-2023-10-11.html#abstract-1",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Abstract",
     "text": "Abstract\n\nWe studied publication bias in the social sciences by analyzing a known population of conducted studies—221 in total—in which there is a full accounting of what is published and unpublished.\n\n\n(Franco et al., 2014a)"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#findings-1",
     "href": "notes/wk08-2023-10-11.html#findings-1",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Findings",
     "text": "Findings\n\nTable 3 from Franco et al. (2014a)"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#solutions",
     "href": "notes/wk08-2023-10-11.html#solutions",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Solutions",
     "text": "Solutions\n\nHow can the social science community combat publication bias of this sort? On the basis of communications with the authors of many experiments that resulted in null findings, we found that some researchers anticipate the rejection of such papers but also that many of them simply lose interest in “unsuccessful” projects."
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#replication-notes",
     "href": "notes/wk08-2023-10-11.html#replication-notes",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "Replication notes",
     "text": "Replication notes\n\nPaper was behind the standard Science paywall.\nData & code shared on Zenodo https://doi.org/10.5281/zenodo.11300\nLet’s try to run it…"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#franco2014-jk",
     "href": "notes/wk08-2023-10-11.html#franco2014-jk",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "(Franco, Malhotra, & Simonovits, 2014b)",
     "text": "(Franco, Malhotra, & Simonovits, 2014b)\n\n\n [1] \"id\"                   \"author1field\"         \"author2field\"        \n [4] \"author3field\"         \"discipline\"           \"discipline2\"         \n [7] \"POL\"                  \"PSY\"                  \"SOC\"                 \n[10] \"OTHER\"                \"year\"                 \"fieldingperiod1stday\"\n[13] \"age_months\"           \"age_day\"              \"age_year\"            \n[16] \"timetopublish\"        \"iv_coder1\"            \"iv_coder2\"           \n[19] \"disagreement\"         \"IV_all\"               \"IV\"                  \n[22] \"strong\"               \"mixed\"                \"null\"                \n[25] \"DV\"                   \"DV_all\"               \"DV_tri\"              \n[28] \"DV_book_separate\"     \"DV_book_unpub\"        \"DV_book_nontop\"      \n[31] \"DV_book_top\"          \"journal\"              \"journal_field\"       \n[34] \"insample\"             \"pubyear\"              \"pub\"                 \n[37] \"anyresults\"           \"written\"              \"max_h_current\"       \n[40] \"max_pub_attime\"       \"why_excluded\"        \n\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  bounds\nX-squared = 70.503, df = 1, p-value &lt; 2.2e-16\n\n\nquartz_off_screen \n                2"
   },
   {
     "objectID": "notes/wk08-2023-10-11.html#references",
     "href": "notes/wk08-2023-10-11.html#references",
-    "title": "2023-10-11 Wed",
+    "title": "File Drawer Effect",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-11 Wed\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014a). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014b, August). FileDrawer. https://doi.org/10.5281/zenodo.11300\n\n\nHypothesis, B. A. S. (2021, February). 13. “Negative data” and the file drawer problem. Youtube. Retrieved from https://www.youtube.com/watch?v=9I1qR8PTr54\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#datasaurus",
     "href": "notes/wk07-2023-10-06.html#datasaurus",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Datasaurus",
     "text": "Datasaurus\n See also this supplementary page on plotting and degrees of freedom."
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#announcements",
     "href": "notes/wk07-2023-10-06.html#announcements",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Announcements",
     "text": "Announcements\n\nDue\n\nExercise 04: P-hack your way to scientific glory write-up.\n\ndue next Friday, October 13, Final project proposals"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#today",
     "href": "notes/wk07-2023-10-06.html#today",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Today",
     "text": "Today\n\nMore on questionable research practices (QRPs)\n\nDiscuss (Simmons, Nelson, & Simonsohn, 2011)\n\n(Brief) Work session\n\nSet-up for discussion of p-hacking exercise on Monday.\n\n(Optional) Work session\n\nFinal project proposals, due Friday, October 13."
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#study-1-simmons_false-positive_2011",
     "href": "notes/wk07-2023-10-06.html#study-1-simmons_false-positive_2011",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Study 1 (Simmons et al., 2011)",
     "text": "Study 1 (Simmons et al., 2011)\n\nwe investigated whether listening to a children’s song induces an age contrast, making people feel older.\n\n\nKalimba: https://youtu.be/tCO4i2t-Aso?si=OgGGCSc775qVNGbi\nHot Potato: https://youtu.be/0v4-eAefurY?si=BZYzd42ti5sOKqca"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#study-2",
     "href": "notes/wk07-2023-10-06.html#study-2",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Study 2",
     "text": "Study 2\n\nwe sought to conceptually replicate and extend Study 1. Having demonstrated that listening to a children’s song makes people feel older, Study 2 investigated whether listening to a song about older age makes people actually younger.\n\n\nKalimba: https://youtu.be/tCO4i2t-Aso?si=OgGGCSc775qVNGbi\nWhen I’m 64: https://youtu.be/HCTunqv1Xt4?si=urAP87RrwUCfjJNC"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#wait-a-minute",
     "href": "notes/wk07-2023-10-06.html#wait-a-minute",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Wait a minute…",
     "text": "Wait a minute…\n\nWhat did they say?\nHow is that even possible?"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#illustration",
     "href": "notes/wk07-2023-10-06.html#illustration",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Illustration",
     "text": "Illustration\n\nTable 3 from Simmons et al. (2011)\nFirst, notice that in our original report, we redacted the many measures other than father’s age that we collected (including the dependent variable from Study 1: feelings of oldness). A reviewer would hence have been unable to assess the flexibility involved in selecting father’s age as a control. Second, by reporting only results that included the covariate, we made it impossible for readers to discover its critical role in achieving a significant result. Seeing the full list of variables now disclosed, reviewers would have an easy time asking for robustness checks, such as “Are the results from Study 1 replicated in Study 2?” They are not: People felt older rather than younger after listening to “When I’m Sixty-Four,” though not significantly so, F(1, 17) = 2.07, p = .168. Finally, notice that we did not determine the study’s termination rule in advance; instead, we monitored statistical significance approximately every 10 observations. Moreover, our sample size did not reach the 20-observation threshold set by our requirements.\nThe redacted version of the study we reported in this article fully adheres to currently acceptable reporting standards and is, not coincidentally, deceptively persuasive. The requirement-compliant version reported in Table 3 would be—appropriately—all but impossible to publish.\n\n\n(Simmons et al., 2011)"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#simulations",
     "href": "notes/wk07-2023-10-06.html#simulations",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Simulations",
     "text": "Simulations\n\nThese simulations assessed the impact of four common degrees of freedom: flexibility in (a) choosing among dependent variables, (b) choosing sample size, (c) using covariates, and (d) reporting subsets of experimental conditions. We also investigated various combinations of these degrees of freedom."
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#findings",
     "href": "notes/wk07-2023-10-06.html#findings",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Findings",
     "text": "Findings\n\nTable 1 from Simmons et al. (2011)\nResearcher choices inflate false positive rates."
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#recommendations",
     "href": "notes/wk07-2023-10-06.html#recommendations",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Recommendations",
     "text": "Recommendations\n\nTable 2 from Simmons et al. (2011)\n(Simmons et al., 2011)"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#your-thoughts",
     "href": "notes/wk07-2023-10-06.html#your-thoughts",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Your thoughts?",
     "text": "Your thoughts?\n\nAre these recommendations reasonable?\nAre they feasible?\nDo you think authors and reviewers will comply? Why or why not?"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#reproducibility-notes-for-simmons_false-positive_2011",
     "href": "notes/wk07-2023-10-06.html#reproducibility-notes-for-simmons_false-positive_2011",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Reproducibility notes for (Simmons et al., 2011)",
     "text": "Reproducibility notes for (Simmons et al., 2011)\n\ndoes not appear to have shared data or any supplementary materials along with the article."
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#p-hacking-exercise",
     "href": "notes/wk07-2023-10-06.html#p-hacking-exercise",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "p-hacking exercise",
     "text": "p-hacking exercise\n\nEnter (anonymized) data into a spreadsheet\n\nhttps://docs.google.com/spreadsheets/d/1JI_Qih4wCzUrYTQYE3dpvVx2C7GdzfUZq0a3QhqQyeE/edit?usp=sharing\n\nChoose a student_id (integer) for yourself (not your PSU ID or phone number)"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#questions-to-discuss-monday",
     "href": "notes/wk07-2023-10-06.html#questions-to-discuss-monday",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "Questions to discuss Monday",
     "text": "Questions to discuss Monday\n\nWho got a “significant” result?\nHow many different analyses did you try?\nWho changed their analysis after finding a significant result?\nDid anyone try another analysis–after you got a significant result–and keep the non-significant result?"
   },
   {
     "objectID": "notes/wk07-2023-10-06.html#references",
     "href": "notes/wk07-2023-10-06.html#references",
-    "title": "2023-10-06 Fri",
+    "title": "Work session",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-06 Friday\n\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems (pp. 1290–1294). New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3025453.3025912\n\n\nSimmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#announcements",
     "href": "notes/wk07-2023-10-02.html#announcements",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nDiscuss Friday Exercise 04: P-hack your way to scientific glory."
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#in-the-news",
     "href": "notes/wk07-2023-10-02.html#in-the-news",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "In the news",
     "text": "In the news\n\n\n\nRetraction Watch 2023-10-02"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#today",
     "href": "notes/wk07-2023-10-02.html#today",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Today",
     "text": "Today\nRetraction and scientific integrity\n\nRead & Discuss\n\n(Brainerd & You, 2018)"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#brainerd2018-iy",
     "href": "notes/wk07-2023-10-02.html#brainerd2018-iy",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Brainerd & You (2018)",
     "text": "Brainerd & You (2018)\n\nStudy methodology.\n\n\nBrainerd & You (2018)"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#retraction-watch",
     "href": "notes/wk07-2023-10-02.html#retraction-watch",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Retraction Watch",
     "text": "Retraction Watch\n\nDatabase of paper retractions\nPublic data restricted until recently\n\nSee https://www.crossref.org/blog/news-crossref-and-retraction-watch/"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#journal-hijacking",
     "href": "notes/wk07-2023-10-02.html#journal-hijacking",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Journal hijacking",
     "text": "Journal hijacking\n\nJournals can get hijacked! https://retractionwatch.com/the-retraction-watch-hijacked-journal-checker/\n\nhttps://docs.google.com/spreadsheets/d/1ak985WGOgGbJRJbZFanoktAN_UFeExpE/edit#gid=5255084"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#citation-counts-can-be-misleading",
     "href": "notes/wk07-2023-10-02.html#citation-counts-can-be-misleading",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Citation counts can be misleading",
     "text": "Citation counts can be misleading\n\nRetracted papers can garner large numbers of citations\n\nhttps://retractionwatch.com/the-retraction-watch-leaderboard/top-10-most-highly-cited-retracted-papers/"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#exploring-the-database",
     "href": "notes/wk07-2023-10-02.html#exploring-the-database",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Exploring the database",
     "text": "Exploring the database\n\nHere are the beginnings of an attempt to visualize the dataset"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#discussion-of-office-of-research-integrity-ori-httpsori.hhs.gov",
     "href": "notes/wk07-2023-10-02.html#discussion-of-office-of-research-integrity-ori-httpsori.hhs.gov",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "Discussion of Office of Research Integrity (ORI) https://ori.hhs.gov/",
     "text": "Discussion of Office of Research Integrity (ORI) https://ori.hhs.gov/\n\nGrant at Penn State:\n\n\nProject Title: Education and Assessment to Improve Research Misconduct Proceedings\nGrantee: The Pennsylvania State University - University Park\nPrincipal Investigator: Courtney Karmelita, BS, M.Ed., D.Ed.\nInstitution (PI): The Pennsylvania State University - University Park\nCo-Principal Investigator: Bridget Carruthers, Ph.D., RBP\nInstitution (Co-PI): The Ohio State University\nAbstract:\nThe focus area of this proposal is “Handling allegations of research misconduct under 42 C.F.R. Part 93”. the proposed research will address the need for education and resource development for individuals assisting with the handling of research misconduct allegations at the inquiry or investigation phases. To date, there has been no published research on this topic as most Responsible Conduct of Research (RCR) training emphasizes the prevention of research misconduct rather than the policy and processes that govern the handling of research misconduct allegations. The study team will conduct a needs assessment through benchmarking with other institutions to identify and prioritize the creation of educational materials and trainings. The study team will then use the needs assessment to create online modules to provide foundational knowledge of research misconduct processes, definitions, and procedures for inquiry officials and investigation committee members. The study team will then implement the newly created resources and seek feedback from the appropriate stakeholders. In addition, the study team will explore to what extent, if any, standing committees develop a deeper understanding of the research misconduct process. This will help to inform which, if either, committee type is more efficacious. Research on standing versus ad hoc committees is also lacking in the literature. This proposed research has the potential to positively impact the research integrity community at large with much needed tools, resources, training and research on the management of research misconduct allegations.\nhttps://ori.hhs.gov/blog/ori-awards-three-research-integrity-grants"
   },
   {
     "objectID": "notes/wk07-2023-10-02.html#references",
     "href": "notes/wk07-2023-10-02.html#references",
-    "title": "2023-10-02 Mon",
+    "title": "Retraction and scientific integrity",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-02 Mon\n\n\n\nBrainerd, J., & You, J. (2018). What a massive database of retracted papers reveals about science publishing’s “death penalty.” Science. https://doi.org/10.1126/science.aav8384\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nNgiam, W. (2020, April). ReproducibiliTea | simmons, nelson and simonsohn (2011). False-Positive psychology. Youtube. Retrieved from https://www.youtube.com/watch?v=bf3GqyBRgzY\n\n\nSimmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632"
   },
@@ -2844,413 +2970,413 @@
   {
     "objectID": "notes/wk07-2023-10-04.html#in-the-news",
     "href": "notes/wk07-2023-10-04.html#in-the-news",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "In the news…",
     "text": "In the news…\n\n(Anthony Mills, 2023)"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#announcements",
     "href": "notes/wk07-2023-10-04.html#announcements",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nExercise 04: P-hack your way to scientific glory write-up.\n\nDiscuss Friday Exercise 04: P-hack your way to scientific glory."
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#today",
     "href": "notes/wk07-2023-10-04.html#today",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Today",
     "text": "Today\n\nRead & Discuss\n\n(Simmons, Nelson, & Simonsohn, 2011)\n(Skim) (John, Loewenstein, & Prelec, 2012)"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#central-questions",
     "href": "notes/wk07-2023-10-04.html#central-questions",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Central questions",
     "text": "Central questions\n\nWhat are researcher ‘degrees of freedom’?\nWhy should we care about them?\nWhat are questionable research practices?\nWhy should we care about them?"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#false-positives-vs.-false-negatives",
     "href": "notes/wk07-2023-10-04.html#false-positives-vs.-false-negatives",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "False positives vs. false negatives",
     "text": "False positives vs. false negatives\n\nNull hypothesis: There is no effect.\nPositive: What’s actually true, a true fact\nNegative: What’s actually untrue, a false fact\nWhat does our evidence say?"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#decision-matrix",
     "href": "notes/wk07-2023-10-04.html#decision-matrix",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Decision matrix",
     "text": "Decision matrix\n\n\n\n\n\n\n\n\nEvidence says\nTrue fact\nFalse fact\n\n\n\n\nTrue\nTrue positive\nFalse positive (Type I)\n\n\nFalse\nFalse negative (Type II)\nTrue negative"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#biostatistics-version",
     "href": "notes/wk07-2023-10-04.html#biostatistics-version",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Biostatistics version",
     "text": "Biostatistics version\n\n\n\nhttps://www.scalestatistics.com/diagnostic-accuracy.html"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#practices",
     "href": "notes/wk07-2023-10-04.html#practices",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Practices",
     "text": "Practices\n\nControl alpha\n\n\\(\\alpha\\)\na probability or p value\nto make false positive choices very rarely\n\nControl beta\n\n\\(\\beta\\)\nto make false negative choices very rarely\nstatistical ‘power’ is \\(1-\\beta\\)."
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#whats-a-defensible-choice-whats-a-questionable-practice",
     "href": "notes/wk07-2023-10-04.html#whats-a-defensible-choice-whats-a-questionable-practice",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "What’s a defensible choice? What’s a questionable practice?",
     "text": "What’s a defensible choice? What’s a questionable practice?\n\nIn a paper, failing to report all of a study’s dependent measures\nDeciding whether to collect more data after looking to see whether the results were significant\nIn a paper, failing to report all of a study’s conditions\nStopping collecting data earlier than planned because one found the result that one had been looking for"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#researcher-degrees-of-freedom",
     "href": "notes/wk07-2023-10-04.html#researcher-degrees-of-freedom",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Researcher ‘degrees of freedom’",
     "text": "Researcher ‘degrees of freedom’\n\nThe culprit is a construct we refer to as researcher degrees of freedom. In the course of collecting and analyzing data, researchers have many decisions to make: Should more data be collected? Should some observations be excluded? Which conditions should be combined and which ones compared? Which control variables should be considered? Should specific measures be combined or transformed or both?"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#choices-to-be-made",
     "href": "notes/wk07-2023-10-04.html#choices-to-be-made",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "Choices to be made…",
     "text": "Choices to be made…\n\nChoosing dependent measure or measures\nChoosing sample size\n\nStopping early\n\nChoosing covariates\nReporting subsets of conditions\n\nTrimming data (e.g., how to treat outliers)"
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#whats-too-fast-for-reaction-time",
     "href": "notes/wk07-2023-10-04.html#whats-too-fast-for-reaction-time",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "What’s “too fast” for reaction time?",
     "text": "What’s “too fast” for reaction time?\n\nIn a perusal of roughly 30 Psychological Science articles, we discovered considerable inconsistency in, and hence considerable ambiguity about, this decision. Most (but not all) researchers excluded some responses for being too fast, but what constituted “too fast” varied enormously: the fastest 2.5%, or faster than 2 standard deviations from the mean, or faster than 100 or 150 or 200 or 300 ms."
   },
   {
     "objectID": "notes/wk07-2023-10-04.html#references",
     "href": "notes/wk07-2023-10-04.html#references",
-    "title": "2023-10-04 Wed",
+    "title": "Questionable research practices",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-04 Wed\n\n\n\nAnthony Mills, M. (2023). Why so many americans are losing trust in science. The New York Times. Retrieved from https://www.nytimes.com/2023/10/03/opinion/science-americans-trust-covid.html\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nSimmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#announcements",
     "href": "notes/wk08-2023-10-09.html#announcements",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nFinal project proposal"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#today",
     "href": "notes/wk08-2023-10-09.html#today",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Today",
     "text": "Today\nPrevalence of QRPs\n\nRead & Discuss\n\n(John, Loewenstein, & Prelec, 2012)\n\nDiscuss results from\n\nExercise 02: P-hack your way to scientific glory."
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#accessibilityopenness-notes",
     "href": "notes/wk08-2023-10-09.html#accessibilityopenness-notes",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Accessibility/openness notes",
     "text": "Accessibility/openness notes\n\nPaper not openly accessible.\nPaper was accessible via authenticated access to PSU library."
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#reproducibility-notes-for-john2012-tk",
     "href": "notes/wk08-2023-10-09.html#reproducibility-notes-for-john2012-tk",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Reproducibility notes for (John et al., 2012)",
     "text": "Reproducibility notes for (John et al., 2012)\n\nSupplemental Material Additional supporting information may be found at http://pss.sagepub.com/content/by/supplemental-data\n\n\n(John et al., 2012)"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#survey-of-n3247-nih-funded-scientists",
     "href": "notes/wk08-2023-10-09.html#survey-of-n3247-nih-funded-scientists",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Survey of \\(n=3,247\\) NIH-funded scientists",
     "text": "Survey of \\(n=3,247\\) NIH-funded scientists\n\n\n\nTable 1 from Martinson, Anderson, & Vries (2005)"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#meta-analysis-xie2021-us",
     "href": "notes/wk08-2023-10-09.html#meta-analysis-xie2021-us",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Meta-analysis (Xie, Wang, & Kong, 2021)",
     "text": "Meta-analysis (Xie, Wang, & Kong, 2021)\n\nSelf-reported prevalence; Figure 2 from Xie et al. (2021)"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#our-results",
     "href": "notes/wk08-2023-10-09.html#our-results",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "Our results",
     "text": "Our results\n\nWho got a “significant” result?\nHow many different analyses did you try?\nWho changed their analysis after finding a significant result?\nDid anyone try another analysis–after you got a significant result–and keep the non-significant result?\nVisualizations of the data"
   },
   {
     "objectID": "notes/wk08-2023-10-09.html#references",
     "href": "notes/wk08-2023-10-09.html#references",
-    "title": "2023-10-09 Mon",
+    "title": "Prevalence of QRPs",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-09 Mon\n\n\n\nFranco, A., Malhotra, N., & Simonovits, G. (2014). Social science. Publication bias in the social sciences: Unlocking the file drawer. Science, 345(6203), 1502–1505. https://doi.org/10.1126/science.1255484\n\n\nJohn, L. K., Loewenstein, G., & Prelec, D. (2012). Measuring the prevalence of questionable research practices with incentives for truth telling. Psychological Science, 23(5), 524–532. https://doi.org/10.1177/0956797611430953\n\n\nMartinson, B. C., Anderson, M. S., & Vries, R. de. (2005). Scientists behaving badly. Nature, 435(7043), 737–738. https://doi.org/10.1038/435737a\n\n\nRosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641. https://doi.org/10.1037/0033-2909.86.3.638\n\n\nXie, Y., Wang, K., & Kong, Y. (2021). Prevalence of research misconduct and questionable research practices: A systematic review and Meta-Analysis. Science and Engineering Ethics, 27(4), 41. https://doi.org/10.1007/s11948-021-00314-9"
   },
   {
     "objectID": "notes/wk08-2023-10-13.html#announcements",
     "href": "notes/wk08-2023-10-13.html#announcements",
-    "title": "2023-10-13 Fri",
+    "title": "Work session",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "notes/wk08-2023-10-13.html#today",
     "href": "notes/wk08-2023-10-13.html#today",
-    "title": "2023-10-13 Fri",
+    "title": "Work session",
     "section": "Today",
     "text": "Today"
   },
   {
     "objectID": "notes/wk08-2023-10-13.html#references",
     "href": "notes/wk08-2023-10-13.html#references",
-    "title": "2023-10-13 Fri",
+    "title": "Work session",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-13 Fri"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#in-the-news",
     "href": "notes/wk09-2023-10-18.html#in-the-news",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "In the news…",
     "text": "In the news…\n\nhttps://scoop.upworthy.com/scientists-toss-350-757-coins-and-prove-that-coin-tosses-are-far-from-equal-odds\n\n\nWe analyze the natural process of flipping a coin which is caught in the hand. We show that vigorously flipped coins tend to come up the same way they started…For natural flips, the chance of coming up as started is about .51.\n\n\n(Diaconis, Holmes, & Montgomery, 2007)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#announcements",
     "href": "notes/wk09-2023-10-18.html#announcements",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Announcements",
     "text": "Announcements\n\nDiscuss draft on Friday\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#last-time",
     "href": "notes/wk09-2023-10-18.html#last-time",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Last time",
     "text": "Last time\n\n(Qian, Berenbaum, & Gilmore, 2022) analysis.\nWhen (Nuijten, Hartgerink, Assen, Epskamp, & Wicherts, 2015) examined 250,000+ statistics in psychology papers published from 1985-2013, what did they find?\n(Szucs & Ioannidis, 2017) found that “Median power to detect small, medium, and large effects was 0.12, 0.44, and 0.73…” Can you restate this in less formal or technical terms?"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#today",
     "href": "notes/wk09-2023-10-18.html#today",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Today",
     "text": "Today\nHype\n\nDiscuss\n\n(Ritchie, 2020), Chapter 6\n(Carney, Cuddy, & Yap, 2010), file on Canvas\n(Optional) (Ranehill et al., 2015), file on Canvas"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#chapter-6-from-ritchie2020-fm",
     "href": "notes/wk09-2023-10-18.html#chapter-6-from-ritchie2020-fm",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Chapter 6 from (Ritchie, 2020)",
     "text": "Chapter 6 from (Ritchie, 2020)\n\nProblems with scientific press releases\n\nNot written by scientists\ngive unwarranted advice\ncross-species leaps or generalizations\nequating correlation with causation"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#methods",
     "href": "notes/wk09-2023-10-18.html#methods",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Methods",
     "text": "Methods\n\n\\(n=42\\) participants (26 female)\n\nage or other characteristics not reported\n\nAssigned into two groups (high power vs. low power)\nExperimenter posed bodies\nTwo different poses held for 1 min"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#results",
     "href": "notes/wk09-2023-10-18.html#results",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Results",
     "text": "Results\n\nCarney et al. (2010)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#citation-data",
     "href": "notes/wk09-2023-10-18.html#citation-data",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Citation data",
     "text": "Citation data\nPaper cited ~1,590 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Power+posing%3A+brief+nonverbal+displays+affect+neuroendocrine+levels+and+risk+tolerance&btnG=\naccording to Google Scholar on 2023-10-16."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes",
     "href": "notes/wk09-2023-10-18.html#reproducibility-notes",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Reproducibility notes",
     "text": "Reproducibility notes\n\nArticle was behind a paywall.\nPDF was available via authenticated access to PSU Libraries.\nNo data are shared; no code used to make the figures or conduct the analyses were shared."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#presentation-comments",
     "href": "notes/wk09-2023-10-18.html#presentation-comments",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Presentation comments",
     "text": "Presentation comments\n\nGilmore prefers graphs that show individual participant data points (see below)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#cuddy2012-zx",
     "href": "notes/wk09-2023-10-18.html#cuddy2012-zx",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Cuddy (2012)",
     "text": "Cuddy (2012)\n\nAmy Cuddy’s TED talk: https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#citation-data-1",
     "href": "notes/wk09-2023-10-18.html#citation-data-1",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Citation data",
     "text": "Citation data\nTalk viewed ~69.5 million times according to TED web page on 2023-10-16."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#a-replication-attempt",
     "href": "notes/wk09-2023-10-18.html#a-replication-attempt",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "A replication attempt",
     "text": "A replication attempt\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S. & Weber, R. A. (2015). Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women [Review of Assessing the robustness of power posing: no effect on hormones and risk tolerance in a large sample of men and women]. Psychological Science, 26(5), 653–656. journals.sagepub.com. https://doi.org/10.1177/0956797614553946"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#methods-1",
     "href": "notes/wk09-2023-10-18.html#methods-1",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Methods",
     "text": "Methods\n\nSampled \\(n=100\\) after power analysis; then sampled another 100.\n3 min pose durations\nParticipants modeled poses following computer instructions.\nNo deception."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#results-1",
     "href": "notes/wk09-2023-10-18.html#results-1",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Results",
     "text": "Results\n\nResults excerpt from (Ranehill et al., 2015)"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#citation-data-2",
     "href": "notes/wk09-2023-10-18.html#citation-data-2",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Citation data",
     "text": "Citation data\nPaper cited ~340 times:\nhttps://scholar.google.com/scholar?hl=en&as_sdt=0%2C39&q=Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women+%5BReview+of+Assessing+the+robustness+of+power+posing%3A+no+effect+on+hormones+and+risk+tolerance+in+a+large+sample+of+men+and+women%5D&btnG=\naccording to Google Scholar on 2023-10-16."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
     "href": "notes/wk09-2023-10-18.html#reproducibility-notes-1",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Reproducibility notes",
     "text": "Reproducibility notes\n\nArticle was behind a paywall.\nThe PDF was available via authenticated access to PSU Libraries.\nThe PDF did not easily permit cutting and pasting of text, so it was hard to excerpt those for this document.\nThe HTML version of the article was unavailable, so I had to make screenshots of figures."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#presentation-comments-1",
     "href": "notes/wk09-2023-10-18.html#presentation-comments-1",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Presentation comments",
     "text": "Presentation comments\n\nExample of ‘spaghetti’ plot."
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#exploring-logicalcausal-diagrams",
     "href": "notes/wk09-2023-10-18.html#exploring-logicalcausal-diagrams",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Exploring logical/causal diagrams",
     "text": "Exploring logical/causal diagrams\nCausal diagrams are one tool to reveal an authors’ claims and assumptions.\n\n\n\n\nflowchart LR\n  A[Behaviors] --&gt;B(Feelings)\n  A --&gt;C((Physiology))"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#causal-diagram-for--carney2010-gq",
     "href": "notes/wk09-2023-10-18.html#causal-diagram-for--carney2010-gq",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "Causal diagram for (2010)",
     "text": "Causal diagram for (2010)\n\n\n\n\nflowchart TD\n  A[Posing] --&gt;B(Testosterone)\n  A --&gt;C(Cortisol)\n  A --&gt;D{Powerful feelings}\n  A --&gt;E[Risk tolerance]"
   },
   {
     "objectID": "notes/wk09-2023-10-18.html#references",
     "href": "notes/wk09-2023-10-18.html#references",
-    "title": "2023-10-18 Wed",
+    "title": "Hype",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-18 Wed\n\n\n\nCarney, D. R., Cuddy, A. J. C., & Yap, A. J. (2010). Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance. Psychological Science, 21(10), 1363–1368. https://doi.org/10.1177/0956797610383437\n\n\nCuddy, A. (2012). Your body language may shape who you are. Retrieved from https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are\n\n\nDiaconis, P., Holmes, S., & Montgomery, R. (2007). Dynamical bias in the coin toss. SIAM Review, 49(2), 211–235. https://doi.org/10.1137/S0036144504446436\n\n\nDominus, S. (2017). When the revolution came for amy cuddy. The New York Times. Retrieved from https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html\n\n\nGould, E., Fraser, H. S., Parker, T. H., Nakagawa, S., Griffith, S. C., Vesk, P. A., … Zitomer, R. A. (2023). Same data, different analysts: Variation in effect sizes due to analytical decisions in ecology and evolutionary biology. Retrieved from https://ecoevorxiv.org/repository/view/6000/\n\n\nNuijten, M. B., Hartgerink, C. H. J., Assen, M. A. L. M. van, Epskamp, S., & Wicherts, J. M. (2015). The prevalence of statistical reporting errors in psychology (1985–2013). Behavior Research Methods, 1–22. https://doi.org/10.3758/s13428-015-0664-2\n\n\nOza, A. (2023, October). Reproducibility trial: 246 biologists get different results from same data sets. http://dx.doi.org/10.1038/d41586-023-03177-1. https://doi.org/10.1038/d41586-023-03177-1\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12(1), 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nRanehill, E., Dreber, A., Johannesson, M., Leiberg, S., Sul, S., & Weber, R. A. (2015). Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women. Psychological Science, 26(5), 653–656. https://doi.org/10.1177/0956797614553946\n\n\nRitchie, S. (2020). Science fictions: Exposing fraud, bias, negligence and hype in science (1st ed.). Penguin Random House. Retrieved from https://www.amazon.com/Science-Fictions/dp/1847925669\n\n\nSzucs, D., & Ioannidis, J. P. A. (2017). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. PLoS Biology, 15(3), e2000797. https://doi.org/10.1371/journal.pbio.2000797"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#announcements",
     "href": "notes/wk10-2023-10-23.html#announcements",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Announcements",
     "text": "Announcements\n\nDue Friday\n\nExercise 06: Replication"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#last-time",
     "href": "notes/wk10-2023-10-23.html#last-time",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Last time…",
     "text": "Last time…\n\nWhat did we learn from watching the TED Talk about power posing?"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#today",
     "href": "notes/wk10-2023-10-23.html#today",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Today",
     "text": "Today\n\nFinal due\n\nExercise 05: Alpha, Power, Effect Sizes, & Sample Size write-up\n\nDiscuss\n\n(Munafò et al., 2017)\n(Begley, 2013)"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#abstract",
     "href": "notes/wk10-2023-10-23.html#abstract",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Abstract",
     "text": "Abstract\n\nImproving the reliability and efficiency of scientific research will increase the credibility of the published scientific literature and accelerate discovery. Here we argue for the adoption of measures to optimize key elements of the scientific process: methods, reporting and dissemination, reproducibility, evaluation and incentives.\n\n\n(Munafò et al., 2017)"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#table-1",
     "href": "notes/wk10-2023-10-23.html#table-1",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Table 1",
     "text": "Table 1\nLink: https://www.nature.com/articles/s41562-016-0021/tables/1"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#improving-methods",
     "href": "notes/wk10-2023-10-23.html#improving-methods",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Improving methods",
     "text": "Improving methods\n\nProtecting against cognitive biases.\n\n\nImproving methodological training\n\n\nImplementing independent methodological support\n\n\nEncouraging collaboration and team science"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#improving-reporting-and-dissemination",
     "href": "notes/wk10-2023-10-23.html#improving-reporting-and-dissemination",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Improving reporting and dissemination",
     "text": "Improving reporting and dissemination\n\nPromoting study pre-registration\n\n\nImproving the quality of reporting"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#improving-reproducibility",
     "href": "notes/wk10-2023-10-23.html#improving-reproducibility",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Improving reproducibility",
     "text": "Improving reproducibility\n\nPromoting transparency and open science"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#improving-evaluation",
     "href": "notes/wk10-2023-10-23.html#improving-evaluation",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Improving evaluation",
     "text": "Improving evaluation\n\nDiversifying peer review"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#changing-incentives",
     "href": "notes/wk10-2023-10-23.html#changing-incentives",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "Changing incentives",
     "text": "Changing incentives\n\nRewarding open and reproducible practices"
   },
   {
     "objectID": "notes/wk10-2023-10-23.html#references",
     "href": "notes/wk10-2023-10-23.html#references",
-    "title": "2023-10-23 Mon",
+    "title": "Solutions",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-23 Mon\n\n\n\nBegley, C. G. (2013). Six red flags for suspect work. Nature, 497(7450), 433–434. https://doi.org/10.1038/497433a\n\n\nGilmore, R. O., Cole, P. M., Verma, S., Aken, M. A. G., & Worthman, C. M. (2020). Advancing scientific integrity, transparency, and openness in child development research: Challenges and possible solutions. Child Development Perspectives, 14(1), 9–14. https://doi.org/10.1111/cdep.12360\n\n\nMunafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. https://doi.org/10.1038/s41562-016-0021\n\n\nNosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374\n\n\nSRCD. (2019). Policy on scientific integrity, transparency, and openness | society for research in child development SRCD. https://www.srcd.org/policy-scientific-integrity-transparency-and-openness. Retrieved from https://www.srcd.org/policy-scientific-integrity-transparency-and-openness"
   },
   {
     "objectID": "notes/wk10-2023-10-27.html#announcements",
     "href": "notes/wk10-2023-10-27.html#announcements",
-    "title": "2023-10-27 Fri",
+    "title": "Work day",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "notes/wk10-2023-10-27.html#today",
     "href": "notes/wk10-2023-10-27.html#today",
-    "title": "2023-10-27 Fri",
+    "title": "Work day",
     "section": "Today",
     "text": "Today\nFinal project work day\n\nDue\n\nExercise 06: Replication\n\nOptional Extra Credit Assignment - For 5 extra credit points, write a paragraph that summarizes the main findings of (Camerer et al., 2018). Due Friday, November 3."
   },
   {
     "objectID": "notes/wk10-2023-10-27.html#references",
     "href": "notes/wk10-2023-10-27.html#references",
-    "title": "2023-10-27 Fri",
+    "title": "Work day",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-10-27 Fri\n\n\n\nCamerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., … Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, 1. https://doi.org/10.1038/s41562-018-0399-z\n\n\nCollaboration, O. S. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716. https://doi.org/10.1126/science.aac4716"
   },
@@ -3313,77 +3439,77 @@
   {
     "objectID": "notes/wk12-2023-11-06.html#announcements",
     "href": "notes/wk12-2023-11-06.html#announcements",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#last-time",
     "href": "notes/wk12-2023-11-06.html#last-time",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Last time…",
     "text": "Last time…"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#today",
     "href": "notes/wk12-2023-11-06.html#today",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Today",
     "text": "Today\nPreregistration\n\nRead\n\n(Nosek, Ebersole, DeHaven, & Mellor, 2018)\n(Ledgerwood, 2018) or (Goldin-Meadow, 2016)\n(Optional) (Claesen, Gomes, Tuerlinckx, & Vanpaemel, 2021)\n\nExplore\n\nclinicaltrials.gov"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#types",
     "href": "notes/wk12-2023-11-06.html#types",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Types",
     "text": "Types\n\nPreregistration (of analysis plans)\nRegistered reports, Chambers (n.d.); Center for Open Science (n.d.)\n\n\nIllustration about registered reports from (Center for Open Science, n.d.)"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#commentary-about",
     "href": "notes/wk12-2023-11-06.html#commentary-about",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Commentary about",
     "text": "Commentary about\n\n(Ledgerwood, 2018)\n\nPreregistering theoretical predictions \\(\\neq\\) preregistering analysis plans\n\n(Goldin-Meadow, 2016)\n\nCould stifle discovery\nNot applicable to all kinds of research"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#author-reported-reasons-for-deviations",
     "href": "notes/wk12-2023-11-06.html#author-reported-reasons-for-deviations",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Author-reported reasons for deviations",
     "text": "Author-reported reasons for deviations\n\nSuggestions from reviewers\nDid not preregister or report details because they were thought redundant or irrelevant\nLack of consensus about what should be disclosed\nSmall discrepancy with the preregistered sample size was small and not really a deviation."
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#conclusions",
     "href": "notes/wk12-2023-11-06.html#conclusions",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "Conclusions",
     "text": "Conclusions\n\nOur work suggests that it is not obvious for preregistration to live up to its promise of making research results more transparent and more interpretable in the manuscript. This insight calls for better standards in preregistering and reporting preregistered research. It should, however, not be misinterpreted as a plea against the practice of preregistration. Neither does our work suggest that the results of the preregistered studies we assessed should not be trusted. We do not, and cannot, claim that the observed deviations have been deliberately unreported or constitute evidence of the exploitation of researcher degrees of freedom. The process of preregistering and reporting in accordance with the preregistration is tricky, and we realize that, given its relatively young status in psychology, the field collectively needs to go through a learning phase.\n\n\n(Claesen et al., 2021)"
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#my-experience",
     "href": "notes/wk12-2023-11-06.html#my-experience",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "My experience",
     "text": "My experience\n\nPaper: (Qian, Berenbaum, & Gilmore, 2022a); preregistration (Qian, Berenbaum, & Gilmore, 2021).\nPublished R Markdown document (in HTML) with entire workflow (Qian, Berenbaum, & Gilmore, 2022b).\n\nSeparate sections for preregistered and exploratory ones."
   },
   {
     "objectID": "notes/wk12-2023-11-06.html#references",
     "href": "notes/wk12-2023-11-06.html#references",
-    "title": "2023-11-06 Mon",
+    "title": "Preregistration",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-11-06 Mon\n\n\n\nCenter for Open Science. (n.d.). Registered reports. https://www.cos.io/initiatives/registered-reports. Retrieved from https://www.cos.io/initiatives/registered-reports\n\n\nChambers, C. (n.d.). Registered reports: What are they and why are they important? https://royalsociety.org/blog/2016/11/registered-reports-what-are-they-and-why-are-they-important/. Retrieved from https://royalsociety.org/blog/2016/11/registered-reports-what-are-they-and-why-are-they-important/\n\n\nClaesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing dream to reality: An assessment of adherence of the first generation of preregistered studies. Royal Society Open Science, 8(211037). https://doi.org/10.1098/rsos.211037\n\n\nGilmore, R. O., & Adolph, K. E. (2017). Video can make behavioural research more reproducible. Nature Human Behavior, 1. https://doi.org/10.1038/s41562-017-0128\n\n\nGoldin-Meadow, S. (2016). Why preregistration makes me nervous. APS Observer, 29(7). Retrieved from https://www.psychologicalscience.org/observer/why-preregistration-makes-me-nervous\n\n\nHoutkoop, B. L., Chambers, C., Macleod, M., Bishop, D. V. M., Nichols, T. E., & Wagenmakers, E.-J. (2018). Data sharing in psychology: A survey on barriers and preconditions. Advances in Methods and Practices in Psychological Science, 2515245917751886. https://doi.org/10.1177/2515245917751886\n\n\nLedgerwood, A. (2018). The preregistration revolution needs to distinguish between predictions and analyses. Proceedings of the National Academy of Sciences of the United States of America, 115(45), E10516–E10517. https://doi.org/10.1073/pnas.1812592115\n\n\nMeyer, M. N. (2018). Practical tips for ethical data sharing. Advances in Methods and Practices in Psychological Science, 2515245917747656. https://doi.org/10.1177/2515245917747656\n\n\nNational Institutes of Health. (n.d.). NOT-OD-21-013: Final NIH policy for data management and sharing. https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html. Retrieved from https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html\n\n\nNosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences of the United States of America, 115(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2021, June 18). Individual difference in visual perception (a pregistration). https://aspredicted.org/5iv9a.pdf. Retrieved from https://aspredicted.org/5iv9a.pdf\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022a). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12(1), 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022b). Vision contributes to sex differences in spatial cognition and activity interests (analysis plan). Retrieved from https://gilmore-lab.github.io/sex-differences-project/analysis/qian-berenbaum-gilmore.html\n\n\nTenopir, C., Rice, N. M., Allard, S., Baird, L., Borycz, J., Christian, L., … Sandusky, R. J. (2020). Data sharing, management, use, and reuse: Practices and perceptions of scientists worldwide. PloS One, 15(3), e0229003. https://doi.org/10.1371/journal.pone.0229003"
   },
   {
     "objectID": "notes/wk12-2023-11-10.html#today",
     "href": "notes/wk12-2023-11-10.html#today",
-    "title": "2023-11-10 Fri",
+    "title": "Work session",
     "section": "Today",
     "text": "Today\nWork session: Data sharing\n\nAssignment distributed\n\nExercise 07: Data and materials sharing\n\nFinal project survey\n\nPlease complete the final project survey."
   },
   {
     "objectID": "notes/wk12-2023-11-10.html#references",
     "href": "notes/wk12-2023-11-10.html#references",
-    "title": "2023-11-10 Fri",
+    "title": "Work session",
     "section": "References",
     "text": "References\n\n\nPSYCH 490.009: 2023-11-10 Fri\n\n\n\nGilroy, S. P., & Kaplan, B. A. (2019). Furthering open science in behavior analysis: An introduction and tutorial for using GitHub in research. Perspectives on Behavior Science, 42(3), 565–581. https://doi.org/10.1007/s40614-019-00202-5\n\n\nSoska, K. C., Xu, M., Gonzalez, S. L., Herzberg, O., Tamis-LeMonda, C. S., Gilmore, R. O., & Adolph, K. E. (2021). (Hyper)active data curation: A video case study from behavioral science. Journal of Escience Librarianship, 10(3). https://doi.org/10.7191/jeslib.2021.1208"
   },
@@ -3483,7 +3609,7 @@
     "href": "surveys/many-viz.html#exploration",
     "title": "Visualizing data from (R. Silberzahn et al., 2018)",
     "section": "Exploration",
-    "text": "Exploration\nLet’s see if we can understand more about the data.\n\nCards per specific player/ref\n\nred_cards |&gt;\n  ggplot() +\n  aes(x = yellowCards) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Distribution of yellow cards given specific player*ref interaction\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\n\nred_cards |&gt;\n  ggplot() +\n  aes(redCards) +\n  geom_histogram(fill = \"red\") +\n  ggtitle(\"Distribution of red cards given specific player*ref interaction\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\n\nBy player\nLet’s group by player and see how the number of yellow and red cards appear as a function of player.\n\nby_player &lt;- red_cards |&gt;\n  dplyr::group_by(playerShort) |&gt;\n  dplyr::summarise(n_refs = n(), n_yellow = sum(yellowCards), n_red = sum(redCards)) |&gt;\n  dplyr::mutate(p_yellow = n_yellow/n_refs, p_red = n_red/n_refs)\n\n\nby_player |&gt;\n  ggplot() +\n  aes(x = n_refs) +\n  geom_histogram() +\n  ggtitle(\"Distribution of referee interactions for each player\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nNow, let’s look at these distributions.\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Proportion of referee interactions with yellow cards\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 3: ?(caption)\n\n\n\n\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_red) +\n  geom_histogram(fill = \"red\") +\n  ggtitle(\"Proportion of referee interactions with red cards\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 4: ?(caption)\n\n\n\n\nSo, there’s something odd going on with p_yellow. This should be in [0,1].\n\nby_player |&gt; dplyr::filter(p_yellow &gt; 1)\n\n# A tibble: 63 × 6\n   playerShort   n_refs n_yellow n_red p_yellow  p_red\n   &lt;chr&gt;          &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;\n 1 adam-bodzek       56       66     0     1.18 0     \n 2 aduriz            63       68     4     1.08 0.0635\n 3 albelda          147      197     6     1.34 0.0408\n 4 alberto-botia     45       69     3     1.53 0.0667\n 5 alexis            53       77     4     1.45 0.0755\n 6 allan-nyom        37       42     0     1.14 0     \n 7 amorebieta        85       93     4     1.09 0.0471\n 8 apono             43       45     1     1.05 0.0233\n 9 arribas_2         38       48     2     1.26 0.0526\n10 ballesteros      110      128     5     1.16 0.0455\n# ℹ 53 more rows\n\n\nWait, a player can get more than one yellow card per referee interactdion. Doh!\nLet’s see if the yellow and red cards relate to one another.\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Proportion of yellow vs. red cards for each player*referee\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 5: ?(caption)\n\n\n\n\n\n\nBy player adding skin tone\nLet’s try to visualize the ratings of skin tone along side this.\n\nby_player_skin &lt;- red_cards |&gt;\n  dplyr::group_by(playerShort) |&gt;\n  dplyr::summarise(\n    n_refs = n(),\n    n_yellow = sum(yellowCards),\n    n_red = sum(redCards),\n    rater1 = mean(rater1),\n    rater2 = mean(rater2)\n  ) |&gt;\n  dplyr::mutate(p_yellow = n_yellow / n_refs, p_red = n_red / n_refs, skin = (rater1 + rater2)/2)\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_yellow, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"yellow\") +\n  ggtitle(\"Distribution of player skin tone and number of yellow cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 6: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_yellow) +\n  geom_point(color = \"yellow\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and number of yellow cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 7: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_yellow, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"yellow\") +\n  ggtitle(\"Distribution of player skin tone and proportion of yellow cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 8: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_yellow) +\n  geom_point(color = \"yellow\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of yellow cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 9: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_red, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"red\") +\n  ggtitle(\"Distribution of player skin tone and number of red cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 10: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_red) +\n  geom_point(color = \"red\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of red cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 11: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_red, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"red\") +\n  ggtitle(\"Distribution of skin tone and red cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 12: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_red) +\n  geom_point(color = \"red\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of red cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 13: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red, group = 1) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Number yellow vs. (per ref encounter/game) red cards\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 14: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red, group = 1) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 15: ?(caption)\n\n\n\n\n\nDarker-skinned players\nThat’s hard to read, so let’s focus on players with skin &gt; .5.\n\nby_player_skin |&gt;\n  dplyr::filter(skin &gt; .5) |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards for darker-skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 16: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  dplyr::filter(skin &gt; .5) |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards for darker-skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 17: ?(caption)\n\n\n\n\n\n\nLighter-skinned players\nAnd for completeness, let’s look at the lighter-skinned players.\n\nby_player_skin |&gt;\n  dplyr::filter(skin &lt;= .5) |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. red cards (per ref encounter/game) for lighter skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 18: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  dplyr::filter(skin &lt;= .5) |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. red cards (per ref encounter/game) for lighter skinned players\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 19: ?(caption)\n\n\n\n\n\n\n\nReferees\nNow let’s focus on the referees.\n\nby_ref &lt;- red_cards |&gt;\n  dplyr::group_by(refNum) |&gt;\n  dplyr::summarise(n_interactions = n(),\n    n_yellow = sum(yellowCards),\n    n_red = sum(redCards)) |&gt;\n  dplyr::mutate(p_yellow = n_yellow / n_interactions, p_red = n_red / n_interactions)\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_interactions) +\n  geom_histogram() +\n  ggtitle(\"Player interactions per referee\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"N yellow cards given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 20: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Yellow cards per player interaction given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 21: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_red) +\n  geom_histogram(fill = \"red\")  +\n  ggtitle(\"N red cards given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 22: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_red) +\n  geom_histogram(fill = \"red\")  +\n  ggtitle(\"Red cards per player interaction given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 23: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"N yellow vs. red cards by referee*player interaction\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 24: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Proportion yellow vs. red cards by referee*player interaction\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 25: ?(caption)"
+    "text": "Exploration\nLet’s see if we can understand more about the data.\nEach row appears to include the number of yellow and red cards awarded to a given player by a given referee, presumably within the sample period of the study.\n\nCards per specific player/ref\n\nred_cards |&gt;\n  ggplot() +\n  aes(x = yellowCards) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Distribution of yellow cards given specific player*ref interaction\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\nMost player by referee interactions resulted in no yellow cards at all, as expected.\n\nred_cards |&gt;\n  ggplot() +\n  aes(redCards) +\n  geom_histogram(fill = \"red\") +\n  ggtitle(\"Distribution of red cards given specific player*ref interaction\") +\n  xlab(\"N red cards\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\nAnd there are relatively few red cards, too.\n\nn_red_cards &lt;- red_cards |&gt;\n  dplyr::filter(redCards &gt; 0)\n\nxtabs(formula = ~ redCards, data = red_cards)\n\nredCards\n     0      1      2 \n144219   1784     25 \n\n\nSpecifically, there are \\(n=\\) 1809 red cards, or \\(p=\\) 0.012 of all player/referee interactions. So, these are rare events in the database. But there are some interactions with two red cards.\n\nn_red_cards |&gt;\n  dplyr::filter(redCards == 2) |&gt;\n  dplyr::select(playerShort, refNum) |&gt;\n  dplyr::arrange(refNum, playerShort) |&gt;\n  knitr::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nplayerShort\nrefNum\n\n\n\n\nbodipo\n140\n\n\nantonio-lopez_2\n367\n\n\njavi-martinez\n432\n\n\njonas\n432\n\n\nphil-jagielka\n487\n\n\ncyril-jeunechamp\n586\n\n\nsergio-ramos\n804\n\n\naly-cissokho\n985\n\n\neugen-polanski\n1114\n\n\nemmanuel-adebayor\n1214\n\n\njose-nunes\n1349\n\n\njesus-rueda\n1574\n\n\nmarc-planus\n1696\n\n\nde-lucas\n1886\n\n\nfallou-diagne\n1931\n\n\nlaurent-koscielny\n2080\n\n\nsaber-khelifa\n2246\n\n\nivo-ilicevic\n2370\n\n\nfabien-audard\n2796\n\n\ncristiano-ronaldo\n2803\n\n\ngary-cahill\n2822\n\n\nlee-cattermole\n2822\n\n\ncyril-jeunechamp\n2961\n\n\nmouhamadou-dabo\n2961\n\n\nrafael-van-der-vaart\n3099\n\n\n\n\n\n\n\nIt doesn’t look like any of the dyads that yielded two red cards involve repeats.\nJust for fun, let’s see how red and yellow cards relate to one another. We add some jitter and use alpha=.1 to make it easier to see any pattern.\n\nred_cards |&gt;\n  ggplot() +\n  aes(x = yellowCards, y = redCards) +\n  geom_jitter(alpha = .1, width = .2, height = .2) +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"N yellow vs. N red cards for each player by referee combination\") +\n  xlab(\"N yellow cards\") +\n  ylab(\"N red cards\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nNumber of yellow and red cards for each player/referee pair in data from (R. Silberzahn et al., 2023)\n\n\n\n\n\n\nBy player\nLet’s group by player and see how the number of yellow and red cards appear as a function of player.\n\nby_player &lt;- red_cards |&gt;\n  dplyr::group_by(playerShort) |&gt;\n  dplyr::summarise(n_refs = n(), n_yellow = sum(yellowCards), n_red = sum(redCards)) |&gt;\n  dplyr::mutate(p_yellow = n_yellow/n_refs, p_red = n_red/n_refs)\n\n\nby_player |&gt;\n  ggplot() +\n  aes(x = n_refs) +\n  geom_histogram() +\n  ggtitle(\"Distribution of referee interactions for each player\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nNow, let’s look at these distributions.\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Proportion of referee interactions with yellow cards\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 3: ?(caption)\n\n\n\n\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_red) +\n  geom_histogram(fill = \"red\") +\n  ggtitle(\"Proportion of referee interactions with red cards\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 4: ?(caption)\n\n\n\n\nSo, there’s something odd going on with p_yellow. This should be in [0,1].\n\nby_player |&gt; dplyr::filter(p_yellow &gt; 1)\n\n# A tibble: 63 × 6\n   playerShort   n_refs n_yellow n_red p_yellow  p_red\n   &lt;chr&gt;          &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;\n 1 adam-bodzek       56       66     0     1.18 0     \n 2 aduriz            63       68     4     1.08 0.0635\n 3 albelda          147      197     6     1.34 0.0408\n 4 alberto-botia     45       69     3     1.53 0.0667\n 5 alexis            53       77     4     1.45 0.0755\n 6 allan-nyom        37       42     0     1.14 0     \n 7 amorebieta        85       93     4     1.09 0.0471\n 8 apono             43       45     1     1.05 0.0233\n 9 arribas_2         38       48     2     1.26 0.0526\n10 ballesteros      110      128     5     1.16 0.0455\n# ℹ 53 more rows\n\n\nWait, a player can get more than one yellow card per referee interactdion. Doh!\nLet’s see if the yellow and red cards relate to one another.\n\nby_player |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Proportion of yellow vs. red cards for each player*referee\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 5: ?(caption)\n\n\n\n\n\n\nBy player adding skin tone\nLet’s try to visualize the ratings of skin tone along side this.\n\nby_player_skin &lt;- red_cards |&gt;\n  dplyr::group_by(playerShort) |&gt;\n  dplyr::summarise(\n    n_refs = n(),\n    n_yellow = sum(yellowCards),\n    n_red = sum(redCards),\n    rater1 = mean(rater1),\n    rater2 = mean(rater2)\n  ) |&gt;\n  dplyr::mutate(p_yellow = n_yellow / n_refs, p_red = n_red / n_refs, skin = (rater1 + rater2)/2)\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_yellow, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"yellow\") +\n  ggtitle(\"Distribution of player skin tone and number of yellow cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 6: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_yellow) +\n  geom_point(color = \"yellow\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and number of yellow cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 7: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_yellow, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"yellow\") +\n  ggtitle(\"Distribution of player skin tone and proportion of yellow cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 8: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_yellow) +\n  geom_point(color = \"yellow\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of yellow cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 9: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_red, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"red\") +\n  ggtitle(\"Distribution of player skin tone and number of red cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 10: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = n_red) +\n  geom_point(color = \"red\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of red cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 11: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_red, group = as.factor(skin)) +\n  geom_violin() +\n  geom_point(color = \"red\") +\n  ggtitle(\"Distribution of skin tone and red cards given\")\n\nWarning: Removed 468 rows containing non-finite values (`stat_ydensity()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 12: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = skin, y = p_red) +\n  geom_point(color = \"red\") +\n  geom_smooth(method = \"lm\") +\n  ggtitle(\"Distribution of player skin tone and proportion of red cards given\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 468 rows containing non-finite values (`stat_smooth()`).\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 13: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red, group = 1) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Number yellow vs. (per ref encounter/game) red cards\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 14: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red, group = 1) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\nWarning: Removed 468 rows containing missing values (`geom_point()`).\n\n\n\n\n\nFigure 15: ?(caption)\n\n\n\n\n\nDarker-skinned players\nThat’s hard to read, so let’s focus on players with skin &gt; .5.\n\nby_player_skin |&gt;\n  dplyr::filter(skin &gt; .5) |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards for darker-skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 16: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  dplyr::filter(skin &gt; .5) |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. (per ref encounter/game) red cards for darker-skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\n\nFigure 17: ?(caption)\n\n\n\n\n\n\nLighter-skinned players\nAnd for completeness, let’s look at the lighter-skinned players.\n\nby_player_skin |&gt;\n  dplyr::filter(skin &lt;= .5) |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point(aes(size = as.factor(skin))) +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. red cards (per ref encounter/game) for lighter skinned players\")\n\nWarning: Using size for a discrete variable is not advised.\n\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 18: ?(caption)\n\n\n\n\n\nby_player_skin |&gt;\n  dplyr::filter(skin &lt;= .5) |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Yellow vs. red cards (per ref encounter/game) for lighter skinned players\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 19: ?(caption)\n\n\n\n\n\n\n\nReferees\nNow let’s focus on the referees.\n\nby_ref &lt;- red_cards |&gt;\n  dplyr::group_by(refNum) |&gt;\n  dplyr::summarise(n_interactions = n(),\n    n_yellow = sum(yellowCards),\n    n_red = sum(redCards)) |&gt;\n  dplyr::mutate(p_yellow = n_yellow / n_interactions, p_red = n_red / n_interactions)\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_interactions) +\n  geom_histogram() +\n  ggtitle(\"Player interactions per referee\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"N yellow cards given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 20: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_yellow) +\n  geom_histogram(fill = \"yellow\") +\n  ggtitle(\"Yellow cards per player interaction given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 21: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_red) +\n  geom_histogram(fill = \"red\")  +\n  ggtitle(\"N red cards given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 22: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_red) +\n  geom_histogram(fill = \"red\")  +\n  ggtitle(\"Red cards per player interaction given by referees\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\nFigure 23: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = n_yellow, y = n_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"N yellow vs. red cards by referee*player interaction\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 24: ?(caption)\n\n\n\n\n\nby_ref |&gt;\n  ggplot() +\n  aes(x = p_yellow, y = p_red) +\n  geom_point() +\n  geom_smooth() +\n  ggtitle(\"Proportion yellow vs. red cards by referee*player interaction\")\n\n`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = \"cs\")'\n\n\n\n\n\nFigure 25: ?(caption)"
   },
   {
     "objectID": "surveys/plotting-degrees-of-freedom.html",
@@ -3546,7 +3672,7 @@
     "href": "surveys/simmons-etal-2011-suppl.html#visualize-data",
     "title": "Simmons et al. 2011",
     "section": "Visualize data",
-    "text": "Visualize data\nTo visualize the data, we’ll make a data frame. This is a convenient ‘rectangular’ format for our data.\n\nfalse_pos_study_1 &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\nstr(false_pos_study_1)\n\n'data.frame':   30 obs. of  4 variables:\n $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...\n $ song       : chr  \"kid\" \"kid\" \"kid\" \"kid\" ...\n $ father_age : num  40.6 51.4 54.4 57.9 56 ...\n $ old_feeling: num  4 4 4 4 4 4 5 3 4 4 ...\n\n\nNow, let’s plot this to show how analysis of covariance (ANCOVA) might work.\n\n\n\n\n\n\nNote\n\n\n\nMy graduate statistics professor, Dr. Mike Meyer, always exhorted us to “plot our data!” That is, he thought we should always plot first, then run our statistics later. I’ve taken that advice to heart in my own work.\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.3     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nfalse_pos_study_1 |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nFigure 1: Illustration of a simulated ANCOVA based on (Simmons et al., 2011)\n\n\n\n\nThis plot adds two lines to the data, one for each song group. The ANCOVA will let us evaluate whether the old_feeling is predicted by a linear combination of father_age and song.\nIn the code below, notice that we set formula = old_feeling ~ song + father_age. This is how we tell the aov() command that the linear combination of song and father_age are the variables we want to use to predict old_feeling.\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  7.500   7.500  25.533 2.64e-05 ***\nfather_age   1  0.069   0.069   0.235    0.632    \nResiduals   27  7.931   0.294                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nNow, let’s imagine that father_age wasn’t entirely random for some reason.\n\nfather_age &lt;- (69:40) + rnorm(30, 0, 1)\nplot(1:30, father_age)\n\n\n\nhist(father_age)\n\n\n\n\n\nfalse_pos_study_1a &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1a |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1a)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  7.500   7.500  25.532 2.64e-05 ***\nfather_age   1  0.069   0.069   0.234    0.633    \nResiduals   27  7.931   0.294                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nOr, maybe worse, that how old participants’ felt related to their fathers’ age.\n\nold_feeling &lt;- (father_age-40)/(70-40) + rnorm(n=30, 0, 0.25)\nold_feeling &lt;- round(old_feeling/(max(old_feeling)-min(old_feeling))*4 + 1, 0)\n\nfalse_pos_study_1b &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1b |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1b)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1  13.33  13.333   26.19 2.22e-05 ***\nfather_age   1   6.39   6.390   12.55  0.00146 ** \nResiduals   27  13.74   0.509                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+    "text": "Visualize data\nTo visualize the data, we’ll make a data frame. This is a convenient ‘rectangular’ format for our data.\n\nfalse_pos_study_1 &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\nstr(false_pos_study_1)\n\n'data.frame':   30 obs. of  4 variables:\n $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...\n $ song       : chr  \"kid\" \"kid\" \"kid\" \"kid\" ...\n $ father_age : num  58.5 66.7 56 50 66.6 ...\n $ old_feeling: num  3 3 4 4 5 4 4 4 3 3 ...\n\n\nNow, let’s plot this to show how analysis of covariance (ANCOVA) might work.\n\n\n\n\n\n\nNote\n\n\n\nMy graduate statistics professor, Dr. Mike Meyer, always exhorted us to “plot our data!” That is, he thought we should always plot first, then run our statistics later. I’ve taken that advice to heart in my own work.\n\n\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.3     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nfalse_pos_study_1 |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\nFigure 1: Illustration of a simulated ANCOVA based on (Simmons et al., 2011)\n\n\n\n\nThis plot adds two lines to the data, one for each song group. The ANCOVA will let us evaluate whether the old_feeling is predicted by a linear combination of father_age and song.\nIn the code below, notice that we set formula = old_feeling ~ song + father_age. This is how we tell the aov() command that the linear combination of song and father_age are the variables we want to use to predict old_feeling.\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nsong         1  4.800   4.800   9.919 0.00397 **\nfather_age   1  0.001   0.001   0.003 0.95694   \nResiduals   27 13.065   0.484                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nNow, let’s imagine that father_age wasn’t entirely random for some reason.\n\nfather_age &lt;- (69:40) + rnorm(30, 0, 1)\nplot(1:30, father_age)\n\n\n\nhist(father_age)\n\n\n\n\n\nfalse_pos_study_1a &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1a |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1a)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nsong         1  4.800   4.800  10.486 0.00318 **\nfather_age   1  0.707   0.707   1.545 0.22454   \nResiduals   27 12.359   0.458                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nOr, maybe worse, that how old participants’ felt related to their fathers’ age.\n\nold_feeling &lt;- (father_age-40)/(70-40) + rnorm(n=30, 0, 0.25)\nold_feeling &lt;- round(old_feeling/(max(old_feeling)-min(old_feeling))*4 + 1, 0)\n\nfalse_pos_study_1b &lt;- data.frame(sub_id = 1:30, song, father_age, old_feeling)\n\nfalse_pos_study_1b |&gt;\n  ggplot() +\n  aes(x = father_age, y = old_feeling, color = song) +\n  geom_point() +\n  geom_smooth(method = lm) # linear fit\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\nglm_ancova &lt;- aov(formula = old_feeling ~ song + father_age, data = false_pos_study_1b)\nsummary(glm_ancova)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nsong         1 14.700  14.700   52.01 9.34e-08 ***\nfather_age   1  4.636   4.636   16.40 0.000388 ***\nResiduals   27  7.631   0.283                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
   },
   {
     "objectID": "surveys/survey-02.html",
@@ -3596,215 +3722,5 @@
     "title": "Survey 02",
     "section": "Visualizations",
     "text": "Visualizations\n\nn_responses &lt;- dim(survey_02_norms)[1] # number of rows in original\n\nif (n_responses &lt; 1) {\n  message(\"Insufficient responses to plot.\")\n} else {\n  survey_02_norms |&gt;\n    dplyr::mutate(resp_index = 1:n_responses) |&gt;\n    ggplot() +\n    aes(x = timestamp, resp_index) +\n    geom_point() +\n    theme(axis.text.x = element_text(angle=90), axis.title.x = element_blank())\n}\n\n\n\n\nFigure 1: Time series of responses to Survey 02\n\n\n\n\n\n\n\nSurvey 02 response options\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(rating, color = type, fill = type) +\n  geom_dotplot(dotsize = .4) +\n  xlim(1, 5) +\n  theme(axis.title.y = element_blank()) +\n  theme(axis.text.y = element_blank()) +\n  theme(axis.ticks = element_blank()) +\n  facet_grid(rows = vars(norm_counternorm), cols = vars(resp_frame)) +\n  theme(legend.position = \"bottom\", legend.title = element_blank(),\n        strip.text.y = element_text(angle = 0))\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 2: ?(caption)\n\n\n\n\n\nsurvey_02_norms_data_dictionary |&gt;\n  dplyr::filter(q_short != \"timestamp\", q_short != \"comments\") |&gt;\n  dplyr::mutate(q_short = stringr::str_remove_all(q_short, \"_should|_actually\")) |&gt;\n  dplyr::mutate(q_long = stringr::str_remove_all(q_long, \"....[0-9]+\")) |&gt;\n  dplyr::select(q_short, q_long, norm_type) |&gt;\n  dplyr::arrange(desc(norm_type)) |&gt;\n  knitr::kable(format = \"html\") |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nq_short\nq_long\nnorm_type\n\n\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nDisinterestedness\nScientists are generally motivated by the desire for knowledge and discovery, and not by the possibility of personal gain\nnorm\n\n\nOrganized Skepticism\nScientists make an attempt to consider all new evidence, hypotheses, theories, and innovations, even those that challenge or contradict their own work\nnorm\n\n\nCommunality\nScientists openly share new findings with all colleagues\nnorm\n\n\nUniversalism\nScientists generally evaluate research only on its merit (i.e., according to accepted standards of the field)\nnorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\nParticularism\nScientists generally assess new knowledge and its applications based on the reputation and past productivity of the individual or research group\ncounternorm\n\n\nOrganized Dogmatism\nScientists generally invest their careers in promoting their own most important findings, theories, or innovations\ncounternorm\n\n\nSelf-interestedness\nScientists compete with others in the same field for funding and recognition of their achievements\ncounternorm\n\n\nSolitariness\nScientists emphasize the protection of their newest findings to ensure priority in publishing, patenting, or applications\ncounternorm\n\n\n\n\n\n\n\n\nsurvey_02_norms_long |&gt;\n  ggplot() +\n  aes(norm_counternorm, rating) +\n  geom_violin() +\n  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = .7, aes(fill = type)) +\n  #ylab(c(\"not at all\", \"2\", \"3\", \"4\", \"a great deal\")) +\n  facet_grid(cols = vars(resp_frame)) +\n  scale_y_continuous(labels=c(\"1\" = \"not at all\", \"2\", \"3\", \"4\", \"5\" = \"a great deal\")) +\n  theme(axis.text.x = element_text(angle = 90), axis.title.x = element_blank(),\n        legend.title = element_blank(), legend.position = \"top\")\n\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n\n\n\n\n\nFigure 3: Adherence to norms and counternorms by what scientists should do vs. actually do PSYCH 490.009 Fall 2023"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#last-time",
-    "href": "notes/wk12-2023-11-08.html#last-time",
-    "title": "Data sharing",
-    "section": "Last time…",
-    "text": "Last time…"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
-    "href": "notes/wk12-2023-11-08.html#transparency-reproducibility-notes",
-    "title": "Data sharing",
-    "section": "Transparency & reproducibility notes",
-    "text": "Transparency & reproducibility notes\n\nStudy preregistered\nData shared"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#psu-survey-2022",
-    "href": "notes/wk12-2023-11-08.html#psu-survey-2022",
-    "title": "Data sharing",
-    "section": "Penn State researchers",
-    "text": "Penn State researchers\n\nGitHub repo: https://github.com/penn-state-open-science/survey-fall-2022\nFaculty, staff, students and administrators (\\(n=100\\))\nProtocol (IRB & data analysis): https://penn-state-open-science.github.io/survey-fall-2022/"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#psu-share-collaborators",
-    "href": "notes/wk12-2023-11-08.html#psu-share-collaborators",
-    "title": "Data sharing",
-    "section": "Sharing with collaborators",
-    "text": "Sharing with collaborators\n\nFigure 22.10 from https://penn-state-open-science.github.io/survey-fall-2022/\nBarriers to sharing"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#psu-where-store",
-    "href": "notes/wk12-2023-11-08.html#psu-where-store",
-    "title": "Data sharing",
-    "section": "Where store data",
-    "text": "Where store data\n\n\n\n\n\nFigure 22.9 from https://penn-state-open-science.github.io/survey-fall-2022/\n\n\n\n\n\n\n\n\n\nFigure 22.15 from https://penn-state-open-science.github.io/survey-fall-2022/"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#psu-share-community",
-    "href": "notes/wk12-2023-11-08.html#psu-share-community",
-    "title": "Data sharing",
-    "section": "Sharing with research community",
-    "text": "Sharing with research community\n\nFigure 22.11 from https://penn-state-open-science.github.io/survey-fall-2022/"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#tenopir2020-mq",
-    "href": "notes/wk12-2023-11-08.html#tenopir2020-mq",
-    "title": "Data sharing",
-    "section": "(Tenopir et al., 2020)",
-    "text": "(Tenopir et al., 2020)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#fields",
-    "href": "notes/wk12-2023-11-08.html#fields",
-    "title": "Data sharing",
-    "section": "Fields",
-    "text": "Fields\n\nTable 1 from (Tenopir et al., 2020)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#where-data-are-stored",
-    "href": "notes/wk12-2023-11-08.html#where-data-are-stored",
-    "title": "Data sharing",
-    "section": "Where data are stored",
-    "text": "Where data are stored\n\nTable 2 from (Tenopir et al., 2020)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
-    "href": "notes/wk12-2023-11-08.html#practices-perceptions-barriers",
-    "title": "Data sharing",
-    "section": "Practices, perceptions, & barriers",
-    "text": "Practices, perceptions, & barriers\n\nTable 7 from (Tenopir et al., 2020)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#figure-1-caption",
-    "href": "notes/wk12-2023-11-08.html#figure-1-caption",
-    "title": "Data sharing",
-    "section": "Figure 1 caption",
-    "text": "Figure 1 caption\n\nResponses to the survey questions on the (a) desirability and (b) profitability of data sharing for the researchers’ own fields and their own current projects. For each statement in (a), the number to the left of the data bar indicates the percentage of researchers who responded with “very undesirable” or “undesirable,” the number in the center of the data bar indicates the percentage who responded with “neutral,” and the number to the right of the data bar indicates the percentage who responded with “desirable” or “very desirable.” For each statement in (b), the number to the left of the data bar indicates the percentage of researchers who responded with “none at all” or “a little,” the number in the center of the data bar indicates the percentage who responded with “a moderate amount,” and the number to the right of the data bar indicates the percentage who responded with “a lot” or “a great deal.” This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#figure-3-caption",
-    "href": "notes/wk12-2023-11-08.html#figure-3-caption",
-    "title": "Data sharing",
-    "section": "Figure 3 caption",
-    "text": "Figure 3 caption\n\nResponses to the survey questions asking researchers to indicate the extent to which the six fear-related barriers kept (a) themselves or (b) other researchers from sharing their data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” In each panel, the statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#figure-4-caption",
-    "href": "notes/wk12-2023-11-08.html#figure-4-caption",
-    "title": "Data sharing",
-    "section": "Figure 4 caption",
-    "text": "Figure 4 caption\n\nResponses to the survey questions asking researchers to indicate how likely they would be to share their data under several conditions. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “very unlikely,” “unlikely,” or “somewhat unlikely”; the number in the center of the data bar indicates the percentage who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat likely,” “likely,” or “very likely.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#houtkoop2018-tl-figure-1-caption",
-    "href": "notes/wk12-2023-11-08.html#houtkoop2018-tl-figure-1-caption",
-    "title": "Data sharing",
-    "section": "(Houtkoop et al., 2018) Figure 1 caption",
-    "text": "(Houtkoop et al., 2018) Figure 1 caption\n\nResponses to the survey questions on the (a) desirability and (b) profitability of data sharing for the researchers’ own fields and their own current projects. For each statement in (a), the number to the left of the data bar indicates the percentage of researchers who responded with “very undesirable” or “undesirable,” the number in the center of the data bar indicates the percentage who responded with “neutral,” and the number to the right of the data bar indicates the percentage who responded with “desirable” or “very desirable.” For each statement in (b), the number to the left of the data bar indicates the percentage of researchers who responded with “none at all” or “a little,” the number in the center of the data bar indicates the percentage who responded with “a moderate amount,” and the number to the right of the data bar indicates the percentage who responded with “a lot” or “a great deal.” This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#figure-2-caption",
-    "href": "notes/wk12-2023-11-08.html#figure-2-caption",
-    "title": "Data sharing",
-    "section": "Figure 2 caption",
-    "text": "Figure 2 caption\n\nResponses to the survey questions asking respondents to indicate the extent to which the 15 non-fear-related barriers kept them from sharing their research data. For each statement, the number to the left of the data bar indicates the percentage of researchers who responded with “strongly disagree,” “disagree,” or “somewhat disagree”; the number in the center of the data bar indicates the percentage of researchers who responded with “neutral”; and the number to the right of the data bar indicates the percentage who responded with “somewhat agree,” “agree,” or “strongly agree.” The statements are ordered according to the percentage of agreement (greatest agreement at the top). This figure was created using the likert package in R (Bryer & Speerschneider, 2015)."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#conclusions",
-    "href": "notes/wk12-2023-11-08.html#conclusions",
-    "title": "Data sharing",
-    "section": "Conclusions",
-    "text": "Conclusions\n\n• Public data sharing is not a common practice among research psychologists.\n• Respondents considered data sharing to be both desirable and profitable for their particular research fields, but somewhat less desirable and profitable in the case of their own current research projects."
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#penn-state-researchers",
-    "href": "notes/wk12-2023-11-08.html#penn-state-researchers",
-    "title": "Data sharing",
-    "section": "Penn State researchers",
-    "text": "Penn State researchers\n\nGitHub repo: https://github.com/penn-state-open-science/survey-fall-2022\nFaculty, staff, students and administrators (\\(n=100\\))\nHTML protocol (IRB & data analysis): (Gilmore, Hillary, Lazar, & Wham, 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
-    "href": "notes/wk12-2023-11-08.html#sharing-with-collaborators",
-    "title": "Data sharing",
-    "section": "Sharing with collaborators",
-    "text": "Sharing with collaborators\n\nFigure 22.10 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#where-store-data",
-    "href": "notes/wk12-2023-11-08.html#where-store-data",
-    "title": "Data sharing",
-    "section": "Where store data",
-    "text": "Where store data\n\nFigure 22.9 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#sharing-with-research-community",
-    "href": "notes/wk12-2023-11-08.html#sharing-with-research-community",
-    "title": "Data sharing",
-    "section": "Sharing with research community",
-    "text": "Sharing with research community\n\nFigure 22.11 from https://penn-state-open-science.github.io/survey-fall-2022/"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#your-turn",
-    "href": "notes/wk12-2023-11-08.html#your-turn",
-    "title": "Data sharing",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing within the psychology community sampled by (Houtkoop et al., 2018)\nDo the “fear-related barriers” make sense to you?\nHow might these be addressed or overcome?\nAre mandates the best or only solution?"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#barriers-to-sharing",
-    "href": "notes/wk12-2023-11-08.html#barriers-to-sharing",
-    "title": "Data sharing",
-    "section": "Barriers to sharing",
-    "text": "Barriers to sharing"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#where-shared",
-    "href": "notes/wk12-2023-11-08.html#where-shared",
-    "title": "Data sharing",
-    "section": "Where shared",
-    "text": "Where shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#importance-of-sharing-with-research-community",
-    "href": "notes/wk12-2023-11-08.html#importance-of-sharing-with-research-community",
-    "title": "Data sharing",
-    "section": "Importance of sharing with research community",
-    "text": "Importance of sharing with research community\n\nFigure 22.11 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#your-turn-1",
-    "href": "notes/wk12-2023-11-08.html#your-turn-1",
-    "title": "Data sharing",
-    "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\nYour turn\n\n\n\nHow would you characterize the “climate” around data sharing at Penn State?\nWhat advice would you give faculty, staff, and students interested in fostering open science here?"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#obstacles-to-sharing-with-research-community",
-    "href": "notes/wk12-2023-11-08.html#obstacles-to-sharing-with-research-community",
-    "title": "Data sharing",
-    "section": "Obstacles to sharing with research community",
-    "text": "Obstacles to sharing with research community\n\nFigure 22.12 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#where-data-are-shared-with-research-community",
-    "href": "notes/wk12-2023-11-08.html#where-data-are-shared-with-research-community",
-    "title": "Data sharing",
-    "section": "Where data are shared with research community",
-    "text": "Where data are shared with research community\n\n\n\nFigure 22.15from (Gilmore et al., 2023)\n\n\n\n\n\n\n\nFigure 22.15 from https://penn-state-open-science.github.io/survey-fall-2022/"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#where-data-are-shared",
-    "href": "notes/wk12-2023-11-08.html#where-data-are-shared",
-    "title": "Data sharing",
-    "section": "Where data are shared",
-    "text": "Where data are shared\n\nFigure 22.15 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#importance-of-sharing",
-    "href": "notes/wk12-2023-11-08.html#importance-of-sharing",
-    "title": "Data sharing",
-    "section": "Importance of sharing",
-    "text": "Importance of sharing\n\nFigure 22.11 from (Gilmore et al., 2023)"
-  },
-  {
-    "objectID": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
-    "href": "notes/wk12-2023-11-08.html#obstacles-to-sharing",
-    "title": "Data sharing",
-    "section": "Obstacles to sharing",
-    "text": "Obstacles to sharing\n\nFigure 22.12 from (Gilmore et al., 2023)"
   }
 ]
