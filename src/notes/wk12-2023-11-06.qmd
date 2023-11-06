@@ -11,6 +11,13 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-06 Mon"
 
 # Overview
 
+## Announcement
+
+- Clarification of "opinion piece"
+  - [@Goldin-Meadow2016-mc]
+  - [@Mischel2011-br]
+  - [@Adolph2016-pg]
+
 ## Last time...
 
 - [Many visualizations](../surveys/many-viz.html)
