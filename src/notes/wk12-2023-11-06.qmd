@@ -97,7 +97,7 @@ However, ordinary biases in human reasoning, such as hindsight bias, make it har
 
 ---
 
-![Figure 2 from [@Claesen2021-ae]. Tile plot of the assessment of each methodological aspect per preregistration plan. Only the 27 studies that were accessible and included the minimal number of methodological details required for our adherence assessment are shown.](https://royalsocietypublishing.org/cms/asset/24ad7980-7d06-4335-9a07-d62bbb8d907e/rsos211037f03.jpg)](https://royalsocietypublishing.org/cms/asset/59614a09-5481-49c2-bba0-5aad6fd85439/rsos211037f02.jpg)
+![Figure 2 from [@Claesen2021-ae]. Tile plot of the assessment of each methodological aspect per preregistration plan. Only the 27 studies that were accessible and included the minimal number of methodological details required for our adherence assessment are shown.](https://royalsocietypublishing.org/cms/asset/59614a09-5481-49c2-bba0-5aad6fd85439/rsos211037f02.jpg)
 
 ---
 
@@ -110,9 +110,17 @@ However, ordinary biases in human reasoning, such as hindsight bias, make it har
 - Lack of consensus about what should be disclosed
 - Small discrepancy with the preregistered sample size was small and not really a *deviation*.
 
-## Conclusions {.scrollable}
+## Conclusions
 
->Our work suggests that it is not obvious for preregistration to live up to its promise of making research results more transparent and more interpretable in the manuscript. This insight calls for better standards in preregistering and reporting preregistered research. It should, however, not be misinterpreted as a plea against the practice of preregistration. Neither does our work suggest that the results of the preregistered studies we assessed should not be trusted. We do not, and cannot, claim that the observed deviations have been deliberately unreported or constitute evidence of the exploitation of researcher degrees of freedom. The process of preregistering and reporting in accordance with the preregistration is tricky, and we realize that, given its relatively young status in psychology, the field collectively needs to go through a learning phase.
+>Our work suggests that it is not obvious for preregistration to live up to its promise of making research results more transparent and more interpretable in the manuscript. This insight calls for better standards in preregistering and reporting preregistered research...
+
+---
+
+>It should, however, not be misinterpreted as a plea against the practice of preregistration. Neither does our work suggest that the results of the preregistered studies we assessed should not be trusted. We do not, and cannot, claim that the observed deviations have been deliberately unreported or constitute evidence of the exploitation of researcher degrees of freedom...
+
+---
+
+>The process of preregistering and reporting in accordance with the preregistration is tricky, and we realize that, given its relatively young status in psychology, the field collectively needs to go through a learning phase.
 
 <p style="text-align:center;">
 [@Claesen2021-ae]

@@ -45,6 +45,7 @@ website:
           - href: "surveys/p-hacking-suppl.qmd"
           - href: "surveys/plotting-degrees-of-freedom.qmd"
           - href: "surveys/many-viz.qmd"
+          - href: "surveys/survey-03.qmd"
 format:
   html:
     theme: cosmo

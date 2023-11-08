@@ -11,6 +11,15 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-10 Fri"
 
 # Overview
 
+## Announcements
+
+- Optional survey for [11/15 class]{.orange_due}:
+
+```{r survey}
+survey_03_qr <- qrcode::qr_code("https://docs.google.com/forms/d/e/1FAIpQLSf9w7CHjZD7jon1-_BsR_ZZHlIEVdKY0x4nJwh7v8AyXlpUmg/viewform?usp=sf_link")
+plot(survey_03_qr)
+```
+
 ## Today
 
 *Work session: Data sharing*

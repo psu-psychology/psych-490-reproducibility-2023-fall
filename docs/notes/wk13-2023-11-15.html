@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Fall 2023 - 2023-11-15 Wed</title>
+  <title>PSYCH 490 • Fall 2023 - Open science tools</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="../include/css/styles.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -332,7 +351,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">2023-11-15 Wed</h1>
+  <h1 class="title">Open science tools</h1>
+  <p class="subtitle">2023-11-15 Wed</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -350,18 +370,136 @@ Rick Gilmore
 </section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
+<ul>
+<li><span class="orange_due">Friday, November 17</span>
+<ul>
+<li><a href="https://forms.gle/L92wWFSpcdyLT4MR9">Final project survey</a></li>
+</ul></li>
+<li><span class="orange_due">Due Friday, November 17</span>
+<ul>
+<li><a href="../exercises/ex07-sharing.qmd">Exercise 07: Data and materials sharing</a></li>
+</ul></li>
+</ul>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
+<p><em>Open science tools</em></p>
+<ul>
+<li>Discuss
+<ul>
+<li><span class="citation" data-cites="Kathawalla2021-tk">(<a href="#/references" role="doc-biblioref" onclick="">Kathawalla, Silverstein, &amp; Syed, 2021</a>)</span></li>
+<li><span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span></li>
+</ul></li>
+<li>Explore
+<ul>
+<li><span class="citation" data-cites="FORRT_undated-pl">(<a href="#/references" role="doc-biblioref" onclick=""><span>“<span>FORRT</span> - framework for open and reproducible research training,”</span> n.d.</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="survey-questions-from-cruwell2019-nz" class="slide level2">
+<h2>Survey: Questions from <span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span></h2>
+
+<img data-src="wk13-2023-11-15_files/figure-revealjs/survey-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9w7CHjZD7jon1-_BsR_ZZHlIEVdKY0x4nJwh7v8AyXlpUmg/viewform?embedded=true" width="640" height="3972" frameborder="0" marginheight="0" marginwidth="0">
+Loading…
+</iframe>
 </section></section>
-<section id="topic" class="title-slide slide level1 center">
-<h1>Topic</h1>
+<section>
+<section id="kathawalla2021-tk" class="title-slide slide level1 center">
+<h1><span class="citation" data-cites="Kathawalla2021-tk">(<a href="#/references" role="doc-biblioref" onclick="">Kathawalla et al., 2021</a>)</span></h1>
 
 </section>
+<section class="slide level2">
 
+<blockquote>
+<p>This article provides a roadmap to assist graduate students and their advisors to engage in open science practices. We suggest eight open science practices that novice graduate students could begin adopting today. The topics we cover include journal clubs, project workflow, preprints, reproducible code, data sharing, transparent writing, preregistration, and registered reports.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>To address concerns about not knowing how to engage in open science practices, we provide a difficulty rating of each behavior (easy, medium, difficult), present them in order of suggested adoption, and follow the format of what, why, how, and worries.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>We give graduate students ideas on how to approach conversations with their advisors/collaborators, ideas on how to integrate open science practices within the graduate school framework, and specific resources on how to engage with each behavior.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>We emphasize that engaging in open science behaviors need not be an all or nothing approach, but rather graduate students can engage with any number of the behaviors outlined.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Kathawalla2021-tk">(<a href="#/references" role="doc-biblioref" onclick="">Kathawalla et al., 2021</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Open Science Framework (OSF) project: <a href="https://osf.io/w5mbp/" class="uri">https://osf.io/w5mbp/</a></li>
+<li>Wiki: <a href="https://osf.io/w5mbp/wiki/home/" class="uri">https://osf.io/w5mbp/wiki/home/</a></li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/7/1/10.1525_collabra.18684/2/m_collabra_2021_7_1_18684_49218.jpeg?Expires=1683620528&amp;Signature=dlqxuXl9GGSMcmMA7Bje2z9f6UwaIgeDt5Ryd-FydjA78M70uG~xprbTsrrnjWb~SYujcbWcvXvH-V9FL-w~GeFX8OPC4mmPTVUCDqoXMEC8kKcpfUUP44gst-FEyBST1ujDYghrphWPyQ84Pg50pArBpKIzBiBmT26WZJD1Grfw6y3I8EY10u9zqcqytRy6fw9tNyhA90oXd5v5rGS6Ekcmiz5wv5kUVh4b8WzriNmNjj0roQLK7BfKyKStog4CYrA5DXyvLa5t02dxwuBPejek9PQobrWzc7BLpnnaJi8DgGVCHrbkPE0n9RWWlnsx2yxS3ppIb7eHLWsJUaMJvA__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="r-stretch quarto-figure-center"><p class="caption">Figure 1 from <span class="citation" data-cites="Kathawalla2021-tk">(<a href="#/references" role="doc-biblioref" onclick="">Kathawalla et al., 2021</a>)</span></p></section></section>
+<section>
+<section id="cruwell2019-nz" class="title-slide slide level1 center">
+<h1><span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span></h1>
+
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Over the past 10 years, crises surrounding replication, fraud, and best practices in research methods have dominated discussions in the field of psychology. However, no research exists examining how to communicate these issues to undergraduates and what effect this has on their attitudes toward the field.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>We developed and validated a 1-hr lecture communicating issues surrounding the replication crisis and current recommendations to increase reproducibility. Pre- and post-lecture surveys suggest that the lecture serves as an excellent pedagogical tool.</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<blockquote>
+<p>Following the lecture, students trusted psychological studies slightly less but saw greater similarities between psychology and natural science fields. We discuss challenges for instructors taking the initiative to communicate these issues to undergraduates in an evenhanded way.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span>
+</p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Table 1 from <span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span>: <a href="https://journals.sagepub.com/doi/10.1177/0098628318762900#table1-0098628318762900" class="uri">https://journals.sagepub.com/doi/10.1177/0098628318762900#table1-0098628318762900</a></li>
+<li>Table 2 from <span class="citation" data-cites="Cruwell2019-nz">(<a href="#/references" role="doc-biblioref" onclick="">Crüwell et al., 2019</a>)</span>: <a href="https://journals.sagepub.com/doi/10.1177/0098628318762900#table2-0098628318762900" class="uri">https://journals.sagepub.com/doi/10.1177/0098628318762900#table2-0098628318762900</a></li>
+</ul>
+</section>
+<section id="reproducibility-notes" class="slide level2">
+<h2>Reproducibility notes</h2>
+<ul>
+<li>Survey questions in article</li>
+<li>OSF project for materials <span class="citation" data-cites="Defever2016-ki">(<a href="#/references" role="doc-biblioref" onclick="">Defever, Chopik, Keller, &amp; Bremner, 2016</a>)</span></li>
+<li>Data shared, but not in an easily reproducible form</li>
+</ul>
+</section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-
+<p><em>Final project work day</em></p>
+<ul>
+<li><span class="orange_due"><a href="https://forms.gle/L92wWFSpcdyLT4MR9">Final project survey</a></span></li>
+<li><span class="orange_due">Assignment Due</span>
+<ul>
+<li><a href="../exercises/ex07-sharing.qmd">Exercise 07: Data and materials sharing</a></li>
+</ul></li>
+</ul>
 </section>
 
 <section>
@@ -369,11 +507,25 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 <div class="footer footer-default">
 <p><a href="../index.html">PSYCH 490.009</a>: 2023-11-15 Wed</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-Cruwell2019-nz" class="csl-entry" role="listitem">
+Crüwell, S., Doorn, J. van, Etz, A., Makel, M. C., Moshontz, H., Niebaum, J. C., … Schulte-Mecklenbeck, M. (2019). Seven easy steps to open science. <em>Zeitschrift f<span>ü</span>r Psychologie</em>, <em>227</em>(4), 237–248. <a href="https://doi.org/10.1027/2151-2604/a000387">https://doi.org/10.1027/2151-2604/a000387</a>
+</div>
+<div id="ref-Defever2016-ki" class="csl-entry" role="listitem">
+Defever, A. M., Chopik, W. J., Keller, V. N., &amp; Bremner, R. (2016, August). Best practices pedagogy. Center For Open Science. Retrieved from <a href="https://osf.io/mh9pe/">https://osf.io/mh9pe/</a>
+</div>
+<div id="ref-FORRT_undated-pl" class="csl-entry" role="listitem">
+<span>FORRT</span> - framework for open and reproducible research training. (n.d.). <a href="https://forrt.org/" class="uri">https://forrt.org/</a>. Retrieved from <a href="https://forrt.org/">https://forrt.org/</a>
+</div>
+<div id="ref-Kathawalla2021-tk" class="csl-entry" role="listitem">
+Kathawalla, U.-K., Silverstein, P., &amp; Syed, M. (2021). Easing into open science: A guide for graduate students and their advisors. <em>Collabra. Psychology</em>, <em>7</em>(1). <a href="https://doi.org/10.1525/collabra.18684">https://doi.org/10.1525/collabra.18684</a>
+</div>
 </div>
 </section></section>
     </div>
@@ -587,6 +739,44 @@ Rick Gilmore
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

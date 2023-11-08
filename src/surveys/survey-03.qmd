@@ -1,0 +1,200 @@
+---
+title: "Survey 03"
+params:
+  update_data: TRUE
+---
+
+## Purpose
+
+This page documents the data processing steps involved with Survey 03 in PSYCH 490.009.
+
+The survey questions were adapted from those discussed in [@Cruwell2019-nz].
+
+## Survey
+
+Link: <https://forms.gle/PFTGCMwmZZj1TtJS7>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9w7CHjZD7jon1-_BsR_ZZHlIEVdKY0x4nJwh7v8AyXlpUmg/viewform?embedded=true" width="640" height="3972" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Preparation
+
+First, we load the external packages (groups of R commands) that we will be using.
+
+```{r include=FALSE}
+library('tidyverse')
+library('ggplot2')
+library('dplyr')
+library('tidyr')
+library('stringr')
+```
+
+## Gathering
+
+Next, we download the data from the Google Sheet where it is collected.
+Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command `Sys.getenv("GMAIL_SURVEY")`.
+
+```{r, message=FALSE, echo=TRUE}
+if (!dir.exists('csv')) {
+  message("Creating missing `csv/`.")
+  dir.create("csv")
+}
+
+if (params$update_data) {
+  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+  googledrive::drive_auth()
+  
+  googledrive::drive_download(
+    "PSYCH 490.000 Fall 2023 Survey 03 (Responses)",
+    path = "csv/survey-03-crewell-et-al.csv",
+    type = "csv",
+    overwrite = TRUE
+  )
+  
+  message("Data updated.")
+} else {
+  message("Using stored data.")
+}
+```
+
+The data file has been saved as a comma-separated value (CSV) format data file in a special directory called `csv/`.
+
+<!-- Note that there are five types of callouts, including note, tip, warning, caution, and important. -->
+
+::: {.callout-note}
+Because these data *might* contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub.
+This is achieved by adding the name of the data directory to a special `.gitignore` file.
+:::
+
+## Cleaning
+
+Next we load the data file and clean it.
+
+```{r, message=FALSE, echo=TRUE}
+survey_03 <-
+  readr::read_csv("csv/survey-03-crewell-et-al.csv", show_col_types = FALSE)
+
+# Google Forms puts the full question in the top row of the data file.
+# We use the names() function to extract and print the original questions.
+survey_03_qs <- names(survey_03)
+survey_03_qs
+```
+
+### Clean/shorten names
+
+For plotting and analyses, it's usually easier to shorten the questions by creating a short name that reflects the underlying idea or construct.
+We'll use the `rename()` function from the `dplyr` package for this. 
+
+```{r}
+new_names <-
+  c(
+    "timestamp",
+    "psych_problems_replicating",
+    "replication_problem_psych_only",
+    "incentives_undermine",
+    "low_power_incorrect",
+    "replicators_unqualified",
+    "report_all_measures_important",
+    "decide_n_before_important",
+    "share_data_important",
+    "collection_analysis_decisions_affect",
+    "report_null_findings_important",
+    "counterintuitive_results_important"
+  )
+
+# Swap out old (long) names for new (short) names
+long_names <- names(survey_03)
+names(survey_03) <- new_names
+```
+
+### Data dictionary
+
+We'll pause here to start building a [data dictionary](https://en.wikipedia.org/wiki/Data_dictionary), a file that explains the origin, format, and usage of our dataset.
+
+```{r}
+# Make new data frame with long and short names for reference
+survey_03_data_dictionary <-
+  tibble::tibble(q_long = long_names, q_short = new_names)
+
+survey_03_data_dictionary |>
+  knitr::kable(format = 'html') |>
+  kableExtra::kable_classic()
+```
+
+We'll add other items to the data dictionary later.
+
+## Visualizations
+
+::: {.callout-note title="To do"}
+
+I should write a function to generate the summary plots.
+
+:::
+
+```{r}
+# Retrieve the "long" question from the survey_03 data dictionary
+retrieve_long_q <- function(this_q_short, data_dict = survey_03_data_dictionary) {
+  assertthat::is.string(this_q_short)
+  data_dict |>
+    filter(q_short == this_q_short) |>
+    select(q_long) |>
+    as.character()
+}
+
+retrieve_long_q("psych_problems_replicating")
+```
+
+```{r}
+my_plot_fn <- function(var, data = survey_03) {
+  this_q <- retrieve_long_q(var)
+  
+  
+  data |>
+    select(matches(var)) |>
+    ggplot() +
+    aes(x = {{var}}) +
+    geom_bar() +
+    ggtitle(this_q) +
+    xlab("Rating")
+}
+
+my_plot_fn2 <- function(var, data = survey_03) {
+  this_q <- retrieve_long_q(var)
+  
+  data |>
+    ggplot() +
+    aes(x = {{var}}) +
+    geom_bar()
+}
+
+my_plot_fn3 <- function(x, data) {
+  data |>
+    ggplot() +
+    aes({{x}}) +
+    geom_bar()
+}
+
+my_plot_fn("replication_problem_psych_only")
+```
+
+```{r}
+my_vars <- names(survey_03)[2:dim(survey_03)[2]]
+my_vars <- c("psych_problems_replicating", "replication_problem_psych_only")
+
+my_vars |>
+  purrr::map(~ my_plot_fn(survey_03, .data[[.x]]))
+```
+
+
+### `r survey_03_data_dictionary$q_long[2]`
+
+```{r}
+survey_03 |>
+  dplyr::select(psych_problems_replicating) |>
+  
+  ggplot() +
+  aes(x = psych_problems_replicating) +
+  geom_histogram() +
+  xlim(c(1, 5)) +
+  xlab("") +
+  ggtitle(survey_03_data_dictionary$q_long[2])
+```

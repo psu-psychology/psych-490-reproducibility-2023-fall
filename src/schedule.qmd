@@ -373,7 +373,8 @@ title: "schedule"
 - [Assignment distributed]{.green_assigned}
     - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
 - [Final project survey]{.green_assigned}
-    - Please complete the [final project survey](https://forms.gle/L92wWFSpcdyLT4MR9) by [Friday, November 19]{.orange_due}
+    - Please complete the [final project survey](https://forms.gle/L92wWFSpcdyLT4MR9) by [Friday, November 17]{.orange_due}
+- [Class notes](notes/wk12-2023-11-10.qmd)
 
 ## November 13-17 {- #week-13}
 
