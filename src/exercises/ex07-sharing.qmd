@@ -26,7 +26,6 @@ Choose a data or code repository from among the following:
 - Penn State [ScholarSphere](https://scholarsphere.psu.edu)
 - [Zenodo](https://zenodo.org)
 
-
 Provide some basic summary information about the repository:
 
 - Who sponsors the data or code repository?

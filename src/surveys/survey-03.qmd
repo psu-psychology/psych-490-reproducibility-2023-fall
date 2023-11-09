@@ -147,30 +147,14 @@ retrieve_long_q("psych_problems_replicating")
 my_plot_fn <- function(var, data = survey_03) {
   this_q <- retrieve_long_q(var)
   
-  
   data |>
     select(matches(var)) |>
+    dplyr::mutate({{var}} == factor({{var}}))
     ggplot() +
     aes(x = {{var}}) +
     geom_bar() +
     ggtitle(this_q) +
     xlab("Rating")
-}
-
-my_plot_fn2 <- function(var, data = survey_03) {
-  this_q <- retrieve_long_q(var)
-  
-  data |>
-    ggplot() +
-    aes(x = {{var}}) +
-    geom_bar()
-}
-
-my_plot_fn3 <- function(x, data) {
-  data |>
-    ggplot() +
-    aes({{x}}) +
-    geom_bar()
 }
 
 my_plot_fn("replication_problem_psych_only")
@@ -180,11 +164,8 @@ my_plot_fn("replication_problem_psych_only")
 my_vars <- names(survey_03)[2:dim(survey_03)[2]]
 my_vars <- c("psych_problems_replicating", "replication_problem_psych_only")
 
-my_vars |>
-  purrr::map(~ my_plot_fn(survey_03, .data[[.x]]))
+purrr::map(my_vars, my_plot_fn)
 ```
-
-
 ### `r survey_03_data_dictionary$q_long[2]`
 
 ```{r}

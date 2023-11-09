@@ -1,5 +1,5 @@
 ---
-title: "Visualizing data from [@Silberzahn2018-st]"
+title: "Visualizing 'Many Analysts' data"
 params:
   download_data: false
 ---
@@ -112,7 +112,18 @@ n_red_cards |>
   kableExtra::kable_classic()
 ```
 
-It doesn't look like any of the dyads that yielded two red cards involve repeats.
+It doesn't look like there are three referees who gave two red cards out to more than one player, referees 432, 2822, and 2961.
+
+```{r}
+n_red_cards |>
+  dplyr::filter(redCards == 2) |>
+  dplyr::select(playerShort, refNum) |>
+  dplyr::arrange(playerShort, refNum) |>
+  knitr::kable(format = 'html') |>
+  kableExtra::kable_classic()
+```
+
+And one player, cyril-jeunechamp, who got two red cards from different referees.
 
 Just for fun, let's see how red and yellow cards relate to one another.
 We add some jitter and use `alpha=.1` to make it easier to see any pattern.

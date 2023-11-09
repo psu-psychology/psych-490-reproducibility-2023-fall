@@ -29,6 +29,14 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-13 Mon"
     - [protocols.io](https://www.protocols.io/)
     - [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
     
+# Quest: Sharing materials and protocols
+
+## Your mission:
+
+- Visit [protocols.io](https://www.protocols.io/) or [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
+    - Find a protocol that interests you
+    - Review it and be ready to report back on the contents, how easy it might be for someone else to follow, etc.
+    
 # What to share
 
 ## Materials
@@ -52,6 +60,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-13 Mon"
     - Survey [workflow](https://PLAY-behaviorome.github.io/KoBoToolbox)
   - Penn State Open Science Survey [@Gilmore_undated-gj]
 - <https://protocols.io>
+- [Journal of Visualized Experiments (JOVE)](https://www.jove.com/)
    
 # Where to share
 
@@ -71,12 +80,15 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-13 Mon"
 - Specialized for storing and sharing video
 - [@GilmoreAdolph2017](https://doi.org/10.1038/s41562-017-0128)
 
+---
+
+![Growth in Databrary investigators and Institutions from <https://databrary.github.io/analytics>](https://databrary.github.io/analytics/include/img/fig-databrary-inst-invest-timeseries-1.png)
+# When/how to share
+
 ## Play & Learning Across a Year (PLAY) Project
 
 - PLAY Project: <https://play-project.org>
 - Survey data via [KoBoToolbox](https://kobotoolbox.org): <https://PLAY-behaviorome.github.io/KoBoToolbox>
-
-# When/how to share
 
 ## [@Soska2021-mh](http://dx.doi.org/10.7191/jeslib.2021.1208)
 
@@ -96,7 +108,7 @@ knitr::include_graphics("../include/img/soska-etal-fig-01.png")
 knitr::include_graphics("../include/img/soska-etal-table-01.png")
 ```
 
-## Your turn
+---
 
 ::: {.callout-note title="Your turn"}
 

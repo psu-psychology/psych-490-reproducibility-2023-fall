@@ -24,10 +24,21 @@ plot(survey_03_qr)
 
 *Work session: Data sharing*
 
-- [Assignment distributed]{.green_assigned}
-    - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
+- Work on either
+  -   Quest for shared Clery Act data (below)
+  - [Assignment distributed]{.green_assigned}
+      - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
 - [Final project survey]{.green_assigned}
     - Please complete the [final project survey](https://forms.gle/L92wWFSpcdyLT4MR9).
+    
+# Quest: In search of Clery Act crime data
+
+## Your misssion
+
+- Find Clery Act crime data for Penn State University Park
+- Find Clery Act crime data for another institution, not Penn State
+- Compare the process for finding these data
+- What format are the data in? What would you have to do to visualize or analyze them?
 
 # Next time
 
