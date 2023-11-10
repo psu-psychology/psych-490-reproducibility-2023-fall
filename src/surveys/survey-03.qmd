@@ -7,8 +7,9 @@ params:
 ## Purpose
 
 This page documents the data processing steps involved with Survey 03 in PSYCH 490.009.
-
 The survey questions were adapted from those discussed in [@Cruwell2019-nz].
+
+The page also serves as a learning opportunity for exploring how to generate a set of plots using functional programming techniques.
 
 ## Survey
 
@@ -61,8 +62,10 @@ The data file has been saved as a comma-separated value (CSV) format data file i
 <!-- Note that there are five types of callouts, including note, tip, warning, caution, and important. -->
 
 ::: {.callout-note}
+
 Because these data *might* contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub.
 This is achieved by adding the name of the data directory to a special `.gitignore` file.
+
 :::
 
 ## Cleaning
@@ -124,12 +127,6 @@ We'll add other items to the data dictionary later.
 
 ## Visualizations
 
-::: {.callout-note title="To do"}
-
-I should write a function to generate the summary plots.
-
-:::
-
 ```{r}
 # Retrieve the "long" question from the survey_03 data dictionary
 retrieve_long_q <- function(this_q_short, data_dict = survey_03_data_dictionary) {
@@ -144,38 +141,40 @@ retrieve_long_q("psych_problems_replicating")
 ```
 
 ```{r}
-my_plot_fn <- function(var, data = survey_03) {
-  this_q <- retrieve_long_q(var)
-  
+my_hist <- function(data, var, q_long = "test") {
   data |>
-    select(matches(var)) |>
-    dplyr::mutate({{var}} == factor({{var}}))
     ggplot() +
     aes(x = {{var}}) +
-    geom_bar() +
-    ggtitle(this_q) +
+    geom_histogram() +
+    xlim(c(.5,5.5)) +
+    ggtitle(q_long) +
     xlab("Rating")
 }
 
-my_plot_fn("replication_problem_psych_only")
+my_hist_q <- function(var, data) {
+  this_q <- retrieve_long_q(var)
+  my_hist(data, .data[[var]], this_q)
+}
+
+my_hist_q(var = "replication_problem_psych_only", data = survey_03)
 ```
+
+Now, we're ready to print histograms for all of the data.
 
 ```{r}
 my_vars <- names(survey_03)[2:dim(survey_03)[2]]
-my_vars <- c("psych_problems_replicating", "replication_problem_psych_only")
 
-purrr::map(my_vars, my_plot_fn)
+purrr::map(my_vars, my_hist_q, survey_03)
 ```
-### `r survey_03_data_dictionary$q_long[2]`
 
-```{r}
-survey_03 |>
-  dplyr::select(psych_problems_replicating) |>
-  
-  ggplot() +
-  aes(x = psych_problems_replicating) +
-  geom_histogram() +
-  xlim(c(1, 5)) +
-  xlab("") +
-  ggtitle(survey_03_data_dictionary$q_long[2])
-```
+::: {.callout-note "To do"}
+
+Some titles are too long to fit over the plots.
+This should be fixed in a future version.
+
+As one approach, I need a function that splits a long string by inserting a line feed `\n` character at the break point(s).
+
+Another approach would be to generate Rmarkdown code that includes the long question as a figure caption (`fig.cap="My title"`).
+
+:::
+
