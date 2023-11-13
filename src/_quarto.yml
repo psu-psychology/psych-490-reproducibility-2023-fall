@@ -48,7 +48,7 @@ website:
           - href: "surveys/many-viz.qmd"
 format:
   html:
-    theme: cosmo
+    theme: yeti
     css: include/css/styles.css
     toc: true
     number-sections: false
