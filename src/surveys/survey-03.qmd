@@ -228,13 +228,15 @@ Here, we try plotting the histograms again using principles we learned from meta
 
 Define the functions.
 
-```{r}
-my_hist_2 <- function(data = survey_03, var) {
+```{r, warning=FALSE}
+my_freq_plot <- function(data = survey_03, var) {
   data |>
     ggplot() +
-    aes(x = {{var}}) +
-    geom_histogram() +
-    xlim(c(.5,5.5)) +
+    aes(.data[[var]]) +
+    geom_freqpoly(na.rm = TRUE,
+                  show.legend = FALSE,
+                  bins = 30) +
+    xlim(c(.5, 5.5)) +
     xlab("Rating")
 }
 
@@ -244,7 +246,7 @@ return_plot <- function(data, var) {
       "### Histogram for: `{{var}}`",
       "\n",
       "```{r, echo = F}",
-      "print(my_hist_2(data, var))",
+      "print(my_freq_plot(data, var))",
       "```"
     ),
     envir = environment(),
@@ -253,28 +255,52 @@ return_plot <- function(data, var) {
 }
 
 return_section <- function(data, var) {
-  a <- knitr::knit_expand(text = c(
-    "### Histogram for: `{{this_var}}`",
-    "\n",
-    paste0("Question: '", retrieve_long_q(var), "'"),
-    "\n"),
-    this_var = var)
-  cat(a, sep = "\n")
-  #cat(unlist(return_plot(data, var)))
+  chunk_hdr <- knitr::knit_expand(text = c("### Responses for: `{{this_var}}`",
+                                           "\n"),
+                                  this_var = var)
+  
+  # Build fig.cap from ground up
+  fig_name <- paste0("fig-dist-", var)
+  fig_cap <- paste0("'Distribution of responses to ", var, "'")
+  fig_caption <- paste0("fig.cap = ", fig_cap)
+  cat(fig_caption)
+  
+  plot_chunk_hdr <- paste0("```{r ", fig_name, ", echo = FALSE, warning = FALSE, ", fig_caption, "}")
+  
+  plot_chunk <- c(plot_chunk_hdr,
+                   "print(my_freq_plot(data, var))",
+                  "```")
+  
+  question_long <-
+    paste0("\nQ: '", retrieve_long_q(var), "'")
+  
+  knitr::knit_child(
+    text = c(chunk_hdr, plot_chunk, question_long),
+    envir = environment(),
+    quiet = TRUE
+  )
 }
 ```
 
-Run.
+Run using `lapply()`.
 
-```{r many-tables-lapply, results = "asis"}
-
+```{r many-tables-lapply, results = "asis", warning=FALSE}
 these_vars <- names(survey_03)[2:12]
 
-invisible(lapply(these_vars, return_section, data = survey_03))
+res <- invisible(lapply(these_vars, return_section, data = survey_03))
+cat(unlist(res), sep = "\n")
 ```
 
-::: {.callout-note title="Status"}
+::: {.callout-note title="*Post hoc* thoughts"}
 
-The above code is a stub. The plot portion is not yet working.
+The keys to getting this to work were as follows:
+
+1. In `return_chunk()`, generate separate text strings for the header (`chunk_hdr`), plot chunk (`plot_chunk`), and long question. See also the sequence for building a suitable string for `fig.cap`.
+
+2. Combine these separate pieces within `knitr::knit_child()` with the `text=` parameter.
+
+3. In `my_freq_plot()`, use the `aes(.data[[var]])` syntax to turn the string value for `var` into an unquoted variable in the dataset.
+
+Bottom line: It's always better to bite off smaller chunks.
 
 :::
