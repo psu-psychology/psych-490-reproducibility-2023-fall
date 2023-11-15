@@ -407,6 +407,8 @@ title: "schedule"
 
 - [Assignment Due]{.orange_due}
     - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
+- [Final project survey](https://forms.gle/L92wWFSpcdyLT4MR9)]{.orange_due}
+- [Class notes](notes/wk13-2023-11-17.qmd)
 
 ## November 20-24 *Thanksgiving Break*
 

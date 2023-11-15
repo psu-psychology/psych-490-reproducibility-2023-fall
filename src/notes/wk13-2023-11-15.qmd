@@ -17,6 +17,16 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-15 Wed"
     - [Final project survey](https://forms.gle/L92wWFSpcdyLT4MR9) 
 - [Due Friday, November 17]{.orange_due}
     - [Exercise 07: Data and materials sharing](../exercises/ex07-sharing.qmd)
+    
+## Last time...
+
+::: {.callout-note title="Your turn"}
+
+- What do students want researchers to share?
+- What are the pros and cons of active vs. *post hoc* data curation?
+
+:::
+
 
 ## Today
 
