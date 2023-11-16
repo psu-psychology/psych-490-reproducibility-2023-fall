@@ -317,7 +317,7 @@ div.csl-indent {
 
 <section id="purpose" class="level2">
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This page documents the data processing steps involved with Survey 03 in PSYCH 490.009. The survey questions were adapted from those discussed in <span class="citation" data-cites="Cruwell2019-nz">(<a href="#ref-Cruwell2019-nz" role="doc-biblioref">Crüwell et al., 2019</a>)</span>.</p>
+<p>This page documents the data processing steps involved with Survey 03 in PSYCH 490.009. The survey questions were adapted from those discussed in <span class="citation" data-cites="Chopik2018-wx">(<a href="#ref-Chopik2018-wx" role="doc-biblioref">Chopik, Bremner, Defever, &amp; Keller, 2018</a>)</span>.</p>
 <p>The page also serves as a learning opportunity for exploring how to generate a set of plots using functional programming techniques.</p>
 </section>
 <section id="our-survey" class="level2">
@@ -835,30 +835,28 @@ To do
 <span id="cb69-32"><a href="#cb69-32" aria-hidden="true" tabindex="-1"></a>  fig_name <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"fig-dist-"</span>, var)</span>
 <span id="cb69-33"><a href="#cb69-33" aria-hidden="true" tabindex="-1"></a>  fig_cap <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"'Distribution of responses to "</span>, var, <span class="st">"'"</span>)</span>
 <span id="cb69-34"><a href="#cb69-34" aria-hidden="true" tabindex="-1"></a>  fig_caption <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"fig.cap = "</span>, fig_cap)</span>
-<span id="cb69-35"><a href="#cb69-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(fig_caption)</span>
-<span id="cb69-36"><a href="#cb69-36" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb69-37"><a href="#cb69-37" aria-hidden="true" tabindex="-1"></a>  plot_chunk_hdr <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"```{r "</span>, fig_name, <span class="st">", echo = FALSE, warning = FALSE, "</span>, fig_caption, <span class="st">"}"</span>)</span>
-<span id="cb69-38"><a href="#cb69-38" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb69-39"><a href="#cb69-39" aria-hidden="true" tabindex="-1"></a>  plot_chunk <span class="ot">&lt;-</span> <span class="fu">c</span>(plot_chunk_hdr,</span>
-<span id="cb69-40"><a href="#cb69-40" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"print(my_freq_plot(data, var))"</span>,</span>
-<span id="cb69-41"><a href="#cb69-41" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"```"</span>)</span>
-<span id="cb69-42"><a href="#cb69-42" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb69-43"><a href="#cb69-43" aria-hidden="true" tabindex="-1"></a>  question_long <span class="ot">&lt;-</span></span>
-<span id="cb69-44"><a href="#cb69-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Q: '"</span>, <span class="fu">retrieve_long_q</span>(var), <span class="st">"'"</span>)</span>
-<span id="cb69-45"><a href="#cb69-45" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb69-46"><a href="#cb69-46" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">knit_child</span>(</span>
-<span id="cb69-47"><a href="#cb69-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="fu">c</span>(chunk_hdr, plot_chunk, question_long),</span>
-<span id="cb69-48"><a href="#cb69-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">envir =</span> <span class="fu">environment</span>(),</span>
-<span id="cb69-49"><a href="#cb69-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">quiet =</span> <span class="cn">TRUE</span></span>
-<span id="cb69-50"><a href="#cb69-50" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb69-51"><a href="#cb69-51" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb69-35"><a href="#cb69-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-36"><a href="#cb69-36" aria-hidden="true" tabindex="-1"></a>  plot_chunk_hdr <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"```{r "</span>, fig_name, <span class="st">", echo = FALSE, warning = FALSE, "</span>, fig_caption, <span class="st">"}"</span>)</span>
+<span id="cb69-37"><a href="#cb69-37" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb69-38"><a href="#cb69-38" aria-hidden="true" tabindex="-1"></a>  plot_chunk <span class="ot">&lt;-</span> <span class="fu">c</span>(plot_chunk_hdr,</span>
+<span id="cb69-39"><a href="#cb69-39" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"print(my_freq_plot(data, var))"</span>,</span>
+<span id="cb69-40"><a href="#cb69-40" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"```"</span>)</span>
+<span id="cb69-41"><a href="#cb69-41" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb69-42"><a href="#cb69-42" aria-hidden="true" tabindex="-1"></a>  question_long <span class="ot">&lt;-</span></span>
+<span id="cb69-43"><a href="#cb69-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Q: '"</span>, <span class="fu">retrieve_long_q</span>(var), <span class="st">"'"</span>)</span>
+<span id="cb69-44"><a href="#cb69-44" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb69-45"><a href="#cb69-45" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">knit_child</span>(</span>
+<span id="cb69-46"><a href="#cb69-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">text =</span> <span class="fu">c</span>(chunk_hdr, plot_chunk, question_long),</span>
+<span id="cb69-47"><a href="#cb69-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">envir =</span> <span class="fu">environment</span>(),</span>
+<span id="cb69-48"><a href="#cb69-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">quiet =</span> <span class="cn">TRUE</span></span>
+<span id="cb69-49"><a href="#cb69-49" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb69-50"><a href="#cb69-50" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Run using <code>lapply()</code>.</p>
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>these_vars <span class="ot">&lt;-</span> <span class="fu">names</span>(survey_03)[<span class="dv">2</span><span class="sc">:</span><span class="dv">12</span>]</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(these_vars, return_section, <span class="at">data =</span> survey_03))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>fig.cap = ‘Distribution of responses to psych_problems_replicating’fig.cap = ’Distribution of responses to replication_problem_psych_only’fig.cap = ’Distribution of responses to incentives_undermine’fig.cap = ’Distribution of responses to low_power_incorrect’fig.cap = ’Distribution of responses to replicators_unqualified’fig.cap = ’Distribution of responses to report_all_measures_important’fig.cap = ’Distribution of responses to decide_n_before_important’fig.cap = ’Distribution of responses to share_data_important’fig.cap = ’Distribution of responses to collection_analysis_decisions_affect’fig.cap = ’Distribution of responses to report_null_findings_important’fig.cap = ’Distribution of responses to counterintuitive_results_important’</p>
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(these_vars, return_section, <span class="at">data =</span> survey_03))</span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="responses-for-psych_problems_replicating" class="level3">
 <h3 class="anchored" data-anchor-id="responses-for-psych_problems_replicating">Responses for: <code>psych_problems_replicating</code></h3>
 <div class="cell">
@@ -1038,8 +1036,8 @@ To do
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
-<div id="ref-Cruwell2019-nz" class="csl-entry" role="listitem">
-Crüwell, S., Doorn, J. van, Etz, A., Makel, M. C., Moshontz, H., Niebaum, J. C., … Schulte-Mecklenbeck, M. (2019). Seven easy steps to open science. <em>Zeitschrift f<span>ü</span>r Psychologie</em>, <em>227</em>(4), 237–248. <a href="https://doi.org/10.1027/2151-2604/a000387">https://doi.org/10.1027/2151-2604/a000387</a>
+<div id="ref-Chopik2018-wx" class="csl-entry" role="listitem">
+Chopik, W. J., Bremner, R. H., Defever, A. M., &amp; Keller, V. N. (2018). How (and whether) to teach undergraduates about the replication crisis in psychological science. <em>Teaching of Psychology</em>, <em>45</em>(2), 158–163. <a href="https://doi.org/10.1177/0098628318762900">https://doi.org/10.1177/0098628318762900</a>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

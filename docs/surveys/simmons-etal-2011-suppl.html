@@ -343,8 +343,8 @@ div.csl-indent {
 <pre><code>'data.frame':   30 obs. of  4 variables:
  $ sub_id     : int  1 2 3 4 5 6 7 8 9 10 ...
  $ song       : chr  "kid" "kid" "kid" "kid" ...
- $ father_age : num  53.6 50.6 43 46.6 53.7 ...
- $ old_feeling: num  4 3 4 4 3 4 4 4 4 4 ...</code></pre>
+ $ father_age : num  50.7 44.7 63.7 64.7 40.5 ...
+ $ old_feeling: num  5 3 4 3 4 4 3 4 4 4 ...</code></pre>
 </div>
 </div>
 <p>Now, let’s plot this to show how analysis of covariance (ANCOVA) might work.</p>
@@ -399,9 +399,9 @@ Note
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  7.500   7.500   25.25 2.85e-05 ***
-father_age   1  1.446   1.446    4.87    0.036 *  
-Residuals   27  8.020   0.297                     
+song         1  5.633   5.633  18.156 0.000221 ***
+father_age   1  0.289   0.289   0.933 0.342720    
+Residuals   27  8.377   0.310                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -436,9 +436,9 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  7.500   7.500  21.521 8.04e-05 ***
-father_age   1  0.057   0.057   0.164    0.689    
-Residuals   27  9.410   0.349                     
+song         1  5.633   5.633  17.561 0.000267 ***
+father_age   1  0.005   0.005   0.017 0.897449    
+Residuals   27  8.661   0.321                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
@@ -465,9 +465,9 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(glm_ancova)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
-song         1  9.633   9.633   36.16 2.04e-06 ***
-father_age   1  6.139   6.139   23.04 5.21e-05 ***
-Residuals   27  7.194   0.266                     
+song         1  9.633   9.633  17.830 0.000245 ***
+father_age   1  1.146   1.146   2.121 0.156848    
+Residuals   27 14.588   0.540                     
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>

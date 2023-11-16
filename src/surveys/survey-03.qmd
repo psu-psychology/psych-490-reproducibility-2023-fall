@@ -7,7 +7,7 @@ params:
 ## Purpose
 
 This page documents the data processing steps involved with Survey 03 in PSYCH 490.009.
-The survey questions were adapted from those discussed in [@Cruwell2019-nz].
+The survey questions were adapted from those discussed in [@Chopik2018-wx].
 
 The page also serves as a learning opportunity for exploring how to generate a set of plots using functional programming techniques.
 
@@ -263,8 +263,7 @@ return_section <- function(data, var) {
   fig_name <- paste0("fig-dist-", var)
   fig_cap <- paste0("'Distribution of responses to ", var, "'")
   fig_caption <- paste0("fig.cap = ", fig_cap)
-  cat(fig_caption)
-  
+
   plot_chunk_hdr <- paste0("```{r ", fig_name, ", echo = FALSE, warning = FALSE, ", fig_caption, "}")
   
   plot_chunk <- c(plot_chunk_hdr,

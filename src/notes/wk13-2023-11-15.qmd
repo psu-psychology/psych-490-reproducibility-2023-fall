@@ -34,11 +34,12 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-15 Wed"
 
 - Discuss
     - [@Kathawalla2021-tk]
-    - [@Cruwell2019-nz]
+    - [Chopik2018-wx]
+    - (Optional) [@Cruwell2019-nz]
 - Explore
     - [@FORRT_undated-pl]
 
-## Survey: Questions from [@Cruwell2019-nz]
+## Survey: Questions from [Chopik2018-wx]
 
 ```{r survey}
 survey_03_qr <- qrcode::qr_code("https://docs.google.com/forms/d/e/1FAIpQLSf9w7CHjZD7jon1-_BsR_ZZHlIEVdKY0x4nJwh7v8AyXlpUmg/viewform?usp=sf_link")
@@ -80,7 +81,7 @@ plot(survey_03_qr)
 
 ![Figure 1 from [@Kathawalla2021-tk]](https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/7/1/10.1525_collabra.18684/2/m_collabra_2021_7_1_18684_49218.jpeg?Expires=1683620528&Signature=dlqxuXl9GGSMcmMA7Bje2z9f6UwaIgeDt5Ryd-FydjA78M70uG~xprbTsrrnjWb~SYujcbWcvXvH-V9FL-w~GeFX8OPC4mmPTVUCDqoXMEC8kKcpfUUP44gst-FEyBST1ujDYghrphWPyQ84Pg50pArBpKIzBiBmT26WZJD1Grfw6y3I8EY10u9zqcqytRy6fw9tNyhA90oXd5v5rGS6Ekcmiz5wv5kUVh4b8WzriNmNjj0roQLK7BfKyKStog4CYrA5DXyvLa5t02dxwuBPejek9PQobrWzc7BLpnnaJi8DgGVCHrbkPE0n9RWWlnsx2yxS3ppIb7eHLWsJUaMJvA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
-# [@Cruwell2019-nz]
+# [@Chopik2018-wx]
 
 ---
 
@@ -95,13 +96,13 @@ plot(survey_03_qr)
 >Following the lecture, students trusted psychological studies slightly less but saw greater similarities between psychology and natural science fields. We discuss challenges for instructors taking the initiative to communicate these issues to undergraduates in an evenhanded way.
 
 <p style="text-align:center;">
-[@Cruwell2019-nz]
+[@Chopik2018-wx]
 </p>
 
 ---
 
-- Table 1 from [@Cruwell2019-nz]: <https://journals.sagepub.com/doi/10.1177/0098628318762900#table1-0098628318762900>
-- Table 2 from [@Cruwell2019-nz]: <https://journals.sagepub.com/doi/10.1177/0098628318762900#table2-0098628318762900>
+- Table 1 from [@Chopik2018-wx]: <https://journals.sagepub.com/doi/10.1177/0098628318762900#table1-0098628318762900>
+- Table 2 from [@Chopik2018-wx]: <https://journals.sagepub.com/doi/10.1177/0098628318762900#table2-0098628318762900>
 
 ## Reproducibility notes
 
