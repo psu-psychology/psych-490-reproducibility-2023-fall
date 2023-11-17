@@ -427,7 +427,7 @@ title: "schedule"
 
 *Project presentations*
 
-- [Schedule]()
+- [Schedule](../surveys/presentation-schedule.html#day-1-friday-december-1-2023)
 
 ## December 4-8 {- #week-15}
 
@@ -435,13 +435,13 @@ title: "schedule"
 
 *Project presentations*
 
-- [Schedule]()
+- [Schedule](../surveys/presentation-schedule.html#day-2-monday-december-4-2023)
 
 ### Wednesday, December 6 {-}
 
 *Project presentations*
 
-- [Schedule]()
+- [Schedule](../surveys/presentation-schedule.html#day-3-wednesday-december-6-2023)
 
 ### Friday, December 8 {-}
 

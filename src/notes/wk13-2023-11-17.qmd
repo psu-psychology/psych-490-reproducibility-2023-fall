@@ -15,9 +15,15 @@ footer: "[PSYCH 490.009](../index.html): 2023-11-17 Fri"
 
 - No class next week. Thanksgiving Holiday.
 
+## In the news {background-iframe="https://www.pewresearch.org/science/2023/11/14/americans-trust-in-scientists-positive-views-of-science-continue-to-decline/"}
+
+---
+
+![Image from [@Kennedy2023-nb]](../include/img/pew-survey-trust-in-science-2023-11-17.png)
+
 ## Today
 
-- Revisiting Exercise 05
+- Revisiting [Exercise 05](../exercises/05-apes.qmd)
 
 *Final project work day*
 

@@ -37,7 +37,9 @@ website:
           - href: "exercises/ex07-sharing.qmd"
           - href: "exercises/final-project.qmd"
       - text: supplemental
-        menu: 
+        menu:
+          - href: "surveys/presentation-schedule.qmd"
+            text: "Final Project Presentations"
           - href: "surveys/survey-01.qmd"
           - href: "surveys/survey-02.qmd"
           - href: "surveys/survey-03.qmd"
