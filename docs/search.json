@@ -102,7 +102,7 @@
     "href": "surveys/presentation-schedule.html",
     "title": "Presentations",
     "section": "",
-    "text": "Tentative schedule as of 2023-11-26 19:36:14.983852."
+    "text": "Tentative schedule as of 2023-11-28 06:25:09.346908."
   },
   {
     "objectID": "surveys/presentation-schedule.html#background",
@@ -116,7 +116,7 @@
     "href": "surveys/presentation-schedule.html#download-data",
     "title": "Presentations",
     "section": "Download data",
-    "text": "Download data\n\ngoogledrive::drive_auth(email = \"rick.o.gilmore@gmail.com\")\n\n\nif (!dir.exists('csv')) {\n  dir.create('csv')\n}\n\ncsv_fn &lt;- \"csv/psych-490-2023-fall-presentations.csv\"\n\ngoogledrive::drive_download(file = 'PSYCH 490.009 Fall 2023 Project Info (Responses)', path = csv_fn, type = 'csv', overwrite = TRUE)\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 Fall 2023 Project Info (Responses)'\n  &lt;id: 1tgG8etFwMSyGVLeFbQUCChTmVLt0aImZlc9QEAbrXfs&gt;\n\n\nSaved locally as:\n\n\n• 'csv/psych-490-2023-fall-presentations.csv'\n\n\n\nif (file.exists(csv_fn)) {\n  presentations_df &lt;- readr::read_csv(csv_fn, show_col_types = FALSE)\n} else {\n  message(\"File not found: \", csv_fn)\n  presentations_df &lt;- NULL\n}"
+    "text": "Download data\n\ngoogledrive::drive_auth(email = \"rick.o.gilmore@gmail.com\")\n\n\nif (!dir.exists('csv')) {\n  dir.create('csv')\n}\n\ncsv_fn &lt;- \"csv/psych-490-2023-fall-presentations.csv\"\n\ngoogledrive::drive_download(file = 'PSYCH 490.009 Fall 2023 Project Info (Responses)', path = csv_fn, type = 'csv', overwrite = TRUE)\n\nAuto-refreshing stale OAuth token.\n\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 Fall 2023 Project Info (Responses)'\n  &lt;id: 1tgG8etFwMSyGVLeFbQUCChTmVLt0aImZlc9QEAbrXfs&gt;\n\n\nSaved locally as:\n\n\n• 'csv/psych-490-2023-fall-presentations.csv'\n\n\n\nif (file.exists(csv_fn)) {\n  presentations_df &lt;- readr::read_csv(csv_fn, show_col_types = FALSE)\n} else {\n  message(\"File not found: \", csv_fn)\n  presentations_df &lt;- NULL\n}"
   },
   {
     "objectID": "surveys/presentation-schedule.html#clean-the-data",
