@@ -253,6 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#day-1-friday-december-1-2023" id="toc-day-1-friday-december-1-2023" class="nav-link" data-scroll-target="#day-1-friday-december-1-2023">Day 1: Friday, December 1, 2023</a></li>
   <li><a href="#day-2-monday-december-4-2023" id="toc-day-2-monday-december-4-2023" class="nav-link" data-scroll-target="#day-2-monday-december-4-2023">Day 2: Monday, December 4, 2023</a></li>
   <li><a href="#day-3-wednesday-december-6-2023" id="toc-day-3-wednesday-december-6-2023" class="nav-link" data-scroll-target="#day-3-wednesday-december-6-2023">Day 3: Wednesday, December 6, 2023</a></li>
+  <li><a href="#day-4-friday-december-8-2023" id="toc-day-4-friday-december-8-2023" class="nav-link" data-scroll-target="#day-4-friday-december-8-2023">Day 4: Friday, December 8, 2023</a></li>
   </ul>
 </nav>
     </div>
@@ -276,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Tentative schedule as of 2023-12-01 11:09:08.436019.</p>
+<p>Tentative schedule as of 2023-12-04 17:26:18.156451.</p>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>This page documents how the presentation schedule can be automatically generated from the student survey.</p>
@@ -344,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>stringr<span class="sc">::</span><span class="fu">str_detect</span>(Authors, <span class="st">"Gilmore"</span>))</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>fri_df <span class="ot">&lt;-</span> presentations_df <span class="sc">|&gt;</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"Fri"</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"Fri December 1"</span>),</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                Give_talk <span class="sc">==</span> <span class="st">"Yes"</span>)</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>mon_df <span class="ot">&lt;-</span> presentations_df <span class="sc">|&gt;</span></span>
@@ -355,11 +356,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"Wed"</span>),</span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                Give_talk <span class="sc">==</span> <span class="st">"Yes"</span>)</span>
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>no_pref <span class="ot">&lt;-</span> presentations_df <span class="sc">|&gt;</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"No preference"</span>),</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>fri_8_df <span class="ot">&lt;-</span> presentations_df <span class="sc">|&gt;</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"Fri December 8"</span>),</span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>                Give_talk <span class="sc">==</span> <span class="st">"Yes"</span>)</span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>times <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"04:45"</span>, <span class="st">"05:00"</span>, <span class="st">"05:15"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>no_pref <span class="ot">&lt;-</span> presentations_df <span class="sc">|&gt;</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(Preferred_date, <span class="st">"No preference"</span>),</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>                Give_talk <span class="sc">==</span> <span class="st">"Yes"</span>)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>times <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"04:45"</span>, <span class="st">"05:00"</span>, <span class="st">"05:15"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="day-1-friday-december-1-2023" class="level2">
@@ -478,6 +483,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Ara Seibert</td>
 <td style="text-align: left;">Implicit Bias Methodology: What does it really show us?</td>
 <td style="text-align: left;">Lesson plan/class exercise</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="day-4-friday-december-8-2023" class="level2">
+<h2 class="anchored" data-anchor-id="day-4-friday-december-8-2023">Day 4: Friday, December 8, 2023</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fri_8_df<span class="sc">$</span>Time <span class="ot">&lt;-</span> times[<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(fri_8_df)[<span class="dv">1</span>]]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>fri_8_df <span class="sc">|&gt;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Authors)) <span class="sc">|&gt;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(Time) <span class="sc">|&gt;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Time, Authors, Title, Format) <span class="sc">|&gt;</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Time</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Authors</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Title</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Format</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">04:45</td>
+<td style="text-align: left;">Alyssa Williamson &amp; Maria Piccolino</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">In-class talk</td>
 </tr>
 </tbody>
 </table>
