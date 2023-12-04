@@ -433,22 +433,20 @@ You may schedule individual or group meetings to discuss your final project usin
 
 *Project presentations*
 
-- [Schedule](../surveys/presentation-schedule.html#day-1-friday-december-1-2023)
+- [Schedule](surveys/presentation-schedule.html#day-1-friday-december-1-2023)
 - [Class notes](notes/wk14-2023-12-01.qmd)
 
 ## December 4-8 {- #week-15}
 
 ### Monday, December 4 {-}
 
-*Project presentations*
-
-- [Schedule](../surveys/presentation-schedule.html#day-2-monday-december-4-2023)
+*Final project workday**
 
 ### Wednesday, December 6 {-}
 
 *Project presentations*
 
-- [Schedule](../surveys/presentation-schedule.html#day-3-wednesday-december-6-2023)
+- [Schedule](surveys/presentation-schedule.html#day-3-wednesday-december-6-2023)
 
 ### Friday, December 8 {-}
 
