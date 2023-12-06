@@ -1,15 +1,17 @@
 ---
-title: "Work Day"
-subtitle: "2023-12-01 Fri"
+title: "Our open science future"
+subtitle: "2023-12-08"
 author: "Rick Gilmore"
 format: revealjs
 bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
 csl: ../include/bib/apa.csl
 css: ../include/css/styles.css
-footer: "[PSYCH 490.009](../index.html): 2023-12-01 Fri"
+footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
 ---
 
 # Overview
+
+## 
 
 ## Announcement
 

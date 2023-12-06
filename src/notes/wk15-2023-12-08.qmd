@@ -1,0 +1,134 @@
+---
+title: "Our open science future"
+subtitle: "2023-12-08"
+author: "Rick Gilmore"
+format: revealjs
+bibliography: [../include/bib/packages.bib, ../include/bib/psu-repro.bib]
+csl: ../include/bib/apa.csl
+css: ../include/css/styles.css
+footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
+---
+
+# Overview
+
+## Announcement
+
+- Final project write-ups [due next Wednesday, December 13, 2023]{.orange_due}.
+  - Write-up [details](../exercises/final-project.html#project-write-up)
+  
+## Today
+
+- Alyssa Williamson & Maria Piccolino on transparency in plotting research data
+- Our open science future
+
+# Our open science future
+
+---
+
+![](https://miro.medium.com/v2/resize:fit:640/1*Nv4oqbfv5IwRSMdLGtFZuA.gif){fig-align="center"}
+
+---
+
+![Three Little Pigs](https://www.carloscamara.es/en/blog/2019/09/05/the-three-little-pigs-is-a-fairy-tale/featured.jpg){fig-align="center"}
+
+---
+
+![Pantheon](https://theromanguy.com/wp-content/uploads/pantheon-feature-real-900x420.jpeg){fig-align="center"}
+
+---
+
+![<https://149365049.v2.pressablecdn.com/wp-content/uploads/2014/07/6-blind-men-hans-1024x654.jpg>](https://149365049.v2.pressablecdn.com/wp-content/uploads/2014/07/6-blind-men-hans-1024x654.jpg){fig-align="center"}
+
+---
+
+![<https://www.theatlantic.com/photo/2015/08/world-elephant-day/401117/>](https://cdn.theatlantic.com/thumbor/p5S2K0rgrq_3Af-8_VnUUqaxs3M=/1200x729/media/img/photo/2015/08/world-elephant-day/e01_96540399/original.jpg)
+
+## Psychological science is hard...
+
+```{mermaid}
+flowchart TB
+  W(World) --> B(Body)
+  B --> N(Nervous System)
+  B --> B
+  N --> N
+  W --> W
+  B --> W
+  N --> B
+```
+
+---
+
+![https://www.sciencedirect.com/topics/social-sciences/learning-and-memory](https://ars.els-cdn.com/content/image/3-s2.0-B9780120885664500155-f09-01-9780120885664.jpg)
+
+## Discovering the laws...
+
+- [Fitts law](https://en.wikipedia.org/wiki/Fitts%27s_law)
+- [Stevens' power law](https://en.wikipedia.org/wiki/Stevens%27s_power_law)
+
+## Unearthing the (f)laws
+
+- Cognition is often [systematically biased](https://en.wikipedia.org/wiki/List_of_cognitive_biases).
+- Most current data are from WEIRD people [@Henrich2010-gf]
+
+# What you can do...
+
+---
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/0*DiNyrX5pSDMaRrlY.png){fig-align="center"}
+
+## As a producer...
+
+- Commit to openly sharing your
+  - data, protocols, code
+  - from the very beginning
+- Carry through on your commitment
+- Encourage, help others
+- Strive to get better
+
+## As a consumer...
+
+- Keep your skepticism sharp
+- Ask how do we know that? Why do they think that?
+- Data + reasoning
+- Support policies, outlets that encourage openness, transparency
+
+---
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*hn9nGSNnalnFrSDlGHNctQ.png){fig-align="center"}
+
+---
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Richard Feynmann
+
+![](https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg)
+
+:::
+
+::: {.column width="60%"}
+
+> The first principle is that **you must not fool yourself—and you are the easiest person to fool**.
+
+<p style="text-align:center;">
+[@Feynman1974-ld]
+</p>
+
+:::
+
+::::
+
+---
+
+>…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity. **May you have that freedom**.
+
+<p style="text-align:center;">
+[@Feynman1974-ld]
+</p>
+
+# Good luck!
+
+# Resources
+
+## References

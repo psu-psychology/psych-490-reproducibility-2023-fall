@@ -423,7 +423,7 @@ Meeting on Zoom: <https://psu.zoom.us/my/rogilmore>
 
 ### Wednesday, November 29 {-}
 
-**NO CLASS*
+*NO CLASS*
 
 You may schedule individual or group meetings to discuss your final project using this link:
 
@@ -447,11 +447,15 @@ You may schedule individual or group meetings to discuss your final project usin
 *Project presentations*
 
 - [Schedule](surveys/presentation-schedule.html#day-3-wednesday-december-6-2023)
+- [Class notes](notes/wk15-2023-12-06.qmd)
 
 ### Friday, December 8 {-}
 
-- Class wrap-up
-    
+*Project presentations*
+
+- [Schedule](surveys/presentation-schedule.html#day-4-friday-december-8-2023)
+- [Class notes](notes/wk15-2023-12-08.qmd)
+  
 ## December 11-15 {- #finals-week}
 
 ### Wednesday, December 13 {-}
