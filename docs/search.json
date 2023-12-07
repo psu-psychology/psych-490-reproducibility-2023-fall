@@ -3966,7 +3966,7 @@
     "href": "notes/wk15-2023-12-08.html#references",
     "title": "Our open science future",
     "section": "References",
-    "text": "References\n\n\nPSYCH 490.009: 2023-12-08 Fri\n\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nHenrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? The Behavioral and Brain Sciences, 33(2-3), 61-83; discussion 83-135. https://doi.org/10.1017/S0140525X0999152X"
+    "text": "References\n\n\nPSYCH 490.009: 2023-12-08 Fri\n\n\n\nFeynman, R. P. (1974). Cargo cult science. https://calteches.library.caltech.edu/51/2/CargoCult.htm. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nHenrich, J., Heine, S. J., & Norenzayan, A. (2010). The weirdest people in the world? The Behavioral and Brain Sciences, 33(2-3), 61-83; discussion 83-135. https://doi.org/10.1017/S0140525X0999152X\n\n\nMerton, R. W. (1973). The normative structure of science. In R. K. Merton & N. W. Storer (Eds.), The Sociology of Science: Theoretical and Empirical Investigations (pp. 267–278). The University of Chicago Press."
   },
   {
     "objectID": "notes/wk15-2023-12-06.html#announcement",
@@ -4008,7 +4008,7 @@
     "href": "notes/wk15-2023-12-08.html#psychological-science-is-hard",
     "title": "Our open science future",
     "section": "Psychological science is hard…",
-    "text": "Psychological science is hard…\n\n\n\n\nflowchart TB\n  W(World) --&gt; B(Body)\n  B --&gt; N(Nervous System)\n  B --&gt; B\n  N --&gt; N\n  W --&gt; W\n  B --&gt; W\n  N --&gt; B"
+    "text": "Psychological science is hard…\n\n\n\n\nState spaces for a science of mind, brain, & behavior"
   },
   {
     "objectID": "notes/wk15-2023-12-08.html#as-a-producer",
@@ -4030,5 +4030,33 @@
     "title": "Our open science future",
     "section": "Open science practices need not be all or none",
     "text": "Open science practices need not be all or none"
+  },
+  {
+    "objectID": "notes/wk15-2023-12-08.html#what-is-science-really",
+    "href": "notes/wk15-2023-12-08.html#what-is-science-really",
+    "title": "Our open science future",
+    "section": "What is science, really?",
+    "text": "What is science, really?\n\n\na stock of accumulated knowledge (facts & findings)\na set of characteristic methods\na set of cultural values (Merton, 1973, p. 268)"
+  },
+  {
+    "objectID": "notes/wk15-2023-12-08.html#but-lawful",
+    "href": "notes/wk15-2023-12-08.html#but-lawful",
+    "title": "Our open science future",
+    "section": "But lawful…",
+    "text": "But lawful…\n\nFitts law\nStevens’ power law"
+  },
+  {
+    "objectID": "notes/wk15-2023-12-08.html#and-sometimes-full-of-flaws",
+    "href": "notes/wk15-2023-12-08.html#and-sometimes-full-of-flaws",
+    "title": "Our open science future",
+    "section": "And sometimes full of (f)laws",
+    "text": "And sometimes full of (f)laws\n\nCognition is often systematically biased.\nMost current data are from WEIRD people (Henrich, Heine, & Norenzayan, 2010)\nKnowing what is and or is not a robust finding is harder than it should be"
+  },
+  {
+    "objectID": "notes/wk15-2023-12-08.html#advocate-for-science-as",
+    "href": "notes/wk15-2023-12-08.html#advocate-for-science-as",
+    "title": "Our open science future",
+    "section": "Advocate for science as",
+    "text": "Advocate for science as\n\n\na stock of accumulated knowledge (facts & findings)\na set of characteristic methods\na set of cultural values (Merton, 1973, p. 268)\nan essential tool for solving problems"
   }
 ]
