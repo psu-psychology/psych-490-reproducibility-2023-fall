@@ -102,7 +102,7 @@
     "href": "surveys/presentation-schedule.html",
     "title": "Presentations",
     "section": "",
-    "text": "Tentative schedule as of 2023-12-06 09:14:08.171078."
+    "text": "Tentative schedule as of 2023-12-08 14:12:07.462609."
   },
   {
     "objectID": "surveys/presentation-schedule.html#background",
@@ -116,7 +116,7 @@
     "href": "surveys/presentation-schedule.html#download-data",
     "title": "Presentations",
     "section": "Download data",
-    "text": "Download data\n\ngoogledrive::drive_auth(email = \"rick.o.gilmore@gmail.com\")\n\n\nif (!dir.exists('csv')) {\n  dir.create('csv')\n}\n\ncsv_fn &lt;- \"csv/psych-490-2023-fall-presentations.csv\"\n\ngoogledrive::drive_download(file = 'PSYCH 490.009 Fall 2023 Project Info (Responses)', path = csv_fn, type = 'csv', overwrite = TRUE)\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 Fall 2023 Project Info (Responses)'\n  &lt;id: 1tgG8etFwMSyGVLeFbQUCChTmVLt0aImZlc9QEAbrXfs&gt;\n\n\nSaved locally as:\n\n\n• 'csv/psych-490-2023-fall-presentations.csv'\n\n\n\nif (file.exists(csv_fn)) {\n  presentations_df &lt;- readr::read_csv(csv_fn, show_col_types = FALSE)\n} else {\n  message(\"File not found: \", csv_fn)\n  presentations_df &lt;- NULL\n}"
+    "text": "Download data\n\ngoogledrive::drive_auth(email = \"rick.o.gilmore@gmail.com\")\n\n\nif (!dir.exists('csv')) {\n  dir.create('csv')\n}\n\ncsv_fn &lt;- \"csv/psych-490-2023-fall-presentations.csv\"\n\ngoogledrive::drive_download(file = 'PSYCH 490.009 Fall 2023 Project Info (Responses)', path = csv_fn, type = 'csv', overwrite = TRUE)\n\nAuto-refreshing stale OAuth token.\n\n\nFile downloaded:\n\n\n• 'PSYCH 490.009 Fall 2023 Project Info (Responses)'\n  &lt;id: 1tgG8etFwMSyGVLeFbQUCChTmVLt0aImZlc9QEAbrXfs&gt;\n\n\nSaved locally as:\n\n\n• 'csv/psych-490-2023-fall-presentations.csv'\n\n\n\nif (file.exists(csv_fn)) {\n  presentations_df &lt;- readr::read_csv(csv_fn, show_col_types = FALSE)\n} else {\n  message(\"File not found: \", csv_fn)\n  presentations_df &lt;- NULL\n}"
   },
   {
     "objectID": "surveys/presentation-schedule.html#clean-the-data",
@@ -158,7 +158,7 @@
     "href": "surveys/presentation-schedule.html#day-4-friday-december-8-2023",
     "title": "Presentations",
     "section": "Day 4: Friday, December 8, 2023",
-    "text": "Day 4: Friday, December 8, 2023\n\nfri_8_df$Time &lt;- times[1:dim(fri_8_df)[1]]\n\nfri_8_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n04:45\nAlyssa Williamson & Maria Piccolino\nNA\nIn-class talk"
+    "text": "Day 4: Friday, December 8, 2023\n\nfri_8_df$Time &lt;- times[1:dim(fri_8_df)[1]]\n\nfri_8_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n04:45\nAlyssa Williamson & Maria Piccolino\nScientific Integrity and Deception\nIn-class talk"
   },
   {
     "objectID": "surveys/p-hacking-suppl.html",
@@ -3959,7 +3959,7 @@
     "href": "notes/wk15-2023-12-08.html#today",
     "title": "Our open science future",
     "section": "Today",
-    "text": "Today\n\nAlyssa Williamson & Maria Piccolino on transparency in plotting research data\nOur open science future"
+    "text": "Today\n\nAlyssa Williamson & Maria Piccolino: “Scientific Integrity and Deception”\nOur open science future"
   },
   {
     "objectID": "notes/wk15-2023-12-08.html#references",

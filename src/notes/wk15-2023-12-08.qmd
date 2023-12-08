@@ -20,7 +20,7 @@ footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
   
 ## Today
 
-- Alyssa Williamson & Maria Piccolino on transparency in plotting research data
+- Alyssa Williamson & Maria Piccolino: "Scientific Integrity and Deception"
 - Our open science future
 
 # Our open science future
