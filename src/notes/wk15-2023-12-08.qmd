@@ -46,6 +46,9 @@ footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
 - a **set of cultural values** [@Merton1973-vf, p. 268]
 :::
 
+---
+
+![Source: https://penn-state-open-science.github.io/bootcamp-2023-open-sci-what-why](https://penn-state-open-science.github.io/bootcamp-2023-open-sci-what-why/img/Image_of_silos.png){fig-align="center"}
 
 ---
 
@@ -58,7 +61,6 @@ footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
 ## Psychological science is hard...
 
 ```{mermaid fig-wbt}
-%%| fig-cap: "State spaces for a science of mind, brain, & behavior"
 %%| fig-height: 100%
 
 flowchart LR
@@ -86,20 +88,67 @@ flowchart LR
 - Most current data are from WEIRD people [@Henrich2010-gf]
 - Knowing what is and or is not a robust finding is *harder than it should be*
 
-# What you can do...
+# Science matters...
 
 ---
 
-![](https://miro.medium.com/v2/resize:fit:720/format:webp/0*DiNyrX5pSDMaRrlY.png){fig-align="center"}
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&uniformYAxis=0&country=USA~GBR~CAN~DEU~ITA~IND&pickerSort=asc&pickerMetric=location&Metric=Cases+and+deaths&Interval=Cumulative&Relative+to+Population=true&Color+by+test+positivity=false&hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<https://ourworldindata.org>
+
+---
+
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&uniformYAxis=0&country=USA~GBR~CAN~DEU~ITA~IND&pickerSort=asc&pickerMetric=location&Metric=Excess+mortality+%28%25%29&Interval=Cumulative&Relative+to+Population=true&Color+by+test+positivity=false&hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<https://ourworldindata.org>
+
+## {background-video="../include/img/2021GISStempF-5yrAvg.webm"}
+
+## Rigorous, robust, reproducible science...
+
+::: {.incremental}
+- Has been essential to the improvement of human health and well-being in the past
+- Will be increasingly important to these improvements in the 21st century and beyond
+- Can be strengthened
+- And must be
+:::
+
+# What you can do...
+
+## Science is a *human* activity
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+::: {.incremental}
+- Humans are...
+    - flawed
+    - often illogical
+    - emotional AND intellectual
+    - biased
+    - have blind spots
+    - sometimes able to learn from mistakes
+:::
+  
+:::
+
+::: {.column width="40%"}
+
+![](https://media.tenor.com/bnK8AbXH7k8AAAAC/fascinating-mr-spock.gif){fig-align="center"}
+
+:::
+
+::::
 
 ## Advocate for science as
 
 ::: {.incremental}
 - a **stock of accumulated knowledge** (facts & findings)
 - a set of **characteristic methods** 
-
 - a **set of cultural values** [@Merton1973-vf, p. 268]
 - an **essential** tool for solving problems
+
+- that can and should be strengthened 
+- through rigorous, thoughtful criticism
 :::
 
 ## As a producer...
@@ -116,7 +165,7 @@ flowchart LR
 - Keep your skepticism sharp
 - Ask how do we know that? Why do they think that?
 - Data + reasoning
-- Support policies, outlets that encourage openness, transparency
+- Support policies, outlets, leaders who encourage openness, transparency
 
 ---
 
@@ -144,14 +193,6 @@ Richard Feynmann
 :::
 
 ::::
-
----
-
->…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity. **May you have that freedom**.
-
-<p style="text-align:center;">
-[@Feynman1974-ld]
-</p>
 
 # Good luck!
 
