@@ -269,8 +269,18 @@ If the sign is negative then $1\rightarrow5$, $2\rightarrow4$, $3\rightarrow3$, 
 
 ```{r}
 survey_01_data_dictionary <- survey_01_data_dictionary |>
-  dplyr::mutate(sign_wt = c(0, rep(1, 5),
-                            rep(-1, 5), rep(1, 5), rep(-1, 6), rep(1, 3), -1, 1, 0))
+  dplyr::mutate(sign_wt = c(0, 
+                            rep(1, 5),
+                            rep(-1, 4), 
+                            1, 
+                            -1, 
+                            1, -1, 
+                            rep(1, 3), 
+                            1,
+                            -1,
+                            rep(1, 3), 
+                            rep(-1, 5),
+                            0))
 
 survey_01_data_dictionary[,c(1,4)] |>
   knitr::kable(format = "html") |>
