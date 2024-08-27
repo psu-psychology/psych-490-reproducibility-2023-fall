@@ -27,7 +27,7 @@ plot(survey_03_qr)
 - Work on either
   -   Quest for shared Clery Act data (below)
   - [Assignment distributed]{.green_assigned}
-      - [Exercise 07: Data and materials sharing](exercises/ex07-sharing.qmd)
+      - [Exercise 07: Data and materials sharing](../exercises/ex07-sharing.qmd)
 - [Final project survey]{.green_assigned}
     - Please complete the [final project survey](https://forms.gle/L92wWFSpcdyLT4MR9).
     
