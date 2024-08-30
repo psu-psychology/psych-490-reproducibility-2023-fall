@@ -967,139 +967,165 @@ Figure&nbsp;4: Responses to trust in science questions from <span class="citatio
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary <span class="ot">&lt;-</span> survey_01_data_dictionary <span class="sc">|&gt;</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">sign_wt =</span> <span class="fu">c</span>(<span class="dv">0</span>, </span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">5</span>),</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">4</span>), </span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>                            <span class="dv">1</span>, </span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>                            <span class="sc">-</span><span class="dv">1</span>, </span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>                            <span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>, </span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">3</span>), </span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>), </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">5</span>),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">6</span>),</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">3</span>),</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>                            <span class="sc">-</span><span class="dv">1</span>,</span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>                            <span class="dv">1</span>,</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>                            <span class="sc">-</span><span class="dv">1</span>,</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">3</span>), </span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">rep</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">5</span>),</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>                            <span class="dv">0</span>))</span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>)] <span class="sc">|&gt;</span></span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>                            <span class="dv">0</span>))</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>survey_01_data_dictionary[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>)] <span class="sc">|&gt;</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">"html"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="lightable-classic caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">question</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">short_name</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">sign_wt</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">timestamp</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">I have at times changed opinions that were important to me, when someone showed me I was wrong.</td>
+<td style="text-align: left;">when_shown_wrong</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">I am willing to change my position on an important issue in the face of good reasons.</td>
+<td style="text-align: left;">good_reason</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">I am open to revising my important beliefs in the face of new information.</td>
+<td style="text-align: left;">new_info</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">I am willing to change my opinions on the basis of compelling reason.</td>
+<td style="text-align: left;">compelling_reason</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">I’m willing to change my mind once it’s made up about an important topic.</td>
+<td style="text-align: left;">mind_made_up</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Scientists ignore evidence that contradicts their work.</td>
+<td style="text-align: left;">ignore_contradictory_evidence</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Scientific theories are weak explanations.</td>
+<td style="text-align: left;">theories_are_weak</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Scientists intentionally keep their work secret.</td>
+<td style="text-align: left;">keep_work_secret</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Scientists don't value the ideas of others.</td>
+<td style="text-align: left;">dont_value_others_ideas</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Scientists don't care if laypersons understand their work.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">dont_care_laypeople_understand</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">We should trust the work of scientists.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">should_trust_work</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">We should trust that scientists are being honest in their work.</td>
+<td style="text-align: left;">should_trust_honesty</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">We should trust that scientists are being ethical in their work.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">should_trust_ethical</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">People who understand science more have more trust in science.</td>
+<td style="text-align: left;">more_understanding_more_trust</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">We can trust science to find the answers that explain the natural world.</td>
+<td style="text-align: left;">trust_explain_natural_world</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">We cannot trust scientists because they are biased in their perspectives.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">cant_trust_biased</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Scientists will protect each other even when they are wrong.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">protect_each_other_when_wrong</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">We cannot trust scientists to consider ideas that contradict their own.</td>
+<td style="text-align: left;">wont_consider_contradictory_ideas</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Today's scientists will sacrifice the well being of others to advance their research.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">sacrifice_others_to_advance</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">We cannot trust science because it moves too slowly.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">cant_trust_moves_slowly</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">When scientists change their mind about a scientific idea it diminishes my trust in their work.</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">change_minds_undermines_trust</td>
+<td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">We can trust scientists to share their discoveries even if they don't like their findings.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">share_findings_dont_like</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">I trust that the work of scientists is to make life better for people.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">make_life_better</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Scientific theories are trustworthy.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">theories_trustworthy</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">When scientists form a hypothesis they are just guessing.</td>
+<td style="text-align: left;">hypotheses_just_guesses</td>
 <td style="text-align: right;">-1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">I trust scientists can find solutions to our major technological problems.</td>
-<td style="text-align: right;">-1</td>
+<td style="text-align: left;">trust_find_tech_solutions</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">If you wish to comment about the questions in this survey, you may do so here. You are not required to comment. Your comments might be seen by others.</td>
+<td style="text-align: left;">comments</td>
 <td style="text-align: right;">0</td>
 </tr>
 </tbody>
@@ -1181,13 +1207,13 @@ Figure&nbsp;5: Composite ‘openness’ and ‘trust’ scores
     Pearson's product-moment correlation
 
 data:  openness_comp and trust_comp
-t = 0.43664, df = 9, p-value = 0.6727
+t = 0.35104, df = 9, p-value = 0.7336
 alternative hypothesis: true correlation is not equal to 0
 95 percent confidence interval:
- -0.4989558  0.6847424
+ -0.5199005  0.6694250
 sample estimates:
-      cor 
-0.1440286 </code></pre>
+     cor 
+0.116221 </code></pre>
 </div>
 </div>
 
