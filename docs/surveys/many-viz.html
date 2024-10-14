@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PSYCH 490 • Fall 2023 - Visualizing ‘Many Analysts’ data</title>
+<title>Visualizing ‘Many Analysts’ data – PSYCH 490 • Fall 2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -58,6 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -98,7 +99,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -107,6 +114,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -118,12 +126,43 @@ div.csl-indent {
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
-
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../include/css/styles.css">
 </head>
@@ -132,129 +171,129 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">PSYCH 490 • Fall 2023</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
- <span class="menu-text">about</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">about</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html" rel="" target="">
- <span class="menu-text">schedule</span></a>
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../evaluation.html" rel="" target="">
- <span class="menu-text">evaluation</span></a>
+    <a class="nav-link" href="../evaluation.html"> 
+<span class="menu-text">evaluation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../deadlines.html" rel="" target="">
- <span class="menu-text">deadlines</span></a>
+    <a class="nav-link" href="../deadlines.html"> 
+<span class="menu-text">deadlines</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../policies.html" rel="" target="">
- <span class="menu-text">policies</span></a>
+    <a class="nav-link" href="../policies.html"> 
+<span class="menu-text">policies</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">exercises</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
         <li>
-    <a class="dropdown-item" href="../exercises/ex01-read-a-scientific-paper.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex01-read-a-scientific-paper.html">
  <span class="dropdown-text">Exercise 01</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex02-norms-counternorms.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex02-norms-counternorms.html">
  <span class="dropdown-text">Exercise 02</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex03-scientific-integrity.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex03-scientific-integrity.html">
  <span class="dropdown-text">Exercise 03</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex04-p-hacking.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex04-p-hacking.html">
  <span class="dropdown-text">Exercise 04</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex05-apes.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex05-apes.html">
  <span class="dropdown-text">Exercise 05</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex06-replication.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex06-replication.html">
  <span class="dropdown-text">Exercise 06</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/ex07-sharing.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/ex07-sharing.html">
  <span class="dropdown-text">Exercise 07</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../exercises/final-project.html" rel="" target="">
+    <a class="dropdown-item" href="../exercises/final-project.html">
  <span class="dropdown-text">Final Project</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplemental" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplemental" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">supplemental</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-supplemental">    
         <li>
-    <a class="dropdown-item" href="../surveys/presentation-schedule.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/presentation-schedule.html">
  <span class="dropdown-text">Final Project Presentations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/survey-01.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/survey-01.html">
  <span class="dropdown-text">Survey 01</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/survey-02.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/survey-02.html">
  <span class="dropdown-text">Survey 02</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/survey-03.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/survey-03.html">
  <span class="dropdown-text">Survey 03</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/retraction-watch.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/retraction-watch.html">
  <span class="dropdown-text">Retraction Watch</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/simmons-etal-2011-suppl.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/simmons-etal-2011-suppl.html">
  <span class="dropdown-text">Simmons et al.&nbsp;2011</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/p-hacking-suppl.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/p-hacking-suppl.html">
  <span class="dropdown-text">On <em>p</em>-hacking</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/plotting-degrees-of-freedom.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/plotting-degrees-of-freedom.html">
  <span class="dropdown-text">On plots &amp; degrees of freedom</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../surveys/many-viz.html" rel="" target="">
+    <a class="dropdown-item" href="../surveys/many-viz.html">
  <span class="dropdown-text">Visualizing ‘Many Analysts’ data</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -297,7 +336,9 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <section id="purpose" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="purpose">Purpose</h2>
@@ -449,10 +490,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-yellow-cards-player-by-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-yellow-cards-player-by-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-yellow-cards-player-by-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-yellow-cards-player-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-yellow-cards-player-by-ref-1.png" id="fig-n-yellow-cards-player-by-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-yellow-cards-player-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
 </figure>
 </div>
 </div>
@@ -469,10 +514,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-cards-player-by-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-cards-player-by-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-cards-player-by-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-cards-player-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-cards-player-by-ref-1.png" id="fig-n-red-cards-player-by-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-cards-player-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
 </figure>
 </div>
 </div>
@@ -498,7 +547,7 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-classic caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">playerShort</th>
@@ -621,7 +670,7 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="lightable-classic caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">playerShort</th>
@@ -753,7 +802,7 @@ Attaching package: 'dplyr'</code></pre>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="many-viz_files/figure-html/n-yellow-n-red-all-dyads-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Number of yellow and red cards for each player/referee pair in data from <span class="citation" data-cites="Silberzahn_2023_OSF">(<a href="#ref-Silberzahn_2023_OSF" role="doc-biblioref">R. Silberzahn et al., 2023</a>)</span></figcaption>
+<figcaption>Number of yellow and red cards for each player/referee pair in data from <span class="citation" data-cites="Silberzahn_2023_OSF">(<a href="#ref-Silberzahn_2023_OSF" role="doc-biblioref">R. Silberzahn et al., 2023</a>)</span></figcaption>
 </figure>
 </div>
 </div>
@@ -778,7 +827,11 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="many-viz_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="many-viz_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Now, let’s look at these distributions.</p>
@@ -792,10 +845,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-yellow-cards-by-player-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-yellow-cards-by-player-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-yellow-cards-by-player-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-yellow-cards-by-player-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-yellow-cards-by-player-ref-1.png" id="fig-p-yellow-cards-by-player-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-yellow-cards-by-player-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
 </figure>
 </div>
 </div>
@@ -810,10 +867,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-cards-by-player-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-cards-by-player-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-cards-by-player-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-cards-by-player-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-cards-by-player-ref-1.png" id="fig-p-red-cards-by-player-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-cards-by-player-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
 </figure>
 </div>
 </div>
@@ -851,10 +912,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-yellow-cards-by-p-red-cards" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-yellow-cards-by-p-red-cards-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-yellow-cards-by-p-red-cards" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-yellow-cards-by-p-red-cards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-yellow-cards-by-p-red-cards-1.png" id="fig-p-yellow-cards-by-p-red-cards" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-yellow-cards-by-p-red-cards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
 </figure>
 </div>
 </div>
@@ -883,16 +948,22 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"yellow"</span>) <span class="sc">+</span></span>
 <span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of player skin tone and number of yellow cards given"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_ydensity()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_ydensity()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-yellow-by-skin-tone" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-yellow-by-skin-tone-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-yellow-by-skin-tone" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-yellow-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-yellow-by-skin-tone-1.png" id="fig-n-yellow-by-skin-tone" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-yellow-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
+</figcaption>
 </figure>
 </div>
 </div>
@@ -908,16 +979,22 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_smooth()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-yellow-by-skin-tone-scatter" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-yellow-by-skin-tone-scatter-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;7: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-yellow-by-skin-tone-scatter" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-yellow-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-yellow-by-skin-tone-scatter-1.png" id="fig-n-yellow-by-skin-tone-scatter" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-yellow-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
+</figcaption>
 </figure>
 </div>
 </div>
@@ -930,16 +1007,22 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"yellow"</span>) <span class="sc">+</span></span>
 <span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of player skin tone and proportion of yellow cards given"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_ydensity()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_ydensity()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-yellow-by-skin-tone" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-yellow-by-skin-tone-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;8: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-yellow-by-skin-tone" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-yellow-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-yellow-by-skin-tone-1.png" id="fig-p-yellow-by-skin-tone" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-yellow-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
+</figcaption>
 </figure>
 </div>
 </div>
@@ -955,16 +1038,22 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_smooth()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-yellow-by-skin-tone-scatter" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-yellow-by-skin-tone-scatter-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;9: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-yellow-by-skin-tone-scatter" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-yellow-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-yellow-by-skin-tone-scatter-1.png" id="fig-p-yellow-by-skin-tone-scatter" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-yellow-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9
+</figcaption>
 </figure>
 </div>
 </div>
@@ -977,16 +1066,22 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
 <span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of player skin tone and number of red cards given"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_ydensity()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_ydensity()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-by-skin-tone" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-by-skin-tone-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;10: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-by-skin-tone" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-by-skin-tone-1.png" id="fig-n-red-by-skin-tone" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1002,16 +1097,22 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_smooth()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-by-skin-tone-scatter" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-by-skin-tone-scatter-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;11: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-by-skin-tone-scatter" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-by-skin-tone-scatter-1.png" id="fig-n-red-by-skin-tone-scatter" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1024,16 +1125,22 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
 <span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Distribution of skin tone and red cards given"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_ydensity()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_ydensity()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-by-skin-tone" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-by-skin-tone-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;12: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-by-skin-tone" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-by-skin-tone-1.png" id="fig-p-red-by-skin-tone" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-by-skin-tone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1049,16 +1156,22 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing non-finite values (`stat_smooth()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-by-skin-tone-scatter" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-by-skin-tone-scatter-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;13: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-by-skin-tone-scatter" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-by-skin-tone-scatter-1.png" id="fig-p-red-by-skin-tone-scatter" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-by-skin-tone-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1077,13 +1190,18 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-n-yellow-by-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;14: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-n-yellow-by-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-n-yellow-by-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-skin-1.png" id="fig-n-red-n-yellow-by-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-n-yellow-by-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1102,13 +1220,18 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 468 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 468 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-p-yellow-by-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;15: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-p-yellow-by-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-p-yellow-by-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-skin-1.png" id="fig-p-red-p-yellow-by-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-p-yellow-by-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1131,10 +1254,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-n-yellow-by-dark-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-dark-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;16: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-n-yellow-by-dark-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-n-yellow-by-dark-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-dark-skin-1.png" id="fig-n-red-n-yellow-by-dark-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-n-yellow-by-dark-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1154,10 +1281,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-p-yellow-by-dark-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-dark-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;17: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-p-yellow-by-dark-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-p-yellow-by-dark-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-dark-skin-1.png" id="fig-p-red-p-yellow-by-dark-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-p-yellow-by-dark-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1181,10 +1312,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-n-yellow-by-light-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-light-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;18: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-n-yellow-by-light-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-n-yellow-by-light-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-light-skin-1.png" id="fig-n-red-n-yellow-by-light-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-n-yellow-by-light-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1201,10 +1336,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-p-yellow-by-light-skin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-light-skin-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;19: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-p-yellow-by-light-skin" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-p-yellow-by-light-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-light-skin-1.png" id="fig-p-red-p-yellow-by-light-skin" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-p-yellow-by-light-skin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1232,7 +1371,11 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="many-viz_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="many-viz_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <div class="cell">
@@ -1245,10 +1388,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-yellow-by-ref-player" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-yellow-by-ref-player-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;20: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-yellow-by-ref-player" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-yellow-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-yellow-by-ref-player-1.png" id="fig-n-yellow-by-ref-player" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-yellow-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1263,10 +1410,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-yellow-by-ref-player" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-yellow-by-ref-player-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;21: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-yellow-by-ref-player" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-yellow-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-yellow-by-ref-player-1.png" id="fig-p-yellow-by-ref-player" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-yellow-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1281,10 +1432,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-by-ref-player" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-by-ref-player-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;22: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-by-ref-player" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-by-ref-player-1.png" id="fig-n-red-by-ref-player" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1299,10 +1454,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-by-ref-player" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-by-ref-player-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;23: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-by-ref-player" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-by-ref-player-1.png" id="fig-p-red-by-ref-player" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-by-ref-player-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1318,10 +1477,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-n-red-n-yellow-by-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;24: <strong>?(caption)</strong></figcaption>
+<div id="fig-n-red-n-yellow-by-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-n-red-n-yellow-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-n-red-n-yellow-by-ref-1.png" id="fig-n-red-n-yellow-by-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-n-red-n-yellow-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1337,10 +1500,14 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="fig-p-red-p-yellow-by-ref" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-ref-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;25: <strong>?(caption)</strong></figcaption>
+<div id="fig-p-red-p-yellow-by-ref" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-p-red-p-yellow-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="many-viz_files/figure-html/fig-p-red-p-yellow-by-ref-1.png" id="fig-p-red-p-yellow-by-ref" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-p-red-p-yellow-by-ref-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;25
+</figcaption>
 </figure>
 </div>
 </div>
@@ -1351,7 +1518,7 @@ Attaching package: 'dplyr'</code></pre>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-Silberzahn_2023_OSF" class="csl-entry" role="listitem">
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E. C., … al., et. (2023, May). Many analysts, one dataset: Making transparent how variations in analytical choices affect results. OSF. Retrieved from <a href="https://osf.io/gvm2z">osf.io/gvm2z</a>
 </div>
@@ -1397,18 +1564,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1440,11 +1596,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1454,8 +1649,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1467,7 +1671,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1511,6 +1838,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1536,6 +1864,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1596,6 +1950,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

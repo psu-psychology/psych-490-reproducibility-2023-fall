@@ -37,14 +37,18 @@ footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
 
 ![Pantheon](https://theromanguy.com/wp-content/uploads/pantheon-feature-real-900x420.jpeg){fig-align="center"}
 
-## What is science, really? 
+## What is science, really?
 
 ::: {.incremental}
 - a **stock of accumulated knowledge** (facts & findings)
-- a set of **characteristic methods** 
+- a set of **characteristic methods**
 
 - a **set of cultural values** [@Merton1973-vf, p. 268]
 :::
+
+## *Psychological* science is hard...
+
+![https://www.sciencedirect.com/topics/social-sciences/learning-and-memory](https://ars.els-cdn.com/content/image/3-s2.0-B9780120885664500155-f09-01-9780120885664.jpg)
 
 ---
 
@@ -58,29 +62,21 @@ footer: "[PSYCH 490.009](../index.html): 2023-12-08 Fri"
 
 ![<https://www.theatlantic.com/photo/2015/08/world-elephant-day/401117/>](https://cdn.theatlantic.com/thumbor/p5S2K0rgrq_3Af-8_VnUUqaxs3M=/1200x729/media/img/photo/2015/08/world-elephant-day/e01_96540399/original.jpg)
 
-## Psychological science is hard...
-
-```{mermaid fig-wbt}
-%%| fig-height: 100%
-
-flowchart LR
-  W(World) --> B(Body)
-  B --> N(Nervous System)
-  B --> B
-  N --> N
-  W --> W
-  B --> W
-  N --> B
-```
-
----
-
-![https://www.sciencedirect.com/topics/social-sciences/learning-and-memory](https://ars.els-cdn.com/content/image/3-s2.0-B9780120885664500155-f09-01-9780120885664.jpg)
 
 ## But lawful...
 
+:::: {.columns}
+::: {.column width="45%"}
 - [Fitts law](https://en.wikipedia.org/wiki/Fitts%27s_law)
+- aka, speed/accuracy tradeoff
+:::
+::: {.column width="10%"}
+:::
+::: {.column width="45%"}
 - [Stevens' power law](https://en.wikipedia.org/wiki/Stevens%27s_power_law)
+- aka, non-linear relationship between perceived magnitude and physical magnitude
+:::
+::::
 
 ## And sometimes full of (f)laws
 
@@ -128,7 +124,7 @@ flowchart LR
     - have blind spots
     - sometimes able to learn from mistakes
 :::
-  
+
 :::
 
 ::: {.column width="40%"}
@@ -143,11 +139,11 @@ flowchart LR
 
 ::: {.incremental}
 - a **stock of accumulated knowledge** (facts & findings)
-- a set of **characteristic methods** 
+- a set of **characteristic methods**
 - a **set of cultural values** [@Merton1973-vf, p. 268]
 - an **essential** tool for solving problems
 
-- that can and should be strengthened 
+- that can and *should* be strengthened
 - through rigorous, thoughtful criticism
 :::
 
